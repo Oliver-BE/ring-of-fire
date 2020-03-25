@@ -1,4 +1,4 @@
 # ring-of-fire
 * Oliver Baldwin Edwards
-* Isaac Caruso
+* **Isaac Caruso
 * Martin Glusker
