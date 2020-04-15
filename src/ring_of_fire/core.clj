@@ -1,4 +1,5 @@
 (ns ring-of-fire.core
+  (:use [clojure.repl])
   (:require [clojure.data.csv :as csv]
             [clojure.java.io :as io]
             [ring-of-fire.data :refer :all]))

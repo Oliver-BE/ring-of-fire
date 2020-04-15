@@ -171,23 +171,23 @@
 ;; Mica Creek Park Fire 1 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(def creek1-final-scar (read-in-fire-scar "data/MicaCreek/Fire1/FinalScarGrid.csv"))
-(def creek1-forest (read-in-asc "data/MicaCreek/Fire1/Forest.asc"))
-(def creek1-ignition-cell (read-in-ignition-cell "data/MicaCreek/Fire1/IgnitionPoints.csv"))
-(def creek1-elevation (read-in-asc "data/MicaCreek/Fire1/elevation.asc"))
-(def creek1-slope (read-in-asc "data/MicaCreek/Fire1/slope.asc"))
-(def creek1-weather (read-in-weather "data/MicaCreek/Fire1/Weather.csv"))
+(def mica1-final-scar (read-in-fire-scar "data/MicaCreek/Fire1/FinalScarGrid.csv"))
+(def mica1-forest (read-in-asc "data/MicaCreek/Fire1/Forest.asc"))
+(def mica1-ignition-cell (read-in-ignition-cell "data/MicaCreek/Fire1/IgnitionPoints.csv"))
+(def mica1-elevation (read-in-asc "data/MicaCreek/Fire1/elevation.asc"))
+(def mica1-slope (read-in-asc "data/MicaCreek/Fire1/slope.asc"))
+(def mica1-weather (read-in-weather "data/MicaCreek/Fire1/Weather.csv"))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Mica Creek Park Fire 2 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(def creek2-final-scar (read-in-fire-scar "data/MicaCreek/Fire2/FinalScarGrid.csv"))
-(def creek2-forest (read-in-asc "data/MicaCreek/Fire2/Forest.asc"))
-(def creek2-ignition-cell (read-in-ignition-cell "data/MicaCreek/Fire2/IgnitionPoints.csv"))
-(def creek2-elevation (read-in-asc "data/MicaCreek/Fire2/elevation.asc"))
-(def creek2-slope (read-in-asc "data/MicaCreek/Fire2/slope.asc"))
-(def creek2-weather (read-in-weather "data/MicaCreek/Fire2/Weather.csv"))
+(def mica2-final-scar (read-in-fire-scar "data/MicaCreek/Fire2/FinalScarGrid.csv"))
+(def mica2-forest (read-in-asc "data/MicaCreek/Fire2/Forest.asc"))
+(def mica2-ignition-cell (read-in-ignition-cell "data/MicaCreek/Fire2/IgnitionPoints.csv"))
+(def mica2-elevation (read-in-asc "data/MicaCreek/Fire2/elevation.asc"))
+(def mica2-slope (read-in-asc "data/MicaCreek/Fire2/slope.asc"))
+(def mica2-weather (read-in-weather "data/MicaCreek/Fire2/Weather.csv"))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Revelstoke Park Fire 1 ;;
