@@ -210,3 +210,5 @@
 (def revelstoke2-elevation (read-in-asc "data/Revelstoke/Fire2/elevation.asc"))
 (def revelstoke2-slope (read-in-asc "data/Revelstoke/Fire2/slope.asc"))
 (def revelstoke2-weather (read-in-weather "data/Revelstoke/Fire2/Weather.csv"))
+
+
