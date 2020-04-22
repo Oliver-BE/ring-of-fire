@@ -532,29 +532,6 @@
                      (repeatedly population-size
                                  #(new-individual evaluated-pop argmap)))))))
 
-;;;;;;;;;
-
-
-
-(defn conway-target-function [input]
-  (let [UL (nth input 0)
-        UU (nth input 1)
-        UR (nth input 2)
-        LL (nth input 3)
-        prev (nth input 4)
-        RR (nth input 5)
-        DL (nth input 6)
-        DD (nth input 7)
-        DR (nth input 8)
-        live-neighbors (reduce + [UL UU UR LL RR DL DD DR])]
-    (if (= prev 1) ;was previously alive
-      (if (or (= live-neighbors 2) (= live-neighbors 3))
-        1
-        0)
-      (if (= live-neighbors 3)
-        1
-        0))))
-
 
 (defn regression-error-function
   "Finds the behaviors and errors of an individual: Error is the absolute deviation between the target output value and the program's selected behavior, or 1000000 if no behavior is produced. The behavior is here defined as the final top item on the :integer stack."
@@ -583,13 +560,21 @@
 
 
 
-;;all the get methods
-(defn get-elevation-table [fire-string] ())
-(defn get-slope-table [fire-string] ())
 
 
-;update each fire gird from one time step to the next
-(defn update-grid [all our variables]
+(defn run-fire [fire-string]
+    (loop [current-grid (initial-fire-grid fire-string)
+           time 0 ]
+        (if (> time 1440)
+          (recur
+            (update-grid current-grid time fire-string)
+            (inc time))
+          (update-grid current-grid time fire-string)
+          )))
+
+
+  ;update each fire gird from one time step to the next
+(defn update-grid [current-grid time fire-string]
   (fn [input]
     (peek-stack
       (interpret-program
@@ -597,6 +582,8 @@
         (assoc empty-push-state :input {:in1 input})
         (:step-limit argmap))
       :integer)))
+
+
 
 ;;;BEGIN ISAAC ;;;;;;;;;;;;;;;;;;;;;
 
@@ -654,21 +641,13 @@
                                         :ISI (current-weather-var "ISI" fire time)
                                         :DMC (current-weather-var "DMC" fire time)
                                         :WD (current-weather-var "WD" fire time)
-                                        :current-state current-state
-
-                                        })
+                                        :current-state current-state})
         (:step-limit argmap))
       :integer))
 
-;;;END ISAAC ;;;;;;;;;;;;;;;;;;;
+;;;  END ISAAC ;;;;;;;;;;;;;;;;;;;
 
-    (defn run-fire [fire-string]
-      (let [elevation-table (get-elevation-table fire-string)
-            more-variables variables])
-      (loop
-        (if (;some condition)
-             ; break the loop so we know we are )
-             ('update-grid time)))))
+
 
 
 
