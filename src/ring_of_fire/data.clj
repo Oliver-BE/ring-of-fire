@@ -22,8 +22,8 @@
   "Converts CSV into a sequence of dictionaries"
   [csv-data]
   (map zipmap
-       (->> (first csv-data) ;; First row is the header
-            (map keyword) ;; Drop if you want string keys instead
+       (->> (first csv-data)                                ;; First row is the header
+            (map keyword)                                   ;; Drop if you want string keys instead
             repeat)
        (rest csv-data)))
 #_(csv-to-dict (read-in-csv "data/Arrowhead/Fire1/Weather.csv"))
@@ -45,7 +45,7 @@
   "Cleans data in string format into longs"
   [data]
   (map #(clean-row %) data))
-#_(clean '(["1 1 1"]["0 0 0"]))
+#_(clean '(["1 1 1"] ["0 0 0"]))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Specialized functions for reading in different Cell2Fire data inputs   ;;
@@ -119,16 +119,16 @@
                        })
 
 (def slope-master {:a1 arrowhead1-slope
-                       :a2 arrowhead2-slope
-                       :k1 kootenay1-slope
-                       :k2 kootenay2-slope
-                       :g1 glacier1-slope
-                       :g2 glacier2-slope
-                       :m1 mica1-slope
-                       :m2 mica2-slope
-                       :r1 revelstoke1-slope
-                       :r2 revelstoke2-slope
-                       })
+                   :a2 arrowhead2-slope
+                   :k1 kootenay1-slope
+                   :k2 kootenay2-slope
+                   :g1 glacier1-slope
+                   :g2 glacier2-slope
+                   :m1 mica1-slope
+                   :m2 mica2-slope
+                   :r1 revelstoke1-slope
+                   :r2 revelstoke2-slope
+                   })
 ;;;;;;;;;;;;;;;;;;;;;;
 ;; Arrowhead Fire 1 ;;
 ;;;;;;;;;;;;;;;;;;;;;;
@@ -151,9 +151,9 @@
 (def arrowhead2-elevation (read-in-asc "data/Arrowhead/Fire2/elevation.asc"))
 ;; NOTE we are missing some data here
 (def arrowhead2-slope (read-in-asc "data/Arrowhead/Fire2/slope_missing.asc"))
-#_(count arrowhead2-slope) ;;73 (should be 77 as below)
-#_(count arrowhead2-forest) ;;77
-#_(count arrowhead2-elevation) ;;77
+#_(count arrowhead2-slope)                                  ;;73 (should be 77 as below)
+#_(count arrowhead2-forest)                                 ;;77
+#_(count arrowhead2-elevation)                              ;;77
 (def arrowhead2-weather (read-in-weather "data/Arrowhead/Fire2/Weather.csv"))
 
 
