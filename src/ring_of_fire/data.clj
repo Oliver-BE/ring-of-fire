@@ -95,6 +95,40 @@
 ;; forest.asc files to types of trees/fuel type/what color to map those squares
 (def fbp-lookup-table (read-in-fbp-lookup "data/Arrowhead/fbp_lookup_table.csv"))
 
+(def weather-master {:a1 arrowhead1-weather
+                     :a2 arrowhead2-weather
+                     :k1 kootenay1-weather
+                     :k2 kootenay2-weather
+                     :g1 glacier1-weather
+                     :g2 glacier2-weather
+                     :m1 mica1-weather
+                     :m2 mica2-weather
+                     :r1 revelstoke1-weather
+                     :r2 revelstoke2-weather
+                     })
+(def elevation-master {:a1 arrowhead1-elevation
+                       :a2 arrowhead2-elevation
+                       :k1 kootenay1-elevation
+                       :k2 kootenay2-elevation
+                       :g1 glacier1-elevation
+                       :g2 glacier2-elevation
+                       :m1 mica1-elevation
+                       :m2 mica2-elevation
+                       :r1 revelstoke1-elevation
+                       :r2 revelstoke2-elevation
+                       })
+
+(def slope-master {:a1 arrowhead1-slope
+                       :a2 arrowhead2-slope
+                       :k1 kootenay1-slope
+                       :k2 kootenay2-slope
+                       :g1 glacier1-slope
+                       :g2 glacier2-slope
+                       :m1 mica1-slope
+                       :m2 mica2-slope
+                       :r1 revelstoke1-slope
+                       :r2 revelstoke2-slope
+                       })
 ;;;;;;;;;;;;;;;;;;;;;;
 ;; Arrowhead Fire 1 ;;
 ;;;;;;;;;;;;;;;;;;;;;;
