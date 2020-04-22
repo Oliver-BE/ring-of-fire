@@ -564,13 +564,12 @@
 
 (defn run-fire [fire-string]
     (loop [current-grid (initial-fire-grid fire-string)
-           time 0 ]
+           time 0]
         (if (> time 1440)
           (recur
             (update-grid current-grid time fire-string)
             (inc time))
-          (update-grid current-grid time fire-string)
-          )))
+          (update-grid current-grid time fire-string))))
 
 
   ;update each fire gird from one time step to the next
