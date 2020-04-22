@@ -605,22 +605,40 @@
   (vec (repeat (count ((keyword (name fire)) elevation-master))
                (vec (repeat (count (first ((keyword (name fire)) elevation-master))) 0)))))
 
-(defn get-neighbors)
+(defn get-neighbors
+  ;;Returns a sequence of sequences containing each neighbor's pertinent information
+  [cell-id fire current-grid]
+  (vec (burning-neighbors cell-id current-grid))
+  )
+
+(defn burning-neighbors
+  ;;Returns the burning neighbors of a given cell
+  [cell-id current-grid]
+  (let [flat-grid (flatten current-grid)]
+  (if (= 1 (nth flat-grid (- cell-id 1))) (- cell-id 1))
+  (if (= 1 (nth flat-grid (+ cell-id 1))) (+ cell-id 1))
+  ))
+
+(defn get-cell [cell-id]
+ )
 
 (defn current-weather-var
-  ;;Returns the value of a specified weather variable for a specified fire at a specified time(hours).
+  ;;Returns the value of a specified weather variable for a specified fire at a specified time.
   [desired-var fire time]
   ((keyword (name desired-var)) (nth ((keyword (name fire)) weather-master) (Math/floor (/ time 60)))))
+#_(current-weather-var "FFMC" "a1" 54)
 
 (defn elevation-at-cell
   ;;Returns the elevation of a specified cell in a specified fire
   [cell-id fire]
   (nth (flatten ((keyword (name fire)) elevation-master)) cell-id))
+#_(elevation-at-cell 150 "r1")
 
 (defn slope-at-cell
   ;;Returns the elevation of a specified cell in a specified fire
   [cell-id fire]
   (nth (flatten ((keyword (name fire)) slope-master)) cell-id))
+#_(slope-at-cell 150 "r1")
 
 (defn update-cell
   ;;Update cell to next state by interpreting push program
@@ -641,12 +659,14 @@
                                         :ISI (current-weather-var "ISI" fire time)
                                         :DMC (current-weather-var "DMC" fire time)
                                         :WD (current-weather-var "WD" fire time)
-                                        :current-state current-state})
+                                        :canBurn (check-fuel cell-id fire)
+                                        ;;add canBurn functionality
+                                        :current-state current-state
+                                        })
         (:step-limit argmap))
       :integer))
 
 ;;;  END ISAAC ;;;;;;;;;;;;;;;;;;;
-
 
 
 
