@@ -1,8 +1,8 @@
-`(ns ring-of-fire.core
-   (:use [clojure.repl])
-   (:require [clojure.data.csv :as csv]
-             [clojure.java.io :as io]
-             [ring-of-fire.data :refer :all]))
+(ns ring-of-fire.core
+  (:use [clojure.repl])
+  (:require [clojure.data.csv :as csv]
+            [clojure.java.io :as io]
+            [ring-of-fire.data :refer :all]))
 
 #_(read-in-csv "data/Arrowhead/Fire1/FinalScarGrid.csv")
 
@@ -532,6 +532,29 @@
                      (repeatedly population-size
                                  #(new-individual evaluated-pop argmap)))))))
 
+;;;;;;;;;
+
+
+
+(defn conway-target-function [input]
+  (let [UL (nth input 0)
+        UU (nth input 1)
+        UR (nth input 2)
+        LL (nth input 3)
+        prev (nth input 4)
+        RR (nth input 5)
+        DL (nth input 6)
+        DD (nth input 7)
+        DR (nth input 8)
+        live-neighbors (reduce + [UL UU UR LL RR DL DD DR])]
+    (if (= prev 1)                                          ;was previously alive
+      (if (or (= live-neighbors 2) (= live-neighbors 3))
+        1
+        0)
+      (if (= live-neighbors 3)
+        1
+        0))))
+
 
 (defn regression-error-function
   "Finds the behaviors and errors of an individual: Error is the absolute deviation between the target output value and the program's selected behavior, or 1000000 if no behavior is produced. The behavior is here defined as the final top item on the :integer stack."
@@ -560,20 +583,13 @@
 
 
 
-
-
-(defn run-fire [fire-string]
-    (loop [current-grid (initial-fire-grid fire-string)
-           time 0]
-        (if (> time 1440)
-          (recur
-            (update-grid current-grid time fire-string)
-            (inc time))
-          (update-grid current-grid time fire-string))))
+;;all the get methods
+(defn get-elevation-table [fire-string] ())
+(defn get-slope-table [fire-string] ())
 
 
 ;update each fire gird from one time step to the next
-(defn update-grid [current-grid time fire-string]
+(defn update-grid [all our variables]
   (fn [input]
     (peek-stack
       (interpret-program
@@ -581,8 +597,6 @@
         (assoc empty-push-state :input {:in1 input})
         (:step-limit argmap))
       :integer)))
-
-
 
 ;;;BEGIN ISAAC ;;;;;;;;;;;;;;;;;;;;;
 
@@ -599,19 +613,19 @@
                        })
 
 (defn construct-empty-grid
-  ;;Returns a vector of vectors filled with 0s with the same dimensions as the specified fire
+  "Returns a vector of vectors filled with 0s with the same dimensions as the specified fire"
   [fire]
   (vec (repeat (count ((keyword (name fire)) elevation-master))
                (vec (repeat (count (first ((keyword (name fire)) elevation-master))) 0)))))
 
 (defn get-neighbors
-  ;;Returns a sequence of sequences containing each neighbor's pertinent information
+  "Returns a sequence of sequences containing each neighbor's pertinent information"
   [cell-id fire current-grid]
   (vec (burning-neighbors cell-id current-grid))
   )
 
 (defn burning-neighbors
-  ;;Returns the burning neighbors of a given cell
+  "Returns the burning neighbors of a given cell"
   [cell-id current-grid]
   (let [flat-grid (flatten current-grid)]
     (if (= 1 (nth flat-grid (- cell-id 1))) (- cell-id 1))
@@ -621,31 +635,31 @@
 (defn get-cell [cell-id]
   )
 
-  (defn current-weather-var
-    ;;Returns the value of a specified weather variable for a specified fire at a specified time.
-    [desired-var fire time]
-  (read-string ((keyword (name desired-var)) (nth ((keyword (name fire)) weather-master) (Math/floor (/ time 60))))))
-  #_(current-weather-var "FFMC" "a1" 54)
+(defn current-weather-var
+  "Returns the value of a specified weather variable for a specified fire at a specified time."
+  [desired-var fire time]
+(read-string ((keyword (name desired-var)) (nth ((keyword (name fire)) weather-master) (Math/floor (/ time 60))))))
+#_(current-weather-var "FFMC" "a1" 54)
 
-  (defn elevation-at-cell
-    ;;Returns the elevation of a specified cell in a specified fire
-    [cell-id fire]
-  (read-string (nth (flatten ((keyword (name fire)) elevation-master)) cell-id)))
-  #_(elevation-at-cell 150 "r1")
+(defn elevation-at-cell
+  "Returns the elevation of a specified cell in a specified fire"
+  [cell-id fire]
+(read-string (nth (flatten ((keyword (name fire)) elevation-master)) cell-id)))
+#_(elevation-at-cell 150 "r1")
 
-  (defn slope-at-cell
-    ;;Returns the elevation of a specified cell in a specified fire
-    [cell-id fire]
-  (read-string (nth (flatten ((keyword (name fire)) slope-master)) cell-id)))
-  #_(slope-at-cell 150 "r1")
+(defn slope-at-cell
+  "Returns the elevation of a specified cell in a specified fire"
+  [cell-id fire]
+(read-string (nth (flatten ((keyword (name fire)) slope-master)) cell-id)))
+#_(slope-at-cell 150 "r1")
 
 (defn update-cell
-  ;;Update cell to next state by interpreting push program
+  "Update cell to next state by interpreting push program"
   [cell-id fire time current-state program]
   (let [answer (peek-stack
                  (interpret-program
                    program
-                   (assoc empty-push-state :input {:elevation     (elevation-at-cell cell-id fire) ;;make integer
+                   (assoc empty-push-state :input {:elevation     (elevation-at-cell cell-id fire)
                                                    :slope         (slope-at-cell cell-id fire)
                                                    :FWI           (current-weather-var "FWI" fire time)
                                                    :WS            (current-weather-var "WS" fire time)
@@ -658,9 +672,8 @@
                                                    :ISI           (current-weather-var "ISI" fire time)
                                                    :DMC           (current-weather-var "DMC" fire time)
                                                    :WD            (current-weather-var "WD" fire time)
-                                                   :canBurn       (check-fuel cell-id fire)
-                                                   ;;add canBurn functionality
                                                    :current-state current-state
+                                                   :time          time
                                                    :nw            0
                                                    :n             0
                                                    :ne            0
@@ -677,9 +690,15 @@
       current-state
       (mod answer 3))))
 
-;;;  END ISAAC ;;;;;;;;;;;;;;;;;;;
+;;;END ISAAC ;;;;;;;;;;;;;;;;;;;
 
-
+(defn run-fire [fire-string]
+  (let [elevation-table (get-elevation-table fire-string)
+        more-variables variables])
+  (loop
+    (if (;some condition)
+         ; break the loop so we know we are )
+         ('update-grid time)))))
 
 
 (defn fire-error-function
