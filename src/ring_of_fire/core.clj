@@ -1,8 +1,8 @@
-  `(ns ring-of-fire.core
-  (:use [clojure.repl])
-  (:require [clojure.data.csv :as csv]
-            [clojure.java.io :as io]
-            [ring-of-fire.data :refer :all]))
+`(ns ring-of-fire.core
+   (:use [clojure.repl])
+   (:require [clojure.data.csv :as csv]
+             [clojure.java.io :as io]
+             [ring-of-fire.data :refer :all]))
 
 #_(read-in-csv "data/Arrowhead/Fire1/FinalScarGrid.csv")
 
@@ -38,10 +38,10 @@
                  [[revelstoke2-forest revelstoke2-ignition-cell revelstoke2-elevation revelstoke2-slope revelstoke2-weather] revelstoke2-final-scar]])
 
 (def example-push-state
-  {:exec '()
+  {:exec    '()
    :integer '(1 2 3 4 5 6 7)
-   :string '("abc")
-   :input {:in1 4}})
+   :string  '("abc")
+   :input   {:in1 4}})
 
 ; Instructions must all be either functions that take one Push state and return another
 ; or constant literals.
@@ -103,19 +103,19 @@
     1))
 
 
-(def opens ; number of blocks opened by instructions (default = 0)
+(def opens                                                  ; number of blocks opened by instructions (default = 0)
   {'exec_dup 1
-   'exec_if 2})
+   'exec_if  2})
 
 ;;;;;;;;;
 ;; Utilities
 
 (def empty-push-state
-  {:exec '()
+  {:exec    '()
    :integer '()
-   :string '()
+   :string  '()
    :boolean '()
-   :input {}})
+   :input   {}})
 
 (defn abs
   "Absolute value."
@@ -390,16 +390,16 @@
 (defn push-from-plushy
   "Returns the Push program expressed by the given plushy representation."
   [plushy]
-  (let [opener? #(and (vector? %) (= (first %) 'open))] ;; [open <n>] marks opens
-    (loop [push () ;; iteratively build the Push program from the plushy
+  (let [opener? #(and (vector? %) (= (first %) 'open))]     ;; [open <n>] marks opens
+    (loop [push ()                                          ;; iteratively build the Push program from the plushy
            plushy (mapcat #(if-let [n (get opens %)] [% ['open n]] [%]) plushy)]
-      (if (empty? plushy)       ;; maybe we're done?
-        (if (some opener? push) ;; done with plushy, but unclosed open
-          (recur push '(close)) ;; recur with one more close
-          push)                 ;; otherwise, really done, return push
+      (if (empty? plushy)                                   ;; maybe we're done?
+        (if (some opener? push)                             ;; done with plushy, but unclosed open
+          (recur push '(close))                             ;; recur with one more close
+          push)                                             ;; otherwise, really done, return push
         (let [i (first plushy)]
           (if (= i 'close)
-            (if (some opener? push) ;; process a close when there's an open
+            (if (some opener? push)                         ;; process a close when there's an open
               (recur (let [post-open (reverse (take-while (comp not opener?)
                                                           (reverse push)))
                            open-index (- (count push) (count post-open) 1)
@@ -409,8 +409,8 @@
                          (concat pre-open [post-open])
                          (concat pre-open [post-open ['open (dec num-open)]])))
                      (rest plushy))
-              (recur push (rest plushy))) ;; unmatched close, ignore
-            (recur (concat push [i]) (rest plushy)))))))) ;; anything else
+              (recur push (rest plushy)))                   ;; unmatched close, ignore
+            (recur (concat push [i]) (rest plushy))))))))   ;; anything else
 
 ;;;;;;;;;
 ;; GP
@@ -513,7 +513,7 @@
   "Main GP loop."
   [{:keys [population-size max-generations error-function instructions
            max-initial-plushy-size]
-    :as argmap}]
+    :as   argmap}]
   (println "Starting GP with args:" argmap)
   (loop [generation 0
          population (repeatedly
@@ -563,17 +563,17 @@
 
 
 (defn run-fire [fire-string]
-    (loop [current-grid (initial-fire-grid fire-string)
-           time 0 ]
-        (if (> time 1440)
-          (recur
-            (update-grid current-grid time fire-string)
-            (inc time))
-          (update-grid current-grid time fire-string)
-          )))
+  (loop [current-grid (initial-fire-grid fire-string)
+         time 0]
+    (if (> time 1440)
+      (recur
+        (update-grid current-grid time fire-string)
+        (inc time))
+      (update-grid current-grid time fire-string)
+      )))
 
 
-  ;update each fire gird from one time step to the next
+;update each fire gird from one time step to the next
 (defn update-grid [current-grid time fire-string]
   (fn [input]
     (peek-stack
@@ -615,12 +615,12 @@
   ;;Returns the burning neighbors of a given cell
   [cell-id current-grid]
   (let [flat-grid (flatten current-grid)]
-  (if (= 1 (nth flat-grid (- cell-id 1))) (- cell-id 1))
-  (if (= 1 (nth flat-grid (+ cell-id 1))) (+ cell-id 1))
-  ))
+    (if (= 1 (nth flat-grid (- cell-id 1))) (- cell-id 1))
+    (if (= 1 (nth flat-grid (+ cell-id 1))) (+ cell-id 1))
+    ))
 
 (defn get-cell [cell-id]
- )
+  )
 
 (defn current-weather-var
   ;;Returns the value of a specified weather variable for a specified fire at a specified time.
@@ -643,176 +643,176 @@
 (defn update-cell
   ;;Update cell to next state by interpreting push program
   [cell-id fire time current-state]
-    (peek-stack
-      (interpret-program
-        program
-        (assoc empty-push-state :input {:elevation (elevation-at-cell cell-id fire)
-                                        :slope (slope-at-cell cell-id fire)
-                                        :FWI (current-weather-var "FWI" fire time)
-                                        :WS (current-weather-var "WS" fire time)
-                                        :FFMC (current-weather-var "FFMC" fire time)
-                                        :TMP (current-weather-var "TMP" fire time)
-                                        :APCP (current-weather-var "APCP" fire time)
-                                        :DC (current-weather-var "DC" fire time)
-                                        :BUI (current-weather-var "BUI" fire time)
-                                        :RH (current-weather-var "RH" fire time)
-                                        :ISI (current-weather-var "ISI" fire time)
-                                        :DMC (current-weather-var "DMC" fire time)
-                                        :WD (current-weather-var "WD" fire time)
-                                        :canBurn (check-fuel cell-id fire)
-                                        ;;add canBurn functionality
-                                        :current-state current-state
-                                        })
-        (:step-limit argmap))
-      :integer))
+  (peek-stack
+    (interpret-program
+      program
+      (assoc empty-push-state :input {:elevation     (elevation-at-cell cell-id fire)
+                                      :slope         (slope-at-cell cell-id fire)
+                                      :FWI           (current-weather-var "FWI" fire time)
+                                      :WS            (current-weather-var "WS" fire time)
+                                      :FFMC          (current-weather-var "FFMC" fire time)
+                                      :TMP           (current-weather-var "TMP" fire time)
+                                      :APCP          (current-weather-var "APCP" fire time)
+                                      :DC            (current-weather-var "DC" fire time)
+                                      :BUI           (current-weather-var "BUI" fire time)
+                                      :RH            (current-weather-var "RH" fire time)
+                                      :ISI           (current-weather-var "ISI" fire time)
+                                      :DMC           (current-weather-var "DMC" fire time)
+                                      :WD            (current-weather-var "WD" fire time)
+                                      :canBurn       (check-fuel cell-id fire)
+                                      ;;add canBurn functionality
+                                      :current-state current-state
+                                      })
+      (:step-limit argmap))
+    :integer))
 
 ;;;  END ISAAC ;;;;;;;;;;;;;;;;;;;
 
 
 
 
-        (defn fire-error-function
-          "Error is 0 if the value and the program's selected behavior match, or 1 if they differ, or 1000000 if no behavior is produced. The behavior is here defined as the final top item on the :boolean stack."
-          [argmap individual]
-          (let [program (push-from-plushy (:plushy individual))
-                inputs conway-inputs
-                correct-outputs (map get-correct-fire-scar inputs) ;;g
-                outputs (map (run-fire %) inputs)
-                errors (map (fn [correct-output output] ;;implement lexicase selection here I think??? Might already be implemented
-                              (if (= output :no-stack-item)
-                                1000000
-                                (if (= correct-output output)
-                                  0
-                                  1)))
-                            correct-outputs
-                            outputs)]
-            (assoc individual
-              :behaviors outputs
-              :errors errors
-              :total-error (apply +' errors))))
+(defn fire-error-function
+  "Error is 0 if the value and the program's selected behavior match, or 1 if they differ, or 1000000 if no behavior is produced. The behavior is here defined as the final top item on the :boolean stack."
+  [argmap individual]
+  (let [program (push-from-plushy (:plushy individual))
+        inputs conway-inputs
+        correct-outputs (map get-correct-fire-scar inputs)  ;;g
+        outputs (map (run-fire %) inputs)
+        errors (map (fn [correct-output output]             ;;implement lexicase selection here I think??? Might already be implemented
+                      (if (= output :no-stack-item)
+                        1000000
+                        (if (= correct-output output)
+                          0
+                          1)))
+                    correct-outputs
+                    outputs)]
+    (assoc individual
+      :behaviors outputs
+      :errors errors
+      :total-error (apply +' errors))))
 
-        ;;;;;;;;;
-        ;; String classification
+;;;;;;;;;
+;; String classification
 
-        (defn string-classification-error-function
-          "Finds the behaviors and errors of an individual: Error is 0 if the value and the program's selected behavior match, or 1 if they differ, or 1000000 if no behavior is produced. The behavior is here defined as the final top item on the :boolean stack."
-          [argmap individual]
-          (let [program (push-from-plushy (:plushy individual))
-                inputs ["GCG" "GACAG" "AGAAG" "CCCA" "GATTACA" "TAGG" "GACT"]
-                correct-outputs [false false false false true true true]
-                outputs (map (fn [input]
-                               (peek-stack
-                                 (interpret-program
-                                   program
-                                   (assoc empty-push-state :input {:in1 input})
-                                   (:step-limit argmap))
-                                 :boolean))
-                             inputs)
-                errors (map (fn [correct-output output]
-                              (if (= output :no-stack-item)
-                                1000000
-                                (if (= correct-output output)
-                                  0
-                                  1)))
-                            correct-outputs
-                            outputs)]
-            (assoc individual
-              :behaviors outputs
-              :errors errors
-              :total-error (apply +' errors))))
+(defn string-classification-error-function
+  "Finds the behaviors and errors of an individual: Error is 0 if the value and the program's selected behavior match, or 1 if they differ, or 1000000 if no behavior is produced. The behavior is here defined as the final top item on the :boolean stack."
+  [argmap individual]
+  (let [program (push-from-plushy (:plushy individual))
+        inputs ["GCG" "GACAG" "AGAAG" "CCCA" "GATTACA" "TAGG" "GACT"]
+        correct-outputs [false false false false true true true]
+        outputs (map (fn [input]
+                       (peek-stack
+                         (interpret-program
+                           program
+                           (assoc empty-push-state :input {:in1 input})
+                           (:step-limit argmap))
+                         :boolean))
+                     inputs)
+        errors (map (fn [correct-output output]
+                      (if (= output :no-stack-item)
+                        1000000
+                        (if (= correct-output output)
+                          0
+                          1)))
+                    correct-outputs
+                    outputs)]
+    (assoc individual
+      :behaviors outputs
+      :errors errors
+      :total-error (apply +' errors))))
 
-        #_(propel-gp {:instructions conway-instructions
-                      :error-function conway-error-function
-                      :max-generations 500
-                      :population-size 50
-                      :max-initial-plushy-size 50
-                      :step-limit 100
-                      :parent-selection :lexicase
-                      :tournament-size 5})
-
-
-
-        ;;CONWAYS Game of life BELOW
-        (def size 10)
-
-        (defn random-world []
-          (repeatedly size
-                      (fn []
-                        (repeatedly size #(rand-nth ["0" "1"])))))
-
-        (def random-desired-output (random-world))
-
-        (defn print-world [world]
-          (println "-----")
-          (doseq [row world]
-            (println row)))
-
-        (defn live-neighbors [world x y]
-          (reduce + (for [i [-1 0 1]
-                          j [-1 0 1]]
-                      (if (= i j 0)
-                        0
-                        (if (= "1" (nth (nth world (mod (+ x i) size))
-                                        (mod (+ y j) size)))
-                          1
-                          0)))))
-
-        (defn step-forward [world]
-          (for [x (range size)]
-            (for [y (range size)]
-              (let [neigh (live-neighbors world x y)]
-                (if (= " " (nth (nth world x) y))
-                  (if (= neigh 3) "1" "0")
-                  (if (<= 2 neigh 3) "1" "0"))))))
-
-        (defn life [steps]
-          (loop [world (random-world)
-                 step 0]
-            (print-world world)
-            (if (>= step steps)
-              :done
-              (recur (step-forward world)
-                     (inc step)))))
+#_(propel-gp {:instructions            conway-instructions
+              :error-function          conway-error-function
+              :max-generations         500
+              :population-size         50
+              :max-initial-plushy-size 50
+              :step-limit              100
+              :parent-selection        :lexicase
+              :tournament-size         5})
 
 
-        ;; Evaluate the following to run the game, starting with a random world,
-        ;; for 50 steps:
-        ;;
-        #_(life 20)
+
+;;CONWAYS Game of life BELOW
+(def size 10)
+
+(defn random-world []
+  (repeatedly size
+              (fn []
+                (repeatedly size #(rand-nth ["0" "1"])))))
+
+(def random-desired-output (random-world))
+
+(defn print-world [world]
+  (println "-----")
+  (doseq [row world]
+    (println row)))
+
+(defn live-neighbors [world x y]
+  (reduce + (for [i [-1 0 1]
+                  j [-1 0 1]]
+              (if (= i j 0)
+                0
+                (if (= "1" (nth (nth world (mod (+ x i) size))
+                                (mod (+ y j) size)))
+                  1
+                  0)))))
+
+(defn step-forward [world]
+  (for [x (range size)]
+    (for [y (range size)]
+      (let [neigh (live-neighbors world x y)]
+        (if (= " " (nth (nth world x) y))
+          (if (= neigh 3) "1" "0")
+          (if (<= 2 neigh 3) "1" "0"))))))
+
+(defn life [steps]
+  (loop [world (random-world)
+         step 0]
+    (print-world world)
+    (if (>= step steps)
+      :done
+      (recur (step-forward world)
+             (inc step)))))
 
 
-        ;;my data methods
-        (defn build-data [world]
-          (partition 9
-                     (flatten
-                       (for [x (range size)]
-                         (for [y (range size)]
-                           (get-input-data world x y))))))
+;; Evaluate the following to run the game, starting with a random world,
+;; for 50 steps:
+;;
+#_(life 20)
 
 
-        (defn build-individual [world x y ]
-          (let [world-2 (step-forward world)]
-            ;(print-world world)
-            ;(print-world world-2)
-            (concat
-              (get-input-data world x y) (get-output-data world-2 x y))))
-
-        #_(build-individual (random-world) 1 1)
-
-        (defn get-output-data [world x y]
-          (if (= "1" (nth (nth world x) y))
-            '(1)
-            '(0)))
-        #_(get-output-data (random-world) 1 1)
-
-        #_(get-input-data (random-world) 1 1)
-        (defn get-input-data [world x y]
-          (for [i [-1 0 1]
-                j [-1 0 1]]
-            (if (= "1" (nth (nth world (mod (+ x i) size))
-                            (mod (+ y j) size)))
-              1
-              0)))
+;;my data methods
+(defn build-data [world]
+  (partition 9
+             (flatten
+               (for [x (range size)]
+                 (for [y (range size)]
+                   (get-input-data world x y))))))
 
 
-        (def conway-inputs (build-data (random-world)))
+(defn build-individual [world x y]
+  (let [world-2 (step-forward world)]
+    ;(print-world world)
+    ;(print-world world-2)
+    (concat
+      (get-input-data world x y) (get-output-data world-2 x y))))
+
+#_(build-individual (random-world) 1 1)
+
+(defn get-output-data [world x y]
+  (if (= "1" (nth (nth world x) y))
+    '(1)
+    '(0)))
+#_(get-output-data (random-world) 1 1)
+
+#_(get-input-data (random-world) 1 1)
+(defn get-input-data [world x y]
+  (for [i [-1 0 1]
+        j [-1 0 1]]
+    (if (= "1" (nth (nth world (mod (+ x i) size))
+                    (mod (+ y j) size)))
+      1
+      0)))
+
+
+(def conway-inputs (build-data (random-world)))
