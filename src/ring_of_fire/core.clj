@@ -641,29 +641,41 @@
 
 (defn update-cell
   ;;Update cell to next state by interpreting push program
-  [cell-id fire time current-state]
-  (peek-stack
-    (interpret-program
-      program
-      (assoc empty-push-state :input {:elevation     (elevation-at-cell cell-id fire)
-                                      :slope         (slope-at-cell cell-id fire)
-                                      :FWI           (current-weather-var "FWI" fire time)
-                                      :WS            (current-weather-var "WS" fire time)
-                                      :FFMC          (current-weather-var "FFMC" fire time)
-                                      :TMP           (current-weather-var "TMP" fire time)
-                                      :APCP          (current-weather-var "APCP" fire time)
-                                      :DC            (current-weather-var "DC" fire time)
-                                      :BUI           (current-weather-var "BUI" fire time)
-                                      :RH            (current-weather-var "RH" fire time)
-                                      :ISI           (current-weather-var "ISI" fire time)
-                                      :DMC           (current-weather-var "DMC" fire time)
-                                      :WD            (current-weather-var "WD" fire time)
-                                      :canBurn       (check-fuel cell-id fire)
-                                      ;;add canBurn functionality
-                                      :current-state current-state
-                                      })
-      (:step-limit argmap))
-    :integer))
+  [cell-id fire time current-state program]
+  (let [answer (peek-stack
+                 (interpret-program
+                   program
+                   (assoc empty-push-state :input {:elevation     (elevation-at-cell cell-id fire) ;;make integer
+                                                   :slope         (slope-at-cell cell-id fire)
+                                                   :FWI           (current-weather-var "FWI" fire time)
+                                                   :WS            (current-weather-var "WS" fire time)
+                                                   :FFMC          (current-weather-var "FFMC" fire time)
+                                                   :TMP           (current-weather-var "TMP" fire time)
+                                                   :APCP          (current-weather-var "APCP" fire time)
+                                                   :DC            (current-weather-var "DC" fire time)
+                                                   :BUI           (current-weather-var "BUI" fire time)
+                                                   :RH            (current-weather-var "RH" fire time)
+                                                   :ISI           (current-weather-var "ISI" fire time)
+                                                   :DMC           (current-weather-var "DMC" fire time)
+                                                   :WD            (current-weather-var "WD" fire time)
+                                                   :canBurn       (check-fuel cell-id fire)
+                                                   ;;add canBurn functionality
+                                                   :current-state current-state
+                                                   :nw            0
+                                                   :n             0
+                                                   :ne            0
+                                                   :e             0
+                                                   :w             0
+                                                   :sw            0
+                                                   :s             0
+                                                   :se            0
+
+                                                   })
+                   (:step-limit argmap))
+                 :integer)]
+    (if (= answer :no-stack-item)
+      current-state
+      (mod answer 3))))
 
 ;;;  END ISAAC ;;;;;;;;;;;;;;;;;;;
 
