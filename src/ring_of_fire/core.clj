@@ -358,7 +358,7 @@
                ;; or it has at least one burning neighbor (burning = 1)
                ;; and is a burnable cell (according to fuel-master)
                (if (or (= (nth (flatten fire-grid) i) 1)
-                       (and (>= (num-burning-neighbors fire-grid i) 1) (= 0 (nth (flatten ((keyword (name fire-name)) fuel-master)) i))))
+                       (and (>= (num-burning-neighbors i fire-grid) 1) (= 0 (nth (flatten ((keyword (name fire-name)) fuel-master)) i))))
                  ;; if true then update cell
                  (update-cell i fire-name time fire-grid program argmap)
                  ;; else just return current value
@@ -390,15 +390,15 @@
                                                    :WD                (get-current-weather-var "WD" fire-name time)
                                                    :current-value     (nth (flatten current-grid) cell-id)
                                                    :time              time
-                                                   :nw                0
-                                                   :n                 0
-                                                   :ne                0
-                                                   :e                 0
-                                                   :w                 0
-                                                   :sw                0
-                                                   :s                 0
-                                                   :se                0
-                                                   :num-neigh-burning (num-burning-neighbors current-grid cell-id)
+                                                   :nw                (:NW (get-burning-neighbors-map cell-id current-grid))
+                                                   :n                 (:N (get-burning-neighbors-map cell-id current-grid))
+                                                   :ne                (:NE (get-burning-neighbors-map cell-id current-grid))
+                                                   :e                 (:E (get-burning-neighbors-map cell-id current-grid))
+                                                   :w                 (:W (get-burning-neighbors-map cell-id current-grid))
+                                                   :sw                (:SW (get-burning-neighbors-map cell-id current-grid))
+                                                   :s                 (:S (get-burning-neighbors-map cell-id current-grid))
+                                                   :se                (:SE (get-burning-neighbors-map cell-id current-grid))
+                                                   :num-burning-neighbors (num-burning-neighbors cell-id current-grid)
                                                    })
                    ;; what is this????
                    (:step-limit argmap))
