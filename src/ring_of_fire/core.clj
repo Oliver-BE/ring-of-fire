@@ -49,6 +49,7 @@
                        :r2 revelstoke2-elevation
                        })
 
+;; note that arrowhead 2 slope is messed up
 (def slope-master {:a1 arrowhead1-slope
                    :a2 arrowhead2-slope
                    :k1 kootenay1-slope
