@@ -1,4 +1,4 @@
-(ns final-project.data-lookups
+(ns ring-of-fire.data
   (:use [clojure.repl])
   (:require [clojure.data.csv :as csv]
             [clojure.java.io :as io]
@@ -216,6 +216,18 @@
 ;; Master Data Dictionaries ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(def forest-master {:a1 arrowhead1-forest
+                    :a2 arrowhead2-forest
+                    :k1 kootenay1-forest
+                    :k2 kootenay2-forest
+                    :g1 glacier1-forest
+                    :g2 glacier2-forest
+                    :m1 mica1-forest
+                    :m2 mica2-forest
+                    :r1 revelstoke1-forest
+                    :r2 revelstoke2-forest
+                    })
+
 (def weather-master {:a1 arrowhead1-weather
                      :a2 arrowhead2-weather
                      :k1 kootenay1-weather
@@ -227,6 +239,7 @@
                      :r1 revelstoke1-weather
                      :r2 revelstoke2-weather
                      })
+
 (def elevation-master {:a1 arrowhead1-elevation
                        :a2 arrowhead2-elevation
                        :k1 kootenay1-elevation

@@ -4,10 +4,9 @@
             [clojure.java.io :as io]
             [ring-of-fire.data :refer :all]))
 
-#_(read-in-csv "data/Arrowhead/Fire1/FinalScarGrid.csv")
 
 
-
+;;;;;; OLD ERROR FUNCTION
 (defn error
   "Compares each cell in the two grids and finds the sum of differences between the two"
   [evolved-scar final-scar]
@@ -19,23 +18,14 @@
 #_(error arrowhead1-final-scar arrowhead1-final-scar)
 
 
-;;;;;;;;;;;;;;;;
-;; Test pairs ;;
-;;;;;;;;;;;;;;;;
 
-;; each fire has input (forest, ignition cell, elevation, slope, weather)
-;; matched with its output (final fire scar)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Spector Propel Code      ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(def test-pairs [[[arrowhead1-forest arrowhead1-ignition-cell arrowhead1-elevation arrowhead1-slope arrowhead1-weather] arrowhead1-final-scar]
-                 [[arrowhead2-forest arrowhead2-ignition-cell arrowhead2-elevation arrowhead2-slope arrowhead2-weather] arrowhead2-final-scar]
-                 [[kootenay1-forest kootenay1-ignition-cell kootenay1-elevation kootenay1-slope kootenay1-weather] kootenay1-final-scar]
-                 [[kootenay2-forest kootenay2-ignition-cell kootenay2-elevation kootenay2-slope kootenay2-weather] kootenay2-final-scar]
-                 [[glacier1-forest glacier1-ignition-cell glacier1-elevation glacier1-slope glacier1-weather] glacier1-final-scar]
-                 [[glacier2-forest glacier2-ignition-cell glacier2-elevation glacier2-slope glacier2-weather] glacier2-final-scar]
-                 [[mica1-forest mica1-ignition-cell mica1-elevation mica1-slope mica1-weather] mica1-final-scar]
-                 [[mica2-forest mica2-ignition-cell mica2-elevation mica2-slope mica2-weather] mica2-final-scar]
-                 [[revelstoke1-forest revelstoke1-ignition-cell revelstoke1-elevation revelstoke1-slope revelstoke1-weather] revelstoke1-final-scar]
-                 [[revelstoke2-forest revelstoke2-ignition-cell revelstoke2-elevation revelstoke2-slope revelstoke2-weather] revelstoke2-final-scar]])
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Variable definitions     ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (def example-push-state
   {:exec    '()
@@ -84,6 +74,8 @@
     1
     true
     false
+    ;; should we get rid of these ones here
+    ;; do we need to include any input variable we have as an instruction?
     ""
     "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     "A"
@@ -91,24 +83,12 @@
     "G"
     "T"))
 
-(def conway-instructions
-  (list
-    'exec_if
-    'boolean_and
-    'boolean_or
-    'boolean_not
-    'boolean_=
-    'close
-    0
-    1))
 
-
-(def opens                                                  ; number of blocks opened by instructions (default = 0)
+; number of blocks opened by instructions (default = 0)
+(def opens
   {'exec_dup 1
    'exec_if  2})
 
-;;;;;;;;;
-;; Utilities
 
 (def empty-push-state
   {:exec    '()
@@ -116,6 +96,11 @@
    :string  '()
    :boolean '()
    :input   {}})
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Helper functions      ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defn abs
   "Absolute value."
@@ -184,8 +169,14 @@
             new-state (:state args-pop-result)]
         (push-to-stack new-state return-stack result)))))
 
-;;;;;;;;;
-;; Instructions
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Instruction functions ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; we could probably condense these into one function where we push the state
+;; and the desired input [state input] and then do (name input (state)) instead
+;; of :input state
+
 
 (defn elevation
   "Pushes the input labeled :elevation on the inputs map onto the :exec stack."
@@ -347,8 +338,11 @@
   [state]
   (make-push-instruction state clojure.string/includes? [:string :string] :boolean))
 
-;;;;;;;;;
-;; Interpreter
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Interpreter functions   ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 
 (defn interpret-one-step
   "Takes a Push state and executes the next instruction on the exec stack."
@@ -412,8 +406,10 @@
               (recur push (rest plushy)))                   ;; unmatched close, ignore
             (recur (concat push [i]) (rest plushy))))))))   ;; anything else
 
-;;;;;;;;;
-;; GP
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Genetic program functions      ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defn make-random-plushy
   "Creates and returns a new plushy."
@@ -532,36 +528,32 @@
                      (repeatedly population-size
                                  #(new-individual evaluated-pop argmap)))))))
 
-;;;;;;;;;
 
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Spector example error functions ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(defn conway-target-function [input]
-  (let [UL (nth input 0)
-        UU (nth input 1)
-        UR (nth input 2)
-        LL (nth input 3)
-        prev (nth input 4)
-        RR (nth input 5)
-        DL (nth input 6)
-        DD (nth input 7)
-        DR (nth input 8)
-        live-neighbors (reduce + [UL UU UR LL RR DL DD DR])]
-    (if (= prev 1)                                          ;was previously alive
-      (if (or (= live-neighbors 2) (= live-neighbors 3))
-        1
-        0)
-      (if (= live-neighbors 3)
-        1
-        0))))
+(defn target-function-hard
+  "Target function: f(x) = 7x^2 - 20x + 13"
+  [x]
+  (+ (* 7 x x)
+     (* -20 x)
+     13))
 
+(defn target-function
+  "Target function: f(x) = x^3 + x + 3"
+  [x]
+  (+ (* x x x)
+     x
+     3))
 
 (defn regression-error-function
   "Finds the behaviors and errors of an individual: Error is the absolute deviation between the target output value and the program's selected behavior, or 1000000 if no behavior is produced. The behavior is here defined as the final top item on the :integer stack."
   [argmap individual]
   (let [program (push-from-plushy (:plushy individual))
-        inputs (repeatedly 50 (fn [] (repeatedly 9 #(rand-int 2))))
-        correct-outputs (map #(conway-target-function %) inputs)
+        inputs (range -10 11)
+        correct-outputs (map target-function inputs)
         outputs (map (fn [input]
                        (peek-stack
                          (interpret-program
@@ -582,24 +574,54 @@
       :total-error (apply +' errors))))
 
 
+;; String classification
 
-;;all the get methods
-(defn get-elevation-table [fire-string] ())
-(defn get-slope-table [fire-string] ())
+(defn string-classification-error-function
+  "Finds the behaviors and errors of an individual: Error is 0 if the value and the program's selected behavior match, or 1 if they differ, or 1000000 if no behavior is produced. The behavior is here defined as the final top item on the :boolean stack."
+  [argmap individual]
+  (let [program (push-from-plushy (:plushy individual))
+        inputs ["GCG" "GACAG" "AGAAG" "CCCA" "GATTACA" "TAGG" "GACT"]
+        correct-outputs [false false false false true true true]
+        outputs (map (fn [input]
+                       (peek-stack
+                         (interpret-program
+                           program
+                           (assoc empty-push-state :input {:in1 input})
+                           (:step-limit argmap))
+                         :boolean))
+                     inputs)
+        errors (map (fn [correct-output output]
+                      (if (= output :no-stack-item)
+                        1000000
+                        (if (= correct-output output)
+                          0
+                          1)))
+                    correct-outputs
+                    outputs)]
+    (assoc individual
+      :behaviors outputs
+      :errors errors
+      :total-error (apply +' errors))))
 
 
-;update each fire gird from one time step to the next
-(defn update-grid [all our variables]
-  (fn [input]
-    (peek-stack
-      (interpret-program
-        program
-        (assoc empty-push-state :input {:in1 input})
-        (:step-limit argmap))
-      :integer)))
 
-;;;BEGIN ISAAC ;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;
+;; Fire methods      ;;
+;;;;;;;;;;;;;;;;;;;;;;;
 
+
+;;(defn get-elevation-table [fire-string] ())
+;;(defn get-slope-table [fire-string] ())
+
+
+(defn construct-empty-grid
+  "Returns a vector of vectors filled with 0s with the same dimensions as the specified fire"
+  [fire-name]
+  (vec (repeat (count ((keyword (name fire-name)) elevation-master))
+               (vec (repeat (count (first ((keyword (name fire-name)) elevation-master))) 0)))))
+#_(construct-empty-grid "a1")
+
+;; make our initial worlds for each of the 10 fires
 (def empty-cell-grids {:a1 (construct-empty-grid "a1")
                        :a2 (construct-empty-grid "a2")
                        :k1 (construct-empty-grid "k1")
@@ -612,11 +634,19 @@
                        :r2 (construct-empty-grid "r2")
                        })
 
-(defn construct-empty-grid
-  "Returns a vector of vectors filled with 0s with the same dimensions as the specified fire"
-  [fire]
-  (vec (repeat (count ((keyword (name fire)) elevation-master))
-               (vec (repeat (count (first ((keyword (name fire)) elevation-master))) 0)))))
+;update each fire gird from one time step to the next
+(defn update-grid [all our variables]
+  "Updates a fire grid from one time step to the next"
+  (fn [input program]
+    (peek-stack
+      (interpret-program
+        program
+        (assoc empty-push-state :input {:in1 input})
+        (:step-limit argmap))
+      :integer)))
+
+
+
 
 (defn get-neighbors
   "Returns a sequence of sequences containing each neighbor's pertinent information"
@@ -638,19 +668,19 @@
 (defn current-weather-var
   "Returns the value of a specified weather variable for a specified fire at a specified time."
   [desired-var fire time]
-(read-string ((keyword (name desired-var)) (nth ((keyword (name fire)) weather-master) (Math/floor (/ time 60))))))
+  (read-string ((keyword (name desired-var)) (nth ((keyword (name fire)) weather-master) (Math/floor (/ time 60))))))
 #_(current-weather-var "FFMC" "a1" 54)
 
 (defn elevation-at-cell
   "Returns the elevation of a specified cell in a specified fire"
   [cell-id fire]
-(read-string (nth (flatten ((keyword (name fire)) elevation-master)) cell-id)))
+  (read-string (nth (flatten ((keyword (name fire)) elevation-master)) cell-id)))
 #_(elevation-at-cell 150 "r1")
 
 (defn slope-at-cell
   "Returns the elevation of a specified cell in a specified fire"
   [cell-id fire]
-(read-string (nth (flatten ((keyword (name fire)) slope-master)) cell-id)))
+  (read-string (nth (flatten ((keyword (name fire)) slope-master)) cell-id)))
 #_(slope-at-cell 150 "r1")
 
 (defn update-cell
@@ -690,7 +720,6 @@
       current-state
       (mod answer 3))))
 
-;;;END ISAAC ;;;;;;;;;;;;;;;;;;;
 
 (defn run-fire [fire-string]
   (let [elevation-table (get-elevation-table fire-string)
@@ -721,128 +750,34 @@
       :errors errors
       :total-error (apply +' errors))))
 
-;;;;;;;;;
-;; String classification
 
-(defn string-classification-error-function
-  "Finds the behaviors and errors of an individual: Error is 0 if the value and the program's selected behavior match, or 1 if they differ, or 1000000 if no behavior is produced. The behavior is here defined as the final top item on the :boolean stack."
-  [argmap individual]
-  (let [program (push-from-plushy (:plushy individual))
-        inputs ["GCG" "GACAG" "AGAAG" "CCCA" "GATTACA" "TAGG" "GACT"]
-        correct-outputs [false false false false true true true]
-        outputs (map (fn [input]
-                       (peek-stack
-                         (interpret-program
-                           program
-                           (assoc empty-push-state :input {:in1 input})
-                           (:step-limit argmap))
-                         :boolean))
-                     inputs)
-        errors (map (fn [correct-output output]
-                      (if (= output :no-stack-item)
-                        1000000
-                        (if (= correct-output output)
-                          0
-                          1)))
-                    correct-outputs
-                    outputs)]
-    (assoc individual
-      :behaviors outputs
-      :errors errors
-      :total-error (apply +' errors))))
 
-#_(propel-gp {:instructions            conway-instructions
-              :error-function          conway-error-function
-              :max-generations         500
-              :population-size         50
-              :max-initial-plushy-size 50
-              :step-limit              100
-              :parent-selection        :lexicase
-              :tournament-size         5})
+;;;;;;;;;;;;;;;;;;
+;; MAIN METHOD  ;;
+;;;;;;;;;;;;;;;;;;
+
+(defn -main
+  "Runs propel-gp, giving it a map of arguments."
+  [& args]
+  (binding [*ns* (the-ns 'propel.core)]
+    (propel-gp (update-in (merge {:instructions default-instructions
+                                  :error-function fire-error-function
+                                  :max-generations 500
+                                  :population-size 200
+                                  :max-initial-plushy-size 50
+                                  :step-limit 100
+                                  :parent-selection :lexicase
+                                  :tournament-size 5}
+                                 (apply hash-map
+                                        (map read-string args)))
+                          [:error-function]
+                          #(if (fn? %) % (eval %))))))
 
 
 
-;;CONWAYS Game of life BELOW
-(def size 10)
-
-(defn random-world []
-  (repeatedly size
-              (fn []
-                (repeatedly size #(rand-nth ["0" "1"])))))
-
-(def random-desired-output (random-world))
-
-(defn print-world [world]
-  (println "-----")
-  (doseq [row world]
-    (println row)))
-
-(defn live-neighbors [world x y]
-  (reduce + (for [i [-1 0 1]
-                  j [-1 0 1]]
-              (if (= i j 0)
-                0
-                (if (= "1" (nth (nth world (mod (+ x i) size))
-                                (mod (+ y j) size)))
-                  1
-                  0)))))
-
-(defn step-forward [world]
-  (for [x (range size)]
-    (for [y (range size)]
-      (let [neigh (live-neighbors world x y)]
-        (if (= " " (nth (nth world x) y))
-          (if (= neigh 3) "1" "0")
-          (if (<= 2 neigh 3) "1" "0"))))))
-
-(defn life [steps]
-  (loop [world (random-world)
-         step 0]
-    (print-world world)
-    (if (>= step steps)
-      :done
-      (recur (step-forward world)
-             (inc step)))))
 
 
-;; Evaluate the following to run the game, starting with a random world,
-;; for 50 steps:
-;;
-#_(life 20)
 
 
-;;my data methods
-(defn build-data [world]
-  (partition 9
-             (flatten
-               (for [x (range size)]
-                 (for [y (range size)]
-                   (get-input-data world x y))))))
 
 
-(defn build-individual [world x y]
-  (let [world-2 (step-forward world)]
-    ;(print-world world)
-    ;(print-world world-2)
-    (concat
-      (get-input-data world x y) (get-output-data world-2 x y))))
-
-#_(build-individual (random-world) 1 1)
-
-(defn get-output-data [world x y]
-  (if (= "1" (nth (nth world x) y))
-    '(1)
-    '(0)))
-#_(get-output-data (random-world) 1 1)
-
-#_(get-input-data (random-world) 1 1)
-(defn get-input-data [world x y]
-  (for [i [-1 0 1]
-        j [-1 0 1]]
-    (if (= "1" (nth (nth world (mod (+ x i) size))
-                    (mod (+ y j) size)))
-      1
-      0)))
-
-
-(def conway-inputs (build-data (random-world)))
