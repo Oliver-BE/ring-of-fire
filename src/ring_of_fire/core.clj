@@ -144,6 +144,8 @@
   (vec (repeat (count ((keyword (name fire-name)) elevation-master))
                (vec (repeat (count (first ((keyword (name fire-name)) elevation-master))) 0)))))
 
+;; note that we're not certain if ignition cell is 0 indexed or not
+;; (do we need to subtract 1?)
 (defn construct-initial-grid
   "Returns initial grid with a 1 where the ignition cell is"
   [fire-name]
@@ -171,25 +173,66 @@
                          })
 #_(:m1 initial-fire-grids)
 
+;; make our initial worlds for each of the 10 fires
+(def fire-names ["a1", "a2", "k1", "k2", "g1", "g2", "m1", "m2", "r1", "r2"])
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Helper functions    ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; need to fix
-(defn get-neighbors
-  "Returns a sequence of sequences containing each neighbor's pertinent information"
-  [cell-id fire current-grid]
-  (vec (burning-neighbors cell-id current-grid))
-  )
+;;; fire neighbors functions
+(def test-neighbors '((0 0 0) (1 1 1) (1 0 1)))
+
+(defn get-burning-neighbors-map
+  "Returns a map of neighbors and their associated values. Value in map 0 if out of bounds."
+  [cell-id fire-grid]
+  (let [height (count fire-grid)
+        width (count (nth fire-grid 1))
+        x (mod cell-id width)
+        y (Math/floor (/ cell-id width))
+        return-map
+        (for [input [["NW" -1 -1] ["N" -1 0] ["NE" -1 1] ["E" 0 -1] ["W" 0 1] ["SW" 1 -1] ["S" 1 0] ["SE" 1 1]]]
+          (let [direction (nth input 0)
+                j (nth input 1)
+                i (nth input 2)]
+            (assoc return-map (keyword direction) (safe-get-cell fire-grid (+ x i) (+ y j)))))]
+    (apply conj return-map)))
+
+(defn num-burning-neighbors
+  "Gets total num of burning neighbors"
+  [cell-id fire-grid]
+  (reduce + (vals (conj (get-burning-neighbors-map cell-id fire-grid)))))
+
+(defn get-burning-neighbor
+  "Calls burning neighbors map and retrieves specific neighbor"
+  [cell-id fire-grid neighbor-direction]
+  ((keyword neighbor-direction) (get-burning-neighbors-map cell-id fire-grid)))
+
+(defn safe-get-cell
+  "Returns the value of a cell if inbounds, returns 0 if out of bounds"
+  [fire-grid i j]
+  (let [height (count fire-grid)
+        width (count (nth fire-grid 1))]
+    (if (and (>= j 0) (< j width) (>= i 0) (< i height))
+      (nth (nth fire-grid j) i)                             ;; in bounds so return the value
+      0                                                     ;; out of bounds so return zero
+      )))
 
 ;; need to fix
-(defn burning-neighbors
-  "Returns the burning neighbors of a given cell"
-  [cell-id current-grid]
-  (let [flat-grid (flatten current-grid)]
-    (if (= 1 (nth flat-grid (- cell-id 1))) (- cell-id 1))
-    (if (= 1 (nth flat-grid (+ cell-id 1))) (+ cell-id 1))
-    ))
+;(defn get-neighbors
+;  "Returns a sequence of sequences containing each neighbor's pertinent information"
+;  [cell-id fire current-grid]
+;  (vec (burning-neighbors cell-id current-grid))
+;  )
+
+;; need to fix
+;(defn burning-neighbors
+;  "Returns the burning neighbors of a given cell"
+;  [cell-id current-grid]
+;  (let [flat-grid (flatten current-grid)]
+;    (if (= 1 (nth flat-grid (- cell-id 1))) (- cell-id 1))
+;    (if (= 1 (nth flat-grid (+ cell-id 1))) (+ cell-id 1))
+;    ))
 
 
 (defn get-current-weather-var
@@ -218,13 +261,19 @@
 ;; fire error function (calls run fire)  ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; how do argmap and individual get passed in???
 (defn fire-error-function
-  "Error is 0 if the value and the program's selected behavior match, or 1 if they differ, or 1000000 if no behavior is produced. The behavior is here defined as the final top item on the :boolean stack."
+  "Error is 0 if the value and the program's selected behavior match,
+   or 1 if they differ, or 1000000 if no behavior is produced.
+   The behavior is here defined as the final top item on the :boolean stack."
   [argmap individual]
   (let [program (push-from-plushy (:plushy individual))
-        inputs conway-inputs
-        correct-outputs (map get-correct-fire-scar inputs)  ;;g
-        outputs (map (run-fire %) inputs)
+        ;; a vector containing each fire name as a string is our inputs
+        inputs fire-names
+        ;; correct output is each
+        correct-outputs (map #((keyword (name %) final-scar-grid-master)) inputs)
+        ;; run each fire through our run-fire function with the given program
+        outputs (map #(run-fire % argmap program) inputs)
         errors (map (fn [correct-output output]             ;;implement lexicase selection here I think??? Might already be implemented
                       (if (= output :no-stack-item)
                         1000000
@@ -238,116 +287,119 @@
       :errors errors
       :total-error (apply +' errors))))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; run fire function (calls update grid) ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defn testpl [fire-names]
+  (#((keyword (name %) final-scar-grid-master)) (take 1 fire-names))
 
-(defn run-fire
-  "Runs a specified fire all the way through and returns
-  a final fire scar to be compared with actual fire scar"
-  [fire-name program argmap]
-  (loop [grid ((keyword (name fire-name) initial-fire-grids))
-         time 0]
-    (if (> time 1440)
-      ;; if time is up return fire-scar
-      grid
-      ;; otherwise update our grid and increment time
-      (recur (update-grid grid fire-name time program argmap)
-             (inc time)))))
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;; run fire function (calls update grid) ;;
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; update grid function (calls update cell) ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  (defn run-fire
+    "Runs a specified fire all the way through and returns
+    a final fire scar to be compared with actual fire scar"
+    [fire-name program argmap]
+    (loop [grid ((keyword (name fire-name) initial-fire-grids))
+           time 0]
+      (if (> time 1440)
+        ;; if time is up return fire-scar
+        grid
+        ;; otherwise update our grid and increment time
+        (recur (update-grid grid fire-name time program argmap)
+               (inc time)))))
 
-;; add functionality so we only update cells that are burning
-;; or having at least one burning neighbor and that they are not
-;; non-fuel cells (use fuel-master to check this)
-;; in general:
-;; 0 means unburned, 1 means burning, 2 means burned
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;; update grid function (calls update cell) ;;
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; before testing needs num-burning-neighbors
-;; as well as update-cell
+  ;; add functionality so we only update cells that are burning
+  ;; or having at least one burning neighbor and that they are not
+  ;; non-fuel cells (use fuel-master to check this)
+  ;; in general:
+  ;; 0 means unburned, 1 means burning, 2 means burned
 
-(defn update-grid
-  "Updates a fire grid from one time step to the next"
-  [fire-grid fire-name time program argmap]
-  ;; turns flattened vector back into a grid
-  (partition (num-columns fire-name)
-             ;; returns a flattened vector of all cell values
-             (for [i (range (count (flatten fire-grid)))]
-               ;; only update cell if it's burning
-               ;; or it has at least one burning neighbor (burning = 1)
-               ;; and is a burnable cell (according to fuel-master)
-               (if (or (= (nth (flatten fire-grid) i) 1)
-                       (and (>= (num-burning-neighbors fire-grid i) 1) (= 0 (nth (flatten ((keyword (name fire-name)) fuel-master)) i))))
-                 ;; if true then update cell
-                 (update-cell i fire-name time fire-grid program argmap)
-                 ;; else just return current value
-                 (nth (flatten fire-grid) i)))))
+  ;; before testing needs num-burning-neighbors
+  ;; as well as update-cell
+
+  (defn update-grid
+    "Updates a fire grid from one time step to the next"
+    [fire-grid fire-name time program argmap]
+    ;; turns flattened vector back into a grid
+    (partition (num-columns fire-name)
+               ;; returns a flattened vector of all cell values
+               (for [i (range (count (flatten fire-grid)))]
+                 ;; only update cell if it's burning
+                 ;; or it has at least one burning neighbor (burning = 1)
+                 ;; and is a burnable cell (according to fuel-master)
+                 (if (or (= (nth (flatten fire-grid) i) 1)
+                         (and (>= (num-burning-neighbors fire-grid i) 1) (= 0 (nth (flatten ((keyword (name fire-name)) fuel-master)) i))))
+                   ;; if true then update cell
+                   (update-cell i fire-name time fire-grid program argmap)
+                   ;; else just return current value
+                   (nth (flatten fire-grid) i)))))
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; update cell function ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;; update cell function ;;
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(defn update-cell
-  "Update cell to next state by interpreting push program"
-  [cell-id fire-name time current-grid program argmap]
-  (let [answer (peek-stack
-                 (interpret-program
-                   program
-                   (assoc empty-push-state :input {:elevation         (get-elevation-at-cell cell-id fire-name)
-                                                   :slope             (get-slope-at-cell cell-id fire-name)
-                                                   :FWI               (get-current-weather-var "FWI" fire-name time)
-                                                   :WS                (get-current-weather-var "WS" fire-name time)
-                                                   :FFMC              (get-current-weather-var "FFMC" fire-name time)
-                                                   :TMP               (get-current-weather-var "TMP" fire-name time)
-                                                   :APCP              (get-current-weather-var "APCP" fire-name time)
-                                                   :DC                (get-current-weather-var "DC" fire-name time)
-                                                   :BUI               (get-current-weather-var "BUI" fire-name time)
-                                                   :RH                (get-current-weather-var "RH" fire-name time)
-                                                   :ISI               (get-current-weather-var "ISI" fire-name time)
-                                                   :DMC               (get-current-weather-var "DMC" fire-name time)
-                                                   :WD                (get-current-weather-var "WD" fire-name time)
-                                                   :current-value     (nth (flatten current-grid) cell-id)
-                                                   :time              time
-                                                   :nw                0
-                                                   :n                 0
-                                                   :ne                0
-                                                   :e                 0
-                                                   :w                 0
-                                                   :sw                0
-                                                   :s                 0
-                                                   :se                0
-                                                   :num-neigh-burning (num-burning-neighbors current-grid cell-id)
-                                                   })
-                   ;; what is this????
-                   (:step-limit argmap))
-                 :integer)]
-    (if (= answer :no-stack-item)
-      ;; this is simply the cells original value that was initially passed in
-      ;; (see :current-value above)
-      (nth (flatten current-grid) cell-id)
-      (mod answer 3))))
+  (defn update-cell
+    "Update cell to next state by interpreting push program"
+    [cell-id fire-name time current-grid program argmap]
+    (let [answer (peek-stack
+                   (interpret-program
+                     program
+                     (assoc empty-push-state :input {:elevation         (get-elevation-at-cell cell-id fire-name)
+                                                     :slope             (get-slope-at-cell cell-id fire-name)
+                                                     :FWI               (get-current-weather-var "FWI" fire-name time)
+                                                     :WS                (get-current-weather-var "WS" fire-name time)
+                                                     :FFMC              (get-current-weather-var "FFMC" fire-name time)
+                                                     :TMP               (get-current-weather-var "TMP" fire-name time)
+                                                     :APCP              (get-current-weather-var "APCP" fire-name time)
+                                                     :DC                (get-current-weather-var "DC" fire-name time)
+                                                     :BUI               (get-current-weather-var "BUI" fire-name time)
+                                                     :RH                (get-current-weather-var "RH" fire-name time)
+                                                     :ISI               (get-current-weather-var "ISI" fire-name time)
+                                                     :DMC               (get-current-weather-var "DMC" fire-name time)
+                                                     :WD                (get-current-weather-var "WD" fire-name time)
+                                                     :current-value     (nth (flatten current-grid) cell-id)
+                                                     :time              time
+                                                     :nw                0
+                                                     :n                 0
+                                                     :ne                0
+                                                     :e                 0
+                                                     :w                 0
+                                                     :sw                0
+                                                     :s                 0
+                                                     :se                0
+                                                     :num-neigh-burning (num-burning-neighbors current-grid cell-id)
+                                                     })
+                     ;; what is this????
+                     (:step-limit argmap))
+                   :integer)]
+      (if (= answer :no-stack-item)
+        ;; this is simply the cells original value that was initially passed in
+        ;; (see :current-value above)
+        (nth (flatten current-grid) cell-id)
+        (mod answer 3))))
 
-;;;;;;;;;;;;;;;;;;
-;; MAIN METHOD  ;;
-;;;;;;;;;;;;;;;;;;
+  ;;;;;;;;;;;;;;;;;;
+  ;; MAIN METHOD  ;;
+  ;;;;;;;;;;;;;;;;;;
 
-(defn -main
-  "Runs propel-gp, giving it a map of arguments."
-  [& args]
-  (binding [*ns* (the-ns 'ring-of-fire.core)]
-    (propel-gp (update-in (merge {:instructions            default-instructions
-                                  :error-function          fire-error-function
-                                  :max-generations         500
-                                  :population-size         200
-                                  :max-initial-plushy-size 50
-                                  :step-limit              100
-                                  :parent-selection        :lexicase
-                                  :tournament-size         5}
-                                 (apply hash-map
-                                        (map read-string args)))
-                          [:error-function]
-                          #(if (fn? %) % (eval %))))))
+  (defn -main
+    "Runs propel-gp, giving it a map of arguments."
+    [& args]
+    (binding [*ns* (the-ns 'ring-of-fire.core)]
+      (propel-gp (update-in (merge {:instructions            default-instructions
+                                    :error-function          fire-error-function
+                                    :max-generations         500
+                                    :population-size         200
+                                    :max-initial-plushy-size 50
+                                    :step-limit              100
+                                    :parent-selection        :lexicase
+                                    :tournament-size         5}
+                                   (apply hash-map
+                                          (map read-string args)))
+                            [:error-function]
+                            #(if (fn? %) % (eval %))))))
 
