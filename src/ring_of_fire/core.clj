@@ -104,18 +104,20 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defn num-rows
-  "Returns the number of rows of a vector of vectors"
-  [grid]
-  (count grid))
-#_(num-rows (:m1 empty-cell-grids))
+  "Returns the number of rows of a vector of vectors
+  given a fire name"
+  [fire-name]
+  (count ((keyword (name fire-name)) final-scar-grid-master)))
+#_(num-rows "m1")
 #_(num-rows mica1-forest)
 #_(num-rows mica1-elevation)
 
 (defn num-columns
-  "Returns the number of rows of a vector of vectors"
-  [grid]
-  (count (nth grid 0)))
-#_(num-columns (:m1 empty-cell-grids))
+  "Returns the number of rows of a vector of vectors
+  given a fire name"
+  [fire-name]
+  (count (nth ((keyword (name fire-name)) final-scar-grid-master) 0)))
+#_(num-columns "m1")
 #_(num-columns mica1-forest)
 #_(num-columns mica1-elevation)
 
@@ -127,7 +129,7 @@
   where 0 refers to non-fuel and 1 refers to burnable / fuel"
   [fire-name]
   (let [grid ((keyword (name fire-name)) forest-master)]
-    (partition (num-columns grid)
+    (partition (num-columns fire-name)
                (map #(if (and (>= % 100) (<= % 105))
                        (* 0 %)
                        (+ 1 (* 0 %))
@@ -149,20 +151,30 @@
   [fire-name]
   (vec (repeat (count ((keyword (name fire-name)) elevation-master))
                (vec (repeat (count (first ((keyword (name fire-name)) elevation-master))) 0)))))
+
+(defn construct-initial-grid
+  "Returns initial grid with a 1 where the ignition cell is"
+  [fire-name]
+  (let [height (num-rows fire-name)
+        ignition-cell ((keyword (name fire-name)) ignition-cell-master)]
+
+               )
+    )
+#_(:m1 ignition-cell-master)
 #_(construct-empty-grid "a1")
 
 ;; make our initial worlds for each of the 10 fires
-(def empty-cell-grids {:a1 (construct-empty-grid "a1")
-                       :a2 (construct-empty-grid "a2")
-                       :k1 (construct-empty-grid "k1")
-                       :k2 (construct-empty-grid "k2")
-                       :g1 (construct-empty-grid "g1")
-                       :g2 (construct-empty-grid "g2")
-                       :m1 (construct-empty-grid "m1")
-                       :m2 (construct-empty-grid "m2")
-                       :r1 (construct-empty-grid "r1")
-                       :r2 (construct-empty-grid "r2")
-                       })
+(def initial-cell-grids {:a1 (construct-initial-grid "a1")
+                         :a2 (construct-initial-grid "a2")
+                         :k1 (construct-initial-grid "k1")
+                         :k2 (construct-initial-grid "k2")
+                         :g1 (construct-initial-grid "g1")
+                         :g2 (construct-initial-grid "g2")
+                         :m1 (construct-initial-grid "m1")
+                         :m2 (construct-initial-grid "m2")
+                         :r1 (construct-initial-grid "r1")
+                         :r2 (construct-initial-grid "r2")
+                         })
 #_(:m1 empty-cell-grids)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -257,8 +269,8 @@
 
 (defn update-grid
   "Updates a fire grid from one time step to the next"
-  [fire-grid]
-  (partition (num-columns fire-grid)
+  [fire-grid fire-name]
+  (partition (num-columns fire-name)
              (map update-cell (flatten fire-grid))))
 
 
