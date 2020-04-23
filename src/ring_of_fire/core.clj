@@ -246,12 +246,14 @@
   "Runs a specified fire all the way through and returns
   a final fire scar to be compared with actual fire scar"
   [fire-name program argmap]
-  (let [elevation-table (get-elevation-table fire-string)
-        more-variables variables])
-  (loop
-    (if (;some condition)
-         ; break the loop so we know we are )
-         ('update-grid time)))))
+  (loop [grid ((keyword (name fire-name) initial-fire-grids))
+         time 0]
+    (if (> time 1440)
+      ;; if time is up return fire-scar
+      grid
+      ;; otherwise update our grid and increment time
+      (recur (update-grid grid fire-name time program argmap)
+             (inc time)))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; update grid function (calls update cell) ;;
