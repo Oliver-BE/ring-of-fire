@@ -190,12 +190,12 @@
         width (count (nth fire-grid 1))
         x (mod cell-id width)
         y (Math/floor (/ cell-id width))
-        return-map
-        (for [input [["NW" -1 -1] ["N" -1 0] ["NE" -1 1] ["E" 0 -1] ["W" 0 1] ["SW" 1 -1] ["S" 1 0] ["SE" 1 1]]]
-          (let [direction (nth input 0)
-                j (nth input 1)
-                i (nth input 2)]
-            (assoc return-map (keyword direction) (safe-get-cell fire-grid (+ x i) (+ y j)))))]
+        return-map (for
+                     [input [["NW" -1 -1] ["N" -1 0]["NE" -1 1]["E" 0 -1]["W" 0 1]["SW" 1 -1]["S" 1 0]["SE" 1 1]]]
+                     (let [direction (nth input 0)
+                           j (nth input 1)
+                           i (nth input 2)]
+                       (assoc {} (keyword direction) (safe-get-cell fire-grid (+ x i) (+ y j)))))]
     (apply conj return-map)))
 
 (defn num-burning-neighbors
