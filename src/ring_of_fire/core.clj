@@ -99,6 +99,9 @@
                              :r2 revelstoke2-final-scar
                              })
 
+; make our initial worlds for each of the 10 fires
+(def fire-names ["a1", "a2", "k1", "k2", "g1", "g2", "m1", "m2", "r1", "r2"])
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grid initialization functions   ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -173,15 +176,14 @@
                          })
 #_(:m1 initial-fire-grids)
 
-;; make our initial worlds for each of the 10 fires
-(def fire-names ["a1", "a2", "k1", "k2", "g1", "g2", "m1", "m2", "r1", "r2"])
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Helper functions    ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;; fire neighbors functions
-(def test-neighbors '((0 0 0) (1 1 1) (1 0 1)))
+(def test-neighbors '((0 0 0) (1 1 1) (2 0 1)))
 
 (defn get-burning-neighbors-map
   "Returns a map of neighbors and their associated values. Value in map 0 if out of bounds."
@@ -297,9 +299,9 @@
 (defn compare-grids
   "Compares each cell in the two grids and
    returns a vector of differences"
-  [evolved-scar final-scar]
+  [evolved-scars final-scars]
   (vec (map #(Math/abs (reduce - %))
-            (partition 2 (interleave (flatten evolved-scar) (flatten final-scar))))))
+            (partition 2 (interleave (flatten evolved-scars) (flatten final-scars))))))
 ;; this should have an error of 1 as only one value is different
 #_(compare-grids [[1 0 0] [0 0 1]] [[1 0 0] [0 1 1]])
 
@@ -400,9 +402,12 @@
                                                    :se                (:SE (get-burning-neighbors-map cell-id current-grid))
                                                    :num-burning-neighbors (num-burning-neighbors cell-id current-grid)
                                                    })
-                   ;; what is this????
+
                    (:step-limit argmap))
                  :integer)]
+
+    ;; get first thing off integer stack
+    ;; check for other types, we only went integers
     (if (= answer :no-stack-item)
       ;; this is simply the cells original value that was initially passed in
       ;; (see :current-value above)
