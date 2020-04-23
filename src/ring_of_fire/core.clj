@@ -171,16 +171,18 @@
                          })
 #_(:m1 initial-fire-grids)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; Helper functions   ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Helper functions    ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; need to fix
 (defn get-neighbors
   "Returns a sequence of sequences containing each neighbor's pertinent information"
   [cell-id fire current-grid]
   (vec (burning-neighbors cell-id current-grid))
   )
 
+;; need to fix
 (defn burning-neighbors
   "Returns the burning neighbors of a given cell"
   [cell-id current-grid]
@@ -189,7 +191,6 @@
     (if (= 1 (nth flat-grid (+ cell-id 1))) (+ cell-id 1))
     ))
 
-;;(defn get-cell [cell-id])
 
 (defn get-current-weather-var
   "Returns the value of a specified weather variable for a specified fire at a specified time."
@@ -208,8 +209,6 @@
   [cell-id fire]
   (read-string (nth (flatten ((keyword (name fire)) slope-master)) cell-id)))
 #_(get-slope-at-cell 150 "r1")
-
-;;function to get-is-fuel or not (used when updating grid)
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -243,7 +242,10 @@
 ;; run fire function (calls update grid) ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(defn run-fire [fire-string]
+(defn run-fire
+  "Runs a specified fire all the way through and returns
+  a final fire scar to be compared with actual fire scar"
+  [fire-name program argmap]
   (let [elevation-table (get-elevation-table fire-string)
         more-variables variables])
   (loop
@@ -261,11 +263,25 @@
 ;; in general:
 ;; 0 means unburned, 1 means burning, 2 means burned
 
+;; before testing needs num-burning-neighbors
+;; as well as update-cell
+
 (defn update-grid
   "Updates a fire grid from one time step to the next"
-  [fire-grid fire-name]
+  [fire-grid fire-name time program argmap]
+  ;; turns flattened vector back into a grid
   (partition (num-columns fire-name)
-             (map update-cell (flatten fire-grid))))
+             ;; returns a flattened vector of all cell values
+             (for [i (range (count (flatten fire-grid)))]
+               ;; only update cell if it's burning
+               ;; or it has at least one burning neighbor (burning = 1)
+               ;; and is a burnable cell (according to fuel-master)
+               (if (or (= (nth (flatten fire-grid) i) 1)
+                       (and (>= (num-burning-neighbors fire-grid i) 1) (= 0 (nth (flatten ((keyword (name fire-name)) fuel-master)) i))))
+                 ;; if true then update cell
+                 (update-cell i fire-name time fire-grid program argmap)
+                 ;; else just return current value
+                 (nth (flatten fire-grid) i)))))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -274,24 +290,24 @@
 
 (defn update-cell
   "Update cell to next state by interpreting push program"
-  [cell-id fire time current-state program]
+  [cell-id fire-name time current-grid program argmap]
   (let [answer (peek-stack
                  (interpret-program
                    program
-                   (assoc empty-push-state :input {:elevation         (get-elevation-at-cell cell-id fire)
-                                                   :slope             (get-slope-at-cell cell-id fire)
-                                                   :FWI               (get-current-weather-var "FWI" fire time)
-                                                   :WS                (get-current-weather-var "WS" fire time)
-                                                   :FFMC              (get-current-weather-var "FFMC" fire time)
-                                                   :TMP               (get-current-weather-var "TMP" fire time)
-                                                   :APCP              (get-current-weather-var "APCP" fire time)
-                                                   :DC                (get-current-weather-var "DC" fire time)
-                                                   :BUI               (get-current-weather-var "BUI" fire time)
-                                                   :RH                (get-current-weather-var "RH" fire time)
-                                                   :ISI               (get-current-weather-var "ISI" fire time)
-                                                   :DMC               (get-current-weather-var "DMC" fire time)
-                                                   :WD                (get-current-weather-var "WD" fire time)
-                                                   :current-state     current-state
+                   (assoc empty-push-state :input {:elevation         (get-elevation-at-cell cell-id fire-name)
+                                                   :slope             (get-slope-at-cell cell-id fire-name)
+                                                   :FWI               (get-current-weather-var "FWI" fire-name time)
+                                                   :WS                (get-current-weather-var "WS" fire-name time)
+                                                   :FFMC              (get-current-weather-var "FFMC" fire-name time)
+                                                   :TMP               (get-current-weather-var "TMP" fire-name time)
+                                                   :APCP              (get-current-weather-var "APCP" fire-name time)
+                                                   :DC                (get-current-weather-var "DC" fire-name time)
+                                                   :BUI               (get-current-weather-var "BUI" fire-name time)
+                                                   :RH                (get-current-weather-var "RH" fire-name time)
+                                                   :ISI               (get-current-weather-var "ISI" fire-name time)
+                                                   :DMC               (get-current-weather-var "DMC" fire-name time)
+                                                   :WD                (get-current-weather-var "WD" fire-name time)
+                                                   :current-value     (nth (flatten current-grid) cell-id)
                                                    :time              time
                                                    :nw                0
                                                    :n                 0
@@ -301,12 +317,15 @@
                                                    :sw                0
                                                    :s                 0
                                                    :se                0
-                                                   :num-neigh-burning 0
+                                                   :num-neigh-burning (num-burning-neighbors current-grid cell-id)
                                                    })
+                   ;; what is this????
                    (:step-limit argmap))
                  :integer)]
     (if (= answer :no-stack-item)
-      current-state
+      ;; this is simply the cells original value that was initially passed in
+      ;; (see :current-value above)
+      (nth (flatten current-grid) cell-id)
       (mod answer 3))))
 
 ;;;;;;;;;;;;;;;;;;
