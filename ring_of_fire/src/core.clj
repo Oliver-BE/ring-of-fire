@@ -91,17 +91,6 @@
     "G"
     "T"))
 
-(def conway-instructions
-  (list
-    'exec_if
-    'boolean_and
-    'boolean_or
-    'boolean_not
-    'boolean_=
-    'close
-    0
-    1))
-
 
 (def opens                                                  ; number of blocks opened by instructions (default = 0)
   {'exec_dup 1
