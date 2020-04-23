@@ -22,7 +22,7 @@
 ;; Instructions must all be either functions that take one Push state and return another
 ;; or constant literals.
 
-(def default-instructions
+(def fire-instructions
   (list
     ;; fire vars
     'elevation
