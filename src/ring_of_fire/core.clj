@@ -249,6 +249,12 @@
 ;; update grid function (calls update cell) ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; add functionality so we only update cells that are burning
+;; or having at least one burning neighbor and that they are not
+;; non-fuel cells (use fuel-master to check this)
+;; in general:
+;; 0 means unburned, 1 means burning, 2 means burned
+
 (defn update-grid
   "Updates a fire grid from one time step to the next"
   [fire-grid]
