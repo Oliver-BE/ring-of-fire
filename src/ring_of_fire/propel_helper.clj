@@ -19,11 +19,12 @@
    :string  '("abc")
    :input   {:in1 4}})
 
-; Instructions must all be either functions that take one Push state and return another
-; or constant literals.
-; TMH: ERCs?
+;; Instructions must all be either functions that take one Push state and return another
+;; or constant literals.
+
 (def default-instructions
   (list
+    ;; fire vars
     'elevation
     'slope
     'APCP
@@ -37,6 +38,9 @@
     'ISI
     'BUI
     'FWI
+    ;; include more here
+
+    ;; other instructions
     'integer_+
     'integer_-
     'integer_*
@@ -48,6 +52,8 @@
     'boolean_or
     'boolean_not
     'boolean_=
+
+    ;; remove these?
     'string_=
     'string_take
     'string_drop
@@ -60,17 +66,10 @@
     1
     true
     false
-    ;; should we get rid of these ones here
-    ;; do we need to include any input variable we have as an instruction?
-    ""
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    "A"
-    "C"
-    "G"
-    "T"))
+    ))
 
 
-; number of blocks opened by instructions (default = 0)
+;; number of blocks opened by instructions (default = 0)
 (def opens
   {'exec_dup 1
    'exec_if  2})
@@ -163,7 +162,6 @@
 ;; and the desired input [state input] and then do (name input (state)) instead
 ;; of :input state
 
-
 (defn elevation
   "Pushes the input labeled :elevation on the inputs map onto the :exec stack."
   [state]
@@ -229,6 +227,9 @@
   [state]
   (push-to-stack state :exec (:FWI (:input state))))
 
+;; add more fire instructions here
+
+
 (defn integer_+
   [state]
   (make-push-instruction state +' [:integer :integer] :integer))
@@ -283,6 +284,9 @@
 (defn boolean_=
   [state]
   (make-push-instruction state = [:boolean :boolean] :boolean))
+
+
+;; take these out probably
 
 (defn string_=
   [state]
@@ -513,7 +517,6 @@
         :else (recur (inc generation)
                      (repeatedly population-size
                                  #(new-individual evaluated-pop argmap)))))))
-
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

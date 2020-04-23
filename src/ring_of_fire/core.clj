@@ -61,6 +61,44 @@
                    :r1 revelstoke1-slope
                    :r2 revelstoke2-slope
                    })
+
+(def ignition-cell-master {:a1 arrowhead1-ignition-cell
+                           :a2 arrowhead2-ignition-cell
+                           :k1 kootenay1-ignition-cell
+                           :k2 kootenay2-ignition-cell
+                           :g1 glacier1-ignition-cell
+                           :g2 glacier2-ignition-cell
+                           :m1 mica1-ignition-cell
+                           :m2 mica2-ignition-cell
+                           :r1 revelstoke1-ignition-cell
+                           :r2 revelstoke2-ignition-cell
+                           })
+
+;; a grid where 0 refers to non-fuel, 1 refers to burnable / fuel
+(def fuel-master {:a1 (create-fuel-grid "a1")
+                  :a2 (create-fuel-grid "a2")
+                  :k1 (create-fuel-grid "k1")
+                  :k2 (create-fuel-grid "k2")
+                  :g1 (create-fuel-grid "g1")
+                  :g2 (create-fuel-grid "g2")
+                  :m1 (create-fuel-grid "m1")
+                  :m2 (create-fuel-grid "m2")
+                  :r1 (create-fuel-grid "r1")
+                  :r2 (create-fuel-grid "r2")
+                  })
+
+(def final-scar-grid-master {:a1 arrowhead1-final-scar
+                             :a2 arrowhead2-final-scar
+                             :k1 kootenay1-final-scar
+                             :k2 kootenay2-final-scar
+                             :g1 glacier1-final-scar
+                             :g2 glacier2-final-scar
+                             :m1 mica1-final-scar
+                             :m2 mica2-final-scar
+                             :r1 revelstoke1-final-scar
+                             :r2 revelstoke2-final-scar
+                             })
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Grid initialization functions   ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -71,6 +109,7 @@
   (count grid))
 #_(num-rows (:m1 empty-cell-grids))
 #_(num-rows mica1-forest)
+#_(num-rows mica1-elevation)
 
 (defn num-columns
   "Returns the number of rows of a vector of vectors"
@@ -78,8 +117,25 @@
   (count (nth grid 0)))
 #_(num-columns (:m1 empty-cell-grids))
 #_(num-columns mica1-forest)
+#_(num-columns mica1-elevation)
+
 
 ;; function to place correct initial burning point into a grid
+;; use ignition-cell-master to find cell number, add it to the empty-cell-grid
+(defn create-fuel-grid
+  "Takes in appropriate fire name and uses its forest grid to return new grid
+  where 0 refers to non-fuel and 1 refers to burnable / fuel"
+  [fire-name]
+  (let [grid ((keyword (name fire-name)) forest-master)]
+    (partition (num-columns grid)
+               (map #(if (and (>= % 100) (<= % 105))
+                       (* 0 %)
+                       (+ 1 (* 0 %))
+                       )
+                    (flatten grid)))))
+#_(create-fuel-grid "m1")
+#_(:m1 forest-master)
+#_(:m1 final-scar-grid-master)
 
 ;; function to turn forest file into a grid of 0s and 1s
 ;; where 0 = non-fuel and 1 = fuel/burnable
@@ -193,15 +249,11 @@
 ;; update grid function (calls update cell) ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(defn update-grid [all our variables]
+(defn update-grid
   "Updates a fire grid from one time step to the next"
-  (fn [input program]
-    (peek-stack
-      (interpret-program
-        program
-        (assoc empty-push-state :input {:in1 input})
-        (:step-limit argmap))
-      :integer)))
+  [fire-grid]
+  (partition (num-columns fire-grid)
+             (map update-cell (flatten fire-grid))))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -251,15 +303,15 @@
 (defn -main
   "Runs propel-gp, giving it a map of arguments."
   [& args]
-  (binding [*ns* (the-ns 'propel.core)]
-    (propel-gp (update-in (merge {:instructions default-instructions
-                                  :error-function fire-error-function
-                                  :max-generations 500
-                                  :population-size 200
+  (binding [*ns* (the-ns 'ring-of-fire.core)]
+    (propel-gp (update-in (merge {:instructions            default-instructions
+                                  :error-function          fire-error-function
+                                  :max-generations         500
+                                  :population-size         200
                                   :max-initial-plushy-size 50
-                                  :step-limit 100
-                                  :parent-selection :lexicase
-                                  :tournament-size 5}
+                                  :step-limit              100
+                                  :parent-selection        :lexicase
+                                  :tournament-size         5}
                                  (apply hash-map
                                         (map read-string args)))
                           [:error-function]
