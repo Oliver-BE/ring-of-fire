@@ -122,8 +122,6 @@
 #_(num-columns mica1-elevation)
 
 
-;; function to place correct initial burning point into a grid
-;; use ignition-cell-master to find cell number, add it to the empty-cell-grid
 (defn create-fuel-grid
   "Takes in appropriate fire name and uses its forest grid to return new grid
   where 0 refers to non-fuel and 1 refers to burnable / fuel"
@@ -139,12 +137,6 @@
 #_(:m1 forest-master)
 #_(:m1 final-scar-grid-master)
 
-;; function to turn forest file into a grid of 0s and 1s
-;; where 0 = non-fuel and 1 = fuel/burnable
-;; (need to use fbp look-up table to determine what is non-fuel)
-
-;;(defn get-elevation-table [fire-string] ())
-;;(defn get-slope-table [fire-string] ())
 
 (defn construct-empty-grid
   "Returns a vector of vectors filled with 0s with the same dimensions as the specified fire"
@@ -155,16 +147,18 @@
 (defn construct-initial-grid
   "Returns initial grid with a 1 where the ignition cell is"
   [fire-name]
-  (let [height (num-rows fire-name)
-        ignition-cell ((keyword (name fire-name)) ignition-cell-master)]
-
-    )
-  )
+  (let [width (num-columns fire-name)
+        ignition-cell ((keyword (name fire-name)) ignition-cell-master)
+        grid (construct-empty-grid fire-name)]
+    (partition width (assoc (vec (flatten grid)) ignition-cell 1))))
+#_(construct-initial-grid "m1")
 #_(:m1 ignition-cell-master)
-#_(construct-empty-grid "a1")
+#_(reduce + (flatten (construct-initial-grid "m1")))
+#_(reduce + (flatten (construct-initial-grid "m2")))
+
 
 ;; make our initial worlds for each of the 10 fires
-(def initial-cell-grids {:a1 (construct-initial-grid "a1")
+(def initial-fire-grids {:a1 (construct-initial-grid "a1")
                          :a2 (construct-initial-grid "a2")
                          :k1 (construct-initial-grid "k1")
                          :k2 (construct-initial-grid "k2")
@@ -175,7 +169,7 @@
                          :r1 (construct-initial-grid "r1")
                          :r2 (construct-initial-grid "r2")
                          })
-#_(:m1 empty-cell-grids)
+#_(:m1 initial-fire-grids)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Helper functions   ;;
@@ -284,29 +278,30 @@
   (let [answer (peek-stack
                  (interpret-program
                    program
-                   (assoc empty-push-state :input {:elevation     (get-elevation-at-cell cell-id fire)
-                                                   :slope         (get-slope-at-cell cell-id fire)
-                                                   :FWI           (get-current-weather-var "FWI" fire time)
-                                                   :WS            (get-current-weather-var "WS" fire time)
-                                                   :FFMC          (get-current-weather-var "FFMC" fire time)
-                                                   :TMP           (get-current-weather-var "TMP" fire time)
-                                                   :APCP          (get-current-weather-var "APCP" fire time)
-                                                   :DC            (get-current-weather-var "DC" fire time)
-                                                   :BUI           (get-current-weather-var "BUI" fire time)
-                                                   :RH            (get-current-weather-var "RH" fire time)
-                                                   :ISI           (get-current-weather-var "ISI" fire time)
-                                                   :DMC           (get-current-weather-var "DMC" fire time)
-                                                   :WD            (get-current-weather-var "WD" fire time)
-                                                   :current-state current-state
-                                                   :time          time
-                                                   :nw            0
-                                                   :n             0
-                                                   :ne            0
-                                                   :e             0
-                                                   :w             0
-                                                   :sw            0
-                                                   :s             0
-                                                   :se            0
+                   (assoc empty-push-state :input {:elevation         (get-elevation-at-cell cell-id fire)
+                                                   :slope             (get-slope-at-cell cell-id fire)
+                                                   :FWI               (get-current-weather-var "FWI" fire time)
+                                                   :WS                (get-current-weather-var "WS" fire time)
+                                                   :FFMC              (get-current-weather-var "FFMC" fire time)
+                                                   :TMP               (get-current-weather-var "TMP" fire time)
+                                                   :APCP              (get-current-weather-var "APCP" fire time)
+                                                   :DC                (get-current-weather-var "DC" fire time)
+                                                   :BUI               (get-current-weather-var "BUI" fire time)
+                                                   :RH                (get-current-weather-var "RH" fire time)
+                                                   :ISI               (get-current-weather-var "ISI" fire time)
+                                                   :DMC               (get-current-weather-var "DMC" fire time)
+                                                   :WD                (get-current-weather-var "WD" fire time)
+                                                   :current-state     current-state
+                                                   :time              time
+                                                   :nw                0
+                                                   :n                 0
+                                                   :ne                0
+                                                   :e                 0
+                                                   :w                 0
+                                                   :sw                0
+                                                   :s                 0
+                                                   :se                0
+                                                   :num-neigh-burning 0
                                                    })
                    (:step-limit argmap))
                  :integer)]
