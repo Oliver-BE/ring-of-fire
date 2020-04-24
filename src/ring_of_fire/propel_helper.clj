@@ -38,6 +38,17 @@
     'ISI
     'BUI
     'FWI
+    'current-value
+    'time
+    'nw
+    'n
+    'ne
+    'e
+    'w
+    'sw
+    's
+    'se
+    'num-burning-neighbors
     ;; include more here
 
     ;; other instructions
@@ -226,6 +237,61 @@
   "Pushes the input labeled :FWI on the inputs map onto the :exec stack."
   [state]
   (push-to-stack state :exec (:FWI (:input state))))
+
+(defn current-value
+  "Pushes the input labeled :current-value on the inputs map onto the :exec stack."
+  [state]
+  (push-to-stack state :exec (:current-value (:input state))))
+
+(defn time
+  "Pushes the input labeled :time on the inputs map onto the :exec stack."
+  [state]
+  (push-to-stack state :exec (:time (:input state))))
+
+(defn nw
+  "Pushes the input labeled :nw on the inputs map onto the :exec stack."
+  [state]
+  (push-to-stack state :exec (:nw (:input state))))
+
+(defn n
+  "Pushes the input labeled :n on the inputs map onto the :exec stack."
+  [state]
+  (push-to-stack state :exec (:n (:input state))))
+
+(defn ne
+  "Pushes the input labeled :ne on the inputs map onto the :exec stack."
+  [state]
+  (push-to-stack state :exec (:ne (:input state))))
+
+(defn e
+  "Pushes the input labeled :e on the inputs map onto the :exec stack."
+  [state]
+  (push-to-stack state :exec (:e (:input state))))
+
+(defn w
+  "Pushes the input labeled :w on the inputs map onto the :exec stack."
+  [state]
+  (push-to-stack state :exec (:w (:input state))))
+
+(defn sw
+  "Pushes the input labeled :sw on the inputs map onto the :exec stack."
+  [state]
+  (push-to-stack state :exec (:sw (:input state))))
+
+(defn s
+  "Pushes the input labeled :s on the inputs map onto the :exec stack."
+  [state]
+  (push-to-stack state :exec (:s (:input state))))
+
+(defn se
+  "Pushes the input labeled :se on the inputs map onto the :exec stack."
+  [state]
+  (push-to-stack state :exec (:se (:input state))))
+
+(defn num-burning-neighbors
+  "Pushes the input labeled :num-burning-neighbors on the inputs map onto the :exec stack."
+  [state]
+  (push-to-stack state :exec (:num-burning-neighbors (:input state))))
 
 ;; add more fire instructions here
 
@@ -591,6 +657,3 @@
       :behaviors outputs
       :errors errors
       :total-error (apply +' errors))))
-
-
-
