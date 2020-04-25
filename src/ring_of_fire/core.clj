@@ -387,17 +387,17 @@
                ;; returns a flattened vector of all cell values
                (for [i (range (count flattened-grid))]
                  ;; only update cell if it's burning
-                 ;; or it has at least one burning neighbor (burning = 1)
-                 ;; and is a burnable cell (according to fuel-master where 1 = burnable)
                  (if (or (= (nth (flatten fire-grid) i) 1)
-                   (and (>= (num-burning-neighbors i fire-grid) 1) (= 1 (nth flattened-fuel i))))
+                         ;; or it has at least one burning neighbor (burning = 1)
+                         ;; and is a burnable cell (according to fuel-master where 1 = burnable)
+                         (and (>= (num-burning-neighbors i fire-grid) 1) (= 1 (nth flattened-fuel i))))
                    ;; if true then return 0
                    0
                    ;; else just return current value
                    (nth flattened-grid i))))))
 #_(num-burning-neighbors 13 test-burning-grid)
 #_(num-burning-neighbors 13 test-burned-grid)
-#_(test-update-grid test-burned-grid "m1")
+#_(test-update-grid test-burning-grid "m1")
 
 (defn construct-burned-grid
   "Returns a vector of vectors filled with 2s with the same dimensions as the specified fire"
