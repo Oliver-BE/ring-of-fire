@@ -181,34 +181,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Helper functions    ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;;; fire neighbors functions
-(def test-neighbors '((0 0 0) (1 1 1) (2 0 1)))
-
-(defn get-burning-neighbors-map
-  "Returns a map of neighbors and their associated values. Value in map 0 if out of bounds."
-  [cell-id fire-grid]
-  (let [height (count fire-grid)
-        width (count (nth fire-grid 1))
-        x (mod cell-id width)
-        y (Math/floor (/ cell-id width))
-        return-map (for
-                     [input [["NW" -1 -1] ["N" -1 0]["NE" -1 1]["E" 0 -1]["W" 0 1]["SW" 1 -1]["S" 1 0]["SE" 1 1]]]
-                     (let [direction (nth input 0)
-                           j (nth input 1)
-                           i (nth input 2)]
-                       (assoc {} (keyword direction) (safe-get-cell fire-grid (+ x i) (+ y j)))))]
-    (apply conj return-map)))
-
-(defn num-burning-neighbors
-  "Gets total num of burning neighbors"
-  [cell-id fire-grid]
-  (reduce + (vals (conj (get-burning-neighbors-map cell-id fire-grid)))))
-
-(defn get-burning-neighbor
-  "Calls burning neighbors map and retrieves specific neighbor"
-  [cell-id fire-grid neighbor-direction]
-  ((keyword neighbor-direction) (get-burning-neighbors-map cell-id fire-grid)))
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Burning neighbors   ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defn safe-get-cell
   "Returns the value of a cell if inbounds, returns 0 if out of bounds"
@@ -219,23 +194,46 @@
       (nth (nth fire-grid j) i)                             ;; in bounds so return the value
       0                                                     ;; out of bounds so return zero
       )))
+;; should return 1 (bottom right value in test-grid)
+#_(safe-get-cell test-grid 2 2)
 
-;; need to fix
-;(defn get-neighbors
-;  "Returns a sequence of sequences containing each neighbor's pertinent information"
-;  [cell-id fire current-grid]
-;  (vec (burning-neighbors cell-id current-grid))
-;  )
+(defn get-burning-neighbors-map
+  "Returns a map of neighbors and their associated values. Value in map 0 if out of bounds."
+  [cell-id fire-grid]
+  (let [height (count fire-grid)
+        width (count (nth fire-grid 1))
+        x (mod cell-id width)
+        y (Math/floor (/ cell-id width))
+        return-map (for
+                     [input [["NW" -1 -1] ["N" -1 0] ["NE" -1 1] ["E" 0 -1] ["W" 0 1] ["SW" 1 -1] ["S" 1 0] ["SE" 1 1]]]
+                     (let [direction (nth input 0)
+                           j (nth input 1)
+                           i (nth input 2)]
+                       (assoc {} (keyword direction) (safe-get-cell fire-grid (+ x i) (+ y j)))))]
+    (apply conj return-map)))
+;; tests the very middle cell of test-grid
+#_(get-burning-neighbors-map 4 test-grid)
 
-;; need to fix
-;(defn burning-neighbors
-;  "Returns the burning neighbors of a given cell"
-;  [cell-id current-grid]
-;  (let [flat-grid (flatten current-grid)]
-;    (if (= 1 (nth flat-grid (- cell-id 1))) (- cell-id 1))
-;    (if (= 1 (nth flat-grid (+ cell-id 1))) (+ cell-id 1))
-;    ))
+(defn num-burning-neighbors
+  "Gets total num of burning neighbors (only cells with value of 1 are burning, ignores 2s)"
+  [cell-id fire-grid]
+  (let [num (get (frequencies (vals (conj (get-burning-neighbors-map cell-id fire-grid)))) 1)]
+    (if (nil? num) 0 num)))
+;; should return 2 for middle cell of test-grid
+#_(num-burning-neighbors 4 test-grid)
+(def test-grid '((0 0 0) (0 0 1) (2 0 1)))
 
+
+(defn get-burning-neighbor
+  "Calls burning neighbors map and retrieves specific neighbor"
+  [cell-id fire-grid neighbor-direction]
+  ((keyword neighbor-direction) (get-burning-neighbors-map cell-id fire-grid)))
+;; returns southwest neighbor of middle cell, should return 2
+#_(get-burning-neighbor 4 test-grid "SW")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; data lookups        ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defn get-current-weather-var
   "Returns the value of a specified weather variable for a specified fire at a specified time."
@@ -259,6 +257,12 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; CORE FIRE FUNCTIONS  ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;  test plushy
+(def test-instructions (list 'w))
+(def test-argmap {:step-limit 5})
+
+#_(fire-error-function test-argmap test-instructions)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; fire error function (calls run fire)  ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -283,14 +287,14 @@
         ;; returns a vector where 1 indicates different outputs
         ;; 0 indicates the outputs were the same
         errors (compare-grids outputs correct-outputs)]
-        ;errors (map (fn [correct-output output]
-        ;              (if (= output :no-stack-item)
-        ;                1000000
-        ;                (if (= correct-output output)
-        ;                  0
-        ;                  1))
-        ;            correct-outputs
-        ;            outputs)]
+    ;errors (map (fn [correct-output output]
+    ;              (if (= output :no-stack-item)
+    ;                1000000
+    ;                (if (= correct-output output)
+    ;                  0
+    ;                  1))
+    ;            correct-outputs
+    ;            outputs)]
     (assoc individual
       :behaviors outputs
       :errors errors
@@ -328,12 +332,12 @@
   [grid]
   ;; partition by columns
   (vec (partition (count (nth grid 0))
-             (map #(if (= % 2)
-                         ;; 2s become 1s
-                         (dec %)
-                         ;; everything else stays the same
-                         %)
-                  (flatten grid)))))
+                  (map #(if (= % 2)
+                          ;; 2s become 1s
+                          (dec %)
+                          ;; everything else stays the same
+                          %)
+                       (flatten grid)))))
 #_(convert-grid [[2 1 1 0 1 0] [0 0 1 2 2 2]])
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -360,12 +364,47 @@
                ;; or it has at least one burning neighbor (burning = 1)
                ;; and is a burnable cell (according to fuel-master)
                (if (or (= (nth (flatten fire-grid) i) 1)
-                       (and (>= (num-burning-neighbors i fire-grid) 1) (= 0 (nth (flatten ((keyword (name fire-name)) fuel-master)) i))))
+                       (and (>= (num-burning-neighbors i fire-grid) 1) (= 1 (nth (flatten ((keyword (name fire-name)) fuel-master)) i))))
                  ;; if true then update cell
                  (update-cell i fire-name time fire-grid program argmap)
                  ;; else just return current value
                  (nth (flatten fire-grid) i)))))
 
+(defn test-update-grid
+  [fire-grid fire-name]
+  (partition (num-columns fire-name)
+             ;; returns a flattened vector of all cell values
+             (for [i (range (count (flatten fire-grid)))]
+               ;; only update cell if it's burning
+               ;; or it has at least one burning neighbor (burning = 1)
+               ;; and is a burnable cell (according to fuel-master where 1 = burnable)
+               (if (or (= (nth (flatten fire-grid) i) 1)
+                       (and (>= (num-burning-neighbors i fire-grid) 1) (= 1 (nth (flatten ((keyword (name fire-name)) fuel-master)) i))))
+                 ;; if true then return 0
+                 0
+                 ;; else just return current value
+                 (nth (flatten fire-grid) i)))))
+#_(num-burning-neighbors 13 test-burning-grid)
+#_(num-burning-neighbors 13 test-burned-grid)
+#_(test-update-grid test-init-grid "m1")
+
+(defn construct-burned-grid
+  "Returns a vector of vectors filled with 2s with the same dimensions as the specified fire"
+  [fire-name]
+  (vec (repeat (count ((keyword (name fire-name)) elevation-master))
+               (vec (repeat (count (first ((keyword (name fire-name)) elevation-master))) 2)))))
+
+(defn construct-burning-grid
+  "Returns a vector of vectors filled with 2s with the same dimensions as the specified fire"
+  [fire-name]
+  (vec (repeat (count ((keyword (name fire-name)) elevation-master))
+               (vec (repeat (count (first ((keyword (name fire-name)) elevation-master))) 1)))))
+
+(def test-burned-grid (construct-burned-grid "m1"))
+(def test-burning-grid (construct-burning-grid "m1"))
+
+(def test-program (push-from-plushy (:plushy test-instructions)))
+#_(update-grid test-init-grid "m1" 0 test-program test-argmap)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; update cell function ;;
@@ -377,29 +416,29 @@
   (let [answer (peek-stack
                  (interpret-program
                    program
-                   (assoc empty-push-state :input {:elevation         (get-elevation-at-cell cell-id fire-name)
-                                                   :slope             (get-slope-at-cell cell-id fire-name)
-                                                   :FWI               (get-current-weather-var "FWI" fire-name time)
-                                                   :WS                (get-current-weather-var "WS" fire-name time)
-                                                   :FFMC              (get-current-weather-var "FFMC" fire-name time)
-                                                   :TMP               (get-current-weather-var "TMP" fire-name time)
-                                                   :APCP              (get-current-weather-var "APCP" fire-name time)
-                                                   :DC                (get-current-weather-var "DC" fire-name time)
-                                                   :BUI               (get-current-weather-var "BUI" fire-name time)
-                                                   :RH                (get-current-weather-var "RH" fire-name time)
-                                                   :ISI               (get-current-weather-var "ISI" fire-name time)
-                                                   :DMC               (get-current-weather-var "DMC" fire-name time)
-                                                   :WD                (get-current-weather-var "WD" fire-name time)
-                                                   :current-value     (nth (flatten current-grid) cell-id)
-                                                   :time              time
-                                                   :nw                (:NW (get-burning-neighbors-map cell-id current-grid))
-                                                   :n                 (:N (get-burning-neighbors-map cell-id current-grid))
-                                                   :ne                (:NE (get-burning-neighbors-map cell-id current-grid))
-                                                   :e                 (:E (get-burning-neighbors-map cell-id current-grid))
-                                                   :w                 (:W (get-burning-neighbors-map cell-id current-grid))
-                                                   :sw                (:SW (get-burning-neighbors-map cell-id current-grid))
-                                                   :s                 (:S (get-burning-neighbors-map cell-id current-grid))
-                                                   :se                (:SE (get-burning-neighbors-map cell-id current-grid))
+                   (assoc empty-push-state :input {:elevation             (get-elevation-at-cell cell-id fire-name)
+                                                   :slope                 (get-slope-at-cell cell-id fire-name)
+                                                   :FWI                   (get-current-weather-var "FWI" fire-name time)
+                                                   :WS                    (get-current-weather-var "WS" fire-name time)
+                                                   :FFMC                  (get-current-weather-var "FFMC" fire-name time)
+                                                   :TMP                   (get-current-weather-var "TMP" fire-name time)
+                                                   :APCP                  (get-current-weather-var "APCP" fire-name time)
+                                                   :DC                    (get-current-weather-var "DC" fire-name time)
+                                                   :BUI                   (get-current-weather-var "BUI" fire-name time)
+                                                   :RH                    (get-current-weather-var "RH" fire-name time)
+                                                   :ISI                   (get-current-weather-var "ISI" fire-name time)
+                                                   :DMC                   (get-current-weather-var "DMC" fire-name time)
+                                                   :WD                    (get-current-weather-var "WD" fire-name time)
+                                                   :current-value         (nth (flatten current-grid) cell-id)
+                                                   :time-step             time
+                                                   :nw                    (get-burning-neighbor cell-id current-grid "NW")
+                                                   :n                     (get-burning-neighbor cell-id current-grid "N")
+                                                   :ne                    (get-burning-neighbor cell-id current-grid "NE")
+                                                   :e                     (get-burning-neighbor cell-id current-grid "E")
+                                                   :w                     (get-burning-neighbor cell-id current-grid "W")
+                                                   :sw                    (get-burning-neighbor cell-id current-grid "SW")
+                                                   :s                     (get-burning-neighbor cell-id current-grid "S")
+                                                   :se                    (get-burning-neighbor cell-id current-grid "SE")
                                                    :num-burning-neighbors (num-burning-neighbors cell-id current-grid)
                                                    })
 

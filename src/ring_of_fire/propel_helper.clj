@@ -39,7 +39,7 @@
     'BUI
     'FWI
     'current-value
-    'time
+    'time-step
     'nw
     'n
     'ne
@@ -48,7 +48,7 @@
     'sw
     's
     'se
-    'num-burning-neighbors
+    'num-burning-neigh
     ;; include more here
 
     ;; other instructions
@@ -65,13 +65,14 @@
     'boolean_=
 
     ;; remove these?
-    'string_=
-    'string_take
-    'string_drop
-    'string_reverse
-    'string_concat
-    'string_length
-    'string_includes?
+    ;'string_=
+    ;'string_take
+    ;'string_drop
+    ;'string_reverse
+    ;'string_concat
+    ;'string_length
+    ;'string_includes?
+
     'close
     0
     1
@@ -243,10 +244,10 @@
   [state]
   (push-to-stack state :exec (:current-value (:input state))))
 
-(defn time
-  "Pushes the input labeled :time on the inputs map onto the :exec stack."
+(defn time-step
+  "Pushes the input labeled :time-step on the inputs map onto the :exec stack."
   [state]
-  (push-to-stack state :exec (:time (:input state))))
+  (push-to-stack state :exec (time-step (:input state))))
 
 (defn nw
   "Pushes the input labeled :nw on the inputs map onto the :exec stack."
@@ -288,10 +289,10 @@
   [state]
   (push-to-stack state :exec (:se (:input state))))
 
-(defn num-burning-neighbors
-  "Pushes the input labeled :num-burning-neighbors on the inputs map onto the :exec stack."
+(defn num-burning-neigh
+  "Pushes the input labeled :num-burning-neigh on the inputs map onto the :exec stack."
   [state]
-  (push-to-stack state :exec (:num-burning-neighbors (:input state))))
+  (push-to-stack state :exec (:num-burning-neigh (:input state))))
 
 ;; add more fire instructions here
 
