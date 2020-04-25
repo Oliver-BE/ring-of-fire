@@ -186,16 +186,19 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defn safe-get-cell
-  "Returns the value of a cell if inbounds, returns 0 if out of bounds"
+  "Returns the value of a cell if inbounds, returns 0 if out of bounds
+  i is row/height j is column/width"
   [fire-grid i j]
   (let [height (count fire-grid)
         width (count (nth fire-grid 1))]
     (if (and (>= j 0) (< j width) (>= i 0) (< i height))
-      (nth (nth fire-grid j) i)                             ;; in bounds so return the value
+      (nth (nth fire-grid i) j)                             ;; in bounds so return the value
       0                                                     ;; out of bounds so return zero
       )))
 ;; should return 1 (bottom right value in test-grid)
 #_(safe-get-cell test-grid 2 2)
+#_(safe-get-cell test-burning-grid 57 53)
+
 
 (defn get-burning-neighbors-map
   "Returns a map of neighbors and their associated values. Value in map 0 if out of bounds."
@@ -205,14 +208,16 @@
         x (mod cell-id width)
         y (Math/floor (/ cell-id width))
         return-map (for
-                     [input [["NW" -1 -1] ["N" -1 0] ["NE" -1 1] ["E" 0 -1] ["W" 0 1] ["SW" 1 -1] ["S" 1 0] ["SE" 1 1]]]
+                     [input [["NW" -1 -1] ["N" -1 0] ["NE" -1 1] ["E" 0 1] ["W" 0 -1] ["SW" 1 -1] ["S" 1 0] ["SE" 1 1]]]
                      (let [direction (nth input 0)
                            j (nth input 1)
                            i (nth input 2)]
-                       (assoc {} (keyword direction) (safe-get-cell fire-grid (+ x i) (+ y j)))))]
+                       (assoc {} (keyword direction) (safe-get-cell fire-grid (+ y j) (+ x i)))))]
     (apply conj return-map)))
 ;; tests the very middle cell of test-grid
 #_(get-burning-neighbors-map 4 test-grid)
+;; this broke ass code
+#_(get-burning-neighbors-map 9 test-grid)
 
 (defn num-burning-neighbors
   "Gets total num of burning neighbors (only cells with value of 1 are burning, ignores 2s)"
@@ -222,6 +227,9 @@
 ;; should return 2 for middle cell of test-grid
 #_(num-burning-neighbors 4 test-grid)
 (def test-grid '((0 0 0) (0 0 1) (2 0 1)))
+
+
+
 
 
 (defn get-burning-neighbor
@@ -370,23 +378,26 @@
                  ;; else just return current value
                  (nth (flatten fire-grid) i)))))
 
+;; this runs slowwww (probably because of all the flattenings
 (defn test-update-grid
   [fire-grid fire-name]
-  (partition (num-columns fire-name)
-             ;; returns a flattened vector of all cell values
-             (for [i (range (count (flatten fire-grid)))]
-               ;; only update cell if it's burning
-               ;; or it has at least one burning neighbor (burning = 1)
-               ;; and is a burnable cell (according to fuel-master where 1 = burnable)
-               (if (or (= (nth (flatten fire-grid) i) 1)
-                       (and (>= (num-burning-neighbors i fire-grid) 1) (= 1 (nth (flatten ((keyword (name fire-name)) fuel-master)) i))))
-                 ;; if true then return 0
-                 0
-                 ;; else just return current value
-                 (nth (flatten fire-grid) i)))))
+  (let [flattened-grid (flatten fire-grid)
+        flattened-fuel (flatten ((keyword (name fire-name)) fuel-master))]
+    (partition (num-columns fire-name)
+               ;; returns a flattened vector of all cell values
+               (for [i (range (count flattened-grid))]
+                 ;; only update cell if it's burning
+                 ;; or it has at least one burning neighbor (burning = 1)
+                 ;; and is a burnable cell (according to fuel-master where 1 = burnable)
+                 (if (or (= (nth (flatten fire-grid) i) 1)
+                   (and (>= (num-burning-neighbors i fire-grid) 1) (= 1 (nth flattened-fuel i))))
+                   ;; if true then return 0
+                   0
+                   ;; else just return current value
+                   (nth flattened-grid i))))))
 #_(num-burning-neighbors 13 test-burning-grid)
 #_(num-burning-neighbors 13 test-burned-grid)
-#_(test-update-grid test-init-grid "m1")
+#_(test-update-grid test-burned-grid "m1")
 
 (defn construct-burned-grid
   "Returns a vector of vectors filled with 2s with the same dimensions as the specified fire"
