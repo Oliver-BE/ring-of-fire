@@ -338,13 +338,14 @@
 ;; run fire function (calls update grid) ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; note why ware we updating one extra time step beyond?
 (defn run-fire
   "Runs a specified fire all the way through and returns
   a final fire scar to be compared with actual fire scar"
   [fire-name program argmap]
   (loop [grid ((keyword (name fire-name)) initial-fire-grids)
          time-step 0]
-    (prn "time:" time-step)(prn "Fire name:" fire-name)
+    (prn "time-step:" time-step) (prn "Fire name:" fire-name)
     ;(prn grid)
     (if (> time-step 5)
       ;; if time is up convert all 2s to 1s and return fire-scar
@@ -400,10 +401,10 @@
                          (and (>= (num-burning-neighbors i fire-grid) 1) (= 1 (nth flattened-fuel i))))
                    ;; if true then return 0
 
-                   (do
-                     ;Use the following to time the update cell method
-                     (time (update-cell i fire-name time-step fire-grid program argmap)))
-                     ;(update-cell i fire-name time-step fire-grid program argmap))
+                   ;(do
+                   ;Use the following to time the update cell method
+                   (time (update-cell i fire-name time-step fire-grid program argmap))
+                   ;(update-cell i fire-name time-step fire-grid program argmap))
                    ;; else just return current value
                    (nth flattened-grid i))))))
 #_(update-grid (:m1 initial-fire-grids) "m1" 0 test-program test-argmap)
@@ -470,7 +471,7 @@
 (defn update-cell
   "Update cell to next state by interpreting push program"
   [cell-id fire-name time current-grid program argmap]
-  (prn cell-id)
+  (prn "cell-id:" cell-id)
   ;(prn "Update-Cell: program" program)
   (let [b-neighbors-map (get-burning-neighbors-map cell-id current-grid)
         current-value (nth (flatten current-grid) cell-id)
@@ -512,25 +513,30 @@
 
     ;; get first thing off integer stack
     ;; check for other types, we only went integers
-  (cond
-    ;; this is simply the cells original value that was initially passed in
-    ;; (see :current-value above)
-    (= answer :no-stack-item)
-    current-value
+    (cond
+      ;; this is simply the cells original value that was initially passed in
+      ;; (see :current-value above)
+      (= answer :no-stack-item)
+      current-value
 
-    ;; If currently 0, can go to 0, 1, 2
-    (= current-value 0)
-    (mod answer 3)
+      ;; If currently 0, can go to 0, 1, 2
+      ;; note we might want to only allow 0 to go to 1 (and not straight to 2)
+      (= current-value 0)
+      (mod answer 3)
 
-    ;If currently 1, can go to 1, 2
-    (= current-value 1)
-    (+ 1 (mod answer 2))
+      ;; if burning and we get an answer of 0, just stay burning (1)
+      (and (= current-value 1) (= (mod answer 3) 0))
+      1
 
-    ;If 2, stays 2
-    :else
-    2
-    )))
-#_(update-cell 5 "m1" 0 (:m1 initial-fire-grids) test-program test-argmap)
+      ;; otherwise you can be a 1 or a 2
+      (= current-value 1)
+      (mod answer 3)
+
+      ;If 2, stays 2
+      :else
+      2
+      )))
+#_(update-cell 5 "m1" 0 test-burning-grid test-program test-argmap)
 
 ;;;;;;;;;;;;;;;;;;
 ;; MAIN METHOD  ;;
