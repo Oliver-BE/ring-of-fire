@@ -322,7 +322,7 @@
   "Runs a specified fire all the way through and returns
   a final fire scar to be compared with actual fire scar"
   [fire-name program argmap]
-  (loop [grid ((keyword (name fire-name) initial-fire-grids))
+  (loop [grid ((keyword (name fire-name)) initial-fire-grids)
          time 0]
     (if (> time 1440)
       ;; if time is up convert all 2s to 1s and return fire-scar
@@ -330,6 +330,7 @@
       ;; otherwise update our grid and increment time
       (recur (update-grid grid fire-name time program argmap)
              (inc time)))))
+;; this is dummy slow
 #_(run-fire "m1" test-program test-argmap)
 
 
@@ -436,7 +437,8 @@
 (defn update-cell
   "Update cell to next state by interpreting push program"
   [cell-id fire-name time current-grid program argmap]
-  (let [answer (peek-stack
+  (let [b-neighbors-map (get-burning-neighbors-map cell-id current-grid)
+        answer (peek-stack
                  (interpret-program
                    program
                    (assoc empty-push-state :input {:elevation             (get-elevation-at-cell cell-id fire-name)
@@ -454,14 +456,14 @@
                                                    :WD                    (get-current-weather-var "WD" fire-name time)
                                                    :current-value         (nth (flatten current-grid) cell-id)
                                                    :time-step             time
-                                                   :nw                    (get-burning-neighbor cell-id current-grid "NW")
-                                                   :n                     (get-burning-neighbor cell-id current-grid "N")
-                                                   :ne                    (get-burning-neighbor cell-id current-grid "NE")
-                                                   :e                     (get-burning-neighbor cell-id current-grid "E")
-                                                   :w                     (get-burning-neighbor cell-id current-grid "W")
-                                                   :sw                    (get-burning-neighbor cell-id current-grid "SW")
-                                                   :s                     (get-burning-neighbor cell-id current-grid "S")
-                                                   :se                    (get-burning-neighbor cell-id current-grid "SE")
+                                                   :nw                    (:NW b-neighbors-map)
+                                                   :n                     (:N b-neighbors-map)
+                                                   :ne                    (:NE b-neighbors-map)
+                                                   :e                     (:E b-neighbors-map)
+                                                   :w                     (:W b-neighbors-map)
+                                                   :sw                    (:SW b-neighbors-map)
+                                                   :s                     (:S b-neighbors-map)
+                                                   :se                    (:SE b-neighbors-map)
                                                    :num-burning-neighbors (num-burning-neighbors cell-id current-grid)
                                                    })
 
