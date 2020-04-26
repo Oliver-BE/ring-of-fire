@@ -266,6 +266,21 @@
 ;; CORE FIRE FUNCTIONS  ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;-------------------------
+; RUNNER
+
+#_(propel-gp {:instructions            fire-instructions
+              :error-function          fire-error-function
+              :max-generations         500
+              :population-size         1
+              :max-initial-plushy-size 50
+              :step-limit              100
+              :parent-selection        :lexicase
+              :tournament-size         5})
+
+;-------------------------
+
+
 
 #_(fire-error-function test-argmap test-instructions)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -281,16 +296,15 @@
   (let [program (push-from-plushy (:plushy individual))
 
         ;; a vector containing each fire name as a string is our inputs
-        inputs "m1"
-        ;fire-names
+        inputs fire-names
+
 
         ;; correct output is each
-        correct-outputs ((keyword (name inputs)) final-scar-grid-master)
-        ;(map #((keyword (name %)) final-scar-grid-master) inputs)
+        correct-outputs (map #((keyword (name %)) final-scar-grid-master) inputs)
 
         ;; run each fire through our run-fire function with the given program
-        outputs (run-fire inputs argmap program)
-        ;(map #(run-fire % argmap program) inputs)
+        outputs (map #(run-fire % program argmap) inputs)
+
 
         ;; returns a vector where 1 indicates different outputs
         ;; 0 indicates the outputs were the same
@@ -307,7 +321,7 @@
       :behaviors outputs
       :errors errors
       :total-error (apply +' errors))))
-#_(fire-error-function test-argmap test-instructions)
+#_(fire-error-function test-argmap test-program)
 
 
 
@@ -329,13 +343,17 @@
   a final fire scar to be compared with actual fire scar"
   [fire-name program argmap]
   (loop [grid ((keyword (name fire-name)) initial-fire-grids)
-         time 0]
-    (if (> time 5)
+         time-step 0]
+    (prn "time:" time-step)(prn "Fire name:" fire-name)
+    ;(prn grid)
+    (if (> time-step 5)
       ;; if time is up convert all 2s to 1s and return fire-scar
       (convert-grid grid)
+
       ;; otherwise update our grid and increment time
-      (recur (update-grid grid fire-name time program argmap)
-             (inc time)))))
+
+      (recur (time (update-grid grid fire-name time-step program argmap))
+             (inc time-step)))))
 ;; this is dummy slow
 #_(run-fire "m1" test-program test-argmap)
 
@@ -368,7 +386,7 @@
 
 (defn update-grid
   "Updates a fire grid from one time step to the next"
-  [fire-grid fire-name time program argmap]
+  [fire-grid fire-name time-step program argmap]
   (let [flattened-grid (flatten fire-grid)
         flattened-fuel (flatten ((keyword (name fire-name)) fuel-master))]
     ;; turns flattened vector back into a grid
@@ -381,7 +399,11 @@
                          ;; and is a burnable cell (according to fuel-master where 1 = burnable)
                          (and (>= (num-burning-neighbors i fire-grid) 1) (= 1 (nth flattened-fuel i))))
                    ;; if true then return 0
-                   (update-cell i fire-name time fire-grid program argmap)
+
+                   (do
+                     ;Use the following to time the update cell method
+                     (time (update-cell i fire-name time-step fire-grid program argmap)))
+                     ;(update-cell i fire-name time-step fire-grid program argmap))
                    ;; else just return current value
                    (nth flattened-grid i))))))
 #_(update-grid (:m1 initial-fire-grids) "m1" 0 test-program test-argmap)
@@ -394,9 +416,14 @@
 ;; testing ;;
 ;;;;;;;;;;;;;
 ;;  test plushy
-(def test-instructions (list 'w))
-(def test-argmap {:step-limit 5})
-(def test-program (push-from-plushy (:plushy test-instructions)))
+
+
+
+#_(def test-program (list 'w))
+#_(def test-argmap {:step-limit 5})
+#_(def test-program (push-from-plushy (:plushy test-instructions)))
+
+#_(run-fire "m1" test-program test-argmap)
 
 
 (defn test-update-grid
@@ -443,7 +470,10 @@
 (defn update-cell
   "Update cell to next state by interpreting push program"
   [cell-id fire-name time current-grid program argmap]
+  (prn cell-id)
+  ;(prn "Update-Cell: program" program)
   (let [b-neighbors-map (get-burning-neighbors-map cell-id current-grid)
+        current-value (nth (flatten current-grid) cell-id)
         answer (peek-stack
                  (interpret-program
                    program
@@ -460,7 +490,7 @@
                                                    :ISI                   (get-current-weather-var "ISI" fire-name time)
                                                    :DMC                   (get-current-weather-var "DMC" fire-name time)
                                                    :WD                    (get-current-weather-var "WD" fire-name time)
-                                                   :current-value         (nth (flatten current-grid) cell-id)
+                                                   :current-value         current-value
                                                    :time-step             time
                                                    :nw                    (:NW b-neighbors-map)
                                                    :n                     (:N b-neighbors-map)
@@ -477,14 +507,29 @@
 
                  :integer)]
 
+    ;(prn "answer" answer)
+    ;(prn "No stack item?" (= answer :no-stack-item))
+
     ;; get first thing off integer stack
     ;; check for other types, we only went integers
-    (if (= answer :no-stack-item)
-      ;; this is simply the cells original value that was initially passed in
-      ;; (see :current-value above)
-      (nth (flatten current-grid) cell-id)
-      ;; only take integer values that are 0, 1, or 2
-      (mod answer 3))))
+  (cond
+    ;; this is simply the cells original value that was initially passed in
+    ;; (see :current-value above)
+    (= answer :no-stack-item)
+    current-value
+
+    ;; If currently 0, can go to 0, 1, 2
+    (= current-value 0)
+    (mod answer 3)
+
+    ;If currently 1, can go to 1, 2
+    (= current-value 1)
+    (+ 1 (mod answer 2))
+
+    ;If 2, stays 2
+    :else
+    2
+    )))
 #_(update-cell 5 "m1" 0 (:m1 initial-fire-grids) test-program test-argmap)
 
 ;;;;;;;;;;;;;;;;;;
