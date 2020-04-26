@@ -484,25 +484,25 @@
   "Update cell to next state by interpreting push program"
   [cell-id fire-name time current-grid program argmap]
   (prn "cell-id:" cell-id)
-  ;(prn "Update-Cell: program" program)
+  (prn "Update-Cell: program" program)
   (let [b-neighbors-map (get-burning-neighbors-map cell-id current-grid)
         current-value (nth (flatten current-grid) cell-id)
         answer (peek-stack
                  (interpret-program
                    program
-                   (assoc empty-push-state :input {:elevation             (get-elevation-at-cell cell-id fire-name)
-                                                   :slope                 (get-slope-at-cell cell-id fire-name)
-                                                   :FWI                   (get-current-weather-var "FWI" fire-name time)
-                                                   :WS                    (get-current-weather-var "WS" fire-name time)
-                                                   :FFMC                  (get-current-weather-var "FFMC" fire-name time)
-                                                   :TMP                   (get-current-weather-var "TMP" fire-name time)
-                                                   :APCP                  (get-current-weather-var "APCP" fire-name time)
-                                                   :DC                    (get-current-weather-var "DC" fire-name time)
-                                                   :BUI                   (get-current-weather-var "BUI" fire-name time)
-                                                   :RH                    (get-current-weather-var "RH" fire-name time)
-                                                   :ISI                   (get-current-weather-var "ISI" fire-name time)
-                                                   :DMC                   (get-current-weather-var "DMC" fire-name time)
-                                                   :WD                    (get-current-weather-var "WD" fire-name time)
+                   (assoc empty-push-state :input {:elevation             (int (get-elevation-at-cell cell-id fire-name))
+                                                   :slope                 (int (get-slope-at-cell cell-id fire-name))
+                                                   :FWI                   (int (get-current-weather-var "FWI" fire-name time))
+                                                   :WS                    (int (get-current-weather-var "WS" fire-name time))
+                                                   :FFMC                  (int (get-current-weather-var "FFMC" fire-name time))
+                                                   :TMP                   (int (get-current-weather-var "TMP" fire-name time))
+                                                   :APCP                  (int (get-current-weather-var "APCP" fire-name time))
+                                                   :DC                    (int (get-current-weather-var "DC" fire-name time))
+                                                   :BUI                   (int (get-current-weather-var "BUI" fire-name time))
+                                                   :RH                    (int (get-current-weather-var "RH" fire-name time))
+                                                   :ISI                   (int (get-current-weather-var "ISI" fire-name time))
+                                                   :DMC                   (int (get-current-weather-var "DMC" fire-name time))
+                                                   :WD                    (int (get-current-weather-var "WD" fire-name time))
                                                    :current-value         current-value
                                                    :time-step             time
                                                    :nw                    (:NW b-neighbors-map)
