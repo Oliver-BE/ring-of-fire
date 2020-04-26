@@ -296,14 +296,14 @@
   (let [program (push-from-plushy (:plushy individual))
 
         ;; a vector containing each fire name as a string is our inputs
-        inputs fire-names
+        inputs ["a1"]
 
 
         ;; correct output is each
         correct-outputs (map #((keyword (name %)) final-scar-grid-master) inputs)
 
         ;; run each fire through our run-fire function with the given program
-        outputs (map #(run-fire % program argmap) inputs)
+        outputs (vec (map #(run-fire % program argmap) inputs))
 
 
         ;; returns a vector where 1 indicates different outputs
@@ -317,10 +317,27 @@
     ;                  1))
     ;            correct-outputs
     ;            outputs)]
+    (prn "outputs" outputs)
+    (prn "output assoc?" (associative? outputs))
+    (prn "errors" errors)
+    (prn "errors assoc?" (associative? errors))
+    (prn "total-error" (reduce + errors))
+    (prn "total-error assoc?" (associative? (reduce + errors)))
+    (prn individual)
+    (prn "individual assoc?" (associative? individual))
     (assoc individual
       :behaviors outputs
       :errors errors
-      :total-error (apply +' errors))))
+      :total-error (reduce + errors))))
+
+;This is the correct format
+;{:plushy (boolean_and DMC 1 true elevation sw integer_*)}
+
+#_(def test-program {:plushy '(w)})
+#_(def test-argmap {:step-limit 5})
+
+#_(run-fire "m1" test-program test-argmap)
+
 #_(fire-error-function test-argmap test-program)
 
 
@@ -420,11 +437,6 @@
 
 
 
-#_(def test-program (list 'w))
-#_(def test-argmap {:step-limit 5})
-#_(def test-program (push-from-plushy (:plushy test-instructions)))
-
-#_(run-fire "m1" test-program test-argmap)
 
 
 (defn test-update-grid
