@@ -26,7 +26,7 @@
   (list
     ;; fire vars
     'elevation
-    'slope
+    ;'slope
     'APCP
     'TMP
     'RH

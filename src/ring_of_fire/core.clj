@@ -25,6 +25,7 @@
                     :r2 revelstoke2-forest
                     })
 
+
 (def weather-master {:a1 arrowhead1-weather
                      :a2 arrowhead2-weather
                      :k1 kootenay1-weather
@@ -49,9 +50,21 @@
                        :r2 revelstoke2-elevation
                        })
 
+(def elevation-master-flattened {:a1 (flatten arrowhead1-elevation)
+                                 :a2 (flatten arrowhead2-elevation)
+                                 :k1 (flatten kootenay1-elevation)
+                                 :k2 (flatten kootenay2-elevation)
+                                 :g1 (flatten glacier1-elevation)
+                                 :g2 (flatten glacier2-elevation)
+                                 :m1 (flatten mica1-elevation)
+                                 :m2 (flatten mica2-elevation)
+                                 :r1 (flatten revelstoke1-elevation)
+                                 :r2 (flatten revelstoke2-elevation)
+                                 })
+
 ;; note that arrowhead 2 slope is messed up
 (def slope-master {:a1 arrowhead1-slope
-                   :a2 arrowhead1-slope
+                   :a2 arrowhead2-slope
                    :k1 kootenay1-slope
                    :k2 kootenay2-slope
                    :g1 glacier1-slope
@@ -230,8 +243,6 @@
 
 
 
-
-
 (defn get-burning-neighbor
   "Calls burning neighbors map and retrieves specific neighbor"
   [cell-id fire-grid neighbor-direction]
@@ -252,9 +263,10 @@
 (defn get-elevation-at-cell
   "Returns the elevation of a specified cell in a specified fire"
   [cell-id fire]
-  (nth (flatten ((keyword (name fire)) elevation-master)) cell-id))
+  (nth ((keyword (name fire)) elevation-master-flattened) cell-id))
 #_(get-elevation-at-cell 3131 "m1")
 
+;; we aren't using this
 (defn get-slope-at-cell
   "Returns the elevation of a specified cell in a specified fire"
   [cell-id fire]
@@ -271,10 +283,10 @@
 
 #_(propel-gp {:instructions            fire-instructions
               :error-function          fire-error-function
-              :max-generations         500
+              :max-generations         10
               :population-size         1
               :max-initial-plushy-size 50
-              :step-limit              100
+              :step-limit              10
               :parent-selection        :lexicase
               :tournament-size         5})
 
@@ -296,6 +308,7 @@
   (let [program (push-from-plushy (:plushy individual))
 
         ;; a vector containing each fire name as a string is our inputs
+        ;; REMEMBER PUT BACK IN ALL FIRES fire-names HERE
         inputs ["a1"]
 
 
@@ -317,14 +330,14 @@
     ;                  1))
     ;            correct-outputs
     ;            outputs)]
-    (prn "outputs" outputs)
-    (prn "output assoc?" (associative? outputs))
-    (prn "errors" errors)
-    (prn "errors assoc?" (associative? errors))
-    (prn "total-error" (reduce + errors))
-    (prn "total-error assoc?" (associative? (reduce + errors)))
-    (prn individual)
-    (prn "individual assoc?" (associative? individual))
+    ;(prn "outputs" outputs)
+    ;(prn "output assoc?" (associative? outputs))
+    ;(prn "errors" errors)
+    ;(prn "errors assoc?" (associative? errors))
+    ;(prn "total-error" (reduce + errors))
+    ;(prn "total-error assoc?" (associative? (reduce + errors)))
+    ;(prn individual)
+    ;(prn "individual assoc?" (associative? individual))
     (assoc individual
       :behaviors outputs
       :errors errors
@@ -362,7 +375,7 @@
   [fire-name program argmap]
   (loop [grid ((keyword (name fire-name)) initial-fire-grids)
          time-step 0]
-    (prn "time-step:" time-step) (prn "Fire name:" fire-name)
+    ;(prn "time-step:" time-step) (prn "Fire name:" fire-name)
     ;(prn grid)
     (if (> time-step 5)
       ;; if time is up convert all 2s to 1s and return fire-scar
@@ -370,7 +383,7 @@
 
       ;; otherwise update our grid and increment time
 
-      (recur (time (update-grid grid fire-name time-step program argmap))
+      (recur (update-grid grid fire-name time-step program argmap)
              (inc time-step)))))
 ;; this is dummy slow
 #_(run-fire "m1" test-program test-argmap)
@@ -411,19 +424,21 @@
     (partition (num-columns fire-name)
                ;; returns a flattened vector of all cell values
                (for [i (range (count flattened-grid))]
+                 (let [cell-value (nth flattened-grid i)]
                  ;; only update cell if it's burning
-                 (if (or (= (nth flattened-grid i) 1)
+                 (if (or (= cell-value 1)
                          ;; or it has at least one burning neighbor (burning = 1)
                          ;; and is a burnable cell (according to fuel-master where 1 = burnable)
-                         (and (>= (num-burning-neighbors i fire-grid) 1) (= 1 (nth flattened-fuel i))))
+                         ;; and isn't already burned (burned = 2) thus it must be a 0
+                         (and (>= (num-burning-neighbors i fire-grid) 1) (= 1 (nth flattened-fuel i)) (= cell-value 0)))
                    ;; if true then return 0
 
                    ;(do
                    ;Use the following to time the update cell method
-                   (time (update-cell i fire-name time-step fire-grid program argmap))
+                   (update-cell i fire-name time-step fire-grid program argmap)
                    ;(update-cell i fire-name time-step fire-grid program argmap))
                    ;; else just return current value
-                   (nth flattened-grid i))))))
+                   (nth flattened-grid i)))))))
 #_(update-grid (:m1 initial-fire-grids) "m1" 0 test-program test-argmap)
 #_(update-grid test-burning-grid "m1" 0 test-program test-argmap)
 
@@ -483,15 +498,15 @@
 (defn update-cell
   "Update cell to next state by interpreting push program"
   [cell-id fire-name time current-grid program argmap]
-  (prn "cell-id:" cell-id)
-  (prn "Update-Cell: program" program)
+  ;(prn "cell-id:" cell-id)
+  ;(prn "Update-Cell: program" program)
   (let [b-neighbors-map (get-burning-neighbors-map cell-id current-grid)
         current-value (nth (flatten current-grid) cell-id)
         answer (peek-stack
                  (interpret-program
                    program
                    (assoc empty-push-state :input {:elevation             (int (get-elevation-at-cell cell-id fire-name))
-                                                   :slope                 (int (get-slope-at-cell cell-id fire-name))
+                                                   ;:slope                 ;(int (get-slope-at-cell cell-id fire-name))
                                                    :FWI                   (int (get-current-weather-var "FWI" fire-name time))
                                                    :WS                    (int (get-current-weather-var "WS" fire-name time))
                                                    :FFMC                  (int (get-current-weather-var "FFMC" fire-name time))
