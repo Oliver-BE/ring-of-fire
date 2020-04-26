@@ -51,7 +51,7 @@
 
 ;; note that arrowhead 2 slope is messed up
 (def slope-master {:a1 arrowhead1-slope
-                   :a2 arrowhead2-slope
+                   :a2 arrowhead1-slope
                    :k1 kootenay1-slope
                    :k2 kootenay2-slope
                    :g1 glacier1-slope
@@ -281,13 +281,16 @@
   (let [program (push-from-plushy (:plushy individual))
 
         ;; a vector containing each fire name as a string is our inputs
-        inputs fire-names
+        inputs "m1"
+        ;fire-names
 
         ;; correct output is each
-        correct-outputs (map #((keyword (name %)) final-scar-grid-master) inputs)
+        correct-outputs ((keyword (name inputs)) final-scar-grid-master)
+        ;(map #((keyword (name %)) final-scar-grid-master) inputs)
 
         ;; run each fire through our run-fire function with the given program
-        outputs (map #(run-fire % argmap program) inputs)
+        outputs (run-fire inputs argmap program)
+        ;(map #(run-fire % argmap program) inputs)
 
         ;; returns a vector where 1 indicates different outputs
         ;; 0 indicates the outputs were the same
@@ -304,6 +307,9 @@
       :behaviors outputs
       :errors errors
       :total-error (apply +' errors))))
+#_(fire-error-function test-argmap test-instructions)
+
+
 
 (defn compare-grids
   "Compares each cell in the two grids and
@@ -324,7 +330,7 @@
   [fire-name program argmap]
   (loop [grid ((keyword (name fire-name)) initial-fire-grids)
          time 0]
-    (if (> time 1440)
+    (if (> time 5)
       ;; if time is up convert all 2s to 1s and return fire-scar
       (convert-grid grid)
       ;; otherwise update our grid and increment time

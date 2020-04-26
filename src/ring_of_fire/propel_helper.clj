@@ -76,6 +76,7 @@
     'close
     0
     1
+    2
     true
     false
     ))
@@ -584,7 +585,7 @@
         :else (recur (inc generation)
                      (repeatedly population-size
                                  #(new-individual evaluated-pop argmap)))))))
-
+#_(propel-gp )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Spector example error functions ;;
