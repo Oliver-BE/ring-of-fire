@@ -281,17 +281,23 @@
 ;-------------------------
 ; RUNNER
 
-#_(propel-gp {:instructions            fire-instructions
+#_(propel-gp {:instructions            alpha-instructs
               :error-function          fire-error-function
               :max-generations         10
-              :population-size         3
-              :max-initial-plushy-size 50
+              :population-size         1
+              :max-initial-plushy-size 20
               :step-limit              10
               :parent-selection        :lexicase
               :tournament-size         5})
 
 ;-------------------------
 
+#_(def alpha-instructs
+  (list
+    1
+    'integer_+
+    'exec_dup)
+  )
 
 
 #_(fire-error-function test-argmap test-instructions)
@@ -364,6 +370,7 @@
 ;; run fire function (calls update grid) ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; FIGURE IT OUT ALPHAS
 ;; note why ware we updating one extra time step beyond?
 (defn run-fire
   "Runs a specified fire all the way through and returns
@@ -373,7 +380,7 @@
          time-step 0]
     ;(prn "time-step:" time-step) (prn "Fire name:" fire-name)
     ;(prn grid)
-    (if (> time-step 5)
+    (if (> time-step 3)
       ;; if time is up convert all 2s to 1s and return fire-scar
       (convert-grid grid)
 
@@ -415,8 +422,8 @@
 (defn update-grid
   "Updates a fire grid from one time step to the next"
   [fire-grid fire-name time-step program argmap]
-  (let [flattened-grid (flatten fire-grid)
-        flattened-fuel (flatten ((keyword (name fire-name)) fuel-master))]
+  (let [flattened-grid (vec (flatten fire-grid))
+        flattened-fuel (vec (flatten ((keyword (name fire-name)) fuel-master)))]
     ;; turns flattened vector back into a grid
     (partition (num-columns fire-name)
                ;; returns a flattened vector of all cell values

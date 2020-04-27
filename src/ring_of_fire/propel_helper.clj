@@ -427,6 +427,10 @@
       (or (= first-instruction true) (= first-instruction false))
       (push-to-stack popped-state :boolean first-instruction)
       ;
+      ;;ALPHA CHECKKKK
+      (nil? first-instruction)
+      (throw (Exception. (str "ALPHA NIL EXCEPTION: " popped-state " FIRST RAW: " first-raw)))
+      ;
       :else
       (throw (Exception. (str "Unrecognized Push instruction in program: "
                               first-instruction))))))
@@ -586,7 +590,7 @@
         :else (recur (inc generation)
                      (repeatedly population-size
                                  #(new-individual evaluated-pop argmap)))))))
-#_(propel-gp )
+#_(propel-gp)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Spector example error functions ;;
