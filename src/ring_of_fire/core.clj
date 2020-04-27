@@ -38,6 +38,7 @@
                      :r2 revelstoke2-weather
                      })
 
+;; elevation glacier1 wont compile
 (def elevation-master {:a1 arrowhead1-elevation
                        :a2 arrowhead2-elevation
                        :k1 kootenay1-elevation
@@ -50,6 +51,7 @@
                        :r2 revelstoke2-elevation
                        })
 
+;; elevation glacier1 wont compile
 (def elevation-master-flattened {:a1 (vec (flatten arrowhead1-elevation))
                                  :a2 (vec (flatten arrowhead2-elevation))
                                  :k1 (vec (flatten kootenay1-elevation))
@@ -142,13 +144,17 @@
   "Takes in appropriate fire name and uses its forest grid to return new grid
   where 0 refers to non-fuel and 1 refers to burnable / fuel"
   [fire-name]
-  (let [grid ((keyword (name fire-name)) forest-master)]
-    (vec (partition (num-columns fire-name)
-               (map #(if (and (>= % 100) (<= % 105))
-                       (* 0 %)
-                       (+ 1 (* 0 %))
-                       )
-                    (vec (flatten grid)))))))
+  (let [grid ((keyword (name fire-name)) forest-master)
+        ;; messy-grid is what we want, but with each row as a lazy seq
+        messy-grid (vec (partition (num-columns fire-name)
+                                   (map #(if (and (>= % 100) (<= % 105))
+                                           (* 0 %)
+                                           (+ 1 (* 0 %))
+                                           )
+                                        (vec (flatten grid)))))]
+    ;; this for loop transforms each lazy seq row into a vector
+    (vec (for [i (range (count messy-grid))]
+           (vec (nth messy-grid i))))))
 #_(create-fuel-grid "m1")
 #_(:m1 forest-master)
 #_(:m1 final-scar-grid-master)
@@ -159,16 +165,21 @@
   [fire-name]
   (vec (repeat (count ((keyword (name fire-name)) elevation-master))
                (vec (repeat (count (first ((keyword (name fire-name)) elevation-master))) 0)))))
+#_(construct-empty-grid "m1")
 
 ;; note that we're not certain if ignition cell is 0 indexed or not
 ;; (do we need to subtract 1?)
 (defn construct-initial-grid
-  "Returns initial grid with a 1 where the ignition cell is"
+  "Returns initial grid (vector of vectors) with a 1 where the ignition cell is"
   [fire-name]
   (let [width (num-columns fire-name)
         ignition-cell ((keyword (name fire-name)) ignition-cell-master)
-        grid (construct-empty-grid fire-name)]
-    (vec (partition width (assoc (vec (flatten grid)) ignition-cell 1)))))
+        grid (construct-empty-grid fire-name)
+        ;; messy-grid is what we want, but with each row as a lazy seq
+        messy-grid (partition width (assoc (vec (flatten grid)) ignition-cell 1))]
+    ;; this for loop transforms each lazy seq row into a vector
+    (vec (for [i (range (count messy-grid))]
+           (vec (nth messy-grid i))))))
 #_(construct-initial-grid "m1")
 #_(:m1 ignition-cell-master)
 #_(reduce + (flatten (construct-initial-grid "m1")))
@@ -266,12 +277,12 @@
   (nth ((keyword (name fire)) elevation-master-flattened) cell-id))
 #_(get-elevation-at-cell 3131 "m1")
 
-;; we aren't using this
-(defn get-slope-at-cell
-  "Returns the elevation of a specified cell in a specified fire"
-  [cell-id fire]
-  (nth (flatten ((keyword (name fire)) slope-master)) cell-id))
-#_(get-slope-at-cell 150 "r1")
+;;; we aren't using this
+;(defn get-slope-at-cell
+;  "Returns the elevation of a specified cell in a specified fire"
+;  [cell-id fire]
+;  (nth (flatten ((keyword (name fire)) slope-master)) cell-id))
+;#_(get-slope-at-cell 150 "r1")
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -281,7 +292,7 @@
 ;-------------------------
 ; RUNNER
 
-#_(propel-gp {:instructions            alpha-instructs
+#_(propel-gp {:instructions            fire-instructions
               :error-function          fire-error-function
               :max-generations         10
               :population-size         1
@@ -292,15 +303,7 @@
 
 ;-------------------------
 
-#_(def alpha-instructs
-  (list
-    1
-    'integer_+
-    'exec_dup)
-  )
 
-
-#_(fire-error-function test-argmap test-instructions)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; fire error function (calls run fire)  ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -315,14 +318,14 @@
 
         ;; a vector containing each fire name as a string is our inputs
         ;; REMEMBER PUT BACK IN ALL FIRES fire-names HERE
-        inputs ["a1"]
+        inputs fire-names
 
 
         ;; correct output is each
         correct-outputs (map #((keyword (name %)) final-scar-grid-master) inputs)
 
         ;; run each fire through our run-fire function with the given program
-        outputs (vec (map #(run-fire % program argmap) inputs))
+        outputs (vec (pmap #(run-fire % program argmap) inputs))
 
 
         ;; returns a vector where 1 indicates different outputs
@@ -397,14 +400,19 @@
   "Converts grid to all 1s and 0s (2s become 1s everything else stays the same)"
   [grid]
   ;; partition by columns
-  (vec (partition (count (nth grid 0))
-                  (map #(if (= % 2)
-                          ;; 2s become 1s
-                          (dec %)
-                          ;; everything else stays the same
-                          %)
-                       (flatten grid)))))
-#_(convert-grid [[2 1 1 0 1 0] [0 0 1 2 2 2]])
+  (let [messy-grid (vec (partition (count (nth grid 0))
+                                   (map #(if (= % 2)
+                                           ;; 2s become 1s
+                                           (dec %)
+                                           ;; everything else stays the same
+                                           %)
+                                        (flatten grid))))]
+    ;; this for loop transforms each lazy seq row into a vector
+    (vec (for [i (range (count messy-grid))]
+           (vec (nth messy-grid i))))))
+#_(convert-grid '((2 1 1 0 1 0) (0 0 1 2 2 2)))
+#_(convert-grid test-burned-grid)
+#_(convert-grid (update-grid (:m1 initial-fire-grids) "m1" 0 test-program test-argmap))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; update grid function (calls update cell) ;;
@@ -429,20 +437,20 @@
                ;; returns a flattened vector of all cell values
                (for [i (range (count flattened-grid))]
                  (let [cell-value (nth flattened-grid i)]
-                 ;; only update cell if it's burning
-                 (if (or (= cell-value 1)
-                         ;; or it has at least one burning neighbor (burning = 1)
-                         ;; and is a burnable cell (according to fuel-master where 1 = burnable)
-                         ;; and isn't already burned (burned = 2) thus it must be a 0
-                         (and (>= (num-burning-neighbors i fire-grid) 1) (= 1 (nth flattened-fuel i)) (= cell-value 0)))
-                   ;; if true then return 0
+                   ;; only update cell if it's burning
+                   (if (or (= cell-value 1)
+                           ;; or it has at least one burning neighbor (burning = 1)
+                           ;; and is a burnable cell (according to fuel-master where 1 = burnable)
+                           ;; and isn't already burned (burned = 2) thus it must be a 0
+                           (and (>= (num-burning-neighbors i fire-grid) 1) (= 1 (nth flattened-fuel i)) (= cell-value 0)))
+                     ;; if true then return 0
 
-                   ;(do
-                   ;Use the following to time the update cell method
-                   (update-cell i fire-name time-step fire-grid program argmap)
-                   ;(update-cell i fire-name time-step fire-grid program argmap))
-                   ;; else just return current value
-                   (nth flattened-grid i)))))))
+                     ;(do
+                     ;Use the following to time the update cell method
+                     (update-cell i fire-name time-step fire-grid program argmap)
+                     ;(update-cell i fire-name time-step fire-grid program argmap))
+                     ;; else just return current value
+                     (nth flattened-grid i)))))))
 #_(update-grid (:m1 initial-fire-grids) "m1" 0 test-program test-argmap)
 #_(update-grid test-burning-grid "m1" 0 test-program test-argmap)
 
@@ -483,30 +491,30 @@
         answer (peek-stack
                  (interpret-program
                    program
-                   (assoc empty-push-state :input {:elevation             (int (get-elevation-at-cell cell-id fire-name))
+                   (assoc empty-push-state :input {:elevation         (int (get-elevation-at-cell cell-id fire-name))
                                                    ;:slope                 ;(int (get-slope-at-cell cell-id fire-name))
-                                                   :FWI                   (int (get-current-weather-var "FWI" fire-name time))
-                                                   :WS                    (int (get-current-weather-var "WS" fire-name time))
-                                                   :FFMC                  (int (get-current-weather-var "FFMC" fire-name time))
-                                                   :TMP                   (int (get-current-weather-var "TMP" fire-name time))
-                                                   :APCP                  (int (get-current-weather-var "APCP" fire-name time))
-                                                   :DC                    (int (get-current-weather-var "DC" fire-name time))
-                                                   :BUI                   (int (get-current-weather-var "BUI" fire-name time))
-                                                   :RH                    (int (get-current-weather-var "RH" fire-name time))
-                                                   :ISI                   (int (get-current-weather-var "ISI" fire-name time))
-                                                   :DMC                   (int (get-current-weather-var "DMC" fire-name time))
-                                                   :WD                    (int (get-current-weather-var "WD" fire-name time))
-                                                   :current-value         current-value
-                                                   :time-step             time
-                                                   :nw                    (:NW b-neighbors-map)
-                                                   :n                     (:N b-neighbors-map)
-                                                   :ne                    (:NE b-neighbors-map)
-                                                   :e                     (:E b-neighbors-map)
-                                                   :w                     (:W b-neighbors-map)
-                                                   :sw                    (:SW b-neighbors-map)
-                                                   :s                     (:S b-neighbors-map)
-                                                   :se                    (:SE b-neighbors-map)
-                                                   :num-burning-neighbors (num-burning-neighbors cell-id current-grid)
+                                                   :FWI               (int (get-current-weather-var "FWI" fire-name time))
+                                                   :WS                (int (get-current-weather-var "WS" fire-name time))
+                                                   :FFMC              (int (get-current-weather-var "FFMC" fire-name time))
+                                                   :TMP               (int (get-current-weather-var "TMP" fire-name time))
+                                                   :APCP              (int (get-current-weather-var "APCP" fire-name time))
+                                                   :DC                (int (get-current-weather-var "DC" fire-name time))
+                                                   :BUI               (int (get-current-weather-var "BUI" fire-name time))
+                                                   :RH                (int (get-current-weather-var "RH" fire-name time))
+                                                   :ISI               (int (get-current-weather-var "ISI" fire-name time))
+                                                   :DMC               (int (get-current-weather-var "DMC" fire-name time))
+                                                   :WD                (int (get-current-weather-var "WD" fire-name time))
+                                                   :current-value     current-value
+                                                   :time-step         time
+                                                   :nw                (:NW b-neighbors-map)
+                                                   :n                 (:N b-neighbors-map)
+                                                   :ne                (:NE b-neighbors-map)
+                                                   :e                 (:E b-neighbors-map)
+                                                   :w                 (:W b-neighbors-map)
+                                                   :sw                (:SW b-neighbors-map)
+                                                   :s                 (:S b-neighbors-map)
+                                                   :se                (:SE b-neighbors-map)
+                                                   :num-burning-neigh (num-burning-neighbors cell-id current-grid)
                                                    })
 
                    (:step-limit argmap))
