@@ -13,9 +13,9 @@
   "Reads in a csv given a string holding the path to a file
   as a lazy sequence of lazy sequences"
   [path-to-file]
-  (vec (with-open [reader (io/reader path-to-file)]
+  (with-open [reader (io/reader path-to-file)]
          (doall
-           (csv/read-csv reader)))))
+           (csv/read-csv reader))))
 #_(read-in-csv "data/MicaCreek/Fire1/FinalScarGrid.csv")
 
 (defn csv-to-dict
@@ -37,16 +37,16 @@
 #_(write-csv [["abc" "def"] ["ghi" "jkl"]] "data/output.csv")
 
 (defn clean-row
-  "Helper function to clean data"
+  "Helper function to clean data. Converts one vector row of strings to longs"
   [row]
   (vec (map #(read-string %) (str/split (nth row 0) #" "))))
-#_(clean-row ["1 1 1"])
+#_(clean-row '("1 1 1"))
 
 (defn clean
-  "Cleans data in string format into a vector of longs"
+  "Cleans data in string format into a vector of vector of longs"
   [data]
   (vec (map #(clean-row %) data)))
-#_(clean [["1 1 1"] ["0 0 0"]])
+#_(clean '(("1 1 1") ("0 0 0")))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Specialized functions for reading in different Cell2Fire data inputs   ;;
@@ -64,6 +64,7 @@
   [path]
   (vec (drop 6 (clean (read-in-csv path)))))
 #_(def mica1-elevation (read-in-asc "data/MicaCreek/Fire1/elevation.asc"))
+#_(def glacier1-elevation (read-in-asc "data/GlacierNationalPark/Fire1/elevation.asc"))
 
 (defn read-in-ignition-cell
   "Returns the cell number that corresponds to the ignition point

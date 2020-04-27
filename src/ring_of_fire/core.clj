@@ -292,7 +292,7 @@
 ;-------------------------
 ; RUNNER
 
-#_(propel-gp {:instructions            alpha-instructs
+#_(propel-gp {:instructions            fire-instructions
               :error-function          fire-error-function
               :max-generations         10
               :population-size         1
@@ -318,14 +318,14 @@
 
         ;; a vector containing each fire name as a string is our inputs
         ;; REMEMBER PUT BACK IN ALL FIRES fire-names HERE
-        inputs ["a1"]
+        inputs fire-names
 
 
         ;; correct output is each
         correct-outputs (map #((keyword (name %)) final-scar-grid-master) inputs)
 
         ;; run each fire through our run-fire function with the given program
-        outputs (vec (map #(run-fire % program argmap) inputs))
+        outputs (vec (pmap #(run-fire % program argmap) inputs))
 
 
         ;; returns a vector where 1 indicates different outputs
