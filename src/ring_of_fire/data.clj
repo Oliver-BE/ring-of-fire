@@ -14,18 +14,18 @@
   as a lazy sequence of lazy sequences"
   [path-to-file]
   (vec (with-open [reader (io/reader path-to-file)]
-    (doall
-      (csv/read-csv reader)))))
+         (doall
+           (csv/read-csv reader)))))
 #_(read-in-csv "data/MicaCreek/Fire1/FinalScarGrid.csv")
 
 (defn csv-to-dict
   "Converts CSV into a sequence of dictionaries"
   [csv-data]
   (vec (map zipmap
-       (->> (first csv-data)                                ;; First row is the header
-            (map keyword)                                   ;; Drop if you want string keys instead
-            repeat)
-       (rest csv-data))))
+            (->> (first csv-data)                           ;; First row is the header
+                 (map keyword)                              ;; Drop if you want string keys instead
+                 repeat)
+            (rest csv-data))))
 #_(csv-to-dict (read-in-csv "data/Arrowhead/Fire1/Weather.csv"))
 
 (defn write-csv
