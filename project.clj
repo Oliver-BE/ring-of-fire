@@ -5,7 +5,7 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.10.0"] [org.clojure/data.csv "1.0.0"] [quil "3.1.0"]]
   :repl-options {:init-ns ring-of-fire.core}
-  :main ring-of-fire.core)
+  :main "src/ring-of-fire.core")
 
 ;; "src/ring-of-fire/core.clj"
 ;; "src/ring-of-fire/r.core"
