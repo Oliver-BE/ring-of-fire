@@ -581,7 +581,7 @@
                                  (make-random-plushy instructions
                                                      max-initial-plushy-size)))]
     (let [evaluated-pop (sort-by :total-error
-                                 (map (partial error-function argmap)
+                                 (pmap (partial error-function argmap)
                                       population))]
       (report evaluated-pop generation)
       (cond

@@ -292,15 +292,7 @@
 
 ;-------------------------
 
-#_(def alpha-instructs
-  (list
-    1
-    'integer_+
-    'exec_dup)
-  )
 
-
-#_(fire-error-function test-argmap test-instructions)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; fire error function (calls run fire)  ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -506,7 +498,7 @@
                                                    :sw                    (:SW b-neighbors-map)
                                                    :s                     (:S b-neighbors-map)
                                                    :se                    (:SE b-neighbors-map)
-                                                   :num-burning-neighbors (num-burning-neighbors cell-id current-grid)
+                                                   :num-burning-neigh (num-burning-neighbors cell-id current-grid)
                                                    })
 
                    (:step-limit argmap))

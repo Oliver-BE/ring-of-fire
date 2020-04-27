@@ -13,19 +13,19 @@
   "Reads in a csv given a string holding the path to a file
   as a lazy sequence of lazy sequences"
   [path-to-file]
-  (with-open [reader (io/reader path-to-file)]
+  (vec (with-open [reader (io/reader path-to-file)]
     (doall
-      (csv/read-csv reader))))
-#_(read-in-csv "data/Arrowhead/Fire1/FinalScarGrid.csv")
+      (csv/read-csv reader)))))
+#_(read-in-csv "data/MicaCreek/Fire1/FinalScarGrid.csv")
 
 (defn csv-to-dict
   "Converts CSV into a sequence of dictionaries"
   [csv-data]
-  (map zipmap
+  (vec (map zipmap
        (->> (first csv-data)                                ;; First row is the header
             (map keyword)                                   ;; Drop if you want string keys instead
             repeat)
-       (rest csv-data)))
+       (rest csv-data))))
 #_(csv-to-dict (read-in-csv "data/Arrowhead/Fire1/Weather.csv"))
 
 (defn write-csv
@@ -39,13 +39,14 @@
 (defn clean-row
   "Helper function to clean data"
   [row]
-  (map #(read-string %) (str/split (nth row 0) #" ")))
+  (vec (map #(read-string %) (str/split (nth row 0) #" "))))
+#_(clean-row ["1 1 1"])
 
 (defn clean
-  "Cleans data in string format into longs"
+  "Cleans data in string format into a vector of longs"
   [data]
-  (map #(clean-row %) data))
-#_(clean '(["1 1 1"] ["0 0 0"]))
+  (vec (map #(clean-row %) data)))
+#_(clean [["1 1 1"] ["0 0 0"]])
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Specialized functions for reading in different Cell2Fire data inputs   ;;
@@ -54,7 +55,7 @@
 (defn read-in-fire-scar
   "Returns a fully cleaned fire scar (a vector of vectors)"
   [path]
-  (vec (clean (read-in-csv path))))
+  (clean (read-in-csv path)))
 
 
 (defn read-in-asc
@@ -62,7 +63,7 @@
   includes Forest.asc, elevation.asc, and slope.asc"
   [path]
   (vec (drop 6 (clean (read-in-csv path)))))
-
+#_(def mica1-elevation (read-in-asc "data/MicaCreek/Fire1/elevation.asc"))
 
 (defn read-in-ignition-cell
   "Returns the cell number that corresponds to the ignition point
@@ -75,13 +76,13 @@
   "Returns a fully cleaned weather file as a vector of
   dictionaries (each observation/row is its own dictionary)"
   [path]
-  (vec (csv-to-dict (read-in-csv path))))
+  (csv-to-dict (read-in-csv path)))
 
 (defn read-in-fbp-lookup
   "Returns a fully cleaned fbp lookup table file as a vector of
   dictionaries (each observation/row is its own dictionary)"
   [path]
-  (vec (csv-to-dict (read-in-csv path))))
+  (csv-to-dict (read-in-csv path)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Read in data as Clojure objects                                        ;;
@@ -152,6 +153,7 @@
 (def glacier1-final-scar (read-in-fire-scar "data/GlacierNationalPark/Fire1/FinalScarGrid.csv"))
 (def glacier1-forest (read-in-asc "data/GlacierNationalPark/Fire1/Forest.asc"))
 (def glacier1-ignition-cell (read-in-ignition-cell "data/GlacierNationalPark/Fire1/IgnitionPoints.csv"))
+;; compile issue here?
 (def glacier1-elevation (read-in-asc "data/GlacierNationalPark/Fire1/elevation.asc"))
 (def glacier1-slope (read-in-asc "data/GlacierNationalPark/Fire1/slope.asc"))
 (def glacier1-weather (read-in-weather "data/GlacierNationalPark/Fire1/Weather.csv"))
