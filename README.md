@@ -1,13 +1,20 @@
 # ring-of-fire
 
-A Clojure library designed to ... well, that part is up to you.
+A ~lightweight~, parallelized Clojure based propel-gp framework for evolving cellular automata based fire simulators through genetic programming.
 
 ## Usage
 
-FIXME
+Clone repository, navigate to the ring-of-fire directory and run command: <br />
+`lein run`<br />
+To interact with a repl: <br />
+`lein repl`
+
+## Dependencies
+
+Requires Java SDK and Leiningen. 
 
 ## License
 
-Copyright © 2020 FIXME
+Copyright © 2020 OIM Interprises
 
 
