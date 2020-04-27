@@ -16,3 +16,4 @@ output = /home/mglusker21/cluster-scratch/ring-of-fire/results/1/out
 error  = /home/mglusker21/cluster-scratch/ring-of-fire/results/1/err
 log    = /home/mglusker21/cluster-scratch/ring-of-fire/results/1/log
 queue
+
