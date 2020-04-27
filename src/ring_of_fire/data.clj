@@ -52,16 +52,16 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defn read-in-fire-scar
-  "Returns a fully cleaned fire scar (a lazy sequence of lazy sequences)"
+  "Returns a fully cleaned fire scar (a vector of vectors)"
   [path]
-  (clean (read-in-csv path)))
+  (vec (clean (read-in-csv path))))
 
 
 (defn read-in-asc
-  "Returns a fully cleaned asc file as a lazy sequence of lazy sequences
+  "Returns a fully cleaned asc file as a vector of vectors
   includes Forest.asc, elevation.asc, and slope.asc"
   [path]
-  (drop 6 (clean (read-in-csv path))))
+  (vec (drop 6 (clean (read-in-csv path)))))
 
 
 (defn read-in-ignition-cell
@@ -72,16 +72,16 @@
   (read-string (nth (nth (read-in-csv path) 1) 1)))
 
 (defn read-in-weather
-  "Returns a fully cleaned weather file as a sequence of
+  "Returns a fully cleaned weather file as a vector of
   dictionaries (each observation/row is its own dictionary)"
   [path]
-  (csv-to-dict (read-in-csv path)))
+  (vec (csv-to-dict (read-in-csv path))))
 
 (defn read-in-fbp-lookup
-  "Returns a fully cleaned fbp lookup table file as a sequence of
+  "Returns a fully cleaned fbp lookup table file as a vector of
   dictionaries (each observation/row is its own dictionary)"
   [path]
-  (csv-to-dict (read-in-csv path)))
+  (vec (csv-to-dict (read-in-csv path))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Read in data as Clojure objects                                        ;;

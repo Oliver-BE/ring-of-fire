@@ -50,16 +50,16 @@
                        :r2 revelstoke2-elevation
                        })
 
-(def elevation-master-flattened {:a1 (flatten arrowhead1-elevation)
-                                 :a2 (flatten arrowhead2-elevation)
-                                 :k1 (flatten kootenay1-elevation)
-                                 :k2 (flatten kootenay2-elevation)
-                                 :g1 (flatten glacier1-elevation)
-                                 :g2 (flatten glacier2-elevation)
-                                 :m1 (flatten mica1-elevation)
-                                 :m2 (flatten mica2-elevation)
-                                 :r1 (flatten revelstoke1-elevation)
-                                 :r2 (flatten revelstoke2-elevation)
+(def elevation-master-flattened {:a1 (vec (flatten arrowhead1-elevation))
+                                 :a2 (vec (flatten arrowhead2-elevation))
+                                 :k1 (vec (flatten kootenay1-elevation))
+                                 :k2 (vec (flatten kootenay2-elevation))
+                                 :g1 (vec (flatten glacier1-elevation))
+                                 :g2 (vec (flatten glacier2-elevation))
+                                 :m1 (vec (flatten mica1-elevation))
+                                 :m2 (vec (flatten mica2-elevation))
+                                 :r1 (vec (flatten revelstoke1-elevation))
+                                 :r2 (vec (flatten revelstoke2-elevation))
                                  })
 
 ;; note that arrowhead 2 slope is messed up
@@ -143,12 +143,12 @@
   where 0 refers to non-fuel and 1 refers to burnable / fuel"
   [fire-name]
   (let [grid ((keyword (name fire-name)) forest-master)]
-    (partition (num-columns fire-name)
+    (vec (partition (num-columns fire-name)
                (map #(if (and (>= % 100) (<= % 105))
                        (* 0 %)
                        (+ 1 (* 0 %))
                        )
-                    (flatten grid)))))
+                    (vec (flatten grid)))))))
 #_(create-fuel-grid "m1")
 #_(:m1 forest-master)
 #_(:m1 final-scar-grid-master)
@@ -168,7 +168,7 @@
   (let [width (num-columns fire-name)
         ignition-cell ((keyword (name fire-name)) ignition-cell-master)
         grid (construct-empty-grid fire-name)]
-    (partition width (assoc (vec (flatten grid)) ignition-cell 1))))
+    (vec (partition width (assoc (vec (flatten grid)) ignition-cell 1)))))
 #_(construct-initial-grid "m1")
 #_(:m1 ignition-cell-master)
 #_(reduce + (flatten (construct-initial-grid "m1")))
