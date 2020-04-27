@@ -3,7 +3,8 @@
   (:require [clojure.data.csv :as csv]
             [clojure.java.io :as io]
             [ring-of-fire.data :refer :all]
-            [ring-of-fire.core :refer :all]))
+           ;; [ring-of-fire.core :refer :all]
+))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Spector Propel Code      ;;
