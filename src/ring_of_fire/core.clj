@@ -284,7 +284,7 @@
 #_(propel-gp {:instructions            fire-instructions
               :error-function          fire-error-function
               :max-generations         10
-              :population-size         1
+              :population-size         3
               :max-initial-plushy-size 50
               :step-limit              10
               :parent-selection        :lexicase
@@ -342,16 +342,12 @@
       :behaviors outputs
       :errors errors
       :total-error (reduce + errors))))
+#_(fire-error-function test-argmap test-plushy-program)
 
 ;This is the correct format
 ;{:plushy (boolean_and DMC 1 true elevation sw integer_*)}
-
-#_(def test-program {:plushy '(w)})
-#_(def test-argmap {:step-limit 5})
-
-#_(run-fire "m1" test-program test-argmap)
-
-#_(fire-error-function test-argmap test-program)
+(def test-plushy-program {:plushy '(w)})
+(def test-argmap {:step-limit 5})
 
 
 
@@ -387,10 +383,11 @@
              (inc time-step)))))
 ;; this is dummy slow
 #_(run-fire "m1" test-program test-argmap)
+(def test-program (list 'w))
 
 
 (defn convert-grid
-  "Converts grid to all 1s and 0s (2s become 1s everything else stays the same"
+  "Converts grid to all 1s and 0s (2s become 1s everything else stays the same)"
   [grid]
   ;; partition by columns
   (vec (partition (count (nth grid 0))
@@ -445,35 +442,9 @@
 
 
 
-;;;;;;;;;;;;;
-;; testing ;;
-;;;;;;;;;;;;;
-;;  test plushy
-
-
-
-
-
-(defn test-update-grid
-  "Updates a fire grid from one time step to the next"
-  [fire-grid fire-name time program argmap]
-  (let [flattened-grid (flatten fire-grid)
-        flattened-fuel (flatten ((keyword (name fire-name)) fuel-master))]
-    ;; turns flattened vector back into a grid
-    (partition (num-columns fire-name)
-               ;; returns a flattened vector of all cell values
-               (for [i (range (count flattened-grid))]
-                 ;; only update cell if it's burning
-                 (if (or (= (nth flattened-grid i) 1)
-                         ;; or it has at least one burning neighbor (burning = 1)
-                         ;; and is a burnable cell (according to fuel-master where 1 = burnable)
-                         (and (>= (num-burning-neighbors i fire-grid) 1) (= 1 (nth flattened-fuel i))))
-                   ;; if true then return 0
-                   0
-                   ;; else just return current value
-                   (nth flattened-grid i))))))
-;; should return all 2s
-#_(test-update-grid test-burned-grid "m1" 0 test-program test-argmap)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; test grids with proper dimensions;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defn construct-burned-grid
   "Returns a vector of vectors filled with 2s with the same dimensions as the specified fire"

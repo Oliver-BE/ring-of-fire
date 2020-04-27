@@ -248,7 +248,7 @@
 (defn time-step
   "Pushes the input labeled :time-step on the inputs map onto the :exec stack."
   [state]
-  (push-to-stack state :exec (time-step (:input state))))
+  (push-to-stack state :exec (:time-step (:input state))))
 
 (defn nw
   "Pushes the input labeled :nw on the inputs map onto the :exec stack."
@@ -269,6 +269,7 @@
   "Pushes the input labeled :e on the inputs map onto the :exec stack."
   [state]
   (push-to-stack state :exec (:e (:input state))))
+
 
 (defn w
   "Pushes the input labeled :w on the inputs map onto the :exec stack."
