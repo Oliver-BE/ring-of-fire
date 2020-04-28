@@ -557,7 +557,7 @@
 
 (defn report
   "Reports information each generation."
-  [pop generation]
+  [pop generation chosen-selection]
   (let [best (first pop)]
     (println "-------------------------------------------------------")
     (println "               Report for Generation" generation)
@@ -565,6 +565,7 @@
     (print "Best plushy: ") (prn (:plushy best))
     (print "Best program: ") (prn (push-from-plushy (:plushy best)))
     (println "Best total error:" (:total-error best))
+       (println "Fires evaluated: " chosen-selection)
        ;Probably would like to print out the error in percentage form, so like 64% of cells were correctly predicted
     ;(println "Best errors:" (:errors best))
        ;Ideally we want to print out a comparison of the best predicted fire to the actual fire scar g
@@ -586,10 +587,11 @@
                       #(hash-map :plushy
                                  (make-random-plushy instructions
                                                      max-initial-plushy-size)))]
-    (let [evaluated-pop (sort-by :total-error
-                                 (pmap (partial error-function argmap (take fire-selection (shuffle fire-names)))
+    (let [chosen-selection (take fire-selection (shuffle fire-names))
+          evaluated-pop (sort-by :total-error
+                                 (pmap (partial error-function argmap chosen-selection)
                                       population))]
-      (report evaluated-pop generation)
+      (report evaluated-pop generation chosen-selection)
       (cond
         (zero? (:total-error (first evaluated-pop))) (println "SUCCESS")
         (>= generation max-generations) nil
