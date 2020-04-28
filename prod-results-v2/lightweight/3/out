@@ -1,0 +1,65 @@
+Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 1, :max-generations 2500, :time-step 11, :parent-selection :lexicase, :tournament-size 5, :step-limit 10, :error-function #object[ring_of_fire.core$fire_error_function 0x226642a5 ring_of_fire.core$fire_error_function@226642a5], :population-size 5}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (2 WS 2 ISI integer_+ ISI sw true se exec_dup se num-burning-neigh TMP 0 sw s e s time-step e)
+Best program: (2 WS 2 ISI integer_+ ISI sw true se exec_dup (se num-burning-neigh TMP 0 sw s e s time-step e))
+Best total error: 3777
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (APCP ne sw true elevation nw current-value boolean_not ne boolean_or 1 false exec_if boolean_or n RH 1 integer_- sw WD DMC 1 FWI BUI APCP)
+Best program: (APCP ne sw true elevation nw current-value boolean_not ne boolean_or 1 false exec_if (boolean_or n RH 1 integer_- sw WD DMC 1 FWI BUI APCP) ())
+Best total error: 2763
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (time-step WS sw ISI n APCP boolean_not true boolean_not boolean_= se num-burning-neigh TMP TMP sw 0 2 s integer_* e TMP close)
+Best program: (time-step WS sw ISI n APCP boolean_not true boolean_not boolean_= se num-burning-neigh TMP TMP sw 0 2 s integer_* e TMP)
+Best total error: 3896
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (APCP ne sw FWI exec_if nw boolean_= boolean_= boolean_not boolean_not 1 integer_* boolean_or current-value 0 2 1 integer_- n 0 DMC 1 sw BUI integer_=)
+Best program: (APCP ne sw FWI exec_if (nw boolean_= boolean_= boolean_not boolean_not 1 integer_* boolean_or current-value 0 2 1 integer_- n 0 DMC 1 sw BUI integer_=) ())
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (time-step WS 2 FWI n boolean_not true true boolean_not boolean_= integer_- num-burning-neigh TMP TMP sw APCP sw WD TMP e)
+Best program: (time-step WS 2 FWI n boolean_not true true boolean_not boolean_= integer_- num-burning-neigh TMP TMP sw APCP sw WD TMP e)
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (time-step WS sw ISI s time-step boolean_not true boolean_not boolean_= false num-burning-neigh TMP w sw e num-burning-neigh s sw WD close 1 sw)
+Best program: (time-step WS sw ISI s time-step boolean_not true boolean_not boolean_= false num-burning-neigh TMP w sw e num-burning-neigh s sw WD 1 sw)
+Best total error: 5617
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (time-step WS 2 ISI n time-step true true boolean_not boolean_= false num-burning-neigh TMP w sw e num-burning-neigh s TMP e close)
+Best program: (time-step WS 2 ISI n time-step true true boolean_not boolean_= false num-burning-neigh TMP w sw e num-burning-neigh s TMP e)
+Best total error: 3896
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (time-step 2 n APCP sw true boolean_not integer_- num-burning-neigh 0 1 sw n s WD 1)
+Best program: (time-step 2 n APCP sw true boolean_not integer_- num-burning-neigh 0 1 sw n s WD 1)
+Best total error: 3269
+Fires evaluated:  (a2)
+

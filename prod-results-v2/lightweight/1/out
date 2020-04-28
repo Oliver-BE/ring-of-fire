@@ -1,0 +1,97 @@
+Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 1, :max-generations 2500, :time-step 11, :parent-selection :lexicase, :tournament-size 5, :step-limit 10, :error-function #object[ring_of_fire.core$fire_error_function 0x226642a5 ring_of_fire.core$fire_error_function@226642a5], :population-size 5}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (RH exec_dup integer_- exec_if WD FFMC se exec_if n false DMC close)
+Best program: (RH exec_dup (integer_- exec_if (WD FFMC se exec_if (n false DMC) ()) ()))
+Best total error: 3097
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (se exec_dup integer_+ exec_if WD FFMC se exec_if n DMC)
+Best program: (se exec_dup (integer_+ exec_if (WD FFMC se exec_if (n DMC) ()) ()))
+Best total error: 3097
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (se exec_dup integer_+ exec_if WD FFMC se exec_if n DMC)
+Best program: (se exec_dup (integer_+ exec_if (WD FFMC se exec_if (n DMC) ()) ()))
+Best total error: 3508
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (RH exec_if WD exec_if WD exec_if false DMC close)
+Best program: (RH exec_if (WD exec_if (WD exec_if (false DMC) ()) ()) ())
+Best total error: 3097
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (se 2 integer_+ exec_if WD FFMC se FWI sw n DMC)
+Best program: (se 2 integer_+ exec_if (WD FFMC se FWI sw n DMC) ())
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (RH exec_if WD exec_if WD exec_if false FWI sw n)
+Best program: (RH exec_if (WD exec_if (WD exec_if (false FWI sw n) ()) ()) ())
+Best total error: 3508
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (integer_+ exec_if integer_+ DMC WD 2 2 boolean_or close)
+Best program: (integer_+ exec_if (integer_+ DMC WD 2 2 boolean_or) ())
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (integer_+ exec_if integer_+ exec_if WD exec_if n boolean_or)
+Best program: (integer_+ exec_if (integer_+ exec_if (WD exec_if (n boolean_or) ()) ()) ())
+Best total error: 3097
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (integer_+ exec_if integer_+ DMC WD 2 2 boolean_or close)
+Best program: (integer_+ exec_if (integer_+ DMC WD 2 2 boolean_or) ())
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (integer_+ exec_if integer_+ DMC se 2 n boolean_or close)
+Best program: (integer_+ exec_if (integer_+ DMC se 2 n boolean_or) ())
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (integer_+ exec_if integer_+ exec_if WD exec_if n boolean_or)
+Best program: (integer_+ exec_if (integer_+ exec_if (WD exec_if (n boolean_or) ()) ()) ())
+Best total error: 3097
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (RH exec_if WD exec_if WD exec_if n boolean_or)
+Best program: (RH exec_if (WD exec_if (WD exec_if (n boolean_or) ()) ()) ())
+Best total error: 2798
+Fires evaluated:  (m2)
+

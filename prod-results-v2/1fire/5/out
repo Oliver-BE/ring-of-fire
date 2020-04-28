@@ -1,0 +1,33 @@
+Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 1, :max-generations 1000, :time-step 10, :parent-selection :lexicase, :tournament-size 5, :step-limit 25, :error-function #object[ring_of_fire.core$fire_error_function 0x226642a5 ring_of_fire.core$fire_error_function@226642a5], :population-size 10}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (exec_dup false exec_dup w se integer_* current-value ISI true DC APCP w boolean_not w false 2 false TMP boolean_= w close FFMC)
+Best program: (exec_dup (false exec_dup (w se integer_* current-value ISI true DC APCP w boolean_not w false 2 false TMP boolean_= w) FFMC))
+Best total error: 5522
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (boolean_or TMP APCP n ISI sw close boolean_not DC 2)
+Best program: (boolean_or TMP APCP n ISI sw boolean_not DC 2)
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (sw n integer_% false false e exec_dup e integer_* w sw WD DMC false exec_if)
+Best program: (sw n integer_% false false e exec_dup (e integer_* w sw WD DMC false exec_if () ()))
+Best total error: 672
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (integer_= false exec_dup exec_dup num-burning-neigh integer_* current-value boolean_not APCP w w TMP)
+Best program: (integer_= false exec_dup (exec_dup (num-burning-neigh integer_* current-value boolean_not APCP w w TMP)))
+Best total error: 1557
+Fires evaluated:  (m1)
+

@@ -1,0 +1,49 @@
+Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 1, :max-generations 2500, :time-step 11, :parent-selection :lexicase, :tournament-size 5, :step-limit 10, :error-function #object[ring_of_fire.core$fire_error_function 0x226642a5 ring_of_fire.core$fire_error_function@226642a5], :population-size 5}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (APCP e time-step num-burning-neigh close boolean_not TMP ISI integer_= se WS FFMC integer_- 1 TMP WD integer_- boolean_and exec_if boolean_and integer_* se close n TMP boolean_and w ISI current-value)
+Best program: (APCP e time-step num-burning-neigh boolean_not TMP ISI integer_= se WS FFMC integer_- 1 TMP WD integer_- boolean_and exec_if (boolean_and integer_* se) (n TMP boolean_and w ISI current-value))
+Best total error: 944
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (APCP e time-step num-burning-neigh close boolean_not TMP ISI integer_= se WS FFMC integer_- 1 TMP WD integer_- boolean_and exec_if boolean_and integer_* se close n TMP boolean_and w ISI current-value)
+Best program: (APCP e time-step num-burning-neigh boolean_not TMP ISI integer_= se WS FFMC integer_- 1 TMP WD integer_- boolean_and exec_if (boolean_and integer_* se) (n TMP boolean_and w ISI current-value))
+Best total error: 1683
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (ne APCP e DC time-step num-burning-neigh integer_% close boolean_not TMP ISI integer_= se WS FFMC integer_- APCP 1 TMP WD integer_- boolean_and exec_if boolean_and integer_* se close n TMP boolean_and w ISI current-value)
+Best program: (ne APCP e DC time-step num-burning-neigh integer_% boolean_not TMP ISI integer_= se WS FFMC integer_- APCP 1 TMP WD integer_- boolean_and exec_if (boolean_and integer_* se) (n TMP boolean_and w ISI current-value))
+Best total error: 3919
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (ne APCP e DC num-burning-neigh close boolean_not TMP ISI integer_= se WS FFMC integer_- APCP 1 TMP WD boolean_and exec_if boolean_and integer_* se close TMP boolean_and w current-value)
+Best program: (ne APCP e DC num-burning-neigh boolean_not TMP ISI integer_= se WS FFMC integer_- APCP 1 TMP WD boolean_and exec_if (boolean_and integer_* se) (TMP boolean_and w current-value))
+Best total error: 2887
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- nw integer_* APCP 1 ISI WD boolean_and exec_if boolean_and close TMP boolean_and w current-value)
+Best program: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- nw integer_* APCP 1 ISI WD boolean_and exec_if (boolean_and) (TMP boolean_and w current-value))
+Best total error: 1683
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- nw integer_* APCP APCP 1 ISI WD boolean_and exec_if boolean_and close TMP boolean_and w current-value)
+Best program: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- nw integer_* APCP APCP 1 ISI WD boolean_and exec_if (boolean_and) (TMP boolean_and w current-value))
+Best total error: 1683
+Fires evaluated:  (r1)
+

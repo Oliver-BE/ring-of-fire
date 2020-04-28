@@ -1,0 +1,17 @@
+Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 1, :max-generations 1000, :time-step 10, :parent-selection :lexicase, :tournament-size 5, :step-limit 25, :error-function #object[ring_of_fire.core$fire_error_function 0x226642a5 ring_of_fire.core$fire_error_function@226642a5], :population-size 10}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (FWI integer_* integer_% APCP elevation boolean_and time-step true TMP s integer_% integer_% elevation exec_dup integer_% WD nw exec_if boolean_not sw time-step FFMC)
+Best program: (FWI integer_* integer_% APCP elevation boolean_and time-step true TMP s integer_% integer_% elevation exec_dup (integer_% WD nw exec_if (boolean_not sw time-step FFMC) ()))
+Best total error: 3030
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (current-value integer_% integer_% integer_% DC nw 2 integer_% FWI n close true WS true exec_if DMC integer_+ se false boolean_and FWI s)
+Best program: (current-value integer_% integer_% integer_% DC nw 2 integer_% FWI n true WS true exec_if (DMC integer_+ se false boolean_and FWI s) ())
+Best total error: 3030
+Fires evaluated:  (k2)
+
