@@ -76,3 +76,17 @@ Best plushy: (num-burning-neigh exec_if e exec_if RH FWI e RH ISI WD DMC TMP exe
 Best program: (num-burning-neigh exec_if (e exec_if (RH FWI e RH ISI WD DMC TMP exec_dup (FFMC DC FWI true exec_dup (false FWI WD WD false boolean_or ISI current-value integer_+ WS 1 FWI ISI FWI n TMP FWI sw n))) ()) ())
 Best total error: 6933
 
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (num-burning-neigh exec_if e exec_if RH FWI e RH ISI WD DMC TMP exec_dup DC FWI WD exec_dup false FWI WD WD false boolean_or ISI current-value integer_+ WS 1 FWI ISI FWI FWI TMP FWI sw n)
+Best program: (num-burning-neigh exec_if (e exec_if (RH FWI e RH ISI WD DMC TMP exec_dup (DC FWI WD exec_dup (false FWI WD WD false boolean_or ISI current-value integer_+ WS 1 FWI ISI FWI FWI TMP FWI sw n))) ()) ())
+Best total error: 10232
+
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (num-burning-neigh exec_if exec_if exec_if exec_if FWI e e ISI WD DMC TMP close true DC FFMC WD true WD false FWI boolean_or FWI WD WD integer_+ WS integer_+ WS integer_* FWI 1 FWI sw n sw DC sw n)
+Best program: (num-burning-neigh exec_if (exec_if (exec_if (exec_if (FWI e e ISI WD DMC TMP) (true DC FFMC WD true WD false FWI boolean_or FWI WD WD integer_+ WS integer_+ WS integer_* FWI 1 FWI sw n sw DC sw n)) ()) ()) ())
+Best total error: 7897
+

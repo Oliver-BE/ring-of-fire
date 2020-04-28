@@ -83,3 +83,24 @@ Best plushy: (sw boolean_or exec_dup WS false false integer_% se se boolean_or W
 Best program: (sw boolean_or exec_dup (WS false false integer_% se se boolean_or WD exec_if (nw) ()))
 Best total error: 10124
 
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (ISI boolean_or s WS false false integer_% se se integer_% WD exec_if nw num-burning-neigh)
+Best program: (ISI boolean_or s WS false false integer_% se se integer_% WD exec_if (nw num-burning-neigh) ())
+Best total error: 8741
+
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (ISI boolean_or exec_dup WS false 2 integer_% se se boolean_or WD exec_if nw num-burning-neigh)
+Best program: (ISI boolean_or exec_dup (WS false 2 integer_% se se boolean_or WD exec_if (nw num-burning-neigh) ()))
+Best total error: 13006
+
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (ISI boolean_or s WS false false integer_% se se integer_% exec_if nw num-burning-neigh)
+Best program: (ISI boolean_or s WS false false integer_% se se integer_% exec_if (nw num-burning-neigh) ())
+Best total error: 9414
+
