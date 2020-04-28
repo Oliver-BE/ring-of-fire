@@ -1,0 +1,64 @@
+Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 3, :max-generations 2500, :time-step 50, :parent-selection :lexicase, :tournament-size 5, :step-limit 10, :error-function #object[ring_of_fire.core$fire_error_function 0x7fcbe147 ring_of_fire.core$fire_error_function@7fcbe147], :population-size 4}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (elevation DMC boolean_or WS time-step boolean_or current-value elevation WS ISI RH true APCP integer_+ se s close 1 integer_% boolean_not current-value n boolean_or nw DMC w APCP TMP DC)
+Best program: (elevation DMC boolean_or WS time-step boolean_or current-value elevation WS ISI RH true APCP integer_+ se s 1 integer_% boolean_not current-value n boolean_or nw DMC w APCP TMP DC)
+Best total error: 10279
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (TMP)
+Best program: (TMP)
+Best total error: 8366
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (TMP)
+Best program: (TMP)
+Best total error: 8658
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (elevation DMC boolean_or BUI BUI boolean_or boolean_and elevation WS BUI true true TMP integer_+ true WS boolean_not false boolean_not current-value n boolean_or DMC w DC)
+Best program: (elevation DMC boolean_or BUI BUI boolean_or boolean_and elevation WS BUI true true TMP integer_+ true WS boolean_not false boolean_not current-value n boolean_or DMC w DC)
+Best total error: 8987
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (elevation DMC integer_% BUI time-step boolean_or boolean_and elevation WS BUI true true TMP integer_+ true WS boolean_not false current-value current-value boolean_or DC DMC w DC)
+Best program: (elevation DMC integer_% BUI time-step boolean_or boolean_and elevation WS BUI true true TMP integer_+ true WS boolean_not false current-value current-value boolean_or DC DMC w DC)
+Best total error: 7822
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (TMP w boolean_or boolean_or time-step boolean_or boolean_and TMP false WS current-value boolean_not boolean_or boolean_or true n DC)
+Best program: (TMP w boolean_or boolean_or time-step boolean_or boolean_and TMP false WS current-value boolean_not boolean_or boolean_or true n DC)
+Best total error: 13897
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (TMP DMC boolean_or BUI time-step BUI true TMP true BUI current-value boolean_not boolean_or DMC true boolean_not)
+Best program: (TMP DMC boolean_or BUI time-step BUI true TMP true BUI current-value boolean_not boolean_or DMC true boolean_not)
+Best total error: 10021
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (TMP DMC boolean_or BUI time-step BUI true TMP true BUI current-value boolean_not boolean_or DMC true boolean_not)
+Best program: (TMP DMC boolean_or BUI time-step BUI true TMP true BUI current-value boolean_not boolean_or DMC true boolean_not)
+Best total error: 9787
+
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (TMP w boolean_or boolean_or time-step BUI true TMP true WS current-value boolean_not boolean_or DMC true)
+Best program: (TMP w boolean_or boolean_or time-step BUI true TMP true WS current-value boolean_not boolean_or DMC true)
+Best total error: 8439
+

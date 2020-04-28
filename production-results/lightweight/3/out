@@ -1,0 +1,71 @@
+Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 3, :max-generations 2500, :time-step 50, :parent-selection :lexicase, :tournament-size 5, :step-limit 10, :error-function #object[ring_of_fire.core$fire_error_function 0x7fcbe147 ring_of_fire.core$fire_error_function@7fcbe147], :population-size 4}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (FWI e true integer_+ exec_dup boolean_= boolean_and FWI APCP se 2 integer_* sw e boolean_or boolean_and FWI time-step FFMC ne exec_dup WD)
+Best program: (FWI e true integer_+ exec_dup (boolean_= boolean_and FWI APCP se 2 integer_* sw e boolean_or boolean_and FWI time-step FFMC ne exec_dup (WD)))
+Best total error: 7478
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (integer_* ne nw true 2 WS false ne integer_% BUI boolean_= ISI false true n 1 time-step)
+Best program: (integer_* ne nw true 2 WS false ne integer_% BUI boolean_= ISI false true n 1 time-step)
+Best total error: 8082
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: ()
+Best program: ()
+Best total error: 10299
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (integer_* ne true 2 WS false ne integer_% BUI boolean_= ISI false true n 1 time-step)
+Best program: (integer_* ne true 2 WS false ne integer_% BUI boolean_= ISI false true n 1 time-step)
+Best total error: 9256
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (integer_* ne integer_+ true 2 WS false ne integer_% BUI boolean_= ISI false true n 1 time-step)
+Best program: (integer_* ne integer_+ true 2 WS false ne integer_% BUI boolean_= ISI false true n 1 time-step)
+Best total error: 7475
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (ne true ne boolean_= n)
+Best program: (ne true ne boolean_= n)
+Best total error: 8531
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (ne boolean_= ne boolean_= n)
+Best program: (ne boolean_= ne boolean_= n)
+Best total error: 7788
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (ne boolean_= n)
+Best program: (ne boolean_= n)
+Best total error: 9737
+
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (ne boolean_= ne boolean_= n)
+Best program: (ne boolean_= ne boolean_= n)
+Best total error: 9263
+
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (ne boolean_= ne n)
+Best program: (ne boolean_= ne n)
+Best total error: 8933
+

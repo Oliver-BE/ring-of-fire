@@ -1,0 +1,43 @@
+Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 3, :max-generations 2500, :time-step 50, :parent-selection :lexicase, :tournament-size 5, :step-limit 10, :error-function #object[ring_of_fire.core$fire_error_function 0x7fcbe147 ring_of_fire.core$fire_error_function@7fcbe147], :population-size 4}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (se RH TMP false current-value se n boolean_= DMC num-burning-neigh)
+Best program: (se RH TMP false current-value se n boolean_= DMC num-burning-neigh)
+Best total error: 8114
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (num-burning-neigh exec_if e exec_if DMC ISI true exec_dup FFMC FWI current-value WD false boolean_or WD current-value integer_+ WS 1 e TMP integer_* sw FWI n)
+Best program: (num-burning-neigh exec_if (e exec_if (DMC ISI true exec_dup (FFMC FWI current-value WD false boolean_or WD current-value integer_+ WS 1 e TMP integer_* sw FWI n)) ()) ())
+Best total error: 6266
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (num-burning-neigh boolean_or exec_if e exec_if RH DMC TMP ISI WD true exec_dup FFMC FWI current-value WD false boolean_or WD current-value integer_+ WS 1 integer_* e TMP FWI integer_* sw FWI n)
+Best program: (num-burning-neigh boolean_or exec_if (e exec_if (RH DMC TMP ISI WD true exec_dup (FFMC FWI current-value WD false boolean_or WD current-value integer_+ WS 1 integer_* e TMP FWI integer_* sw FWI n)) ()) ())
+Best total error: 9786
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (num-burning-neigh exec_if e exec_if RH DMC integer_% TMP ISI WD true exec_dup FFMC DC FWI current-value WD false boolean_or WD current-value integer_+ WS ISI 1 integer_* e TMP FWI integer_* sw FWI n)
+Best program: (num-burning-neigh exec_if (e exec_if (RH DMC integer_% TMP ISI WD true exec_dup (FFMC DC FWI current-value WD false boolean_or WD current-value integer_+ WS ISI 1 integer_* e TMP FWI integer_* sw FWI n)) ()) ())
+Best total error: 7956
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (num-burning-neigh exec_if e exec_if RH RH integer_% TMP ISI WD true exec_dup FFMC DC FWI WD WD false boolean_or WD current-value WS WS ISI 1 integer_* e TMP FWI integer_* sw FWI n)
+Best program: (num-burning-neigh exec_if (e exec_if (RH RH integer_% TMP ISI WD true exec_dup (FFMC DC FWI WD WD false boolean_or WD current-value WS WS ISI 1 integer_* e TMP FWI integer_* sw FWI n)) ()) ())
+Best total error: 12643
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (num-burning-neigh exec_if e exec_if e RH DMC TMP ISI WD true true exec_dup FFMC FWI current-value WD false boolean_or WD current-value integer_+ WS 1 integer_* ISI e integer_= TMP FWI integer_* sw true FWI n)
+Best program: (num-burning-neigh exec_if (e exec_if (e RH DMC TMP ISI WD true true exec_dup (FFMC FWI current-value WD false boolean_or WD current-value integer_+ WS 1 integer_* ISI e integer_= TMP FWI integer_* sw true FWI n)) ()) ())
+Best total error: 10145
+

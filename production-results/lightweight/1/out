@@ -1,0 +1,57 @@
+Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 3, :max-generations 2500, :time-step 50, :parent-selection :lexicase, :tournament-size 5, :step-limit 10, :error-function #object[ring_of_fire.core$fire_error_function 0x7fcbe147 ring_of_fire.core$fire_error_function@7fcbe147], :population-size 4}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (false close boolean_not ISI boolean_not n 0 BUI FFMC exec_dup boolean_not exec_if w close DMC se)
+Best program: (false boolean_not ISI boolean_not n 0 BUI FFMC exec_dup (boolean_not exec_if (w) (DMC se)))
+Best total error: 9662
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (sw boolean_or ne BUI WS DMC 2 integer_% boolean_or boolean_or integer_% exec_if num-burning-neigh nw num-burning-neigh FFMC w WD)
+Best program: (sw boolean_or ne BUI WS DMC 2 integer_% boolean_or boolean_or integer_% exec_if (num-burning-neigh nw num-burning-neigh FFMC w WD) ())
+Best total error: 12643
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (sw boolean_or s exec_dup WS DMC 2 integer_% se integer_% integer_%)
+Best program: (sw boolean_or s exec_dup (WS DMC 2 integer_% se integer_% integer_%))
+Best total error: 7318
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (ISI boolean_or e exec_dup WS false 2 integer_% se integer_% FFMC boolean_and)
+Best program: (ISI boolean_or e exec_dup (WS false 2 integer_% se integer_% FFMC boolean_and))
+Best total error: 8225
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (ISI boolean_or e exec_dup WS false 2 integer_% se integer_% FFMC boolean_and)
+Best program: (ISI boolean_or e exec_dup (WS false 2 integer_% se integer_% FFMC boolean_and))
+Best total error: 11166
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (ISI e exec_dup WS false 2 integer_% se integer_% FFMC boolean_and)
+Best program: (ISI e exec_dup (WS false 2 integer_% se integer_% FFMC boolean_and))
+Best total error: 12063
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (ISI boolean_or s BUI WS false 2 integer_% se integer_% WD boolean_and nw num-burning-neigh)
+Best program: (ISI boolean_or s BUI WS false 2 integer_% se integer_% WD boolean_and nw num-burning-neigh)
+Best total error: 8497
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (sw boolean_or exec_dup WS false 2 integer_% se se boolean_or WD exec_if nw)
+Best program: (sw boolean_or exec_dup (WS false 2 integer_% se se boolean_or WD exec_if (nw) ()))
+Best total error: 8636
+
