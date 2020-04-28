@@ -1,7 +1,7 @@
 universe    = vanilla
 notification = error
 notify_user  = icaruso21@amherst.edu
-initialdir  = /mnt/icaruso21/ring-of-fire
+initialdir  = /mnt/scratch/icaruso21/ring-of-fire
 getenv = True
 executable  = run
 
