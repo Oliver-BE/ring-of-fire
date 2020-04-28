@@ -1,2 +1,2 @@
 #! /bin/sh
-lein with-profiles production trampoline run
+lein with-profiles production trampoline run :fire-selection 1
