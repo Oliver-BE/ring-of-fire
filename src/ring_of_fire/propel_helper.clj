@@ -583,7 +583,7 @@
     (println)))
 
 ; make our initial worlds for each of the 10 fires
-(def fire-names ["a1", "a2", "k1", "k2", "g1", "g2", "m1", "m2", "r1", "r2"])
+(def fire-names ["a2", "k1", "k2", "g2", "m1", "m2", "r1"])
 
 (defn propel-gp
   "Main GP loop."

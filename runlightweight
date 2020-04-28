@@ -1,2 +1,2 @@
 #! /bin/sh
-lein with-profiles production trampoline run :max-generations 2500 :population-size 4 :step-limit 10 :time-step 50 :fire-selection 3
+lein with-profiles production trampoline run :max-generations 2500 :population-size 5 :step-limit 10 :time-step 11 :fire-selection 1
