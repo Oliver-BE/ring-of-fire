@@ -469,7 +469,7 @@
              time-step 0]
             ;(prn "time-step:" time-step) (prn "Fire name:" fire-name)
             ;(prn grid)
-            (if (> time-step 3)
+            (if (> time-step 150)
               ;; if time is up convert all 2s to 1s and return fire-scar
               (convert-grid grid)
 
@@ -544,7 +544,7 @@
 #_(propel-gp {:instructions            fire-instructions
               :error-function          fire-error-function
               :max-generations         10
-              :population-size         15
+              :population-size         6
               :max-initial-plushy-size 20
               :step-limit              10
               :parent-selection        :lexicase
