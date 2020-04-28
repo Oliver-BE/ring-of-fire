@@ -55,3 +55,10 @@ Best plushy: (sw boolean_or exec_dup WS false 2 integer_% se se boolean_or WD ex
 Best program: (sw boolean_or exec_dup (WS false 2 integer_% se se boolean_or WD exec_if (nw) ()))
 Best total error: 8636
 
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (sw boolean_or exec_dup WS false 2 integer_% se se boolean_or WD exec_if nw)
+Best program: (sw boolean_or exec_dup (WS false 2 integer_% se se boolean_or WD exec_if (nw) ()))
+Best total error: 10667
+

@@ -69,3 +69,10 @@ Best plushy: (ne boolean_= ne n)
 Best program: (ne boolean_= ne n)
 Best total error: 8933
 
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (ne boolean_= ne boolean_= n)
+Best program: (ne boolean_= ne boolean_= n)
+Best total error: 7772
+

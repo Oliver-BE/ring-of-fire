@@ -62,3 +62,10 @@ Best plushy: (TMP w boolean_or boolean_or time-step BUI true TMP true WS current
 Best program: (TMP w boolean_or boolean_or time-step BUI true TMP true WS current-value boolean_not boolean_or DMC true)
 Best total error: 8439
 
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (TMP w boolean_or boolean_or time-step BUI true TMP true WS current-value boolean_not boolean_or true)
+Best program: (TMP w boolean_or boolean_or time-step BUI true TMP true WS current-value boolean_not boolean_or true)
+Best total error: 13407
+
