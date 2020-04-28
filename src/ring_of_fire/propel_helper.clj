@@ -488,10 +488,16 @@
         tournament-set (take tournament-size (shuffle pop))]
     (apply min-key :total-error tournament-set)))
 
+(defn one-individual-per-error-vector-for-lexicase
+      "Returns population with only one randomly-chosen individual
+      for any particular error vector."
+      [population]
+      (map rand-nth (vals (group-by :errors population))))
+
 (defn lexicase-selection
   "Selects an individual from the population using lexicase selection."
   [pop argmap]
-  (loop [survivors pop
+  (loop [survivors (one-individual-per-error-vector-for-lexicase pop)
          cases (shuffle (range (count (:errors (first pop)))))]
     (if (or (empty? cases)
             (empty? (rest survivors)))
@@ -501,6 +507,10 @@
         (recur (filter #(= (nth (:errors %) (first cases)) min-err-for-case)
                        survivors)
                (rest cases))))))
+
+(defn lexicase-selection-timed "Selects an individual from the population using lexicase selection including runtime."
+      [pop argmap]
+      (time (lexicase-selection pop argmap)))
 
 (defn select-parent
   "Selects a parent from the population using the specified method."
