@@ -1,6 +1,6 @@
 # ring-of-fire
 
-A ~lightweight~, parallelized Clojure based propel-gp framework for evolving cellular automata based fire simulators through genetic programming.
+A ~lightweight~, parallelized Clojure based propel-gp framework for evolving cellular automata based fire simulators through genetic programming. Created by Isaac Caruso, Martin Glusker, and Oliver-Baldwin-Edwards.
 
 ## Usage
 
