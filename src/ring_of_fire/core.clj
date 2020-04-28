@@ -470,14 +470,14 @@
              time-step 0]
             ;(prn "time-step:" time-step) (prn "Fire name:" fire-name)
             ;(prn grid)
-            (if (> time-step 150)
+            (if (> time-step 1440)
               ;; if time is up convert all 2s to 1s and return fire-scar
               (convert-grid grid)
 
               ;; otherwise update our grid and increment time
 
               (recur (update-grid grid fire-name time-step program argmap)
-                     (* time-step 10)))))
+                     (* time-step 50)))))
 ;; this is dummy slow
 #_(run-fire "m1" test-program test-argmap)
 (def test-program (list 'w))
