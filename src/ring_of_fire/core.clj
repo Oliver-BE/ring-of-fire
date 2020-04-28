@@ -467,7 +467,7 @@
       a final fire scar to be compared with actual fire scar"
       [fire-name program argmap]
       (loop [grid ((keyword (name fire-name)) initial-fire-grids)
-             time-step 1]
+             time-step 0]
             ;(prn "time-step:" time-step) (prn "Fire name:" fire-name)
             ;(prn grid)
             (if (> time-step 1440)
@@ -476,8 +476,8 @@
 
               ;; otherwise update our grid and increment time
 
-              (recur (update-grid grid fire-name (dec time-step) program argmap)
-                       (* time-step 10)))))
+              (recur (update-grid grid fire-name time-step program argmap)
+                       (+ time-step 10)))))
 ;; this is dummy slow
 #_(run-fire "m1" test-program test-argmap)
 (def test-program (list 'w))
