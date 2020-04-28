@@ -571,6 +571,9 @@
     ;(println "Best behaviors:" (:behaviors best))
     (println)))
 
+; make our initial worlds for each of the 10 fires
+(def fire-names ["a1", "a2", "k1", "k2", "g1", "g2", "m1", "m2", "r1", "r2"])
+
 (defn propel-gp
   "Main GP loop."
   [{:keys [fire-selection time-step population-size max-generations error-function instructions
@@ -584,7 +587,7 @@
                                  (make-random-plushy instructions
                                                      max-initial-plushy-size)))]
     (let [evaluated-pop (sort-by :total-error
-                                 (pmap (partial error-function argmap)
+                                 (pmap (partial error-function argmap (take fire-selection (shuffle fire-names)))
                                       population))]
       (report evaluated-pop generation)
       (cond

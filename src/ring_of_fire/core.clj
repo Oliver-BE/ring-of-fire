@@ -27,7 +27,7 @@
                              :r1 revelstoke1-final-scar
                              :r2 revelstoke2-final-scar
                              })
-
+#_ (:a1 final-scar-grid-master)
 
 (defn num-rows
       "Returns the number of rows of a vector of vectors
@@ -199,8 +199,6 @@
 #_(:m1 initial-fire-grids)
 
 
-; make our initial worlds for each of the 10 fires
-(def fire-names ["a1", "a2", "k1", "k2", "g1", "g2", "m1", "m2", "r1", "r2"])
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Helper functions    ;;
@@ -487,18 +485,18 @@
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   ;; fire error function (calls run fire)  ;;
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
+#_(sort (take 2 (shuffle fire-names)))
 ;; how do argmap and individual get passed in???
 (defn fire-error-function
       "Error is 0 if the value and the program's selected behavior match,
        or 1 if they differ, or 1000000 if no behavior is produced.
        The behavior is here defined as the final top item on the :boolean stack."
-      [argmap individual]
+      [argmap fire-subset individual]
       (let [program (push-from-plushy (:plushy individual))
 
             ;; a vector containing each fire name as a string is our inputs
             ;; REMEMBER PUT BACK IN ALL FIRES fire-names HERE
-            inputs (if (= 10 (:fire-selection argmap)) fire-names (take (:fire-selection argmap) (shuffle fire-names)))
+            inputs fire-subset
 
 
             ;; correct output is each
@@ -528,30 +526,39 @@
            ;(prn individual)
            ;(prn "individual assoc?" (associative? individual))
            (assoc individual
-                  :behaviors outputs
-                  :errors errors
+                  ;;:behaviors outputs
+                  ;;:errors errors
                   :total-error (reduce + errors))))
-#_(fire-error-function test-argmap test-plushy-program)
+#_(time (fire-error-function test-argmap test-best-program))
 
 ;This is the correct format
 ;{:plushy (boolean_and DMC 1 true elevation sw integer_*)}
 (def test-plushy-program {:plushy '(w)})
-(def test-argmap {:step-limit 5})
-
+(def test-argmap {:instructions            fire-instructions
+                  :error-function          fire-error-function
+                  :max-generations         1000
+                  :population-size         5
+                  :max-initial-plushy-size 20
+                  :step-limit              10
+                  :parent-selection        :lexicase
+                  :tournament-size         5
+                  :time-step               10
+                  :fire-selection          10})
+(def test-best-program {:plushy '(elevation boolean_or false false false integer_% num-burning-neigh 1 RH nw DMC nw integer_= DMC)})
 
 ;-------------------------
 ; RUNNER
 
 #_(propel-gp {:instructions            fire-instructions
               :error-function          fire-error-function
-              :max-generations         10
-              :population-size         6
+              :max-generations         1000
+              :population-size         5
               :max-initial-plushy-size 20
               :step-limit              10
               :parent-selection        :lexicase
               :tournament-size         5
               :time-step               500
-              :fire-selection          2})
+              :fire-selection          3})
 
 ;-------------------------
 
@@ -566,11 +573,11 @@
                (propel-gp {:instructions            fire-instructions
                            :error-function          fire-error-function
                            :max-generations         100
-                           :population-size         30
+                           :population-size         2
                            :max-initial-plushy-size 30
                            :parent-selection        :lexicase
                            :tournament-size         5
-                           :fire-selection          2
+                           :fire-selection          3
                            :time-step               500
                            :step-limit              25})))
 ;;fires-tested can be an int x from 1-10 where any value less than 10 will evaluate a random selection of x fires
