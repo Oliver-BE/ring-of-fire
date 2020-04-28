@@ -477,7 +477,7 @@
               ;; otherwise update our grid and increment time
 
               (recur (update-grid grid fire-name time-step program argmap)
-                       (+ time-step 200)))))
+                       (+ time-step (:time-step argmap))))))
 ;; this is dummy slow
 #_(run-fire "m1" test-program test-argmap)
 (def test-program (list 'w))
@@ -498,7 +498,7 @@
 
             ;; a vector containing each fire name as a string is our inputs
             ;; REMEMBER PUT BACK IN ALL FIRES fire-names HERE
-            inputs fire-names
+            inputs (if (= 10 (:fire-selection argmap)) fire-names (take (:fire-selection argmap) (shuffle fire-names)))
 
 
             ;; correct output is each
@@ -549,7 +549,9 @@
               :max-initial-plushy-size 20
               :step-limit              10
               :parent-selection        :lexicase
-              :tournament-size         5})
+              :tournament-size         5
+              :time-step               500
+              :fire-selection          2})
 
 ;-------------------------
 
@@ -557,7 +559,7 @@
 ;;;;;;;;;;;;;;;;;;
 ;; MAIN METHOD  ;;
 ;;;;;;;;;;;;;;;;;;
-(defn -main
+#_(defn -main
       "Runs propel-gp, giving it a map of arguments."
       [& args]
       (binding [*ns* (the-ns 'ring-of-fire.core)]
@@ -566,22 +568,27 @@
                            :max-generations         100
                            :population-size         30
                            :max-initial-plushy-size 30
-                           :step-limit              25
                            :parent-selection        :lexicase
-                           :tournament-size         5})))
+                           :tournament-size         5
+                           :fire-selection          2
+                           :time-step               500
+                           :step-limit              25})))
+;;fires-tested can be an int x from 1-10 where any value less than 10 will evaluate a random selection of x fires
 
-#_(defn -main
+(defn -main
       "Runs propel-gp, giving it a map of arguments."
       [& args]
       (binding [*ns* (the-ns 'ring-of-fire.core)]
                (propel-gp (update-in (merge {:instructions            fire-instructions
                                              :error-function          fire-error-function
-                                             :max-generations         500
-                                             :population-size         200
-                                             :max-initial-plushy-size 50
-                                             :step-limit              100
+                                             :max-generations         100
+                                             :population-size         30
+                                             :max-initial-plushy-size 30
                                              :parent-selection        :lexicase
-                                             :tournament-size         5}
+                                             :tournament-size         5
+                                             :fire-selection          2
+                                             :time-step               500
+                                             :step-limit              25}
                                             (apply hash-map
                                                    (map read-string args)))
                                      [:error-function]

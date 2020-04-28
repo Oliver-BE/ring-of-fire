@@ -573,7 +573,7 @@
 
 (defn propel-gp
   "Main GP loop."
-  [{:keys [population-size max-generations error-function instructions
+  [{:keys [fire-selection time-step population-size max-generations error-function instructions
            max-initial-plushy-size]
     :as   argmap}]
   (println "Starting GP with args:" argmap)
