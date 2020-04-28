@@ -468,7 +468,7 @@
              time-step 0]
             ;(prn "time-step:" time-step) (prn "Fire name:" fire-name)
             ;(prn grid)
-            (if (> time-step 1440)
+            (if (>= time-step 1440)
               ;; if time is up convert all 2s to 1s and return fire-scar
               (convert-grid grid)
 
