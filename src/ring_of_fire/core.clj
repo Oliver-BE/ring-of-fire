@@ -459,6 +459,7 @@
   ;; run fire function (calls update grid) ;;
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;;(* time-step 10) is set to 10 because 1440 minutes/ 150 steps = round(9.6 minutes / step)
 ;; FIGURE IT OUT ALPHAS
 ;; note why ware we updating one extra time step beyond?
 (defn run-fire
@@ -476,7 +477,7 @@
               ;; otherwise update our grid and increment time
 
               (recur (update-grid grid fire-name time-step program argmap)
-                     (inc time-step)))))
+                     (* time-step 10)))))
 ;; this is dummy slow
 #_(run-fire "m1" test-program test-argmap)
 (def test-program (list 'w))
@@ -556,8 +557,20 @@
 ;;;;;;;;;;;;;;;;;;
 ;; MAIN METHOD  ;;
 ;;;;;;;;;;;;;;;;;;
-
 (defn -main
+      "Runs propel-gp, giving it a map of arguments."
+      [& args]
+      (binding [*ns* (the-ns 'ring-of-fire.core)]
+               (propel-gp {:instructions            fire-instructions
+                           :error-function          fire-error-function
+                           :max-generations         10
+                           :population-size         6
+                           :max-initial-plushy-size 20
+                           :step-limit              10
+                           :parent-selection        :lexicase
+                           :tournament-size         5})))
+
+#_(defn -main
       "Runs propel-gp, giving it a map of arguments."
       [& args]
       (binding [*ns* (the-ns 'ring-of-fire.core)]
