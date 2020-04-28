@@ -98,3 +98,17 @@
 	3483  -  MemoryUsage of job (MB)
 	3565792  -  ResidentSetSize of job (KB)
 ...
+004 (709.003.000) 04/28 18:21:11 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 0 18:38:02, Sys 0 00:00:36  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.99        1         1 
+	   Disk (KB)            :     1           1   3456768 
+	   Memory (MB)          :  3483           1      4030 
+...
+009 (709.003.000) 04/28 18:21:11 Job was aborted by the user.
+	via condor_rm (by user icaruso21)
+...
