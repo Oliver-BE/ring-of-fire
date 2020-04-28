@@ -34,7 +34,7 @@
       given a fire name"
       [fire-name]
       (count ((keyword (name fire-name)) final-scar-grid-master)))
-#_(num-rows "m1")
+#_(num-rows "r1")
 #_(num-rows mica1-forest)
 #_(num-rows mica1-elevation)
 
@@ -44,7 +44,7 @@
       given a fire name"
       [fire-name]
       (count (nth ((keyword (name fire-name)) final-scar-grid-master) 0)))
-#_(num-columns "m1")
+#_(num-columns "r1")
 #_(num-columns mica1-forest)
 #_(num-columns mica1-elevation)
 
@@ -581,13 +581,13 @@
       (binding [*ns* (the-ns 'ring-of-fire.core)]
                (propel-gp (update-in (merge {:instructions            fire-instructions
                                              :error-function          fire-error-function
-                                             :max-generations         100
-                                             :population-size         30
+                                             :max-generations         1000
+                                             :population-size         10
                                              :max-initial-plushy-size 30
                                              :parent-selection        :lexicase
                                              :tournament-size         5
                                              :fire-selection          2
-                                             :time-step               500
+                                             :time-step               10
                                              :step-limit              25}
                                             (apply hash-map
                                                    (map read-string args)))
