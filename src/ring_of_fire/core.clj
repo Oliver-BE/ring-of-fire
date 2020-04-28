@@ -564,7 +564,7 @@
                (propel-gp {:instructions            fire-instructions
                            :error-function          fire-error-function
                            :max-generations         10
-                           :population-size         6
+                           :population-size         2
                            :max-initial-plushy-size 20
                            :step-limit              10
                            :parent-selection        :lexicase
