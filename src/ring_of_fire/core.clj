@@ -477,7 +477,7 @@
               ;; otherwise update our grid and increment time
 
               (recur (update-grid grid fire-name time-step program argmap)
-                       (+ time-step 10)))))
+                       (+ time-step 200)))))
 ;; this is dummy slow
 #_(run-fire "m1" test-program test-argmap)
 (def test-program (list 'w))
