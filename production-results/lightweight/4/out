@@ -258,3 +258,136 @@ Best plushy: (WD num-burning-neigh TMP w WS WS e e time-step w time-step true tr
 Best program: (WD num-burning-neigh TMP w WS WS e e time-step w time-step true true true WS WS num-burning-neigh WS boolean_not boolean_not WS boolean_not TMP)
 Best total error: 8082
 
+-------------------------------------------------------
+               Report for Generation 37
+-------------------------------------------------------
+Best plushy: (WD num-burning-neigh TMP w WS WS boolean_or e w w true true true true WS num-burning-neigh WS boolean_not boolean_not WS boolean_not true TMP)
+Best program: (WD num-burning-neigh TMP w WS WS boolean_or e w w true true true true WS num-burning-neigh WS boolean_not boolean_not WS boolean_not true TMP)
+Best total error: 12478
+
+-------------------------------------------------------
+               Report for Generation 38
+-------------------------------------------------------
+Best plushy: (num-burning-neigh num-burning-neigh TMP w WS WS e e w w time-step true true true true WS num-burning-neigh WS boolean_not boolean_not WS boolean_not TMP TMP)
+Best program: (num-burning-neigh num-burning-neigh TMP w WS WS e e w w time-step true true true true WS num-burning-neigh WS boolean_not boolean_not WS boolean_not TMP TMP)
+Best total error: 8092
+
+-------------------------------------------------------
+               Report for Generation 39
+-------------------------------------------------------
+Best plushy: (WD num-burning-neigh TMP w WS boolean_or e w w w true true true true WS num-burning-neigh WS boolean_not WS WS boolean_not true TMP)
+Best program: (WD num-burning-neigh TMP w WS boolean_or e w w w true true true true WS num-burning-neigh WS boolean_not WS WS boolean_not true TMP)
+Best total error: 7733
+
+-------------------------------------------------------
+               Report for Generation 40
+-------------------------------------------------------
+Best plushy: (num-burning-neigh num-burning-neigh TMP WS WS e e w w true true true true WS num-burning-neigh boolean_not boolean_not boolean_not boolean_not true true)
+Best program: (num-burning-neigh num-burning-neigh TMP WS WS e e w w true true true true WS num-burning-neigh boolean_not boolean_not boolean_not boolean_not true true)
+Best total error: 10783
+
+-------------------------------------------------------
+               Report for Generation 41
+-------------------------------------------------------
+Best plushy: (num-burning-neigh num-burning-neigh TMP WS WS e e w w true true true true WS num-burning-neigh boolean_not boolean_not boolean_not true true)
+Best program: (num-burning-neigh num-burning-neigh TMP WS WS e e w w true true true true WS num-burning-neigh boolean_not boolean_not boolean_not true true)
+Best total error: 6971
+
+-------------------------------------------------------
+               Report for Generation 42
+-------------------------------------------------------
+Best plushy: (num-burning-neigh num-burning-neigh TMP WS e e w w true true true true WS num-burning-neigh boolean_not boolean_not boolean_not boolean_not true)
+Best program: (num-burning-neigh num-burning-neigh TMP WS e e w w true true true true WS num-burning-neigh boolean_not boolean_not boolean_not boolean_not true)
+Best total error: 9251
+
+-------------------------------------------------------
+               Report for Generation 43
+-------------------------------------------------------
+Best plushy: (num-burning-neigh num-burning-neigh TMP WS e e w w true true true true WS num-burning-neigh boolean_not boolean_not boolean_not boolean_not true)
+Best program: (num-burning-neigh num-burning-neigh TMP WS e e w w true true true true WS num-burning-neigh boolean_not boolean_not boolean_not boolean_not true)
+Best total error: 12060
+
+-------------------------------------------------------
+               Report for Generation 44
+-------------------------------------------------------
+Best plushy: (num-burning-neigh num-burning-neigh TMP WS e e w w true true true true WS close num-burning-neigh integer_+ boolean_not boolean_not boolean_not boolean_not true)
+Best program: (num-burning-neigh num-burning-neigh TMP WS e e w w true true true true WS num-burning-neigh integer_+ boolean_not boolean_not boolean_not boolean_not true)
+Best total error: 8878
+
+-------------------------------------------------------
+               Report for Generation 45
+-------------------------------------------------------
+Best plushy: (num-burning-neigh num-burning-neigh TMP e e w w true true boolean_or true integer_= true 2 WS num-burning-neigh boolean_not boolean_not boolean_not true nw)
+Best program: (num-burning-neigh num-burning-neigh TMP e e w w true true boolean_or true integer_= true 2 WS num-burning-neigh boolean_not boolean_not boolean_not true nw)
+Best total error: 6963
+
+-------------------------------------------------------
+               Report for Generation 46
+-------------------------------------------------------
+Best plushy: (num-burning-neigh num-burning-neigh TMP WS e e w w true true true true WS num-burning-neigh num-burning-neigh boolean_not boolean_not boolean_not boolean_not true true)
+Best program: (num-burning-neigh num-burning-neigh TMP WS e e w w true true true true WS num-burning-neigh num-burning-neigh boolean_not boolean_not boolean_not boolean_not true true)
+Best total error: 9237
+
+-------------------------------------------------------
+               Report for Generation 47
+-------------------------------------------------------
+Best plushy: (num-burning-neigh num-burning-neigh TMP WS e e w w true true true true WS num-burning-neigh boolean_not boolean_not boolean_not true true)
+Best program: (num-burning-neigh num-burning-neigh TMP WS e e w w true true true true WS num-burning-neigh boolean_not boolean_not boolean_not true true)
+Best total error: 11701
+
+-------------------------------------------------------
+               Report for Generation 48
+-------------------------------------------------------
+Best plushy: (num-burning-neigh num-burning-neigh TMP WS e e w w true true true true WS num-burning-neigh num-burning-neigh boolean_not boolean_not boolean_not boolean_not true true)
+Best program: (num-burning-neigh num-burning-neigh TMP WS e e w w true true true true WS num-burning-neigh num-burning-neigh boolean_not boolean_not boolean_not boolean_not true true)
+Best total error: 11980
+
+-------------------------------------------------------
+               Report for Generation 49
+-------------------------------------------------------
+Best plushy: (num-burning-neigh num-burning-neigh num-burning-neigh TMP e e w w true true true boolean_or true num-burning-neigh true boolean_not boolean_not boolean_not boolean_not boolean_not boolean_not nw)
+Best program: (num-burning-neigh num-burning-neigh num-burning-neigh TMP e e w w true true true boolean_or true num-burning-neigh true boolean_not boolean_not boolean_not boolean_not boolean_not boolean_not nw)
+Best total error: 9738
+
+-------------------------------------------------------
+               Report for Generation 50
+-------------------------------------------------------
+Best plushy: (num-burning-neigh integer_* num-burning-neigh TMP e e w w w true true boolean_or true integer_= true boolean_not boolean_not WS boolean_not boolean_not boolean_not boolean_not)
+Best program: (num-burning-neigh integer_* num-burning-neigh TMP e e w w w true true boolean_or true integer_= true boolean_not boolean_not WS boolean_not boolean_not boolean_not boolean_not)
+Best total error: 8984
+
+-------------------------------------------------------
+               Report for Generation 51
+-------------------------------------------------------
+Best plushy: (num-burning-neigh integer_* num-burning-neigh TMP e e w w w true true boolean_or true num-burning-neigh true boolean_not boolean_not WS boolean_not boolean_not true)
+Best program: (num-burning-neigh integer_* num-burning-neigh TMP e e w w w true true boolean_or true num-burning-neigh true boolean_not boolean_not WS boolean_not boolean_not true)
+Best total error: 9738
+
+-------------------------------------------------------
+               Report for Generation 52
+-------------------------------------------------------
+Best plushy: (num-burning-neigh num-burning-neigh num-burning-neigh TMP e e w w w true true true true num-burning-neigh true boolean_not boolean_not boolean_not true true true)
+Best program: (num-burning-neigh num-burning-neigh num-burning-neigh TMP e e w w w true true true true num-burning-neigh true boolean_not boolean_not boolean_not true true true)
+Best total error: 9658
+
+-------------------------------------------------------
+               Report for Generation 53
+-------------------------------------------------------
+Best plushy: (num-burning-neigh num-burning-neigh num-burning-neigh TMP e w w true true true true num-burning-neigh true w boolean_not sw boolean_not boolean_not true true true)
+Best program: (num-burning-neigh num-burning-neigh num-burning-neigh TMP e w w true true true true num-burning-neigh true w boolean_not sw boolean_not boolean_not true true true)
+Best total error: 8369
+
+-------------------------------------------------------
+               Report for Generation 54
+-------------------------------------------------------
+Best plushy: (num-burning-neigh n num-burning-neigh num-burning-neigh TMP e w w true true true true num-burning-neigh true w boolean_not sw boolean_not boolean_not true true true)
+Best program: (num-burning-neigh n num-burning-neigh num-burning-neigh TMP e w w true true true true num-burning-neigh true w boolean_not sw boolean_not boolean_not true true true)
+Best total error: 7256
+
+-------------------------------------------------------
+               Report for Generation 55
+-------------------------------------------------------
+Best plushy: (num-burning-neigh integer_- num-burning-neigh boolean_and integer_* num-burning-neigh TMP 0 e e w w w true true true true num-burning-neigh true boolean_not boolean_not boolean_not true true true)
+Best program: (num-burning-neigh integer_- num-burning-neigh boolean_and integer_* num-burning-neigh TMP 0 e e w w w true true true true num-burning-neigh true boolean_not boolean_not boolean_not true true true)
+Best total error: 8352
+
