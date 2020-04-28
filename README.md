@@ -15,6 +15,6 @@ Requires Java SDK and Leiningen.
 
 ## License
 
-Copyright © 2020 OIM Interprises
+Copyright © 2020 (Peamap Fire) Interprises
 
 

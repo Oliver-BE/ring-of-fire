@@ -565,8 +565,10 @@
     (print "Best plushy: ") (prn (:plushy best))
     (print "Best program: ") (prn (push-from-plushy (:plushy best)))
     (println "Best total error:" (:total-error best))
-    (println "Best errors:" (:errors best))
-    (println "Best behaviors:" (:behaviors best))
+       ;Probably would like to print out the error in percentage form, so like 64% of cells were correctly predicted
+    ;(println "Best errors:" (:errors best))
+       ;Ideally we want to print out a comparison of the best predicted fire to the actual fire scar g
+    ;(println "Best behaviors:" (:behaviors best))
     (println)))
 
 (defn propel-gp
