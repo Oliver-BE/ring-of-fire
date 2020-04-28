@@ -9,9 +9,44 @@
 ;; FIRE PROPEL FUNCTIONS     ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Master Data Dictionaries ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Grid initialization functions ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; and Master Data Dictionaries ;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+(def final-scar-grid-master {:a1 arrowhead1-final-scar
+                             :a2 arrowhead2-final-scar
+                             :k1 kootenay1-final-scar
+                             :k2 kootenay2-final-scar
+                             :g1 glacier1-final-scar
+                             :g2 glacier2-final-scar
+                             :m1 mica1-final-scar
+                             :m2 mica2-final-scar
+                             :r1 revelstoke1-final-scar
+                             :r2 revelstoke2-final-scar
+                             })
+
+
+(defn num-rows
+      "Returns the number of rows of a vector of vectors
+      given a fire name"
+      [fire-name]
+      (count ((keyword (name fire-name)) final-scar-grid-master)))
+#_(num-rows "m1")
+#_(num-rows mica1-forest)
+#_(num-rows mica1-elevation)
+
+
+(defn num-columns
+      "Returns the number of rows of a vector of vectors
+      given a fire name"
+      [fire-name]
+      (count (nth ((keyword (name fire-name)) final-scar-grid-master) 0)))
+#_(num-columns "m1")
+#_(num-columns mica1-forest)
+#_(num-columns mica1-elevation)
 
 (def forest-master {:a1 arrowhead1-forest
                     :a2 arrowhead2-forest
@@ -24,6 +59,26 @@
                     :r1 revelstoke1-forest
                     :r2 revelstoke2-forest
                     })
+
+
+(defn create-fuel-grid
+      "Takes in appropriate fire name and uses its forest grid to return new grid
+      where 0 refers to non-fuel and 1 refers to burnable / fuel"
+      [fire-name]
+      (let [grid ((keyword (name fire-name)) forest-master)
+            ;; messy-grid is what we want, but with each row as a lazy seq
+            messy-grid (vec (partition (num-columns fire-name)
+                                       (map #(if (and (>= % 100) (<= % 105))
+                                               (* 0 %)
+                                               (+ 1 (* 0 %))
+                                               )
+                                            (vec (flatten grid)))))]
+           ;; this for loop transforms each lazy seq row into a vector
+           (vec (for [i (range (count messy-grid))]
+                     (vec (nth messy-grid i))))))
+#_(create-fuel-grid "m1")
+#_(:m1 forest-master)
+#_(:m1 final-scar-grid-master)
 
 
 (def weather-master {:a1 arrowhead1-weather
@@ -89,83 +144,13 @@
                            :r2 revelstoke2-ignition-cell
                            })
 
-;; a grid where 0 refers to non-fuel, 1 refers to burnable / fuel
-(def fuel-master {:a1 (create-fuel-grid "a1")
-                  :a2 (create-fuel-grid "a2")
-                  :k1 (create-fuel-grid "k1")
-                  :k2 (create-fuel-grid "k2")
-                  :g1 (create-fuel-grid "g1")
-                  :g2 (create-fuel-grid "g2")
-                  :m1 (create-fuel-grid "m1")
-                  :m2 (create-fuel-grid "m2")
-                  :r1 (create-fuel-grid "r1")
-                  :r2 (create-fuel-grid "r2")
-                  })
-
-(def final-scar-grid-master {:a1 arrowhead1-final-scar
-                             :a2 arrowhead2-final-scar
-                             :k1 kootenay1-final-scar
-                             :k2 kootenay2-final-scar
-                             :g1 glacier1-final-scar
-                             :g2 glacier2-final-scar
-                             :m1 mica1-final-scar
-                             :m2 mica2-final-scar
-                             :r1 revelstoke1-final-scar
-                             :r2 revelstoke2-final-scar
-                             })
-
-; make our initial worlds for each of the 10 fires
-(def fire-names ["a1", "a2", "k1", "k2", "g1", "g2", "m1", "m2", "r1", "r2"])
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; Grid initialization functions   ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-(defn num-rows
-      "Returns the number of rows of a vector of vectors
-      given a fire name"
-      [fire-name]
-      (count ((keyword (name fire-name)) final-scar-grid-master)))
-#_(num-rows "m1")
-#_(num-rows mica1-forest)
-#_(num-rows mica1-elevation)
-
-(defn num-columns
-      "Returns the number of rows of a vector of vectors
-      given a fire name"
-      [fire-name]
-      (count (nth ((keyword (name fire-name)) final-scar-grid-master) 0)))
-#_(num-columns "m1")
-#_(num-columns mica1-forest)
-#_(num-columns mica1-elevation)
-
-
-(defn create-fuel-grid
-      "Takes in appropriate fire name and uses its forest grid to return new grid
-      where 0 refers to non-fuel and 1 refers to burnable / fuel"
-      [fire-name]
-      (let [grid ((keyword (name fire-name)) forest-master)
-            ;; messy-grid is what we want, but with each row as a lazy seq
-            messy-grid (vec (partition (num-columns fire-name)
-                                       (map #(if (and (>= % 100) (<= % 105))
-                                               (* 0 %)
-                                               (+ 1 (* 0 %))
-                                               )
-                                            (vec (flatten grid)))))]
-           ;; this for loop transforms each lazy seq row into a vector
-           (vec (for [i (range (count messy-grid))]
-                     (vec (nth messy-grid i))))))
-#_(create-fuel-grid "m1")
-#_(:m1 forest-master)
-#_(:m1 final-scar-grid-master)
-
-
 (defn construct-empty-grid
       "Returns a vector of vectors filled with 0s with the same dimensions as the specified fire"
       [fire-name]
       (vec (repeat (count ((keyword (name fire-name)) elevation-master))
                    (vec (repeat (count (first ((keyword (name fire-name)) elevation-master))) 0)))))
 #_(construct-empty-grid "m1")
+
 
 ;; note that we're not certain if ignition cell is 0 indexed or not
 ;; (do we need to subtract 1?)
@@ -185,6 +170,19 @@
 #_(reduce + (flatten (construct-initial-grid "m1")))
 #_(reduce + (flatten (construct-initial-grid "m2")))
 
+;; a grid where 0 refers to non-fuel, 1 refers to burnable / fuel
+(def fuel-master {:a1 (create-fuel-grid "a1")
+                  :a2 (create-fuel-grid "a2")
+                  :k1 (create-fuel-grid "k1")
+                  :k2 (create-fuel-grid "k2")
+                  :g1 (create-fuel-grid "g1")
+                  :g2 (create-fuel-grid "g2")
+                  :m1 (create-fuel-grid "m1")
+                  :m2 (create-fuel-grid "m2")
+                  :r1 (create-fuel-grid "r1")
+                  :r2 (create-fuel-grid "r2")
+                  })
+
 
 ;; make our initial worlds for each of the 10 fires
 (def initial-fire-grids {:a1 (construct-initial-grid "a1")
@@ -201,6 +199,8 @@
 #_(:m1 initial-fire-grids)
 
 
+; make our initial worlds for each of the 10 fires
+(def fire-names ["a1", "a2", "k1", "k2", "g1", "g2", "m1", "m2", "r1", "r2"])
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Helper functions    ;;
@@ -285,80 +285,6 @@
 ;#_(get-slope-at-cell 150 "r1")
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; CORE FIRE FUNCTIONS  ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;-------------------------
-; RUNNER
-
-#_(propel-gp {:instructions            fire-instructions
-              :error-function          fire-error-function
-              :max-generations         10
-              :population-size         15
-              :max-initial-plushy-size 20
-              :step-limit              10
-              :parent-selection        :lexicase
-              :tournament-size         5})
-
-;-------------------------
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; fire error function (calls run fire)  ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;; how do argmap and individual get passed in???
-(defn fire-error-function
-      "Error is 0 if the value and the program's selected behavior match,
-       or 1 if they differ, or 1000000 if no behavior is produced.
-       The behavior is here defined as the final top item on the :boolean stack."
-      [argmap individual]
-      (let [program (push-from-plushy (:plushy individual))
-
-            ;; a vector containing each fire name as a string is our inputs
-            ;; REMEMBER PUT BACK IN ALL FIRES fire-names HERE
-            inputs fire-names
-
-
-            ;; correct output is each
-            correct-outputs (map #((keyword (name %)) final-scar-grid-master) inputs)
-
-            ;; run each fire through our run-fire function with the given program
-            outputs (vec (pmap #(run-fire % program argmap) inputs))
-
-
-            ;; returns a vector where 1 indicates different outputs
-            ;; 0 indicates the outputs were the same
-            errors (compare-grids outputs correct-outputs)]
-           ;errors (map (fn [correct-output output]
-           ;              (if (= output :no-stack-item)
-           ;                1000000
-           ;                (if (= correct-output output)
-           ;                  0
-           ;                  1))
-           ;            correct-outputs
-           ;            outputs)]
-           ;(prn "outputs" outputs)
-           ;(prn "output assoc?" (associative? outputs))
-           ;(prn "errors" errors)
-           ;(prn "errors assoc?" (associative? errors))
-           ;(prn "total-error" (reduce + errors))
-           ;(prn "total-error assoc?" (associative? (reduce + errors)))
-           ;(prn individual)
-           ;(prn "individual assoc?" (associative? individual))
-           (assoc individual
-                  :behaviors outputs
-                  :errors errors
-                  :total-error (reduce + errors))))
-#_(fire-error-function test-argmap test-plushy-program)
-
-;This is the correct format
-;{:plushy (boolean_and DMC 1 true elevation sw integer_*)}
-(def test-plushy-program {:plushy '(w)})
-(def test-argmap {:step-limit 5})
-
-
 
 (defn compare-grids
       "Compares each cell in the two grids and
@@ -369,31 +295,6 @@
 ;; this should have an error of 1 as only one value is different
 #_(compare-grids [[1 0 0] [0 0 1]] [[1 0 0] [0 1 1]])
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; run fire function (calls update grid) ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;; FIGURE IT OUT ALPHAS
-;; note why ware we updating one extra time step beyond?
-(defn run-fire
-      "Runs a specified fire all the way through and returns
-      a final fire scar to be compared with actual fire scar"
-      [fire-name program argmap]
-      (loop [grid ((keyword (name fire-name)) initial-fire-grids)
-             time-step 0]
-            ;(prn "time-step:" time-step) (prn "Fire name:" fire-name)
-            ;(prn grid)
-            (if (> time-step 3)
-              ;; if time is up convert all 2s to 1s and return fire-scar
-              (convert-grid grid)
-
-              ;; otherwise update our grid and increment time
-
-              (recur (update-grid grid fire-name time-step program argmap)
-                     (inc time-step)))))
-;; this is dummy slow
-#_(run-fire "m1" test-program test-argmap)
-(def test-program (list 'w))
 
 
 (defn convert-grid
@@ -413,48 +314,6 @@
 #_(convert-grid '((2 1 1 0 1 0) (0 0 1 2 2 2)))
 #_(convert-grid test-burned-grid)
 #_(convert-grid (update-grid (:m1 initial-fire-grids) "m1" 0 test-program test-argmap))
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; update grid function (calls update cell) ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;; add functionality so we only update cells that are burning
-;; or having at least one burning neighbor and that they are not
-;; non-fuel cells (use fuel-master to check this)
-;; in general:
-;; 0 means unburned, 1 means burning, 2 means burned
-
-;; before testing needs num-burning-neighbors
-;; as well as update-cell
-
-(defn update-grid
-      "Updates a fire grid from one time step to the next"
-      [fire-grid fire-name time-step program argmap]
-      (let [flattened-grid (vec (flatten fire-grid))
-            flattened-fuel (vec (flatten ((keyword (name fire-name)) fuel-master)))]
-           ;; turns flattened vector back into a grid
-           (partition (num-columns fire-name)
-                      ;; returns a flattened vector of all cell values
-                      (for [i (range (count flattened-grid))]
-                           (let [cell-value (nth flattened-grid i)]
-                                ;; only update cell if it's burning
-                                (if (or (= cell-value 1)
-                                        ;; or it has at least one burning neighbor (burning = 1)
-                                        ;; and is a burnable cell (according to fuel-master where 1 = burnable)
-                                        ;; and isn't already burned (burned = 2) thus it must be a 0
-                                        (and (>= (num-burning-neighbors i fire-grid) 1) (= 1 (nth flattened-fuel i)) (= cell-value 0)))
-                                  ;; if true then return 0
-
-                                  ;(do
-                                  ;Use the following to time the update cell method
-                                  (update-cell i fire-name time-step fire-grid program argmap)
-                                  ;(update-cell i fire-name time-step fire-grid program argmap))
-                                  ;; else just return current value
-                                  (nth flattened-grid i)))))))
-#_(update-grid (:m1 initial-fire-grids) "m1" 0 test-program test-argmap)
-#_(update-grid test-burning-grid "m1" 0 test-program test-argmap)
-
-
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -478,8 +337,12 @@
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; update cell function ;;
+;; CORE FIRE FUNCTIONS  ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;; update cell function ;;
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defn update-cell
       "Update cell to next state by interpreting push program"
@@ -550,6 +413,145 @@
              2
              )))
 #_(update-cell 5 "m1" 0 test-burning-grid test-program test-argmap)
+
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;; update grid function (calls update cell) ;;
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; add functionality so we only update cells that are burning
+;; or having at least one burning neighbor and that they are not
+;; non-fuel cells (use fuel-master to check this)
+;; in general:
+;; 0 means unburned, 1 means burning, 2 means burned
+
+;; before testing needs num-burning-neighbors
+;; as well as update-cell
+
+(defn update-grid
+      "Updates a fire grid from one time step to the next"
+      [fire-grid fire-name time-step program argmap]
+      (let [flattened-grid (vec (flatten fire-grid))
+            flattened-fuel (vec (flatten ((keyword (name fire-name)) fuel-master)))]
+           ;; turns flattened vector back into a grid
+           (partition (num-columns fire-name)
+                      ;; returns a flattened vector of all cell values
+                      (for [i (range (count flattened-grid))]
+                           (let [cell-value (nth flattened-grid i)]
+                                ;; only update cell if it's burning
+                                (if (or (= cell-value 1)
+                                        ;; or it has at least one burning neighbor (burning = 1)
+                                        ;; and is a burnable cell (according to fuel-master where 1 = burnable)
+                                        ;; and isn't already burned (burned = 2) thus it must be a 0
+                                        (and (>= (num-burning-neighbors i fire-grid) 1) (= 1 (nth flattened-fuel i)) (= cell-value 0)))
+                                  ;; if true then return 0
+
+                                  ;(do
+                                  ;Use the following to time the update cell method
+                                  (update-cell i fire-name time-step fire-grid program argmap)
+                                  ;(update-cell i fire-name time-step fire-grid program argmap))
+                                  ;; else just return current value
+                                  (nth flattened-grid i)))))))
+#_(update-grid (:m1 initial-fire-grids) "m1" 0 test-program test-argmap)
+#_(update-grid test-burning-grid "m1" 0 test-program test-argmap)
+
+
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;; run fire function (calls update grid) ;;
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; FIGURE IT OUT ALPHAS
+;; note why ware we updating one extra time step beyond?
+(defn run-fire
+      "Runs a specified fire all the way through and returns
+      a final fire scar to be compared with actual fire scar"
+      [fire-name program argmap]
+      (loop [grid ((keyword (name fire-name)) initial-fire-grids)
+             time-step 0]
+            ;(prn "time-step:" time-step) (prn "Fire name:" fire-name)
+            ;(prn grid)
+            (if (> time-step 3)
+              ;; if time is up convert all 2s to 1s and return fire-scar
+              (convert-grid grid)
+
+              ;; otherwise update our grid and increment time
+
+              (recur (update-grid grid fire-name time-step program argmap)
+                     (inc time-step)))))
+;; this is dummy slow
+#_(run-fire "m1" test-program test-argmap)
+(def test-program (list 'w))
+
+
+
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;; fire error function (calls run fire)  ;;
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; how do argmap and individual get passed in???
+(defn fire-error-function
+      "Error is 0 if the value and the program's selected behavior match,
+       or 1 if they differ, or 1000000 if no behavior is produced.
+       The behavior is here defined as the final top item on the :boolean stack."
+      [argmap individual]
+      (let [program (push-from-plushy (:plushy individual))
+
+            ;; a vector containing each fire name as a string is our inputs
+            ;; REMEMBER PUT BACK IN ALL FIRES fire-names HERE
+            inputs fire-names
+
+
+            ;; correct output is each
+            correct-outputs (map #((keyword (name %)) final-scar-grid-master) inputs)
+
+            ;; run each fire through our run-fire function with the given program
+            outputs (vec (pmap #(run-fire % program argmap) inputs))
+
+
+            ;; returns a vector where 1 indicates different outputs
+            ;; 0 indicates the outputs were the same
+            errors (compare-grids outputs correct-outputs)]
+           ;errors (map (fn [correct-output output]
+           ;              (if (= output :no-stack-item)
+           ;                1000000
+           ;                (if (= correct-output output)
+           ;                  0
+           ;                  1))
+           ;            correct-outputs
+           ;            outputs)]
+           ;(prn "outputs" outputs)
+           ;(prn "output assoc?" (associative? outputs))
+           ;(prn "errors" errors)
+           ;(prn "errors assoc?" (associative? errors))
+           ;(prn "total-error" (reduce + errors))
+           ;(prn "total-error assoc?" (associative? (reduce + errors)))
+           ;(prn individual)
+           ;(prn "individual assoc?" (associative? individual))
+           (assoc individual
+                  :behaviors outputs
+                  :errors errors
+                  :total-error (reduce + errors))))
+#_(fire-error-function test-argmap test-plushy-program)
+
+;This is the correct format
+;{:plushy (boolean_and DMC 1 true elevation sw integer_*)}
+(def test-plushy-program {:plushy '(w)})
+(def test-argmap {:step-limit 5})
+
+
+;-------------------------
+; RUNNER
+
+#_(propel-gp {:instructions            fire-instructions
+              :error-function          fire-error-function
+              :max-generations         10
+              :population-size         15
+              :max-initial-plushy-size 20
+              :step-limit              10
+              :parent-selection        :lexicase
+              :tournament-size         5})
+
+;-------------------------
+
 
 ;;;;;;;;;;;;;;;;;;
 ;; MAIN METHOD  ;;
