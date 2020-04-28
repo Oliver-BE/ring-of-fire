@@ -104,3 +104,94 @@ Best plushy: (ISI boolean_or s WS false false integer_% se se integer_% exec_if 
 Best program: (ISI boolean_or s WS false false integer_% se se integer_% exec_if (nw num-burning-neigh) ())
 Best total error: 9414
 
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (elevation boolean_or exec_dup WS false 2 integer_% se se boolean_or WD nw)
+Best program: (elevation boolean_or exec_dup (WS false 2 integer_% se se boolean_or WD nw))
+Best total error: 9015
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (elevation boolean_or exec_dup WS false false integer_% se integer_% exec_if nw nw)
+Best program: (elevation boolean_or exec_dup (WS false false integer_% se integer_% exec_if (nw nw) ()))
+Best total error: 7293
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (ISI boolean_or exec_dup WS false false integer_% se se exec_if exec_if num-burning-neigh num-burning-neigh)
+Best program: (ISI boolean_or exec_dup (WS false false integer_% se se exec_if (exec_if (num-burning-neigh num-burning-neigh) ()) ()))
+Best total error: 8783
+
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (elevation boolean_or exec_dup WS false false se se exec_if nw nw nw)
+Best program: (elevation boolean_or exec_dup (WS false false se se exec_if (nw nw nw) ()))
+Best total error: 7060
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (elevation boolean_or exec_dup WS ISI false false integer_% se integer_% exec_if nw nw)
+Best program: (elevation boolean_or exec_dup (WS ISI false false integer_% se integer_% exec_if (nw nw) ()))
+Best total error: 8466
+
+-------------------------------------------------------
+               Report for Generation 20
+-------------------------------------------------------
+Best plushy: (elevation boolean_or exec_dup WS false false se se exec_if nw nw nw)
+Best program: (elevation boolean_or exec_dup (WS false false se se exec_if (nw nw nw) ()))
+Best total error: 9257
+
+-------------------------------------------------------
+               Report for Generation 21
+-------------------------------------------------------
+Best plushy: (true elevation boolean_or exec_dup WS ISI ISI false false se s exec_if nw exec_if nw)
+Best program: (true elevation boolean_or exec_dup (WS ISI ISI false false se s exec_if (nw exec_if (nw) ()) ()))
+Best total error: 7793
+
+-------------------------------------------------------
+               Report for Generation 22
+-------------------------------------------------------
+Best plushy: (elevation boolean_or exec_dup num-burning-neigh false false false false integer_% nw integer_% nw)
+Best program: (elevation boolean_or exec_dup (num-burning-neigh false false false false integer_% nw integer_% nw))
+Best total error: 7228
+
+-------------------------------------------------------
+               Report for Generation 23
+-------------------------------------------------------
+Best plushy: (elevation boolean_or exec_dup num-burning-neigh false false false false integer_% nw integer_% nw)
+Best program: (elevation boolean_or exec_dup (num-burning-neigh false false false false integer_% nw integer_% nw))
+Best total error: 6808
+
+-------------------------------------------------------
+               Report for Generation 24
+-------------------------------------------------------
+Best plushy: (elevation boolean_or exec_dup num-burning-neigh false false false false integer_% nw integer_% nw)
+Best program: (elevation boolean_or exec_dup (num-burning-neigh false false false false integer_% nw integer_% nw))
+Best total error: 6705
+
+-------------------------------------------------------
+               Report for Generation 25
+-------------------------------------------------------
+Best plushy: (elevation boolean_or exec_dup num-burning-neigh false false false integer_% nw integer_% nw)
+Best program: (elevation boolean_or exec_dup (num-burning-neigh false false false integer_% nw integer_% nw))
+Best total error: 7454
+
+-------------------------------------------------------
+               Report for Generation 26
+-------------------------------------------------------
+Best plushy: (elevation boolean_or exec_dup num-burning-neigh false false false integer_% nw integer_% nw)
+Best program: (elevation boolean_or exec_dup (num-burning-neigh false false false integer_% nw integer_% nw))
+Best total error: 7212
+
+-------------------------------------------------------
+               Report for Generation 27
+-------------------------------------------------------
+Best plushy: (elevation boolean_or exec_dup num-burning-neigh false false false false integer_% integer_* nw integer_% nw)
+Best program: (elevation boolean_or exec_dup (num-burning-neigh false false false false integer_% integer_* nw integer_% nw))
+Best total error: 7544
+

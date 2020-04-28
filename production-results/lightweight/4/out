@@ -118,3 +118,143 @@ Best plushy: (num-burning-neigh TMP w boolean_or time-step time-step TMP true TM
 Best program: (num-burning-neigh TMP w boolean_or time-step time-step TMP true TMP WS boolean_not boolean_not true true DMC true)
 Best total error: 8854
 
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (num-burning-neigh TMP w boolean_or time-step time-step time-step true TMP WS APCP WS boolean_not true DMC true)
+Best program: (num-burning-neigh TMP w boolean_or time-step time-step time-step true TMP WS APCP WS boolean_not true DMC true)
+Best total error: 7318
+
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (num-burning-neigh w w time-step time-step e time-step TMP WS boolean_not true APCP true DMC current-value)
+Best program: (num-burning-neigh w w time-step time-step e time-step TMP WS boolean_not true APCP true DMC current-value)
+Best total error: 8082
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (num-burning-neigh TMP w WS boolean_or e time-step time-step TMP true true APCP WS boolean_not current-value boolean_not true DMC true)
+Best program: (num-burning-neigh TMP w WS boolean_or e time-step time-step TMP true true APCP WS boolean_not current-value boolean_not true DMC true)
+Best total error: 7475
+
+-------------------------------------------------------
+               Report for Generation 20
+-------------------------------------------------------
+Best plushy: (num-burning-neigh w w time-step boolean_or e time-step time-step TMP true APCP DMC current-value boolean_not)
+Best program: (num-burning-neigh w w time-step boolean_or e time-step time-step TMP true APCP DMC current-value boolean_not)
+Best total error: 8225
+
+-------------------------------------------------------
+               Report for Generation 21
+-------------------------------------------------------
+Best plushy: (num-burning-neigh TMP w WS boolean_or e time-step w time-step TMP true true APCP WS boolean_not current-value boolean_not true DMC true)
+Best program: (num-burning-neigh TMP w WS boolean_or e time-step w time-step TMP true true APCP WS boolean_not current-value boolean_not true DMC true)
+Best total error: 8987
+
+-------------------------------------------------------
+               Report for Generation 22
+-------------------------------------------------------
+Best plushy: (num-burning-neigh w w WS boolean_or e time-step DC TMP true true true DMC DMC current-value current-value)
+Best program: (num-burning-neigh w w WS boolean_or e time-step DC TMP true true true DMC DMC current-value current-value)
+Best total error: 8082
+
+-------------------------------------------------------
+               Report for Generation 23
+-------------------------------------------------------
+Best plushy: (num-burning-neigh TMP w WS boolean_or e time-step w time-step TMP true true APCP WS boolean_not current-value boolean_not true DMC true)
+Best program: (num-burning-neigh TMP w WS boolean_or e time-step w time-step TMP true true APCP WS boolean_not current-value boolean_not true DMC true)
+Best total error: 8640
+
+-------------------------------------------------------
+               Report for Generation 24
+-------------------------------------------------------
+Best plushy: (num-burning-neigh TMP w WS boolean_or e time-step time-step TMP true true APCP WS boolean_not current-value boolean_not true DMC true)
+Best program: (num-burning-neigh TMP w WS boolean_or e time-step time-step TMP true true APCP WS boolean_not current-value boolean_not true DMC true)
+Best total error: 7735
+
+-------------------------------------------------------
+               Report for Generation 25
+-------------------------------------------------------
+Best plushy: (num-burning-neigh TMP w WS boolean_or e time-step w time-step TMP true true APCP WS boolean_not current-value boolean_not true DMC true)
+Best program: (num-burning-neigh TMP w WS boolean_or e time-step w time-step TMP true true APCP WS boolean_not current-value boolean_not true DMC true)
+Best total error: 8439
+
+-------------------------------------------------------
+               Report for Generation 26
+-------------------------------------------------------
+Best plushy: (num-burning-neigh TMP false w WS boolean_or e time-step time-step time-step true true APCP WS WS current-value boolean_not boolean_= true true DMC ISI true boolean_or)
+Best program: (num-burning-neigh TMP false w WS boolean_or e time-step time-step time-step true true APCP WS WS current-value boolean_not boolean_= true true DMC ISI true boolean_or)
+Best total error: 7822
+
+-------------------------------------------------------
+               Report for Generation 27
+-------------------------------------------------------
+Best plushy: (num-burning-neigh TMP w WS boolean_or e time-step w time-step TMP true true WS WS boolean_not boolean_not boolean_not DMC DMC true)
+Best program: (num-burning-neigh TMP w WS boolean_or e time-step w time-step TMP true true WS WS boolean_not boolean_not boolean_not DMC DMC true)
+Best total error: 15459
+
+-------------------------------------------------------
+               Report for Generation 28
+-------------------------------------------------------
+Best plushy: (num-burning-neigh TMP w WS boolean_or e time-step w time-step TMP true true WS WS boolean_not boolean_not boolean_not DMC true)
+Best program: (num-burning-neigh TMP w WS boolean_or e time-step w time-step TMP true true WS WS boolean_not boolean_not boolean_not DMC true)
+Best total error: 7735
+
+-------------------------------------------------------
+               Report for Generation 29
+-------------------------------------------------------
+Best plushy: (num-burning-neigh TMP w WS boolean_or e time-step w time-step time-step true true WS WS boolean_not boolean_not boolean_not true true boolean_or)
+Best program: (num-burning-neigh TMP w WS boolean_or e time-step w time-step time-step true true WS WS boolean_not boolean_not boolean_not true true boolean_or)
+Best total error: 7475
+
+-------------------------------------------------------
+               Report for Generation 30
+-------------------------------------------------------
+Best plushy: (num-burning-neigh TMP w WS boolean_or e time-step w time-step time-step true true WS WS boolean_not boolean_not boolean_not DMC true boolean_or ISI)
+Best program: (num-burning-neigh TMP w WS boolean_or e time-step w time-step time-step true true WS WS boolean_not boolean_not boolean_not DMC true boolean_or ISI)
+Best total error: 9114
+
+-------------------------------------------------------
+               Report for Generation 31
+-------------------------------------------------------
+Best plushy: (num-burning-neigh TMP w WS boolean_or se boolean_or time-step w time-step time-step n true true APCP WS boolean_not boolean_not boolean_not true true num-burning-neigh true)
+Best program: (num-burning-neigh TMP w WS boolean_or se boolean_or time-step w time-step time-step n true true APCP WS boolean_not boolean_not boolean_not true true num-burning-neigh true)
+Best total error: 8900
+
+-------------------------------------------------------
+               Report for Generation 32
+-------------------------------------------------------
+Best plushy: (num-burning-neigh TMP boolean_= w WS boolean_or e time-step w time-step TMP true true true WS WS boolean_not boolean_not WS boolean_not true TMP)
+Best program: (num-burning-neigh TMP boolean_= w WS boolean_or e time-step w time-step TMP true true true WS WS boolean_not boolean_not WS boolean_not true TMP)
+Best total error: 10952
+
+-------------------------------------------------------
+               Report for Generation 33
+-------------------------------------------------------
+Best plushy: (WD num-burning-neigh TMP boolean_= w WS boolean_or e time-step w time-step TMP true true true WS num-burning-neigh WS boolean_not boolean_not WS boolean_not true TMP)
+Best program: (WD num-burning-neigh TMP boolean_= w WS boolean_or e time-step w time-step TMP true true true WS num-burning-neigh WS boolean_not boolean_not WS boolean_not true TMP)
+Best total error: 9564
+
+-------------------------------------------------------
+               Report for Generation 34
+-------------------------------------------------------
+Best plushy: (WD num-burning-neigh TMP boolean_= w WS boolean_or e time-step w time-step TMP true true true WS num-burning-neigh WS boolean_not boolean_not WS boolean_not true TMP)
+Best program: (WD num-burning-neigh TMP boolean_= w WS boolean_or e time-step w time-step TMP true true true WS num-burning-neigh WS boolean_not boolean_not WS boolean_not true TMP)
+Best total error: 10744
+
+-------------------------------------------------------
+               Report for Generation 35
+-------------------------------------------------------
+Best plushy: (num-burning-neigh num-burning-neigh boolean_= w WS WS e e w w time-step true true true true WS num-burning-neigh WS boolean_not boolean_not WS boolean_not true TMP)
+Best program: (num-burning-neigh num-burning-neigh boolean_= w WS WS e e w w time-step true true true true WS num-burning-neigh WS boolean_not boolean_not WS boolean_not true TMP)
+Best total error: 8439
+
+-------------------------------------------------------
+               Report for Generation 36
+-------------------------------------------------------
+Best plushy: (WD num-burning-neigh TMP w WS WS e e time-step w time-step true true true WS WS num-burning-neigh WS boolean_not boolean_not WS boolean_not TMP)
+Best program: (WD num-burning-neigh TMP w WS WS e e time-step w time-step true true true WS WS num-burning-neigh WS boolean_not boolean_not WS boolean_not TMP)
+Best total error: 8082
+
