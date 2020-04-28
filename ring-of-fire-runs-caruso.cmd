@@ -6,14 +6,14 @@ getenv = True
 executable  = run
 
 ## Job properties
-output = /home/icaruso21/ring-of-fire/results/caruso/0/out
-error  = /home/icaruso21/ring-of-fire/results/caruso/0/err
-log    = /home/icaruso21/ring-of-fire/results/caruso/0/log
+output = /home/icaruso21/ring-of-fire/results/caruso/2/out
+error  = /home/icaruso21/ring-of-fire/results/caruso/2/err
+log    = /home/icaruso21/ring-of-fire/results/caruso/2/log
 queue
 
 ## Job properties
-output = /home/icaruso21/ring-of-fire/results/caruso/1/out
-error  = /home/icaruso21/ring-of-fire/results/caruso/1/err
-log    = /home/icaruso21/ring-of-fire/results/caruso/1/log
+output = /home/icaruso21/ring-of-fire/results/caruso/3/out
+error  = /home/icaruso21/ring-of-fire/results/caruso/3/err
+log    = /home/icaruso21/ring-of-fire/results/caruso/3/log
 queue
 

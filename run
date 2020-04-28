@@ -1,2 +1,2 @@
 #! /bin/sh
-lein run
+lein with-profiles production trampoline run
