@@ -1,6 +1,7 @@
-/target
-/classes
-/checkouts
+/target/
+/classes/
+/checkouts/
+/lib/
 profiles.clj
 pom.xml
 pom.xml.asc
@@ -12,3 +13,9 @@ pom.xml.asc
 .hg/
 .idea
 .DS_Store
+.lein-deps-sum
+.lein-repl-history
+.lein-plugins/
+.lein-failures
+.nrepl-port
+.cpcache/
