@@ -563,10 +563,10 @@
       (binding [*ns* (the-ns 'ring-of-fire.core)]
                (propel-gp {:instructions            fire-instructions
                            :error-function          fire-error-function
-                           :max-generations         10
-                           :population-size         2
-                           :max-initial-plushy-size 20
-                           :step-limit              10
+                           :max-generations         20
+                           :population-size         20
+                           :max-initial-plushy-size 25
+                           :step-limit              20
                            :parent-selection        :lexicase
                            :tournament-size         5})))
 
