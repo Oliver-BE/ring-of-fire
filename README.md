@@ -9,6 +9,9 @@ Clone repository, navigate to the ring-of-fire directory and run command: <br />
 To interact with a repl: <br />
 `lein repl`
 
+To copy all of the folders in a directory to another directory but not the files (useful for creating a filesystem for condor job outputs): 
+`rsync -a -f"+ */" -f"- *" /directory-to-copy/* /new-directory-name/`
+
 ## Dependencies
 
 Requires Java SDK and Leiningen. 
