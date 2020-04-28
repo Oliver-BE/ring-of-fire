@@ -195,3 +195,192 @@ Best plushy: (elevation boolean_or exec_dup num-burning-neigh false false false 
 Best program: (elevation boolean_or exec_dup (num-burning-neigh false false false false integer_% integer_* nw integer_% nw))
 Best total error: 7544
 
+-------------------------------------------------------
+               Report for Generation 28
+-------------------------------------------------------
+Best plushy: (elevation boolean_or exec_dup num-burning-neigh false false false integer_% nw integer_% nw)
+Best program: (elevation boolean_or exec_dup (num-burning-neigh false false false integer_% nw integer_% nw))
+Best total error: 5696
+
+-------------------------------------------------------
+               Report for Generation 29
+-------------------------------------------------------
+Best plushy: (elevation boolean_or exec_dup num-burning-neigh false false false integer_% nw integer_% nw)
+Best program: (elevation boolean_or exec_dup (num-burning-neigh false false false integer_% nw integer_% nw))
+Best total error: 7683
+
+-------------------------------------------------------
+               Report for Generation 30
+-------------------------------------------------------
+Best plushy: (elevation boolean_or num-burning-neigh false false false integer_% nw integer_% nw)
+Best program: (elevation boolean_or num-burning-neigh false false false integer_% nw integer_% nw)
+Best total error: 8820
+
+-------------------------------------------------------
+               Report for Generation 31
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false false false integer_% nw integer_% nw)
+Best program: (elevation boolean_or false false false integer_% nw integer_% nw)
+Best total error: 10092
+
+-------------------------------------------------------
+               Report for Generation 32
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false false false false integer_% integer_% integer_* nw)
+Best program: (elevation boolean_or false false false false integer_% integer_% integer_* nw)
+Best total error: 8424
+
+-------------------------------------------------------
+               Report for Generation 33
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false false false time-step integer_% nw integer_% nw)
+Best program: (elevation boolean_or false false false time-step integer_% nw integer_% nw)
+Best total error: 9853
+
+-------------------------------------------------------
+               Report for Generation 34
+-------------------------------------------------------
+Best plushy: (elevation boolean_or WS false false false false boolean_not integer_% current-value integer_% integer_* nw)
+Best program: (elevation boolean_or WS false false false false boolean_not integer_% current-value integer_% integer_* nw)
+Best total error: 7475
+
+-------------------------------------------------------
+               Report for Generation 35
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false false false integer_% nw integer_% nw integer_% nw)
+Best program: (elevation boolean_or false false false integer_% nw integer_% nw integer_% nw)
+Best total error: 14800
+
+-------------------------------------------------------
+               Report for Generation 36
+-------------------------------------------------------
+Best plushy: (WD boolean_or TMP false false false true false nw current-value integer_% nw)
+Best program: (WD boolean_or TMP false false false true false nw current-value integer_% nw)
+Best total error: 9296
+
+-------------------------------------------------------
+               Report for Generation 37
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false false false integer_% nw integer_% nw integer_% nw)
+Best program: (elevation boolean_or false false false integer_% nw integer_% nw integer_% nw)
+Best total error: 7629
+
+-------------------------------------------------------
+               Report for Generation 38
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false false false integer_% integer_% nw integer_% nw)
+Best program: (elevation boolean_or false false false integer_% integer_% nw integer_% nw)
+Best total error: 8985
+
+-------------------------------------------------------
+               Report for Generation 39
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false false false integer_% boolean_not integer_% integer_% current-value nw)
+Best program: (elevation boolean_or false false false integer_% boolean_not integer_% integer_% current-value nw)
+Best total error: 6870
+
+-------------------------------------------------------
+               Report for Generation 40
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false false false integer_% integer_% nw integer_% nw)
+Best program: (elevation boolean_or false false false integer_% integer_% nw integer_% nw)
+Best total error: 9765
+
+-------------------------------------------------------
+               Report for Generation 41
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false false false integer_% nw RH nw DMC nw integer_%)
+Best program: (elevation boolean_or false false false integer_% nw RH nw DMC nw integer_%)
+Best total error: 7055
+
+-------------------------------------------------------
+               Report for Generation 42
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false false false integer_% nw RH nw DMC nw integer_% nw)
+Best program: (elevation boolean_or false false false integer_% nw RH nw DMC nw integer_% nw)
+Best total error: 7808
+
+-------------------------------------------------------
+               Report for Generation 43
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false false false integer_% nw RH nw DMC nw integer_%)
+Best program: (elevation boolean_or false false false integer_% nw RH nw DMC nw integer_%)
+Best total error: 7808
+
+-------------------------------------------------------
+               Report for Generation 44
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false false false integer_% nw RH nw DMC integer_%)
+Best program: (elevation boolean_or false false false integer_% nw RH nw DMC integer_%)
+Best total error: 7294
+
+-------------------------------------------------------
+               Report for Generation 45
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false false false integer_% nw RH nw DMC nw integer_%)
+Best program: (elevation boolean_or false false false integer_% nw RH nw DMC nw integer_%)
+Best total error: 7704
+
+-------------------------------------------------------
+               Report for Generation 46
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false false false integer_% nw RH nw DMC nw)
+Best program: (elevation boolean_or false false false integer_% nw RH nw DMC nw)
+Best total error: 10108
+
+-------------------------------------------------------
+               Report for Generation 47
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false false false integer_% num-burning-neigh RH nw DMC nw DMC)
+Best program: (elevation boolean_or false false false integer_% num-burning-neigh RH nw DMC nw DMC)
+Best total error: 6365
+
+-------------------------------------------------------
+               Report for Generation 48
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false time-step false false num-burning-neigh integer_% nw RH DMC nw integer_%)
+Best program: (elevation boolean_or false time-step false false num-burning-neigh integer_% nw RH DMC nw integer_%)
+Best total error: 6226
+
+-------------------------------------------------------
+               Report for Generation 49
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false false false integer_% num-burning-neigh 1 RH nw DMC nw DMC)
+Best program: (elevation boolean_or false false false integer_% num-burning-neigh 1 RH nw DMC nw DMC)
+Best total error: 9282
+
+-------------------------------------------------------
+               Report for Generation 50
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false false false integer_% nw RH nw nw DMC nw DMC)
+Best program: (elevation boolean_or false false false integer_% nw RH nw nw DMC nw DMC)
+Best total error: 12462
+
+-------------------------------------------------------
+               Report for Generation 51
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false false false integer_% num-burning-neigh 1 RH nw DMC nw integer_= DMC)
+Best program: (elevation boolean_or false false false integer_% num-burning-neigh 1 RH nw DMC nw integer_= DMC)
+Best total error: 7745
+
+-------------------------------------------------------
+               Report for Generation 52
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false false false integer_% num-burning-neigh 1 RH nw DMC nw integer_= DMC)
+Best program: (elevation boolean_or false false false integer_% num-burning-neigh 1 RH nw DMC nw integer_= DMC)
+Best total error: 6313
+
+-------------------------------------------------------
+               Report for Generation 53
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false false false integer_% num-burning-neigh 1 RH nw DMC nw integer_= DMC)
+Best program: (elevation boolean_or false false false integer_% num-burning-neigh 1 RH nw DMC nw integer_= DMC)
+Best total error: 6113
+
+-------------------------------------------------------
+               Report for Generation 54
+-------------------------------------------------------
+Best plushy: (elevation boolean_or false false false integer_% num-burning-neigh 1 RH nw DMC nw integer_= DMC)
+Best program: (elevation boolean_or false false false integer_% num-burning-neigh 1 RH nw DMC nw integer_= DMC)
+Best total error: 6081
+
