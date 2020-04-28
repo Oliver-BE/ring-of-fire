@@ -12,8 +12,8 @@ log    = /home/icaruso21/ring-of-fire/results/caruso/0/log
 queue
 
 ## Job properties
-output = /home/mglusker21/cluster-scratch/ring-of-fire/results/1/out
-error  = /home/mglusker21/cluster-scratch/ring-of-fire/results/1/err
-log    = /home/mglusker21/cluster-scratch/ring-of-fire/results/1/log
+output = /home/icaruso21/ring-of-fire/results/caruso/1/out
+error  = /home/icaruso21/ring-of-fire/results/caruso/1/err
+log    = /home/icaruso21/ring-of-fire/results/caruso/1/log
 queue
 
