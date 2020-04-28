@@ -17,7 +17,6 @@ error  = /home/icaruso21/ring-of-fire/results/caruso/1/err
 log    = /home/icaruso21/ring-of-fire/results/caruso/1/log
 queue
 
-
 ## Job properties
 output = /home/icaruso21/ring-of-fire/results/caruso/2/out
 error  = /home/icaruso21/ring-of-fire/results/caruso/2/err
@@ -30,7 +29,6 @@ error  = /home/icaruso21/ring-of-fire/results/caruso/3/err
 log    = /home/icaruso21/ring-of-fire/results/caruso/3/log
 queue
 
-
 ## Job properties
 output = /home/icaruso21/ring-of-fire/results/caruso/4/out
 error  = /home/icaruso21/ring-of-fire/results/caruso/4/err
@@ -41,5 +39,17 @@ queue
 output = /home/icaruso21/ring-of-fire/results/caruso/5/out
 error  = /home/icaruso21/ring-of-fire/results/caruso/5/err
 log    = /home/icaruso21/ring-of-fire/results/caruso/5/log
+queue
+
+## Job properties
+output = /home/icaruso21/ring-of-fire/results/caruso/6/out
+error  = /home/icaruso21/ring-of-fire/results/caruso/6/err
+log    = /home/icaruso21/ring-of-fire/results/caruso/6/log
+queue
+
+## Job properties
+output = /home/icaruso21/ring-of-fire/results/caruso/7/out
+error  = /home/icaruso21/ring-of-fire/results/caruso/7/err
+log    = /home/icaruso21/ring-of-fire/results/caruso/7/log
 queue
 
