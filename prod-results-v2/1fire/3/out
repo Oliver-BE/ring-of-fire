@@ -23,3 +23,19 @@ Best program: (time-step exec_if (sw n integer_% integer_+ APCP integer_- intege
 Best total error: 2857
 Fires evaluated:  (k1)
 
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (FWI 1 FFMC ISI elevation BUI APCP WS 2 integer_* sw e RH DMC FFMC w TMP integer_+ WD APCP false boolean_= TMP)
+Best program: (FWI 1 FFMC ISI elevation BUI APCP WS 2 integer_* sw e RH DMC FFMC w TMP integer_+ WD APCP false boolean_= TMP)
+Best total error: 803
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (FWI exec_if sw n elevation BUI false WS integer_% integer_* sw e RH DMC FFMC w integer_+ WD false boolean_=)
+Best program: (FWI exec_if (sw n elevation BUI false WS integer_% integer_* sw e RH DMC FFMC w integer_+ WD false boolean_=) ())
+Best total error: 1332
+Fires evaluated:  (a2)
+

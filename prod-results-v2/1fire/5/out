@@ -2,16 +2,24 @@ Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation AP
 -------------------------------------------------------
                Report for Generation 0
 -------------------------------------------------------
-Best plushy: (DC 2 ISI integer_= BUI boolean_not FFMC WS ne num-burning-neigh)
-Best program: (DC 2 ISI integer_= BUI boolean_not FFMC WS ne num-burning-neigh)
-Best total error: 673
-Fires evaluated:  (m1)
+Best plushy: (e 2 FFMC integer_% exec_if num-burning-neigh)
+Best program: (e 2 FFMC integer_% exec_if (num-burning-neigh) ())
+Best total error: 1683
+Fires evaluated:  (r1)
 
 -------------------------------------------------------
                Report for Generation 1
 -------------------------------------------------------
-Best plushy: (ISI integer_* FWI FFMC 1 TMP BUI RH exec_dup)
-Best program: (ISI integer_* FWI FFMC 1 TMP BUI RH exec_dup ())
-Best total error: 3460
-Fires evaluated:  (k1)
+Best plushy: (exec_dup 2 DMC integer_% TMP num-burning-neigh)
+Best program: (exec_dup (2 DMC integer_% TMP num-burning-neigh))
+Best total error: 2207
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (time-step WD DMC integer_% ne w current-value DMC)
+Best program: (time-step WD DMC integer_% ne w current-value DMC)
+Best total error: 803
+Fires evaluated:  (k2)
 

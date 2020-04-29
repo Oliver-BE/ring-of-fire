@@ -7,3 +7,19 @@ Best program: (se APCP DC 2 se boolean_= num-burning-neigh current-value w FFMC 
 Best total error: 1332
 Fires evaluated:  (a2)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (WS boolean_= DC se ne exec_if integer_+ 2 n false integer_% 1 RH integer_+ w DMC WS nw current-value)
+Best program: (WS boolean_= DC se ne exec_if (integer_+ 2 n false integer_% 1 RH integer_+ w DMC WS nw current-value) ())
+Best total error: 2200
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (WS false DC se DMC exec_if integer_+ 2 integer_% 1 w nw)
+Best program: (WS false DC se DMC exec_if (integer_+ 2 integer_% 1 w nw) ())
+Best total error: 2200
+Fires evaluated:  (m2)
+

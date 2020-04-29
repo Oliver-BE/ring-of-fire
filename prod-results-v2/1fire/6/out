@@ -7,3 +7,19 @@ Best program: (TMP BUI 1 integer_% n integer_* elevation)
 Best total error: 1624
 Fires evaluated:  (m1)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (n 1 n 2 exec_dup DMC ISI WD elevation num-burning-neigh ne integer_*)
+Best program: (n 1 n 2 exec_dup (DMC ISI WD elevation num-burning-neigh ne integer_*))
+Best total error: 2200
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (n 1 n 2 exec_dup DMC ISI WD elevation num-burning-neigh ne integer_*)
+Best program: (n 1 n 2 exec_dup (DMC ISI WD elevation num-burning-neigh ne integer_*))
+Best total error: 2843
+Fires evaluated:  (k1)
+

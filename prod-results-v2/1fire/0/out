@@ -2,16 +2,24 @@ Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation AP
 -------------------------------------------------------
                Report for Generation 0
 -------------------------------------------------------
-Best plushy: (e close e integer_% e e exec_if true APCP BUI BUI BUI false DC integer_- s n boolean_not RH false DC ne integer_- BUI ne integer_+)
-Best program: (e e integer_% e e exec_if (true APCP BUI BUI BUI false DC integer_- s n boolean_not RH false DC ne integer_- BUI ne integer_+) ())
-Best total error: 2219
-Fires evaluated:  (r1)
+Best plushy: (ISI BUI integer_= DC exec_dup APCP s true exec_if boolean_or integer_% 0 exec_dup BUI num-burning-neigh)
+Best program: (ISI BUI integer_= DC exec_dup (APCP s true exec_if (boolean_or integer_% 0 exec_dup (BUI num-burning-neigh)) ()))
+Best total error: 944
+Fires evaluated:  (k2)
 
 -------------------------------------------------------
                Report for Generation 1
 -------------------------------------------------------
-Best plushy: (integer_= close boolean_and se TMP integer_* time-step 1)
-Best program: (integer_= boolean_and se TMP integer_* time-step 1)
-Best total error: 2200
+Best plushy: (e num-burning-neigh integer_- sw elevation n s 0 current-value)
+Best program: (e num-burning-neigh integer_- sw elevation n s 0 current-value)
+Best total error: 1641
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (0 false s e integer_% sw elevation num-burning-neigh)
+Best program: (0 false s e integer_% sw elevation num-burning-neigh)
+Best total error: 2207
 Fires evaluated:  (m2)
 
