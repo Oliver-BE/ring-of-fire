@@ -63,3 +63,83 @@ Best program: (time-step 2 n APCP sw true boolean_not integer_- num-burning-neig
 Best total error: 3269
 Fires evaluated:  (a2)
 
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (time-step WS sw ISI s time-step boolean_not true boolean_not num-burning-neigh w sw sw s s WD close 1 integer_- sw)
+Best program: (time-step WS sw ISI s time-step boolean_not true boolean_not num-burning-neigh w sw sw s s WD 1 integer_- sw)
+Best total error: 3295
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (time-step WS sw FWI n APCP sw true boolean_not boolean_= sw num-burning-neigh s e WD n 1)
+Best program: (time-step WS sw FWI n APCP sw true boolean_not boolean_= sw num-burning-neigh s e WD n 1)
+Best total error: 3896
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (time-step WS sw FWI n APCP sw true boolean_not boolean_= num-burning-neigh w s e WD WD close 1 sw sw)
+Best program: (time-step WS sw FWI n APCP sw true boolean_not boolean_= num-burning-neigh w s e WD WD 1 sw sw)
+Best total error: 3896
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (time-step WS FWI n sw true boolean_not boolean_= num-burning-neigh w s e WD WD close 1 sw)
+Best program: (time-step WS FWI n sw true boolean_not boolean_= num-burning-neigh w s e WD WD 1 sw)
+Best total error: 3546
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (time-step WS sw FWI n time-step boolean_not true boolean_not num-burning-neigh num-burning-neigh sw s e sw WD sw)
+Best program: (time-step WS sw FWI n time-step boolean_not true boolean_not num-burning-neigh num-burning-neigh sw s e sw WD sw)
+Best total error: 3568
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (time-step WS sw n APCP sw true boolean_not boolean_= sw num-burning-neigh e WD n 1)
+Best program: (time-step WS sw n APCP sw true boolean_not boolean_= sw num-burning-neigh e WD n 1)
+Best total error: 5620
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (integer_- time-step WS sw ISI n time-step sw true boolean_not boolean_= sw sw s e sw WD close 1)
+Best program: (integer_- time-step WS sw ISI n time-step sw true boolean_not boolean_= sw sw s e sw WD 1)
+Best total error: 5585
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (integer_- time-step WS sw ISI n time-step sw true boolean_not integer_+ boolean_= sw sw s e ISI sw WD close 1)
+Best program: (integer_- time-step WS sw ISI n time-step sw true boolean_not integer_+ boolean_= sw sw s e ISI sw WD 1)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (integer_- time-step sw sw ISI n time-step sw true boolean_= num-burning-neigh boolean_= s e sw e WD 1 close)
+Best program: (integer_- time-step sw sw ISI n time-step sw true boolean_= num-burning-neigh boolean_= s e sw e WD 1)
+Best total error: 5585
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (integer_- num-burning-neigh WS sw sw ISI n time-step sw true boolean_not sw boolean_= sw sw WD e ISI WD close 1)
+Best program: (integer_- num-burning-neigh WS sw sw ISI n time-step sw true boolean_not sw boolean_= sw sw WD e ISI WD 1)
+Best total error: 1643
+Fires evaluated:  (m1)
+

@@ -7,3 +7,19 @@ Best program: (DC WD)
 Best total error: 3976
 Fires evaluated:  (m1 k2)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (num-burning-neigh e num-burning-neigh time-step integer_- integer_+ integer_= integer_+ boolean_not s current-value s BUI WD boolean_= n FFMC)
+Best program: (num-burning-neigh e num-burning-neigh time-step integer_- integer_+ integer_= integer_+ boolean_not s current-value s BUI WD boolean_= n FFMC)
+Best total error: 4494
+Fires evaluated:  (k1 m1)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (num-burning-neigh integer_+ boolean_and time-step integer_% integer_+ integer_= integer_+ boolean_not s integer_+ s WD)
+Best program: (num-burning-neigh integer_+ boolean_and time-step integer_% integer_+ integer_= integer_+ boolean_not s integer_+ s WD)
+Best total error: 7755
+Fires evaluated:  (g2 r1)
+

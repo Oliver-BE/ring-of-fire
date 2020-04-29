@@ -15,3 +15,43 @@ Best program: (num-burning-neigh FWI se exec_dup (2 boolean_and nw TMP) boolean_
 Best total error: 3378
 Fires evaluated:  (k2)
 
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (true APCP nw ne DMC integer_+ FWI n integer_= APCP time-step sw RH)
+Best program: (true APCP nw ne DMC integer_+ FWI n integer_= APCP time-step sw RH)
+Best total error: 3460
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (true elevation WD APCP 1 boolean_= true s 2 FWI e boolean_= exec_dup sw TMP nw)
+Best program: (true elevation WD APCP 1 boolean_= true s 2 FWI e boolean_= exec_dup (sw TMP nw))
+Best total error: 2835
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (true elevation WD APCP 1 boolean_= true s 2 FWI e boolean_= exec_dup sw TMP nw)
+Best program: (true elevation WD APCP 1 boolean_= true s 2 FWI e boolean_= exec_dup (sw TMP nw))
+Best total error: 1547
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (true elevation WD APCP 1 boolean_= true s 2 FWI e boolean_= exec_dup sw TMP nw)
+Best program: (true elevation WD APCP 1 boolean_= true s 2 FWI e boolean_= exec_dup (sw TMP nw))
+Best total error: 1547
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (FWI elevation w boolean_= boolean_and nw s WD 0 boolean_= FFMC sw)
+Best program: (FWI elevation w boolean_= boolean_and nw s WD 0 boolean_= FFMC sw)
+Best total error: 2794
+Fires evaluated:  (m2)
+

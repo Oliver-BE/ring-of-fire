@@ -7,3 +7,11 @@ Best program: (APCP 0 boolean_or s 1 sw num-burning-neigh)
 Best total error: 1350
 Fires evaluated:  (a2)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (integer_% WD 1 WS integer_= num-burning-neigh)
+Best program: (integer_% WD 1 WS integer_= num-burning-neigh)
+Best total error: 1683
+Fires evaluated:  (r1)
+

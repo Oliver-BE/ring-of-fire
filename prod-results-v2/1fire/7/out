@@ -7,3 +7,11 @@ Best program: (false WD)
 Best total error: 3030
 Fires evaluated:  (k2)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (current-value time-step current-value DMC RH time-step 1 WS 2 DC exec_if se true boolean_and 1 integer_% sw elevation)
+Best program: (current-value time-step current-value DMC RH time-step 1 WS 2 DC exec_if (se true boolean_and 1 integer_% sw elevation) ())
+Best total error: 2843
+Fires evaluated:  (k1)
+

@@ -23,3 +23,35 @@ Best program: (WS se BUI DMC 1 integer_+ integer_- exec_dup (APCP w DC integer_-
 Best total error: 1350
 Fires evaluated:  (a2)
 
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (integer_% se ne RH current-value integer_* FFMC 2 n integer_* true 0 sw WD DMC)
+Best program: (integer_% se ne RH current-value integer_* FFMC 2 n integer_* true 0 sw WD DMC)
+Best total error: 1763
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (RH)
+Best program: (RH)
+Best total error: 2414
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (RH WD integer_-)
+Best program: (RH WD integer_-)
+Best total error: 3735
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (exec_if RH WD integer_- TMP)
+Best program: (exec_if (RH WD integer_- TMP) ())
+Best total error: 1547
+Fires evaluated:  (m1)
+

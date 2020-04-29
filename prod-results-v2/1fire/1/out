@@ -23,3 +23,27 @@ Best program: (1 ISI false BUI sw e RH WS e exec_if () ())
 Best total error: 2522
 Fires evaluated:  (r1)
 
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (n true 2 RH nw 0 BUI boolean_and BUI TMP)
+Best program: (n true 2 RH nw 0 BUI boolean_and BUI TMP)
+Best total error: 3378
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (n e BUI 2 boolean_and boolean_= TMP 0 boolean_and APCP BUI WD)
+Best program: (n e BUI 2 boolean_and boolean_= TMP 0 boolean_and APCP BUI WD)
+Best total error: 2422
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (n true 2 2 boolean_and WD TMP 0 boolean_and APCP WD)
+Best program: (n true 2 2 boolean_and WD TMP 0 boolean_and APCP WD)
+Best total error: 5568
+Fires evaluated:  (g2)
+

@@ -31,3 +31,19 @@ Best program: (integer_= false exec_dup (exec_dup (num-burning-neigh integer_* c
 Best total error: 1557
 Fires evaluated:  (m1)
 
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (boolean_not TMP w w se integer_% num-burning-neigh boolean_not exec_dup s nw APCP DMC w)
+Best program: (boolean_not TMP w w se integer_% num-burning-neigh boolean_not exec_dup (s nw APCP DMC w))
+Best total error: 5522
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (boolean_not w integer_* false integer_* sw num-burning-neigh 2 2 sw w s w TMP)
+Best program: (boolean_not w integer_* false integer_* sw num-burning-neigh 2 2 sw w s w TMP)
+Best total error: 1547
+Fires evaluated:  (m1)
+

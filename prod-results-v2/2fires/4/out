@@ -7,3 +7,11 @@ Best program: (boolean_or time-step current-value num-burning-neigh boolean_and)
 Best total error: 1617
 Fires evaluated:  (k2 m1)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (boolean_or time-step current-value num-burning-neigh boolean_and)
+Best program: (boolean_or time-step current-value num-burning-neigh boolean_and)
+Best total error: 2023
+Fires evaluated:  (m1 a2)
+

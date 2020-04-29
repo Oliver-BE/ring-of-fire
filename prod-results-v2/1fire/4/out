@@ -15,3 +15,19 @@ Best program: (current-value integer_% integer_% integer_% DC nw 2 integer_% FWI
 Best total error: 3030
 Fires evaluated:  (k2)
 
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (FWI RH APCP nw 0 w sw integer_- num-burning-neigh integer_* WD DMC s w e s DC num-burning-neigh)
+Best program: (FWI RH APCP nw 0 w sw integer_- num-burning-neigh integer_* WD DMC s w e s DC num-burning-neigh)
+Best total error: 5522
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (FWI RH APCP nw 0 w sw integer_- num-burning-neigh integer_* WD DMC s w e s DC BUI num-burning-neigh)
+Best program: (FWI RH APCP nw 0 w sw integer_- num-burning-neigh integer_* WD DMC s w e s DC BUI num-burning-neigh)
+Best total error: 5522
+Fires evaluated:  (g2)
+

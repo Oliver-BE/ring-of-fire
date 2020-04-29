@@ -7,3 +7,11 @@ Best program: (RH se TMP ISI nw s exec_if (ISI boolean_or) ())
 Best total error: 7755
 Fires evaluated:  (r1 g2)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (BUI 2 integer_* true close FFMC integer_- boolean_not integer_- 0 close s TMP exec_if exec_dup boolean_or WD exec_if ne integer_= integer_% integer_- 2 num-burning-neigh TMP)
+Best program: (BUI 2 integer_* true FFMC integer_- boolean_not integer_- 0 s TMP exec_if (exec_dup (boolean_or WD exec_if (ne integer_= integer_% integer_- 2 num-burning-neigh TMP) ())) ())
+Best total error: 5142
+Fires evaluated:  (r1 m2)
+

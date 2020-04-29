@@ -7,3 +7,19 @@ Best program: (0 nw TMP DC false true boolean_and integer_% DC RH boolean_not bo
 Best total error: 6258
 Fires evaluated:  (m2 k1)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (num-burning-neigh se nw w w s false w boolean_and exec_if n 1 true integer_% FFMC)
+Best program: (num-burning-neigh se nw w w s false w boolean_and exec_if (n 1 true integer_% FFMC) ())
+Best total error: 4874
+Fires evaluated:  (m1 a2)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (integer_* se true APCP integer_+ boolean_or current-value exec_if true FWI boolean_not RH elevation)
+Best program: (integer_* se true APCP integer_+ boolean_or current-value exec_if (true FWI boolean_not RH elevation) ())
+Best total error: 6032
+Fires evaluated:  (m2 a2)
+

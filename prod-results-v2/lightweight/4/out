@@ -47,3 +47,35 @@ Best program: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_-
 Best total error: 1683
 Fires evaluated:  (r1)
 
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- nw integer_* APCP APCP 1 ISI WD boolean_and exec_if boolean_and close TMP boolean_and w current-value)
+Best program: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- nw integer_* APCP APCP 1 ISI WD boolean_and exec_if (boolean_and) (TMP boolean_and w current-value))
+Best total error: 944
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se FFMC FFMC integer_- APCP 1 TMP close boolean_and exec_if TMP exec_if TMP close current-value)
+Best program: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se FFMC FFMC integer_- APCP 1 TMP boolean_and exec_if (TMP exec_if (TMP) (current-value)) ())
+Best total error: 2857
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- nw integer_* APCP APCP ISI ISI n boolean_and exec_if TMP close TMP boolean_and w current-value)
+Best program: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- nw integer_* APCP APCP ISI ISI n boolean_and exec_if (TMP) (TMP boolean_and w current-value))
+Best total error: 1350
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (n APCP n DC num-burning-neigh time-step TMP FFMC n se integer_- FFMC integer_- APCP 1 TMP ISI boolean_and exec_if exec_if exec_if close TMP TMP current-value)
+Best program: (n APCP n DC num-burning-neigh time-step TMP FFMC n se integer_- FFMC integer_- APCP 1 TMP ISI boolean_and exec_if (exec_if (exec_if () (TMP TMP current-value)) ()) ())
+Best total error: 673
+Fires evaluated:  (m1)
+

@@ -95,3 +95,11 @@ Best program: (RH exec_if (WD exec_if (WD exec_if (n boolean_or) ()) ()) ())
 Best total error: 2798
 Fires evaluated:  (m2)
 
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (RH exec_if w WD DMC se exec_if false boolean_or close)
+Best program: (RH exec_if (w WD DMC se exec_if (false boolean_or) ()) ())
+Best total error: 3586
+Fires evaluated:  (g2)
+
