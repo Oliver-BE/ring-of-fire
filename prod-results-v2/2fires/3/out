@@ -15,3 +15,19 @@ Best program: (TMP exec_if (integer_* DMC ISI TMP FWI n boolean_or integer_% ele
 Best total error: 3646
 Fires evaluated:  (k2 k1)
 
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (DC w exec_if true n num-burning-neigh)
+Best program: (DC w exec_if (true n num-burning-neigh) ())
+Best total error: 2627
+Fires evaluated:  (r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (DC w exec_if true n num-burning-neigh)
+Best program: (DC w exec_if (true n num-burning-neigh) ())
+Best total error: 4237
+Fires evaluated:  (g2 a2)
+

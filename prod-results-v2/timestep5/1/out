@@ -15,3 +15,11 @@ Best program: (integer_= ne FWI boolean_not 2 DMC integer_+ exec_if () ())
 Best total error: 3826
 Fires evaluated:  (k2 k1)
 
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (FFMC integer_* WD integer_= nw BUI FWI WD se integer_% WD DMC boolean_not boolean_or boolean_not n integer_- false boolean_not boolean_not FFMC exec_if sw BUI boolean_or integer_% ne close FFMC)
+Best program: (FFMC integer_* WD integer_= nw BUI FWI WD se integer_% WD DMC boolean_not boolean_or boolean_not n integer_- false boolean_not boolean_not FFMC exec_if (sw BUI boolean_or integer_% ne) (FFMC))
+Best total error: 2004
+Fires evaluated:  (a2 m1)
+

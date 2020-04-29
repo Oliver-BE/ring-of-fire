@@ -47,3 +47,35 @@ Best program: (APCP 1 ne ISI boolean_or)
 Best total error: 5633
 Fires evaluated:  (m2 a2)
 
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (APCP 1 ne ISI boolean_or)
+Best program: (APCP 1 ne ISI boolean_or)
+Best total error: 5633
+Fires evaluated:  (m2 a2)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (APCP ISI)
+Best program: (APCP ISI)
+Best total error: 7098
+Fires evaluated:  (g2 m1)
+
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (exec_dup 1 ne ISI boolean_or)
+Best program: (exec_dup (1 ne ISI boolean_or))
+Best total error: 4663
+Fires evaluated:  (k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (exec_dup 1 ne ISI boolean_or)
+Best program: (exec_dup (1 ne ISI boolean_or))
+Best total error: 5633
+Fires evaluated:  (m2 a2)
+

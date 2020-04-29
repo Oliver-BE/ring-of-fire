@@ -23,3 +23,11 @@ Best program: (true n e false integer_= sw integer_= sw boolean_= boolean_=)
 Best total error: 2794
 Fires evaluated:  (m2)
 
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (APCP integer_- num-burning-neigh integer_= FFMC true WD close s current-value close exec_dup w false TMP num-burning-neigh false nw)
+Best program: (APCP integer_- num-burning-neigh integer_= FFMC true WD s current-value exec_dup (w false TMP num-burning-neigh false nw))
+Best total error: 2887
+Fires evaluated:  (g2)
+

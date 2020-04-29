@@ -71,3 +71,51 @@ Best program: (sw integer_- integer_% ne TMP DMC DMC boolean_or elevation time-s
 Best total error: 1667
 Fires evaluated:  (r1)
 
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (sw integer_- true e integer_% close DMC DMC boolean_or BUI s BUI integer_-)
+Best program: (sw integer_- true e integer_% DMC DMC boolean_or BUI s BUI integer_-)
+Best total error: 2303
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (integer_- APCP ne ne TMP close APCP elevation DMC DMC DMC s false WS WS BUI WS RH integer_- sw BUI se e boolean_not)
+Best program: (integer_- APCP ne ne TMP APCP elevation DMC DMC DMC s false WS WS BUI WS RH integer_- sw BUI se e boolean_not)
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (FFMC 0 integer_% ne e DMC s TMP)
+Best program: (FFMC 0 integer_% ne e DMC s TMP)
+Best total error: 3735
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (0 integer_% ne e DMC s TMP)
+Best program: (0 integer_% ne e DMC s TMP)
+Best total error: 1547
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (integer_- integer_% TMP TMP APCP elevation time-step BUI s s false WS sw integer_- sw se)
+Best program: (integer_- integer_% TMP TMP APCP elevation time-step BUI s s false WS sw integer_- sw se)
+Best total error: 3105
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (FFMC integer_% true ne TMP APCP APCP BUI time-step s false WS nw sw WS integer_- sw se)
+Best program: (FFMC integer_% true ne TMP APCP APCP BUI time-step s false WS nw sw WS integer_- sw se)
+Best total error: 3269
+Fires evaluated:  (a2)
+

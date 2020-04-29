@@ -7,3 +7,11 @@ Best program: (integer_+ integer_* elevation ne nw RH DMC false exec_dup (elevat
 Best total error: 2887
 Fires evaluated:  (g2)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (num-burning-neigh s DMC DMC time-step FWI exec_if 0 e integer_- 1)
+Best program: (num-burning-neigh s DMC DMC time-step FWI exec_if (0 e integer_- 1) ())
+Best total error: 3112
+Fires evaluated:  (g2)
+

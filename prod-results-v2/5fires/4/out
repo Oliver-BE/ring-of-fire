@@ -7,3 +7,11 @@ Best program: (num-burning-neigh)
 Best total error: 7537
 Fires evaluated:  (k2 r1 a2 g2 m1)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (ne close boolean_and integer_= WD)
+Best program: (ne boolean_and integer_= WD)
+Best total error: 17953
+Fires evaluated:  (a2 k2 m2 g2 k1)
+

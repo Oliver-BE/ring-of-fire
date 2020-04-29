@@ -31,3 +31,11 @@ Best program: (num-burning-neigh 1)
 Best total error: 672
 Fires evaluated:  (m1)
 
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (close num-burning-neigh 1)
+Best program: (num-burning-neigh 1)
+Best total error: 2843
+Fires evaluated:  (k1)
+

@@ -39,3 +39,11 @@ Best program: (BUI ISI exec_if (se RH w) ())
 Best total error: 8066
 Fires evaluated:  (r1 g2)
 
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (sw BUI se integer_+ nw FFMC WD integer_- close TMP exec_dup WD exec_if ne integer_% integer_-)
+Best program: (sw BUI se integer_+ nw FFMC WD integer_- TMP exec_dup (WD exec_if (ne integer_% integer_-) ()))
+Best total error: 4494
+Fires evaluated:  (m1 k1)
+

@@ -143,3 +143,179 @@ Best program: (se elevation elevation 2 num-burning-neigh current-value APCP RH 
 Best total error: 2207
 Fires evaluated:  (m2)
 
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (se elevation elevation 2 num-burning-neigh current-value APCP RH boolean_= WD 2)
+Best program: (se elevation elevation 2 num-burning-neigh current-value APCP RH boolean_= WD 2)
+Best total error: 2887
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (se elevation elevation 2 num-burning-neigh current-value APCP RH s boolean_= WD 2)
+Best program: (se elevation elevation 2 num-burning-neigh current-value APCP RH s boolean_= WD 2)
+Best total error: 1683
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 20
+-------------------------------------------------------
+Best plushy: (se elevation num-burning-neigh integer_= 2 APCP boolean_= exec_if close RH WD)
+Best program: (se elevation num-burning-neigh integer_= 2 APCP boolean_= exec_if () (RH WD))
+Best total error: 1641
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 21
+-------------------------------------------------------
+Best plushy: (integer_- elevation num-burning-neigh integer_= integer_= APCP APCP RH close time-step WD)
+Best program: (integer_- elevation num-burning-neigh integer_= integer_= APCP APCP RH time-step WD)
+Best total error: 2546
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 22
+-------------------------------------------------------
+Best plushy: (se elevation elevation integer_= integer_= APCP APCP RH boolean_= time-step FFMC)
+Best program: (se elevation elevation integer_= integer_= APCP APCP RH boolean_= time-step FFMC)
+Best total error: 5620
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 23
+-------------------------------------------------------
+Best plushy: (integer_- elevation num-burning-neigh integer_= APCP APCP RH close time-step WD)
+Best program: (integer_- elevation num-burning-neigh integer_= APCP APCP RH time-step WD)
+Best total error: 5620
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 24
+-------------------------------------------------------
+Best plushy: (integer_- elevation num-burning-neigh integer_= APCP APCP RH close time-step WD)
+Best program: (integer_- elevation num-burning-neigh integer_= APCP APCP RH time-step WD)
+Best total error: 3570
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 25
+-------------------------------------------------------
+Best plushy: (integer_- elevation num-burning-neigh integer_= APCP APCP APCP close close WD)
+Best program: (integer_- elevation num-burning-neigh integer_= APCP APCP APCP WD)
+Best total error: 3927
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 26
+-------------------------------------------------------
+Best plushy: (integer_- elevation num-burning-neigh integer_= APCP APCP APCP s close close WD)
+Best program: (integer_- elevation num-burning-neigh integer_= APCP APCP APCP s WD)
+Best total error: 3570
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 27
+-------------------------------------------------------
+Best plushy: (integer_- elevation num-burning-neigh integer_= integer_= APCP RH close time-step WD)
+Best program: (integer_- elevation num-burning-neigh integer_= integer_= APCP RH time-step WD)
+Best total error: 2802
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 28
+-------------------------------------------------------
+Best plushy: (integer_- elevation num-burning-neigh APCP integer_= APCP close RH close)
+Best program: (integer_- elevation num-burning-neigh APCP integer_= APCP RH)
+Best total error: 1641
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 29
+-------------------------------------------------------
+Best plushy: (integer_- elevation num-burning-neigh integer_= integer_= APCP APCP s close close)
+Best program: (integer_- elevation num-burning-neigh integer_= integer_= APCP APCP s)
+Best total error: 1641
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 30
+-------------------------------------------------------
+Best plushy: (integer_- elevation num-burning-neigh integer_= integer_= APCP APCP s close)
+Best program: (integer_- elevation num-burning-neigh integer_= integer_= APCP APCP s)
+Best total error: 3927
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 31
+-------------------------------------------------------
+Best plushy: (integer_- elevation num-burning-neigh integer_= integer_= APCP APCP s close)
+Best program: (integer_- elevation num-burning-neigh integer_= integer_= APCP APCP s)
+Best total error: 1641
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 32
+-------------------------------------------------------
+Best plushy: (integer_- elevation num-burning-neigh integer_= APCP APCP FWI APCP s close)
+Best program: (integer_- elevation num-burning-neigh integer_= APCP APCP FWI APCP s)
+Best total error: 2802
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 33
+-------------------------------------------------------
+Best plushy: (integer_- elevation num-burning-neigh integer_= integer_= APCP APCP)
+Best program: (integer_- elevation num-burning-neigh integer_= integer_= APCP APCP)
+Best total error: 1641
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 34
+-------------------------------------------------------
+Best plushy: (integer_- elevation num-burning-neigh integer_= integer_= integer_% APCP APCP)
+Best program: (integer_- elevation num-burning-neigh integer_= integer_= integer_% APCP APCP)
+Best total error: 3310
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 35
+-------------------------------------------------------
+Best plushy: (integer_- elevation num-burning-neigh integer_= integer_= APCP close s close)
+Best program: (integer_- elevation num-burning-neigh integer_= integer_= APCP s)
+Best total error: 2546
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 36
+-------------------------------------------------------
+Best plushy: (integer_- elevation num-burning-neigh boolean_not integer_= integer_= APCP APCP)
+Best program: (integer_- elevation num-burning-neigh boolean_not integer_= integer_= APCP APCP)
+Best total error: 2802
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 37
+-------------------------------------------------------
+Best plushy: (w integer_- elevation num-burning-neigh integer_= integer_= APCP APCP s close)
+Best program: (w integer_- elevation num-burning-neigh integer_= integer_= APCP APCP s)
+Best total error: 3535
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 38
+-------------------------------------------------------
+Best plushy: (w integer_- num-burning-neigh num-burning-neigh integer_= integer_% APCP APCP s close)
+Best program: (w integer_- num-burning-neigh num-burning-neigh integer_= integer_% APCP APCP s)
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 39
+-------------------------------------------------------
+Best plushy: (w num-burning-neigh integer_- num-burning-neigh num-burning-neigh integer_= integer_% APCP APCP s close)
+Best program: (w num-burning-neigh integer_- num-burning-neigh num-burning-neigh integer_= integer_% APCP APCP s)
+Best total error: 2799
+Fires evaluated:  (m2)
+

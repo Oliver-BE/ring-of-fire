@@ -31,3 +31,11 @@ Best program: (current-value time-step current-value DMC RH time-step 1 WS 2 DC 
 Best total error: 1703
 Fires evaluated:  (r1)
 
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (current-value APCP current-value APCP 1 integer_= 2 boolean_or DMC exec_if exec_dup sw)
+Best program: (current-value APCP current-value APCP 1 integer_= 2 boolean_or DMC exec_if (exec_dup (sw)) ())
+Best total error: 1332
+Fires evaluated:  (a2)
+

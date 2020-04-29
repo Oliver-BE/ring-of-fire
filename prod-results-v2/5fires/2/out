@@ -7,3 +7,11 @@ Best program: (0 DMC exec_dup (ne 1 ne exec_if (integer_= boolean_= FFMC 0 boole
 Best total error: 17316
 Fires evaluated:  (k1 g2 m2 r1 k2)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (current-value integer_* TMP exec_if 2 time-step exec_dup APCP FWI ne TMP nw boolean_and false integer_- boolean_and exec_if time-step WS APCP ISI)
+Best program: (current-value integer_* TMP exec_if (2 time-step exec_dup (APCP FWI ne TMP nw boolean_and false integer_- boolean_and exec_if (time-step WS APCP ISI) ())) ())
+Best total error: 16512
+Fires evaluated:  (k2 k1 g2 m1 m2)
+

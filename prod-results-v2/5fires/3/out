@@ -7,3 +7,11 @@ Best program: (time-step integer_- elevation integer_+ time-step num-burning-nei
 Best total error: 9568
 Fires evaluated:  (m2 m1 k2 k1 g2)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (boolean_not se integer_- w BUI true integer_- 1 time-step WS exec_if DC time-step TMP boolean_= close)
+Best program: (boolean_not se integer_- w BUI true integer_- 1 time-step WS exec_if (DC time-step TMP boolean_=) ())
+Best total error: 16380
+Fires evaluated:  (g2 m2 k1 m1 a2)
+

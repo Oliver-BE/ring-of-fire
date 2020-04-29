@@ -7,3 +7,11 @@ Best program: (e s WD s WD exec_if (WS false num-burning-neigh boolean_not boole
 Best total error: 4606
 Fires evaluated:  (r1 k1)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (boolean_or e s WD s WD exec_if WS false num-burning-neigh boolean_not boolean_= time-step integer_- DMC BUI close RH sw BUI w w BUI e exec_dup true sw WD WS)
+Best program: (boolean_or e s WD s WD exec_if (WS false num-burning-neigh boolean_not boolean_= time-step integer_- DMC BUI) (RH sw BUI w w BUI e exec_dup (true sw WD WS)))
+Best total error: 2566
+Fires evaluated:  (k2 r1)
+

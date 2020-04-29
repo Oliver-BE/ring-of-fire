@@ -87,3 +87,27 @@ Best program: (FWI boolean_= boolean_= boolean_and s s 0 FFMC FFMC nw)
 Best total error: 1607
 Fires evaluated:  (m1)
 
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (FWI se boolean_= boolean_and nw s WD 0 FWI 0 APCP boolean_= sw)
+Best program: (FWI se boolean_= boolean_and nw s WD 0 FWI 0 APCP boolean_= sw)
+Best total error: 3897
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (FWI elevation APCP 1 nw APCP WD s FFMC sw 0 sw)
+Best program: (FWI elevation APCP 1 nw APCP WD s FFMC sw 0 sw)
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (FWI WD boolean_= boolean_= boolean_and s s 0 boolean_= boolean_= sw nw)
+Best program: (FWI WD boolean_= boolean_= boolean_and s s 0 boolean_= boolean_= sw nw)
+Best total error: 5603
+Fires evaluated:  (g2)
+

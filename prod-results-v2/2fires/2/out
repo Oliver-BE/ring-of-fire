@@ -39,3 +39,19 @@ Best program: (num-burning-neigh se nw w w s false w exec_if (n true integer_% F
 Best total error: 7156
 Fires evaluated:  (a2 k1)
 
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (num-burning-neigh se nw w w s false w exec_if BUI n true integer_% FFMC n)
+Best program: (num-burning-neigh se nw w w s false w exec_if (BUI n true integer_% FFMC n) ())
+Best total error: 5140
+Fires evaluated:  (m1 k2)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (integer_= se nw w w s false w exec_if BUI n integer_% FFMC)
+Best program: (integer_= se nw w w s false w exec_if (BUI n integer_% FFMC) ())
+Best total error: 6689
+Fires evaluated:  (m2 k1)
+

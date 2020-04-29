@@ -31,3 +31,11 @@ Best program: (boolean_or ISI false w w WS boolean_not se integer_* integer_+)
 Best total error: 8037
 Fires evaluated:  (a2 g2)
 
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (elevation ISI ISI FWI RH boolean_not se close integer_* integer_* integer_+)
+Best program: (elevation ISI ISI FWI RH boolean_not se integer_* integer_* integer_+)
+Best total error: 6539
+Fires evaluated:  (m2 k1)
+
