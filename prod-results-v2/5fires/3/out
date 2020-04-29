@@ -15,3 +15,11 @@ Best program: (boolean_not se integer_- w BUI true integer_- 1 time-step WS exec
 Best total error: 16380
 Fires evaluated:  (g2 m2 k1 m1 a2)
 
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (num-burning-neigh false true integer_- elevation num-burning-neigh 2 WS true 2 integer_* exec_dup integer_% boolean_= RH boolean_and boolean_not RH BUI time-step RH exec_dup integer_+ WD FFMC integer_*)
+Best program: (num-burning-neigh false true integer_- elevation num-burning-neigh 2 WS true 2 integer_* exec_dup (integer_% boolean_= RH boolean_and boolean_not RH BUI time-step RH exec_dup (integer_+ WD FFMC integer_*)))
+Best total error: 14223
+Fires evaluated:  (m1 a2 k1 k2 m2)
+

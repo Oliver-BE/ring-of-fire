@@ -375,3 +375,195 @@ Best program: (RH WD 1 WD FFMC 2 2 2 2)
 Best total error: 2798
 Fires evaluated:  (m2)
 
+-------------------------------------------------------
+               Report for Generation 47
+-------------------------------------------------------
+Best plushy: (RH WD 1 WD FFMC 2 2 WS FFMC close FFMC close close close)
+Best program: (RH WD 1 WD FFMC 2 2 WS FFMC FFMC)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 48
+-------------------------------------------------------
+Best plushy: (RH sw WD 1 WD FFMC 2 2 WS FFMC close integer_* FFMC close close integer_+ close)
+Best program: (RH sw WD 1 WD FFMC 2 2 WS FFMC integer_* FFMC integer_+)
+Best total error: 2447
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 49
+-------------------------------------------------------
+Best plushy: (RH WD 1 WD FFMC 2 2 close close close 2 close close close close)
+Best program: (RH WD 1 WD FFMC 2 2 2)
+Best total error: 3562
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 50
+-------------------------------------------------------
+Best plushy: (RH WD 1 WD FFMC close 2 close close close 2 close close close close)
+Best program: (RH WD 1 WD FFMC 2 2)
+Best total error: 3302
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 51
+-------------------------------------------------------
+Best plushy: (RH WD 1 WD FFMC 2 close close close close close close close)
+Best program: (RH WD 1 WD FFMC 2)
+Best total error: 3919
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 52
+-------------------------------------------------------
+Best plushy: (RH WD 1 WD FFMC close 2 close close close 2 close close close close)
+Best program: (RH WD 1 WD FFMC 2 2)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 53
+-------------------------------------------------------
+Best plushy: (WD WD FFMC 2 close close close close 2 close close close close)
+Best program: (WD WD FFMC 2 2)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 54
+-------------------------------------------------------
+Best plushy: (RH 1 WD FFMC close 2 close close num-burning-neigh close 2 close close close)
+Best program: (RH 1 WD FFMC 2 num-burning-neigh 2)
+Best total error: 2887
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 55
+-------------------------------------------------------
+Best plushy: (WD WD 1 WD close close 2 close 2 close close 2 close close close)
+Best program: (WD WD 1 WD 2 2 2)
+Best total error: 3562
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 56
+-------------------------------------------------------
+Best plushy: (WD WD close 1 2 FFMC close 2 close close close close close close close)
+Best program: (WD WD 1 2 FFMC 2)
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 57
+-------------------------------------------------------
+Best plushy: (WD WD 1 2 FFMC close 2 close close close close close)
+Best program: (WD WD 1 2 FFMC 2)
+Best total error: 3919
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 58
+-------------------------------------------------------
+Best plushy: (WD WD 1 2 FFMC close 2 close close close close close close)
+Best program: (WD WD 1 2 FFMC 2)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 59
+-------------------------------------------------------
+Best plushy: (WD RH close boolean_and 2 2 FFMC 2 2 close close close close 2 close)
+Best program: (WD RH boolean_and 2 2 FFMC 2 2 2)
+Best total error: 3919
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 60
+-------------------------------------------------------
+Best plushy: (WD WD close 1 2 FFMC elevation FFMC close 2 close close close close close close exec_if close close)
+Best program: (WD WD 1 2 FFMC elevation FFMC 2 exec_if () ())
+Best total error: 3531
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 61
+-------------------------------------------------------
+Best plushy: (WD WD 1 2 FFMC close 2 close close close close close)
+Best program: (WD WD 1 2 FFMC 2)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 62
+-------------------------------------------------------
+Best plushy: (WD RH WD n boolean_and 2 2 FFMC close 2 close close true close close integer_+ 2 close)
+Best program: (WD RH WD n boolean_and 2 2 FFMC 2 true integer_+ 2)
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 63
+-------------------------------------------------------
+Best plushy: (WD WD 1 2 FFMC FFMC 2 close close close close close)
+Best program: (WD WD 1 2 FFMC FFMC 2)
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 64
+-------------------------------------------------------
+Best plushy: (WD WD 1 2 FFMC FFMC 2 close close close close 2 close)
+Best program: (WD WD 1 2 FFMC FFMC 2 2)
+Best total error: 3919
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 65
+-------------------------------------------------------
+Best plushy: (WD WD 1 2 FFMC FFMC 2 close close close close close close)
+Best program: (WD WD 1 2 FFMC FFMC 2)
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 66
+-------------------------------------------------------
+Best plushy: (WD RH WD 2 2 FFMC close 2 close close 2 close)
+Best program: (WD RH WD 2 2 FFMC 2 2)
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 67
+-------------------------------------------------------
+Best plushy: (WD RH WD 2 2 2 close 2 close close close close close)
+Best program: (WD RH WD 2 2 2 2)
+Best total error: 3302
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 68
+-------------------------------------------------------
+Best plushy: (WD RH 2 2 FFMC close 2 close close 2 close)
+Best program: (WD RH 2 2 FFMC 2 2)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 69
+-------------------------------------------------------
+Best plushy: (WD RH WD 2 2 2 close 2 close close close close close)
+Best program: (WD RH WD 2 2 2 2)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 70
+-------------------------------------------------------
+Best plushy: (WD WD WD 2 2 2 close close close close close close)
+Best program: (WD WD WD 2 2 2)
+Best total error: 1633
+Fires evaluated:  (m1)
+

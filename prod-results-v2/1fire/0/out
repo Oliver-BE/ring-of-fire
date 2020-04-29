@@ -31,3 +31,19 @@ Best program: (num-burning-neigh 2 n boolean_= BUI DMC BUI 2 FWI 2 DMC w boolean
 Best total error: 672
 Fires evaluated:  (m1)
 
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (num-burning-neigh 2 n boolean_= BUI DMC BUI 2 FWI 2 DMC w boolean_= w DMC WS integer_% WS)
+Best program: (num-burning-neigh 2 n boolean_= BUI DMC BUI 2 FWI 2 DMC w boolean_= w DMC WS integer_% WS)
+Best total error: 1332
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (num-burning-neigh 2 BUI boolean_= false DMC BUI WD FWI 2 DMC w boolean_= FWI DMC integer_%)
+Best program: (num-burning-neigh 2 BUI boolean_= false DMC BUI WD FWI 2 DMC w boolean_= FWI DMC integer_%)
+Best total error: 2200
+Fires evaluated:  (m2)
+

@@ -87,3 +87,43 @@ Best program: (TMP APCP n DC sw w)
 Best total error: 2544
 Fires evaluated:  (r1)
 
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (FWI w integer_* FWI sw num-burning-neigh 2 2 w w s w)
+Best program: (FWI w integer_* FWI sw num-burning-neigh 2 2 w w s w)
+Best total error: 3535
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (w APCP FWI WS sw integer_* 2 2 sw 2 sw num-burning-neigh exec_if w)
+Best program: (w APCP FWI WS sw integer_* 2 2 sw 2 sw num-burning-neigh exec_if (w) ())
+Best total error: 5522
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (TMP integer_* FWI sw sw FFMC boolean_not 2 s 2 w)
+Best program: (TMP integer_* FWI sw sw FFMC boolean_not 2 s 2 w)
+Best total error: 5522
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (exec_dup integer_* FWI sw integer_* FFMC boolean_not 2 w w w 2 w)
+Best program: (exec_dup (integer_* FWI sw integer_* FFMC boolean_not 2 w w w 2 w))
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (TMP APCP n sw integer_* boolean_= 2 boolean_not w w w)
+Best program: (TMP APCP n sw integer_* boolean_= 2 boolean_not w w w)
+Best total error: 1605
+Fires evaluated:  (m1)
+

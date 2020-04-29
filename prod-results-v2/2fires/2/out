@@ -55,3 +55,11 @@ Best program: (integer_= se nw w w s false w exec_if (BUI n integer_% FFMC) ())
 Best total error: 6689
 Fires evaluated:  (m2 k1)
 
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (integer_= se nw w w exec_if integer_% FFMC exec_if n true 1)
+Best program: (integer_= se nw w w exec_if (integer_% FFMC exec_if (n true 1) ()) ())
+Best total error: 3515
+Fires evaluated:  (m1 k1)
+

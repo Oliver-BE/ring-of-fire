@@ -111,3 +111,67 @@ Best program: (FWI WD boolean_= boolean_= boolean_and s s 0 boolean_= boolean_= 
 Best total error: 5603
 Fires evaluated:  (g2)
 
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (FWI elevation APCP exec_if boolean_and s ne 2 FWI 0 APCP FFMC exec_dup sw)
+Best program: (FWI elevation APCP exec_if (boolean_and s ne 2 FWI 0 APCP FFMC exec_dup (sw)) ())
+Best total error: 3897
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (num-burning-neigh WD boolean_= boolean_and s s boolean_not boolean_= sw boolean_=)
+Best program: (num-burning-neigh WD boolean_= boolean_and s s boolean_not boolean_= sw boolean_=)
+Best total error: 3897
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (FWI elevation boolean_= boolean_and nw s s s 0 2 0 APCP FFMC exec_dup)
+Best program: (FWI elevation boolean_= boolean_and nw s s s 0 2 0 APCP FFMC exec_dup ())
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (FWI elevation boolean_= boolean_and nw s s s 0 2 0 APCP FFMC exec_dup)
+Best program: (FWI elevation boolean_= boolean_and nw s s s 0 2 0 APCP FFMC exec_dup ())
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (FWI elevation APCP exec_if boolean_and s ne s FWI 0 APCP FFMC FFMC exec_dup sw)
+Best program: (FWI elevation APCP exec_if (boolean_and s ne s FWI 0 APCP FFMC FFMC exec_dup (sw)) ())
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (FWI elevation elevation boolean_and boolean_and nw boolean_not boolean_= s sw 0 2 FFMC sw)
+Best program: (FWI elevation elevation boolean_and boolean_and nw boolean_not boolean_= s sw 0 2 FFMC sw)
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 20
+-------------------------------------------------------
+Best plushy: (num-burning-neigh WD boolean_= boolean_and s s boolean_not integer_* sw WD sw)
+Best program: (num-burning-neigh WD boolean_= boolean_and s s boolean_not integer_* sw WD sw)
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 21
+-------------------------------------------------------
+Best plushy: (num-burning-neigh WD elevation boolean_and boolean_and s BUI boolean_not boolean_= s 0 2 exec_dup)
+Best program: (num-burning-neigh WD elevation boolean_and boolean_and s BUI boolean_not boolean_= s 0 2 exec_dup ())
+Best total error: 1633
+Fires evaluated:  (m1)
+

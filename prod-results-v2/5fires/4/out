@@ -15,3 +15,11 @@ Best program: (ne boolean_and integer_= WD)
 Best total error: 17953
 Fires evaluated:  (a2 k2 m2 g2 k1)
 
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (ne close boolean_and integer_= WD)
+Best program: (ne boolean_and integer_= WD)
+Best total error: 17345
+Fires evaluated:  (a2 m2 r1 g2 k1)
+

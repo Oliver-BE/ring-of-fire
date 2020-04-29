@@ -90,3 +90,23 @@
 	8721  -  MemoryUsage of job (MB)
 	8929428  -  ResidentSetSize of job (KB)
 ...
+006 (724.003.000) 04/29 00:31:40 Image size of job updated: 9030016
+	8819  -  MemoryUsage of job (MB)
+	9029984  -  ResidentSetSize of job (KB)
+...
+006 (724.003.000) 04/29 00:36:40 Image size of job updated: 9056548
+	8845  -  MemoryUsage of job (MB)
+	9056516  -  ResidentSetSize of job (KB)
+...
+006 (724.003.000) 04/29 00:41:40 Image size of job updated: 9334916
+	9117  -  MemoryUsage of job (MB)
+	9334884  -  ResidentSetSize of job (KB)
+...
+006 (724.003.000) 04/29 00:46:41 Image size of job updated: 9362480
+	9144  -  MemoryUsage of job (MB)
+	9362448  -  ResidentSetSize of job (KB)
+...
+006 (724.003.000) 04/29 00:51:41 Image size of job updated: 9373728
+	9154  -  MemoryUsage of job (MB)
+	9373696  -  ResidentSetSize of job (KB)
+...

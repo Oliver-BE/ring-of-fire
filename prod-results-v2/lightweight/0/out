@@ -223,3 +223,83 @@ Best program: (sw boolean_or current-value sw integer_- 2 2 ISI DC DC)
 Best total error: 1633
 Fires evaluated:  (m1)
 
+-------------------------------------------------------
+               Report for Generation 28
+-------------------------------------------------------
+Best plushy: (sw boolean_or current-value current-value integer_- 2 2 2 DC DC)
+Best program: (sw boolean_or current-value current-value integer_- 2 2 2 DC DC)
+Best total error: 3919
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 29
+-------------------------------------------------------
+Best plushy: (sw boolean_or current-value sw integer_- 2 2 ISI DC DC)
+Best program: (sw boolean_or current-value sw integer_- 2 2 ISI DC DC)
+Best total error: 3302
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 30
+-------------------------------------------------------
+Best plushy: (sw boolean_or current-value sw integer_- 2 2 ISI DC DC current-value)
+Best program: (sw boolean_or current-value sw integer_- 2 2 ISI DC DC current-value)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 31
+-------------------------------------------------------
+Best plushy: (sw boolean_or sw integer_- 2 2 DC DC current-value)
+Best program: (sw boolean_or sw integer_- 2 2 DC DC current-value)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 32
+-------------------------------------------------------
+Best plushy: (sw boolean_or sw integer_- 2 2 ISI DC DC current-value)
+Best program: (sw boolean_or sw integer_- 2 2 ISI DC DC current-value)
+Best total error: 2447
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 33
+-------------------------------------------------------
+Best plushy: (sw boolean_or sw integer_- 2 2 ISI DC DC current-value)
+Best program: (sw boolean_or sw integer_- 2 2 ISI DC DC current-value)
+Best total error: 3777
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 34
+-------------------------------------------------------
+Best plushy: (sw boolean_or current-value integer_- 2 2 ISI DC DC DC current-value)
+Best program: (sw boolean_or current-value integer_- 2 2 ISI DC DC DC current-value)
+Best total error: 3147
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 35
+-------------------------------------------------------
+Best plushy: (sw boolean_or current-value sw integer_- 2 ISI DC DC DC current-value)
+Best program: (sw boolean_or current-value sw integer_- 2 ISI DC DC DC current-value)
+Best total error: 3562
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 36
+-------------------------------------------------------
+Best plushy: (sw boolean_or current-value sw integer_- 2 2 ISI DC DC DC current-value)
+Best program: (sw boolean_or current-value sw integer_- 2 2 ISI DC DC DC current-value)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 37
+-------------------------------------------------------
+Best plushy: (sw boolean_or current-value sw integer_- 2 ISI DC DC current-value)
+Best program: (sw boolean_or current-value sw integer_- 2 ISI DC DC current-value)
+Best total error: 2540
+Fires evaluated:  (r1)
+

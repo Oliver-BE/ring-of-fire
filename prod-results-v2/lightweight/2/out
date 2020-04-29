@@ -319,3 +319,27 @@ Best program: (w num-burning-neigh integer_- num-burning-neigh num-burning-neigh
 Best total error: 2799
 Fires evaluated:  (m2)
 
+-------------------------------------------------------
+               Report for Generation 40
+-------------------------------------------------------
+Best plushy: (w num-burning-neigh integer_- num-burning-neigh num-burning-neigh 1 integer_= integer_% APCP num-burning-neigh APCP s close)
+Best program: (w num-burning-neigh integer_- num-burning-neigh num-burning-neigh 1 integer_= integer_% APCP num-burning-neigh APCP s)
+Best total error: 983
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 41
+-------------------------------------------------------
+Best plushy: (w integer_- integer_- num-burning-neigh num-burning-neigh 1 APCP integer_% s num-burning-neigh close)
+Best program: (w integer_- integer_- num-burning-neigh num-burning-neigh 1 APCP integer_% s num-burning-neigh)
+Best total error: 2200
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 42
+-------------------------------------------------------
+Best plushy: (w integer_- integer_- num-burning-neigh num-burning-neigh 1 integer_% s s num-burning-neigh close close)
+Best program: (w integer_- integer_- num-burning-neigh num-burning-neigh 1 integer_% s s num-burning-neigh)
+Best total error: 1683
+Fires evaluated:  (r1)
+

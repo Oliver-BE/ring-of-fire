@@ -39,3 +39,35 @@ Best program: (num-burning-neigh 1)
 Best total error: 2843
 Fires evaluated:  (k1)
 
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (close num-burning-neigh 1)
+Best program: (num-burning-neigh 1)
+Best total error: 1332
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (close ne e)
+Best program: (ne e)
+Best total error: 2522
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (close time-step DC sw sw ISI e sw)
+Best program: (time-step DC sw sw ISI e sw)
+Best total error: 3897
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (close TMP)
+Best program: (TMP)
+Best total error: 1547
+Fires evaluated:  (m1)
+

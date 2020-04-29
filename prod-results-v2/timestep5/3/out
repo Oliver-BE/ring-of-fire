@@ -79,3 +79,11 @@ Best program: (exec_dup (1 ne ISI boolean_or))
 Best total error: 5633
 Fires evaluated:  (m2 a2)
 
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (APCP 1 elevation ISI ISI ISI integer_%)
+Best program: (APCP 1 elevation ISI ISI ISI integer_%)
+Best total error: 1655
+Fires evaluated:  (m1 k2)
+

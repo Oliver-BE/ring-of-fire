@@ -15,3 +15,19 @@ Best program: (num-burning-neigh s DMC DMC time-step FWI exec_if (0 e integer_- 
 Best total error: 3112
 Fires evaluated:  (g2)
 
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (num-burning-neigh s DMC DMC time-step FWI exec_if 0 e integer_- 1)
+Best program: (num-burning-neigh s DMC DMC time-step FWI exec_if (0 e integer_- 1) ())
+Best total error: 3112
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (1 s false DMC time-step RH false 0 n ne 1 e s integer_* DMC WS)
+Best program: (1 s false DMC time-step RH false 0 n ne 1 e s integer_* DMC WS)
+Best total error: 803
+Fires evaluated:  (k2)
+

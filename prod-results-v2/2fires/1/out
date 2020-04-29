@@ -7,3 +7,11 @@ Best program: (boolean_= sw boolean_or FFMC BUI exec_if (integer_* s RH integer_
 Best total error: 4237
 Fires evaluated:  (g2 a2)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (boolean_= time-step boolean_or FFMC TMP exec_if integer_* ne RH integer_% se nw exec_dup num-burning-neigh)
+Best program: (boolean_= time-step boolean_or FFMC TMP exec_if (integer_* ne RH integer_% se nw exec_dup (num-burning-neigh)) ())
+Best total error: 4570
+Fires evaluated:  (r1 g2)
+

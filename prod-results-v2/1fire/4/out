@@ -119,3 +119,43 @@ Best program: (FFMC integer_% true ne TMP APCP APCP BUI time-step s false WS nw 
 Best total error: 3269
 Fires evaluated:  (a2)
 
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (integer_- ne ne TMP TMP boolean_or elevation BUI time-step s WS WS sw true integer_- 0 sw boolean_not)
+Best program: (integer_- ne ne TMP TMP boolean_or elevation BUI time-step s WS WS sw true integer_- 0 sw boolean_not)
+Best total error: 3897
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (integer_- ne ne TMP TMP boolean_or elevation BUI time-step s WS WS sw true integer_- 0 sw boolean_not)
+Best program: (integer_- ne ne TMP TMP boolean_or elevation BUI time-step s WS WS sw true integer_- 0 sw boolean_not)
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (integer_- integer_% APCP TMP TMP boolean_or elevation integer_* time-step s BUI WS s sw integer_- WS sw boolean_not)
+Best program: (integer_- integer_% APCP TMP TMP boolean_or elevation integer_* time-step s BUI WS s sw integer_- WS sw boolean_not)
+Best total error: 5611
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (integer_- ne ne TMP TMP boolean_or close elevation time-step BUI WS WS sw false WS 0 sw WS sw)
+Best program: (integer_- ne ne TMP TMP boolean_or elevation time-step BUI WS WS sw false WS 0 sw WS sw)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (integer_- ne ne TMP TMP boolean_or close elevation time-step BUI WS WS sw false WS 0 sw WS sw)
+Best program: (integer_- ne ne TMP TMP boolean_or elevation time-step BUI WS WS sw false WS 0 sw WS sw)
+Best total error: 5614
+Fires evaluated:  (g2)
+

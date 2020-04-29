@@ -7,3 +7,11 @@ Best program: (time-step FFMC true DMC integer_* TMP integer_- DC BUI integer_+ 
 Best total error: 4175
 Fires evaluated:  (a2 k1)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (DMC exec_if ISI integer_% time-step e exec_dup integer_= e DMC RH BUI integer_- boolean_not 1 BUI boolean_or ISI integer_= boolean_and boolean_or nw boolean_not n APCP close elevation ISI)
+Best program: (DMC exec_if (ISI integer_% time-step e exec_dup (integer_= e DMC RH BUI integer_- boolean_not 1 BUI boolean_or ISI integer_= boolean_and boolean_or nw boolean_not n APCP) elevation ISI) ())
+Best total error: 2315
+Fires evaluated:  (k2 a2)
+

@@ -7,3 +7,11 @@ Best program: (num-burning-neigh integer_= integer_% num-burning-neigh s WD)
 Best total error: 22008
 Fires evaluated:  (g2 a2 k2 k1 m1 m2 r1)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (current-value FFMC current-value w DMC boolean_or DMC s w integer_+ exec_if)
+Best program: (current-value FFMC current-value w DMC boolean_or DMC s w integer_+ exec_if () ())
+Best total error: 19689
+Fires evaluated:  (m2 r1 m1 g2 k1 a2 k2)
+

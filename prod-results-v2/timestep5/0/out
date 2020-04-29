@@ -47,3 +47,19 @@ Best program: (sw BUI se integer_+ nw FFMC WD integer_- TMP exec_dup (WD exec_if
 Best total error: 4494
 Fires evaluated:  (m1 k1)
 
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (sw BUI DC integer_-)
+Best program: (sw BUI DC integer_-)
+Best total error: 6414
+Fires evaluated:  (g2 a2)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (true close FFMC integer_- boolean_or boolean_not integer_- RH 1 w integer_% TMP)
+Best program: (true FFMC integer_- boolean_or boolean_not integer_- RH 1 w integer_% TMP)
+Best total error: 6794
+Fires evaluated:  (m1 g2)
+

@@ -31,3 +31,19 @@ Best program: (DC w exec_if (true n num-burning-neigh) ())
 Best total error: 4237
 Fires evaluated:  (g2 a2)
 
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (DC w exec_if true n num-burning-neigh)
+Best program: (DC w exec_if (true n num-burning-neigh) ())
+Best total error: 5094
+Fires evaluated:  (m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (DC w exec_if true n num-burning-neigh)
+Best program: (DC w exec_if (true n num-burning-neigh) ())
+Best total error: 2023
+Fires evaluated:  (a2 m1)
+

@@ -463,3 +463,163 @@ Best program: (integer_- num-burning-neigh num-burning-neigh sw ISI boolean_not 
 Best total error: 2447
 Fires evaluated:  (r1)
 
+-------------------------------------------------------
+               Report for Generation 58
+-------------------------------------------------------
+Best plushy: (integer_- num-burning-neigh sw ISI ISI sw sw n sw FFMC n nw n se boolean_= boolean_= ISI 1 close)
+Best program: (integer_- num-burning-neigh sw ISI ISI sw sw n sw FFMC n nw n se boolean_= boolean_= ISI 1)
+Best total error: 3147
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 59
+-------------------------------------------------------
+Best plushy: (true integer_- num-burning-neigh sw ISI ISI sw sw n sw FFMC n nw n n se boolean_= boolean_= ISI 1 close)
+Best program: (true integer_- num-burning-neigh sw ISI ISI sw sw n sw FFMC n nw n n se boolean_= boolean_= ISI 1)
+Best total error: 5585
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 60
+-------------------------------------------------------
+Best plushy: (integer_- num-burning-neigh sw sw ISI sw sw n sw n n se boolean_= ISI ISI 1 close)
+Best program: (integer_- num-burning-neigh sw sw ISI sw sw n sw n n se boolean_= ISI ISI 1)
+Best total error: 3424
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 61
+-------------------------------------------------------
+Best plushy: (integer_- num-burning-neigh sw sw ISI sw sw n sw n n se boolean_= ISI ISI 1 close)
+Best program: (integer_- num-burning-neigh sw sw ISI sw sw n sw n n se boolean_= ISI ISI 1)
+Best total error: 3777
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 62
+-------------------------------------------------------
+Best plushy: (integer_- num-burning-neigh sw sw ISI boolean_not sw n sw sw n nw sw ISI boolean_= ISI 1 close close)
+Best program: (integer_- num-burning-neigh sw sw ISI boolean_not sw n sw sw n nw sw ISI boolean_= ISI 1)
+Best total error: 3424
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 63
+-------------------------------------------------------
+Best plushy: (integer_- num-burning-neigh sw sw ISI sw sw n sw n n se boolean_= ISI ISI 1 close)
+Best program: (integer_- num-burning-neigh sw sw ISI sw sw n sw n n se boolean_= ISI ISI 1)
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 64
+-------------------------------------------------------
+Best plushy: (integer_- num-burning-neigh sw sw ISI boolean_not sw n sw sw n nw sw ISI boolean_= ISI 1 integer_= close close)
+Best program: (integer_- num-burning-neigh sw sw ISI boolean_not sw n sw sw n nw sw ISI boolean_= ISI 1 integer_=)
+Best total error: 3424
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 65
+-------------------------------------------------------
+Best plushy: (integer_- num-burning-neigh sw sw ISI sw sw n sw n n se boolean_= ISI ISI 1 close)
+Best program: (integer_- num-burning-neigh sw sw ISI sw sw n sw n n se boolean_= ISI ISI 1)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 66
+-------------------------------------------------------
+Best plushy: (integer_- num-burning-neigh sw sw ISI boolean_not sw n sw sw n nw sw ISI boolean_= ISI 1 integer_= close close)
+Best program: (integer_- num-burning-neigh sw sw ISI boolean_not sw n sw sw n nw sw ISI boolean_= ISI 1 integer_=)
+Best total error: 5585
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 67
+-------------------------------------------------------
+Best plushy: (integer_- num-burning-neigh sw sw sw ISI sw n n sw n nw se ISI boolean_= ISI 1 integer_=)
+Best program: (integer_- num-burning-neigh sw sw sw ISI sw n n sw n nw se ISI boolean_= ISI 1 integer_=)
+Best total error: 3546
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 68
+-------------------------------------------------------
+Best plushy: (integer_- num-burning-neigh sw sw sw ISI sw n se ISI ISI nw 2 ISI boolean_= ISI 1 integer_=)
+Best program: (integer_- num-burning-neigh sw sw sw ISI sw n se ISI ISI nw 2 ISI boolean_= ISI 1 integer_=)
+Best total error: 5615
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 69
+-------------------------------------------------------
+Best plushy: (integer_- num-burning-neigh sw sw n sw n n boolean_= n ISI se 2 ISI 1 s 1)
+Best program: (integer_- num-burning-neigh sw sw n sw n n boolean_= n ISI se 2 ISI 1 s 1)
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 70
+-------------------------------------------------------
+Best plushy: (integer_- num-burning-neigh sw sw n sw n n boolean_= n ISI se 2 ISI 1 s 1)
+Best program: (integer_- num-burning-neigh sw sw n sw n n boolean_= n ISI se 2 ISI 1 s 1)
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 71
+-------------------------------------------------------
+Best plushy: (integer_- num-burning-neigh sw nw sw sw n sw 1 boolean_= 2 se ISI s 1)
+Best program: (integer_- num-burning-neigh sw nw sw sw n sw 1 boolean_= 2 se ISI s 1)
+Best total error: 1643
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 72
+-------------------------------------------------------
+Best plushy: (integer_- num-burning-neigh sw sw sw n sw n n w boolean_= n ISI 2 ISI ISI 1 s 1)
+Best program: (integer_- num-burning-neigh sw sw sw n sw n n w boolean_= n ISI 2 ISI ISI 1 s 1)
+Best total error: 1643
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 73
+-------------------------------------------------------
+Best plushy: (integer_- num-burning-neigh sw sw sw n sw n 2 boolean_= n ISI ISI 2 ISI 1 ISI 1)
+Best program: (integer_- num-burning-neigh sw sw sw n sw n 2 boolean_= n ISI ISI 2 ISI 1 ISI 1)
+Best total error: 5615
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 74
+-------------------------------------------------------
+Best plushy: (integer_- integer_% num-burning-neigh sw sw n sw sw ne n ISI boolean_= n 2 2 ISI ISI 1 s 1)
+Best program: (integer_- integer_% num-burning-neigh sw sw n sw sw ne n ISI boolean_= n 2 2 ISI ISI 1 s 1)
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 75
+-------------------------------------------------------
+Best plushy: (integer_- num-burning-neigh se sw num-burning-neigh sw sw n sw n 2 boolean_= n ISI ISI 2 ISI 1 ISI 1)
+Best program: (integer_- num-burning-neigh se sw num-burning-neigh sw sw n sw n 2 boolean_= n ISI ISI 2 ISI 1 ISI 1)
+Best total error: 673
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 76
+-------------------------------------------------------
+Best plushy: (integer_- boolean_= num-burning-neigh se sw num-burning-neigh sw sw n sw n 2 boolean_= n ISI TMP ISI nw 2 ISI false 1 ISI 1)
+Best program: (integer_- boolean_= num-burning-neigh se sw num-burning-neigh sw sw n sw n 2 boolean_= n ISI TMP ISI nw 2 ISI false 1 ISI 1)
+Best total error: 1350
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 77
+-------------------------------------------------------
+Best plushy: (integer_- integer_% num-burning-neigh se sw num-burning-neigh sw sw n sw boolean_= 2 ISI 2 ISI ISI 1 nw 1 1 ISI)
+Best program: (integer_- integer_% num-burning-neigh se sw num-burning-neigh sw sw n sw boolean_= 2 ISI 2 ISI ISI 1 nw 1 1 ISI)
+Best total error: 1350
+Fires evaluated:  (a2)
+

@@ -31,3 +31,11 @@ Best program: (APCP integer_- num-burning-neigh integer_= FFMC true WD s current
 Best total error: 2887
 Fires evaluated:  (g2)
 
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (APCP n close integer_% 1 ne boolean_not WS 1 TMP boolean_not WS n RH boolean_and sw 1 e 1)
+Best program: (APCP n integer_% 1 ne boolean_not WS 1 TMP boolean_not WS n RH boolean_and sw 1 e 1)
+Best total error: 1332
+Fires evaluated:  (a2)
+

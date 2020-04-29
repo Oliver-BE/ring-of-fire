@@ -111,3 +111,67 @@ Best program: (n n boolean_and boolean_or BUI APCP TMP boolean_and boolean_and)
 Best total error: 2649
 Fires evaluated:  (m2)
 
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (n n boolean_and WD BUI APCP TMP boolean_and)
+Best program: (n n boolean_and WD BUI APCP TMP boolean_and)
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (n n boolean_and boolean_or BUI TMP boolean_and boolean_and)
+Best program: (n n boolean_and boolean_or BUI TMP boolean_and boolean_and)
+Best total error: 1547
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (n n boolean_and WD BUI TMP boolean_and)
+Best program: (n n boolean_and WD BUI TMP boolean_and)
+Best total error: 2835
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (n n boolean_and WD BUI TMP boolean_and)
+Best program: (n n boolean_and WD BUI TMP boolean_and)
+Best total error: 2649
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (n n boolean_and WD BUI TMP boolean_and)
+Best program: (n n boolean_and WD BUI TMP boolean_and)
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (n n boolean_and WD BUI TMP boolean_and)
+Best program: (n n boolean_and WD BUI TMP boolean_and)
+Best total error: 2649
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 20
+-------------------------------------------------------
+Best plushy: (n n boolean_and WD BUI TMP boolean_and)
+Best program: (n n boolean_and WD BUI TMP boolean_and)
+Best total error: 2649
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 21
+-------------------------------------------------------
+Best plushy: (ISI WD TMP)
+Best program: (ISI WD TMP)
+Best total error: 2649
+Fires evaluated:  (m2)
+

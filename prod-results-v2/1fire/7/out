@@ -39,3 +39,27 @@ Best program: (current-value APCP current-value APCP 1 integer_= 2 boolean_or DM
 Best total error: 1332
 Fires evaluated:  (a2)
 
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (current-value APCP current-value APCP 1 integer_= 2 boolean_or DMC exec_if exec_dup sw)
+Best program: (current-value APCP current-value APCP 1 integer_= 2 boolean_or DMC exec_if (exec_dup (sw)) ())
+Best total error: 803
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (current-value BUI false WS 2 se 1 sw elevation exec_dup close)
+Best program: (current-value BUI false WS 2 se 1 sw elevation exec_dup ())
+Best total error: 2763
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (current-value APCP WS WS 2 1 true exec_dup close)
+Best program: (current-value APCP WS WS 2 1 true exec_dup ())
+Best total error: 1703
+Fires evaluated:  (r1)
+
