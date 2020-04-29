@@ -7,3 +7,11 @@ Best program: (TMP exec_if (integer_* DMC integer_+ integer_+ FWI DMC nw TMP ele
 Best total error: 2435
 Fires evaluated:  (r1 m1)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (TMP exec_if integer_* DMC ISI TMP FWI n boolean_or integer_% elevation 2 BUI DMC WS)
+Best program: (TMP exec_if (integer_* DMC ISI TMP FWI n boolean_or integer_% elevation 2 BUI DMC WS) ())
+Best total error: 3646
+Fires evaluated:  (k2 k1)
+

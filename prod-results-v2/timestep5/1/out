@@ -7,3 +7,11 @@ Best program: (time-step nw RH integer_+ exec_dup (WD) APCP false FWI exec_if (f
 Best total error: 7876
 Fires evaluated:  (a2 g2)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (integer_= ne FWI boolean_not 2 DMC integer_+ exec_if)
+Best program: (integer_= ne FWI boolean_not 2 DMC integer_+ exec_if () ())
+Best total error: 3826
+Fires evaluated:  (k2 k1)
+

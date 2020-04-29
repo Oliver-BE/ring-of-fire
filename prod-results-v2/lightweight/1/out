@@ -103,3 +103,59 @@ Best program: (RH exec_if (w WD DMC se exec_if (false boolean_or) ()) ())
 Best total error: 3586
 Fires evaluated:  (g2)
 
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (RH exec_if w WD DMC se exec_if false boolean_or close)
+Best program: (RH exec_if (w WD DMC se exec_if (false boolean_or) ()) ())
+Best total error: 2838
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (RH exec_if w WD DMC se exec_if false boolean_or close)
+Best program: (RH exec_if (w WD DMC se exec_if (false boolean_or) ()) ())
+Best total error: 2838
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (exec_if exec_if WD exec_if exec_if false boolean_or)
+Best program: (exec_if (exec_if (WD exec_if (exec_if (false boolean_or) ()) ()) ()) ())
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (RH WD WD exec_if WD WD n false)
+Best program: (RH WD WD exec_if (WD WD n false) ())
+Best total error: 2447
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (exec_if WD WD n e e WD exec_if n)
+Best program: (exec_if (WD WD n e e WD exec_if (n) ()) ())
+Best total error: 3555
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (RH exec_if w exec_if e exec_if WD 2 false boolean_or FWI)
+Best program: (RH exec_if (w exec_if (e exec_if (WD 2 false boolean_or FWI) ()) ()) ())
+Best total error: 3555
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (RH exec_if WD exec_if e TMP WD 2 false boolean_or close FWI)
+Best program: (RH exec_if (WD exec_if (e TMP WD 2 false boolean_or) (FWI)) ())
+Best total error: 2522
+Fires evaluated:  (r1)
+

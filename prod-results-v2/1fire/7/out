@@ -15,3 +15,19 @@ Best program: (current-value time-step current-value DMC RH time-step 1 WS 2 DC 
 Best total error: 2843
 Fires evaluated:  (k1)
 
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (false time-step current-value time-step 1 WS 2 exec_dup DMC)
+Best program: (false time-step current-value time-step 1 WS 2 exec_dup (DMC))
+Best total error: 672
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (current-value time-step current-value DMC RH time-step 1 WS 2 DC exec_if se true boolean_and 1 integer_% sw elevation)
+Best program: (current-value time-step current-value DMC RH time-step 1 WS 2 DC exec_if (se true boolean_and 1 integer_% sw elevation) ())
+Best total error: 1703
+Fires evaluated:  (r1)
+

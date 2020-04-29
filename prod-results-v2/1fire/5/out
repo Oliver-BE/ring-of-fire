@@ -47,3 +47,19 @@ Best program: (boolean_not w integer_* false integer_* sw num-burning-neigh 2 2 
 Best total error: 1547
 Fires evaluated:  (m1)
 
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (exec_dup w sw w integer_% sw ISI boolean_not exec_dup s s nw DMC s w)
+Best program: (exec_dup (w sw w integer_% sw ISI boolean_not exec_dup (s s nw DMC s w)))
+Best total error: 3321
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (boolean_not w integer_* false integer_* integer_* WD ISI 2 sw w s DMC TMP exec_if w)
+Best program: (boolean_not w integer_* false integer_* integer_* WD ISI 2 sw w s DMC TMP exec_if (w) ())
+Best total error: 3378
+Fires evaluated:  (k2)
+

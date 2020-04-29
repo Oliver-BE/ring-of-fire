@@ -31,3 +31,43 @@ Best program: (FWI RH APCP nw 0 w sw integer_- num-burning-neigh integer_* WD DM
 Best total error: 5522
 Fires evaluated:  (g2)
 
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (current-value APCP ne TMP DMC nw ne APCP elevation BUI DMC DMC s false boolean_or 1 WS BUI nw WS RH integer_- boolean_or sw time-step BUI se e integer_% boolean_not)
+Best program: (current-value APCP ne TMP DMC nw ne APCP elevation BUI DMC DMC s false boolean_or 1 WS BUI nw WS RH integer_- boolean_or sw time-step BUI se e integer_% boolean_not)
+Best total error: 1763
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (FWI RH integer_% nw w sw integer_- num-burning-neigh WD integer_* DMC DMC boolean_or boolean_or time-step s DC num-burning-neigh integer_%)
+Best program: (FWI RH integer_% nw w sw integer_- num-burning-neigh WD integer_* DMC DMC boolean_or boolean_or time-step s DC num-burning-neigh integer_%)
+Best total error: 2528
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (time-step APCP integer_% true DMC DMC boolean_or BUI boolean_or BUI boolean_or integer_% se integer_%)
+Best program: (time-step APCP integer_% true DMC DMC boolean_or BUI boolean_or BUI boolean_or integer_% se integer_%)
+Best total error: 1703
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (sw integer_- integer_% ne TMP close DMC DMC boolean_or elevation time-step BUI s false BUI integer_-)
+Best program: (sw integer_- integer_% ne TMP DMC DMC boolean_or elevation time-step BUI s false BUI integer_-)
+Best total error: 1667
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (sw integer_- integer_% ne TMP close DMC DMC boolean_or elevation time-step BUI s false BUI integer_-)
+Best program: (sw integer_- integer_% ne TMP DMC DMC boolean_or elevation time-step BUI s false BUI integer_-)
+Best total error: 1667
+Fires evaluated:  (r1)
+

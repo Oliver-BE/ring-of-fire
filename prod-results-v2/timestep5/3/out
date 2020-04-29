@@ -23,3 +23,27 @@ Best program: (num-burning-neigh integer_+ boolean_and time-step integer_% integ
 Best total error: 7755
 Fires evaluated:  (g2 r1)
 
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (APCP 1 ne false integer_% s integer_= boolean_not s WD)
+Best program: (APCP 1 ne false integer_% s integer_= boolean_not s WD)
+Best total error: 5178
+Fires evaluated:  (a2 k2)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (APCP 1 ne ISI boolean_or)
+Best program: (APCP 1 ne ISI boolean_or)
+Best total error: 8263
+Fires evaluated:  (m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (APCP 1 ne ISI boolean_or)
+Best program: (APCP 1 ne ISI boolean_or)
+Best total error: 5633
+Fires evaluated:  (m2 a2)
+

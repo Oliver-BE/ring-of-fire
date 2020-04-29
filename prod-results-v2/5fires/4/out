@@ -1,1 +1,9 @@
 Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 5, :max-generations 1000, :time-step 10, :parent-selection :lexicase, :tournament-size 5, :step-limit 25, :error-function #object[ring_of_fire.core$fire_error_function 0x226642a5 ring_of_fire.core$fire_error_function@226642a5], :population-size 10}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (num-burning-neigh)
+Best program: (num-burning-neigh)
+Best total error: 7537
+Fires evaluated:  (k2 r1 a2 g2 m1)
+

@@ -71,3 +71,75 @@ Best program: (se integer_- elevation elevation num-burning-neigh APCP APCP n bo
 Best total error: 673
 Fires evaluated:  (m1)
 
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (se integer_- elevation elevation num-burning-neigh APCP APCP n boolean_= 1 FFMC 1 FFMC integer_% 1)
+Best program: (se integer_- elevation elevation num-burning-neigh APCP APCP n boolean_= 1 FFMC 1 FFMC integer_% 1)
+Best total error: 2857
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (se elevation elevation num-burning-neigh num-burning-neigh APCP RH boolean_= close WD integer_%)
+Best program: (se elevation elevation num-burning-neigh num-burning-neigh APCP RH boolean_= WD integer_%)
+Best total error: 2207
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (se elevation elevation num-burning-neigh num-burning-neigh APCP RH boolean_= close WD integer_%)
+Best program: (se elevation elevation num-burning-neigh num-burning-neigh APCP RH boolean_= WD integer_%)
+Best total error: 2207
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (integer_- elevation elevation num-burning-neigh current-value APCP RH boolean_= close WD)
+Best program: (integer_- elevation elevation num-burning-neigh current-value APCP RH boolean_= WD)
+Best total error: 5620
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (se elevation elevation 2 num-burning-neigh current-value APCP RH boolean_= close WD 2)
+Best program: (se elevation elevation 2 num-burning-neigh current-value APCP RH boolean_= WD 2)
+Best total error: 2207
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (se elevation elevation 2 num-burning-neigh current-value APCP RH boolean_= WD 2)
+Best program: (se elevation elevation 2 num-burning-neigh current-value APCP RH boolean_= WD 2)
+Best total error: 673
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (se elevation elevation 2 num-burning-neigh current-value APCP RH boolean_= WD 2)
+Best program: (se elevation elevation 2 num-burning-neigh current-value APCP RH boolean_= WD 2)
+Best total error: 1683
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (se elevation elevation 2 num-burning-neigh current-value APCP RH boolean_= WD 2)
+Best program: (se elevation elevation 2 num-burning-neigh current-value APCP RH boolean_= WD 2)
+Best total error: 2887
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (se elevation elevation 2 num-burning-neigh current-value APCP RH boolean_= WD 2)
+Best program: (se elevation elevation 2 num-burning-neigh current-value APCP RH boolean_= WD 2)
+Best total error: 2207
+Fires evaluated:  (m2)
+

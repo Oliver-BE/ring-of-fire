@@ -15,3 +15,19 @@ Best program: (boolean_or time-step current-value num-burning-neigh boolean_and)
 Best total error: 2023
 Fires evaluated:  (m1 a2)
 
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (boolean_or time-step current-value num-burning-neigh boolean_and)
+Best program: (boolean_or time-step current-value num-burning-neigh boolean_and)
+Best total error: 3530
+Fires evaluated:  (m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (boolean_or ISI false w w WS boolean_not se close integer_* close integer_+)
+Best program: (boolean_or ISI false w w WS boolean_not se integer_* integer_+)
+Best total error: 8037
+Fires evaluated:  (a2 g2)
+

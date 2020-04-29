@@ -55,3 +55,35 @@ Best program: (exec_if (RH WD integer_- TMP) ())
 Best total error: 1547
 Fires evaluated:  (m1)
 
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (RH WD true integer_-)
+Best program: (RH WD true integer_-)
+Best total error: 2422
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (se WD num-burning-neigh DC DC FFMC FFMC integer_*)
+Best program: (se WD num-burning-neigh DC DC FFMC FFMC integer_*)
+Best total error: 1703
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (se WD WD integer_- DC FFMC integer_*)
+Best program: (se WD WD integer_- DC FFMC integer_*)
+Best total error: 3146
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (RH RH true integer_- TMP)
+Best program: (RH RH true integer_- TMP)
+Best total error: 3735
+Fires evaluated:  (k1)
+

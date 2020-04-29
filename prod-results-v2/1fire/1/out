@@ -47,3 +47,27 @@ Best program: (n true 2 2 boolean_and WD TMP 0 boolean_and APCP WD)
 Best total error: 5568
 Fires evaluated:  (g2)
 
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (e BUI integer_% boolean_and boolean_= TMP APCP WD)
+Best program: (e BUI integer_% boolean_and boolean_= TMP APCP WD)
+Best total error: 3460
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (e BUI 2 boolean_and WD TMP APCP WD)
+Best program: (e BUI 2 boolean_and WD TMP APCP WD)
+Best total error: 5568
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (n true 2 boolean_and WD TMP boolean_and)
+Best program: (n true 2 boolean_and WD TMP boolean_and)
+Best total error: 1547
+Fires evaluated:  (m1)
+

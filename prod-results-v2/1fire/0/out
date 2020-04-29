@@ -7,3 +7,11 @@ Best program: (FWI RH true boolean_not nw 1 boolean_and boolean_not)
 Best total error: 2200
 Fires evaluated:  (m2)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (num-burning-neigh 2 num-burning-neigh boolean_= n elevation BUI DMC FWI 2 DMC integer_- boolean_= w DMC integer_* integer_% WS true)
+Best program: (num-burning-neigh 2 num-burning-neigh boolean_= n elevation BUI DMC FWI 2 DMC integer_- boolean_= w DMC integer_* integer_% WS true)
+Best total error: 3321
+Fires evaluated:  (g2)
+

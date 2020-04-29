@@ -23,3 +23,19 @@ Best program: (integer_* se true APCP integer_+ boolean_or current-value exec_if
 Best total error: 6032
 Fires evaluated:  (m2 a2)
 
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (integer_* se true APCP integer_+ boolean_or current-value exec_if true FWI boolean_not RH)
+Best program: (integer_* se true APCP integer_+ boolean_or current-value exec_if (true FWI boolean_not RH) ())
+Best total error: 4663
+Fires evaluated:  (m1 k2)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (num-burning-neigh se nw w w s false w exec_if n true integer_% FFMC)
+Best program: (num-burning-neigh se nw w w s false w exec_if (n true integer_% FFMC) ())
+Best total error: 7156
+Fires evaluated:  (a2 k1)
+

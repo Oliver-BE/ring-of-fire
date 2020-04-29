@@ -95,3 +95,51 @@ Best program: (sw num-burning-neigh sw FFMC false exec_dup (2 ISI ISI boolean_an
 Best total error: 3302
 Fires evaluated:  (a2)
 
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (boolean_or num-burning-neigh sw FFMC false close WD exec_dup 2 ISI integer_+ DC)
+Best program: (boolean_or num-burning-neigh sw FFMC false WD exec_dup (2 ISI integer_+ DC))
+Best total error: 3508
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (boolean_or num-burning-neigh sw sw false close close WD ISI ISI 2 DC)
+Best program: (boolean_or num-burning-neigh sw sw false WD ISI ISI 2 DC)
+Best total error: 5568
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (sw boolean_or num-burning-neigh current-value sw FFMC false WD exec_dup elevation 2 ISI integer_+ DC integer_*)
+Best program: (sw boolean_or num-burning-neigh current-value sw FFMC false WD exec_dup (elevation 2 ISI integer_+ DC integer_*))
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (sw boolean_or num-burning-neigh current-value sw FFMC false ISI integer_+ DC n ISI integer_*)
+Best program: (sw boolean_or num-burning-neigh current-value sw FFMC false ISI integer_+ DC n ISI integer_*)
+Best total error: 3897
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (sw boolean_or num-burning-neigh current-value sw exec_dup 2 ISI integer_+ DC)
+Best program: (sw boolean_or num-burning-neigh current-value sw exec_dup (2 ISI integer_+ DC))
+Best total error: 3546
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (sw boolean_or num-burning-neigh current-value sw exec_dup 2 ISI integer_+ DC)
+Best program: (sw boolean_or num-burning-neigh current-value sw exec_dup (2 ISI integer_+ DC))
+Best total error: 3897
+Fires evaluated:  (k1)
+

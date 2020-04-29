@@ -15,3 +15,19 @@ Best program: (integer_% WD 1 WS integer_= num-burning-neigh)
 Best total error: 1683
 Fires evaluated:  (r1)
 
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (BUI APCP FFMC close APCP num-burning-neigh 1)
+Best program: (BUI APCP FFMC APCP num-burning-neigh 1)
+Best total error: 1332
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (close num-burning-neigh 1)
+Best program: (num-burning-neigh 1)
+Best total error: 672
+Fires evaluated:  (m1)
+
