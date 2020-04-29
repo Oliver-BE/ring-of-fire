@@ -7,3 +7,27 @@ Best program: (e w integer_* integer_+ num-burning-neigh w num-burning-neigh tim
 Best total error: 12845
 Fires evaluated:  (k1 a2 m1 m2 g2 k2 r1)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (se ISI integer_% current-value 1 false integer_* sw BUI WS boolean_not boolean_not integer_+ exec_if n)
+Best program: (se ISI integer_% current-value 1 false integer_* sw BUI WS boolean_not boolean_not integer_+ exec_if (n) ())
+Best total error: 22507
+Fires evaluated:  (m1 m2 k1 a2 k2 g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (se ISI integer_% integer_+ 1 w integer_* DMC time-step WS n boolean_not integer_+ exec_if n integer_+ exec_dup)
+Best program: (se ISI integer_% integer_+ 1 w integer_* DMC time-step WS n boolean_not integer_+ exec_if (n integer_+ exec_dup ()) ())
+Best total error: 21974
+Fires evaluated:  (g2 k2 m1 r1 m2 a2 k1)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (exec_if e false exec_dup ISI num-burning-neigh sw DMC BUI false ISI num-burning-neigh FWI BUI se WS boolean_not 2 boolean_not time-step s RH s RH ne s sw)
+Best program: (exec_if (e false exec_dup (ISI num-burning-neigh sw DMC BUI false ISI num-burning-neigh FWI BUI se WS boolean_not 2 boolean_not time-step s RH s RH ne s sw)) ())
+Best total error: 23368
+Fires evaluated:  (m1 a2 g2 r1 k2 k1 m2)
+

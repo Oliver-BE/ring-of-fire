@@ -63,3 +63,99 @@ Best program: (true FFMC integer_- boolean_or boolean_not integer_- RH 1 w integ
 Best total error: 6794
 Fires evaluated:  (m1 g2)
 
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (sw close FFMC integer_- RH boolean_not integer_% 1)
+Best program: (sw FFMC integer_- RH boolean_not integer_% 1)
+Best total error: 3826
+Fires evaluated:  (k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (sw BUI se integer_- nw integer_- RH)
+Best program: (sw BUI se integer_- nw integer_- RH)
+Best total error: 8092
+Fires evaluated:  (g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (true close se integer_+ boolean_or DC integer_- w integer_%)
+Best program: (true se integer_+ boolean_or DC integer_- w integer_%)
+Best total error: 3583
+Fires evaluated:  (k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (true close se integer_+ boolean_or DC integer_- w integer_%)
+Best program: (true se integer_+ boolean_or DC integer_- w integer_%)
+Best total error: 2748
+Fires evaluated:  (m2 m1)
+
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (true close se integer_+ boolean_or DC integer_- w integer_%)
+Best program: (true se integer_+ boolean_or DC integer_- w integer_%)
+Best total error: 3583
+Fires evaluated:  (m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (true close se integer_+ boolean_or DC integer_- w integer_%)
+Best program: (true se integer_+ boolean_or DC integer_- w integer_%)
+Best total error: 2987
+Fires evaluated:  (k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (true close se integer_+ boolean_or DC integer_- w integer_%)
+Best program: (true se integer_+ boolean_or DC integer_- w integer_%)
+Best total error: 4956
+Fires evaluated:  (a2 r1)
+
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (sw ISI se integer_+ boolean_or integer_- RH close)
+Best program: (sw ISI se integer_+ boolean_or integer_- RH)
+Best total error: 5339
+Fires evaluated:  (k1 r1)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (sw close se integer_+ integer_- RH close)
+Best program: (sw se integer_+ integer_- RH)
+Best total error: 4821
+Fires evaluated:  (r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (true ISI integer_+ integer_+ boolean_or nw integer_- integer_%)
+Best program: (true ISI integer_+ integer_+ boolean_or nw integer_- integer_%)
+Best total error: 5009
+Fires evaluated:  (r1 k1)
+
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (true ISI integer_+ integer_+ boolean_or nw integer_- close integer_%)
+Best program: (true ISI integer_+ integer_+ boolean_or nw integer_- integer_%)
+Best total error: 3516
+Fires evaluated:  (m1 a2)
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (true ISI se integer_+ nw DC integer_-)
+Best program: (true ISI se integer_+ nw DC integer_-)
+Best total error: 5208
+Fires evaluated:  (a2 k2)
+

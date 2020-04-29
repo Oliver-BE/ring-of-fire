@@ -7,3 +7,19 @@ Best program: (integer_+ integer_- elevation DC num-burning-neigh)
 Best total error: 9974
 Fires evaluated:  (m2 a2 m1 g2 k1)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (FWI RH close FFMC num-burning-neigh integer_- FWI RH RH num-burning-neigh false integer_- boolean_and 0 0 num-burning-neigh ne integer_* DC RH FFMC boolean_= e current-value num-burning-neigh integer_=)
+Best program: (FWI RH FFMC num-burning-neigh integer_- FWI RH RH num-burning-neigh false integer_- boolean_and 0 0 num-burning-neigh ne integer_* DC RH FFMC boolean_= e current-value num-burning-neigh integer_=)
+Best total error: 10984
+Fires evaluated:  (g2 r1 m2 k1 a2)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (integer_+ integer_- elevation DC num-burning-neigh)
+Best program: (integer_+ integer_- elevation DC num-burning-neigh)
+Best total error: 9071
+Fires evaluated:  (a2 r1 g2 k2 m2)
+

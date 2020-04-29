@@ -15,3 +15,27 @@ Best program: (DMC exec_if (ISI integer_% time-step e exec_dup (integer_= e DMC 
 Best total error: 2315
 Fires evaluated:  (k2 a2)
 
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (false boolean_or integer_% integer_+ integer_% integer_= s s nw WS sw 1 elevation exec_dup true DMC WD WD)
+Best program: (false boolean_or integer_% integer_+ integer_% integer_= s s nw WS sw 1 elevation exec_dup (true DMC WD WD))
+Best total error: 3784
+Fires evaluated:  (m1 g2)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (TMP 0 ISI exec_if exec_if close s s nw WS boolean_or 1 close 0 time-step integer_= w APCP true boolean_and)
+Best program: (TMP 0 ISI exec_if (exec_if () (s s nw WS boolean_or 1) 0 time-step integer_= w APCP true boolean_and) ())
+Best total error: 2686
+Fires evaluated:  (k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (WD 0 ISI exec_if exec_if integer_= s current-value integer_% sw boolean_or 1 DMC WD integer_= WD)
+Best program: (WD 0 ISI exec_if (exec_if (integer_= s current-value integer_% sw boolean_or 1 DMC WD integer_= WD) ()) ())
+Best total error: 2375
+Fires evaluated:  (m1 r1)
+

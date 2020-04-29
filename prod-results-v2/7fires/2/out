@@ -7,3 +7,19 @@ Best program: (RH BUI boolean_= false DC integer_- num-burning-neigh 1 DMC integ
 Best total error: 12601
 Fires evaluated:  (m1 r1 a2 k1 g2 m2 k2)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (ne BUI num-burning-neigh 2 exec_dup 0 APCP num-burning-neigh 1 DMC ne ne elevation 1)
+Best program: (ne BUI num-burning-neigh 2 exec_dup (0 APCP num-burning-neigh 1 DMC ne ne elevation 1))
+Best total error: 12845
+Fires evaluated:  (r1 m2 m1 k1 k2 a2 g2)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (ne BUI num-burning-neigh 2 exec_dup APCP num-burning-neigh ne ne elevation 1)
+Best program: (ne BUI num-burning-neigh 2 exec_dup (APCP num-burning-neigh ne ne elevation 1))
+Best total error: 12601
+Fires evaluated:  (a2 r1 g2 k2 m1 m2 k1)
+

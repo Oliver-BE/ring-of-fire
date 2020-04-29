@@ -87,3 +87,147 @@ Best program: (APCP 1 elevation ISI ISI ISI integer_%)
 Best total error: 1655
 Fires evaluated:  (m1 k2)
 
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (nw 1 boolean_=)
+Best program: (nw 1 boolean_=)
+Best total error: 3903
+Fires evaluated:  (m2 r1)
+
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (nw 1 elevation ISI ISI ISI)
+Best program: (nw 1 elevation ISI ISI ISI)
+Best total error: 8263
+Fires evaluated:  (m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (nw 1 elevation ISI ISI ISI)
+Best program: (nw 1 elevation ISI ISI ISI)
+Best total error: 5828
+Fires evaluated:  (k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (APCP 1 boolean_= ne boolean_or ISI)
+Best program: (APCP 1 boolean_= ne boolean_or ISI)
+Best total error: 4431
+Fires evaluated:  (m2 m1)
+
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (nw 1 elevation ne boolean_or ISI)
+Best program: (nw 1 elevation ne boolean_or ISI)
+Best total error: 5865
+Fires evaluated:  (k2 a2)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (nw 1 elevation ISI ISI ISI)
+Best program: (nw 1 elevation ISI ISI ISI)
+Best total error: 8263
+Fires evaluated:  (m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (nw 1 elevation ISI ISI ISI)
+Best program: (nw 1 elevation ISI ISI ISI)
+Best total error: 6295
+Fires evaluated:  (k1 a2)
+
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (nw 1 elevation ISI ISI ISI)
+Best program: (nw 1 elevation ISI ISI ISI)
+Best total error: 4431
+Fires evaluated:  (m2 m1)
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (nw 1 elevation s ISI boolean_or)
+Best program: (nw 1 elevation s ISI boolean_or)
+Best total error: 6295
+Fires evaluated:  (k1 a2)
+
+-------------------------------------------------------
+               Report for Generation 20
+-------------------------------------------------------
+Best plushy: (nw 1 elevation ISI ISI boolean_or)
+Best program: (nw 1 elevation ISI ISI boolean_or)
+Best total error: 4431
+Fires evaluated:  (m2 m1)
+
+-------------------------------------------------------
+               Report for Generation 21
+-------------------------------------------------------
+Best plushy: (nw 1 elevation ISI ISI boolean_or)
+Best program: (nw 1 elevation ISI ISI boolean_or)
+Best total error: 5320
+Fires evaluated:  (r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 22
+-------------------------------------------------------
+Best plushy: (nw 1 elevation ISI ISI ISI)
+Best program: (nw 1 elevation ISI ISI ISI)
+Best total error: 5828
+Fires evaluated:  (m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 23
+-------------------------------------------------------
+Best plushy: (1 elevation DC ISI ISI ISI integer_%)
+Best program: (1 elevation DC ISI ISI ISI integer_%)
+Best total error: 4175
+Fires evaluated:  (a2 k1)
+
+-------------------------------------------------------
+               Report for Generation 24
+-------------------------------------------------------
+Best plushy: (nw elevation elevation ISI ISI ISI integer_%)
+Best program: (nw elevation elevation ISI ISI ISI integer_%)
+Best total error: 3903
+Fires evaluated:  (m2 r1)
+
+-------------------------------------------------------
+               Report for Generation 25
+-------------------------------------------------------
+Best plushy: (nw boolean_= 1 elevation ISI ISI)
+Best program: (nw boolean_= 1 elevation ISI ISI)
+Best total error: 5088
+Fires evaluated:  (m2 r1)
+
+-------------------------------------------------------
+               Report for Generation 26
+-------------------------------------------------------
+Best plushy: (1 ISI ISI ISI)
+Best program: (1 ISI ISI ISI)
+Best total error: 5865
+Fires evaluated:  (a2 k2)
+
+-------------------------------------------------------
+               Report for Generation 27
+-------------------------------------------------------
+Best plushy: (nw elevation ISI ISI)
+Best program: (nw elevation ISI ISI)
+Best total error: 4468
+Fires evaluated:  (a2 m1)
+
+-------------------------------------------------------
+               Report for Generation 28
+-------------------------------------------------------
+Best plushy: (1 elevation elevation ISI ISI)
+Best program: (1 elevation elevation ISI ISI)
+Best total error: 4431
+Fires evaluated:  (m1 m2)
+

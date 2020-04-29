@@ -7,3 +7,67 @@ Best program: (nw TMP FFMC 2 FWI se DMC)
 Best total error: 3784
 Fires evaluated:  (g2 m1)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (DMC current-value BUI boolean_and 2 exec_dup DMC FWI BUI integer_% FWI elevation boolean_and close integer_= exec_dup 1 integer_= true 1 w RH num-burning-neigh DC true)
+Best program: (DMC current-value BUI boolean_and 2 exec_dup (DMC FWI BUI integer_% FWI elevation boolean_and) integer_= exec_dup (1 integer_= true 1 w RH num-burning-neigh DC true))
+Best total error: 3826
+Fires evaluated:  (k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (integer_= current-value BUI integer_- DMC FWI close exec_dup 1 true 1 num-burning-neigh DC true)
+Best program: (integer_= current-value BUI integer_- DMC FWI exec_dup (1 true 1 num-burning-neigh DC true))
+Best total error: 2375
+Fires evaluated:  (r1 m1)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (integer_= current-value BUI integer_- DMC FWI close exec_dup 1 true 1 num-burning-neigh DC true)
+Best program: (integer_= current-value BUI integer_- DMC FWI exec_dup (1 true 1 num-burning-neigh DC true))
+Best total error: 4095
+Fires evaluated:  (k2 g2)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (integer_= current-value boolean_or integer_- DMC FWI close exec_dup 1 num-burning-neigh 1 num-burning-neigh DC time-step TMP)
+Best program: (integer_= current-value boolean_or integer_- DMC FWI exec_dup (1 num-burning-neigh 1 num-burning-neigh DC time-step TMP))
+Best total error: 3826
+Fires evaluated:  (k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (integer_= current-value boolean_or integer_- DMC FWI num-burning-neigh exec_dup 1 num-burning-neigh 1 time-step TMP time-step TMP)
+Best program: (integer_= current-value boolean_or integer_- DMC FWI num-burning-neigh exec_dup (1 num-burning-neigh 1 time-step TMP time-step TMP))
+Best total error: 9074
+Fires evaluated:  (g2 k1)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (integer_= FFMC boolean_or integer_- DMC FWI num-burning-neigh exec_dup 1 num-burning-neigh 1 num-burning-neigh DC time-step TMP w)
+Best program: (integer_= FFMC boolean_or integer_- DMC FWI num-burning-neigh exec_dup (1 num-burning-neigh 1 num-burning-neigh DC time-step TMP w))
+Best total error: 6062
+Fires evaluated:  (k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (time-step current-value FWI n FWI num-burning-neigh integer_- se true 0 true num-burning-neigh)
+Best program: (time-step current-value FWI n FWI num-burning-neigh integer_- se true 0 true num-burning-neigh)
+Best total error: 3801
+Fires evaluated:  (k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (time-step current-value FWI exec_if n FWI num-burning-neigh integer_- se true exec_dup 0 true num-burning-neigh)
+Best program: (time-step current-value FWI exec_if (n FWI num-burning-neigh integer_- se true exec_dup (0 true num-burning-neigh)) ())
+Best total error: 2880
+Fires evaluated:  (m2 m1)
+

@@ -63,3 +63,59 @@ Best program: (integer_= se nw w w exec_if (integer_% FFMC exec_if (n true 1) ()
 Best total error: 3515
 Fires evaluated:  (m1 k1)
 
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (num-burning-neigh integer_+ nw close WD WD FWI FWI integer_%)
+Best program: (num-burning-neigh integer_+ nw WD WD FWI FWI integer_%)
+Best total error: 2375
+Fires evaluated:  (r1 m1)
+
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (FWI se nw close WD exec_if exec_if w true)
+Best program: (FWI se nw WD exec_if (exec_if (w true) ()) ())
+Best total error: 8066
+Fires evaluated:  (r1 g2)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (num-burning-neigh integer_+ nw w boolean_or w exec_if DMC FWI exec_if integer_%)
+Best program: (num-burning-neigh integer_+ nw w boolean_or w exec_if (DMC FWI exec_if (integer_%) ()) ())
+Best total error: 5096
+Fires evaluated:  (k1 r1)
+
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (num-burning-neigh integer_+ nw w boolean_or w exec_if DMC FWI exec_if integer_%)
+Best program: (num-burning-neigh integer_+ nw w boolean_or w exec_if (DMC FWI exec_if (integer_%) ()) ())
+Best total error: 7138
+Fires evaluated:  (g2 k1)
+
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (num-burning-neigh integer_+ nw w boolean_or w exec_if DMC FWI exec_if integer_%)
+Best program: (num-burning-neigh integer_+ nw w boolean_or w exec_if (DMC FWI exec_if (integer_%) ()) ())
+Best total error: 4009
+Fires evaluated:  (k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (num-burning-neigh integer_+ integer_% nw w boolean_or w exec_if DMC FWI integer_%)
+Best program: (num-burning-neigh integer_+ integer_% nw w boolean_or w exec_if (DMC FWI integer_%) ())
+Best total error: 4009
+Fires evaluated:  (k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (num-burning-neigh integer_+ nw w exec_if exec_if integer_% integer_%)
+Best program: (num-burning-neigh integer_+ nw w exec_if (exec_if (integer_% integer_%) ()) ())
+Best total error: 3634
+Fires evaluated:  (g2 m1)
+

@@ -7,3 +7,27 @@ Best program: (DC n 0 se e WS TMP WS DC exec_if (boolean_not 1 sw false se boole
 Best total error: 23308
 Fires evaluated:  (a2 k2 r1 g2 m1 m2 k1)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (FWI true integer_% true BUI BUI RH s n integer_% integer_% num-burning-neigh integer_= DMC exec_dup time-step DC e FWI)
+Best program: (FWI true integer_% true BUI BUI RH s n integer_% integer_% num-burning-neigh integer_= DMC exec_dup (time-step DC e FWI))
+Best total error: 12934
+Fires evaluated:  (k1 g2 m2 m1 a2 k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (FWI true integer_% true BUI BUI RH s n se integer_% integer_% num-burning-neigh integer_= DMC exec_dup time-step DC e FWI sw)
+Best program: (FWI true integer_% true BUI BUI RH s n se integer_% integer_% num-burning-neigh integer_= DMC exec_dup (time-step DC e FWI sw))
+Best total error: 12934
+Fires evaluated:  (m1 g2 r1 m2 a2 k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (close true integer_% integer_% BUI BUI nw RH integer_+ n integer_% integer_% num-burning-neigh integer_= DMC BUI time-step DC exec_if sw)
+Best program: (true integer_% integer_% BUI BUI nw RH integer_+ n integer_% integer_% num-burning-neigh integer_= DMC BUI time-step DC exec_if (sw) ())
+Best total error: 23287
+Fires evaluated:  (g2 m1 r1 k1 m2 k2 a2)
+

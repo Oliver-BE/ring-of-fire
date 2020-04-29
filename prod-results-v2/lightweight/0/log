@@ -178,3 +178,54 @@
 	6380  -  MemoryUsage of job (MB)
 	6532984  -  ResidentSetSize of job (KB)
 ...
+006 (724.000.000) 04/29 06:37:16 Image size of job updated: 7325668
+	7154  -  MemoryUsage of job (MB)
+	7325636  -  ResidentSetSize of job (KB)
+...
+006 (724.000.000) 04/29 06:47:17 Image size of job updated: 7504064
+	7329  -  MemoryUsage of job (MB)
+	7504032  -  ResidentSetSize of job (KB)
+...
+006 (724.000.000) 04/29 06:52:18 Image size of job updated: 8377472
+	8182  -  MemoryUsage of job (MB)
+	8377440  -  ResidentSetSize of job (KB)
+...
+006 (724.000.000) 04/29 07:02:19 Image size of job updated: 8382812
+	8187  -  MemoryUsage of job (MB)
+	8382780  -  ResidentSetSize of job (KB)
+...
+006 (724.000.000) 04/29 07:12:20 Image size of job updated: 8386316
+	8190  -  MemoryUsage of job (MB)
+	8386284  -  ResidentSetSize of job (KB)
+...
+006 (724.000.000) 04/29 07:17:20 Image size of job updated: 8395016
+	8199  -  MemoryUsage of job (MB)
+	8394984  -  ResidentSetSize of job (KB)
+...
+006 (724.000.000) 04/29 07:22:20 Image size of job updated: 8397020
+	8201  -  MemoryUsage of job (MB)
+	8396988  -  ResidentSetSize of job (KB)
+...
+006 (724.000.000) 04/29 07:27:21 Image size of job updated: 8413852
+	8217  -  MemoryUsage of job (MB)
+	8413820  -  ResidentSetSize of job (KB)
+...
+006 (724.000.000) 04/29 07:32:22 Image size of job updated: 8415360
+	8219  -  MemoryUsage of job (MB)
+	8415328  -  ResidentSetSize of job (KB)
+...
+006 (724.000.000) 04/29 12:13:57 Image size of job updated: 37806164
+	8219  -  MemoryUsage of job (MB)
+	8415328  -  ResidentSetSize of job (KB)
+...
+004 (724.000.000) 04/29 12:13:57 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 0 21:10:11, Sys 0 00:00:19  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.24        1         1 
+	   Disk (KB)            :     1           1    864224 
+	   Memory (MB)          :  8219           1      8075 
+...

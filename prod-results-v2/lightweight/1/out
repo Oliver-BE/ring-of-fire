@@ -567,3 +567,1235 @@ Best program: (WD WD WD 2 2 2)
 Best total error: 1633
 Fires evaluated:  (m1)
 
+-------------------------------------------------------
+               Report for Generation 71
+-------------------------------------------------------
+Best plushy: (WD WD 1 2 close 2 close close close close close WS close)
+Best program: (WD WD 1 2 2 WS)
+Best total error: 3562
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 72
+-------------------------------------------------------
+Best plushy: (WD WD WD 2 integer_- 2 close close close close close close close close DC)
+Best program: (WD WD WD 2 integer_- 2 DC)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 73
+-------------------------------------------------------
+Best plushy: (WD WD WD 2 integer_- 2 close 2 close close close close close DC)
+Best program: (WD WD WD 2 integer_- 2 2 DC)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 74
+-------------------------------------------------------
+Best plushy: (WD RH 2 2 2 2 2 close close close close close close)
+Best program: (WD RH 2 2 2 2 2)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 75
+-------------------------------------------------------
+Best plushy: (WD WD WD 2 integer_- 2 close 2 close close close close close DC integer_+)
+Best program: (WD WD WD 2 integer_- 2 2 DC integer_+)
+Best total error: 3919
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 76
+-------------------------------------------------------
+Best plushy: (WD WD 2 integer_- boolean_not 2 close 2 close close close close close DC)
+Best program: (WD WD 2 integer_- boolean_not 2 2 DC)
+Best total error: 3302
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 77
+-------------------------------------------------------
+Best plushy: (WD WD 2 integer_- boolean_not 2 close WS 2 close close close close close DC)
+Best program: (WD WD 2 integer_- boolean_not 2 WS 2 DC)
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 78
+-------------------------------------------------------
+Best plushy: (WD WD WD integer_- boolean_not 2 close WS close close close close close DC DC)
+Best program: (WD WD WD integer_- boolean_not 2 WS DC DC)
+Best total error: 3562
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 79
+-------------------------------------------------------
+Best plushy: (WD WD 2 integer_+ integer_- boolean_not true 2 close 2 close close close close boolean_not DC)
+Best program: (WD WD 2 integer_+ integer_- boolean_not true 2 2 boolean_not DC)
+Best total error: 3919
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 80
+-------------------------------------------------------
+Best plushy: (WD WD 2 integer_+ integer_- boolean_not true 2 close 2 close close close close boolean_not)
+Best program: (WD WD 2 integer_+ integer_- boolean_not true 2 2 boolean_not)
+Best total error: 3302
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 81
+-------------------------------------------------------
+Best plushy: (WD WD WD integer_- integer_- 2 close 2 close close close close close DC)
+Best program: (WD WD WD integer_- integer_- 2 2 DC)
+Best total error: 3919
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 82
+-------------------------------------------------------
+Best plushy: (WD WD WD 2 integer_- 2 close 2 TMP close close close close DC DC)
+Best program: (WD WD WD 2 integer_- 2 2 TMP DC DC)
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 83
+-------------------------------------------------------
+Best plushy: (WD WD WD 2 2 close close TMP close close close close close DC)
+Best program: (WD WD WD 2 2 TMP DC)
+Best total error: 2661
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 84
+-------------------------------------------------------
+Best plushy: (WD WD WD 2 2 close close TMP TMP close nw close close DC DC)
+Best program: (WD WD WD 2 2 TMP TMP nw DC DC)
+Best total error: 3735
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 85
+-------------------------------------------------------
+Best plushy: (WD WD WD 2 2 close close TMP TMP close nw close close DC DC)
+Best program: (WD WD WD 2 2 TMP TMP nw DC DC)
+Best total error: 3735
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 86
+-------------------------------------------------------
+Best plushy: (WD WD WD 2 2 close close TMP TMP close nw close close DC DC)
+Best program: (WD WD WD 2 2 TMP TMP nw DC DC)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 87
+-------------------------------------------------------
+Best plushy: (WD WD WD 2 2 close close close TMP TMP nw close elevation close DC DC)
+Best program: (WD WD WD 2 2 TMP TMP nw elevation DC DC)
+Best total error: 3378
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 88
+-------------------------------------------------------
+Best plushy: (WD WD WD 2 2 close close TMP TMP exec_dup TMP close nw close DC close DC)
+Best program: (WD WD WD 2 2 TMP TMP exec_dup (TMP) nw DC DC)
+Best total error: 2661
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 89
+-------------------------------------------------------
+Best plushy: (WD WD WD 2 2 close close TMP TMP exec_dup TMP nw DC close DC)
+Best program: (WD WD WD 2 2 TMP TMP exec_dup (TMP nw DC) DC)
+Best total error: 2863
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 90
+-------------------------------------------------------
+Best plushy: (WD WD WD 2 2 close close close TMP exec_dup close nw close DC close)
+Best program: (WD WD WD 2 2 TMP exec_dup () nw DC)
+Best total error: 1554
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 91
+-------------------------------------------------------
+Best plushy: (WD WD WD 2 2 close close RH TMP TMP exec_dup TMP nw close close close close DC)
+Best program: (WD WD WD 2 2 RH TMP TMP exec_dup (TMP nw) DC)
+Best total error: 2379
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 92
+-------------------------------------------------------
+Best plushy: (WD WD WD 2 2 close close RH TMP TMP exec_dup TMP close nw close DC close DC)
+Best program: (WD WD WD 2 2 RH TMP TMP exec_dup (TMP) nw DC DC)
+Best total error: 3508
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 93
+-------------------------------------------------------
+Best plushy: (WD WD WD 2 2 close close RH 2 exec_dup TMP close close nw DC DC close)
+Best program: (WD WD WD 2 2 RH 2 exec_dup (TMP) nw DC DC)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 94
+-------------------------------------------------------
+Best plushy: (WD WD WD 2 2 close close RH 2 TMP TMP close close nw DC DC close DC)
+Best program: (WD WD WD 2 2 RH 2 TMP TMP nw DC DC DC)
+Best total error: 3508
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 95
+-------------------------------------------------------
+Best plushy: (WD WD WD 2 2 close close RH 2 false TMP exec_dup TMP nw integer_- close close close close DC)
+Best program: (WD WD WD 2 2 RH 2 false TMP exec_dup (TMP nw integer_-) DC)
+Best total error: 3109
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 96
+-------------------------------------------------------
+Best plushy: (WD WD WD 2 2 close boolean_or close RH 2 boolean_not TMP exec_dup exec_dup TMP nw close close close close DC)
+Best program: (WD WD WD 2 2 boolean_or RH 2 boolean_not TMP exec_dup (exec_dup (TMP nw)) DC)
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 97
+-------------------------------------------------------
+Best plushy: (WD WD integer_- 2 2 close 2 2 2 close nw close DC)
+Best program: (WD WD integer_- 2 2 2 2 2 nw DC)
+Best total error: 3302
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 98
+-------------------------------------------------------
+Best plushy: (WD 2 WD 2 close close 2 exec_dup 2 nw exec_dup close nw DC)
+Best program: (WD 2 WD 2 2 exec_dup (2 nw exec_dup () nw DC))
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 99
+-------------------------------------------------------
+Best plushy: (WD 2 WD close close close 2 exec_dup RH nw exec_dup TMP DC exec_dup nw close close close)
+Best program: (WD 2 WD 2 exec_dup (RH nw exec_dup (TMP DC exec_dup (nw))))
+Best total error: 3109
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 100
+-------------------------------------------------------
+Best plushy: (WD WD WD 2 close close 2 exec_dup 2 nw exec_dup close DC DC)
+Best program: (WD WD WD 2 2 exec_dup (2 nw exec_dup () DC DC))
+Best total error: 3302
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 101
+-------------------------------------------------------
+Best plushy: (WD WD integer_- close close close 2 exec_dup DMC 2 exec_dup close close nw)
+Best program: (WD WD integer_- 2 exec_dup (DMC 2 exec_dup ()) nw)
+Best total error: 3586
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 102
+-------------------------------------------------------
+Best plushy: (WD WD 2 close close close exec_dup 2 nw exec_dup exec_dup close DC)
+Best program: (WD WD 2 exec_dup (2 nw exec_dup (exec_dup () DC)))
+Best total error: 1607
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 103
+-------------------------------------------------------
+Best plushy: (WD WD integer_- close true 2 exec_dup 2 DMC exec_dup close exec_dup close nw DC close)
+Best program: (WD WD integer_- true 2 exec_dup (2 DMC exec_dup () exec_dup () nw DC))
+Best total error: 3302
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 104
+-------------------------------------------------------
+Best plushy: (WD WD integer_- integer_- close 2 close 2 exec_dup exec_dup RH exec_dup close DC close close)
+Best program: (WD WD integer_- integer_- 2 2 exec_dup (exec_dup (RH exec_dup () DC)))
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 105
+-------------------------------------------------------
+Best plushy: (WD WD 2 integer_- close exec_dup close integer_* exec_dup exec_dup close DC DC close DC)
+Best program: (WD WD 2 integer_- exec_dup () integer_* exec_dup (exec_dup () DC DC) DC)
+Best total error: 3302
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 106
+-------------------------------------------------------
+Best plushy: (WD WD 2 close close exec_dup 2 nw nw exec_dup close DC se DC integer_*)
+Best program: (WD WD 2 exec_dup (2 nw nw exec_dup () DC se DC integer_*))
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 107
+-------------------------------------------------------
+Best plushy: (WD WD 2 integer_- close exec_dup close nw exec_dup exec_dup close DC close DC close)
+Best program: (WD WD 2 integer_- exec_dup () nw exec_dup (exec_dup () DC) DC)
+Best total error: 3735
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 108
+-------------------------------------------------------
+Best plushy: (WD WD 2 integer_- close exec_dup close nw exec_dup exec_dup close DC close DC close)
+Best program: (WD WD 2 integer_- exec_dup () nw exec_dup (exec_dup () DC) DC)
+Best total error: 2609
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 109
+-------------------------------------------------------
+Best plushy: (WD WD 2 integer_- close exec_dup 2 RH nw exec_dup exec_dup close DC close DC integer_*)
+Best program: (WD WD 2 integer_- exec_dup (2 RH nw exec_dup (exec_dup () DC) DC integer_*))
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 110
+-------------------------------------------------------
+Best plushy: (WD WD 2 integer_- close exec_dup exec_dup 2 nw exec_dup close DC DC TMP DC integer_*)
+Best program: (WD WD 2 integer_- exec_dup (exec_dup (2 nw exec_dup () DC DC TMP DC integer_*)))
+Best total error: 3378
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 111
+-------------------------------------------------------
+Best plushy: (WD WD 2 integer_- close exec_dup 2 RH nw exec_dup exec_dup close DC close DC integer_*)
+Best program: (WD WD 2 integer_- exec_dup (2 RH nw exec_dup (exec_dup () DC) DC integer_*))
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 112
+-------------------------------------------------------
+Best plushy: (WD integer_= 2 integer_- close close 2 exec_dup 2 false close DC close TMP close integer_* BUI close)
+Best program: (WD integer_= 2 integer_- 2 exec_dup (2 false) DC TMP integer_* BUI)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 113
+-------------------------------------------------------
+Best plushy: (WD WD 2 integer_- close exec_dup 2 RH 2 exec_dup exec_dup close close DC close close DC)
+Best program: (WD WD 2 integer_- exec_dup (2 RH 2 exec_dup (exec_dup ()) DC) DC)
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 114
+-------------------------------------------------------
+Best plushy: (WD integer_= 2 integer_- close exec_dup 2 RH 2 exec_dup exec_dup close close DC close integer_*)
+Best program: (WD integer_= 2 integer_- exec_dup (2 RH 2 exec_dup (exec_dup ()) DC) integer_*)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 115
+-------------------------------------------------------
+Best plushy: (WD integer_= 2 integer_- close exec_dup 2 RH nw exec_dup exec_dup close DC close integer_*)
+Best program: (WD integer_= 2 integer_- exec_dup (2 RH nw exec_dup (exec_dup () DC) integer_*))
+Best total error: 3508
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 116
+-------------------------------------------------------
+Best plushy: (WD integer_= 2 integer_- close exec_dup 2 RH nw exec_dup exec_dup close DC close close)
+Best program: (WD integer_= 2 integer_- exec_dup (2 RH nw exec_dup (exec_dup () DC)))
+Best total error: 2379
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 117
+-------------------------------------------------------
+Best plushy: (WD integer_= 2 integer_- close time-step exec_dup 2 RH 2 exec_dup exec_dup close close ISI DC close integer_*)
+Best program: (WD integer_= 2 integer_- time-step exec_dup (2 RH 2 exec_dup (exec_dup ()) ISI DC) integer_*)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 118
+-------------------------------------------------------
+Best plushy: (WD integer_= 2 integer_- close exec_dup 2 RH RH exec_dup exec_dup exec_dup DC DC close DC integer_* 2)
+Best program: (WD integer_= 2 integer_- exec_dup (2 RH RH exec_dup (exec_dup (exec_dup (DC DC) DC integer_* 2))))
+Best total error: 2379
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 119
+-------------------------------------------------------
+Best plushy: (WD integer_= 2 integer_- close exec_dup 2 RH exec_dup exec_dup exec_dup DC DC close DC integer_* 2)
+Best program: (WD integer_= 2 integer_- exec_dup (2 RH exec_dup (exec_dup (exec_dup (DC DC) DC integer_* 2))))
+Best total error: 3302
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 120
+-------------------------------------------------------
+Best plushy: (WD integer_= 2 integer_- close 2 false RH nw exec_dup exec_dup DC DC close BUI WS integer_*)
+Best program: (WD integer_= 2 integer_- 2 false RH nw exec_dup (exec_dup (DC DC) BUI WS integer_*))
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 121
+-------------------------------------------------------
+Best plushy: (WD integer_= 2 integer_- close exec_dup 2 false RH 2 exec_dup exec_dup close DC ISI close)
+Best program: (WD integer_= 2 integer_- exec_dup (2 false RH 2 exec_dup (exec_dup () DC ISI)))
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 122
+-------------------------------------------------------
+Best plushy: (WD integer_= 2 integer_- close 2 false RH RH 2 exec_dup DC DC DC BUI close integer_*)
+Best program: (WD integer_= 2 integer_- 2 false RH RH 2 exec_dup (DC DC DC BUI) integer_*)
+Best total error: 3508
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 123
+-------------------------------------------------------
+Best plushy: (WD integer_= 2 integer_- close 2 2 RH nw 2 exec_dup DC close DC BUI DC integer_*)
+Best program: (WD integer_= 2 integer_- 2 2 RH nw 2 exec_dup (DC) DC BUI DC integer_*)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 124
+-------------------------------------------------------
+Best plushy: (WD integer_= 2 integer_- close 2 2 RH nw 2 exec_dup DC close DC BUI DC integer_*)
+Best program: (WD integer_= 2 integer_- 2 2 RH nw 2 exec_dup (DC) DC BUI DC integer_*)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 125
+-------------------------------------------------------
+Best plushy: (WD integer_= 2 integer_- close 2 2 RH RH 2 exec_dup DC close DC BUI close integer_*)
+Best program: (WD integer_= 2 integer_- 2 2 RH RH 2 exec_dup (DC) DC BUI integer_*)
+Best total error: 3508
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 126
+-------------------------------------------------------
+Best plushy: (TMP integer_= 2 integer_- close 2 RH ISI RH 2 nw boolean_or exec_dup DC DC e DC BUI close integer_*)
+Best program: (TMP integer_= 2 integer_- 2 RH ISI RH 2 nw boolean_or exec_dup (DC DC e DC BUI) integer_*)
+Best total error: 3147
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 127
+-------------------------------------------------------
+Best plushy: (WD integer_= 2 integer_- close close RH RH RH 2 exec_dup boolean_or exec_dup DC DC e DC BUI BUI integer_*)
+Best program: (WD integer_= 2 integer_- RH RH RH 2 exec_dup (boolean_or exec_dup (DC DC e DC BUI BUI integer_*)))
+Best total error: 3508
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 128
+-------------------------------------------------------
+Best plushy: (TMP WD integer_= 2 integer_- close false RH RH ISI exec_dup DC DC FWI nw FFMC exec_dup DC DC integer_* DC BUI integer_*)
+Best program: (TMP WD integer_= 2 integer_- false RH RH ISI exec_dup (DC DC FWI nw FFMC exec_dup (DC DC integer_* DC BUI integer_*)))
+Best total error: 3109
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 129
+-------------------------------------------------------
+Best plushy: (TMP integer_= 2 integer_- close 2 RH ISI RH 2 nw boolean_or exec_dup DC DC e DC BUI close integer_*)
+Best program: (TMP integer_= 2 integer_- 2 RH ISI RH 2 nw boolean_or exec_dup (DC DC e DC BUI) integer_*)
+Best total error: 5585
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 130
+-------------------------------------------------------
+Best plushy: (TMP integer_= 2 integer_- close 2 RH ISI RH 2 nw boolean_or exec_dup DC DC e DC BUI close integer_*)
+Best program: (TMP integer_= 2 integer_- 2 RH ISI RH 2 nw boolean_or exec_dup (DC DC e DC BUI) integer_*)
+Best total error: 2447
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 131
+-------------------------------------------------------
+Best plushy: (TMP integer_= 2 integer_- close 2 RH ISI RH 2 nw boolean_or exec_dup integer_% DC DC e DC BUI close integer_*)
+Best program: (TMP integer_= 2 integer_- 2 RH ISI RH 2 nw boolean_or exec_dup (integer_% DC DC e DC BUI) integer_*)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 132
+-------------------------------------------------------
+Best plushy: (TMP integer_= 2 integer_- close 2 RH ISI RH exec_dup DC boolean_or FWI DC BUI FFMC e DC DC integer_* DC integer_*)
+Best program: (TMP integer_= 2 integer_- 2 RH ISI RH exec_dup (DC boolean_or FWI DC BUI FFMC e DC DC integer_* DC integer_*))
+Best total error: 5585
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 133
+-------------------------------------------------------
+Best plushy: (TMP integer_= 2 integer_- close 2 RH ISI RH 2 nw boolean_or exec_dup integer_% DC DC e DC BUI close integer_*)
+Best program: (TMP integer_= 2 integer_- 2 RH ISI RH 2 nw boolean_or exec_dup (integer_% DC DC e DC BUI) integer_*)
+Best total error: 5585
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 134
+-------------------------------------------------------
+Best plushy: (integer_= WD integer_= integer_- close false RH ISI RH elevation exec_dup boolean_or DC DC DC BUI DC integer_* DC)
+Best program: (integer_= WD integer_= integer_- false RH ISI RH elevation exec_dup (boolean_or DC DC DC BUI DC integer_* DC))
+Best total error: 3147
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 135
+-------------------------------------------------------
+Best plushy: (integer_= integer_- close false RH elevation exec_dup boolean_or DC DC DC DC integer_* DC)
+Best program: (integer_= integer_- false RH elevation exec_dup (boolean_or DC DC DC DC integer_* DC))
+Best total error: 1624
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 136
+-------------------------------------------------------
+Best plushy: (integer_= WD integer_- integer_- false close false exec_dup boolean_or RH DC elevation DC boolean_or DC DC BUI DC DC)
+Best program: (integer_= WD integer_- integer_- false false exec_dup (boolean_or RH DC elevation DC boolean_or DC DC BUI DC DC))
+Best total error: 5568
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 137
+-------------------------------------------------------
+Best plushy: (integer_= WD close false FWI elevation exec_dup boolean_or RH DC DC DC 2 DC boolean_or DC integer_* integer_*)
+Best program: (integer_= WD false FWI elevation exec_dup (boolean_or RH DC DC DC 2 DC boolean_or DC integer_* integer_*))
+Best total error: 1624
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 138
+-------------------------------------------------------
+Best plushy: (integer_= WD close false FWI elevation exec_dup boolean_or RH DC DC DC DC boolean_or DC integer_* integer_*)
+Best program: (integer_= WD false FWI elevation exec_dup (boolean_or RH DC DC DC DC boolean_or DC integer_* integer_*))
+Best total error: 1624
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 139
+-------------------------------------------------------
+Best plushy: (integer_= WD integer_= integer_- FWI close false RH RH DC elevation RH 2 nw boolean_or DC DC DC integer_* ISI)
+Best program: (integer_= WD integer_= integer_- FWI false RH RH DC elevation RH 2 nw boolean_or DC DC DC integer_* ISI)
+Best total error: 3109
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 140
+-------------------------------------------------------
+Best plushy: (integer_= WD 2 false elevation elevation exec_dup boolean_or DC DC DC boolean_or DC DC integer_* e BUI ISI)
+Best program: (integer_= WD 2 false elevation elevation exec_dup (boolean_or DC DC DC boolean_or DC DC integer_* e BUI ISI))
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 141
+-------------------------------------------------------
+Best plushy: (integer_= WD 2 false elevation elevation exec_dup boolean_or DC DC DC boolean_or DC DC integer_* e BUI ISI)
+Best program: (integer_= WD 2 false elevation elevation exec_dup (boolean_or DC DC DC boolean_or DC DC integer_* e BUI ISI))
+Best total error: 2483
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 142
+-------------------------------------------------------
+Best plushy: (integer_= WD close false FWI elevation exec_dup boolean_or RH DC DC DC 2 DC boolean_or DC integer_* integer_*)
+Best program: (integer_= WD false FWI elevation exec_dup (boolean_or RH DC DC DC 2 DC boolean_or DC integer_* integer_*))
+Best total error: 2763
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 143
+-------------------------------------------------------
+Best plushy: (integer_= WD 2 false FWI elevation exec_dup boolean_or RH DC DC DC 2 DC integer_* e integer_* ISI)
+Best program: (integer_= WD 2 false FWI elevation exec_dup (boolean_or RH DC DC DC 2 DC integer_* e integer_* ISI))
+Best total error: 5615
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 144
+-------------------------------------------------------
+Best plushy: (integer_= WD 2 false FWI elevation exec_dup boolean_or APCP DC RH DC DC DC integer_* e DC ISI e)
+Best program: (integer_= WD 2 false FWI elevation exec_dup (boolean_or APCP DC RH DC DC DC integer_* e DC ISI e))
+Best total error: 3893
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 145
+-------------------------------------------------------
+Best plushy: (integer_= WD 2 false FWI elevation exec_dup boolean_or APCP DC RH DC DC DC integer_* e DC ISI e)
+Best program: (integer_= WD 2 false FWI elevation exec_dup (boolean_or APCP DC RH DC DC DC integer_* e DC ISI e))
+Best total error: 2483
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 146
+-------------------------------------------------------
+Best plushy: (integer_= WD close false FWI elevation exec_dup boolean_or RH DC integer_* DC 2 2 boolean_or integer_* DC ISI e)
+Best program: (integer_= WD false FWI elevation exec_dup (boolean_or RH DC integer_* DC 2 2 boolean_or integer_* DC ISI e))
+Best total error: 2483
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 147
+-------------------------------------------------------
+Best plushy: (integer_= WD close false FWI elevation exec_dup boolean_or RH DC integer_* DC 2 2 boolean_or integer_* DC ISI e)
+Best program: (integer_= WD false FWI elevation exec_dup (boolean_or RH DC integer_* DC 2 2 boolean_or integer_* DC ISI e))
+Best total error: 2763
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 148
+-------------------------------------------------------
+Best plushy: (integer_= WD 2 false FWI elevation exec_dup boolean_or RH DC integer_* DC DC 2 boolean_or integer_* e ISI e)
+Best program: (integer_= WD 2 false FWI elevation exec_dup (boolean_or RH DC integer_* DC DC 2 boolean_or integer_* e ISI e))
+Best total error: 3893
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 149
+-------------------------------------------------------
+Best plushy: (integer_= WD 2 false FWI elevation exec_dup RH DC integer_* DC DC DC 2 boolean_or ISI e ISI e)
+Best program: (integer_= WD 2 false FWI elevation exec_dup (RH DC integer_* DC DC DC 2 boolean_or ISI e ISI e))
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 150
+-------------------------------------------------------
+Best plushy: (integer_= elevation 2 false FWI integer_+ exec_dup boolean_or RH DC 1 DC DC current-value DC RH e ISI DC DC integer_* ISI e)
+Best program: (integer_= elevation 2 false FWI integer_+ exec_dup (boolean_or RH DC 1 DC DC current-value DC RH e ISI DC DC integer_* ISI e))
+Best total error: 3097
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 151
+-------------------------------------------------------
+Best plushy: (integer_= elevation 2 false FWI integer_+ exec_dup boolean_or DC 1 DC DC current-value DC RH ISI DC DC integer_* ISI e)
+Best program: (integer_= elevation 2 false FWI integer_+ exec_dup (boolean_or DC 1 DC DC current-value DC RH ISI DC DC integer_* ISI e))
+Best total error: 2422
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 152
+-------------------------------------------------------
+Best plushy: (integer_= elevation 2 false false integer_+ elevation boolean_or RH 1 DC DC current-value DC 2 boolean_or ISI DC ISI ISI e)
+Best program: (integer_= elevation 2 false false integer_+ elevation boolean_or RH 1 DC DC current-value DC 2 boolean_or ISI DC ISI ISI e)
+Best total error: 1624
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 153
+-------------------------------------------------------
+Best plushy: (integer_= elevation 2 false false integer_+ elevation boolean_or RH DC DC DC DC DC DC RH ISI ISI DC DC e e)
+Best program: (integer_= elevation 2 false false integer_+ elevation boolean_or RH DC DC DC DC DC DC RH ISI ISI DC DC e e)
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 154
+-------------------------------------------------------
+Best plushy: (integer_= elevation 2 2 false integer_+ boolean_or boolean_or 1 DC 1 current-value DC current-value DC RH ISI DC e integer_* e)
+Best program: (integer_= elevation 2 2 false integer_+ boolean_or boolean_or 1 DC 1 current-value DC current-value DC RH ISI DC e integer_* e)
+Best total error: 2200
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 155
+-------------------------------------------------------
+Best plushy: (integer_= elevation 2 2 false integer_+ boolean_or 1 DC 1 current-value DC current-value DC RH ISI DC e integer_*)
+Best program: (integer_= elevation 2 2 false integer_+ boolean_or 1 DC 1 current-value DC current-value DC RH ISI DC e integer_*)
+Best total error: 2200
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 156
+-------------------------------------------------------
+Best plushy: (integer_= elevation 2 false false integer_+ FWI boolean_or RH DC DC DC DC current-value 2 RH ISI DC DC e boolean_and e)
+Best program: (integer_= elevation 2 false false integer_+ FWI boolean_or RH DC DC DC DC current-value 2 RH ISI DC DC e boolean_and e)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 157
+-------------------------------------------------------
+Best plushy: (integer_= elevation 2 false boolean_or false integer_+ elevation boolean_or RH DC DC DC DC current-value 2 RH ISI DC DC integer_* e e)
+Best program: (integer_= elevation 2 false boolean_or false integer_+ elevation boolean_or RH DC DC DC DC current-value 2 RH ISI DC DC integer_* e e)
+Best total error: 2483
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 158
+-------------------------------------------------------
+Best plushy: (integer_= integer_= 2 2 false false APCP elevation boolean_or RH RH DC DC DC current-value DC ISI DC DC RH ISI e DC exec_dup)
+Best program: (integer_= integer_= 2 2 false false APCP elevation boolean_or RH RH DC DC DC current-value DC ISI DC DC RH ISI e DC exec_dup ())
+Best total error: 2483
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 159
+-------------------------------------------------------
+Best plushy: (exec_dup elevation 2 false false integer_+ APCP RH FWI DC DC DC DC current-value 2 DC ISI DC e RH)
+Best program: (exec_dup (elevation 2 false false integer_+ APCP RH FWI DC DC DC DC current-value 2 DC ISI DC e RH))
+Best total error: 1641
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 160
+-------------------------------------------------------
+Best plushy: (exec_dup integer_= 2 2 false sw false APCP boolean_or FWI DC RH DC DC current-value 2 DC ISI DC true 2 RH ISI e DC exec_dup e)
+Best program: (exec_dup (integer_= 2 2 false sw false APCP boolean_or FWI DC RH DC DC current-value 2 DC ISI DC true 2 RH ISI e DC exec_dup (e)))
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 161
+-------------------------------------------------------
+Best plushy: (exec_dup integer_= 2 2 false sw false APCP boolean_or FWI DC RH DC DC current-value 2 DC ISI DC true 2 RH ISI DC e)
+Best program: (exec_dup (integer_= 2 2 false sw false APCP boolean_or FWI DC RH DC DC current-value 2 DC ISI DC true 2 RH ISI DC e))
+Best total error: 3897
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 162
+-------------------------------------------------------
+Best plushy: (exec_dup integer_= TMP 2 2 false sw false APCP boolean_or FWI DC RH DC DC current-value 2 DC ISI DC true 2 RH ISI e DC e)
+Best program: (exec_dup (integer_= TMP 2 2 false sw false APCP boolean_or FWI DC RH DC DC current-value 2 DC ISI DC true 2 RH ISI e DC e))
+Best total error: 2544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 163
+-------------------------------------------------------
+Best plushy: (exec_dup integer_= 2 2 false sw boolean_or FWI boolean_or FWI DC RH DC 2 DC 2 ISI DC true ISI DC exec_dup e)
+Best program: (exec_dup (integer_= 2 2 false sw boolean_or FWI boolean_or FWI DC RH DC 2 DC 2 ISI DC true ISI DC exec_dup (e)))
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 164
+-------------------------------------------------------
+Best plushy: (exec_dup integer_= 2 2 false sw boolean_or FWI boolean_or FWI DC RH DC 2 current-value 2 DC ISI true ISI DC DC exec_dup)
+Best program: (exec_dup (integer_= 2 2 false sw boolean_or FWI boolean_or FWI DC RH DC 2 current-value 2 DC ISI true ISI DC DC exec_dup ()))
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 165
+-------------------------------------------------------
+Best plushy: (exec_dup integer_= 2 2 false false boolean_or FWI boolean_or FWI DC RH DC 2 DC 2 DC ISI true RH DC DC exec_dup e)
+Best program: (exec_dup (integer_= 2 2 false false boolean_or FWI boolean_or FWI DC RH DC 2 DC 2 DC ISI true RH DC DC exec_dup (e)))
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 166
+-------------------------------------------------------
+Best plushy: (exec_dup integer_= 2 2 false false FWI boolean_or FWI DC RH DC 2 DC 2 DC ISI true RH DC exec_dup e)
+Best program: (exec_dup (integer_= 2 2 false false FWI boolean_or FWI DC RH DC 2 DC 2 DC ISI true RH DC exec_dup (e)))
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 167
+-------------------------------------------------------
+Best plushy: (exec_dup integer_= 2 2 false sw boolean_or boolean_or FWI boolean_or FWI DC RH DC 2 current-value 2 e DC ISI true ISI DC exec_dup)
+Best program: (exec_dup (integer_= 2 2 false sw boolean_or boolean_or FWI boolean_or FWI DC RH DC 2 current-value 2 e DC ISI true ISI DC exec_dup ()))
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 168
+-------------------------------------------------------
+Best plushy: (exec_dup integer_= 2 2 false sw boolean_or boolean_or FWI boolean_or FWI DC RH DC 2 current-value 2 e DC ISI true ISI DC exec_dup)
+Best program: (exec_dup (integer_= 2 2 false sw boolean_or boolean_or FWI boolean_or FWI DC RH DC 2 current-value 2 e DC ISI true ISI DC exec_dup ()))
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 169
+-------------------------------------------------------
+Best plushy: (exec_dup integer_= 2 2 false sw boolean_or FWI boolean_or boolean_or FWI RH DC DC current-value 2 2 e DC RH true ISI exec_dup exec_dup)
+Best program: (exec_dup (integer_= 2 2 false sw boolean_or FWI boolean_or boolean_or FWI RH DC DC current-value 2 2 e DC RH true ISI exec_dup (exec_dup ())))
+Best total error: 3546
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 170
+-------------------------------------------------------
+Best plushy: (integer_= integer_= 2 2 false sw boolean_or FWI boolean_or boolean_or FWI DC RH DC 2 current-value 2 e DC w DC true ISI)
+Best program: (integer_= integer_= 2 2 false sw boolean_or FWI boolean_or boolean_or FWI DC RH DC 2 current-value 2 e DC w DC true ISI)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 171
+-------------------------------------------------------
+Best plushy: (integer_= integer_= 2 2 sw sw boolean_or FWI boolean_or DC FWI DC RH DC 2 e 2 e DC w DC ISI ISI)
+Best program: (integer_= integer_= 2 2 sw sw boolean_or FWI boolean_or DC FWI DC RH DC 2 e 2 e DC w DC ISI ISI)
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 172
+-------------------------------------------------------
+Best plushy: (exec_dup integer_= 2 2 false sw boolean_or boolean_or FWI boolean_or FWI DC RH DC 2 current-value 2 e DC w ISI ISI DC exec_dup exec_dup)
+Best program: (exec_dup (integer_= 2 2 false sw boolean_or boolean_or FWI boolean_or FWI DC RH DC 2 current-value 2 e DC w ISI ISI DC exec_dup (exec_dup ())))
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 173
+-------------------------------------------------------
+Best plushy: (integer_= integer_= 2 2 false sw boolean_or boolean_or FWI boolean_or FWI DC RH DC 2 current-value 2 e DC w ISI ISI ISI exec_dup)
+Best program: (integer_= integer_= 2 2 false sw boolean_or boolean_or FWI boolean_or FWI DC RH DC 2 current-value 2 e DC w ISI ISI ISI exec_dup ())
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 174
+-------------------------------------------------------
+Best plushy: (integer_= se integer_= 2 2 boolean_or WS sw boolean_or boolean_or FWI RH FWI DC RH DC 2 ISI 2 e exec_dup w ISI)
+Best program: (integer_= se integer_= 2 2 boolean_or WS sw boolean_or boolean_or FWI RH FWI DC RH DC 2 ISI 2 e exec_dup (w ISI))
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 175
+-------------------------------------------------------
+Best plushy: (exec_dup se integer_= 2 2 boolean_or WS sw boolean_or FWI FWI RH 2 DC RH DC 2 ISI ISI e exec_dup w)
+Best program: (exec_dup (se integer_= 2 2 boolean_or WS sw boolean_or FWI FWI RH 2 DC RH DC 2 ISI ISI e exec_dup (w)))
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 176
+-------------------------------------------------------
+Best plushy: (exec_dup se integer_= 2 2 false boolean_or WS sw boolean_or FWI FWI RH 2 DC RH DC 2 ISI ISI e exec_dup w)
+Best program: (exec_dup (se integer_= 2 2 false boolean_or WS sw boolean_or FWI FWI RH 2 DC RH DC 2 ISI ISI e exec_dup (w)))
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 177
+-------------------------------------------------------
+Best plushy: (integer_= integer_= 2 2 false sw boolean_or boolean_or FWI boolean_or FWI DC RH DC 2 current-value 2 e DC w ISI ISI exec_dup)
+Best program: (integer_= integer_= 2 2 false sw boolean_or boolean_or FWI boolean_or FWI DC RH DC 2 current-value 2 e DC w ISI ISI exec_dup ())
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 178
+-------------------------------------------------------
+Best plushy: (integer_= integer_= 2 2 false sw boolean_or boolean_or FWI boolean_or FWI DC RH DC 2 current-value 2 e DC w ISI ISI ISI exec_dup)
+Best program: (integer_= integer_= 2 2 false sw boolean_or boolean_or FWI boolean_or FWI DC RH DC 2 current-value 2 e DC w ISI ISI ISI exec_dup ())
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 179
+-------------------------------------------------------
+Best plushy: (exec_dup se integer_= 2 false sw boolean_or WS time-step boolean_or FWI FWI boolean_or DC RH current-value DC e DC DC 2 ISI ISI exec_dup exec_dup w n)
+Best program: (exec_dup (se integer_= 2 false sw boolean_or WS time-step boolean_or FWI FWI boolean_or DC RH current-value DC e DC DC 2 ISI ISI exec_dup (exec_dup (w n))))
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 180
+-------------------------------------------------------
+Best plushy: (integer_= se 2 2 2 false boolean_or boolean_or time-step sw boolean_or DC boolean_or FWI RH current-value 2 DC w 2 ISI ISI e exec_dup)
+Best program: (integer_= se 2 2 2 false boolean_or boolean_or time-step sw boolean_or DC boolean_or FWI RH current-value 2 DC w 2 ISI ISI e exec_dup ())
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 181
+-------------------------------------------------------
+Best plushy: (integer_= se 2 2 false false boolean_or boolean_or time-step boolean_or boolean_or DC boolean_or FWI current-value 2 2 DC DC e DC ISI w exec_dup)
+Best program: (integer_= se 2 2 false false boolean_or boolean_or time-step boolean_or boolean_or DC boolean_or FWI current-value 2 2 DC DC e DC ISI w exec_dup ())
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 182
+-------------------------------------------------------
+Best plushy: (integer_= se 2 2 2 sw boolean_or boolean_or time-step integer_% boolean_or boolean_or DC boolean_or FWI current-value 2 2 DC DC w 0 ISI exec_dup)
+Best program: (integer_= se 2 2 2 sw boolean_or boolean_or time-step integer_% boolean_or boolean_or DC boolean_or FWI current-value 2 2 DC DC w 0 ISI exec_dup ())
+Best total error: 1643
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 183
+-------------------------------------------------------
+Best plushy: (integer_= se 2 2 2 sw boolean_or boolean_or time-step boolean_or boolean_or DC DC FWI FWI current-value 2 2 DC DC w 0 exec_dup w)
+Best program: (integer_= se 2 2 2 sw boolean_or boolean_or time-step boolean_or boolean_or DC DC FWI FWI current-value 2 2 DC DC w 0 exec_dup (w))
+Best total error: 2544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 184
+-------------------------------------------------------
+Best plushy: (integer_= se 2 2 2 sw boolean_or boolean_or time-step integer_% boolean_or 1 DC boolean_or FWI current-value 2 2 2 DC w w ISI ISI exec_dup w)
+Best program: (integer_= se 2 2 2 sw boolean_or boolean_or time-step integer_% boolean_or 1 DC boolean_or FWI current-value 2 2 2 DC w w ISI ISI exec_dup (w))
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 185
+-------------------------------------------------------
+Best plushy: (se 2 2 2 sw boolean_or boolean_or time-step boolean_or 1 DC boolean_or FWI current-value 2 2 DC w w ISI exec_dup w)
+Best program: (se 2 2 2 sw boolean_or boolean_or time-step boolean_or 1 DC boolean_or FWI current-value 2 2 DC w w ISI exec_dup (w))
+Best total error: 3546
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 186
+-------------------------------------------------------
+Best plushy: (integer_= se 2 2 2 sw boolean_or boolean_or time-step boolean_or DC DC FWI FWI current-value 2 2 DC DC w 0 exec_dup w)
+Best program: (integer_= se 2 2 2 sw boolean_or boolean_or time-step boolean_or DC DC FWI FWI current-value 2 2 DC DC w 0 exec_dup (w))
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 187
+-------------------------------------------------------
+Best plushy: (integer_= se 2 2 2 sw FFMC boolean_or time-step boolean_or integer_% DC boolean_or FWI current-value current-value 2 2 DC DC w w w)
+Best program: (integer_= se 2 2 2 sw FFMC boolean_or time-step boolean_or integer_% DC boolean_or FWI current-value current-value 2 2 DC DC w w w)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 188
+-------------------------------------------------------
+Best plushy: (integer_= se 2 2 2 sw FFMC boolean_or boolean_or DC integer_% DC FWI FWI current-value current-value DC 2 w DC w w ISI w)
+Best program: (integer_= se 2 2 2 sw FFMC boolean_or boolean_or DC integer_% DC FWI FWI current-value current-value DC 2 w DC w w ISI w)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 189
+-------------------------------------------------------
+Best plushy: (integer_= se 2 2 2 sw boolean_or time-step boolean_or integer_% boolean_or boolean_or DC current-value current-value 2 2 DC DC w w exec_dup w)
+Best program: (integer_= se 2 2 2 sw boolean_or time-step boolean_or integer_% boolean_or boolean_or DC current-value current-value 2 2 DC DC w w exec_dup (w))
+Best total error: 3546
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 190
+-------------------------------------------------------
+Best plushy: (integer_= se 2 2 2 sw boolean_or boolean_or time-step DC integer_% DC DC current-value current-value current-value 2 2 w w w exec_dup ISI)
+Best program: (integer_= se 2 2 2 sw boolean_or boolean_or time-step DC integer_% DC DC current-value current-value current-value 2 2 w w w exec_dup (ISI))
+Best total error: 3897
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 191
+-------------------------------------------------------
+Best plushy: (integer_= se 2 2 2 sw FFMC DC boolean_or DC integer_% FWI FWI current-value current-value 2 DC 2 w w ISI w w)
+Best program: (integer_= se 2 2 2 sw FFMC DC boolean_or DC integer_% FWI FWI current-value current-value 2 DC 2 w w ISI w w)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 192
+-------------------------------------------------------
+Best plushy: (integer_= se 2 2 2 sw FFMC DC boolean_or DC integer_% FWI FWI current-value current-value 2 DC 2 w ISI w w)
+Best program: (integer_= se 2 2 2 sw FFMC DC boolean_or DC integer_% FWI FWI current-value current-value 2 DC 2 w ISI w w)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 193
+-------------------------------------------------------
+Best plushy: (integer_= integer_+ 2 2 2 sw sw boolean_or boolean_or time-step DC integer_% sw DC DC current-value current-value 2 w 2 w w w exec_dup ISI)
+Best program: (integer_= integer_+ 2 2 2 sw sw boolean_or boolean_or time-step DC integer_% sw DC DC current-value current-value 2 w 2 w w w exec_dup (ISI))
+Best total error: 3897
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 194
+-------------------------------------------------------
+Best plushy: (integer_= se se 2 2 sw FFMC boolean_or boolean_or DC integer_% integer_% sw current-value current-value 2 DC 2 w 2 w w w ISI)
+Best program: (integer_= se se 2 2 sw FFMC boolean_or boolean_or DC integer_% integer_% sw current-value current-value 2 DC 2 w 2 w w w ISI)
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 195
+-------------------------------------------------------
+Best plushy: (integer_= integer_+ 2 2 2 2 boolean_or time-step DC sw DC DC DC 2 current-value current-value current-value w 2 w w w ISI 0)
+Best program: (integer_= integer_+ 2 2 2 2 boolean_or time-step DC sw DC DC DC 2 current-value current-value current-value w 2 w w w ISI 0)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 196
+-------------------------------------------------------
+Best plushy: (integer_= se 2 2 2 2 FFMC DC boolean_or DC DC integer_% FWI DC current-value 2 current-value DC w 2 w ISI w exec_dup boolean_not 0)
+Best program: (integer_= se 2 2 2 2 FFMC DC boolean_or DC DC integer_% FWI DC current-value 2 current-value DC w 2 w ISI w exec_dup (boolean_not 0))
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 197
+-------------------------------------------------------
+Best plushy: (integer_= se 2 2 2 2 FFMC FFMC DC DC DC integer_% exec_dup integer_% current-value ISI current-value DC 2 current-value DC w w exec_dup ISI WS w boolean_not 0)
+Best program: (integer_= se 2 2 2 2 FFMC FFMC DC DC DC integer_% exec_dup (integer_% current-value ISI current-value DC 2 current-value DC w w exec_dup (ISI WS w boolean_not 0)))
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 198
+-------------------------------------------------------
+Best plushy: (integer_= integer_+ 2 1 2 2 sw boolean_or time-step DC sw DC DC current-value 2 w 2 w w w exec_dup ISI ISI)
+Best program: (integer_= integer_+ 2 1 2 2 sw boolean_or time-step DC sw DC DC current-value 2 w 2 w w w exec_dup (ISI ISI))
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 199
+-------------------------------------------------------
+Best plushy: (0 integer_+ 2 1 2 2 FFMC sw DC sw DC DC current-value DC 2 2 DC w w w ISI w exec_dup ISI)
+Best program: (0 integer_+ 2 1 2 2 FFMC sw DC sw DC DC current-value DC 2 2 DC w w w ISI w exec_dup (ISI))
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 200
+-------------------------------------------------------
+Best plushy: (integer_= integer_+ 2 1 2 2 sw boolean_or time-step DC sw DC DC current-value 2 w 2 w w w exec_dup ISI ISI)
+Best program: (integer_= integer_+ 2 1 2 2 sw boolean_or time-step DC sw DC DC current-value 2 w 2 w w w exec_dup (ISI ISI))
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 201
+-------------------------------------------------------
+Best plushy: (nw integer_= se 2 2 2 2 sw FFMC time-step DC time-step integer_+ integer_% integer_% DC w DC current-value FFMC w w w w ISI ISI 0 exec_dup 0)
+Best program: (nw integer_= se 2 2 2 2 sw FFMC time-step DC time-step integer_+ integer_% integer_% DC w DC current-value FFMC w w w w ISI ISI 0 exec_dup (0))
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 202
+-------------------------------------------------------
+Best plushy: (nw integer_= se 2 2 2 2 sw FFMC time-step DC time-step integer_+ integer_% integer_% DC w DC current-value FFMC w w w w ISI ISI 0 exec_dup 0)
+Best program: (nw integer_= se 2 2 2 2 sw FFMC time-step DC time-step integer_+ integer_% integer_% DC w DC current-value FFMC w w w w ISI ISI 0 exec_dup (0))
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 203
+-------------------------------------------------------
+Best plushy: (integer_= se 2 2 2 2 2 sw time-step time-step DC DC integer_% DC integer_% DC current-value FFMC current-value ISI w w w w ISI ISI 0 exec_dup)
+Best program: (integer_= se 2 2 2 2 2 sw time-step time-step DC DC integer_% DC integer_% DC current-value FFMC current-value ISI w w w w ISI ISI 0 exec_dup ())
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 204
+-------------------------------------------------------
+Best plushy: (nw integer_= se 1 2 2 sw boolean_or FFMC DC sw DC integer_% integer_% 2 w 2 current-value FFMC w exec_dup w ISI ISI)
+Best program: (nw integer_= se 1 2 2 sw boolean_or FFMC DC sw DC integer_% integer_% 2 w 2 current-value FFMC w exec_dup (w ISI ISI))
+Best total error: 3546
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 205
+-------------------------------------------------------
+Best plushy: (integer_= se 2 2 2 n 2 FFMC sw DC sw DC integer_% DC 2 w 2 current-value boolean_or FFMC w w w w ISI)
+Best program: (integer_= se 2 2 2 n 2 FFMC sw DC sw DC integer_% DC 2 w 2 current-value boolean_or FFMC w w w w ISI)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 206
+-------------------------------------------------------
+Best plushy: (nw se 2 2 2 2 sw FFMC time-step DC sw DC integer_% integer_% 2 w DC w FFMC FFMC w w w WD w ISI 0)
+Best program: (nw se 2 2 2 2 sw FFMC time-step DC sw DC integer_% integer_% 2 w DC w FFMC FFMC w w w WD w ISI 0)
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 207
+-------------------------------------------------------
+Best plushy: (integer_= se 2 1 2 2 sw FFMC time-step DC DC integer_% integer_% integer_% 2 w DC w FFMC FFMC w 0 w w 0 ISI 0)
+Best program: (integer_= se 2 1 2 2 sw FFMC time-step DC DC integer_% integer_% integer_% 2 w DC w FFMC FFMC w 0 w w 0 ISI 0)
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 208
+-------------------------------------------------------
+Best plushy: (integer_= se se 1 2 2 sw FFMC time-step DC DC integer_% DC integer_% 2 w DC w w BUI w 0 w w exec_dup)
+Best program: (integer_= se se 1 2 2 sw FFMC time-step DC DC integer_% DC integer_% 2 w DC w w BUI w 0 w w exec_dup ())
+Best total error: 3897
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 209
+-------------------------------------------------------
+Best plushy: (integer_= integer_+ 2 1 2 2 sw 2 time-step DC sw DC DC DC w 2 DC current-value w w BUI 0 ISI 0 0 exec_dup)
+Best program: (integer_= integer_+ 2 1 2 2 sw 2 time-step DC sw DC DC DC w 2 DC current-value w w BUI 0 ISI 0 0 exec_dup ())
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 210
+-------------------------------------------------------
+Best plushy: (integer_= integer_+ se 1 2 2 2 sw time-step FFMC DC DC integer_% w 2 w w current-value w FFMC BUI w ISI w 0 exec_dup)
+Best program: (integer_= integer_+ se 1 2 2 2 sw time-step FFMC DC DC integer_% w 2 w w current-value w FFMC BUI w ISI w 0 exec_dup ())
+Best total error: 3546
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 211
+-------------------------------------------------------
+Best plushy: (integer_= integer_+ 2 1 2 2 sw 2 time-step DC sw DC DC DC w 2 DC current-value w w BUI 0 ISI 0 0 exec_dup)
+Best program: (integer_= integer_+ 2 1 2 2 sw 2 time-step DC sw DC DC DC w 2 DC current-value w w BUI 0 ISI 0 0 exec_dup ())
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 212
+-------------------------------------------------------
+Best plushy: (integer_= se se WD 1 2 2 FFMC FFMC FFMC DC integer_% integer_% integer_% 2 w current-value w w BUI w w 0 0)
+Best program: (integer_= se se WD 1 2 2 FFMC FFMC FFMC DC integer_% integer_% integer_% 2 w current-value w w BUI w w 0 0)
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 213
+-------------------------------------------------------
+Best plushy: (integer_= integer_+ elevation 2 1 2 2 2 2 time-step FFMC sw integer_% DC DC w w DC current-value FFMC num-burning-neigh w w 0 ISI 0 0 exec_dup)
+Best program: (integer_= integer_+ elevation 2 1 2 2 2 2 time-step FFMC sw integer_% DC DC w w DC current-value FFMC num-burning-neigh w w 0 ISI 0 0 exec_dup ())
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 214
+-------------------------------------------------------
+Best plushy: (integer_= se 2 WD 1 2 2 sw FFMC time-step DC integer_% integer_% integer_% 2 w w FFMC w 0 w w ISI 0)
+Best program: (integer_= se 2 WD 1 2 2 sw FFMC time-step DC integer_% integer_% integer_% 2 w w FFMC w 0 w w ISI 0)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 215
+-------------------------------------------------------
+Best plushy: (integer_= se 2 WD 1 2 2 sw FFMC time-step DC integer_% integer_% integer_% 2 w w FFMC w 0 w w ISI 0)
+Best program: (integer_= se 2 WD 1 2 2 sw FFMC time-step DC integer_% integer_% integer_% 2 w w FFMC w 0 w w ISI 0)
+Best total error: 3302
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 216
+-------------------------------------------------------
+Best plushy: (integer_= se 2 WD 2 2 2 sw FFMC time-step DC integer_% DC integer_% 2 w w FFMC w w w w w ISI 0)
+Best program: (integer_= se 2 WD 2 2 2 sw FFMC time-step DC integer_% DC integer_% 2 w w FFMC w w w w w ISI 0)
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 217
+-------------------------------------------------------
+Best plushy: (integer_= integer_+ 2 WD 1 2 2 2 FFMC FFMC DC sw integer_% integer_% w FFMC DC current-value FFMC w 0 0 0)
+Best program: (integer_= integer_+ 2 WD 1 2 2 2 FFMC FFMC DC sw integer_% integer_% w FFMC DC current-value FFMC w 0 0 0)
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 218
+-------------------------------------------------------
+Best plushy: (integer_= integer_+ 2 WD 1 2 2 2 FFMC FFMC DC sw integer_% integer_% w FFMC DC current-value FFMC w 0 0 0 DMC)
+Best program: (integer_= integer_+ 2 WD 1 2 2 2 FFMC FFMC DC sw integer_% integer_% w FFMC DC current-value FFMC w 0 0 0 DMC)
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 219
+-------------------------------------------------------
+Best plushy: (integer_= se 2 WD 2 2 2 sw FFMC time-step DC integer_% integer_% integer_% 2 w w w w w 0 w w w 0)
+Best program: (integer_= se 2 WD 2 2 2 sw FFMC time-step DC integer_% integer_% integer_% 2 w w w w w 0 w w w 0)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 220
+-------------------------------------------------------
+Best plushy: (integer_= integer_+ 2 WD 1 2 2 sw 2 FFMC DC sw sw integer_% integer_% w DC FFMC FFMC current-value FFMC w w DMC 0 0)
+Best program: (integer_= integer_+ 2 WD 1 2 2 sw 2 FFMC DC sw sw integer_% integer_% w DC FFMC FFMC current-value FFMC w w DMC 0 0)
+Best total error: 3897
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 221
+-------------------------------------------------------
+Best plushy: (integer_= se 2 WD 2 2 2 sw FFMC time-step elevation DC integer_% integer_% integer_% 2 w w w w w 0 w w w 0)
+Best program: (integer_= se 2 WD 2 2 2 sw FFMC time-step elevation DC integer_% integer_% integer_% 2 w w w w w 0 w w w 0)
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 222
+-------------------------------------------------------
+Best plushy: (integer_= integer_+ 2 WD 2 2 sw 2 FFMC DC sw sw integer_% integer_% w DC RH FFMC FFMC current-value FFMC w w DMC 0 0)
+Best program: (integer_= integer_+ 2 WD 2 2 sw 2 FFMC DC sw sw integer_% integer_% w DC RH FFMC FFMC current-value FFMC w w DMC 0 0)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 223
+-------------------------------------------------------
+Best plushy: (integer_= integer_+ 2 WD 2 2 sw sw FFMC DC sw sw sw integer_% 2 w RH FFMC FFMC current-value FFMC w w DMC 0)
+Best program: (integer_= integer_+ 2 WD 2 2 sw sw FFMC DC sw sw sw integer_% 2 w RH FFMC FFMC current-value FFMC w w DMC 0)
+Best total error: 3546
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 224
+-------------------------------------------------------
+Best plushy: (integer_= se 2 WD 2 2 2 sw FFMC time-step DC integer_% integer_% integer_% 2 w w w w w 0 w w w 0)
+Best program: (integer_= se 2 WD 2 2 2 sw FFMC time-step DC integer_% integer_% integer_% 2 w w w w w 0 w w w 0)
+Best total error: 5614
+Fires evaluated:  (g2)
+

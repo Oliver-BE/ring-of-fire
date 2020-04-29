@@ -31,3 +31,27 @@ Best program: (FFMC integer_* WD integer_= nw BUI FWI WD integer_= se integer_% 
 Best total error: 2872
 Fires evaluated:  (m2 m1)
 
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (2 ne integer_+ integer_= nw DMC FFMC 0 time-step sw boolean_= current-value n DMC exec_if sw)
+Best program: (2 ne integer_+ integer_= nw DMC FFMC 0 time-step sw boolean_= current-value n DMC exec_if (sw) ())
+Best total error: 4175
+Fires evaluated:  (k1 a2)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (FFMC integer_* integer_- BUI nw DMC FFMC se time-step time-step boolean_= current-value n DMC exec_if BUI close)
+Best program: (FFMC integer_* integer_- BUI nw DMC FFMC se time-step time-step boolean_= current-value n DMC exec_if (BUI) ())
+Best total error: 3903
+Fires evaluated:  (m2 r1)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (FFMC integer_* integer_- integer_= 2 TMP FFMC se time-step time-step WD current-value n DMC BUI)
+Best program: (FFMC integer_* integer_- integer_= 2 TMP FFMC se time-step time-step WD current-value n DMC BUI)
+Best total error: 4815
+Fires evaluated:  (r1 g2)
+

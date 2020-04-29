@@ -63,3 +63,51 @@ Best program: (current-value APCP WS WS 2 1 true exec_dup ())
 Best total error: 1703
 Fires evaluated:  (r1)
 
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (current-value APCP time-step WS 1 exec_if exec_dup close)
+Best program: (current-value APCP time-step WS 1 exec_if (exec_dup ()) ())
+Best total error: 2200
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (current-value se APCP WS BUI WS 1 1 true exec_dup)
+Best program: (current-value se APCP WS BUI WS 1 1 true exec_dup ())
+Best total error: 1703
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (current-value APCP time-step WS 1 exec_if true true close)
+Best program: (current-value APCP time-step WS 1 exec_if (true true) ())
+Best total error: 1332
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (current-value APCP time-step WS 1 exec_if true true close)
+Best program: (current-value APCP time-step WS 1 exec_if (true true) ())
+Best total error: 3112
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (current-value APCP time-step WS 1 exec_if true true close)
+Best program: (current-value APCP time-step WS 1 exec_if (true true) ())
+Best total error: 672
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (current-value APCP time-step WS 1 exec_if true true close)
+Best program: (current-value APCP time-step WS 1 exec_if (true true) ())
+Best total error: 2843
+Fires evaluated:  (k1)
+

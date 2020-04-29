@@ -15,3 +15,19 @@ Best program: (sw se integer_- integer_- integer_% integer_% ne se current-value
 Best total error: 22251
 Fires evaluated:  (a2 m2 g2 r1 k2 k1 m1)
 
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (sw se integer_- integer_- integer_% integer_% integer_% ne se current-value WD WD FFMC integer_% 2 1 RH)
+Best program: (sw se integer_- integer_- integer_% integer_% integer_% ne se current-value WD WD FFMC integer_% 2 1 RH)
+Best total error: 12845
+Fires evaluated:  (g2 r1 m2 k1 a2 k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (sw se integer_- integer_- integer_% integer_% integer_% ne se current-value WD WD FFMC integer_% 2 1 RH)
+Best program: (sw se integer_- integer_- integer_% integer_% integer_% ne se current-value WD WD FFMC integer_% 2 1 RH)
+Best total error: 12845
+Fires evaluated:  (m2 g2 m1 k2 a2 k1 r1)
+

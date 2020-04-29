@@ -7,3 +7,11 @@ Best program: (num-burning-neigh ne n integer_=)
 Best total error: 3560
 Fires evaluated:  (g2 m1)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (WS 1 se integer_- ne integer_% DC integer_% time-step close WS APCP 1 FWI RH integer_% exec_dup w WS se e ne s current-value boolean_or DMC FWI BUI)
+Best program: (WS 1 se integer_- ne integer_% DC integer_% time-step WS APCP 1 FWI RH integer_% exec_dup (w WS se e ne s current-value boolean_or DMC FWI BUI))
+Best total error: 3091
+Fires evaluated:  (m2 k2)
+

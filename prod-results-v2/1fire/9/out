@@ -71,3 +71,171 @@ Best program: (TMP)
 Best total error: 1547
 Fires evaluated:  (m1)
 
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (close APCP TMP integer_+ sw)
+Best program: (APCP TMP integer_+ sw)
+Best total error: 3546
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (close APCP TMP integer_+ sw)
+Best program: (APCP TMP integer_+ sw)
+Best total error: 5615
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (close TMP sw)
+Best program: (TMP sw)
+Best total error: 3546
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (close TMP sw)
+Best program: (TMP sw)
+Best total error: 2544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (close TMP)
+Best program: (TMP)
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (close TMP)
+Best program: (TMP)
+Best total error: 2835
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (close TMP sw)
+Best program: (TMP sw)
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (close TMP sw)
+Best program: (TMP sw)
+Best total error: 5615
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (RH close ne boolean_or integer_+)
+Best program: (RH ne boolean_or integer_+)
+Best total error: 3044
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (RH close ne boolean_= boolean_or integer_+)
+Best program: (RH ne boolean_= boolean_or integer_+)
+Best total error: 5613
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (RH close ne boolean_or integer_+)
+Best program: (RH ne boolean_or integer_+)
+Best total error: 3303
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 20
+-------------------------------------------------------
+Best plushy: (RH close ne boolean_or integer_+)
+Best program: (RH ne boolean_or integer_+)
+Best total error: 3044
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 21
+-------------------------------------------------------
+Best plushy: (RH close ne boolean_or integer_+)
+Best program: (RH ne boolean_or integer_+)
+Best total error: 2797
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 22
+-------------------------------------------------------
+Best plushy: (close APCP boolean_or integer_+)
+Best program: (APCP boolean_or integer_+)
+Best total error: 5620
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 23
+-------------------------------------------------------
+Best plushy: (close APCP integer_* ne WD integer_+)
+Best program: (APCP integer_* ne WD integer_+)
+Best total error: 5507
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 24
+-------------------------------------------------------
+Best plushy: (close 1 close boolean_or integer_+)
+Best program: (1 boolean_or integer_+)
+Best total error: 1332
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 25
+-------------------------------------------------------
+Best plushy: (close APCP integer_* ne WD integer_+)
+Best program: (APCP integer_* ne WD integer_+)
+Best total error: 3535
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 26
+-------------------------------------------------------
+Best plushy: (close APCP integer_* ne)
+Best program: (APCP integer_* ne)
+Best total error: 3309
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 27
+-------------------------------------------------------
+Best plushy: (close APCP boolean_or ne integer_+)
+Best program: (APCP boolean_or ne integer_+)
+Best total error: 3906
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 28
+-------------------------------------------------------
+Best plushy: (close APCP ne DMC)
+Best program: (APCP ne DMC)
+Best total error: 3321
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 29
+-------------------------------------------------------
+Best plushy: (close close integer_* DMC)
+Best program: (integer_* DMC)
+Best total error: 1763
+Fires evaluated:  (r1)
+

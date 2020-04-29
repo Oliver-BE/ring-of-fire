@@ -23,3 +23,11 @@ Best program: (ne boolean_and integer_= WD)
 Best total error: 17345
 Fires evaluated:  (a2 m2 r1 g2 k1)
 
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (RH se integer_= WD BUI e TMP s WD 1)
+Best program: (RH se integer_= WD BUI e TMP s WD 1)
+Best total error: 8670
+Fires evaluated:  (g2 r1 m1 m2 k2)
+

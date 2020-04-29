@@ -23,3 +23,51 @@ Best program: (num-burning-neigh false true integer_- elevation num-burning-neig
 Best total error: 14223
 Fires evaluated:  (m1 a2 k1 k2 m2)
 
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (num-burning-neigh false true integer_- elevation false ne WS boolean_not WD integer_* integer_* integer_* boolean_= exec_if 2 integer_= boolean_and boolean_not RH BUI RH time-step BUI RH exec_dup integer_+ WD sw ISI integer_*)
+Best program: (num-burning-neigh false true integer_- elevation false ne WS boolean_not WD integer_* integer_* integer_* boolean_= exec_if (2 integer_= boolean_and boolean_not RH BUI RH time-step BUI RH exec_dup (integer_+ WD sw ISI integer_*)) ())
+Best total error: 10984
+Fires evaluated:  (k1 a2 m2 g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (num-burning-neigh false true integer_- elevation 2 num-burning-neigh 2 WS true 2 integer_* exec_dup integer_% boolean_= TMP RH boolean_and boolean_not RH BUI time-step RH elevation exec_dup integer_+ WD FFMC integer_* integer_+)
+Best program: (num-burning-neigh false true integer_- elevation 2 num-burning-neigh 2 WS true 2 integer_* exec_dup (integer_% boolean_= TMP RH boolean_and boolean_not RH BUI time-step RH elevation exec_dup (integer_+ WD FFMC integer_* integer_+)))
+Best total error: 13607
+Fires evaluated:  (m1 r1 k1 m2 a2)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (time-step time-step num-burning-neigh integer_+ num-burning-neigh integer_% DMC DMC DMC ISI exec_dup ne true WD DC ISI se ISI ne RH ne)
+Best program: (time-step time-step num-burning-neigh integer_+ num-burning-neigh integer_% DMC DMC DMC ISI exec_dup (ne true WD DC ISI se ISI ne RH ne))
+Best total error: 17577
+Fires evaluated:  (g2 k2 k1 a2 r1)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (num-burning-neigh false n elevation 2 num-burning-neigh 2 time-step ISI 2 close exec_dup time-step close TMP RH RH boolean_not RH BUI FFMC exec_dup true ne integer_+ WD integer_*)
+Best program: (num-burning-neigh false n elevation 2 num-burning-neigh 2 time-step ISI 2 exec_dup (time-step) TMP RH RH boolean_not RH BUI FFMC exec_dup (true ne integer_+ WD integer_*))
+Best total error: 17373
+Fires evaluated:  (g2 m2 k1 r1 a2)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (num-burning-neigh false n elevation elevation 2 num-burning-neigh 2 time-step ISI 2 close exec_dup time-step TMP RH boolean_not RH BUI exec_dup true ne WD)
+Best program: (num-burning-neigh false n elevation elevation 2 num-burning-neigh 2 time-step ISI 2 exec_dup (time-step TMP RH boolean_not RH BUI exec_dup (true ne WD)))
+Best total error: 15914
+Fires evaluated:  (m1 k2 r1 g2 a2)
+
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (true false n elevation elevation w 2 2 true ISI 2 close exec_dup close ISI boolean_not RH ISI time-step FFMC exec_dup true ne integer_+ integer_*)
+Best program: (true false n elevation elevation w 2 2 true ISI 2 exec_dup () ISI boolean_not RH ISI time-step FFMC exec_dup (true ne integer_+ integer_*))
+Best total error: 16535
+Fires evaluated:  (k2 g2 k1 m1 m2)
+

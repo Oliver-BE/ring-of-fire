@@ -158,3 +158,18 @@
 	11617  -  MemoryUsage of job (MB)
 	11895524  -  ResidentSetSize of job (KB)
 ...
+006 (726.002.000) 04/29 12:13:56 Image size of job updated: 39137444
+	11617  -  MemoryUsage of job (MB)
+	11895524  -  ResidentSetSize of job (KB)
+...
+004 (726.002.000) 04/29 12:13:57 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 1 22:15:26, Sys 0 00:00:39  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     2.00        1         1 
+	   Disk (KB)            :     1           1    864224 
+	   Memory (MB)          : 11617           1      8075 
+...
