@@ -272,13 +272,14 @@
 (defn get-current-weather-var
   "Returns the value of a specified weather variable for a specified fire at a specified time."
   [desired-var fire time]
-  (read-string ((keyword (name desired-var)) (nth ((keyword (name fire)) weather-master) (Math/floor (/ time 60))))))
+  (int (read-string ((keyword (name desired-var)) (nth ((keyword (name fire)) weather-master) (Math/floor (/ time 60)))))))
 #_(get-current-weather-var "FFMC" "a1" 54)
+#_(time (nth ((keyword (name "m1")) weather-master) (Math/floor (/ 80 60))))
 
 (defn get-elevation-at-cell
   "Returns the elevation of a specified cell in a specified fire"
   [cell-id fire]
-  (nth ((keyword (name fire)) elevation-master-flattened) cell-id))
+  (int (nth ((keyword (name fire)) elevation-master-flattened) cell-id)))
 #_(get-elevation-at-cell 3131 "m1")
 
 ;;; we aren't using this
@@ -347,8 +348,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; update cell function ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-(defn update-cell
+(defn update-cell-novec
   "Update cell to next state by interpreting push program"
   [cell-id fire-name time current-grid program argmap]
   ;(prn "cell-id:" cell-id)
@@ -358,19 +358,89 @@
         answer (peek-stack
                  (interpret-program
                    program
-                   (assoc empty-push-state :input {:elevation         (int (get-elevation-at-cell cell-id fire-name))
+                   (assoc empty-push-state :input {:elevation         (get-elevation-at-cell cell-id fire-name)
                                                    ;:slope                 ;(int (get-slope-at-cell cell-id fire-name))
-                                                   :FWI               (int (get-current-weather-var "FWI" fire-name time))
-                                                   :WS                (int (get-current-weather-var "WS" fire-name time))
-                                                   :FFMC              (int (get-current-weather-var "FFMC" fire-name time))
-                                                   :TMP               (int (get-current-weather-var "TMP" fire-name time))
-                                                   :APCP              (int (get-current-weather-var "APCP" fire-name time))
-                                                   :DC                (int (get-current-weather-var "DC" fire-name time))
-                                                   :BUI               (int (get-current-weather-var "BUI" fire-name time))
-                                                   :RH                (int (get-current-weather-var "RH" fire-name time))
-                                                   :ISI               (int (get-current-weather-var "ISI" fire-name time))
-                                                   :DMC               (int (get-current-weather-var "DMC" fire-name time))
-                                                   :WD                (int (get-current-weather-var "WD" fire-name time))
+                                                   :FWI               (get-current-weather-var "FWI" fire-name time)
+                                                   :WS                (get-current-weather-var "WS" fire-name time)
+                                                   :FFMC              (get-current-weather-var "FFMC" fire-name time)
+                                                   :TMP               (get-current-weather-var "TMP" fire-name time)
+                                                   :APCP              (get-current-weather-var "APCP" fire-name time)
+                                                   :DC                (get-current-weather-var "DC" fire-name time)
+                                                   :BUI               (get-current-weather-var "BUI" fire-name time)
+                                                   :RH                (get-current-weather-var "RH" fire-name time)
+                                                   :ISI               (get-current-weather-var "ISI" fire-name time)
+                                                   :DMC               (get-current-weather-var "DMC" fire-name time)
+                                                   :WD                (get-current-weather-var "WD" fire-name time)
+                                                   :current-value     current-value
+                                                   :time-step         time
+                                                   :nw                (:NW b-neighbors-map)
+                                                   :n                 (:N b-neighbors-map)
+                                                   :ne                (:NE b-neighbors-map)
+                                                   :e                 (:E b-neighbors-map)
+                                                   :w                 (:W b-neighbors-map)
+                                                   :sw                (:SW b-neighbors-map)
+                                                   :s                 (:S b-neighbors-map)
+                                                   :se                (:SE b-neighbors-map)
+                                                   :num-burning-neigh (num-burning-neighbors cell-id current-grid)
+                                                   })
+
+                   (:step-limit argmap))
+
+                 :integer)]
+
+    ;(prn "answer" answer)
+    ;(prn "No stack item?" (= answer :no-stack-item))
+
+    ;; get first thing off integer stack
+    ;; check for other types, we only went integers
+    (cond
+      ;; this is simply the cells original value that was initially passed in
+      ;; (see :current-value above)
+      (= answer :no-stack-item)
+      current-value
+
+      ;; If currently 0, can go to 0, 1, 2
+      ;; note we might want to only allow 0 to go to 1 (and not straight to 2)
+      (= current-value 0)
+      (mod answer 3)
+
+      ;; if burning and we get an answer of 0, just stay burning (1)
+      (and (= current-value 1) (= (mod answer 3) 0))
+      1
+
+      ;; otherwise you can be a 1 or a 2
+      (= current-value 1)
+      (mod answer 3)
+
+      ;If 2, stays 2
+      :else
+      2
+      )))
+#_(time (update-cell-novec 3005 "m1" 10 test-burning-grid test-program test-argmap))
+
+(defn update-cell
+  "Update cell to next state by interpreting push program"
+  [cell-id fire-name time current-grid program argmap]
+  ;(prn "cell-id:" cell-id)
+  ;(prn "Update-Cell: program" program)
+  (let [b-neighbors-map (get-burning-neighbors-map cell-id current-grid)
+        current-value (nth (vec (flatten current-grid)) cell-id)
+        answer (peek-stack
+                 (interpret-program
+                   program
+                   (assoc empty-push-state :input {:elevation         (get-elevation-at-cell cell-id fire-name)
+                                                   ;:slope                 ;(int (get-slope-at-cell cell-id fire-name))
+                                                   :FWI               (get-current-weather-var "FWI" fire-name time)
+                                                   :WS                (get-current-weather-var "WS" fire-name time)
+                                                   :FFMC              (get-current-weather-var "FFMC" fire-name time)
+                                                   :TMP               (get-current-weather-var "TMP" fire-name time)
+                                                   :APCP              (get-current-weather-var "APCP" fire-name time)
+                                                   :DC                (get-current-weather-var "DC" fire-name time)
+                                                   :BUI               (get-current-weather-var "BUI" fire-name time)
+                                                   :RH                (get-current-weather-var "RH" fire-name time)
+                                                   :ISI               (get-current-weather-var "ISI" fire-name time)
+                                                   :DMC               (get-current-weather-var "DMC" fire-name time)
+                                                   :WD                (get-current-weather-var "WD" fire-name time)
                                                    :current-value     current-value
                                                    :time-step         time
                                                    :nw                (:NW b-neighbors-map)
@@ -417,6 +487,10 @@
       2
       )))
 #_(update-cell 5 "m1" 0 test-burning-grid test-program test-argmap)
+#_(time (update-cell 3005 "m1" 10 test-burning-grid test-program test-argmap))
+#_(time (get-burning-neighbors-map 500 test-burning-grid))
+#_(time (nth (flatten test-burning-grid) 500))
+#_(time (nth (vec (flatten test-burning-grid)) 500))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; update grid function (calls update cell) ;;
@@ -457,6 +531,7 @@
                      (nth flattened-grid i)))))))
 #_(update-grid (:m1 initial-fire-grids) "m1" 0 test-program test-argmap)
 #_(update-grid test-burning-grid "m1" 0 test-program test-argmap)
+#_(time (update-grid test-burning-grid "m1" 100 test-program test-argmap))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -482,24 +557,22 @@
 
       (recur (update-grid grid fire-name time-step program argmap)
              (+ time-step (:time-step argmap))))))
-;; this is dummy slow
-; make sure we are running this on a fire from the test set
-(def test-fire-vec ["a1", "g1", "r2"])
-#_(run-fire "m1" test-a-program argmap-for-test-program)
-(def test-program (list 'w))
-(def test-a-program '(WS se BUI DMC 1 integer_+ integer_- exec_dup (APCP w DC integer_- exec_if (num-burning-neigh TMP boolean_= integer_-))))
-; make sure this is the exact same as the parameters for when you ran the above program
-#_(def argmap-for-test-program {:instructions            fire-instructions
-                              :error-function          fire-error-function
-                              :max-generations         1000
-                              :population-size         5
-                              :max-initial-plushy-size 20
-                              :step-limit              25
-                              :parent-selection        :lexicase
-                              :tournament-size         5
-                              :time-step               10
-                              :fire-selection          1})
-#_test-a-program
+#_(run-fire "m1" test-program runfire-test-argmap)
+#_(def test-program (list 'w))
+#_(def test-a-program '(WS se BUI DMC 1 integer_+ integer_- exec_dup (APCP w DC integer_- exec_if (num-burning-neigh TMP boolean_= integer_-))))
+#_(def runfire-test-argmap {:instructions            fire-instructions
+                            :error-function          fire-error-function
+                            :max-generations         1000
+                            :population-size         5
+                            :max-initial-plushy-size 30
+                            :step-limit              100
+                            :parent-selection        :lexicase
+                            :tournament-size         5
+                            :time-step               10
+                            :fire-selection          1})
+
+
+
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -621,3 +694,26 @@
                           [:error-function]
                           #(if (fn? %) % (eval %))))))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; to test a chosen program
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; make sure we are running this on a fire from the test set
+(def test-fire-vec ["a1", "g1", "r2"])
+#_(run-fire "m1" test-a-program argmap-for-test-program)
+(def test-program (list 'w))
+(def test-a-program '(WS se BUI DMC 1 integer_+ integer_- exec_dup (APCP w DC integer_- exec_if (num-burning-neigh TMP boolean_= integer_-))))
+; make sure this is the exact same as the parameters for when you ran the above program
+#_(def argmap-for-test-program {:instructions            fire-instructions
+                                :error-function          fire-error-function
+                                :max-generations         1000
+                                :population-size         5
+                                :max-initial-plushy-size 20
+                                :step-limit              25
+                                :parent-selection        :lexicase
+                                :tournament-size         5
+                                :time-step               1000
+                                :fire-selection          1})
+
+;;; write program to CSV
+#_(write-csv [["abc" "def"] ["ghi" "jkl"]] "data/Outputs/output.csv")
+#_(write-csv (run-fire "m1" test-a-program argmap-for-test-program) "data/Outputs/output.csv")
