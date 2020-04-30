@@ -1,6 +1,6 @@
 # ring-of-fire
 
-A ~lightweight~, parallelized Clojure based propel-gp framework for evolving cellular automata based fire simulators through genetic programming. Created by Isaac Caruso, Martin Glusker, and Oliver-Baldwin-Edwards.
+A genetic program for evolving rules that describe a cellular automaton-based wildfire simulation using Clojure and based on the [propel framework](https://github.com/lspector/propel) designed by Lee Spector. Created by Isaac Caruso, Oliver Baldwin Edwards, and Martin Glusker. Special thanks to [Lee Spector](https://github.com/lspector) for his invaluable assistance and advice.
 
 ## Usage
 
@@ -12,12 +12,15 @@ To interact with a repl: <br />
 To copy all of the folders in a directory to another directory but not the files (useful for creating a filesystem for condor job outputs): 
 `rsync -a -f"+ */" -f"- *" /directory-to-copy/* /new-directory-name/`
 
+## Necessary input data
+*we need to add what kind of new data input could be placed in here, i.e. what the structure of the data that we used is*
+
 ## Dependencies
 
-Requires Java SDK and Leiningen. 
+Requires Java SDK 1.8 and Leiningen. 
 
 ## License
 
-Copyright © 2020 (Peamap Fire) Interprises
+Copyright © 2020 
 
 

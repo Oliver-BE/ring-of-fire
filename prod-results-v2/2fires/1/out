@@ -1,0 +1,89 @@
+Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 2, :max-generations 1000, :time-step 10, :parent-selection :lexicase, :tournament-size 5, :step-limit 25, :error-function #object[ring_of_fire.core$fire_error_function 0x226642a5 ring_of_fire.core$fire_error_function@226642a5], :population-size 10}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (boolean_= sw boolean_or FFMC BUI exec_if integer_* s RH integer_% s RH exec_dup num-burning-neigh)
+Best program: (boolean_= sw boolean_or FFMC BUI exec_if (integer_* s RH integer_% s RH exec_dup (num-burning-neigh)) ())
+Best total error: 4237
+Fires evaluated:  (g2 a2)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (boolean_= time-step boolean_or FFMC TMP exec_if integer_* ne RH integer_% se nw exec_dup num-burning-neigh)
+Best program: (boolean_= time-step boolean_or FFMC TMP exec_if (integer_* ne RH integer_% se nw exec_dup (num-burning-neigh)) ())
+Best total error: 4570
+Fires evaluated:  (r1 g2)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (DC BUI DC integer_+ APCP APCP boolean_= sw integer_% ne 1)
+Best program: (DC BUI DC integer_+ APCP APCP boolean_= sw integer_% ne 1)
+Best total error: 4546
+Fires evaluated:  (k1 r1)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (APCP boolean_= sw TMP FFMC integer_* integer_= 2 ne RH integer_- se exec_dup DMC num-burning-neigh s integer_=)
+Best program: (APCP boolean_= sw TMP FFMC integer_* integer_= 2 ne RH integer_- se exec_dup (DMC num-burning-neigh s integer_=))
+Best total error: 5094
+Fires evaluated:  (m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (DC BUI integer_+ APCP APCP sw integer_% ne 1)
+Best program: (DC BUI integer_+ APCP APCP sw integer_% ne 1)
+Best total error: 3515
+Fires evaluated:  (m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (DC BUI exec_dup DC integer_+ nw APCP BUI BUI APCP boolean_and sw TMP FWI TMP DC integer_% boolean_not integer_* FWI 1)
+Best program: (DC BUI exec_dup (DC integer_+ nw APCP BUI BUI APCP boolean_and sw TMP FWI TMP DC integer_% boolean_not integer_* FWI 1))
+Best total error: 4196
+Fires evaluated:  (m1 m2)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (DC BUI DC integer_+ integer_+ APCP integer_- 1 TMP 1 TMP boolean_and elevation s TMP nw DMC integer_%)
+Best program: (DC BUI DC integer_+ integer_+ APCP integer_- 1 TMP 1 TMP boolean_and elevation s TMP nw DMC integer_%)
+Best total error: 5375
+Fires evaluated:  (r1 a2)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (DC BUI WD integer_+ DC ISI 1 integer_* TMP s boolean_and current-value sw TMP nw integer_% integer_* false)
+Best program: (DC BUI WD integer_+ DC ISI 1 integer_* TMP s boolean_and current-value sw TMP nw integer_% integer_* false)
+Best total error: 8449
+Fires evaluated:  (a2 g2)
+
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (BUI WD integer_+ DC ISI 1 integer_* TMP s boolean_and current-value sw TMP nw integer_% integer_* false)
+Best program: (BUI WD integer_+ DC ISI 1 integer_* TMP s boolean_and current-value sw TMP nw integer_% integer_* false)
+Best total error: 6027
+Fires evaluated:  (m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (DC BUI DC integer_+ num-burning-neigh 1 integer_* BUI 1 TMP current-value elevation s TMP nw DMC boolean_not)
+Best program: (DC BUI DC integer_+ num-burning-neigh 1 integer_* BUI 1 TMP current-value elevation s TMP nw DMC boolean_not)
+Best total error: 6275
+Fires evaluated:  (k1 r1)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (DC BUI integer_+ DC APCP num-burning-neigh integer_% 1 1 num-burning-neigh TMP elevation se TMP)
+Best program: (DC BUI integer_+ DC APCP num-burning-neigh integer_% 1 1 num-burning-neigh TMP elevation se TMP)
+Best total error: 4196
+Fires evaluated:  (m2 m1)
+

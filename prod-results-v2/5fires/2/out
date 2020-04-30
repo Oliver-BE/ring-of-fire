@@ -1,0 +1,65 @@
+Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 5, :max-generations 1000, :time-step 10, :parent-selection :lexicase, :tournament-size 5, :step-limit 25, :error-function #object[ring_of_fire.core$fire_error_function 0x226642a5 ring_of_fire.core$fire_error_function@226642a5], :population-size 10}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (0 DMC exec_dup ne 1 ne exec_if integer_= boolean_= FFMC 0 boolean_not boolean_not exec_dup 2 RH FWI integer_+ close DMC)
+Best program: (0 DMC exec_dup (ne 1 ne exec_if (integer_= boolean_= FFMC 0 boolean_not boolean_not exec_dup (2 RH FWI integer_+) DMC) ()))
+Best total error: 17316
+Fires evaluated:  (k1 g2 m2 r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (current-value integer_* TMP exec_if 2 time-step exec_dup APCP FWI ne TMP nw boolean_and false integer_- boolean_and exec_if time-step WS APCP ISI)
+Best program: (current-value integer_* TMP exec_if (2 time-step exec_dup (APCP FWI ne TMP nw boolean_and false integer_- boolean_and exec_if (time-step WS APCP ISI) ())) ())
+Best total error: 16512
+Fires evaluated:  (k2 k1 g2 m1 m2)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (boolean_= ISI boolean_and DC 1 ne exec_if integer_= boolean_= FFMC integer_+ n boolean_not boolean_not exec_dup integer_+)
+Best program: (boolean_= ISI boolean_and DC 1 ne exec_if (integer_= boolean_= FFMC integer_+ n boolean_not boolean_not exec_dup (integer_+)) ())
+Best total error: 16669
+Fires evaluated:  (k2 k1 m1 g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (ISI boolean_and DC 1 ne exec_if integer_= boolean_= FFMC integer_+ n boolean_not boolean_not exec_dup integer_+)
+Best program: (ISI boolean_and DC 1 ne exec_if (integer_= boolean_= FFMC integer_+ n boolean_not boolean_not exec_dup (integer_+)) ())
+Best total error: 17179
+Fires evaluated:  (g2 m2 r1 a2 k2)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (integer_= ne TMP DC 1 ne exec_dup APCP FWI ne n nw boolean_and false integer_+ BUI exec_if)
+Best program: (integer_= ne TMP DC 1 ne exec_dup (APCP FWI ne n nw boolean_and false integer_+ BUI exec_if () ()))
+Best total error: 17452
+Fires evaluated:  (k2 g2 a2 m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (integer_= ne TMP DC ne exec_dup APCP FWI ne n nw boolean_and false integer_+ e BUI exec_if se)
+Best program: (integer_= ne TMP DC ne exec_dup (APCP FWI ne n nw boolean_and false integer_+ e BUI exec_if (se) ()))
+Best total error: 16740
+Fires evaluated:  (k2 r1 g2 k1 m1)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (integer_= ne TMP DC ne exec_dup APCP FWI ne n nw boolean_and false integer_+ e BUI exec_if se)
+Best program: (integer_= ne TMP DC ne exec_dup (APCP FWI ne n nw boolean_and false integer_+ e BUI exec_if (se) ()))
+Best total error: 16740
+Fires evaluated:  (m1 r1 k2 k1 g2)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (APCP boolean_and boolean_and boolean_not 1 elevation close exec_dup FWI boolean_and integer_+ boolean_and false)
+Best program: (APCP boolean_and boolean_and boolean_not 1 elevation exec_dup (FWI boolean_and integer_+ boolean_and false))
+Best total error: 16129
+Fires evaluated:  (g2 k2 m2 r1 a2)
+

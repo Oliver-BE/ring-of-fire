@@ -1,0 +1,1353 @@
+Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 1, :max-generations 2500, :time-step 11, :parent-selection :lexicase, :tournament-size 5, :step-limit 10, :error-function #object[ring_of_fire.core$fire_error_function 0x226642a5 ring_of_fire.core$fire_error_function@226642a5], :population-size 5}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (APCP e time-step num-burning-neigh close boolean_not TMP ISI integer_= se WS FFMC integer_- 1 TMP WD integer_- boolean_and exec_if boolean_and integer_* se close n TMP boolean_and w ISI current-value)
+Best program: (APCP e time-step num-burning-neigh boolean_not TMP ISI integer_= se WS FFMC integer_- 1 TMP WD integer_- boolean_and exec_if (boolean_and integer_* se) (n TMP boolean_and w ISI current-value))
+Best total error: 944
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (APCP e time-step num-burning-neigh close boolean_not TMP ISI integer_= se WS FFMC integer_- 1 TMP WD integer_- boolean_and exec_if boolean_and integer_* se close n TMP boolean_and w ISI current-value)
+Best program: (APCP e time-step num-burning-neigh boolean_not TMP ISI integer_= se WS FFMC integer_- 1 TMP WD integer_- boolean_and exec_if (boolean_and integer_* se) (n TMP boolean_and w ISI current-value))
+Best total error: 1683
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (ne APCP e DC time-step num-burning-neigh integer_% close boolean_not TMP ISI integer_= se WS FFMC integer_- APCP 1 TMP WD integer_- boolean_and exec_if boolean_and integer_* se close n TMP boolean_and w ISI current-value)
+Best program: (ne APCP e DC time-step num-burning-neigh integer_% boolean_not TMP ISI integer_= se WS FFMC integer_- APCP 1 TMP WD integer_- boolean_and exec_if (boolean_and integer_* se) (n TMP boolean_and w ISI current-value))
+Best total error: 3919
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (ne APCP e DC num-burning-neigh close boolean_not TMP ISI integer_= se WS FFMC integer_- APCP 1 TMP WD boolean_and exec_if boolean_and integer_* se close TMP boolean_and w current-value)
+Best program: (ne APCP e DC num-burning-neigh boolean_not TMP ISI integer_= se WS FFMC integer_- APCP 1 TMP WD boolean_and exec_if (boolean_and integer_* se) (TMP boolean_and w current-value))
+Best total error: 2887
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- nw integer_* APCP 1 ISI WD boolean_and exec_if boolean_and close TMP boolean_and w current-value)
+Best program: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- nw integer_* APCP 1 ISI WD boolean_and exec_if (boolean_and) (TMP boolean_and w current-value))
+Best total error: 1683
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- nw integer_* APCP APCP 1 ISI WD boolean_and exec_if boolean_and close TMP boolean_and w current-value)
+Best program: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- nw integer_* APCP APCP 1 ISI WD boolean_and exec_if (boolean_and) (TMP boolean_and w current-value))
+Best total error: 1683
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- nw integer_* APCP APCP 1 ISI WD boolean_and exec_if boolean_and close TMP boolean_and w current-value)
+Best program: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- nw integer_* APCP APCP 1 ISI WD boolean_and exec_if (boolean_and) (TMP boolean_and w current-value))
+Best total error: 944
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se FFMC FFMC integer_- APCP 1 TMP close boolean_and exec_if TMP exec_if TMP close current-value)
+Best program: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se FFMC FFMC integer_- APCP 1 TMP boolean_and exec_if (TMP exec_if (TMP) (current-value)) ())
+Best total error: 2857
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- nw integer_* APCP APCP ISI ISI n boolean_and exec_if TMP close TMP boolean_and w current-value)
+Best program: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- nw integer_* APCP APCP ISI ISI n boolean_and exec_if (TMP) (TMP boolean_and w current-value))
+Best total error: 1350
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (n APCP n DC num-burning-neigh time-step TMP FFMC n se integer_- FFMC integer_- APCP 1 TMP ISI boolean_and exec_if exec_if exec_if close TMP TMP current-value)
+Best program: (n APCP n DC num-burning-neigh time-step TMP FFMC n se integer_- FFMC integer_- APCP 1 TMP ISI boolean_and exec_if (exec_if (exec_if () (TMP TMP current-value)) ()) ())
+Best total error: 673
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- nw FFMC integer_- 1 1 TMP e ISI exec_if exec_if close TMP exec_if w TMP)
+Best program: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- nw FFMC integer_- 1 1 TMP e ISI exec_if (exec_if () (TMP exec_if (w TMP) ())) ())
+Best total error: 2887
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- sw nw integer_* APCP 1 TMP ISI boolean_and boolean_and exec_if exec_if close TMP boolean_and w)
+Best program: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- sw nw integer_* APCP 1 TMP ISI boolean_and boolean_and exec_if (exec_if () (TMP boolean_and w)) ())
+Best total error: 2857
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (n APCP n DC num-burning-neigh time-step s FFMC n n 1 integer_- FFMC integer_- 1 APCP 1 TMP ISI boolean_and exec_if exec_if exec_if close exec_if TMP current-value)
+Best program: (n APCP n DC num-burning-neigh time-step s FFMC n n 1 integer_- FFMC integer_- 1 APCP 1 TMP ISI boolean_and exec_if (exec_if (exec_if () (exec_if (TMP current-value) ())) ()) ())
+Best total error: 2887
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- sw nw integer_* APCP 1 TMP ISI boolean_and boolean_and exec_if exec_if close TMP TMP w)
+Best program: (n APCP n DC num-burning-neigh time-step s TMP FFMC n se integer_- sw nw integer_* APCP 1 TMP ISI boolean_and boolean_and exec_if (exec_if () (TMP TMP w)) ())
+Best total error: 1683
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (se APCP n DC num-burning-neigh DC num-burning-neigh TMP FFMC n n se integer_- FFMC integer_- APCP 1 TMP boolean_and exec_if boolean_and exec_if exec_if TMP RH TMP current-value)
+Best program: (se APCP n DC num-burning-neigh DC num-burning-neigh TMP FFMC n n se integer_- FFMC integer_- APCP 1 TMP boolean_and exec_if (boolean_and exec_if (exec_if (TMP RH TMP current-value) ()) ()) ())
+Best total error: 2887
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (se APCP n DC num-burning-neigh DC num-burning-neigh TMP FFMC n n se integer_- FFMC integer_- APCP TMP boolean_and exec_if exec_if exec_if TMP RH TMP current-value)
+Best program: (se APCP n DC num-burning-neigh DC num-burning-neigh TMP FFMC n n se integer_- FFMC integer_- APCP TMP boolean_and exec_if (exec_if (exec_if (TMP RH TMP current-value) ()) ()) ())
+Best total error: 1350
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (se APCP n ISI num-burning-neigh DC num-burning-neigh FFMC TMP FFMC 1 se integer_- FFMC integer_- APCP TMP TMP ISI boolean_and exec_if 0 exec_if TMP TMP FWI exec_if TMP)
+Best program: (se APCP n ISI num-burning-neigh DC num-burning-neigh FFMC TMP FFMC 1 se integer_- FFMC integer_- APCP TMP TMP ISI boolean_and exec_if (0 exec_if (TMP TMP FWI exec_if (TMP) ()) ()) ())
+Best total error: 2887
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (n n n ISI num-burning-neigh DC num-burning-neigh FFMC TMP n FFMC 1 integer_- FFMC integer_- integer_= 1 APCP TMP elevation TMP ISI boolean_and exec_if exec_if TMP RH exec_if)
+Best program: (n n n ISI num-burning-neigh DC num-burning-neigh FFMC TMP n FFMC 1 integer_- FFMC integer_- integer_= 1 APCP TMP elevation TMP ISI boolean_and exec_if (exec_if (TMP RH exec_if () ()) ()) ())
+Best total error: 2857
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (n n n ISI num-burning-neigh DC num-burning-neigh FFMC TMP n FFMC 1 integer_- FFMC se integer_- integer_= 1 APCP TMP integer_+ elevation TMP ISI boolean_and exec_if exec_if TMP RH exec_if)
+Best program: (n n n ISI num-burning-neigh DC num-burning-neigh FFMC TMP n FFMC 1 integer_- FFMC se integer_- integer_= 1 APCP TMP integer_+ elevation TMP ISI boolean_and exec_if (exec_if (TMP RH exec_if () ()) ()) ())
+Best total error: 1683
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (n n n ISI num-burning-neigh DC num-burning-neigh FFMC n n se integer_- APCP integer_- ISI 1 APCP TMP exec_if TMP exec_if boolean_and current-value exec_if TMP exec_if)
+Best program: (n n n ISI num-burning-neigh DC num-burning-neigh FFMC n n se integer_- APCP integer_- ISI 1 APCP TMP exec_if (TMP exec_if (boolean_and current-value exec_if (TMP exec_if () ()) ()) ()) ())
+Best total error: 1683
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 20
+-------------------------------------------------------
+Best plushy: (n n n ISI num-burning-neigh DC num-burning-neigh FFMC FFMC FFMC FFMC 1 integer_- APCP TMP integer_- integer_= ISI APCP exec_if exec_if elevation ISI boolean_and exec_if TMP RH exec_if)
+Best program: (n n n ISI num-burning-neigh DC num-burning-neigh FFMC FFMC FFMC FFMC 1 integer_- APCP TMP integer_- integer_= ISI APCP exec_if (exec_if (elevation ISI boolean_and exec_if (TMP RH exec_if () ()) ()) ()) ())
+Best total error: 2207
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 21
+-------------------------------------------------------
+Best plushy: (n n n ISI num-burning-neigh DC num-burning-neigh FFMC n FFMC integer_- integer_- APCP APCP TMP s APCP TMP ISI boolean_and exec_if exec_if current-value exec_if)
+Best program: (n n n ISI num-burning-neigh DC num-burning-neigh FFMC n FFMC integer_- integer_- APCP APCP TMP s APCP TMP ISI boolean_and exec_if (exec_if (current-value exec_if () ()) ()) ())
+Best total error: 2207
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 22
+-------------------------------------------------------
+Best plushy: (n n n ISI num-burning-neigh DC num-burning-neigh FFMC FFMC FFMC integer_- integer_- integer_- APCP TMP s ISI APCP ISI exec_if elevation ISI current-value exec_if exec_if)
+Best program: (n n n ISI num-burning-neigh DC num-burning-neigh FFMC FFMC FFMC integer_- integer_- integer_- APCP TMP s ISI APCP ISI exec_if (elevation ISI current-value exec_if (exec_if () ()) ()) ())
+Best total error: 1683
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 23
+-------------------------------------------------------
+Best plushy: (n n n ISI num-burning-neigh DC num-burning-neigh FFMC FFMC FFMC integer_- FFMC integer_- 1 APCP TMP s s 1 TMP nw ISI boolean_and TMP exec_if RH boolean_and)
+Best program: (n n n ISI num-burning-neigh DC num-burning-neigh FFMC FFMC FFMC integer_- FFMC integer_- 1 APCP TMP s s 1 TMP nw ISI boolean_and TMP exec_if (RH boolean_and) ())
+Best total error: 2887
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 24
+-------------------------------------------------------
+Best plushy: (n n n ISI num-burning-neigh DC false num-burning-neigh FFMC n FFMC integer_- integer_- APCP APCP TMP s APCP APCP TMP ISI exec_if exec_if current-value exec_if)
+Best program: (n n n ISI num-burning-neigh DC false num-burning-neigh FFMC n FFMC integer_- integer_- APCP APCP TMP s APCP APCP TMP ISI exec_if (exec_if (current-value exec_if () ()) ()) ())
+Best total error: 2887
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 25
+-------------------------------------------------------
+Best plushy: (n n n ISI num-burning-neigh DC DC num-burning-neigh e n FFMC integer_- FFMC APCP integer_- false integer_- APCP APCP TMP ISI exec_if ISI current-value elevation DC current-value exec_if exec_if)
+Best program: (n n n ISI num-burning-neigh DC DC num-burning-neigh e n FFMC integer_- FFMC APCP integer_- false integer_- APCP APCP TMP ISI exec_if (ISI current-value elevation DC current-value exec_if (exec_if () ()) ()) ())
+Best total error: 2207
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 26
+-------------------------------------------------------
+Best plushy: (n n n ISI num-burning-neigh DC DC FFMC num-burning-neigh FFMC FFMC FFMC integer_- 1 APCP integer_- s TMP 1 ISI current-value APCP ISI exec_if TMP exec_if boolean_and DC boolean_and exec_if)
+Best program: (n n n ISI num-burning-neigh DC DC FFMC num-burning-neigh FFMC FFMC FFMC integer_- 1 APCP integer_- s TMP 1 ISI current-value APCP ISI exec_if (TMP exec_if (boolean_and DC boolean_and exec_if () ()) ()) ())
+Best total error: 2857
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 27
+-------------------------------------------------------
+Best plushy: (n n n ISI num-burning-neigh DC w DC num-burning-neigh e FFMC FFMC integer_- integer_- APCP integer_- false ISI APCP APCP elevation ISI DC ISI exec_if elevation DC current-value exec_if nw)
+Best program: (n n n ISI num-burning-neigh DC w DC num-burning-neigh e FFMC FFMC integer_- integer_- APCP integer_- false ISI APCP APCP elevation ISI DC ISI exec_if (elevation DC current-value exec_if (nw) ()) ())
+Best total error: 1350
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 28
+-------------------------------------------------------
+Best plushy: (n n n ISI num-burning-neigh DC w FFMC num-burning-neigh FFMC FFMC FFMC FFMC integer_- 1 integer_- false ISI TMP 1 elevation current-value DC ISI exec_if elevation DC current-value DC boolean_and exec_if)
+Best program: (n n n ISI num-burning-neigh DC w FFMC num-burning-neigh FFMC FFMC FFMC FFMC integer_- 1 integer_- false ISI TMP 1 elevation current-value DC ISI exec_if (elevation DC current-value DC boolean_and exec_if () ()) ())
+Best total error: 2207
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 29
+-------------------------------------------------------
+Best plushy: (n n ISI num-burning-neigh DC w FFMC num-burning-neigh FFMC FFMC FFMC FFMC integer_- 1 integer_- false ISI TMP 1 elevation current-value DC ISI exec_if elevation DC current-value DC boolean_and exec_if)
+Best program: (n n ISI num-burning-neigh DC w FFMC num-burning-neigh FFMC FFMC FFMC FFMC integer_- 1 integer_- false ISI TMP 1 elevation current-value DC ISI exec_if (elevation DC current-value DC boolean_and exec_if () ()) ())
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 30
+-------------------------------------------------------
+Best plushy: (w n integer_+ n ISI n DC w DC num-burning-neigh e FFMC true FFMC FFMC integer_- integer_- false integer_- ISI APCP s ISI ISI ISI elevation ISI elevation exec_if current-value nw)
+Best program: (w n integer_+ n ISI n DC w DC num-burning-neigh e FFMC true FFMC FFMC integer_- integer_- false integer_- ISI APCP s ISI ISI ISI elevation ISI elevation exec_if (current-value nw) ())
+Best total error: 3147
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 31
+-------------------------------------------------------
+Best plushy: (n n n n ISI n ISI w DC num-burning-neigh e FFMC true integer_- FFMC integer_- integer_- false TMP s APCP APCP ISI ISI ISI elevation current-value elevation exec_if exec_if nw)
+Best program: (n n n n ISI n ISI w DC num-burning-neigh e FFMC true integer_- FFMC integer_- integer_- false TMP s APCP APCP ISI ISI ISI elevation current-value elevation exec_if (exec_if (nw) ()) ())
+Best total error: 3147
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 32
+-------------------------------------------------------
+Best plushy: (w n integer_+ n ISI n ISI w DC num-burning-neigh e FFMC true FFMC FFMC integer_- integer_- false integer_- s APCP s ISI ISI ISI elevation current-value elevation exec_if current-value nw)
+Best program: (w n integer_+ n ISI n ISI w DC num-burning-neigh e FFMC true FFMC FFMC integer_- integer_- false integer_- s APCP s ISI ISI ISI elevation current-value elevation exec_if (current-value nw) ())
+Best total error: 3777
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 33
+-------------------------------------------------------
+Best plushy: (true n n ISI num-burning-neigh DC w w FFMC num-burning-neigh FFMC FFMC FFMC FFMC integer_- 1 integer_- num-burning-neigh false ISI TMP 1 elevation current-value boolean_not DC ISI exec_if elevation n DC current-value DC boolean_and exec_if)
+Best program: (true n n ISI num-burning-neigh DC w w FFMC num-burning-neigh FFMC FFMC FFMC FFMC integer_- 1 integer_- num-burning-neigh false ISI TMP 1 elevation current-value boolean_not DC ISI exec_if (elevation n DC current-value DC boolean_and exec_if () ()) ())
+Best total error: 2887
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 34
+-------------------------------------------------------
+Best plushy: (n n ISI ISI num-burning-neigh n ISI DC FFMC e FFMC FFMC FFMC integer_- false integer_- integer_- APCP false ISI TMP APCP elevation current-value boolean_not elevation ISI nw elevation n current-value)
+Best program: (n n ISI ISI num-burning-neigh n ISI DC FFMC e FFMC FFMC FFMC integer_- false integer_- integer_- APCP false ISI TMP APCP elevation current-value boolean_not elevation ISI nw elevation n current-value)
+Best total error: 1683
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 35
+-------------------------------------------------------
+Best plushy: (n n ISI num-burning-neigh num-burning-neigh n w w FFMC e FFMC FFMC FFMC integer_- false integer_- integer_- APCP 1 false integer_- s elevation current-value current-value elevation ISI nw elevation elevation exec_if current-value)
+Best program: (n n ISI num-burning-neigh num-burning-neigh n w w FFMC e FFMC FFMC FFMC integer_- false integer_- integer_- APCP 1 false integer_- s elevation current-value current-value elevation ISI nw elevation elevation exec_if (current-value) ())
+Best total error: 2857
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 36
+-------------------------------------------------------
+Best plushy: (n n ISI num-burning-neigh DC w w FFMC num-burning-neigh FFMC FFMC FFMC FFMC integer_- 1 integer_- integer_- ISI false WS 1 APCP current-value boolean_not boolean_not FFMC elevation exec_if elevation exec_if current-value nw exec_if)
+Best program: (n n ISI num-burning-neigh DC w w FFMC num-burning-neigh FFMC FFMC FFMC FFMC integer_- 1 integer_- integer_- ISI false WS 1 APCP current-value boolean_not boolean_not FFMC elevation exec_if (elevation exec_if (current-value nw exec_if () ()) ()) ())
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 37
+-------------------------------------------------------
+Best plushy: (n n ISI num-burning-neigh DC w w FFMC num-burning-neigh FFMC FFMC FFMC FFMC integer_- 1 integer_- integer_- APCP 1 false 1 APCP elevation elevation current-value FFMC elevation nw exec_if elevation current-value nw)
+Best program: (n n ISI num-burning-neigh DC w w FFMC num-burning-neigh FFMC FFMC FFMC FFMC integer_- 1 integer_- integer_- APCP 1 false 1 APCP elevation elevation current-value FFMC elevation nw exec_if (elevation current-value nw) ())
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 38
+-------------------------------------------------------
+Best plushy: (n n ISI num-burning-neigh DC w FFMC w num-burning-neigh FFMC FFMC FFMC FFMC integer_- FFMC integer_- integer_- APCP 1 false integer_- s elevation elevation current-value DC elevation ISI nw exec_if elevation current-value)
+Best program: (n n ISI num-burning-neigh DC w FFMC w num-burning-neigh FFMC FFMC FFMC FFMC integer_- FFMC integer_- integer_- APCP 1 false integer_- s elevation elevation current-value DC elevation ISI nw exec_if (elevation current-value) ())
+Best total error: 3919
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 39
+-------------------------------------------------------
+Best plushy: (n ISI num-burning-neigh DC w FFMC w num-burning-neigh FFMC FFMC FFMC FFMC integer_- FFMC integer_- integer_- 1 false integer_- s elevation elevation current-value DC elevation ISI nw exec_if elevation current-value)
+Best program: (n ISI num-burning-neigh DC w FFMC w num-burning-neigh FFMC FFMC FFMC FFMC integer_- FFMC integer_- integer_- 1 false integer_- s elevation elevation current-value DC elevation ISI nw exec_if (elevation current-value) ())
+Best total error: 5522
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 40
+-------------------------------------------------------
+Best plushy: (n n ISI num-burning-neigh DC w FFMC w FFMC FFMC FFMC integer_- FFMC integer_- integer_- APCP 1 false integer_- s elevation DC elevation ISI nw exec_if elevation current-value)
+Best program: (n n ISI num-burning-neigh DC w FFMC w FFMC FFMC FFMC integer_- FFMC integer_- integer_- APCP 1 false integer_- s elevation DC elevation ISI nw exec_if (elevation current-value) ())
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 41
+-------------------------------------------------------
+Best plushy: (n ISI num-burning-neigh DC w FFMC w num-burning-neigh FFMC exec_dup boolean_and FFMC FFMC boolean_or FFMC integer_- FFMC integer_- integer_- boolean_= 1 false integer_- s elevation elevation current-value DC elevation ISI nw exec_if elevation current-value)
+Best program: (n ISI num-burning-neigh DC w FFMC w num-burning-neigh FFMC exec_dup (boolean_and FFMC FFMC boolean_or FFMC integer_- FFMC integer_- integer_- boolean_= 1 false integer_- s elevation elevation current-value DC elevation ISI nw exec_if (elevation current-value) ()))
+Best total error: 5522
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 42
+-------------------------------------------------------
+Best plushy: (n ISI num-burning-neigh DC DC w w num-burning-neigh FFMC FFMC FFMC FFMC integer_- integer_- integer_- false integer_- false elevation WS current-value current-value elevation current-value exec_if ISI exec_if exec_if nw)
+Best program: (n ISI num-burning-neigh DC DC w w num-burning-neigh FFMC FFMC FFMC FFMC integer_- integer_- integer_- false integer_- false elevation WS current-value current-value elevation current-value exec_if (ISI exec_if (exec_if (nw) ()) ()) ())
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 43
+-------------------------------------------------------
+Best plushy: (n ISI num-burning-neigh DC w FFMC ISI w num-burning-neigh exec_dup FFMC FFMC boolean_or FFMC integer_- s FFMC integer_- integer_- boolean_= 1 integer_- s elevation elevation current-value DC elevation ISI nw exec_if elevation current-value)
+Best program: (n ISI num-burning-neigh DC w FFMC ISI w num-burning-neigh exec_dup (FFMC FFMC boolean_or FFMC integer_- s FFMC integer_- integer_- boolean_= 1 integer_- s elevation elevation current-value DC elevation ISI nw exec_if (elevation current-value) ()))
+Best total error: 3535
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 44
+-------------------------------------------------------
+Best plushy: (n ISI ISI DC w FFMC ISI w num-burning-neigh exec_dup FFMC FFMC boolean_or FFMC integer_- 1 integer_- integer_- integer_- elevation 1 integer_- s elevation elevation nw ISI exec_if ISI exec_if exec_if elevation)
+Best program: (n ISI ISI DC w FFMC ISI w num-burning-neigh exec_dup (FFMC FFMC boolean_or FFMC integer_- 1 integer_- integer_- integer_- elevation 1 integer_- s elevation elevation nw ISI exec_if (ISI exec_if (exec_if (elevation) ()) ()) ()))
+Best total error: 3887
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 45
+-------------------------------------------------------
+Best plushy: (n n ISI DC w FFMC w w num-burning-neigh 0 num-burning-neigh FFMC boolean_or FFMC integer_- integer_- 1 integer_- integer_- false 1 WS elevation elevation elevation nw elevation exec_if ISI exec_if exec_if nw)
+Best program: (n n ISI DC w FFMC w w num-burning-neigh 0 num-burning-neigh FFMC boolean_or FFMC integer_- integer_- 1 integer_- integer_- false 1 WS elevation elevation elevation nw elevation exec_if (ISI exec_if (exec_if (nw) ()) ()) ())
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 46
+-------------------------------------------------------
+Best plushy: (n n ISI DC w FFMC w ISI num-burning-neigh exec_dup num-burning-neigh FFMC boolean_or FFMC integer_- 1 integer_- integer_- integer_- false 1 WS s elevation elevation nw ISI elevation ISI exec_if exec_if exec_if)
+Best program: (n n ISI DC w FFMC w ISI num-burning-neigh exec_dup (num-burning-neigh FFMC boolean_or FFMC integer_- 1 integer_- integer_- integer_- false 1 WS s elevation elevation nw ISI elevation ISI exec_if (exec_if (exec_if () ()) ()) ()))
+Best total error: 3887
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 47
+-------------------------------------------------------
+Best plushy: (n n ISI DC w FFMC w ISI num-burning-neigh 0 FFMC FFMC boolean_or FFMC integer_- integer_- 1 integer_- integer_- boolean_= 1 integer_- elevation elevation elevation nw elevation nw ISI nw exec_if nw)
+Best program: (n n ISI DC w FFMC w ISI num-burning-neigh 0 FFMC FFMC boolean_or FFMC integer_- integer_- 1 integer_- integer_- boolean_= 1 integer_- elevation elevation elevation nw elevation nw ISI nw exec_if (nw) ())
+Best total error: 3887
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 48
+-------------------------------------------------------
+Best plushy: (n n ISI DC w FFMC w ISI num-burning-neigh 0 FFMC FFMC boolean_or FFMC integer_- integer_- 1 integer_- integer_- boolean_= 1 integer_- elevation elevation nw elevation nw ISI nw exec_if nw)
+Best program: (n n ISI DC w FFMC w ISI num-burning-neigh 0 FFMC FFMC boolean_or FFMC integer_- integer_- 1 integer_- integer_- boolean_= 1 integer_- elevation elevation nw elevation nw ISI nw exec_if (nw) ())
+Best total error: 1605
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 49
+-------------------------------------------------------
+Best plushy: (n ISI ISI DC FFMC FFMC w ISI num-burning-neigh 0 FFMC FFMC boolean_or FFMC integer_- integer_- FFMC integer_- integer_- boolean_= 1 DC elevation elevation elevation elevation ISI ISI exec_if exec_if nw nw)
+Best program: (n ISI ISI DC FFMC FFMC w ISI num-burning-neigh 0 FFMC FFMC boolean_or FFMC integer_- integer_- FFMC integer_- integer_- boolean_= 1 DC elevation elevation elevation elevation ISI ISI exec_if (exec_if (nw nw) ()) ())
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 50
+-------------------------------------------------------
+Best plushy: (n n ISI DC w FFMC w ISI num-burning-neigh 0 FFMC FFMC boolean_or FFMC integer_- integer_- 1 integer_- integer_- boolean_= 1 integer_- elevation elevation elevation elevation nw ISI nw exec_if nw)
+Best program: (n n ISI DC w FFMC w ISI num-burning-neigh 0 FFMC FFMC boolean_or FFMC integer_- integer_- 1 integer_- integer_- boolean_= 1 integer_- elevation elevation elevation elevation nw ISI nw exec_if (nw) ())
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 51
+-------------------------------------------------------
+Best plushy: (n n ISI DC w FFMC w ISI ISI 0 FFMC FFMC boolean_or boolean_or integer_- integer_- s integer_- integer_- boolean_= integer_- integer_- 1 elevation elevation elevation elevation ISI nw nw nw exec_if)
+Best program: (n n ISI DC w FFMC w ISI ISI 0 FFMC FFMC boolean_or boolean_or integer_- integer_- s integer_- integer_- boolean_= integer_- integer_- 1 elevation elevation elevation elevation ISI nw nw nw exec_if () ())
+Best total error: 2802
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 52
+-------------------------------------------------------
+Best plushy: (n n ISI DC w FFMC w ISI ISI 0 0 FFMC FFMC FFMC FFMC integer_- 1 integer_- 1 integer_- integer_- elevation 1 elevation nw elevation ISI nw nw ISI nw)
+Best program: (n n ISI DC w FFMC w ISI ISI 0 0 FFMC FFMC FFMC FFMC integer_- 1 integer_- 1 integer_- integer_- elevation 1 elevation nw elevation ISI nw nw ISI nw)
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 53
+-------------------------------------------------------
+Best plushy: (n n ISI DC w FFMC ISI ISI num-burning-neigh 0 FFMC FFMC FFMC FFMC 1 integer_- 1 integer_- integer_- integer_- s elevation elevation elevation nw elevation nw ISI nw exec_if)
+Best program: (n n ISI DC w FFMC ISI ISI num-burning-neigh 0 FFMC FFMC FFMC FFMC 1 integer_- 1 integer_- integer_- integer_- s elevation elevation elevation nw elevation nw ISI nw exec_if () ())
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 54
+-------------------------------------------------------
+Best plushy: (n ISI ISI DC w w ISI ISI 0 0 FFMC boolean_or FFMC FFMC integer_- integer_- integer_- integer_- boolean_= 1 elevation elevation sw elevation nw elevation nw nw exec_if integer_=)
+Best program: (n ISI ISI DC w w ISI ISI 0 0 FFMC boolean_or FFMC FFMC integer_- integer_- integer_- integer_- boolean_= 1 elevation elevation sw elevation nw elevation nw nw exec_if (integer_=) ())
+Best total error: 3535
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 55
+-------------------------------------------------------
+Best plushy: (n n ISI DC w FFMC ISI ISI num-burning-neigh 0 FFMC FFMC FFMC FFMC 1 integer_- 1 integer_- integer_- integer_- s elevation elevation elevation elevation nw ISI nw exec_if)
+Best program: (n n ISI DC w FFMC ISI ISI num-burning-neigh 0 FFMC FFMC FFMC FFMC 1 integer_- 1 integer_- integer_- integer_- s elevation elevation elevation elevation nw ISI nw exec_if () ())
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 56
+-------------------------------------------------------
+Best plushy: (n n ISI DC w FFMC ISI ISI num-burning-neigh 0 FFMC FFMC FFMC FFMC 1 ISI integer_- 1 integer_- integer_- integer_- s elevation elevation elevation nw elevation nw exec_if ISI nw exec_if)
+Best program: (n n ISI DC w FFMC ISI ISI num-burning-neigh 0 FFMC FFMC FFMC FFMC 1 ISI integer_- 1 integer_- integer_- integer_- s elevation elevation elevation nw elevation nw exec_if (ISI nw exec_if () ()) ())
+Best total error: 3887
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 57
+-------------------------------------------------------
+Best plushy: (n n ISI DC w FFMC ISI ISI num-burning-neigh 0 FFMC FFMC FFMC FFMC 1 ISI integer_- 1 integer_- integer_- integer_- elevation elevation elevation nw elevation nw exec_if ISI nw exec_if)
+Best program: (n n ISI DC w FFMC ISI ISI num-burning-neigh 0 FFMC FFMC FFMC FFMC 1 ISI integer_- 1 integer_- integer_- integer_- elevation elevation elevation nw elevation nw exec_if (ISI nw exec_if () ()) ())
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 58
+-------------------------------------------------------
+Best plushy: (n n ISI w FFMC ISI ISI num-burning-neigh 0 FFMC FFMC FFMC FFMC 1 integer_- 1 integer_- integer_- integer_- integer_- s elevation elevation ISI nw nw exec_if exec_if)
+Best program: (n n ISI w FFMC ISI ISI num-burning-neigh 0 FFMC FFMC FFMC FFMC 1 integer_- 1 integer_- integer_- integer_- integer_- s elevation elevation ISI nw nw exec_if (exec_if () ()) ())
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 59
+-------------------------------------------------------
+Best plushy: (n ISI w FFMC ISI ISI 0 FFMC FFMC FFMC FFMC 1 1 integer_- integer_- integer_- integer_- s elevation elevation ISI nw nw exec_if exec_if)
+Best program: (n ISI w FFMC ISI ISI 0 FFMC FFMC FFMC FFMC 1 1 integer_- integer_- integer_- integer_- s elevation elevation ISI nw nw exec_if (exec_if () ()) ())
+Best total error: 2447
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 60
+-------------------------------------------------------
+Best plushy: (n n ISI DC w FFMC ISI ISI num-burning-neigh FFMC FFMC FFMC FFMC 1 ISI 1 1 integer_- s s elevation elevation nw elevation elevation ISI exec_if exec_if)
+Best program: (n n ISI DC w FFMC ISI ISI num-burning-neigh FFMC FFMC FFMC FFMC 1 ISI 1 1 integer_- s s elevation elevation nw elevation elevation ISI exec_if (exec_if () ()) ())
+Best total error: 5522
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 61
+-------------------------------------------------------
+Best plushy: (n n ISI close w FFMC ISI ISI num-burning-neigh ISI FFMC FFMC FFMC FFMC 1 1 1 1 s integer_- elevation elevation integer_- elevation elevation elevation exec_if nw elevation nw exec_if ISI)
+Best program: (n n ISI w FFMC ISI ISI num-burning-neigh ISI FFMC FFMC FFMC FFMC 1 1 1 1 s integer_- elevation elevation integer_- elevation elevation elevation exec_if (nw elevation nw exec_if (ISI) ()) ())
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 62
+-------------------------------------------------------
+Best plushy: (n n ISI DC w FFMC ISI ISI FFMC FFMC FFMC FFMC 1 ISI 1 1 integer_- s s elevation elevation nw elevation elevation ISI exec_if)
+Best program: (n n ISI DC w FFMC ISI ISI FFMC FFMC FFMC FFMC 1 ISI 1 1 integer_- s s elevation elevation nw elevation elevation ISI exec_if () ())
+Best total error: 1605
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 63
+-------------------------------------------------------
+Best plushy: (n n ISI DC sw DC ISI ISI ISI num-burning-neigh n ISI FFMC FFMC FFMC FFMC 1 1 1 s integer_- WD integer_- elevation elevation boolean_and elevation elevation elevation elevation elevation nw elevation nw ISI nw)
+Best program: (n n ISI DC sw DC ISI ISI ISI num-burning-neigh n ISI FFMC FFMC FFMC FFMC 1 1 1 s integer_- WD integer_- elevation elevation boolean_and elevation elevation elevation elevation elevation nw elevation nw ISI nw)
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 64
+-------------------------------------------------------
+Best plushy: (n n ISI close w DC w ISI ISI num-burning-neigh ISI FFMC 0 FFMC ISI 1 1 integer_- 1 integer_- elevation boolean_and elevation integer_- elevation ISI elevation elevation elevation nw nw nw ISI)
+Best program: (n n ISI w DC w ISI ISI num-burning-neigh ISI FFMC 0 FFMC ISI 1 1 integer_- 1 integer_- elevation boolean_and elevation integer_- elevation ISI elevation elevation elevation nw nw nw ISI)
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 65
+-------------------------------------------------------
+Best plushy: (current-value n n ISI DC w FFMC close ISI ISI n ISI 0 FFMC 0 DC FFMC FFMC FFMC ISI integer_- BUI ISI integer_- integer_- boolean_and elevation elevation elevation elevation elevation exec_if e exec_if ISI exec_if exec_if 0)
+Best program: (current-value n n ISI DC w FFMC ISI ISI n ISI 0 FFMC 0 DC FFMC FFMC FFMC ISI integer_- BUI ISI integer_- integer_- boolean_and elevation elevation elevation elevation elevation exec_if (e exec_if (ISI exec_if (exec_if (0) ()) ()) ()) ())
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 66
+-------------------------------------------------------
+Best plushy: (n n ISI ISI w w ISI ISI ISI ISI ISI s FFMC 0 FFMC FFMC FFMC ISI integer_- ISI integer_- integer_- ISI elevation elevation elevation boolean_and elevation elevation exec_if nw elevation nw exec_if)
+Best program: (n n ISI ISI w w ISI ISI ISI ISI ISI s FFMC 0 FFMC FFMC FFMC ISI integer_- ISI integer_- integer_- ISI elevation elevation elevation boolean_and elevation elevation exec_if (nw elevation nw exec_if () ()) ())
+Best total error: 3535
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 67
+-------------------------------------------------------
+Best plushy: (n n ISI ISI w w ISI ISI ISI ISI s 0 FFMC FFMC FFMC ISI integer_- ISI integer_- integer_- ISI elevation elevation elevation boolean_and elevation elevation exec_if nw elevation nw exec_if)
+Best program: (n n ISI ISI w w ISI ISI ISI ISI s 0 FFMC FFMC FFMC ISI integer_- ISI integer_- integer_- ISI elevation elevation elevation boolean_and elevation elevation exec_if (nw elevation nw exec_if () ()) ())
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 68
+-------------------------------------------------------
+Best plushy: (n n ISI DC w FFMC ISI close ISI ISI s 0 FFMC FFMC FFMC FFMC integer_- ISI integer_- integer_- elevation ISI elevation elevation boolean_and elevation elevation exec_if elevation elevation nw exec_if ISI)
+Best program: (n n ISI DC w FFMC ISI ISI ISI s 0 FFMC FFMC FFMC FFMC integer_- ISI integer_- integer_- elevation ISI elevation elevation boolean_and elevation elevation exec_if (elevation elevation nw exec_if (ISI) ()) ())
+Best total error: 3887
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 69
+-------------------------------------------------------
+Best plushy: (n n ISI ISI w w ISI close ISI n s 0 0 FFMC FFMC FFMC FFMC integer_- FFMC integer_- elevation integer_- integer_- elevation boolean_and elevation elevation elevation elevation elevation ISI elevation elevation nw)
+Best program: (n n ISI ISI w w ISI ISI n s 0 0 FFMC FFMC FFMC FFMC integer_- FFMC integer_- elevation integer_- integer_- elevation boolean_and elevation elevation elevation elevation elevation ISI elevation elevation nw)
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 70
+-------------------------------------------------------
+Best plushy: (n n ISI ISI DC w ISI ISI ISI ISI s 0 FFMC FFMC FFMC ISI FFMC ISI integer_- ISI integer_- integer_- elevation boolean_and ISI elevation elevation nw elevation ISI exec_if elevation nw)
+Best program: (n n ISI ISI DC w ISI ISI ISI ISI s 0 FFMC FFMC FFMC ISI FFMC ISI integer_- ISI integer_- integer_- elevation boolean_and ISI elevation elevation nw elevation ISI exec_if (elevation nw) ())
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 71
+-------------------------------------------------------
+Best plushy: (n current-value n ISI s DC DC w e close ISI ISI n FFMC FFMC FFMC FFMC FFMC FFMC FFMC ne elevation integer_- elevation integer_- integer_- elevation elevation 0 elevation elevation elevation elevation close elevation ISI elevation nw nw)
+Best program: (n current-value n ISI s DC DC w e ISI ISI n FFMC FFMC FFMC FFMC FFMC FFMC FFMC ne elevation integer_- elevation integer_- integer_- elevation elevation 0 elevation elevation elevation elevation elevation ISI elevation nw nw)
+Best total error: 3555
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 72
+-------------------------------------------------------
+Best plushy: (n n ISI DC DC w ISI ISI ISI ISI ISI FFMC FFMC FFMC ISI FFMC FFMC ne integer_- ISI elevation integer_- elevation elevation elevation elevation elevation elevation elevation boolean_not ISI exec_if nw nw)
+Best program: (n n ISI DC DC w ISI ISI ISI ISI ISI FFMC FFMC FFMC ISI FFMC FFMC ne integer_- ISI elevation integer_- elevation elevation elevation elevation elevation elevation elevation boolean_not ISI exec_if (nw nw) ())
+Best total error: 3919
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 73
+-------------------------------------------------------
+Best plushy: (s n n ISI ISI DC w ISI close n ISI n s 0 close FFMC FFMC FFMC FFMC FFMC FFMC ISI BUI WS integer_- integer_- elevation elevation elevation elevation elevation elevation ISI elevation elevation nw sw)
+Best program: (s n n ISI ISI DC w ISI n ISI n s 0 FFMC FFMC FFMC FFMC FFMC FFMC ISI BUI WS integer_- integer_- elevation elevation elevation elevation elevation elevation ISI elevation elevation nw sw)
+Best total error: 3147
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 74
+-------------------------------------------------------
+Best plushy: (elevation n n ISI DC DC w ISI ISI ISI ISI ISI FFMC FFMC FFMC ISI FFMC 0 FFMC ne integer_- ISI elevation integer_- elevation elevation elevation elevation elevation elevation elevation boolean_not ISI exec_if nw nw)
+Best program: (elevation n n ISI DC DC w ISI ISI ISI ISI ISI FFMC FFMC FFMC ISI FFMC 0 FFMC ne integer_- ISI elevation integer_- elevation elevation elevation elevation elevation elevation elevation boolean_not ISI exec_if (nw nw) ())
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 75
+-------------------------------------------------------
+Best plushy: (elevation n n ISI DC DC w ISI ISI ISI ISI ISI FFMC FFMC FFMC FFMC FFMC ne integer_- ISI elevation integer_- elevation elevation elevation elevation exec_if elevation elevation elevation ISI exec_if nw nw)
+Best program: (elevation n n ISI DC DC w ISI ISI ISI ISI ISI FFMC FFMC FFMC FFMC FFMC ne integer_- ISI elevation integer_- elevation elevation elevation elevation exec_if (elevation elevation elevation ISI exec_if (nw nw) ()) ())
+Best total error: 3919
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 76
+-------------------------------------------------------
+Best plushy: (elevation n ne n ISI s DC DC ISI close ISI close n s FFMC FFMC FFMC FFMC 0 FFMC ne FFMC ISI elevation integer_- elevation elevation elevation elevation elevation elevation elevation elevation elevation ISI elevation elevation nw nw)
+Best program: (elevation n ne n ISI s DC DC ISI ISI n s FFMC FFMC FFMC FFMC 0 FFMC ne FFMC ISI elevation integer_- elevation elevation elevation elevation elevation elevation elevation elevation elevation ISI elevation elevation nw nw)
+Best total error: 3777
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 77
+-------------------------------------------------------
+Best plushy: (elevation n ne n ISI s DC DC ISI close ISI close n s FFMC FFMC FFMC FFMC 0 FFMC ne FFMC ISI elevation integer_- elevation elevation elevation elevation elevation elevation elevation elevation ISI elevation nw nw)
+Best program: (elevation n ne n ISI s DC DC ISI ISI n s FFMC FFMC FFMC FFMC 0 FFMC ne FFMC ISI elevation integer_- elevation elevation elevation elevation elevation elevation elevation elevation ISI elevation nw nw)
+Best total error: 3777
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 78
+-------------------------------------------------------
+Best plushy: (elevation n integer_% n ISI DC w ISI se ISI ISI close ISI ISI FFMC FFMC FFMC FFMC FFMC ne FFMC BUI integer_- elevation elevation elevation elevation elevation exec_if elevation elevation elevation ISI elevation elevation integer_* nw nw)
+Best program: (elevation n integer_% n ISI DC w ISI se ISI ISI ISI ISI FFMC FFMC FFMC FFMC FFMC ne FFMC BUI integer_- elevation elevation elevation elevation elevation exec_if (elevation elevation elevation ISI elevation elevation integer_* nw nw) ())
+Best total error: 5585
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 79
+-------------------------------------------------------
+Best plushy: (elevation n integer_% n ISI DC w ISI se ISI ISI close ISI ISI FFMC integer_% FFMC FFMC FFMC FFMC 1 ne FFMC BUI integer_- elevation elevation elevation elevation elevation exec_if elevation elevation elevation ISI elevation elevation integer_* nw nw)
+Best program: (elevation n integer_% n ISI DC w ISI se ISI ISI ISI ISI FFMC integer_% FFMC FFMC FFMC FFMC 1 ne FFMC BUI integer_- elevation elevation elevation elevation elevation exec_if (elevation elevation elevation ISI elevation elevation integer_* nw nw) ())
+Best total error: 3147
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 80
+-------------------------------------------------------
+Best plushy: (elevation n integer_% n ISI DC w ISI se ISI ISI close ISI ISI 0 FFMC integer_% ne FFMC FFMC FFMC FFMC 1 ne FFMC BUI integer_- elevation elevation elevation elevation elevation exec_if elevation elevation elevation ISI elevation elevation integer_* nw nw boolean_or)
+Best program: (elevation n integer_% n ISI DC w ISI se ISI ISI ISI ISI 0 FFMC integer_% ne FFMC FFMC FFMC FFMC 1 ne FFMC BUI integer_- elevation elevation elevation elevation elevation exec_if (elevation elevation elevation ISI elevation elevation integer_* nw nw boolean_or) ())
+Best total error: 2447
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 81
+-------------------------------------------------------
+Best plushy: (n n ISI DC w w close ISI ISI FFMC FFMC FFMC FFMC FFMC ne ISI elevation integer_- elevation exec_if elevation exec_if elevation elevation exec_if elevation ISI elevation ISI elevation nw)
+Best program: (n n ISI DC w w ISI ISI FFMC FFMC FFMC FFMC FFMC ne ISI elevation integer_- elevation exec_if (elevation exec_if (elevation elevation exec_if (elevation ISI elevation ISI elevation nw) ()) ()) ())
+Best total error: 3887
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 82
+-------------------------------------------------------
+Best plushy: (n n ISI DC DC ISI close ISI integer_= n FFMC s FFMC FFMC FFMC ne ISI FFMC integer_- FFMC elevation elevation exec_if elevation elevation exec_if elevation ISI nw ISI nw nw)
+Best program: (n n ISI DC DC ISI ISI integer_= n FFMC s FFMC FFMC FFMC ne ISI FFMC integer_- FFMC elevation elevation exec_if (elevation elevation exec_if (elevation ISI nw ISI nw nw) ()) ())
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 83
+-------------------------------------------------------
+Best plushy: (n n ISI ISI w nw w ISI ISI ISI FFMC s FFMC FFMC ne ne ISI elevation ISI FFMC integer_- elevation exec_if elevation elevation exec_if elevation ISI elevation ISI elevation nw)
+Best program: (n n ISI ISI w nw w ISI ISI ISI FFMC s FFMC FFMC ne ne ISI elevation ISI FFMC integer_- elevation exec_if (elevation elevation exec_if (elevation ISI elevation ISI elevation nw) ()) ())
+Best total error: 5522
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 84
+-------------------------------------------------------
+Best plushy: (n integer_* n s ISI ISI DC nw w ISI close ISI FFMC s FFMC FFMC FFMC ne ISI elevation ISI FFMC integer_- elevation exec_if nw elevation elevation elevation elevation ISI elevation FWI ISI elevation time-step nw)
+Best program: (n integer_* n s ISI ISI DC nw w ISI ISI FFMC s FFMC FFMC FFMC ne ISI elevation ISI FFMC integer_- elevation exec_if (nw elevation elevation elevation elevation ISI elevation FWI ISI elevation time-step nw) ())
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 85
+-------------------------------------------------------
+Best plushy: (n DC n ISI w DC w n ISI close ISI FFMC FFMC FFMC FFMC FFMC ISI elevation elevation elevation elevation elevation elevation exec_if nw elevation elevation elevation elevation ISI elevation nw)
+Best program: (n DC n ISI w DC w n ISI ISI FFMC FFMC FFMC FFMC FFMC ISI elevation elevation elevation elevation elevation elevation exec_if (nw elevation elevation elevation elevation ISI elevation nw) ())
+Best total error: 5522
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 86
+-------------------------------------------------------
+Best plushy: (n n n s ISI ISI DC 0 nw ISI ISI FFMC s FFMC DC FFMC FFMC FFMC FFMC current-value ne ISI FFMC elevation ISI elevation integer_- elevation elevation integer_- nw elevation boolean_= elevation elevation ISI ISI elevation time-step nw)
+Best program: (n n n s ISI ISI DC 0 nw ISI ISI FFMC s FFMC DC FFMC FFMC FFMC FFMC current-value ne ISI FFMC elevation ISI elevation integer_- elevation elevation integer_- nw elevation boolean_= elevation elevation ISI ISI elevation time-step nw)
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 87
+-------------------------------------------------------
+Best plushy: (n n n s ISI ISI DC 0 nw ISI ISI FFMC s FFMC DC FFMC FFMC FFMC FFMC current-value ne ISI FFMC elevation ISI elevation integer_- elevation elevation integer_- nw elevation boolean_= elevation elevation ISI ISI elevation time-step nw)
+Best program: (n n n s ISI ISI DC 0 nw ISI ISI FFMC s FFMC DC FFMC FFMC FFMC FFMC current-value ne ISI FFMC elevation ISI elevation integer_- elevation elevation integer_- nw elevation boolean_= elevation elevation ISI ISI elevation time-step nw)
+Best total error: 3147
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 88
+-------------------------------------------------------
+Best plushy: (n n n s ISI ISI DC 0 nw ISI ISI ISI s s FFMC DC FFMC FFMC FFMC current-value current-value ISI ISI elevation ISI ISI integer_- elevation elevation integer_- nw nw boolean_= boolean_= elevation elevation ISI ISI time-step nw)
+Best program: (n n n s ISI ISI DC 0 nw ISI ISI ISI s s FFMC DC FFMC FFMC FFMC current-value current-value ISI ISI elevation ISI ISI integer_- elevation elevation integer_- nw nw boolean_= boolean_= elevation elevation ISI ISI time-step nw)
+Best total error: 3424
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 89
+-------------------------------------------------------
+Best plushy: (n w n s ISI ISI FFMC nw ISI ne s FFMC DC elevation elevation FFMC FFMC integer_- ne ISI FFMC elevation ISI elevation elevation elevation elevation nw boolean_= elevation ISI elevation time-step nw)
+Best program: (n w n s ISI ISI FFMC nw ISI ne s FFMC DC elevation elevation FFMC FFMC integer_- ne ISI FFMC elevation ISI elevation elevation elevation elevation nw boolean_= elevation ISI elevation time-step nw)
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 90
+-------------------------------------------------------
+Best plushy: (n n n s ISI ISI DC 0 nw ISI ISI FFMC s FFMC DC FFMC FFMC FFMC FFMC current-value ne ISI FFMC elevation ISI elevation integer_- exec_if elevation elevation integer_- nw elevation boolean_= elevation elevation ISI ISI elevation time-step nw)
+Best program: (n n n s ISI ISI DC 0 nw ISI ISI FFMC s FFMC DC FFMC FFMC FFMC FFMC current-value ne ISI FFMC elevation ISI elevation integer_- exec_if (elevation elevation integer_- nw elevation boolean_= elevation elevation ISI ISI elevation time-step nw) ())
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 91
+-------------------------------------------------------
+Best plushy: (n w n s ISI ISI DC 0 ISI ISI ne FFMC s DC elevation FFMC FFMC FFMC integer_- ne ne ISI w elevation elevation elevation integer_- exec_if integer_- elevation integer_- nw integer_- nw elevation elevation ISI ISI elevation time-step nw)
+Best program: (n w n s ISI ISI DC 0 ISI ISI ne FFMC s DC elevation FFMC FFMC FFMC integer_- ne ne ISI w elevation elevation elevation integer_- exec_if (integer_- elevation integer_- nw integer_- nw elevation elevation ISI ISI elevation time-step nw) ())
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 92
+-------------------------------------------------------
+Best plushy: (n w n s ISI exec_if ISI FFMC nw e ISI ne s FFMC DC elevation FFMC elevation FFMC integer_- ne exec_if ISI ISI FFMC elevation ISI elevation elevation elevation elevation nw elevation ISI elevation time-step nw)
+Best program: (n w n s ISI exec_if (ISI FFMC nw e ISI ne s FFMC DC elevation FFMC elevation FFMC integer_- ne exec_if (ISI ISI FFMC elevation ISI elevation elevation elevation elevation nw elevation ISI elevation time-step nw) ()) ())
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 93
+-------------------------------------------------------
+Best plushy: (n w sw s ISI exec_if FFMC FFMC nw ISI ISI ISI ne s FFMC DC FFMC elevation FFMC FFMC integer_- ne FFMC ISI ISI FFMC elevation ISI elevation exec_if elevation elevation integer_- DMC elevation elevation elevation nw boolean_or ISI time-step nw)
+Best program: (n w sw s ISI exec_if (FFMC FFMC nw ISI ISI ISI ne s FFMC DC FFMC elevation FFMC FFMC integer_- ne FFMC ISI ISI FFMC elevation ISI elevation exec_if (elevation elevation integer_- DMC elevation elevation elevation nw boolean_or ISI time-step nw) ()) ())
+Best total error: 3777
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 94
+-------------------------------------------------------
+Best plushy: (n w n n ISI exec_if FFMC FFMC nw e ISI ISI ne s FFMC DC elevation elevation FFMC FFMC FFMC exec_if ISI ISI FFMC ISI ISI elevation elevation integer_- elevation nw integer_- DMC elevation elevation boolean_= nw boolean_or nw time-step)
+Best program: (n w n n ISI exec_if (FFMC FFMC nw e ISI ISI ne s FFMC DC elevation elevation FFMC FFMC FFMC exec_if (ISI ISI FFMC ISI ISI elevation elevation integer_- elevation nw integer_- DMC elevation elevation boolean_= nw boolean_or nw time-step) ()) ())
+Best total error: 3424
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 95
+-------------------------------------------------------
+Best plushy: (n w n n ISI exec_if DC 0 nw ISI ISI ISI FFMC s FFMC elevation FFMC elevation FFMC integer_- current-value exec_if FFMC ISI FFMC FFMC integer_= elevation ISI exec_if elevation nw integer_- elevation elevation elevation elevation nw boolean_or ISI ISI ISI nw)
+Best program: (n w n n ISI exec_if (DC 0 nw ISI ISI ISI FFMC s FFMC elevation FFMC elevation FFMC integer_- current-value exec_if (FFMC ISI FFMC FFMC integer_= elevation ISI exec_if (elevation nw integer_- elevation elevation elevation elevation nw boolean_or ISI ISI ISI nw) ()) ()) ())
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 96
+-------------------------------------------------------
+Best plushy: (n w sw n ISI exec_if FFMC DC nw ISI ISI ISI ne s FFMC elevation elevation elevation FFMC integer_- integer_- ne ISI ISI ISI FFMC ISI ISI elevation integer_- elevation elevation integer_- ISI elevation elevation elevation elevation boolean_or ISI time-step)
+Best program: (n w sw n ISI exec_if (FFMC DC nw ISI ISI ISI ne s FFMC elevation elevation elevation FFMC integer_- integer_- ne ISI ISI ISI FFMC ISI ISI elevation integer_- elevation elevation integer_- ISI elevation elevation elevation elevation boolean_or ISI time-step) ())
+Best total error: 3424
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 97
+-------------------------------------------------------
+Best plushy: (n w n n ISI exec_if FFMC DC nw ISI ISI ISI s s FFMC elevation elevation elevation FFMC integer_- exec_if ne ISI FFMC ISI FFMC integer_= ISI elevation elevation integer_- nw integer_- integer_- elevation boolean_= nw elevation nw nw time-step)
+Best program: (n w n n ISI exec_if (FFMC DC nw ISI ISI ISI s s FFMC elevation elevation elevation FFMC integer_- exec_if (ne ISI FFMC ISI FFMC integer_= ISI elevation elevation integer_- nw integer_- integer_- elevation boolean_= nw elevation nw nw time-step) ()) ())
+Best total error: 2447
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 98
+-------------------------------------------------------
+Best plushy: (n w n n ISI exec_if FFMC DC nw ISI ISI ISI ne s elevation elevation elevation elevation FFMC integer_- exec_if ISI ISI FFMC ISI ISI ISI elevation exec_dup elevation elevation nw integer_- ISI elevation elevation elevation elevation nw ISI)
+Best program: (n w n n ISI exec_if (FFMC DC nw ISI ISI ISI ne s elevation elevation elevation elevation FFMC integer_- exec_if (ISI ISI FFMC ISI ISI ISI elevation exec_dup (elevation elevation nw integer_- ISI elevation elevation elevation elevation nw ISI)) ()) ())
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 99
+-------------------------------------------------------
+Best plushy: (n w n n ISI exec_if FFMC DC ISI ISI s s elevation elevation elevation FFMC integer_- exec_if ne ISI FFMC ISI FFMC integer_= ISI elevation elevation integer_- nw integer_- integer_- elevation boolean_= nw elevation nw nw time-step)
+Best program: (n w n n ISI exec_if (FFMC DC ISI ISI s s elevation elevation elevation FFMC integer_- exec_if (ne ISI FFMC ISI FFMC integer_= ISI elevation elevation integer_- nw integer_- integer_- elevation boolean_= nw elevation nw nw time-step) ()) ())
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 100
+-------------------------------------------------------
+Best plushy: (n w n n ISI exec_if FFMC DC ISI ISI s s elevation elevation elevation FFMC integer_- exec_if ne ISI FFMC ISI FFMC integer_= ISI elevation elevation integer_- nw integer_- integer_- elevation boolean_= nw elevation nw nw time-step)
+Best program: (n w n n ISI exec_if (FFMC DC ISI ISI s s elevation elevation elevation FFMC integer_- exec_if (ne ISI FFMC ISI FFMC integer_= ISI elevation elevation integer_- nw integer_- integer_- elevation boolean_= nw elevation nw nw time-step) ()) ())
+Best total error: 5585
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 101
+-------------------------------------------------------
+Best plushy: (n w n n ISI exec_if FFMC ISI s s elevation elevation elevation FFMC integer_- exec_if ISI FFMC ISI FFMC ISI elevation elevation integer_- nw integer_- integer_- elevation boolean_= nw elevation nw nw time-step)
+Best program: (n w n n ISI exec_if (FFMC ISI s s elevation elevation elevation FFMC integer_- exec_if (ISI FFMC ISI FFMC ISI elevation elevation integer_- nw integer_- integer_- elevation boolean_= nw elevation nw nw time-step) ()) ())
+Best total error: 3147
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 102
+-------------------------------------------------------
+Best plushy: (n w n n ISI exec_if FFMC DC ISI ISI s s elevation elevation elevation FFMC integer_- exec_if ne ISI FFMC ISI FFMC integer_= ISI elevation elevation integer_- nw integer_- integer_- elevation boolean_= nw elevation nw nw)
+Best program: (n w n n ISI exec_if (FFMC DC ISI ISI s s elevation elevation elevation FFMC integer_- exec_if (ne ISI FFMC ISI FFMC integer_= ISI elevation elevation integer_- nw integer_- integer_- elevation boolean_= nw elevation nw nw) ()) ())
+Best total error: 3147
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 103
+-------------------------------------------------------
+Best plushy: (n w n n ISI exec_if FFMC DC ISI ISI s s elevation elevation FFMC integer_- exec_if ne ISI ISI FFMC integer_= ISI elevation elevation integer_- nw integer_- integer_- elevation boolean_= nw elevation nw nw)
+Best program: (n w n n ISI exec_if (FFMC DC ISI ISI s s elevation elevation FFMC integer_- exec_if (ne ISI ISI FFMC integer_= ISI elevation elevation integer_- nw integer_- integer_- elevation boolean_= nw elevation nw nw) ()) ())
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 104
+-------------------------------------------------------
+Best plushy: (n w n n ISI exec_if time-step FFMC ISI ISI s elevation s elevation elevation elevation exec_if ISI exec_if ne ISI FFMC ISI FFMC integer_= nw elevation elevation elevation boolean_= true nw elevation nw nw time-step elevation nw integer_*)
+Best program: (n w n n ISI exec_if (time-step FFMC ISI ISI s elevation s elevation elevation elevation exec_if (ISI exec_if (ne ISI FFMC ISI FFMC integer_= nw elevation elevation elevation boolean_= true nw elevation nw nw time-step elevation nw integer_*) ()) ()) ())
+Best total error: 3777
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 105
+-------------------------------------------------------
+Best plushy: (n w n n ISI exec_if FFMC DC ISI ISI s se s elevation elevation FFMC integer_- exec_if exec_if ne ISI FFMC integer_= FFMC integer_= ISI integer_- nw integer_- nw elevation boolean_= elevation boolean_= nw nw nw)
+Best program: (n w n n ISI exec_if (FFMC DC ISI ISI s se s elevation elevation FFMC integer_- exec_if (exec_if (ne ISI FFMC integer_= FFMC integer_= ISI integer_- nw integer_- nw elevation boolean_= elevation boolean_= nw nw nw) ()) ()) ())
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 106
+-------------------------------------------------------
+Best plushy: (n w n n ISI exec_if FFMC DC ISI ISI s se s elevation elevation FFMC integer_- exec_if exec_if ne ISI FFMC integer_= FFMC integer_= ISI integer_- nw integer_- nw elevation elevation boolean_= nw nw nw)
+Best program: (n w n n ISI exec_if (FFMC DC ISI ISI s se s elevation elevation FFMC integer_- exec_if (exec_if (ne ISI FFMC integer_= FFMC integer_= ISI integer_- nw integer_- nw elevation elevation boolean_= nw nw nw) ()) ()) ())
+Best total error: 3147
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 107
+-------------------------------------------------------
+Best plushy: (n w n n ISI ISI exec_if DC ISI ISI s elevation s elevation elevation FFMC WS exec_if exec_if FFMC ISI ne integer_= FFMC integer_= ISI elevation nw elevation nw integer_- elevation boolean_= nw 2 elevation APCP)
+Best program: (n w n n ISI ISI exec_if (DC ISI ISI s elevation s elevation elevation FFMC WS exec_if (exec_if (FFMC ISI ne integer_= FFMC integer_= ISI elevation nw elevation nw integer_- elevation boolean_= nw 2 elevation APCP) ()) ()) ())
+Best total error: 3777
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 108
+-------------------------------------------------------
+Best plushy: (n w n n ISI exec_if FFMC DC ISI ISI s se s elevation elevation FFMC integer_- FWI exec_if exec_if ne ISI FFMC integer_= FFMC DC integer_= ISI integer_- nw integer_- nw elevation elevation boolean_= nw nw nw)
+Best program: (n w n n ISI exec_if (FFMC DC ISI ISI s se s elevation elevation FFMC integer_- FWI exec_if (exec_if (ne ISI FFMC integer_= FFMC DC integer_= ISI integer_- nw integer_- nw elevation elevation boolean_= nw nw nw) ()) ()) ())
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 109
+-------------------------------------------------------
+Best plushy: (n w n n ISI exec_if nw ISI s ISI elevation elevation DC time-step integer_- FFMC exec_if ISI exec_if ISI ne ISI elevation FFMC integer_- elevation integer_- elevation elevation integer_- nw elevation nw 2 time-step boolean_or close elevation nw)
+Best program: (n w n n ISI exec_if (nw ISI s ISI elevation elevation DC time-step integer_- FFMC exec_if (ISI exec_if (ISI ne ISI elevation FFMC integer_- elevation integer_- elevation elevation integer_- nw elevation nw 2 time-step boolean_or) (elevation nw)) ()) ())
+Best total error: 3147
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 110
+-------------------------------------------------------
+Best plushy: (n w n ISI exec_if nw ISI s ISI elevation elevation DC time-step integer_- FFMC exec_if ISI exec_if ISI ne ISI elevation FFMC integer_- elevation integer_- elevation elevation integer_- nw elevation nw 2 time-step boolean_or close elevation nw)
+Best program: (n w n ISI exec_if (nw ISI s ISI elevation elevation DC time-step integer_- FFMC exec_if (ISI exec_if (ISI ne ISI elevation FFMC integer_- elevation integer_- elevation elevation integer_- nw elevation nw 2 time-step boolean_or) (elevation nw)) ()) ())
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 111
+-------------------------------------------------------
+Best plushy: (n w n ISI exec_if nw ISI s ISI elevation DC time-step integer_- FFMC exec_if ISI exec_if ISI ne ISI elevation FFMC integer_- elevation integer_- elevation elevation integer_- nw elevation nw 2 boolean_or close elevation nw)
+Best program: (n w n ISI exec_if (nw ISI s ISI elevation DC time-step integer_- FFMC exec_if (ISI exec_if (ISI ne ISI elevation FFMC integer_- elevation integer_- elevation elevation integer_- nw elevation nw 2 boolean_or) (elevation nw)) ()) ())
+Best total error: 3424
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 112
+-------------------------------------------------------
+Best plushy: (n w n ISI exec_if nw ISI s ISI elevation DC time-step FFMC exec_if ISI exec_if ISI ne ISI elevation FFMC elevation integer_- elevation elevation integer_- nw elevation nw 2 boolean_or close elevation nw)
+Best program: (n w n ISI exec_if (nw ISI s ISI elevation DC time-step FFMC exec_if (ISI exec_if (ISI ne ISI elevation FFMC elevation integer_- elevation elevation integer_- nw elevation nw 2 boolean_or) (elevation nw)) ()) ())
+Best total error: 3424
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 113
+-------------------------------------------------------
+Best plushy: (n w n n ne nw exec_if s ISI ISI DC elevation DC FFMC exec_if integer_- FFMC exec_if e DC ne elevation elevation FFMC integer_- elevation integer_- elevation nw elevation elevation nw nw time-step nw elevation elevation)
+Best program: (n w n n ne nw exec_if (s ISI ISI DC elevation DC FFMC exec_if (integer_- FFMC exec_if (e DC ne elevation elevation FFMC integer_- elevation integer_- elevation nw elevation elevation nw nw time-step nw elevation elevation) ()) ()) ())
+Best total error: 3566
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 114
+-------------------------------------------------------
+Best plushy: (n w n n exec_if ne exec_if ISI s ISI elevation DC DC DC FFMC exec_if integer_- FFMC exec_if ISI ISI ISI ISI elevation FFMC integer_- elevation integer_- elevation nw nw elevation elevation nw nw time-step boolean_and nw elevation)
+Best program: (n w n n exec_if (ne exec_if (ISI s ISI elevation DC DC DC FFMC exec_if (integer_- FFMC exec_if (ISI ISI ISI ISI elevation FFMC integer_- elevation integer_- elevation nw nw elevation elevation nw nw time-step boolean_and nw elevation) ()) ()) ()) ())
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 115
+-------------------------------------------------------
+Best plushy: (n integer_* w n n APCP ne nw ISI s ISI s ISI DC elevation DC FFMC integer_- FFMC exec_if ISI ISI ISI FFMC elevation FFMC integer_- elevation WS integer_- elevation elevation nw DMC elevation DMC nw nw time-step elevation boolean_and nw elevation nw)
+Best program: (n integer_* w n n APCP ne nw ISI s ISI s ISI DC elevation DC FFMC integer_- FFMC exec_if (ISI ISI ISI FFMC elevation FFMC integer_- elevation WS integer_- elevation elevation nw DMC elevation DMC nw nw time-step elevation boolean_and nw elevation nw) ())
+Best total error: 3568
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 116
+-------------------------------------------------------
+Best plushy: (n WS w n exec_if boolean_or s ISI s ISI elevation DC elevation DC FFMC exec_if integer_- exec_if exec_if e ISI ne elevation elevation elevation integer_- integer_- elevation integer_- nw nw elevation elevation nw time-step nw elevation)
+Best program: (n WS w n exec_if (boolean_or s ISI s ISI elevation DC elevation DC FFMC exec_if (integer_- exec_if (exec_if (e ISI ne elevation elevation elevation integer_- integer_- elevation integer_- nw nw elevation elevation nw time-step nw elevation) ()) ()) ()) ())
+Best total error: 3896
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 117
+-------------------------------------------------------
+Best plushy: (n WS w n exec_if APCP ne s ISI s ISI s DC DC exec_if integer_- FFMC exec_if FFMC exec_if ne ISI ISI integer_- elevation FFMC integer_- nw nw elevation elevation nw DMC DMC time-step DMC time-step boolean_and boolean_and)
+Best program: (n WS w n exec_if (APCP ne s ISI s ISI s DC DC exec_if (integer_- FFMC exec_if (FFMC exec_if (ne ISI ISI integer_- elevation FFMC integer_- nw nw elevation elevation nw DMC DMC time-step DMC time-step boolean_and boolean_and) ()) ()) ()) ())
+Best total error: 5641
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 118
+-------------------------------------------------------
+Best plushy: (n integer_* n n exec_if boolean_or ne s ISI s DC s DC DC FFMC integer_- FFMC integer_- FFMC ISI ISI ISI ISI FFMC elevation elevation integer_- elevation nw integer_- elevation nw nw DMC DMC DMC nw time-step boolean_and boolean_and boolean_and)
+Best program: (n integer_* n n exec_if (boolean_or ne s ISI s DC s DC DC FFMC integer_- FFMC integer_- FFMC ISI ISI ISI ISI FFMC elevation elevation integer_- elevation nw integer_- elevation nw nw DMC DMC DMC nw time-step boolean_and boolean_and boolean_and) ())
+Best total error: 1664
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 119
+-------------------------------------------------------
+Best plushy: (n WS n n exec_if boolean_or exec_if s ISI elevation DC s WD DC FFMC exec_if integer_- exec_if exec_if e ISI ISI elevation elevation FFMC integer_- elevation elevation nw integer_- elevation elevation nw nw DMC time-step DMC nw elevation boolean_and nw)
+Best program: (n WS n n exec_if (boolean_or exec_if (s ISI elevation DC s WD DC FFMC exec_if (integer_- exec_if (exec_if (e ISI ISI elevation elevation FFMC integer_- elevation elevation nw integer_- elevation elevation nw nw DMC time-step DMC nw elevation boolean_and nw) ()) ()) ()) ()) ())
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 120
+-------------------------------------------------------
+Best plushy: (n WS n n exec_if boolean_or exec_if s ISI elevation DC s WD DC FFMC exec_if integer_- exec_if exec_if e ISI ISI elevation elevation FFMC integer_- elevation elevation nw integer_- elevation elevation nw nw DMC elevation boolean_and nw)
+Best program: (n WS n n exec_if (boolean_or exec_if (s ISI elevation DC s WD DC FFMC exec_if (integer_- exec_if (exec_if (e ISI ISI elevation elevation FFMC integer_- elevation elevation nw integer_- elevation elevation nw nw DMC elevation boolean_and nw) ()) ()) ()) ()) ())
+Best total error: 2834
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 121
+-------------------------------------------------------
+Best plushy: (n WS n n exec_if s boolean_or false exec_if s ISI DC s DC FFMC exec_if integer_- exec_if exec_if e ISI ISI elevation elevation FFMC integer_- elevation elevation nw integer_- elevation elevation nw DMC time-step DMC nw elevation boolean_and nw)
+Best program: (n WS n n exec_if (s boolean_or false exec_if (s ISI DC s DC FFMC exec_if (integer_- exec_if (exec_if (e ISI ISI elevation elevation FFMC integer_- elevation elevation nw integer_- elevation elevation nw DMC time-step DMC nw elevation boolean_and nw) ()) ()) ()) ()) ())
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 122
+-------------------------------------------------------
+Best plushy: (n WS exec_if s exec_if s ISI DC elevation DC s DC exec_if exec_if exec_if ISI ISI ISI ISI elevation elevation integer_- elevation elevation integer_- integer_- elevation elevation DMC DMC DMC time-step elevation elevation elevation nw)
+Best program: (n WS exec_if (s exec_if (s ISI DC elevation DC s DC exec_if (exec_if (exec_if (ISI ISI ISI ISI elevation elevation integer_- elevation elevation integer_- integer_- elevation elevation DMC DMC DMC time-step elevation elevation elevation nw) ()) ()) ()) ()) ())
+Best total error: 2804
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 123
+-------------------------------------------------------
+Best plushy: (n WS n n exec_if s exec_if s exec_if s DC elevation DC s DC DC exec_if exec_if e exec_if ISI boolean_and ISI elevation elevation FFMC elevation elevation integer_- nw elevation integer_- 2 nw DMC integer_- elevation nw elevation boolean_and elevation elevation)
+Best program: (n WS n n exec_if (s exec_if (s exec_if (s DC elevation DC s DC DC exec_if (exec_if (e exec_if (ISI boolean_and ISI elevation elevation FFMC elevation elevation integer_- nw elevation integer_- 2 nw DMC integer_- elevation nw elevation boolean_and elevation elevation) ()) ()) ()) ()) ()) ())
+Best total error: 3896
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 124
+-------------------------------------------------------
+Best plushy: (n WS exec_if s exec_if s DC elevation DC s DC exec_if exec_if ISI ISI ISI ISI elevation elevation integer_- elevation elevation integer_- integer_- elevation elevation DMC DMC DMC time-step elevation elevation elevation nw)
+Best program: (n WS exec_if (s exec_if (s DC elevation DC s DC exec_if (exec_if (ISI ISI ISI ISI elevation elevation integer_- elevation elevation integer_- integer_- elevation elevation DMC DMC DMC time-step elevation elevation elevation nw) ()) ()) ()) ())
+Best total error: 3555
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 125
+-------------------------------------------------------
+Best plushy: (n WS exec_if n n exec_if DC elevation s s DC exec_if elevation s s ISI exec_if elevation exec_if ISI ISI ISI ISI ISI elevation elevation DMC elevation DMC time-step integer_- elevation nw DMC DMC nw elevation boolean_and elevation)
+Best program: (n WS exec_if (n n exec_if (DC elevation s s DC exec_if (elevation s s ISI exec_if (elevation exec_if (ISI ISI ISI ISI ISI elevation elevation DMC elevation DMC time-step integer_- elevation nw DMC DMC nw elevation boolean_and elevation) ()) ()) ()) ()) ())
+Best total error: 3896
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 126
+-------------------------------------------------------
+Best plushy: (n WS n n exec_if s exec_if s exec_if s DC elevation exec_if s FWI DC ISI exec_if elevation e elevation elevation boolean_and integer_- elevation elevation FFMC elevation w elevation elevation elevation elevation integer_- 2 nw DMC nw elevation elevation)
+Best program: (n WS n n exec_if (s exec_if (s exec_if (s DC elevation exec_if (s FWI DC ISI exec_if (elevation e elevation elevation boolean_and integer_- elevation elevation FFMC elevation w elevation elevation elevation elevation integer_- 2 nw DMC nw elevation elevation) ()) ()) ()) ()) ())
+Best total error: 3896
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 127
+-------------------------------------------------------
+Best plushy: (close WS exec_if s sw exec_if s DC elevation DC s DC exec_if exec_if s ISI ISI ISI elevation exec_if integer_- elevation elevation integer_- ISI elevation n elevation DMC DMC DMC time-step WS elevation elevation elevation nw boolean_and)
+Best program: (WS exec_if (s sw exec_if (s DC elevation DC s DC exec_if (exec_if (s ISI ISI ISI elevation exec_if (integer_- elevation elevation integer_- ISI elevation n elevation DMC DMC DMC time-step WS elevation elevation elevation nw boolean_and) ()) ()) ()) ()) ())
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 128
+-------------------------------------------------------
+Best plushy: (close WS exec_if s sw exec_if DC DC elevation DC s DC exec_if exec_if ISI ISI integer_* elevation ISI RH elevation exec_if integer_- elevation elevation integer_- ISI elevation elevation boolean_or elevation DMC DMC time-step elevation elevation elevation elevation boolean_and boolean_and)
+Best program: (WS exec_if (s sw exec_if (DC DC elevation DC s DC exec_if (exec_if (ISI ISI integer_* elevation ISI RH elevation exec_if (integer_- elevation elevation integer_- ISI elevation elevation boolean_or elevation DMC DMC time-step elevation elevation elevation elevation boolean_and boolean_and) ()) ()) ()) ()) ())
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 129
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if sw DC DC DC s DC s DC exec_if ISI ISI ISI elevation ISI integer_- exec_if integer_- elevation elevation integer_- elevation elevation DMC elevation elevation DMC time-step nw elevation elevation)
+Best program: (WS WS exec_if (exec_if (sw DC DC DC s DC s DC exec_if (ISI ISI ISI elevation ISI integer_- exec_if (integer_- elevation elevation integer_- elevation elevation DMC elevation elevation DMC time-step nw elevation elevation) ()) ()) ()) ())
+Best total error: 5615
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 130
+-------------------------------------------------------
+Best plushy: (WS WS exec_if s sw DC DC DC s n s DC exec_if ISI exec_if ISI elevation elevation ISI exec_if integer_- integer_- elevation elevation elevation FWI elevation elevation elevation DMC DMC time-step elevation elevation boolean_and)
+Best program: (WS WS exec_if (s sw DC DC DC s n s DC exec_if (ISI exec_if (ISI elevation elevation ISI exec_if (integer_- integer_- elevation elevation elevation FWI elevation elevation elevation DMC DMC time-step elevation elevation boolean_and) ()) ()) ()) ())
+Best total error: 2544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 131
+-------------------------------------------------------
+Best plushy: (close WS exec_if s sw DC DC DC s n s DC DC exec_if exec_if ISI ISI elevation ISI elevation integer_- integer_- elevation elevation ISI FWI elevation elevation elevation DMC DMC time-step elevation elevation boolean_and elevation boolean_and)
+Best program: (WS exec_if (s sw DC DC DC s n s DC DC exec_if (exec_if (ISI ISI elevation ISI elevation integer_- integer_- elevation elevation ISI FWI elevation elevation elevation DMC DMC time-step elevation elevation boolean_and elevation boolean_and) ()) ()) ())
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 132
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if sw s DC DC DC DC DC DC exec_if exec_if ISI ISI ISI ISI exec_if exec_if integer_- elevation elevation FWI elevation elevation elevation elevation DMC DMC time-step elevation elevation)
+Best program: (WS WS exec_if (exec_if (sw s DC DC DC DC DC DC exec_if (exec_if (ISI ISI ISI ISI exec_if (exec_if (integer_- elevation elevation FWI elevation elevation elevation elevation DMC DMC time-step elevation elevation) ()) ()) ()) ()) ()) ())
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 133
+-------------------------------------------------------
+Best plushy: (WS exec_if exec_if sw DC DC elevation DC DC DC DC exec_if exec_if ISI ISI ISI ISI exec_if exec_if integer_- elevation FWI elevation elevation elevation DMC DMC time-step elevation elevation)
+Best program: (WS exec_if (exec_if (sw DC DC elevation DC DC DC DC exec_if (exec_if (ISI ISI ISI ISI exec_if (exec_if (integer_- elevation FWI elevation elevation elevation DMC DMC time-step elevation elevation) ()) ()) ()) ()) ()) ())
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 134
+-------------------------------------------------------
+Best plushy: (close WS exec_if s sw RH DC DC DC s n s DC s DC exec_if exec_if ISI ISI ISI elevation integer_- integer_- elevation ISI FWI elevation elevation elevation DMC DMC time-step elevation elevation boolean_and elevation)
+Best program: (WS exec_if (s sw RH DC DC DC s n s DC s DC exec_if (exec_if (ISI ISI ISI elevation integer_- integer_- elevation ISI FWI elevation elevation elevation DMC DMC time-step elevation elevation boolean_and elevation) ()) ()) ())
+Best total error: 2379
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 135
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if sw DC elevation DC elevation DC DC DC DC exec_if exec_if ISI ISI exec_if exec_if integer_- elevation FWI elevation elevation elevation DMC elevation time-step elevation DMC DMC time-step elevation elevation)
+Best program: (WS WS exec_if (exec_if (sw DC elevation DC elevation DC DC DC DC exec_if (exec_if (ISI ISI exec_if (exec_if (integer_- elevation FWI elevation elevation elevation DMC elevation time-step elevation DMC DMC time-step elevation elevation) ()) ()) ()) ()) ()) ())
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 136
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if sw s DC DC elevation DC s DC DC ISI exec_if false ISI elevation exec_if ISI exec_if FWI integer_- elevation FWI DMC exec_if elevation elevation DMC DMC DMC DMC elevation elevation)
+Best program: (WS WS exec_if (exec_if (sw s DC DC elevation DC s DC DC ISI exec_if (false ISI elevation exec_if (ISI exec_if (FWI integer_- elevation FWI DMC exec_if (elevation elevation DMC DMC DMC DMC elevation elevation) ()) ()) ()) ()) ()) ())
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 137
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if WD s DC DC elevation DC s DC exec_if ISI exec_if false ISI elevation ISI ISI exec_if time-step elevation elevation exec_if elevation elevation DMC DMC DMC DMC elevation elevation elevation boolean_and)
+Best program: (WS WS exec_if (exec_if (WD s DC DC elevation DC s DC exec_if (ISI exec_if (false ISI elevation ISI ISI exec_if (time-step elevation elevation exec_if (elevation elevation DMC DMC DMC DMC elevation elevation elevation boolean_and) ()) ()) ()) ()) ()) ())
+Best total error: 3109
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 138
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if WD s DC DC DC DC s DC DC DC exec_if ISI exec_if num-burning-neigh ISI exec_if exec_if time-step exec_if elevation exec_if elevation ISI DMC DMC DMC DMC time-step DMC time-step boolean_and)
+Best program: (WS WS exec_if (exec_if (WD s DC DC DC DC s DC DC DC exec_if (ISI exec_if (num-burning-neigh ISI exec_if (exec_if (time-step exec_if (elevation exec_if (elevation ISI DMC DMC DMC DMC time-step DMC time-step boolean_and) ()) ()) ()) ()) ()) ()) ()) ())
+Best total error: 3097
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 139
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if WD s DC DC DC DC s DC DC DC exec_if ISI exec_if num-burning-neigh ISI exec_if exec_if time-step exec_if time-step integer_- elevation ISI DMC elevation DMC DMC DMC DMC WD DMC time-step elevation elevation)
+Best program: (WS WS exec_if (exec_if (WD s DC DC DC DC s DC DC DC exec_if (ISI exec_if (num-burning-neigh ISI exec_if (exec_if (time-step exec_if (time-step integer_- elevation ISI DMC elevation DMC DMC DMC DMC WD DMC time-step elevation elevation) ()) ()) ()) ()) ()) ()) ())
+Best total error: 3508
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 140
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if sw s DC DC DC DC DC DC DC ISI exec_if ISI exec_if num-burning-neigh ISI exec_if ISI integer_- exec_if time-step integer_- elevation ISI DMC DMC DMC elevation elevation time-step elevation boolean_and)
+Best program: (WS WS exec_if (exec_if (sw s DC DC DC DC DC DC DC ISI exec_if (ISI exec_if (num-burning-neigh ISI exec_if (ISI integer_- exec_if (time-step integer_- elevation ISI DMC DMC DMC elevation elevation time-step elevation boolean_and) ()) ()) ()) ()) ()) ())
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 141
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if WD s DC DC DC DC s DC DC DC exec_if ISI exec_if num-burning-neigh ISI exec_if exec_if ISI exec_if time-step elevation elevation ISI false DMC DMC DMC time-step WD DMC time-step elevation elevation)
+Best program: (WS WS exec_if (exec_if (WD s DC DC DC DC s DC DC DC exec_if (ISI exec_if (num-burning-neigh ISI exec_if (exec_if (ISI exec_if (time-step elevation elevation ISI false DMC DMC DMC time-step WD DMC time-step elevation elevation) ()) ()) ()) ()) ()) ()) ())
+Best total error: 3508
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 142
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if WD s DC DC DC DC s DC DC DC exec_if ISI exec_if num-burning-neigh ISI exec_if exec_if ISI exec_if time-step elevation elevation ISI false DMC DMC DMC time-step WD DMC time-step elevation elevation)
+Best program: (WS WS exec_if (exec_if (WD s DC DC DC DC s DC DC DC exec_if (ISI exec_if (num-burning-neigh ISI exec_if (exec_if (ISI exec_if (time-step elevation elevation ISI false DMC DMC DMC time-step WD DMC time-step elevation elevation) ()) ()) ()) ()) ()) ()) ())
+Best total error: 2447
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 143
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if sw s DC DC DC DC DC DC exec_if num-burning-neigh exec_if exec_if ISI ISI ISI exec_if exec_if elevation ISI elevation ISI elevation ISI DMC DMC elevation elevation elevation DMC DMC)
+Best program: (WS WS exec_if (exec_if (sw s DC DC DC DC DC DC exec_if (num-burning-neigh exec_if (exec_if (ISI ISI ISI exec_if (exec_if (elevation ISI elevation ISI elevation ISI DMC DMC elevation elevation elevation DMC DMC) ()) ()) ()) ()) ()) ()) ())
+Best total error: 2544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 144
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if s s DC DC DC DC DC DC DC DC exec_if BUI num-burning-neigh ISI exec_if exec_if time-step integer_- time-step ISI elevation elevation false DMC DMC DMC DMC DMC elevation elevation)
+Best program: (WS WS exec_if (exec_if (s s DC DC DC DC DC DC DC DC exec_if (BUI num-burning-neigh ISI exec_if (exec_if (time-step integer_- time-step ISI elevation elevation false DMC DMC DMC DMC DMC elevation elevation) ()) ()) ()) ()) ())
+Best total error: 3295
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 145
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if s s DMC DC DC DC DC DC DC DC DC exec_if BUI num-burning-neigh ISI exec_if exec_if time-step integer_- time-step ISI elevation elevation false DMC DMC DMC DMC DMC elevation elevation)
+Best program: (WS WS exec_if (exec_if (s s DMC DC DC DC DC DC DC DC DC exec_if (BUI num-burning-neigh ISI exec_if (exec_if (time-step integer_- time-step ISI elevation elevation false DMC DMC DMC DMC DMC elevation elevation) ()) ()) ()) ()) ())
+Best total error: 3937
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 146
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if s DC DC DC DC DC DC DC DC exec_if BUI false num-burning-neigh ISI exec_if exec_if time-step integer_- time-step ISI current-value elevation elevation false DMC DMC DMC DMC DMC elevation elevation integer_=)
+Best program: (WS WS exec_if (exec_if (s DC DC DC DC DC DC DC DC exec_if (BUI false num-burning-neigh ISI exec_if (exec_if (time-step integer_- time-step ISI current-value elevation elevation false DMC DMC DMC DMC DMC elevation elevation integer_=) ()) ()) ()) ()) ())
+Best total error: 3937
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 147
+-------------------------------------------------------
+Best plushy: (WS exec_if exec_if s DC DC DC DC DC DC DC exec_if BUI num-burning-neigh exec_if exec_if time-step integer_- time-step ISI elevation elevation DMC DMC DMC DMC DMC elevation elevation)
+Best program: (WS exec_if (exec_if (s DC DC DC DC DC DC DC exec_if (BUI num-burning-neigh exec_if (exec_if (time-step integer_- time-step ISI elevation elevation DMC DMC DMC DMC DMC elevation elevation) ()) ()) ()) ()) ())
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 148
+-------------------------------------------------------
+Best plushy: (WS exec_if exec_if s DC DC DC DC DC DC DC exec_if BUI num-burning-neigh exec_if exec_if time-step integer_- time-step ISI elevation elevation DMC DMC DMC DMC close DMC elevation elevation)
+Best program: (WS exec_if (exec_if (s DC DC DC DC DC DC DC exec_if (BUI num-burning-neigh exec_if (exec_if (time-step integer_- time-step ISI elevation elevation DMC DMC DMC DMC) (DMC elevation elevation)) ()) ()) ()) ())
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 149
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if s s DMC DC DC DC DC DC DC DC WS DC BUI exec_if exec_if exec_if integer_- integer_- time-step elevation elevation elevation DMC DMC DMC DMC DMC elevation elevation)
+Best program: (WS WS exec_if (exec_if (s s DMC DC DC DC DC DC DC DC WS DC BUI exec_if (exec_if (exec_if (integer_- integer_- time-step elevation elevation elevation DMC DMC DMC DMC DMC elevation elevation) ()) ()) ()) ()) ())
+Best total error: 3295
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 150
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if TMP s s s DC DC DC DC DC close DC DC DC BUI ISI exec_if exec_if time-step integer_- time-step time-step elevation elevation elevation DMC DMC DMC DMC DMC elevation elevation)
+Best program: (WS WS exec_if (exec_if (TMP s s s DC DC DC DC DC) (DC DC DC BUI ISI exec_if (exec_if (time-step integer_- time-step time-step elevation elevation elevation DMC DMC DMC DMC DMC elevation elevation) ()) ())) ())
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 151
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if s s s DC DC DC DC DC DC DC DC BUI ISI exec_if exec_if time-step integer_- time-step time-step elevation WD integer_* elevation elevation DMC DMC DMC DMC DMC elevation elevation)
+Best program: (WS WS exec_if (exec_if (s s s DC DC DC DC DC DC DC DC BUI ISI exec_if (exec_if (time-step integer_- time-step time-step elevation WD integer_* elevation elevation DMC DMC DMC DMC DMC elevation elevation) ()) ()) ()) ())
+Best total error: 3555
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 152
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if s s s DC DC DC DC DC DC DC DC BUI ISI exec_if exec_if time-step integer_- time-step time-step elevation WD elevation elevation DMC DMC DMC DMC DMC elevation elevation)
+Best program: (WS WS exec_if (exec_if (s s s DC DC DC DC DC DC DC DC BUI ISI exec_if (exec_if (time-step integer_- time-step time-step elevation WD elevation elevation DMC DMC DMC DMC DMC elevation elevation) ()) ()) ()) ())
+Best total error: 3937
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 153
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if s s s DC DC DC DC DC DC DC DC BUI ISI exec_if time-step exec_if exec_if integer_- time-step time-step elevation elevation WD false n DMC DMC DMC DMC FWI DMC elevation integer_+ elevation)
+Best program: (WS WS exec_if (exec_if (s s s DC DC DC DC DC DC DC DC BUI ISI exec_if (time-step exec_if (exec_if (integer_- time-step time-step elevation elevation WD false n DMC DMC DMC DMC FWI DMC elevation integer_+ elevation) ()) ()) ()) ()) ())
+Best total error: 2804
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 154
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if s ISI s s DC DC DC DC 1 DC DC BUI BUI ISI time-step ISI exec_if integer_- integer_- time-step time-step elevation elevation WD false DMC DMC DMC DMC FWI DMC elevation integer_+ elevation)
+Best program: (WS WS exec_if (exec_if (s ISI s s DC DC DC DC 1 DC DC BUI BUI ISI time-step ISI exec_if (integer_- integer_- time-step time-step elevation elevation WD false DMC DMC DMC DMC FWI DMC elevation integer_+ elevation) ()) ()) ())
+Best total error: 2804
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 155
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if s s s s DC DC DC DC 1 DC DC BUI BUI exec_if exec_if ISI integer_- exec_if integer_- integer_- time-step integer_* elevation false DMC DMC DMC DMC DMC FWI DMC boolean_= elevation elevation)
+Best program: (WS WS exec_if (exec_if (s s s s DC DC DC DC 1 DC DC BUI BUI exec_if (exec_if (ISI integer_- exec_if (integer_- integer_- time-step integer_* elevation false DMC DMC DMC DMC DMC FWI DMC boolean_= elevation elevation) ()) ()) ()) ()) ())
+Best total error: 3555
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 156
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if s ISI s s DC DC DC DC 1 DC DC DC BUI BUI ISI ISI exec_if exec_if integer_- integer_- time-step time-step elevation false false DMC DMC DMC DMC FWI DMC elevation elevation elevation)
+Best program: (WS WS exec_if (exec_if (s ISI s s DC DC DC DC 1 DC DC DC BUI BUI ISI ISI exec_if (exec_if (integer_- integer_- time-step time-step elevation false false DMC DMC DMC DMC FWI DMC elevation elevation elevation) ()) ()) ()) ())
+Best total error: 1651
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 157
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if s ISI s s DC DC DC 1 DC BUI BUI BUI exec_if ISI integer_- exec_if integer_- integer_- time-step time-step elevation false DMC DMC DMC DMC DMC FWI DMC elevation elevation elevation)
+Best program: (WS WS exec_if (exec_if (s ISI s s DC DC DC 1 DC BUI BUI BUI exec_if (ISI integer_- exec_if (integer_- integer_- time-step time-step elevation false DMC DMC DMC DMC DMC FWI DMC elevation elevation elevation) ()) ()) ()) ())
+Best total error: 5617
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 158
+-------------------------------------------------------
+Best plushy: (WS WS WD exec_if exec_if s ISI s s DC integer_= DC DC 1 DC BUI BUI BUI exec_if ISI integer_- exec_if integer_- integer_- time-step time-step elevation false DMC DMC DMC DMC DMC FWI DMC elevation elevation elevation)
+Best program: (WS WS WD exec_if (exec_if (s ISI s s DC integer_= DC DC 1 DC BUI BUI BUI exec_if (ISI integer_- exec_if (integer_- integer_- time-step time-step elevation false DMC DMC DMC DMC DMC FWI DMC elevation elevation elevation) ()) ()) ()) ())
+Best total error: 3109
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 159
+-------------------------------------------------------
+Best plushy: (WS WS exec_if s ISI s s DC DC DC 1 DC DC BUI BUI ISI ISI exec_if exec_if integer_- integer_- elevation false false DMC DMC DMC DMC FWI DMC elevation elevation)
+Best program: (WS WS exec_if (s ISI s s DC DC DC 1 DC DC BUI BUI ISI ISI exec_if (exec_if (integer_- integer_- elevation false false DMC DMC DMC DMC FWI DMC elevation elevation) ()) ()) ())
+Best total error: 3424
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 160
+-------------------------------------------------------
+Best plushy: (WS WS exec_if s ISI s s DC DC DC 1 DC DC BUI BUI ISI ISI exec_if exec_if integer_- integer_- elevation false false DMC DMC DMC DMC FWI DMC elevation elevation)
+Best program: (WS WS exec_if (s ISI s s DC DC DC 1 DC DC BUI BUI ISI ISI exec_if (exec_if (integer_- integer_- elevation false false DMC DMC DMC DMC FWI DMC elevation elevation) ()) ()) ())
+Best total error: 5585
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 161
+-------------------------------------------------------
+Best plushy: (WS WS exec_if s exec_if exec_if s ISI s DC 1 integer_= DC BUI 1 ISI ISI exec_if exec_if integer_- integer_- integer_- exec_if integer_- DMC DMC DMC time-step elevation false TMP elevation DMC DMC elevation)
+Best program: (WS WS exec_if (s exec_if (exec_if (s ISI s DC 1 integer_= DC BUI 1 ISI ISI exec_if (exec_if (integer_- integer_- integer_- exec_if (integer_- DMC DMC DMC time-step elevation false TMP elevation DMC DMC elevation) ()) ()) ()) ()) ()) ())
+Best total error: 3295
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 162
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if s s s s s DC 1 integer_= DC 1 1 ISI ISI exec_if exec_if integer_- integer_- ISI exec_if integer_- time-step DMC time-step false elevation DMC TMP DMC DMC integer_* FWI DMC boolean_=)
+Best program: (WS WS exec_if (exec_if (s s s s s DC 1 integer_= DC 1 1 ISI ISI exec_if (exec_if (integer_- integer_- ISI exec_if (integer_- time-step DMC time-step false elevation DMC TMP DMC DMC integer_* FWI DMC boolean_=) ()) ()) ()) ()) ())
+Best total error: 3295
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 163
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if s exec_if s s s integer_- DC boolean_not DC integer_= DC ISI ISI exec_if exec_if integer_- exec_if integer_- integer_- integer_- time-step exec_if 0 false time-step DMC DMC false integer_* DMC DMC DMC DMC DMC integer_* FWI DMC)
+Best program: (WS WS exec_if (exec_if (s exec_if (s s s integer_- DC boolean_not DC integer_= DC ISI ISI exec_if (exec_if (integer_- exec_if (integer_- integer_- integer_- time-step exec_if (0 false time-step DMC DMC false integer_* DMC DMC DMC DMC DMC integer_* FWI DMC) ()) ()) ()) ()) ()) ()) ())
+Best total error: 2804
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 164
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if exec_if exec_if s ISI s DC DC DC 1 1 1 DC ISI exec_if exec_if exec_if integer_- integer_- integer_- integer_- nw integer_- DMC DMC DMC false TMP DMC DMC DMC s FWI)
+Best program: (WS WS exec_if (exec_if (exec_if (exec_if (s ISI s DC DC DC 1 1 1 DC ISI exec_if (exec_if (exec_if (integer_- integer_- integer_- integer_- nw integer_- DMC DMC DMC false TMP DMC DMC DMC s FWI) ()) ()) ()) ()) ()) ()) ())
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 165
+-------------------------------------------------------
+Best plushy: (WS WS exec_if exec_if exec_if exec_if s ISI s DC DC integer_= 1 1 1 DC ISI exec_if exec_if BUI integer_- integer_- integer_- integer_- nw integer_- time-step DMC DMC false TMP DMC DMC DMC s)
+Best program: (WS WS exec_if (exec_if (exec_if (exec_if (s ISI s DC DC integer_= 1 1 1 DC ISI exec_if (exec_if (BUI integer_- integer_- integer_- integer_- nw integer_- time-step DMC DMC false TMP DMC DMC DMC s) ()) ()) ()) ()) ()) ())
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 166
+-------------------------------------------------------
+Best plushy: (WS WD WS integer_* exec_if s exec_if exec_if s ISI WS integer_- DC boolean_not integer_* DC DC ISI num-burning-neigh ISI exec_if exec_if ISI exec_if exec_if BUI integer_- integer_* integer_- exec_if integer_- time-step time-step DMC s DMC integer_* elevation false TMP DMC DMC integer_* DMC)
+Best program: (WS WD WS integer_* exec_if (s exec_if (exec_if (s ISI WS integer_- DC boolean_not integer_* DC DC ISI num-burning-neigh ISI exec_if (exec_if (ISI exec_if (exec_if (BUI integer_- integer_* integer_- exec_if (integer_- time-step time-step DMC s DMC integer_* elevation false TMP DMC DMC integer_* DMC) ()) ()) ()) ()) ()) ()) ()) ())
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 167
+-------------------------------------------------------
+Best plushy: (WS WS integer_* exec_if exec_if exec_if exec_if ISI exec_if DC ISI integer_= 1 1 integer_* DC ISI exec_if ISI ISI exec_if integer_- integer_- integer_- exec_if integer_- time-step DMC DMC DMC time-step time-step DMC DMC DMC integer_* w DMC DMC)
+Best program: (WS WS integer_* exec_if (exec_if (exec_if (exec_if (ISI exec_if (DC ISI integer_= 1 1 integer_* DC ISI exec_if (ISI ISI exec_if (integer_- integer_- integer_- exec_if (integer_- time-step DMC DMC DMC time-step time-step DMC DMC DMC integer_* w DMC DMC) ()) ()) ()) ()) ()) ()) ()) ())
+Best total error: 1860
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 168
+-------------------------------------------------------
+Best plushy: (WS WS integer_* exec_if exec_if exec_if exec_if ISI exec_if DC ISI integer_= 1 1 integer_* DC ISI exec_if ISI ISI exec_if integer_- integer_- integer_- exec_if integer_- time-step DMC DMC DMC time-step time-step DMC DMC DMC integer_* w DMC DMC)
+Best program: (WS WS integer_* exec_if (exec_if (exec_if (exec_if (ISI exec_if (DC ISI integer_= 1 1 integer_* DC ISI exec_if (ISI ISI exec_if (integer_- integer_- integer_- exec_if (integer_- time-step DMC DMC DMC time-step time-step DMC DMC DMC integer_* w DMC DMC) ()) ()) ()) ()) ()) ()) ()) ())
+Best total error: 1332
+Fires evaluated:  (a2)
+

@@ -1,0 +1,103 @@
+000 (724.002.000) 04/28 18:30:41 Job submitted from host: <148.85.78.197:9618?addrs=148.85.78.197-9618&noUDP&sock=878241_2b6b_3>
+...
+001 (724.002.000) 04/28 18:30:52 Job executing on host: <148.85.78.194:9618?addrs=148.85.78.194-9618&noUDP&sock=47813_a236_3>
+...
+006 (724.002.000) 04/28 18:31:01 Image size of job updated: 686792
+	671  -  MemoryUsage of job (MB)
+	686760  -  ResidentSetSize of job (KB)
+...
+006 (724.002.000) 04/28 18:36:01 Image size of job updated: 4294488
+	4194  -  MemoryUsage of job (MB)
+	4294456  -  ResidentSetSize of job (KB)
+...
+006 (724.002.000) 04/28 18:51:02 Image size of job updated: 4883596
+	4770  -  MemoryUsage of job (MB)
+	4883564  -  ResidentSetSize of job (KB)
+...
+006 (724.002.000) 04/28 18:56:02 Image size of job updated: 6887152
+	6726  -  MemoryUsage of job (MB)
+	6887120  -  ResidentSetSize of job (KB)
+...
+006 (724.002.000) 04/28 19:01:03 Image size of job updated: 6916292
+	6755  -  MemoryUsage of job (MB)
+	6916260  -  ResidentSetSize of job (KB)
+...
+006 (724.002.000) 04/28 19:06:03 Image size of job updated: 6949012
+	6787  -  MemoryUsage of job (MB)
+	6948980  -  ResidentSetSize of job (KB)
+...
+006 (724.002.000) 04/28 19:11:03 Image size of job updated: 7449368
+	7275  -  MemoryUsage of job (MB)
+	7449336  -  ResidentSetSize of job (KB)
+...
+006 (724.002.000) 04/28 19:21:05 Image size of job updated: 8084916
+	7896  -  MemoryUsage of job (MB)
+	8084884  -  ResidentSetSize of job (KB)
+...
+006 (724.002.000) 04/28 19:26:05 Image size of job updated: 8430904
+	8234  -  MemoryUsage of job (MB)
+	8430872  -  ResidentSetSize of job (KB)
+...
+006 (724.002.000) 04/28 19:31:06 Image size of job updated: 8460188
+	8262  -  MemoryUsage of job (MB)
+	8460156  -  ResidentSetSize of job (KB)
+...
+006 (724.002.000) 04/28 19:36:07 Image size of job updated: 10912172
+	10657  -  MemoryUsage of job (MB)
+	10912140  -  ResidentSetSize of job (KB)
+...
+006 (724.002.000) 04/28 19:41:07 Image size of job updated: 10926256
+	10671  -  MemoryUsage of job (MB)
+	10926224  -  ResidentSetSize of job (KB)
+...
+006 (724.002.000) 04/28 19:51:08 Image size of job updated: 10994636
+	10737  -  MemoryUsage of job (MB)
+	10994604  -  ResidentSetSize of job (KB)
+...
+006 (724.002.000) 04/28 19:56:08 Image size of job updated: 11025824
+	10768  -  MemoryUsage of job (MB)
+	11025792  -  ResidentSetSize of job (KB)
+...
+006 (724.002.000) 04/28 20:01:08 Image size of job updated: 11086648
+	10827  -  MemoryUsage of job (MB)
+	11086616  -  ResidentSetSize of job (KB)
+...
+006 (724.002.000) 04/29 00:26:34 Image size of job updated: 11102932
+	10843  -  MemoryUsage of job (MB)
+	11102900  -  ResidentSetSize of job (KB)
+...
+006 (724.002.000) 04/29 00:31:35 Image size of job updated: 11897384
+	11619  -  MemoryUsage of job (MB)
+	11897352  -  ResidentSetSize of job (KB)
+...
+006 (724.002.000) 04/29 00:36:35 Image size of job updated: 11898600
+	11620  -  MemoryUsage of job (MB)
+	11898568  -  ResidentSetSize of job (KB)
+...
+006 (724.002.000) 04/29 01:06:37 Image size of job updated: 11927956
+	11649  -  MemoryUsage of job (MB)
+	11927924  -  ResidentSetSize of job (KB)
+...
+006 (724.002.000) 04/29 01:11:37 Image size of job updated: 11971112
+	11691  -  MemoryUsage of job (MB)
+	11971080  -  ResidentSetSize of job (KB)
+...
+006 (724.002.000) 04/29 01:21:38 Image size of job updated: 11978820
+	11699  -  MemoryUsage of job (MB)
+	11978788  -  ResidentSetSize of job (KB)
+...
+006 (724.002.000) 04/29 12:13:56 Image size of job updated: 37806164
+	11699  -  MemoryUsage of job (MB)
+	11978788  -  ResidentSetSize of job (KB)
+...
+004 (724.002.000) 04/29 12:13:57 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 1 19:47:22, Sys 0 00:00:35  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     3.40        1         1 
+	   Disk (KB)            :     1           1    864224 
+	   Memory (MB)          : 11699           1      8075 
+...

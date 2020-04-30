@@ -1,0 +1,169 @@
+Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 2, :max-generations 1000, :time-step 10, :parent-selection :lexicase, :tournament-size 5, :step-limit 25, :error-function #object[ring_of_fire.core$fire_error_function 0x226642a5 ring_of_fire.core$fire_error_function@226642a5], :population-size 10}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (boolean_or time-step current-value num-burning-neigh boolean_and)
+Best program: (boolean_or time-step current-value num-burning-neigh boolean_and)
+Best total error: 1617
+Fires evaluated:  (k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (boolean_or time-step current-value num-burning-neigh boolean_and)
+Best program: (boolean_or time-step current-value num-burning-neigh boolean_and)
+Best total error: 2023
+Fires evaluated:  (m1 a2)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (boolean_or time-step current-value num-burning-neigh boolean_and)
+Best program: (boolean_or time-step current-value num-burning-neigh boolean_and)
+Best total error: 3530
+Fires evaluated:  (m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (boolean_or ISI false w w WS boolean_not se close integer_* close integer_+)
+Best program: (boolean_or ISI false w w WS boolean_not se integer_* integer_+)
+Best total error: 8037
+Fires evaluated:  (a2 g2)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (elevation ISI ISI FWI RH boolean_not se close integer_* integer_* integer_+)
+Best program: (elevation ISI ISI FWI RH boolean_not se integer_* integer_* integer_+)
+Best total error: 6539
+Fires evaluated:  (m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (boolean_or ISI false w w integer_* se close close integer_+)
+Best program: (boolean_or ISI false w w integer_* se integer_+)
+Best total error: 8595
+Fires evaluated:  (g2 a2)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (boolean_or ISI false w w integer_* se close close integer_+)
+Best program: (boolean_or ISI false w w integer_* se integer_+)
+Best total error: 4252
+Fires evaluated:  (k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (boolean_or ISI false w WS integer_* nw nw close integer_+ FFMC elevation)
+Best program: (boolean_or ISI false w WS integer_* nw nw integer_+ FFMC elevation)
+Best total error: 4107
+Fires evaluated:  (m1 r1)
+
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (e integer_+ false FWI RH integer_* nw nw DC integer_+ FFMC elevation)
+Best program: (e integer_+ false FWI RH integer_* nw nw DC integer_+ FFMC elevation)
+Best total error: 8098
+Fires evaluated:  (g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (e exec_dup ISI current-value FWI w se se close sw FFMC)
+Best program: (e exec_dup (ISI current-value FWI w se se) sw FFMC)
+Best total error: 9057
+Fires evaluated:  (k2 g2)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (elevation close current-value integer_+ RH integer_= nw sw nw)
+Best program: (elevation current-value integer_+ RH integer_= nw sw nw)
+Best total error: 5506
+Fires evaluated:  (m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (e integer_+ current-value w w nw integer_* close FFMC BUI elevation)
+Best program: (e integer_+ current-value w w nw integer_* FFMC BUI elevation)
+Best total error: 5752
+Fires evaluated:  (r1 a2)
+
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (e ISI current-value w w se integer_* close FFMC FFMC elevation)
+Best program: (e ISI current-value w w se integer_* FFMC FFMC elevation)
+Best total error: 7424
+Fires evaluated:  (k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (e integer_+ current-value ISI FWI w integer_* nw close close integer_+)
+Best program: (e integer_+ current-value ISI FWI w integer_* nw integer_+)
+Best total error: 7476
+Fires evaluated:  (k1 g2)
+
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (e integer_+ current-value FWI integer_* w close nw close integer_+)
+Best program: (e integer_+ current-value FWI integer_* w nw integer_+)
+Best total error: 5986
+Fires evaluated:  (r1 g2)
+
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (e integer_+ current-value FWI integer_* w close nw close integer_+)
+Best program: (e integer_+ current-value FWI integer_* w nw integer_+)
+Best total error: 4646
+Fires evaluated:  (m2 a2)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (e integer_+ current-value integer_+ FWI w se se close integer_+ elevation)
+Best program: (e integer_+ current-value integer_+ FWI w se se integer_+ elevation)
+Best total error: 5246
+Fires evaluated:  (m2 r1)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (elevation ISI current-value FWI FWI w close se close integer_+)
+Best program: (elevation ISI current-value FWI FWI w se integer_+)
+Best total error: 6659
+Fires evaluated:  (m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (elevation ISI time-step current-value FWI FWI w close se close integer_+)
+Best program: (elevation ISI time-step current-value FWI FWI w se integer_+)
+Best total error: 7684
+Fires evaluated:  (g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (e current-value w integer_= nw close)
+Best program: (e current-value w integer_= nw)
+Best total error: 6697
+Fires evaluated:  (k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 20
+-------------------------------------------------------
+Best plushy: (e current-value w integer_+ integer_= integer_= w se integer_+ close)
+Best program: (e current-value w integer_+ integer_= integer_= w se integer_+)
+Best total error: 4992
+Fires evaluated:  (k2 m2)
+

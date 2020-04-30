@@ -1,0 +1,113 @@
+Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 1, :max-generations 1000, :time-step 10, :parent-selection :lexicase, :tournament-size 5, :step-limit 25, :error-function #object[ring_of_fire.core$fire_error_function 0x226642a5 ring_of_fire.core$fire_error_function@226642a5], :population-size 10}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (false WD)
+Best program: (false WD)
+Best total error: 3030
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (current-value time-step current-value DMC RH time-step 1 WS 2 DC exec_if se true boolean_and 1 integer_% sw elevation)
+Best program: (current-value time-step current-value DMC RH time-step 1 WS 2 DC exec_if (se true boolean_and 1 integer_% sw elevation) ())
+Best total error: 2843
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (false time-step current-value time-step 1 WS 2 exec_dup DMC)
+Best program: (false time-step current-value time-step 1 WS 2 exec_dup (DMC))
+Best total error: 672
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (current-value time-step current-value DMC RH time-step 1 WS 2 DC exec_if se true boolean_and 1 integer_% sw elevation)
+Best program: (current-value time-step current-value DMC RH time-step 1 WS 2 DC exec_if (se true boolean_and 1 integer_% sw elevation) ())
+Best total error: 1703
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (current-value APCP current-value APCP 1 integer_= 2 boolean_or DMC exec_if exec_dup sw)
+Best program: (current-value APCP current-value APCP 1 integer_= 2 boolean_or DMC exec_if (exec_dup (sw)) ())
+Best total error: 1332
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (current-value APCP current-value APCP 1 integer_= 2 boolean_or DMC exec_if exec_dup sw)
+Best program: (current-value APCP current-value APCP 1 integer_= 2 boolean_or DMC exec_if (exec_dup (sw)) ())
+Best total error: 803
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (current-value BUI false WS 2 se 1 sw elevation exec_dup close)
+Best program: (current-value BUI false WS 2 se 1 sw elevation exec_dup ())
+Best total error: 2763
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (current-value APCP WS WS 2 1 true exec_dup close)
+Best program: (current-value APCP WS WS 2 1 true exec_dup ())
+Best total error: 1703
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (current-value APCP time-step WS 1 exec_if exec_dup close)
+Best program: (current-value APCP time-step WS 1 exec_if (exec_dup ()) ())
+Best total error: 2200
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (current-value se APCP WS BUI WS 1 1 true exec_dup)
+Best program: (current-value se APCP WS BUI WS 1 1 true exec_dup ())
+Best total error: 1703
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (current-value APCP time-step WS 1 exec_if true true close)
+Best program: (current-value APCP time-step WS 1 exec_if (true true) ())
+Best total error: 1332
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (current-value APCP time-step WS 1 exec_if true true close)
+Best program: (current-value APCP time-step WS 1 exec_if (true true) ())
+Best total error: 3112
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (current-value APCP time-step WS 1 exec_if true true close)
+Best program: (current-value APCP time-step WS 1 exec_if (true true) ())
+Best total error: 672
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (current-value APCP time-step WS 1 exec_if true true close)
+Best program: (current-value APCP time-step WS 1 exec_if (true true) ())
+Best total error: 2843
+Fires evaluated:  (k1)
+

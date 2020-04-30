@@ -1,0 +1,33 @@
+Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 7, :max-generations 1000, :time-step 10, :parent-selection :lexicase, :tournament-size 5, :step-limit 25, :error-function #object[ring_of_fire.core$fire_error_function 0x226642a5 ring_of_fire.core$fire_error_function@226642a5], :population-size 10}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (num-burning-neigh integer_= integer_% num-burning-neigh close s WD)
+Best program: (num-burning-neigh integer_= integer_% num-burning-neigh s WD)
+Best total error: 22008
+Fires evaluated:  (g2 a2 k2 k1 m1 m2 r1)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (current-value FFMC current-value w DMC boolean_or DMC s w integer_+ exec_if)
+Best program: (current-value FFMC current-value w DMC boolean_or DMC s w integer_+ exec_if () ())
+Best total error: 19689
+Fires evaluated:  (m2 r1 m1 g2 k1 a2 k2)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (num-burning-neigh FFMC current-value FWI DMC boolean_or DMC s 1 integer_+ exec_if)
+Best program: (num-burning-neigh FFMC current-value FWI DMC boolean_or DMC s 1 integer_+ exec_if () ())
+Best total error: 12758
+Fires evaluated:  (k2 m1 r1 m2 k1 g2 a2)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (num-burning-neigh FFMC current-value w ISI sw boolean_and s 1 false exec_if s integer_- 0 exec_if FWI integer_% DMC)
+Best program: (num-burning-neigh FFMC current-value w ISI sw boolean_and s 1 false exec_if (s integer_- 0 exec_if (FWI integer_% DMC) ()) ())
+Best total error: 12845
+Fires evaluated:  (a2 k2 r1 m1 g2 k1 m2)
+

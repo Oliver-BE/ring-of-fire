@@ -1,0 +1,241 @@
+Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 1, :max-generations 1000, :time-step 10, :parent-selection :lexicase, :tournament-size 5, :step-limit 25, :error-function #object[ring_of_fire.core$fire_error_function 0x226642a5 ring_of_fire.core$fire_error_function@226642a5], :population-size 10}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (boolean_and sw APCP 0 APCP FFMC 1 num-burning-neigh)
+Best program: (boolean_and sw APCP 0 APCP FFMC 1 num-burning-neigh)
+Best total error: 2207
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (time-step w boolean_and boolean_and FFMC FWI integer_- 1 TMP se n FWI integer_- num-burning-neigh)
+Best program: (time-step w boolean_and boolean_and FFMC FWI integer_- 1 TMP se n FWI integer_- num-burning-neigh)
+Best total error: 1350
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (boolean_and sw ISI TMP APCP nw 1 num-burning-neigh ne num-burning-neigh)
+Best program: (boolean_and sw ISI TMP APCP nw 1 num-burning-neigh ne num-burning-neigh)
+Best total error: 1683
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (boolean_and sw ISI TMP APCP nw 1 num-burning-neigh ne num-burning-neigh)
+Best program: (boolean_and sw ISI TMP APCP nw 1 num-burning-neigh ne num-burning-neigh)
+Best total error: 2887
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (boolean_and sw ISI BUI APCP 1 nw 1)
+Best program: (boolean_and sw ISI BUI APCP 1 nw 1)
+Best total error: 2843
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (boolean_and sw ISI false TMP APCP nw 1 num-burning-neigh ne se num-burning-neigh)
+Best program: (boolean_and sw ISI false TMP APCP nw 1 num-burning-neigh ne se num-burning-neigh)
+Best total error: 2857
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (boolean_and sw ISI TMP APCP nw nw 1 ne se num-burning-neigh num-burning-neigh)
+Best program: (boolean_and sw ISI TMP APCP nw nw 1 ne se num-burning-neigh num-burning-neigh)
+Best total error: 944
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (boolean_and sw ISI TMP APCP nw nw 1 ne se num-burning-neigh num-burning-neigh)
+Best program: (boolean_and sw ISI TMP APCP nw nw 1 ne se num-burning-neigh num-burning-neigh)
+Best total error: 1683
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (boolean_and sw ISI TMP APCP nw nw ne se num-burning-neigh num-burning-neigh)
+Best program: (boolean_and sw ISI TMP APCP nw nw ne se num-burning-neigh num-burning-neigh)
+Best total error: 2207
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (boolean_and integer_= boolean_not integer_= s BUI 1 ne se num-burning-neigh num-burning-neigh close)
+Best program: (boolean_and integer_= boolean_not integer_= s BUI 1 ne se num-burning-neigh num-burning-neigh)
+Best total error: 2887
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (boolean_and integer_= boolean_not integer_= s BUI 1 ne se num-burning-neigh num-burning-neigh close)
+Best program: (boolean_and integer_= boolean_not integer_= s BUI 1 ne se num-burning-neigh num-burning-neigh)
+Best total error: 1350
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (boolean_and integer_= boolean_not integer_= s BUI 1 ne se num-burning-neigh num-burning-neigh close)
+Best program: (boolean_and integer_= boolean_not integer_= s BUI 1 ne se num-burning-neigh num-burning-neigh)
+Best total error: 2887
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (WS integer_= boolean_not integer_= integer_= boolean_= BUI BUI ne se BUI se 2 1 boolean_= close)
+Best program: (WS integer_= boolean_not integer_= integer_= boolean_= BUI BUI ne se BUI se 2 1 boolean_=)
+Best total error: 1703
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (WS close ISI nw boolean_not false num-burning-neigh ne BUI BUI se 1 1 close exec_dup exec_dup boolean_=)
+Best program: (WS ISI nw boolean_not false num-burning-neigh ne BUI BUI se 1 1 exec_dup (exec_dup (boolean_=)))
+Best total error: 3112
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (WS nw close nw integer_= boolean_not false s BUI BUI BUI close se 2 1 1 close exec_dup boolean_and TMP exec_dup boolean_=)
+Best program: (WS nw nw integer_= boolean_not false s BUI BUI BUI se 2 1 1 exec_dup (boolean_and TMP exec_dup (boolean_=)))
+Best total error: 672
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (WS close ISI nw boolean_not false num-burning-neigh ne BUI BUI se 1 1 close exec_dup exec_dup boolean_=)
+Best program: (WS ISI nw boolean_not false num-burning-neigh ne BUI BUI se 1 1 exec_dup (exec_dup (boolean_=)))
+Best total error: 1703
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (WS close ISI nw boolean_not false num-burning-neigh ne BUI BUI se 1 1 close exec_dup exec_dup boolean_=)
+Best program: (WS ISI nw boolean_not false num-burning-neigh ne BUI BUI se 1 1 exec_dup (exec_dup (boolean_=)))
+Best total error: 672
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (WS nw close boolean_and nw BUI se BUI WD BUI BUI se boolean_= 1 close exec_dup DMC)
+Best program: (WS nw boolean_and nw BUI se BUI WD BUI BUI se boolean_= 1 exec_dup (DMC))
+Best total error: 2200
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (WS close boolean_and boolean_not false num-burning-neigh se BUI BUI se 1 1 exec_dup boolean_=)
+Best program: (WS boolean_and boolean_not false num-burning-neigh se BUI BUI se 1 1 exec_dup (boolean_=))
+Best total error: 2200
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (WS boolean_and nw close boolean_and nw BUI se BUI se BUI BUI se boolean_= 1 DMC)
+Best program: (WS boolean_and nw boolean_and nw BUI se BUI se BUI BUI se boolean_= 1 DMC)
+Best total error: 1703
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 20
+-------------------------------------------------------
+Best plushy: (WS nw ISI false false false BUI BUI BUI close se 1 1 exec_dup exec_dup)
+Best program: (WS nw ISI false false false BUI BUI BUI se 1 1 exec_dup (exec_dup ()))
+Best total error: 1703
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 21
+-------------------------------------------------------
+Best plushy: (WS nw ISI false boolean_and ne false se se se BUI se exec_dup boolean_= 1 TMP)
+Best program: (WS nw ISI false boolean_and ne false se se se BUI se exec_dup (boolean_= 1 TMP))
+Best total error: 672
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 22
+-------------------------------------------------------
+Best plushy: (WS nw ISI false false false BUI BUI BUI close se 1 1 exec_dup exec_dup)
+Best program: (WS nw ISI false false false BUI BUI BUI se 1 1 exec_dup (exec_dup ()))
+Best total error: 1332
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 23
+-------------------------------------------------------
+Best plushy: (WS nw ISI false BUI s BUI BUI se close false close se close 1 exec_dup exec_dup)
+Best program: (WS nw ISI false BUI s BUI BUI se false se 1 exec_dup (exec_dup ()))
+Best total error: 2200
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 24
+-------------------------------------------------------
+Best plushy: (WS nw ISI false BUI s BUI BUI se close false close se close 1 exec_dup exec_dup)
+Best program: (WS nw ISI false BUI s BUI BUI se false se 1 exec_dup (exec_dup ()))
+Best total error: 983
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 25
+-------------------------------------------------------
+Best plushy: (WS WS DMC APCP boolean_and s false BUI RH se se se BUI 1 exec_dup boolean_= TMP)
+Best program: (WS WS DMC APCP boolean_and s false BUI RH se se se BUI 1 exec_dup (boolean_= TMP))
+Best total error: 983
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 26
+-------------------------------------------------------
+Best plushy: (WS 1 nw exec_if ISI false BUI s BUI BUI se close false close se close 1 exec_dup exec_dup)
+Best program: (WS 1 nw exec_if (ISI false BUI s BUI BUI se) (false) se 1 exec_dup (exec_dup ()))
+Best total error: 983
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 27
+-------------------------------------------------------
+Best plushy: (WS nw boolean_and APCP boolean_not s se BUI se se se BUI 1 exec_dup)
+Best program: (WS nw boolean_and APCP boolean_not s se BUI se se se BUI 1 exec_dup ())
+Best total error: 983
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 28
+-------------------------------------------------------
+Best plushy: (WS nw boolean_and APCP boolean_and s se BUI se se se BUI BUI 1 exec_dup TMP)
+Best program: (WS nw boolean_and APCP boolean_and s se BUI se se se BUI BUI 1 exec_dup (TMP))
+Best total error: 983
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 29
+-------------------------------------------------------
+Best plushy: (WS nw boolean_not APCP s se se BUI close se se FFMC BUI 1 TMP)
+Best program: (WS nw boolean_not APCP s se se BUI se se FFMC BUI 1 TMP)
+Best total error: 2843
+Fires evaluated:  (k1)
+

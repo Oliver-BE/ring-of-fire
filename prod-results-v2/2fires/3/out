@@ -1,0 +1,137 @@
+Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 2, :max-generations 1000, :time-step 10, :parent-selection :lexicase, :tournament-size 5, :step-limit 25, :error-function #object[ring_of_fire.core$fire_error_function 0x226642a5 ring_of_fire.core$fire_error_function@226642a5], :population-size 10}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (TMP exec_if integer_* DMC integer_+ integer_+ FWI DMC nw TMP elevation 2 BUI DMC WS boolean_= integer_+ se integer_=)
+Best program: (TMP exec_if (integer_* DMC integer_+ integer_+ FWI DMC nw TMP elevation 2 BUI DMC WS boolean_= integer_+ se integer_=) ())
+Best total error: 2435
+Fires evaluated:  (r1 m1)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (TMP exec_if integer_* DMC ISI TMP FWI n boolean_or integer_% elevation 2 BUI DMC WS)
+Best program: (TMP exec_if (integer_* DMC ISI TMP FWI n boolean_or integer_% elevation 2 BUI DMC WS) ())
+Best total error: 3646
+Fires evaluated:  (k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (DC w exec_if true n num-burning-neigh)
+Best program: (DC w exec_if (true n num-burning-neigh) ())
+Best total error: 2627
+Fires evaluated:  (r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (DC w exec_if true n num-burning-neigh)
+Best program: (DC w exec_if (true n num-burning-neigh) ())
+Best total error: 4237
+Fires evaluated:  (g2 a2)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (DC w exec_if true n num-burning-neigh)
+Best program: (DC w exec_if (true n num-burning-neigh) ())
+Best total error: 5094
+Fires evaluated:  (m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (DC w exec_if true n num-burning-neigh)
+Best program: (DC w exec_if (true n num-burning-neigh) ())
+Best total error: 2023
+Fires evaluated:  (a2 m1)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (DC w exec_if true n num-burning-neigh)
+Best program: (DC w exec_if (true n num-burning-neigh) ())
+Best total error: 4540
+Fires evaluated:  (k1 r1)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (DC w exec_if true n num-burning-neigh)
+Best program: (DC w exec_if (true n num-burning-neigh) ())
+Best total error: 3560
+Fires evaluated:  (g2 m1)
+
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (DC nw exec_if true BUI num-burning-neigh)
+Best program: (DC nw exec_if (true BUI num-burning-neigh) ())
+Best total error: 4207
+Fires evaluated:  (k1 a2)
+
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (DC w exec_if true n integer_- num-burning-neigh)
+Best program: (DC w exec_if (true n integer_- num-burning-neigh) ())
+Best total error: 3801
+Fires evaluated:  (k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (DC w exec_if true BUI num-burning-neigh)
+Best program: (DC w exec_if (true BUI num-burning-neigh) ())
+Best total error: 5094
+Fires evaluated:  (m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (DC w exec_if true BUI num-burning-neigh)
+Best program: (DC w exec_if (true BUI num-burning-neigh) ())
+Best total error: 4540
+Fires evaluated:  (r1 k1)
+
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (DC w exec_if true BUI integer_- integer_*)
+Best program: (DC w exec_if (true BUI integer_- integer_*) ())
+Best total error: 4302
+Fires evaluated:  (m1 m2)
+
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (DC w exec_if true BUI integer_- integer_*)
+Best program: (DC w exec_if (true BUI integer_- integer_*) ())
+Best total error: 7337
+Fires evaluated:  (k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (DC w exec_if true BUI integer_- integer_*)
+Best program: (DC w exec_if (true BUI integer_- integer_*) ())
+Best total error: 4103
+Fires evaluated:  (m1 r1)
+
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (DC WS w exec_if true BUI FWI BUI integer_%)
+Best program: (DC WS w exec_if (true BUI FWI BUI integer_%) ())
+Best total error: 4898
+Fires evaluated:  (r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (DC RH exec_if true BUI num-burning-neigh s integer_+)
+Best program: (DC RH exec_if (true BUI num-burning-neigh s integer_+) ())
+Best total error: 4152
+Fires evaluated:  (m2 a2)
+

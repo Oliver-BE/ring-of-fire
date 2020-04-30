@@ -1,0 +1,841 @@
+Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 1, :max-generations 1000, :time-step 10, :parent-selection :lexicase, :tournament-size 5, :step-limit 25, :error-function #object[ring_of_fire.core$fire_error_function 0x226642a5 ring_of_fire.core$fire_error_function@226642a5], :population-size 10}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (exec_if boolean_= FFMC w time-step DMC WS s FWI s close num-burning-neigh exec_if DC boolean_= nw false exec_dup DMC WS exec_dup)
+Best program: (exec_if (boolean_= FFMC w time-step DMC WS s FWI s) (num-burning-neigh exec_if (DC boolean_= nw false exec_dup (DMC WS exec_dup ())) ()))
+Best total error: 1683
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (exec_if boolean_= FFMC w time-step DMC WS s FWI s close num-burning-neigh exec_if DC boolean_= nw false exec_dup DMC WS exec_dup)
+Best program: (exec_if (boolean_= FFMC w time-step DMC WS s FWI s) (num-burning-neigh exec_if (DC boolean_= nw false exec_dup (DMC WS exec_dup ())) ()))
+Best total error: 2207
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (exec_dup boolean_= integer_* integer_* close time-step w elevation boolean_= current-value integer_% 2 2 DC integer_+ BUI sw boolean_= 0 elevation DC 2 boolean_and n 2)
+Best program: (exec_dup (boolean_= integer_* integer_*) time-step w elevation boolean_= current-value integer_% 2 2 DC integer_+ BUI sw boolean_= 0 elevation DC 2 boolean_and n 2)
+Best total error: 1734
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (TMP 0 w nw exec_dup current-value integer_% num-burning-neigh e false s integer_% 0 DMC 1 se)
+Best program: (TMP 0 w nw exec_dup (current-value integer_% num-burning-neigh e false s integer_% 0 DMC 1 se))
+Best total error: 1703
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (DC DMC false)
+Best program: (DC DMC false)
+Best total error: 672
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (DC DMC false)
+Best program: (DC DMC false)
+Best total error: 2843
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (num-burning-neigh DMC integer_* time-step current-value integer_% WS s integer_% 1)
+Best program: (num-burning-neigh DMC integer_* time-step current-value integer_% WS s integer_% 1)
+Best total error: 1703
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (TMP DMC DMC nw false e e s 1)
+Best program: (TMP DMC DMC nw false e e s 1)
+Best total error: 983
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (num-burning-neigh DMC integer_* current-value current-value sw false s 1)
+Best program: (num-burning-neigh DMC integer_* current-value current-value sw false s 1)
+Best total error: 672
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (num-burning-neigh DMC integer_* time-step nw current-value sw s integer_%)
+Best program: (num-burning-neigh DMC integer_* time-step nw current-value sw s integer_%)
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (num-burning-neigh DMC integer_* time-step sw WS)
+Best program: (num-burning-neigh DMC integer_* time-step sw WS)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (num-burning-neigh DMC integer_* time-step sw sw)
+Best program: (num-burning-neigh DMC integer_* time-step sw sw)
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (num-burning-neigh DMC integer_* sw WS sw sw)
+Best program: (num-burning-neigh DMC integer_* sw WS sw sw)
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (num-burning-neigh DMC integer_* sw WS s integer_%)
+Best program: (num-burning-neigh DMC integer_* sw WS s integer_%)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (num-burning-neigh DMC integer_* sw WS WS)
+Best program: (num-burning-neigh DMC integer_* sw WS WS)
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (num-burning-neigh DMC integer_- FFMC integer_* sw s integer_%)
+Best program: (num-burning-neigh DMC integer_- FFMC integer_* sw s integer_%)
+Best total error: 3897
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (num-burning-neigh DMC integer_* sw WS integer_%)
+Best program: (num-burning-neigh DMC integer_* sw WS integer_%)
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (num-burning-neigh s DMC integer_* sw sw integer_* s integer_%)
+Best program: (num-burning-neigh s DMC integer_* sw sw integer_* s integer_%)
+Best total error: 3546
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (num-burning-neigh s DMC 1 integer_* sw s integer_% integer_%)
+Best program: (num-burning-neigh s DMC 1 integer_* sw s integer_% integer_%)
+Best total error: 3321
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (num-burning-neigh DMC integer_* 1 integer_* sw integer_% integer_%)
+Best program: (num-burning-neigh DMC integer_* 1 integer_* sw integer_% integer_%)
+Best total error: 658
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 20
+-------------------------------------------------------
+Best plushy: (integer_* s DMC s integer_%)
+Best program: (integer_* s DMC s integer_%)
+Best total error: 3321
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 21
+-------------------------------------------------------
+Best plushy: (num-burning-neigh s DMC sw sw integer_% integer_%)
+Best program: (num-burning-neigh s DMC sw sw integer_% integer_%)
+Best total error: 803
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 22
+-------------------------------------------------------
+Best plushy: (num-burning-neigh DMC integer_* sw sw integer_%)
+Best program: (num-burning-neigh DMC integer_* sw sw integer_%)
+Best total error: 2544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 23
+-------------------------------------------------------
+Best plushy: (integer_* sw sw sw integer_% integer_%)
+Best program: (integer_* sw sw sw integer_% integer_%)
+Best total error: 3269
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 24
+-------------------------------------------------------
+Best plushy: (num-burning-neigh DMC integer_* sw integer_% sw integer_%)
+Best program: (num-burning-neigh DMC integer_* sw integer_% sw integer_%)
+Best total error: 2156
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 25
+-------------------------------------------------------
+Best plushy: (num-burning-neigh DMC integer_* sw integer_% sw integer_%)
+Best program: (num-burning-neigh DMC integer_* sw integer_% sw integer_%)
+Best total error: 627
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 26
+-------------------------------------------------------
+Best plushy: (num-burning-neigh integer_* integer_* sw integer_%)
+Best program: (num-burning-neigh integer_* integer_* sw integer_%)
+Best total error: 576
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 27
+-------------------------------------------------------
+Best plushy: (num-burning-neigh DMC integer_* sw integer_% sw integer_%)
+Best program: (num-burning-neigh DMC integer_* sw integer_% sw integer_%)
+Best total error: 627
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 28
+-------------------------------------------------------
+Best plushy: (integer_* DMC sw integer_% sw integer_%)
+Best program: (integer_* DMC sw integer_% sw integer_%)
+Best total error: 3321
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 29
+-------------------------------------------------------
+Best plushy: (integer_* DMC sw integer_% sw integer_%)
+Best program: (integer_* DMC sw integer_% sw integer_%)
+Best total error: 672
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 30
+-------------------------------------------------------
+Best plushy: (integer_* integer_* sw integer_% sw integer_%)
+Best program: (integer_* integer_* sw integer_% sw integer_%)
+Best total error: 3897
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 31
+-------------------------------------------------------
+Best plushy: (integer_* integer_* integer_* sw)
+Best program: (integer_* integer_* integer_* sw)
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 32
+-------------------------------------------------------
+Best plushy: (integer_* DMC integer_* sw integer_%)
+Best program: (integer_* DMC integer_* sw integer_%)
+Best total error: 3321
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 33
+-------------------------------------------------------
+Best plushy: (DMC integer_* integer_* sw integer_%)
+Best program: (DMC integer_* integer_* sw integer_%)
+Best total error: 3321
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 34
+-------------------------------------------------------
+Best plushy: (DMC integer_* integer_* sw integer_%)
+Best program: (DMC integer_* integer_* sw integer_%)
+Best total error: 2843
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 35
+-------------------------------------------------------
+Best plushy: (DMC integer_* sw sw integer_%)
+Best program: (DMC integer_* sw sw integer_%)
+Best total error: 5615
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 36
+-------------------------------------------------------
+Best plushy: (DMC sw integer_%)
+Best program: (DMC sw integer_%)
+Best total error: 672
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 37
+-------------------------------------------------------
+Best plushy: (DMC sw integer_% sw integer_%)
+Best program: (DMC sw integer_% sw integer_%)
+Best total error: 672
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 38
+-------------------------------------------------------
+Best plushy: (DMC integer_* sw false integer_%)
+Best program: (DMC integer_* sw false integer_%)
+Best total error: 1763
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 39
+-------------------------------------------------------
+Best plushy: (DMC FWI DMC false integer_* sw sw)
+Best program: (DMC FWI DMC false integer_* sw sw)
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 40
+-------------------------------------------------------
+Best plushy: (DMC sw integer_% false integer_% sw)
+Best program: (DMC sw integer_% false integer_% sw)
+Best total error: 2544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 41
+-------------------------------------------------------
+Best plushy: (DMC sw integer_% false sw)
+Best program: (DMC sw integer_% false sw)
+Best total error: 1643
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 42
+-------------------------------------------------------
+Best plushy: (DMC sw integer_% false sw sw)
+Best program: (DMC sw integer_% false sw sw)
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 43
+-------------------------------------------------------
+Best plushy: (DMC sw false boolean_not sw integer_% sw)
+Best program: (DMC sw false boolean_not sw integer_% sw)
+Best total error: 5615
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 44
+-------------------------------------------------------
+Best plushy: (DMC TMP integer_% integer_% sw)
+Best program: (DMC TMP integer_% integer_% sw)
+Best total error: 3546
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 45
+-------------------------------------------------------
+Best plushy: (DMC TMP integer_% boolean_not sw integer_%)
+Best program: (DMC TMP integer_% boolean_not sw integer_%)
+Best total error: 2732
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 46
+-------------------------------------------------------
+Best plushy: (DMC TMP integer_% boolean_not)
+Best program: (DMC TMP integer_% boolean_not)
+Best total error: 3735
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 47
+-------------------------------------------------------
+Best plushy: (DMC TMP integer_% boolean_not)
+Best program: (DMC TMP integer_% boolean_not)
+Best total error: 3378
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 48
+-------------------------------------------------------
+Best plushy: (TMP integer_% boolean_not)
+Best program: (TMP integer_% boolean_not)
+Best total error: 2835
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 49
+-------------------------------------------------------
+Best plushy: (DMC DMC integer_% TMP boolean_not false)
+Best program: (DMC DMC integer_% TMP boolean_not false)
+Best total error: 2649
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 50
+-------------------------------------------------------
+Best plushy: (DMC TMP integer_% boolean_not false)
+Best program: (DMC TMP integer_% boolean_not false)
+Best total error: 2540
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 51
+-------------------------------------------------------
+Best plushy: (se DMC TMP integer_% sw integer_%)
+Best program: (se DMC TMP integer_% sw integer_%)
+Best total error: 5568
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 52
+-------------------------------------------------------
+Best plushy: (TMP integer_% boolean_not)
+Best program: (TMP integer_% boolean_not)
+Best total error: 3378
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 53
+-------------------------------------------------------
+Best plushy: (TMP integer_% boolean_not)
+Best program: (TMP integer_% boolean_not)
+Best total error: 1547
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 54
+-------------------------------------------------------
+Best plushy: (TMP integer_% boolean_not sw RH)
+Best program: (TMP integer_% boolean_not sw RH)
+Best total error: 2414
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 55
+-------------------------------------------------------
+Best plushy: (se integer_% integer_% boolean_not WD)
+Best program: (se integer_% integer_% boolean_not WD)
+Best total error: 3030
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 56
+-------------------------------------------------------
+Best plushy: (se integer_% boolean_not sw sw WD)
+Best program: (se integer_% boolean_not sw sw WD)
+Best total error: 3460
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 57
+-------------------------------------------------------
+Best plushy: (DMC integer_% integer_% sw sw)
+Best program: (DMC integer_% integer_% sw sw)
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 58
+-------------------------------------------------------
+Best plushy: (TMP integer_% boolean_not sw WD)
+Best program: (TMP integer_% boolean_not sw WD)
+Best total error: 2422
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 59
+-------------------------------------------------------
+Best plushy: (se integer_% boolean_not sw sw)
+Best program: (se integer_% boolean_not sw sw)
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 60
+-------------------------------------------------------
+Best plushy: (TMP integer_% boolean_not sw WD)
+Best program: (TMP integer_% boolean_not sw WD)
+Best total error: 3460
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 61
+-------------------------------------------------------
+Best plushy: (se integer_% integer_% boolean_not sw WD)
+Best program: (se integer_% integer_% boolean_not sw WD)
+Best total error: 5568
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 62
+-------------------------------------------------------
+Best plushy: (se integer_% integer_% boolean_not sw WD)
+Best program: (se integer_% integer_% boolean_not sw WD)
+Best total error: 3097
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 63
+-------------------------------------------------------
+Best plushy: (exec_dup se integer_% integer_% boolean_not sw WD)
+Best program: (exec_dup (se integer_% integer_% boolean_not sw WD))
+Best total error: 2422
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 64
+-------------------------------------------------------
+Best plushy: (se integer_% boolean_not sw WD)
+Best program: (se integer_% boolean_not sw WD)
+Best total error: 5568
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 65
+-------------------------------------------------------
+Best plushy: (se integer_% integer_% boolean_not DC)
+Best program: (se integer_% integer_% boolean_not DC)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 66
+-------------------------------------------------------
+Best plushy: (se exec_dup integer_% integer_% sw boolean_not WD)
+Best program: (se exec_dup (integer_% integer_% sw boolean_not WD))
+Best total error: 3460
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 67
+-------------------------------------------------------
+Best plushy: (se integer_% integer_% boolean_not sw WD)
+Best program: (se integer_% integer_% boolean_not sw WD)
+Best total error: 2422
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 68
+-------------------------------------------------------
+Best plushy: (se integer_% integer_% integer_% DC WD)
+Best program: (se integer_% integer_% integer_% DC WD)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 69
+-------------------------------------------------------
+Best plushy: (se integer_% integer_% boolean_not sw)
+Best program: (se integer_% integer_% boolean_not sw)
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 70
+-------------------------------------------------------
+Best plushy: (se integer_% integer_% boolean_not sw)
+Best program: (se integer_% integer_% boolean_not sw)
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 71
+-------------------------------------------------------
+Best plushy: (se integer_% integer_% integer_% DC WD)
+Best program: (se integer_% integer_% integer_% DC WD)
+Best total error: 3030
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 72
+-------------------------------------------------------
+Best plushy: (se integer_% integer_% integer_% WD boolean_not)
+Best program: (se integer_% integer_% integer_% WD boolean_not)
+Best total error: 3460
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 73
+-------------------------------------------------------
+Best plushy: (se FWI boolean_not boolean_not WD)
+Best program: (se FWI boolean_not boolean_not WD)
+Best total error: 3460
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 74
+-------------------------------------------------------
+Best plushy: (se FWI boolean_not sw)
+Best program: (se FWI boolean_not sw)
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 75
+-------------------------------------------------------
+Best plushy: (se FWI boolean_not integer_% WD boolean_not)
+Best program: (se FWI boolean_not integer_% WD boolean_not)
+Best total error: 3097
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 76
+-------------------------------------------------------
+Best plushy: (se se boolean_not sw)
+Best program: (se se boolean_not sw)
+Best total error: 2794
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 77
+-------------------------------------------------------
+Best plushy: (se FWI boolean_not integer_% WD boolean_not)
+Best program: (se FWI boolean_not integer_% WD boolean_not)
+Best total error: 3097
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 78
+-------------------------------------------------------
+Best plushy: (se FWI boolean_not boolean_not WD)
+Best program: (se FWI boolean_not boolean_not WD)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 79
+-------------------------------------------------------
+Best plushy: (se FWI boolean_not boolean_not integer_% WD)
+Best program: (se FWI boolean_not boolean_not integer_% WD)
+Best total error: 2422
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 80
+-------------------------------------------------------
+Best plushy: (se boolean_not boolean_not boolean_not boolean_not WD)
+Best program: (se boolean_not boolean_not boolean_not boolean_not WD)
+Best total error: 3030
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 81
+-------------------------------------------------------
+Best plushy: (se boolean_not boolean_not boolean_not WD)
+Best program: (se boolean_not boolean_not boolean_not WD)
+Best total error: 2422
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 82
+-------------------------------------------------------
+Best plushy: (se boolean_not false boolean_not WD)
+Best program: (se boolean_not false boolean_not WD)
+Best total error: 2422
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 83
+-------------------------------------------------------
+Best plushy: (se se false WD)
+Best program: (se se false WD)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 84
+-------------------------------------------------------
+Best plushy: (se se false WD)
+Best program: (se se false WD)
+Best total error: 3460
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 85
+-------------------------------------------------------
+Best plushy: (se boolean_not false WD)
+Best program: (se boolean_not false WD)
+Best total error: 3030
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 86
+-------------------------------------------------------
+Best plushy: (se w false WD)
+Best program: (se w false WD)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 87
+-------------------------------------------------------
+Best plushy: (se boolean_not false WD)
+Best program: (se boolean_not false WD)
+Best total error: 3097
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 88
+-------------------------------------------------------
+Best plushy: (se w false WD)
+Best program: (se w false WD)
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 89
+-------------------------------------------------------
+Best plushy: (se w false WD)
+Best program: (se w false WD)
+Best total error: 3030
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 90
+-------------------------------------------------------
+Best plushy: (integer_% false WD)
+Best program: (integer_% false WD)
+Best total error: 3460
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 91
+-------------------------------------------------------
+Best plushy: (se integer_% false WD)
+Best program: (se integer_% false WD)
+Best total error: 2798
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 92
+-------------------------------------------------------
+Best plushy: (boolean_not w false WD)
+Best program: (boolean_not w false WD)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 93
+-------------------------------------------------------
+Best plushy: (se false false WD)
+Best program: (se false false WD)
+Best total error: 1633
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 94
+-------------------------------------------------------
+Best plushy: (integer_% false WD)
+Best program: (integer_% false WD)
+Best total error: 5568
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 95
+-------------------------------------------------------
+Best plushy: (integer_% false WD)
+Best program: (integer_% false WD)
+Best total error: 2422
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 96
+-------------------------------------------------------
+Best plushy: (boolean_not false false WD)
+Best program: (boolean_not false false WD)
+Best total error: 2422
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 97
+-------------------------------------------------------
+Best plushy: (boolean_not false false WD boolean_not)
+Best program: (boolean_not false false WD boolean_not)
+Best total error: 2422
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 98
+-------------------------------------------------------
+Best plushy: (boolean_not false false WD)
+Best program: (boolean_not false false WD)
+Best total error: 5568
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 99
+-------------------------------------------------------
+Best plushy: (integer_% false false WD)
+Best program: (integer_% false false WD)
+Best total error: 3460
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 100
+-------------------------------------------------------
+Best plushy: (integer_% false false WD)
+Best program: (integer_% false false WD)
+Best total error: 3030
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 101
+-------------------------------------------------------
+Best plushy: (integer_% false false WD)
+Best program: (integer_% false false WD)
+Best total error: 5568
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 102
+-------------------------------------------------------
+Best plushy: (integer_% false false)
+Best program: (integer_% false false)
+Best total error: 3927
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 103
+-------------------------------------------------------
+Best plushy: (integer_% se false false)
+Best program: (integer_% se false false)
+Best total error: 5614
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 104
+-------------------------------------------------------
+Best plushy: (integer_% se false false)
+Best program: (integer_% se false false)
+Best total error: 2545
+Fires evaluated:  (r1)
+

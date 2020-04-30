@@ -1,0 +1,57 @@
+Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 2, :max-generations 1000, :time-step 10, :parent-selection :lexicase, :tournament-size 5, :step-limit 25, :error-function #object[ring_of_fire.core$fire_error_function 0x226642a5 ring_of_fire.core$fire_error_function@226642a5], :population-size 10}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (e s WD s WD exec_if WS false num-burning-neigh boolean_not boolean_= time-step integer_- DMC BUI close RH sw BUI w w BUI e exec_dup true sw WD WS)
+Best program: (e s WD s WD exec_if (WS false num-burning-neigh boolean_not boolean_= time-step integer_- DMC BUI) (RH sw BUI w w BUI e exec_dup (true sw WD WS)))
+Best total error: 4606
+Fires evaluated:  (r1 k1)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (boolean_or e s WD s WD exec_if WS false num-burning-neigh boolean_not boolean_= time-step integer_- DMC BUI close RH sw BUI w w BUI e exec_dup true sw WD WS)
+Best program: (boolean_or e s WD s WD exec_if (WS false num-burning-neigh boolean_not boolean_= time-step integer_- DMC BUI) (RH sw BUI w w BUI e exec_dup (true sw WD WS)))
+Best total error: 2566
+Fires evaluated:  (k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (false num-burning-neigh boolean_and exec_if FWI integer_* e boolean_or s s false RH exec_if integer_- ne WS integer_= true boolean_= WS elevation sw integer_+ time-step)
+Best program: (false num-burning-neigh boolean_and exec_if (FWI integer_* e boolean_or s s false RH exec_if (integer_- ne WS integer_= true boolean_= WS elevation sw integer_+ time-step) ()) ())
+Best total error: 5744
+Fires evaluated:  (k1 g2)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (false num-burning-neigh boolean_and exec_if FWI integer_* e boolean_or s s false RH exec_if integer_- ne WS integer_= true boolean_= WS elevation sw integer_+ time-step)
+Best program: (false num-burning-neigh boolean_and exec_if (FWI integer_* e boolean_or s s false RH exec_if (integer_- ne WS integer_= true boolean_= WS elevation sw integer_+ time-step) ()) ())
+Best total error: 4207
+Fires evaluated:  (k1 a2)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (false num-burning-neigh boolean_and exec_if FWI boolean_not s boolean_or TMP s WS elevation exec_if WS integer_= se boolean_or WS current-value sw 1 sw)
+Best program: (false num-burning-neigh boolean_and exec_if (FWI boolean_not s boolean_or TMP s WS elevation exec_if (WS integer_= se boolean_or WS current-value sw 1 sw) ()) ())
+Best total error: 5094
+Fires evaluated:  (m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (boolean_not BUI w exec_if FWI integer_+ s boolean_or s elevation exec_if WS se boolean_or 1 sw)
+Best program: (boolean_not BUI w exec_if (FWI integer_+ s boolean_or s elevation exec_if (WS se boolean_or 1 sw) ()) ())
+Best total error: 3515
+Fires evaluated:  (m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (false num-burning-neigh w exec_dup FWI integer_* s boolean_or s elevation RH integer_- se WS 1 se WS current-value)
+Best program: (false num-burning-neigh w exec_dup (FWI integer_* s boolean_or s elevation RH integer_- se WS 1 se WS current-value))
+Best total error: 3532
+Fires evaluated:  (a2 m2)
+

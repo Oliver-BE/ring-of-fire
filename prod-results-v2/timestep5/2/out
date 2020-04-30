@@ -1,0 +1,41 @@
+Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 2, :max-generations 1000, :time-step 5, :parent-selection :lexicase, :tournament-size 5, :step-limit 25, :error-function #object[ring_of_fire.core$fire_error_function 0x226642a5 ring_of_fire.core$fire_error_function@226642a5], :population-size 10}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (time-step FFMC true DMC integer_* TMP integer_- DC BUI integer_+ num-burning-neigh boolean_= DMC boolean_or 0 integer_+ boolean_and WD boolean_and FWI ne FWI close elevation)
+Best program: (time-step FFMC true DMC integer_* TMP integer_- DC BUI integer_+ num-burning-neigh boolean_= DMC boolean_or 0 integer_+ boolean_and WD boolean_and FWI ne FWI elevation)
+Best total error: 4175
+Fires evaluated:  (a2 k1)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (DMC exec_if ISI integer_% time-step e exec_dup integer_= e DMC RH BUI integer_- boolean_not 1 BUI boolean_or ISI integer_= boolean_and boolean_or nw boolean_not n APCP close elevation ISI)
+Best program: (DMC exec_if (ISI integer_% time-step e exec_dup (integer_= e DMC RH BUI integer_- boolean_not 1 BUI boolean_or ISI integer_= boolean_and boolean_or nw boolean_not n APCP) elevation ISI) ())
+Best total error: 2315
+Fires evaluated:  (k2 a2)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (false boolean_or integer_% integer_+ integer_% integer_= s s nw WS sw 1 elevation exec_dup true DMC WD WD)
+Best program: (false boolean_or integer_% integer_+ integer_% integer_= s s nw WS sw 1 elevation exec_dup (true DMC WD WD))
+Best total error: 3784
+Fires evaluated:  (m1 g2)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (TMP 0 ISI exec_if exec_if close s s nw WS boolean_or 1 close 0 time-step integer_= w APCP true boolean_and)
+Best program: (TMP 0 ISI exec_if (exec_if () (s s nw WS boolean_or 1) 0 time-step integer_= w APCP true boolean_and) ())
+Best total error: 2686
+Fires evaluated:  (k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (WD 0 ISI exec_if exec_if integer_= s current-value integer_% sw boolean_or 1 DMC WD integer_= WD)
+Best program: (WD 0 ISI exec_if (exec_if (integer_= s current-value integer_% sw boolean_or 1 DMC WD integer_= WD) ()) ())
+Best total error: 2375
+Fires evaluated:  (m1 r1)
+

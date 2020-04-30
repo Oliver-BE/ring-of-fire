@@ -1,0 +1,33 @@
+Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 7, :max-generations 1000, :time-step 10, :parent-selection :lexicase, :tournament-size 5, :step-limit 25, :error-function #object[ring_of_fire.core$fire_error_function 0x226642a5 ring_of_fire.core$fire_error_function@226642a5], :population-size 10}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (e w integer_* integer_+ num-burning-neigh w close num-burning-neigh time-step APCP n close integer_- sw exec_dup 2 1 RH e integer_+ close exec_dup)
+Best program: (e w integer_* integer_+ num-burning-neigh w num-burning-neigh time-step APCP n integer_- sw exec_dup (2 1 RH e integer_+) exec_dup ())
+Best total error: 12845
+Fires evaluated:  (k1 a2 m1 m2 g2 k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (se ISI integer_% current-value 1 false integer_* sw BUI WS boolean_not boolean_not integer_+ exec_if n)
+Best program: (se ISI integer_% current-value 1 false integer_* sw BUI WS boolean_not boolean_not integer_+ exec_if (n) ())
+Best total error: 22507
+Fires evaluated:  (m1 m2 k1 a2 k2 g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (se ISI integer_% integer_+ 1 w integer_* DMC time-step WS n boolean_not integer_+ exec_if n integer_+ exec_dup)
+Best program: (se ISI integer_% integer_+ 1 w integer_* DMC time-step WS n boolean_not integer_+ exec_if (n integer_+ exec_dup ()) ())
+Best total error: 21974
+Fires evaluated:  (g2 k2 m1 r1 m2 a2 k1)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (exec_if e false exec_dup ISI num-burning-neigh sw DMC BUI false ISI num-burning-neigh FWI BUI se WS boolean_not 2 boolean_not time-step s RH s RH ne s sw)
+Best program: (exec_if (e false exec_dup (ISI num-burning-neigh sw DMC BUI false ISI num-burning-neigh FWI BUI se WS boolean_not 2 boolean_not time-step s RH s RH ne s sw)) ())
+Best total error: 23368
+Fires evaluated:  (m1 a2 g2 r1 k2 k1 m2)
+
