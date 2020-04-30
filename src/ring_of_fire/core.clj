@@ -416,13 +416,11 @@
       :else
       2
       )))
-#_(time (update-cell-novec 3005 "m1" 10 test-burning-grid test-program test-argmap))
+#_(time (update-cell-novec 5 "m1" 10 test-burning-grid test-program test-argmap))
 
 (defn update-cell
   "Update cell to next state by interpreting push program"
   [cell-id fire-name time current-grid program argmap]
-  ;(prn "cell-id:" cell-id)
-  ;(prn "Update-Cell: program" program)
   (let [b-neighbors-map (get-burning-neighbors-map cell-id current-grid)
         current-value (nth (vec (flatten current-grid)) cell-id)
         answer (peek-stack
@@ -453,14 +451,8 @@
                                                    :se                (:SE b-neighbors-map)
                                                    :num-burning-neigh (num-burning-neighbors cell-id current-grid)
                                                    })
-
                    (:step-limit argmap))
-
                  :integer)]
-
-    ;(prn "answer" answer)
-    ;(prn "No stack item?" (= answer :no-stack-item))
-
     ;; get first thing off integer stack
     ;; check for other types, we only went integers
     (cond
@@ -468,26 +460,21 @@
       ;; (see :current-value above)
       (= answer :no-stack-item)
       current-value
-
       ;; If currently 0, can go to 0, 1, 2
       ;; note we might want to only allow 0 to go to 1 (and not straight to 2)
       (= current-value 0)
       (mod answer 3)
-
       ;; if burning and we get an answer of 0, just stay burning (1)
       (and (= current-value 1) (= (mod answer 3) 0))
       1
-
       ;; otherwise you can be a 1 or a 2
       (= current-value 1)
       (mod answer 3)
-
       ;If 2, stays 2
       :else
-      2
-      )))
+      2)))
 #_(update-cell 5 "m1" 0 test-burning-grid test-program test-argmap)
-#_(time (update-cell 3005 "m1" 10 test-burning-grid test-program test-argmap))
+#_(time (update-cell 5 "m1" 10 test-burning-grid test-program test-argmap))
 #_(time (get-burning-neighbors-map 500 test-burning-grid))
 #_(time (nth (flatten test-burning-grid) 500))
 #_(time (nth (vec (flatten test-burning-grid)) 500))
@@ -521,40 +508,36 @@
                            ;; and is a burnable cell (according to fuel-master where 1 = burnable)
                            ;; and isn't already burned (burned = 2) thus it must be a 0
                            (and (>= (num-burning-neighbors i fire-grid) 1) (= 1 (nth flattened-fuel i)) (= cell-value 0)))
-                     ;; if true then return 0
 
-                     ;(do
-                     ;Use the following to time the update cell method
+                     ;; if true then return the updated cell
                      (update-cell i fire-name time-step fire-grid program argmap)
-                     ;(update-cell i fire-name time-step fire-grid program argmap))
                      ;; else just return current value
                      (nth flattened-grid i)))))))
 #_(update-grid (:m1 initial-fire-grids) "m1" 0 test-program test-argmap)
 #_(update-grid test-burning-grid "m1" 0 test-program test-argmap)
 #_(time (update-grid test-burning-grid "m1" 100 test-program test-argmap))
-
+#_(def test-flattened-fuel (vec (flatten ((keyword (name "m1")) fuel-master))))
+#_(if (or (= 0 1)
+          ;; or it has at least one burning neighbor (burning = 1)
+          ;; and is a burnable cell (according to fuel-master where 1 = burnable)
+          ;; and isn't already burned (burned = 2) thus it must be a 0
+          (and (>= (num-burning-neighbors 500 test-burning-grid) 1) (= 1 (nth test-flattened-fuel 500)) (= 0 0))) true false)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; run fire function (calls update grid) ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;;(* time-step 10) is set to 10 because 1440 minutes/ 150 steps = round(9.6 minutes / step)
-;; FIGURE IT OUT ALPHAS
-;; note why ware we updating one extra time step beyond?
 (defn run-fire
   "Runs a specified fire all the way through and returns
   a final fire scar to be compared with actual fire scar"
   [fire-name program argmap]
   (loop [grid ((keyword (name fire-name)) initial-fire-grids)
          time-step 0]
-    ;(prn "time-step:" time-step) (prn "Fire name:" fire-name)
-    ;(prn grid)
     (if (>= time-step 1440)
       ;; if time is up convert all 2s to 1s and return fire-scar
       (convert-grid grid)
 
       ;; otherwise update our grid and increment time
-
       (recur (update-grid grid fire-name time-step program argmap)
              (+ time-step (:time-step argmap))))))
 #_(run-fire "m1" test-program runfire-test-argmap)
