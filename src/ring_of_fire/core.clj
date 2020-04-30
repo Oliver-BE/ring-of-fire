@@ -477,9 +477,10 @@
               (recur (update-grid grid fire-name time-step program argmap)
                        (+ time-step (:time-step argmap))))))
 ;; this is dummy slow
-#_(run-fire "m1" test-program test-argmap)
+#_(run-fire "m1" test-a-program test-argmap)
 (def test-program (list 'w))
-
+(def test-a-program '(WS se BUI DMC 1 integer_+ integer_- exec_dup (APCP w DC integer_- exec_if (num-burning-neigh TMP boolean_= integer_-))))
+#_test-a-program
 
 
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -539,12 +540,12 @@
                   :max-generations         1000
                   :population-size         5
                   :max-initial-plushy-size 20
-                  :step-limit              10
+                  :step-limit              25
                   :parent-selection        :lexicase
                   :tournament-size         5
                   :time-step               10
-                  :fire-selection          10})
-(def test-best-program {:plushy '(elevation boolean_or false false false integer_% num-burning-neigh 1 RH nw DMC nw integer_= DMC)})
+                  :fire-selection          1})
+(def test-best-program {:plushy '(sw n integer_% false false e exec_dup (e integer_* w sw WD DMC false exec_if))})
 
 ;-------------------------
 ; RUNNER
@@ -553,7 +554,7 @@
               :error-function          fire-error-function
               :max-generations         1000
               :population-size         5
-              :max-initial-plushy-size 20
+              :max-initial-plushy-size 30
               :step-limit              10
               :parent-selection        :lexicase
               :tournament-size         5
