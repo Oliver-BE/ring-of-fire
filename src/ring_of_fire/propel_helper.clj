@@ -565,16 +565,65 @@
                                        (:instructions argmap))
        :else (uniform-deletion (:plushy (select-parent pop argmap)))))})
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; functions to get cell numbers from core
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(def final-scar-grid-master {:a1 arrowhead1-final-scar
+                             :a2 arrowhead2-final-scar
+                             :k1 kootenay1-final-scar
+                             :k2 kootenay2-final-scar
+                             :g1 glacier1-final-scar
+                             :g2 glacier2-final-scar
+                             :m1 mica1-final-scar
+                             :m2 mica2-final-scar
+                             :r1 revelstoke1-final-scar
+                             :r2 revelstoke2-final-scar
+                             })
+#_(:a1 final-scar-grid-master)
+
+(defn num-rows
+  "Returns the number of rows of a vector of vectors
+  given a fire name"
+  [fire-name]
+  (count ((keyword (name fire-name)) final-scar-grid-master)))
+#_(num-rows "r1")
+#_(num-rows mica1-forest)
+#_(num-rows mica1-elevation)
+
+
+(defn num-columns
+  "Returns the number of rows of a vector of vectors
+  given a fire name"
+  [fire-name]
+  (count (nth ((keyword (name fire-name)) final-scar-grid-master) 0)))
+#_(num-columns "r1")
+#_(num-columns mica1-forest)
+#_(num-columns mica1-elevation)
+
+(defn tot-num-cells
+  "Returns the total number of cells in a vector of fires"
+  [fire-vec]
+  (reduce + (map #(* (num-rows %) (num-columns %)) fire-vec)))
+#_(tot-num-cells ["a2" "m1" "m2"])
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 (defn report
   "Reports information each generation."
   [pop generation chosen-selection]
-  (let [best (first pop)]
+  (let [best (first pop)
+        num-cells (tot-num-cells chosen-selection)]
     (println "-------------------------------------------------------")
     (println "               Report for Generation" generation)
     (println "-------------------------------------------------------")
     (print "Best plushy: ") (prn (:plushy best))
     (print "Best program: ") (prn (push-from-plushy (:plushy best)))
     (println "Best total error:" (:total-error best))
+    (println "Total number of cells:" num-cells)
+    (println "Best percent error:" (float (/ (:total-error best) num-cells)))
        (println "Fires evaluated: " chosen-selection)
        ;Probably would like to print out the error in percentage form, so like 64% of cells were correctly predicted
     ;(println "Best errors:" (:errors best))
