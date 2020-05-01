@@ -462,6 +462,7 @@
 #_(update-grid (:m1 initial-fire-grids) "m1" 0 test-program test-argmap)
 #_(update-grid test-burning-grid "m1" 100 test-program test-argmap)
 #_(time (update-grid test-burning-grid "m1" 100 test-program test-argmap))
+#_(time (update-grid ((keyword (name "m1")) initial-fire-grids) "m1" 100 test-program test-argmap))
 #_(time (update-grid test-burned-grid "m1" 100 test-program test-argmap))
 #_(def test-flattened-fuel (vec (flatten ((keyword (name "m1")) fuel-master))))
 #_(if (or (= 0 1)
@@ -488,6 +489,8 @@
       (recur (update-grid grid fire-name time-step program argmap)
              (+ time-step (:time-step argmap))))))
 #_(run-fire "m1" test-program test-argmap)
+#_(time (run-fire "m1" test-program test-argmap))
+#_(time (run-fire "m1" test-program test-argmap))
 #_(def test-program (list 'w))
 #_(def test-a-program '(WS se BUI DMC 1 integer_+ integer_- exec_dup (APCP w DC integer_- exec_if (num-burning-neigh TMP boolean_= integer_-))))
 #_(def runfire-test-argmap {:instructions            fire-instructions
@@ -508,7 +511,7 @@
                     :step-limit              25
                     :parent-selection        :lexicase
                     :tournament-size         5
-                    :time-step               10
+                    :time-step               1440
                     :fire-selection          1})
 
 
