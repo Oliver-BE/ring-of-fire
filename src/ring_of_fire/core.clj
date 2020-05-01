@@ -228,13 +228,13 @@
 (defn safe-get-cell
   "Returns the value of a cell if inbounds, returns 0 if out of bounds
   i is row/height j is column/width"
-  [fire-grid i j]
-  (let [height (count fire-grid)
-        width (count (nth fire-grid 1))]
-    (if (and (>= j 0) (< j width) (>= i 0) (< i height))
-      (nth (nth fire-grid i) j)                             ;; in bounds so return the value
-      0                                                     ;; out of bounds so return zero
-      )))
+  [flattened-grid num-cell]
+  (if (and (>= num-cell 0) (< num-cell (count flattened-grid)))
+    (nth flattened-grid num-cell)
+    0
+    ))
+
+
 ;; should return 1 (bottom right value in test-grid)
 #_(safe-get-cell test-grid 2 2)
 #_(safe-get-cell test-burning-grid 57 53)
@@ -242,17 +242,13 @@
 
 (defn get-burning-neighbors-map
   "Returns a map of neighbors and their associated values. Value in map 0 if out of bounds."
-  [cell-id fire-grid]
-  (let [height (count fire-grid)
-        width (count (nth fire-grid 1))
-        x (mod cell-id width)
-        y (Math/floor (/ cell-id width))
+  [cell-id flattened-grid fire-name]
+  (let [width (count (nth ((keyword fire-name) initial-fire-grids) 1))
         return-map (for
-                     [input [["NW" -1 -1] ["N" -1 0] ["NE" -1 1] ["E" 0 1] ["W" 0 -1] ["SW" 1 -1] ["S" 1 0] ["SE" 1 1]]]
+                     [input [["NW" (- cell-id (+ width 1))] ["N" (- cell-id width)] ["NE" (- cell-id (- width 1))] ["E" (- cell-id 1)] ["W" (+ cell-id 1)] ["SW" (+ cell-id (- width 1))] ["S" (+ cell-id width)] ["SE" (+ cell-id (+ width 1))]]]
                      (let [direction (nth input 0)
-                           j (nth input 1)
-                           i (nth input 2)]
-                       (assoc {} (keyword direction) (safe-get-cell fire-grid (+ y j) (+ x i)))))]
+                           num-cell-to-get (nth input 1)]
+                       (assoc {} (keyword direction) (safe-get-cell flattened-grid num-cell-to-get))))]
     (apply conj return-map)))
 ;; tests the very middle cell of test-grid
 #_(get-burning-neighbors-map 4 test-grid)
@@ -261,12 +257,12 @@
 
 (defn num-burning-neighbors
   "Gets total num of burning neighbors (only cells with value of 1 are burning, ignores 2s)"
-  [cell-id fire-grid]
-  (let [num (get (frequencies (vals (conj (get-burning-neighbors-map cell-id fire-grid)))) 1)]
+  [cell-id flattened-grid fire-name]
+  (let [num (get (frequencies (vals (conj (get-burning-neighbors-map cell-id flattened-grid fire-name)))) 1)]
     (if (nil? num) 0 num)))
 ;; should return 2 for middle cell of test-grid
 #_(num-burning-neighbors 4 test-grid)
-(def test-grid '((0 0 0) (0 0 1) (2 0 1)))
+(def test-grid '(0 0 0 0 0 1 2 0 1))
 
 
 
@@ -365,9 +361,9 @@
 
 (defn update-cell
   "Update cell to next state by interpreting push program"
-  [cell-id fire-name time current-grid-flat current-grid program argmap]
-  (let [b-neighbors-map (get-burning-neighbors-map cell-id current-grid)
-        current-value (nth current-grid-flat cell-id)
+  [cell-id fire-name time flattened-grid program argmap]
+  (let [b-neighbors-map (get-burning-neighbors-map cell-id flattened-grid fire-name)
+        current-value (nth flattened-grid cell-id)
         answer (peek-stack
                  (interpret-program
                    program
@@ -394,7 +390,7 @@
                                                    :sw                (:SW b-neighbors-map)
                                                    :s                 (:S b-neighbors-map)
                                                    :se                (:SE b-neighbors-map)
-                                                   :num-burning-neigh (num-burning-neighbors cell-id current-grid)
+                                                   :num-burning-neigh (num-burning-neighbors cell-id flattened-grid fire-name)
                                                    })
                    (:step-limit argmap))
                  :integer)]
@@ -440,25 +436,26 @@
 
 (defn update-grid
   "Updates a fire grid from one time step to the next"
-  [fire-grid fire-name time-step program argmap]
-  (let [flattened-grid (vec (flatten fire-grid))
-        flattened-fuel ((keyword (name fire-name)) fuel-master-flattened)]
-    ;; turns flattened vector back into a grid
-    (partition (num-columns fire-name)
+  [flattened-grid fire-name time-step program argmap]
+  (prn "---------------------")
+  (let [flattened-fuel ((keyword (name fire-name)) fuel-master-flattened)]
                ;; returns a flattened vector of all cell values
-               (for [i (range (count flattened-grid))]
+               (vec (for [i (range (count flattened-grid))]
+
                  (let [cell-value (nth flattened-grid i)]
                    ;; only update cell if it's burning
                    (if (or (= cell-value 1)
                            ;; or it has at least one burning neighbor (burning = 1)
                            ;; and is a burnable cell (according to fuel-master where 1 = burnable)
                            ;; and isn't already burned (burned = 2) thus it must be a 0
-                           (and (>= (num-burning-neighbors i fire-grid) 1) (= 1 (nth flattened-fuel i)) (= cell-value 0)))
+                           (and (>= (num-burning-neighbors i flattened-grid fire-name) 1) (= 1 (nth flattened-fuel i)) (= cell-value 0)))
 
                      ;; if true then return the updated cell
-                     (update-cell i fire-name time-step flattened-grid fire-grid program argmap)
+                     (update-cell i fire-name time-step flattened-grid program argmap)
                      ;; else just return current value
                      (nth flattened-grid i)))))))
+
+
 #_(update-grid (:m1 initial-fire-grids) "m1" 0 test-program test-argmap)
 #_(update-grid test-burning-grid "m1" 100 test-program test-argmap)
 #_(time (update-grid test-burning-grid "m1" 100 test-program test-argmap))
@@ -479,15 +476,17 @@
   "Runs a specified fire all the way through and returns
   a final fire scar to be compared with actual fire scar"
   [fire-name program argmap]
-  (loop [grid ((keyword (name fire-name)) initial-fire-grids)
+  (loop [flat-grid (vec (flatten ((keyword (name fire-name)) initial-fire-grids)))
          time-step 0]
+    (prn time-step)
     (if (>= time-step 1440)
       ;; if time is up convert all 2s to 1s and return fire-scar
-      (convert-grid grid)
+      flat-grid ;might need to change the convert grid format
 
       ;; otherwise update our grid and increment time
-      (recur (update-grid grid fire-name time-step program argmap)
+      (recur (time (update-grid flat-grid fire-name time-step program argmap))
              (+ time-step (:time-step argmap))))))
+
 #_(run-fire "m1" test-program test-argmap)
 #_(time (run-fire "m1" test-program test-argmap))
 #_(time (run-fire "m1" test-program test-argmap))
@@ -505,18 +504,24 @@
 
 (def test-program (list 'w))
 (def test-argmap {:instructions            fire-instructions
-                    :error-function          fire-error-function
-                    :max-generations         1000
-                    :population-size         5
-                    :max-initial-plushy-size 20
-                    :step-limit              100
-                    :parent-selection        :lexicase
-                    :tournament-size         5
-                    :time-step               1440
-                    :fire-selection          1})
+                  :error-function          fire-error-function
+                  :max-generations         1000
+                  :population-size         5
+                  :max-initial-plushy-size 20
+                  :step-limit              100
+                  :parent-selection        :lexicase
+                  :tournament-size         5
+                  :time-step               10
+                  :fire-selection          1})
 
+;----------------------------------------------
+;run-fire inputs: [fire-name program argmap]
+#_(time (run-fire "m1" test-program test-argmap))
 
+; update-grid inputs: [fire-grid fire-name time-step program argmap]
+#_(time (update-grid m1-tester-flat-grid "m1" 100 test-program test-argmap))
 
+#_(def m1-tester-flat-grid (flatten (:m1 initial-fire-grids)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; fire error function (calls run fire)  ;;
