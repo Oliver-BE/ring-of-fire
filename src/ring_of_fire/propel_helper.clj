@@ -23,6 +23,38 @@
 ;; Instructions must all be either functions that take one Push state and return another
 ;; or constant literals.
 
+(def limited-fire-instructions
+  (list
+    ;; fire vars
+    'elevation
+    'ISI
+    'BUI
+    'FWI
+    'num-burning-neigh
+    'current-value
+    'time-step
+
+    ;; other instructions
+    'integer_+
+    'integer_-
+    'integer_*
+    'integer_%
+    'integer_=
+    'exec_dup
+    'exec_if
+    'boolean_and
+    'boolean_or
+    'boolean_not
+    'boolean_=
+    ;
+    'close
+    0
+    1
+    2
+    true
+    false
+    ))
+
 (def fire-instructions
   (list
     ;; fire vars
