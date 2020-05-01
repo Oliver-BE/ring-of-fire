@@ -463,24 +463,39 @@
   ;prn "---------------------")
   (let [flattened-fuel ((keyword (name fire-name)) fuel-master-flattened)
         grid-size (count flattened-grid)]
-    ;; SHOULD THIS BE I=1 or is this dealt with somewhere else
+   ;; go through every cell in our grid
     (loop [i 0
            current-time-grid time-grid
            current-cell-grid flattened-grid]
+
+      ;; if you're at the end of the grind
       (if (= i grid-size)
         {:time-grid current-time-grid :cell-grid current-cell-grid}
+
+        ;; otherwise, you want to check the values for each grid
         (let [cell-value (nth flattened-grid i)
               time-burning (nth current-time-grid i)]
+
+          ;; if it's burning
           (if (= cell-value 1)
+            ;; then we increase time-burning and update the cell
             (recur (inc i) (assoc current-time-grid i (+ time-burning 1)) (assoc current-cell-grid i (update-cell i fire-name time-step flattened-grid program argmap time-burning)))
+
+            ;; otherwise check to see if it's burned
             (if (= cell-value 2)
-              (recur (inc i) current-time-grid (assoc current-cell-grid i 2))
+              ;; if it is, then don't change anything and leave the cell as burned
+              (recur (inc i) current-time-grid current-cell-grid)
+
+              ;; if it's not burned, then it must be a 0 (unburned)
+              ;; so now we check if it has at least one burning neighbor and it is burnable and it will be burning next
               (if (and
                     (>= (num-burning-neighbors i flattened-grid fire-name) 1)
                     (= 1 (nth flattened-fuel i))
                     (= 1 (update-cell i fire-name time-step flattened-grid program argmap time-burning)))
+                ;; if it is burning then set to burning and increase time burning
                 (recur (inc i) (assoc current-time-grid i (+ time-burning 1)) (assoc current-cell-grid i 1))
-                (recur (inc i) current-time-grid (assoc current-cell-grid i 0))))))))))
+                ;; otherwise then don't change anything and leave the cell as burned
+                (recur (inc i) current-time-grid current-cell-grid)))))))))
 #_(:time-grid (update-grid (:m1 initial-fire-grids-flattened) "m1" 100 '(w) test-argmap (:m1 initial-time-grids-flattened)))
 #_(update-grid (:m1 initial-fire-grids-flattened) "m1" 100 '(w) test-argmap (:m1 initial-time-grids-flattened))
 #_(time (update-grid ((keyword (name "m1")) initial-fire-grids) "m1" 0 test-program test-argmap))
