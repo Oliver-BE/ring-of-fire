@@ -464,7 +464,7 @@
   (let [flattened-fuel ((keyword (name fire-name)) fuel-master-flattened)
         grid-size (count flattened-grid)]
     ;; SHOULD THIS BE I=1 or is this dealt with somewhere else
-    (loop [i 1
+    (loop [i 0
            current-time-grid time-grid
            current-cell-grid flattened-grid]
       (if (= i grid-size)
