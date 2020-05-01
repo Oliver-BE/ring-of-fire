@@ -462,7 +462,7 @@
 #_(update-grid (:m1 initial-fire-grids) "m1" 0 test-program test-argmap)
 #_(update-grid test-burning-grid "m1" 100 test-program test-argmap)
 #_(time (update-grid test-burning-grid "m1" 100 test-program test-argmap))
-#_(time (update-grid ((keyword (name "m1")) initial-fire-grids) "m1" 100 test-program test-argmap))
+#_(time (update-grid ((keyword (name "m1")) initial-fire-grids) "m1" 0 test-program test-argmap))
 #_(time (update-grid test-burned-grid "m1" 100 test-program test-argmap))
 #_(def test-flattened-fuel (vec (flatten ((keyword (name "m1")) fuel-master))))
 #_(if (or (= 0 1)
@@ -491,7 +491,6 @@
 #_(run-fire "m1" test-program test-argmap)
 #_(time (run-fire "m1" test-program test-argmap))
 #_(time (run-fire "m1" test-program test-argmap))
-#_(def test-program (list 'w))
 #_(def test-a-program '(WS se BUI DMC 1 integer_+ integer_- exec_dup (APCP w DC integer_- exec_if (num-burning-neigh TMP boolean_= integer_-))))
 #_(def runfire-test-argmap {:instructions            fire-instructions
                             :error-function          fire-error-function
@@ -503,12 +502,14 @@
                             :tournament-size         5
                             :time-step               10
                             :fire-selection          1})
-#_(def test-argmap {:instructions            fire-instructions
+
+(def test-program (list 'w))
+(def test-argmap {:instructions            fire-instructions
                     :error-function          fire-error-function
                     :max-generations         1000
                     :population-size         5
                     :max-initial-plushy-size 20
-                    :step-limit              25
+                    :step-limit              100
                     :parent-selection        :lexicase
                     :tournament-size         5
                     :time-step               1440
