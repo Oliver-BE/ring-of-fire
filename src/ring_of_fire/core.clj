@@ -521,6 +521,8 @@
 ; update-grid inputs: [fire-grid fire-name time-step program argmap]
 #_(time (update-grid m1-tester-flat-grid "m1" 100 test-program test-argmap))
 
+
+#_(partition (run-fire "m1" test-program test-argmap) (num-columns "m1"))
 #_(def m1-tester-flat-grid (flatten (:m1 initial-fire-grids)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
