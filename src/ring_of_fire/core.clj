@@ -29,6 +29,19 @@
                              })
 #_(:a1 final-scar-grid-master)
 
+(def final-scar-grid-master-flattened {:a1 (vec (flatten arrowhead1-final-scar))
+                                       :a2 (vec (flatten arrowhead2-final-scar))
+                                       :k1 (vec (flatten kootenay1-final-scar))
+                                       :k2 (vec (flatten kootenay2-final-scar))
+                                       :g1 (vec (flatten glacier1-final-scar))
+                                       :g2 (vec (flatten glacier2-final-scar))
+                                       :m1 (vec (flatten mica1-final-scar))
+                                       :m2 (vec (flatten mica2-final-scar))
+                                       :r1 (vec (flatten revelstoke1-final-scar))
+                                       :r2 (vec (flatten revelstoke2-final-scar))
+                                       })
+#_(:a1 final-scar-grid-master-flattened)
+
 (defn num-rows
   "Returns the number of rows of a vector of vectors
   given a fire name"
@@ -339,6 +352,7 @@
 #_(convert-grid (update-grid (:m1 initial-fire-grids) "m1" 0 test-program test-argmap))
 
 
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; test grids with proper dimensions;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -464,19 +478,20 @@
                (update-cell i fire-name time-step flattened-grid program argmap)
                ;; else just return current value
                (nth flattened-grid i)))))))
-
-
-#_(update-grid (:m1 initial-fire-grids) "m1" 0 test-program test-argmap)
-#_(update-grid test-burning-grid "m1" 100 test-program test-argmap)
 #_(time (update-grid test-burning-grid "m1" 100 test-program test-argmap))
 #_(time (update-grid ((keyword (name "m1")) initial-fire-grids) "m1" 0 test-program test-argmap))
 #_(time (update-grid test-burned-grid "m1" 100 test-program test-argmap))
-#_(def test-flattened-fuel (vec (flatten ((keyword (name "m1")) fuel-master))))
-#_(if (or (= 0 1)
-          ;; or it has at least one burning neighbor (burning = 1)
-          ;; and is a burnable cell (according to fuel-master where 1 = burnable)
-          ;; and isn't already burned (burned = 2) thus it must be a 0
-          (and (>= (num-burning-neighbors 500 test-burning-grid) 1) (= 1 (nth test-flattened-fuel 500)) (= 0 0))) true false)
+
+
+(defn convert-vector
+  "Converts vector to all 1s and 0s (2s become 1s everything else stays the same)"
+  [grid]
+  (map #(if (= % 2)
+               ;; 2s become 1s
+               (dec %)
+               ;; everything else stays the same
+               %) grid))
+#_(convert-vector [2 1 1 0 1 0 0 0 1 2 2 2])
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; run fire function (calls update grid) ;;
@@ -484,17 +499,20 @@
 
 (defn run-fire
   "Runs a specified fire all the way through and returns
-  a final fire scar to be compared with actual fire scar"
+  a final fire scar to be compared with actual fire scar.
+  Returns a vector of burning and non-burning cells (can be partitioned
+  back into a grid later)"
   [fire-name program argmap]
   (loop [flat-grid ((keyword (name fire-name)) initial-fire-grids-flattened)
          time-step 0]
     (prn time-step)
     (if (>= time-step 1440)
       ;; if time is up convert all 2s to 1s and return fire-scar
-      flat-grid    ;might need to change the convert grid format
+
+      (convert-vector flat-grid)                            ;might need to change the convert grid format
 
       ;; otherwise update our grid and increment time
-      (recur (time (update-grid flat-grid fire-name time-step program argmap))
+      (recur (update-grid flat-grid fire-name time-step program argmap)
              (+ time-step (:time-step argmap))))))
 
 #_(run-fire "m1" test-program test-argmap)
@@ -535,6 +553,15 @@
 #_(partition (run-fire "m1" test-program test-argmap) (num-columns "m1"))
 #_(def m1-tester-flat-grid (vec (flatten (:m1 initial-fire-grids))))
 
+(defn compare-vectors
+  "Compares each cell in the two grids and
+   returns a vector of differences where a 1 indicates a difference"
+  [evolved-scars final-scars]
+  (vec (map #(Math/abs (reduce - %)) (partition 2 (interleave evolved-scars final-scars)))))
+;; this should have an error of 1 as only one value is different
+#_(compare-vectors [1 0 0 0 0 1] [1 0 0 0 1 1])
+#_(compare-vectors (:m1 initial-fire-grids-flattened) test-burning-grid-flat)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; fire error function (calls run fire)  ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -553,29 +580,23 @@
 
 
         ;; correct output is each
-        correct-outputs (map #((keyword (name %)) final-scar-grid-master) inputs)
+        correct-outputs (map #((keyword (name %)) final-scar-grid-master-flattened) inputs)
 
         ;; run each fire through our run-fire function with the given program
-        outputs (vec (pmap #(run-fire % program argmap) inputs))
+        outputs (pmap #(run-fire % program argmap) inputs)
 
         ;; returns a vector where 1 indicates different outputs
         ;; 0 indicates the outputs were the same
         ;errors (compare-grids outputs correct-outputs)]
         errors (compare-vectors outputs correct-outputs)]
 
-        (assoc individual
-          ;;:behaviors outputs
-          ;;:errors errors
-          :total-error (reduce + errors))))
-#_(time (fire-error-function test-argmap ["m1" "a2" "g1"] test-best-program))
+    (assoc individual
+      ;;:behaviors outputs
+      ;;:errors errors
+      :total-error (reduce + errors))))
+#_(time (fire-error-function test-argmap ["m1"] test-best-program))
 
-(defn compare-vectors
-  "Compares each cell in the two grids and
-   returns a vector of differences where a 1 indicates a difference"
-  [evolved-scars final-scars]
-  (vec (map #(Math/abs (reduce - %)) (partition 2 (interleave evolved-scars final-scars)))))
-;; this should have an error of 1 as only one value is different
-#_(compare-vectors [1 0 0 0 0 1] [1 0 0 0 1 1])
+
 
 ;This is the correct format
 ;{:plushy (boolean_and DMC 1 true elevation sw integer_*)}
