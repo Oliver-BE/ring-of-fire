@@ -254,6 +254,18 @@
                                    :r2 (vec (flatten (construct-initial-grid "r2")))
                                    })
 
+(def initial-time-grids-flattened {:a1 (vec (flatten (construct-empty-grid "a1")))
+                                   :a2 (vec (flatten (construct-empty-grid "a2")))
+                                   :k1 (vec (flatten (construct-empty-grid "k1")))
+                                   :k2 (vec (flatten (construct-empty-grid "k2")))
+                                   :g1 (vec (flatten (construct-empty-grid "g1")))
+                                   :g2 (vec (flatten (construct-empty-grid "g2")))
+                                   :m1 (vec (flatten (construct-empty-grid "m1")))
+                                   :m2 (vec (flatten (construct-empty-grid "m2")))
+                                   :r1 (vec (flatten (construct-empty-grid "r1")))
+                                   :r2 (vec (flatten (construct-empty-grid "r2")))
+                                   })
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Helper functions    ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -369,7 +381,7 @@
 
 (defn update-cell
   "Update cell to next state by interpreting push program"
-  [cell-id fire-name time flattened-grid program argmap]
+  [cell-id fire-name time flattened-grid program argmap time-burning]
   (let [b-neighbors-map (get-burning-neighbors-map cell-id flattened-grid fire-name)
         current-value (nth flattened-grid cell-id)
         answer (peek-stack
@@ -389,7 +401,7 @@
                                                    :DMC               (get-current-weather-var "DMC" fire-name time)
                                                    :WD                (get-current-weather-var "WD" fire-name time)
                                                    :current-value     current-value
-                                                   :time-step         time
+                                                   :time-step         time-burning
                                                    :nw                (:NW b-neighbors-map)
                                                    :n                 (:N b-neighbors-map)
                                                    :ne                (:NE b-neighbors-map)
@@ -441,31 +453,39 @@
 
 ;; before testing needs num-burning-neighbors
 ;; as well as update-cell
+#_(count [10 5 4 3])
+
+#_(do 1 (count [10 5 4]))
 
 (defn update-grid
-  "Updates a fire grid from one time step to the next"
-  [flattened-grid fire-name time-step program argmap]
+  "Updates a fire grid from one time step to the next, RETURNS A MAP OF :time-grid and :cell-grid"
+  [flattened-grid fire-name time-step program argmap time-grid]
   ;prn "---------------------")
-  (let [flattened-fuel ((keyword (name fire-name)) fuel-master-flattened)]
-    ;; returns a flattened vector of all cell values
-    (vec (for [i (range (count flattened-grid))]
-
-           (let [cell-value (nth flattened-grid i)]
-             ;; only update cell if it's burning
-             (if (or (= cell-value 1)
-                     ;; or it has at least one burning neighbor (burning = 1)
-                     ;; and is a burnable cell (according to fuel-master where 1 = burnable)
-                     ;; and isn't already burned (burned = 2) thus it must be a 0
-                     (and (>= (num-burning-neighbors i flattened-grid fire-name) 1) (= 1 (nth flattened-fuel i)) (= cell-value 0)))
-
-               ;; if true then return the updated cell
-               (update-cell i fire-name time-step flattened-grid program argmap)
-               ;; else just return current value
-               (nth flattened-grid i)))))))
-#_(time (update-grid test-burning-grid "m1" 100 test-program test-argmap))
+  (let [flattened-fuel ((keyword (name fire-name)) fuel-master-flattened)
+        grid-size (count flattened-grid)]
+    ;; SHOULD THIS BE I=1 or is this dealt with somewhere else
+    (loop [i 1
+           current-time-grid time-grid
+           current-cell-grid flattened-grid]
+      (if (= i grid-size)
+        {:time-grid current-time-grid :cell-grid current-cell-grid}
+        (let [cell-value (nth flattened-grid i)
+              time-burning (nth current-time-grid i)]
+          (if (= cell-value 1)
+            (recur (inc i) (assoc current-time-grid i (+ time-burning 1)) (assoc current-cell-grid i (update-cell i fire-name time-step flattened-grid program argmap time-burning)))
+            (if (= cell-value 2)
+              (recur (inc i) current-time-grid (assoc current-cell-grid i 2))
+              (if (and
+                    (>= (num-burning-neighbors i flattened-grid fire-name) 1)
+                    (= 1 (nth flattened-fuel i))
+                    (= 1 (update-cell i fire-name time-step flattened-grid program argmap time-burning)))
+                (recur (inc i) (assoc current-time-grid i (+ time-burning 1)) (assoc current-cell-grid i 1))
+                (recur (inc i) current-time-grid (assoc current-cell-grid i 0))))))))))
+#_(:time-grid (update-grid (:m1 initial-fire-grids-flattened) "m1" 100 '(w) test-argmap (:m1 initial-time-grids-flattened)))
+#_(update-grid (:m1 initial-fire-grids-flattened) "m1" 100 '(w) test-argmap (:m1 initial-time-grids-flattened))
 #_(time (update-grid ((keyword (name "m1")) initial-fire-grids) "m1" 0 test-program test-argmap))
-#_(time (update-grid test-burned-grid "m1" 100 test-program test-argmap))
-
+#_(time (update-grid test-grid "m1" 100 test-program test-argmap))
+#_(:m1 initial-fire-grids-flattened)
 
 (defn convert-vector
   "Converts vector to all 1s and 0s (2s become 1s everything else stays the same)"
@@ -488,15 +508,18 @@
   back into a grid later)"
   [fire-name program argmap]
   (loop [flat-grid ((keyword (name fire-name)) initial-fire-grids-flattened)
-         time-step 0]
+         time-step 0
+         time-grid ((keyword (name fire-name)) initial-time-grids-flattened)]
     (if (>= time-step 1440)
       ;; if time is up convert all 2s to 1s and return fire-scar
 
       (convert-vector flat-grid)                            ;might need to change the convert grid format
 
       ;; otherwise update our grid and increment time
-      (recur (update-grid flat-grid fire-name time-step program argmap)
-             (+ time-step (:time-step argmap))))))
+      (let [updated-grids (update-grid flat-grid fire-name time-step program argmap time-grid)]
+        (recur (:cell-grid updated-grids)
+               (+ time-step (:time-step argmap))
+               (:time-grid updated-grids))))))
 
 #_(run-fire "m1" test-program test-argmap)
 #_(time (run-fire "m1" test-program test-argmap))
@@ -515,15 +538,15 @@
 (def best-program '(sw n integer_% false false e exec_dup (e integer_* w sw WD DMC false exec_if)))
 (def test-program (list 'w))
 #_(def test-argmap {:instructions            fire-instructions
-                  :error-function          fire-error-function
-                  :max-generations         1000
-                  :population-size         5
-                  :max-initial-plushy-size 20
-                  :step-limit              100
-                  :parent-selection        :lexicase
-                  :tournament-size         5
-                  :time-step               100
-                  :fire-selection          1})
+                    :error-function          fire-error-function
+                    :max-generations         1000
+                    :population-size         5
+                    :max-initial-plushy-size 20
+                    :step-limit              100
+                    :parent-selection        :lexicase
+                    :tournament-size         5
+                    :time-step               100
+                    :fire-selection          1})
 
 ;----------------------------------------------
 ;run-fire inputs: [fire-name program argmap]
