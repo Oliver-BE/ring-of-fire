@@ -378,6 +378,61 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; update cell function ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defn old-update-cell
+  "Update cell to next state by interpreting push program"
+  [cell-id fire-name time flattened-grid program argmap]
+  (let [b-neighbors-map (get-burning-neighbors-map cell-id flattened-grid fire-name)
+        current-value (nth flattened-grid cell-id)
+        answer (peek-stack
+                 (interpret-program
+                   program
+                   (assoc empty-push-state :input {;:elevation         (get-elevation-at-cell cell-id fire-name)
+                                                   :slope             (get-slope-at-cell cell-id fire-name)
+                                                   :FWI               (get-current-weather-var "FWI" fire-name time)
+                                                   :WS                (get-current-weather-var "WS" fire-name time)
+                                                   :FFMC              (get-current-weather-var "FFMC" fire-name time)
+                                                   :TMP               (get-current-weather-var "TMP" fire-name time)
+                                                   :APCP              (get-current-weather-var "APCP" fire-name time)
+                                                   :DC                (get-current-weather-var "DC" fire-name time)
+                                                   :BUI               (get-current-weather-var "BUI" fire-name time)
+                                                   :RH                (get-current-weather-var "RH" fire-name time)
+                                                   :ISI               (get-current-weather-var "ISI" fire-name time)
+                                                   :DMC               (get-current-weather-var "DMC" fire-name time)
+                                                   :WD                (get-current-weather-var "WD" fire-name time)
+                                                   :current-value     current-value
+                                                   :time-step         time
+                                                   :nw                (:NW b-neighbors-map)
+                                                   :n                 (:N b-neighbors-map)
+                                                   :ne                (:NE b-neighbors-map)
+                                                   :e                 (:E b-neighbors-map)
+                                                   :w                 (:W b-neighbors-map)
+                                                   :sw                (:SW b-neighbors-map)
+                                                   :s                 (:S b-neighbors-map)
+                                                   :se                (:SE b-neighbors-map)
+                                                   :num-burning-neigh (num-burning-neighbors cell-id flattened-grid fire-name)
+                                                   })
+                   (:step-limit argmap))
+                 :integer)]
+    ;; get first thing off integer stack
+    ;; check for other types, we only went integers
+    (cond
+      ;; this is simply the cells original value that was initially passed in
+      ;; (see :current-value above)
+      (= answer :no-stack-item)
+      current-value
+      ;; If currently 0, can go to 0, 1, 2
+      ;; note we might want to only allow 0 to go to 1 (and not straight to 2)
+      (= current-value 0)
+      (mod answer 3)
+      ;; if burning and we get an answer of 0, just stay burning (1)
+      (and (= current-value 1) (= (mod answer 3) 0))
+      1
+      ;; otherwise you can be a 1 or a 2
+      (= current-value 1)
+      (mod answer 3)
+      ;If 2, stays 2
+      :else
+      2)))
 
 (defn update-cell
   "Update cell to next state by interpreting push program"
@@ -456,6 +511,29 @@
 #_(count [10 5 4 3])
 
 #_(do 1 (count [10 5 4]))
+(defn old-update-grid
+  "Updates a fire grid from one time step to the next"
+  [flattened-grid fire-name time-step program argmap]
+  ;prn "---------------------")
+  (let [flattened-fuel ((keyword (name fire-name)) fuel-master-flattened)]
+    ;; returns a flattened vector of all cell values
+    (vec (for [i (range (count flattened-grid))]
+
+           (let [cell-value (nth flattened-grid i)]
+             ;; only update cell if it's burning
+             (if (or (= cell-value 1)
+                     ;; or it has at least one burning neighbor (burning = 1)
+                     ;; and is a burnable cell (according to fuel-master where 1 = burnable)
+                     ;; and isn't already burned (burned = 2) thus it must be a 0
+                     (and (>= (num-burning-neighbors i flattened-grid fire-name) 1) (= 1 (nth flattened-fuel i)) (= cell-value 0)))
+
+               ;; if true then return the updated cell
+               (old-update-cell i fire-name time-step flattened-grid program argmap)
+               ;; else just return current value
+               (nth flattened-grid i)))))))
+#_(time (old-update-grid test-burning-grid "m1" 100 test-program test-argmap))
+#_(time (old-update-grid ((keyword (name "m1")) initial-fire-grids) "m1" 0 test-program test-argmap))
+#_(time (old-update-grid test-burned-grid "m1" 100 test-program test-argmap))
 
 (defn update-grid
   "Updates a fire grid from one time step to the next, RETURNS A MAP OF :time-grid and :cell-grid"
@@ -515,6 +593,36 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; run fire function (calls update grid) ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defn old-run-fire
+  "Runs a specified fire all the way through and returns
+  a final fire scar to be compared with actual fire scar.
+  Returns a vector of burning and non-burning cells (can be partitioned
+  back into a grid later)"
+  [fire-name program argmap]
+  (loop [flat-grid ((keyword (name fire-name)) initial-fire-grids-flattened)
+         time-step 0]
+    (if (>= time-step 1440)
+      ;; if time is up convert all 2s to 1s and return fire-scar
+
+      (convert-vector flat-grid)                            ;might need to change the convert grid format
+
+      ;; otherwise update our grid and increment time
+      (recur (old-update-grid flat-grid fire-name time-step program argmap)
+             (+ time-step (:time-step argmap))))))
+
+#_(old-run-fire "m1" test-program test-argmap)
+#_(time (old-run-fire "m1" test-program test-argmap))
+#_(time (old-run-fire "m1" best-program test-argmap))
+#_(def test-argmap {:instructions            fire-instructions
+                    :error-function          fire-error-function
+                    :max-generations         1000
+                    :population-size         5
+                    :max-initial-plushy-size 20
+                    :step-limit              100
+                    :parent-selection        :lexicase
+                    :tournament-size         5
+                    :time-step               10
+                    :fire-selection          1})
 
 (defn run-fire
   "Runs a specified fire all the way through and returns
@@ -535,7 +643,6 @@
         (recur (:cell-grid updated-grids)
                (+ time-step (:time-step argmap))
                (:time-grid updated-grids))))))
-
 #_(run-fire "m1" test-program test-argmap)
 #_(time (run-fire "m1" test-program test-argmap))
 #_(time (run-fire "m1" best-program test-argmap))
@@ -603,8 +710,10 @@
             (partition 2 (interleave (flatten evolved-scars) (flatten final-scars))))))
 ;; this should have an error of 1 as only one value is different
 #_(compare-grids [[1 0 0] [0 0 1]] [[1 0 0] [0 1 1]])
-#_(compare-grids [[1 0 0] [0 0 1]] [[1 0 0] [0 1 1]])
-
+#_(compare-grids [[1 0 0] [0 0 1] [0 1 1]] [[1 0 0] [0 1 1] [1 0 0]])
+(def test-time-program (list 'time-step))
+#_(reduce + (compare-grids (old-run-fire "m1" test-time-program test-argmap) (run-fire "m1" test-time-program test-argmap)))
+#_(reduce + (compare-grids (old-run-fire "m1" test-program test-argmap) (run-fire "m1" test-program test-argmap)))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
