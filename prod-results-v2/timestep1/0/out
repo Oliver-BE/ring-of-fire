@@ -1,1 +1,33 @@
 Starting GP with args: {:max-initial-plushy-size 30, :instructions (elevation APCP TMP RH WS WD FFMC DMC DC ISI BUI FWI current-value time-step nw n ne e w sw s se num-burning-neigh integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 2, :max-generations 1000, :time-step 1, :parent-selection :lexicase, :tournament-size 5, :step-limit 25, :error-function #object[ring_of_fire.core$fire_error_function 0x226642a5 ring_of_fire.core$fire_error_function@226642a5], :population-size 10}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (boolean_= exec_if num-burning-neigh)
+Best program: (boolean_= exec_if (num-burning-neigh) ())
+Best total error: 4237
+Fires evaluated:  (a2 g2)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (boolean_= num-burning-neigh)
+Best program: (boolean_= num-burning-neigh)
+Best total error: 5744
+Fires evaluated:  (k1 g2)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (integer_% exec_if num-burning-neigh integer_% integer_+ DMC current-value s 2 boolean_= TMP boolean_=)
+Best program: (integer_% exec_if (num-burning-neigh integer_% integer_+ DMC current-value s 2 boolean_= TMP boolean_=) ())
+Best total error: 7814
+Fires evaluated:  (m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (TMP exec_dup boolean_= DMC n 1 integer_- WS exec_dup integer_% ISI false WS exec_dup w WS integer_- DMC nw exec_dup exec_dup FFMC integer_= FWI sw boolean_=)
+Best program: (TMP exec_dup (boolean_= DMC n 1 integer_- WS exec_dup (integer_% ISI false WS exec_dup (w WS integer_- DMC nw exec_dup (exec_dup (FFMC integer_= FWI sw boolean_=))))))
+Best total error: 8066
+Fires evaluated:  (r1 g2)
+
