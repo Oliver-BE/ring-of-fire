@@ -255,7 +255,7 @@
   [cell-id flattened-grid fire-name]
   (let [width (count (nth ((keyword fire-name) initial-fire-grids) 1))
         return-map (for
-                     [input [["NW" (- cell-id (+ width 1))] ["N" (- cell-id width)] ["NE" (- cell-id (- width 1))] ["E" (- cell-id 1)] ["W" (+ cell-id 1)] ["SW" (+ cell-id (- width 1))] ["S" (+ cell-id width)] ["SE" (+ cell-id (+ width 1))]]]
+                     [input [["NW" (- cell-id (+ width 1))] ["N" (- cell-id width)] ["NE" (- cell-id (- width 1))]  ["W" (- cell-id 1)] ["E" (+ cell-id 1)] ["SW" (+ cell-id (- width 1))] ["S" (+ cell-id width)] ["SE" (+ cell-id (+ width 1))]]]
                      (let [direction (nth input 0)
                            num-cell-to-get (nth input 1)]
                        (assoc {} (keyword direction) (safe-get-cell flattened-grid num-cell-to-get))))]
@@ -278,8 +278,8 @@
 
 (defn get-burning-neighbor
   "Calls burning neighbors map and retrieves specific neighbor"
-  [cell-id fire-grid neighbor-direction]
-  ((keyword neighbor-direction) (get-burning-neighbors-map cell-id fire-grid)))
+  [cell-id fire-grid neighbor-direction fire-name]
+  ((keyword neighbor-direction) (get-burning-neighbors-map cell-id fire-grid) fire-name))
 ;; returns southwest neighbor of middle cell, should return 2
 #_(get-burning-neighbor 4 test-grid "SW")
 
@@ -488,10 +488,10 @@
   [fire-name program argmap]
   (loop [flat-grid ((keyword (name fire-name)) initial-fire-grids-flattened)
          time-step 0]
-    ;(prn time-step)
+    (prn time-step)
     (if (>= time-step 1440)
       ;; if time is up convert all 2s to 1s and return fire-scar
-      flat-grid                                             ;might need to change the convert grid format
+      flat-grid    ;might need to change the convert grid format
 
       ;; otherwise update our grid and increment time
       (recur (time (update-grid flat-grid fire-name time-step program argmap))
@@ -521,19 +521,19 @@
                   :step-limit              100
                   :parent-selection        :lexicase
                   :tournament-size         5
-                  :time-step               10
+                  :time-step               60
                   :fire-selection          1})
 
 ;----------------------------------------------
 ;run-fire inputs: [fire-name program argmap]
-#_(time (run-fire "m1" test-program test-argmap))
+#_(def m1_run_24time (run-fire "m1" test-program test-argmap))
 
 ; update-grid inputs: [fire-grid fire-name time-step program argmap]
 #_(time (update-grid m1-tester-flat-grid "m1" 100 test-program test-argmap))
 
 
 #_(partition (run-fire "m1" test-program test-argmap) (num-columns "m1"))
-#_(def m1-tester-flat-grid (flatten (:m1 initial-fire-grids)))
+#_(def m1-tester-flat-grid (vec (flatten (:m1 initial-fire-grids))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; fire error function (calls run fire)  ;;
