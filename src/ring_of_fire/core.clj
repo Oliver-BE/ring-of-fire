@@ -489,7 +489,6 @@
   [fire-name program argmap]
   (loop [flat-grid ((keyword (name fire-name)) initial-fire-grids-flattened)
          time-step 0]
-    (prn "Time-step: " time-step)
     (if (>= time-step 1440)
       ;; if time is up convert all 2s to 1s and return fire-scar
 
@@ -515,7 +514,7 @@
                             :fire-selection          1})
 (def best-program '(sw n integer_% false false e exec_dup (e integer_* w sw WD DMC false exec_if)))
 (def test-program (list 'w))
-(def test-argmap {:instructions            fire-instructions
+#_(def test-argmap {:instructions            fire-instructions
                   :error-function          fire-error-function
                   :max-generations         1000
                   :population-size         5
@@ -595,7 +594,7 @@
       ;;:behaviors outputs
       ;;:errors errors
       :total-error (reduce + errors))))
-#_(time (fire-error-function test-argmap ["m1"] test-west-program))
+#_(time (fire-error-function test-argmap ["m1" "m2" "g1"] test-best-program))
 
 (def lookuptest {:a [0 0 0]
                  :b [1 1 1]
@@ -610,10 +609,10 @@
                   :max-generations         1000
                   :population-size         5
                   :max-initial-plushy-size 20
-                  :step-limit              25
+                  :step-limit              100
                   :parent-selection        :lexicase
                   :tournament-size         5
-                  :time-step               10
+                  :time-step               1
                   :fire-selection          1})
 (def test-west-program {:plushy '(w)})
 (def test-best-program {:plushy '(sw n integer_% false false e exec_dup (e integer_* w sw WD DMC false exec_if))})
