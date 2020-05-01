@@ -26,7 +26,8 @@
 (def limited-fire-instructions
   (list
     ;; fire vars
-    'elevation
+    ;'elevation
+    'slope
     'ISI                                                    ;could possibly remove
     'BUI                                                    ;could possibly remove
     'FWI
@@ -58,8 +59,8 @@
 (def fire-instructions
   (list
     ;; fire vars
-    'elevation
-    ;'slope
+    ;'elevation
+    'slope
     'APCP
     'TMP
     'RH
@@ -664,7 +665,7 @@
     (println)))
 
 ; make our initial worlds for each of the 10 fires
-(def fire-names ["a2", "k1", "k2", "g2", "m1", "m2", "r1"])
+(def fire-names ["k1", "k2", "g2", "m1", "m2", "r1"])
 
 ;our test set of fires
 (def test-set-fire-names ["a1", "g1", "r2"])

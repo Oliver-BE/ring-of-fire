@@ -151,6 +151,19 @@
                    :r2 revelstoke2-slope
                    })
 
+;; note that arrowhead 2 slope is messed up
+(def slope-master-flattened {:a1 (vec (flatten arrowhead1-slope))
+                             :a2 (vec (flatten arrowhead2-slope))
+                             :k1 (vec (flatten kootenay1-slope))
+                             :k2 (vec (flatten kootenay2-slope))
+                             :g1 (vec (flatten glacier1-slope))
+                             :g2 (vec (flatten glacier2-slope))
+                             :m1 (vec (flatten mica1-slope))
+                             :m2 (vec (flatten mica2-slope))
+                             :r1 (vec (flatten revelstoke1-slope))
+                             :r2 (vec (flatten revelstoke2-slope))
+                             })
+
 (def ignition-cell-master {:a1 arrowhead1-ignition-cell
                            :a2 arrowhead2-ignition-cell
                            :k1 kootenay1-ignition-cell
@@ -268,7 +281,7 @@
   [cell-id flattened-grid fire-name]
   (let [width (count (nth ((keyword fire-name) initial-fire-grids) 1))
         return-map (for
-                     [input [["NW" (- cell-id (+ width 1))] ["N" (- cell-id width)] ["NE" (- cell-id (- width 1))]  ["W" (- cell-id 1)] ["E" (+ cell-id 1)] ["SW" (+ cell-id (- width 1))] ["S" (+ cell-id width)] ["SE" (+ cell-id (+ width 1))]]]
+                     [input [["NW" (- cell-id (+ width 1))] ["N" (- cell-id width)] ["NE" (- cell-id (- width 1))] ["W" (- cell-id 1)] ["E" (+ cell-id 1)] ["SW" (+ cell-id (- width 1))] ["S" (+ cell-id width)] ["SE" (+ cell-id (+ width 1))]]]
                      (let [direction (nth input 0)
                            num-cell-to-get (nth input 1)]
                        (assoc {} (keyword direction) (safe-get-cell flattened-grid num-cell-to-get))))]
@@ -307,49 +320,20 @@
 #_(get-current-weather-var "FFMC" "a1" 54)
 #_(time (nth ((keyword (name "m1")) weather-master) (Math/floor (/ 80 60))))
 
+
 (defn get-elevation-at-cell
   "Returns the elevation of a specified cell in a specified fire"
   [cell-id fire]
   (int (nth ((keyword (name fire)) elevation-master-flattened) cell-id)))
 #_(get-elevation-at-cell 3131 "m1")
 
-;;; we aren't using this
-;(defn get-slope-at-cell
-;  "Returns the elevation of a specified cell in a specified fire"
-;  [cell-id fire]
-;  (nth (flatten ((keyword (name fire)) slope-master)) cell-id))
-;#_(get-slope-at-cell 150 "r1")
+(defn get-slope-at-cell
+  "Returns the slope of a specified cell in a specified fire"
+  [cell-id fire]
+  (int (nth ((keyword (name fire)) slope-master-flattened) cell-id)))
+#_(get-slope-at-cell 150 "r1")
 
 
-
-(defn compare-grids
-  "Compares each cell in the two grids and
-   returns a vector of differences"
-  [evolved-scars final-scars]
-  (vec (map #(Math/abs (reduce - %))
-            (partition 2 (interleave (flatten evolved-scars) (flatten final-scars))))))
-;; this should have an error of 1 as only one value is different
-#_(compare-grids [[1 0 0] [0 0 1]] [[1 0 0] [0 1 1]])
-
-
-
-(defn convert-grid
-  "Converts grid to all 1s and 0s (2s become 1s everything else stays the same)"
-  [grid]
-  ;; partition by columns
-  (let [messy-grid (vec (partition (count (nth grid 0))
-                                   (map #(if (= % 2)
-                                           ;; 2s become 1s
-                                           (dec %)
-                                           ;; everything else stays the same
-                                           %)
-                                        (flatten grid))))]
-    ;; this for loop transforms each lazy seq row into a vector
-    (vec (for [i (range (count messy-grid))]
-           (vec (nth messy-grid i))))))
-#_(convert-grid '((2 1 1 0 1 0) (0 0 1 2 2 2)))
-#_(convert-grid test-burned-grid)
-#_(convert-grid (update-grid (:m1 initial-fire-grids) "m1" 0 test-program test-argmap))
 
 
 
@@ -391,8 +375,8 @@
         answer (peek-stack
                  (interpret-program
                    program
-                   (assoc empty-push-state :input {:elevation         (get-elevation-at-cell cell-id fire-name)
-                                                   ;:slope                 ;(int (get-slope-at-cell cell-id fire-name))
+                   (assoc empty-push-state :input {;:elevation         (get-elevation-at-cell cell-id fire-name)
+                                                   :slope             (get-slope-at-cell cell-id fire-name)
                                                    :FWI               (get-current-weather-var "FWI" fire-name time)
                                                    :WS                (get-current-weather-var "WS" fire-name time)
                                                    :FFMC              (get-current-weather-var "FFMC" fire-name time)
@@ -487,11 +471,11 @@
   "Converts vector to all 1s and 0s (2s become 1s everything else stays the same)"
   [grid]
   (map #(if (= % 2)
-               ;; 2s become 1s
-               (dec %)
-               ;; everything else stays the same
-               %) grid))
-#_(convert-vector [2 1 1 0 1 0 0 0 1 2 2 2])
+          ;; 2s become 1s
+          (dec %)
+          ;; everything else stays the same
+          %) grid))
+#_(convert-vector '(2 1 1 0 1 0 0 0 1 2 2 2))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; run fire function (calls update grid) ;;
@@ -505,7 +489,7 @@
   [fire-name program argmap]
   (loop [flat-grid ((keyword (name fire-name)) initial-fire-grids-flattened)
          time-step 0]
-    (prn time-step)
+    (prn "Time-step: " time-step)
     (if (>= time-step 1440)
       ;; if time is up convert all 2s to 1s and return fire-scar
 
@@ -517,7 +501,7 @@
 
 #_(run-fire "m1" test-program test-argmap)
 #_(time (run-fire "m1" test-program test-argmap))
-#_(time (run-fire "m1" test-program test-argmap))
+#_(time (run-fire "m1" best-program test-argmap))
 #_(def test-a-program '(WS se BUI DMC 1 integer_+ integer_- exec_dup (APCP w DC integer_- exec_if (num-burning-neigh TMP boolean_= integer_-))))
 #_(def runfire-test-argmap {:instructions            fire-instructions
                             :error-function          fire-error-function
@@ -529,7 +513,7 @@
                             :tournament-size         5
                             :time-step               10
                             :fire-selection          1})
-
+(def best-program '(sw n integer_% false false e exec_dup (e integer_* w sw WD DMC false exec_if)))
 (def test-program (list 'w))
 (def test-argmap {:instructions            fire-instructions
                   :error-function          fire-error-function
@@ -539,7 +523,7 @@
                   :step-limit              100
                   :parent-selection        :lexicase
                   :tournament-size         5
-                  :time-step               60
+                  :time-step               100
                   :fire-selection          1})
 
 ;----------------------------------------------
@@ -553,14 +537,38 @@
 #_(partition (run-fire "m1" test-program test-argmap) (num-columns "m1"))
 #_(def m1-tester-flat-grid (vec (flatten (:m1 initial-fire-grids))))
 
-(defn compare-vectors
+
+(defn convert-grid
+  "Converts grid to all 1s and 0s (2s become 1s everything else stays the same)"
+  [grid]
+  ;; partition by columns
+  (let [messy-grid (vec (partition (count (nth grid 0))
+                                   (map #(if (= % 2)
+                                           ;; 2s become 1s
+                                           (dec %)
+                                           ;; everything else stays the same
+                                           %)
+                                        (flatten grid))))]
+    ;; this for loop transforms each lazy seq row into a vector
+    (vec (for [i (range (count messy-grid))]
+           (vec (nth messy-grid i))))))
+#_(convert-grid '((2 1 1 0 1 0) (0 0 1 2 2 2)))
+#_(convert-grid test-burned-grid)
+#_(convert-grid (update-grid (:m1 initial-fire-grids) "m1" 0 test-program test-argmap))
+
+
+;; DOES THIS NEED TO RETURN A VECTOR?
+(defn compare-grids
   "Compares each cell in the two grids and
-   returns a vector of differences where a 1 indicates a difference"
+   returns a vector of differences"
   [evolved-scars final-scars]
-  (vec (map #(Math/abs (reduce - %)) (partition 2 (interleave evolved-scars final-scars)))))
+  (vec (map #(abs (reduce - %))
+            (partition 2 (interleave (flatten evolved-scars) (flatten final-scars))))))
 ;; this should have an error of 1 as only one value is different
-#_(compare-vectors [1 0 0 0 0 1] [1 0 0 0 1 1])
-#_(compare-vectors (:m1 initial-fire-grids-flattened) test-burning-grid-flat)
+#_(compare-grids [[1 0 0] [0 0 1]] [[1 0 0] [0 1 1]])
+#_(compare-grids [[1 0 0] [0 0 1]] [[1 0 0] [0 1 1]])
+
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; fire error function (calls run fire)  ;;
@@ -573,30 +581,26 @@
    The behavior is here defined as the final top item on the :boolean stack."
   [argmap fire-subset individual]
   (let [program (push-from-plushy (:plushy individual))
-
         ;; a vector containing each fire name as a string is our inputs
-        ;; REMEMBER PUT BACK IN ALL FIRES fire-names HERE
         inputs fire-subset
-
-
         ;; correct output is each
         correct-outputs (map #((keyword (name %)) final-scar-grid-master-flattened) inputs)
-
         ;; run each fire through our run-fire function with the given program
         outputs (pmap #(run-fire % program argmap) inputs)
-
         ;; returns a vector where 1 indicates different outputs
         ;; 0 indicates the outputs were the same
-        ;errors (compare-grids outputs correct-outputs)]
-        errors (compare-vectors outputs correct-outputs)]
+        errors (compare-grids outputs correct-outputs)]
 
     (assoc individual
       ;;:behaviors outputs
       ;;:errors errors
       :total-error (reduce + errors))))
-#_(time (fire-error-function test-argmap ["m1"] test-best-program))
+#_(time (fire-error-function test-argmap ["m1"] test-west-program))
 
-
+(def lookuptest {:a [0 0 0]
+                 :b [1 1 1]
+                 :c [2 2 2]})
+#_(map #((keyword (name %)) lookuptest) ["a" "b" "c"])
 
 ;This is the correct format
 ;{:plushy (boolean_and DMC 1 true elevation sw integer_*)}
@@ -611,6 +615,7 @@
                   :tournament-size         5
                   :time-step               10
                   :fire-selection          1})
+(def test-west-program {:plushy '(w)})
 (def test-best-program {:plushy '(sw n integer_% false false e exec_dup (e integer_* w sw WD DMC false exec_if))})
 
 ;-------------------------
