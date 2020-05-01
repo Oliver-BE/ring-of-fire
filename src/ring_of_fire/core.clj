@@ -189,6 +189,18 @@
                   :r2 (create-fuel-grid "r2")
                   })
 
+;; a flattened grid where 0 refers to non-fuel, 1 refers to burnable / fuel
+(def fuel-master-flattened {:a1 (vec (flatten (create-fuel-grid "a1")))
+                            :a2 (vec (flatten (create-fuel-grid "a2")))
+                            :k1 (vec (flatten (create-fuel-grid "k1")))
+                            :k2 (vec (flatten (create-fuel-grid "k2")))
+                            :g1 (vec (flatten (create-fuel-grid "g1")))
+                            :g2 (vec (flatten (create-fuel-grid "g2")))
+                            :m1 (vec (flatten (create-fuel-grid "m1")))
+                            :m2 (vec (flatten (create-fuel-grid "m2")))
+                            :r1 (vec (flatten (create-fuel-grid "r1")))
+                            :r2 (vec (flatten (create-fuel-grid "r2")))
+                            })
 
 ;; make our initial worlds for each of the 10 fires
 (def initial-fire-grids {:a1 (construct-initial-grid "a1")
@@ -338,7 +350,9 @@
                (vec (repeat (count (first ((keyword (name fire-name)) elevation-master))) 1)))))
 
 (def test-burned-grid (construct-burned-grid "m1"))
+(def test-burned-grid-flat (vec (flatten (construct-burned-grid "m1"))))
 (def test-burning-grid (construct-burning-grid "m1"))
+(def test-burning-grid-flat (vec (flatten (construct-burning-grid "m1"))))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -348,81 +362,12 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; update cell function ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
-(defn update-cell-novec
-  "Update cell to next state by interpreting push program"
-  [cell-id fire-name time current-grid program argmap]
-  ;(prn "cell-id:" cell-id)
-  ;(prn "Update-Cell: program" program)
-  (let [b-neighbors-map (get-burning-neighbors-map cell-id current-grid)
-        current-value (nth (flatten current-grid) cell-id)
-        answer (peek-stack
-                 (interpret-program
-                   program
-                   (assoc empty-push-state :input {:elevation         (get-elevation-at-cell cell-id fire-name)
-                                                   ;:slope                 ;(int (get-slope-at-cell cell-id fire-name))
-                                                   :FWI               (get-current-weather-var "FWI" fire-name time)
-                                                   :WS                (get-current-weather-var "WS" fire-name time)
-                                                   :FFMC              (get-current-weather-var "FFMC" fire-name time)
-                                                   :TMP               (get-current-weather-var "TMP" fire-name time)
-                                                   :APCP              (get-current-weather-var "APCP" fire-name time)
-                                                   :DC                (get-current-weather-var "DC" fire-name time)
-                                                   :BUI               (get-current-weather-var "BUI" fire-name time)
-                                                   :RH                (get-current-weather-var "RH" fire-name time)
-                                                   :ISI               (get-current-weather-var "ISI" fire-name time)
-                                                   :DMC               (get-current-weather-var "DMC" fire-name time)
-                                                   :WD                (get-current-weather-var "WD" fire-name time)
-                                                   :current-value     current-value
-                                                   :time-step         time
-                                                   :nw                (:NW b-neighbors-map)
-                                                   :n                 (:N b-neighbors-map)
-                                                   :ne                (:NE b-neighbors-map)
-                                                   :e                 (:E b-neighbors-map)
-                                                   :w                 (:W b-neighbors-map)
-                                                   :sw                (:SW b-neighbors-map)
-                                                   :s                 (:S b-neighbors-map)
-                                                   :se                (:SE b-neighbors-map)
-                                                   :num-burning-neigh (num-burning-neighbors cell-id current-grid)
-                                                   })
-
-                   (:step-limit argmap))
-
-                 :integer)]
-
-    ;(prn "answer" answer)
-    ;(prn "No stack item?" (= answer :no-stack-item))
-
-    ;; get first thing off integer stack
-    ;; check for other types, we only went integers
-    (cond
-      ;; this is simply the cells original value that was initially passed in
-      ;; (see :current-value above)
-      (= answer :no-stack-item)
-      current-value
-
-      ;; If currently 0, can go to 0, 1, 2
-      ;; note we might want to only allow 0 to go to 1 (and not straight to 2)
-      (= current-value 0)
-      (mod answer 3)
-
-      ;; if burning and we get an answer of 0, just stay burning (1)
-      (and (= current-value 1) (= (mod answer 3) 0))
-      1
-
-      ;; otherwise you can be a 1 or a 2
-      (= current-value 1)
-      (mod answer 3)
-
-      ;If 2, stays 2
-      :else
-      2
-      )))
-#_(time (update-cell-novec 5 "m1" 10 test-burning-grid test-program test-argmap))
 
 (defn update-cell
   "Update cell to next state by interpreting push program"
-  [cell-id fire-name time current-grid program argmap]
+  [cell-id fire-name time current-grid-flat current-grid program argmap]
   (let [b-neighbors-map (get-burning-neighbors-map cell-id current-grid)
-        current-value (nth (vec (flatten current-grid)) cell-id)
+        current-value (nth current-grid-flat cell-id)
         answer (peek-stack
                  (interpret-program
                    program
@@ -473,8 +418,9 @@
       ;If 2, stays 2
       :else
       2)))
-#_(update-cell 5 "m1" 0 test-burning-grid test-program test-argmap)
-#_(time (update-cell 5 "m1" 10 test-burning-grid test-program test-argmap))
+#_(update-cell 5 "m1" 0 test-burning-grid-flat test-burning-grid test-program test-argmap)
+#_(time (update-cell 5 "m1" 10 test-burned-grid-flat test-burned-grid test-program test-argmap))
+#_(time (update-cell 5 "m1" 10 test-burning-grid-flat test-burning-grid test-program test-argmap))
 #_(time (get-burning-neighbors-map 500 test-burning-grid))
 #_(time (nth (flatten test-burning-grid) 500))
 #_(time (nth (vec (flatten test-burning-grid)) 500))
@@ -496,7 +442,7 @@
   "Updates a fire grid from one time step to the next"
   [fire-grid fire-name time-step program argmap]
   (let [flattened-grid (vec (flatten fire-grid))
-        flattened-fuel (vec (flatten ((keyword (name fire-name)) fuel-master)))]
+        flattened-fuel ((keyword (name fire-name)) fuel-master-flattened)]
     ;; turns flattened vector back into a grid
     (partition (num-columns fire-name)
                ;; returns a flattened vector of all cell values
@@ -510,12 +456,13 @@
                            (and (>= (num-burning-neighbors i fire-grid) 1) (= 1 (nth flattened-fuel i)) (= cell-value 0)))
 
                      ;; if true then return the updated cell
-                     (update-cell i fire-name time-step fire-grid program argmap)
+                     (update-cell i fire-name time-step flattened-grid fire-grid program argmap)
                      ;; else just return current value
                      (nth flattened-grid i)))))))
 #_(update-grid (:m1 initial-fire-grids) "m1" 0 test-program test-argmap)
-#_(update-grid test-burning-grid "m1" 0 test-program test-argmap)
+#_(update-grid test-burning-grid "m1" 100 test-program test-argmap)
 #_(time (update-grid test-burning-grid "m1" 100 test-program test-argmap))
+#_(time (update-grid test-burned-grid "m1" 100 test-program test-argmap))
 #_(def test-flattened-fuel (vec (flatten ((keyword (name "m1")) fuel-master))))
 #_(if (or (= 0 1)
           ;; or it has at least one burning neighbor (burning = 1)
@@ -540,7 +487,7 @@
       ;; otherwise update our grid and increment time
       (recur (update-grid grid fire-name time-step program argmap)
              (+ time-step (:time-step argmap))))))
-#_(run-fire "m1" test-program runfire-test-argmap)
+#_(run-fire "m1" test-program test-argmap)
 #_(def test-program (list 'w))
 #_(def test-a-program '(WS se BUI DMC 1 integer_+ integer_- exec_dup (APCP w DC integer_- exec_if (num-burning-neigh TMP boolean_= integer_-))))
 #_(def runfire-test-argmap {:instructions            fire-instructions
@@ -553,7 +500,16 @@
                             :tournament-size         5
                             :time-step               10
                             :fire-selection          1})
-
+#_(def test-argmap {:instructions            fire-instructions
+                    :error-function          fire-error-function
+                    :max-generations         1000
+                    :population-size         5
+                    :max-initial-plushy-size 20
+                    :step-limit              25
+                    :parent-selection        :lexicase
+                    :tournament-size         5
+                    :time-step               10
+                    :fire-selection          1})
 
 
 
