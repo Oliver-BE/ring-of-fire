@@ -4,7 +4,7 @@
             [clojure.java.io :as io]
             [ring-of-fire.data :refer :all]
     ;;[ring-of-fire.core :refer :all]
-))
+            ))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Spector Propel Code      ;;
@@ -521,10 +521,10 @@
     (apply min-key :total-error tournament-set)))
 
 (defn one-individual-per-error-vector-for-lexicase
-      "Returns population with only one randomly-chosen individual
-      for any particular error vector."
-      [population]
-      (map rand-nth (vals (group-by :errors population))))
+  "Returns population with only one randomly-chosen individual
+  for any particular error vector."
+  [population]
+  (map rand-nth (vals (group-by :errors population))))
 
 (defn lexicase-selection
   "Selects an individual from the population using lexicase selection."
@@ -541,8 +541,8 @@
                (rest cases))))))
 
 (defn lexicase-selection-timed "Selects an individual from the population using lexicase selection including runtime."
-      [pop argmap]
-      (time (lexicase-selection pop argmap)))
+  [pop argmap]
+  (time (lexicase-selection pop argmap)))
 
 (defn select-parent
   "Selects a parent from the population using the specified method."
@@ -602,42 +602,42 @@
 ;; functions to get cell numbers from core
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(def final-scar-grid-master {:a1 arrowhead1-final-scar
-                             :a2 arrowhead2-final-scar
-                             :k1 kootenay1-final-scar
-                             :k2 kootenay2-final-scar
-                             :g1 glacier1-final-scar
-                             :g2 glacier2-final-scar
-                             :m1 mica1-final-scar
-                             :m2 mica2-final-scar
-                             :r1 revelstoke1-final-scar
-                             :r2 revelstoke2-final-scar
-                             })
-#_(:a1 final-scar-grid-master)
+(def final-scars {:a1 arrowhead1-final-scar
+                  :a2 arrowhead2-final-scar
+                  :k1 kootenay1-final-scar
+                  :k2 kootenay2-final-scar
+                  :g1 glacier1-final-scar
+                  :g2 glacier2-final-scar
+                  :m1 mica1-final-scar
+                  :m2 mica2-final-scar
+                  :r1 revelstoke1-final-scar
+                  :r2 revelstoke2-final-scar
+                  })
+#_(:a1 final-scars)
 
-(defn num-rows
+(defn num-row
   "Returns the number of rows of a vector of vectors
   given a fire name"
   [fire-name]
-  (count ((keyword (name fire-name)) final-scar-grid-master)))
+  (count ((keyword (name fire-name)) final-scars)))
 #_(num-rows "r1")
 #_(num-rows mica1-forest)
 #_(num-rows mica1-elevation)
 
 
-(defn num-columns
+(defn num-cols
   "Returns the number of rows of a vector of vectors
   given a fire name"
   [fire-name]
-  (count (nth ((keyword (name fire-name)) final-scar-grid-master) 0)))
+  (count (nth ((keyword (name fire-name)) final-scars) 0)))
 #_(num-columns "r1")
 #_(num-columns mica1-forest)
 #_(num-columns mica1-elevation)
 
-(defn tot-num-cells
+(defn tot-cells
   "Returns the total number of cells in a vector of fires"
   [fire-vec]
-  (reduce + (map #(* (num-rows %) (num-columns %)) fire-vec)))
+  (reduce + (map #(* (num-row %) (num-cols %)) fire-vec)))
 #_(tot-num-cells ["a2" "m1" "m2"])
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -647,7 +647,7 @@
   "Reports information each generation."
   [pop generation chosen-selection]
   (let [best (first pop)
-        num-cells (tot-num-cells chosen-selection)]
+        num-cells (tot-cells chosen-selection)]
     (println "-------------------------------------------------------")
     (println "               Report for Generation" generation)
     (println "-------------------------------------------------------")
@@ -656,10 +656,10 @@
     (println "Best total error:" (:total-error best))
     (println "Total number of cells:" num-cells)
     (println "Best percent error:" (float (/ (:total-error best) num-cells)))
-       (println "Fires evaluated: " chosen-selection)
-       ;Probably would like to print out the error in percentage form, so like 64% of cells were correctly predicted
+    (println "Fires evaluated: " chosen-selection)
+    ;Probably would like to print out the error in percentage form, so like 64% of cells were correctly predicted
     ;(println "Best errors:" (:errors best))
-       ;Ideally we want to print out a comparison of the best predicted fire to the actual fire scar g
+    ;Ideally we want to print out a comparison of the best predicted fire to the actual fire scar g
     ;(println "Best behaviors:" (:behaviors best))
     (println)))
 
@@ -681,7 +681,7 @@
     (let [chosen-selection (take fire-selection (shuffle fire-names))
           evaluated-pop (sort-by :total-error
                                  (pmap (partial error-function argmap chosen-selection)
-                                      population))]
+                                       population))]
       (report evaluated-pop generation chosen-selection)
       (cond
         (zero? (:total-error (first evaluated-pop))) (println "SUCCESS")

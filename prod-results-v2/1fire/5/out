@@ -767,3 +767,179 @@ Best program: (TMP boolean_or num-burning-neigh num-burning-neigh TMP APCP APCP 
 Best total error: 2200
 Fires evaluated:  (m2)
 
+-------------------------------------------------------
+               Report for Generation 96
+-------------------------------------------------------
+Best plushy: (TMP boolean_or num-burning-neigh num-burning-neigh num-burning-neigh APCP APCP APCP APCP APCP boolean_= DMC boolean_=)
+Best program: (TMP boolean_or num-burning-neigh num-burning-neigh num-burning-neigh APCP APCP APCP APCP APCP boolean_= DMC boolean_=)
+Best total error: 3321
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 97
+-------------------------------------------------------
+Best plushy: (TMP num-burning-neigh num-burning-neigh TMP APCP APCP APCP boolean_not APCP boolean_= boolean_= boolean_= DMC)
+Best program: (TMP num-burning-neigh num-burning-neigh TMP APCP APCP APCP boolean_not APCP boolean_= boolean_= boolean_= DMC)
+Best total error: 672
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 98
+-------------------------------------------------------
+Best plushy: (boolean_or boolean_or num-burning-neigh num-burning-neigh TMP num-burning-neigh APCP APCP integer_- boolean_= boolean_= DMC)
+Best program: (boolean_or boolean_or num-burning-neigh num-burning-neigh TMP num-burning-neigh APCP APCP integer_- boolean_= boolean_= DMC)
+Best total error: 2200
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 99
+-------------------------------------------------------
+Best plushy: (TMP DC boolean_or TMP APCP APCP APCP boolean_not APCP boolean_= boolean_= boolean_= DMC DMC)
+Best program: (TMP DC boolean_or TMP APCP APCP APCP boolean_not APCP boolean_= boolean_= boolean_= DMC DMC)
+Best total error: 672
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 100
+-------------------------------------------------------
+Best plushy: (boolean_or DC TMP TMP num-burning-neigh APCP APCP APCP boolean_= APCP num-burning-neigh boolean_= boolean_= boolean_=)
+Best program: (boolean_or DC TMP TMP num-burning-neigh APCP APCP APCP boolean_= APCP num-burning-neigh boolean_= boolean_= boolean_=)
+Best total error: 2887
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 101
+-------------------------------------------------------
+Best plushy: (boolean_or num-burning-neigh num-burning-neigh num-burning-neigh num-burning-neigh TMP APCP APCP APCP boolean_= APCP boolean_= DMC DMC)
+Best program: (boolean_or num-burning-neigh num-burning-neigh num-burning-neigh num-burning-neigh TMP APCP APCP APCP boolean_= APCP boolean_= DMC DMC)
+Best total error: 672
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 102
+-------------------------------------------------------
+Best plushy: (boolean_or boolean_or num-burning-neigh TMP APCP APCP boolean_not APCP boolean_= boolean_= boolean_= DMC)
+Best program: (boolean_or boolean_or num-burning-neigh TMP APCP APCP boolean_not APCP boolean_= boolean_= boolean_= DMC)
+Best total error: 2843
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 103
+-------------------------------------------------------
+Best plushy: (boolean_or num-burning-neigh num-burning-neigh num-burning-neigh num-burning-neigh num-burning-neigh APCP APCP APCP APCP APCP num-burning-neigh DMC DMC)
+Best program: (boolean_or num-burning-neigh num-burning-neigh num-burning-neigh num-burning-neigh num-burning-neigh APCP APCP APCP APCP APCP num-burning-neigh DMC DMC)
+Best total error: 3321
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 104
+-------------------------------------------------------
+Best plushy: (TMP num-burning-neigh num-burning-neigh TMP nw num-burning-neigh APCP TMP APCP APCP APCP num-burning-neigh DMC DMC boolean_=)
+Best program: (TMP num-burning-neigh num-burning-neigh TMP nw num-burning-neigh APCP TMP APCP APCP APCP num-burning-neigh DMC DMC boolean_=)
+Best total error: 2887
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 105
+-------------------------------------------------------
+Best plushy: (boolean_or boolean_or num-burning-neigh TMP TMP APCP APCP boolean_not APCP boolean_not boolean_= boolean_= DMC)
+Best program: (boolean_or boolean_or num-burning-neigh TMP TMP APCP APCP boolean_not APCP boolean_not boolean_= boolean_= DMC)
+Best total error: 1332
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 106
+-------------------------------------------------------
+Best plushy: (boolean_or boolean_or num-burning-neigh APCP APCP APCP APCP boolean_not APCP APCP APCP num-burning-neigh DMC)
+Best program: (boolean_or boolean_or num-burning-neigh APCP APCP APCP APCP boolean_not APCP APCP APCP num-burning-neigh DMC)
+Best total error: 2200
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 107
+-------------------------------------------------------
+Best plushy: (boolean_or DC num-burning-neigh TMP APCP APCP boolean_not boolean_not APCP APCP boolean_= num-burning-neigh DMC DMC)
+Best program: (boolean_or DC num-burning-neigh TMP APCP APCP boolean_not boolean_not APCP APCP boolean_= num-burning-neigh DMC DMC)
+Best total error: 1332
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 108
+-------------------------------------------------------
+Best plushy: (boolean_or DC num-burning-neigh TMP APCP APCP boolean_not boolean_not APCP APCP boolean_= boolean_or num-burning-neigh DMC DMC)
+Best program: (boolean_or DC num-burning-neigh TMP APCP APCP boolean_not boolean_not APCP APCP boolean_= boolean_or num-burning-neigh DMC DMC)
+Best total error: 1763
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 109
+-------------------------------------------------------
+Best plushy: (boolean_or DC num-burning-neigh TMP APCP APCP boolean_not boolean_not APCP APCP boolean_= num-burning-neigh DMC DMC)
+Best program: (boolean_or DC num-burning-neigh TMP APCP APCP boolean_not boolean_not APCP APCP boolean_= num-burning-neigh DMC DMC)
+Best total error: 803
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 110
+-------------------------------------------------------
+Best plushy: (TMP DC num-burning-neigh TMP APCP APCP boolean_not true APCP APCP RH num-burning-neigh boolean_or num-burning-neigh DMC num-burning-neigh DMC)
+Best program: (TMP DC num-burning-neigh TMP APCP APCP boolean_not true APCP APCP RH num-burning-neigh boolean_or num-burning-neigh DMC num-burning-neigh DMC)
+Best total error: 1683
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 111
+-------------------------------------------------------
+Best plushy: (boolean_or DC num-burning-neigh TMP APCP boolean_not boolean_not true boolean_= integer_% num-burning-neigh DMC DMC boolean_or num-burning-neigh DMC num-burning-neigh DMC)
+Best program: (boolean_or DC num-burning-neigh TMP APCP boolean_not boolean_not true boolean_= integer_% num-burning-neigh DMC DMC boolean_or num-burning-neigh DMC num-burning-neigh DMC)
+Best total error: 1332
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 112
+-------------------------------------------------------
+Best plushy: (boolean_or DC num-burning-neigh TMP APCP boolean_not boolean_not true boolean_= num-burning-neigh DMC DMC boolean_or num-burning-neigh DMC num-burning-neigh DMC)
+Best program: (boolean_or DC num-burning-neigh TMP APCP boolean_not boolean_not true boolean_= num-burning-neigh DMC DMC boolean_or num-burning-neigh DMC num-burning-neigh DMC)
+Best total error: 2843
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 113
+-------------------------------------------------------
+Best plushy: (boolean_or DC num-burning-neigh TMP APCP APCP WD boolean_not boolean_not APCP APCP boolean_= num-burning-neigh boolean_or DMC DMC)
+Best program: (boolean_or DC num-burning-neigh TMP APCP APCP WD boolean_not boolean_not APCP APCP boolean_= num-burning-neigh boolean_or DMC DMC)
+Best total error: 1332
+Fires evaluated:  (a2)
+
+-------------------------------------------------------
+               Report for Generation 114
+-------------------------------------------------------
+Best plushy: (boolean_or DC TMP TMP num-burning-neigh APCP true true boolean_= RH RH DMC num-burning-neigh DMC)
+Best program: (boolean_or DC TMP TMP num-burning-neigh APCP true true boolean_= RH RH DMC num-burning-neigh DMC)
+Best total error: 803
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 115
+-------------------------------------------------------
+Best plushy: (TMP DC num-burning-neigh TMP num-burning-neigh boolean_not WD APCP APCP APCP APCP boolean_= boolean_or DMC)
+Best program: (TMP DC num-burning-neigh TMP num-burning-neigh boolean_not WD APCP APCP APCP APCP boolean_= boolean_or DMC)
+Best total error: 672
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 116
+-------------------------------------------------------
+Best plushy: (TMP DC num-burning-neigh TMP APCP APCP WD true APCP APCP boolean_= boolean_or boolean_or DMC DMC)
+Best program: (TMP DC num-burning-neigh TMP APCP APCP WD true APCP APCP boolean_= boolean_or boolean_or DMC DMC)
+Best total error: 2200
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 117
+-------------------------------------------------------
+Best plushy: (TMP num-burning-neigh TMP APCP APCP boolean_not WD APCP RH RH boolean_or boolean_or DMC DMC)
+Best program: (TMP num-burning-neigh TMP APCP APCP boolean_not WD APCP RH RH boolean_or boolean_or DMC DMC)
+Best total error: 2200
+Fires evaluated:  (m2)
+
