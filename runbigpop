@@ -1,2 +1,2 @@
 #! /bin/sh
-lein with-profiles production trampoline run :population-size 50 :fire-selection 7
+lein with-profiles production trampoline run :population-size 20
