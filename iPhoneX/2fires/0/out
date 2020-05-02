@@ -1,0 +1,21 @@
+Starting GP with args: {:max-initial-plushy-size 40, :instructions (slope ISI BUI FWI NT NBD WS WD TB :split integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 2, :max-generations 5000, :time-step 3, :parent-selection :lexicase, :tournament-size 5, :step-limit 100, :error-function #object[ring_of_fire.core$fire_error_function 0x117e0fe5 ring_of_fire.core$fire_error_function@117e0fe5], :population-size 10}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (NT false TB 1 close integer_* NBD integer_% boolean_not boolean_or boolean_not NT FWI integer_% integer_= ISI 0 NBD boolean_or WD BUI ISI WS 2 integer_- TB NBD 0 integer_+)
+Best program: (NT false TB 1 integer_* NBD integer_% boolean_not boolean_or boolean_not NT FWI integer_% integer_= ISI 0 NBD boolean_or WD BUI ISI WS 2 integer_- TB NBD 0 integer_+)
+Best total error: 2007
+Total number of cells: 10340
+Best percent error: 0.19410057
+Fires evaluated:  (k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (NT false TB 1 close integer_* NBD integer_% boolean_not boolean_or boolean_not NT FWI integer_% integer_= ISI 0 NBD boolean_or WD BUI ISI WS 2 integer_- TB NBD 0 integer_+)
+Best program: (NT false TB 1 integer_* NBD integer_% boolean_not boolean_or boolean_not NT FWI integer_% integer_= ISI 0 NBD boolean_or WD BUI ISI WS 2 integer_- TB NBD 0 integer_+)
+Best total error: 2647
+Total number of cells: 7532
+Best percent error: 0.35143387
+Fires evaluated:  (r1 m1)
+

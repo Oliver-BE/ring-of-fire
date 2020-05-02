@@ -1,0 +1,31 @@
+Starting GP with args: {:max-initial-plushy-size 40, :instructions (slope ISI BUI FWI NT NBD WS WD TB :split integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 1, :max-generations 10000, :time-step 6, :parent-selection :lexicase, :tournament-size 5, :step-limit 70, :error-function #object[ring_of_fire.core$fire_error_function 0x117e0fe5 ring_of_fire.core$fire_error_function@117e0fe5], :population-size 5}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (WD 0 integer_= true 2 integer_- slope TB WD exec_dup boolean_= exec_dup integer_% integer_- WS boolean_= integer_- integer_- exec_dup integer_- true exec_if boolean_and integer_= integer_+ ISI boolean_not boolean_or FWI integer_+ NT NT slope close boolean_not BUI)
+Best program: (WD 0 integer_= true 2 integer_- slope TB WD exec_dup (boolean_= exec_dup (integer_% integer_- WS boolean_= integer_- integer_- exec_dup (integer_- true exec_if (boolean_and integer_= integer_+ ISI boolean_not boolean_or FWI integer_+ NT NT slope) (boolean_not BUI)))))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (integer_= integer_-)
+Best program: (integer_= integer_-)
+Best total error: 2802
+Total number of cells: 5076
+Best percent error: 0.55200946
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_or NBD TB NT TB exec_if :split)
+Best program: (boolean_= boolean_or NBD TB NT TB exec_if (:split) ())
+Best total error: 1641
+Total number of cells: 3132
+Best percent error: 0.52394634
+Fires evaluated:  (m1)
+
