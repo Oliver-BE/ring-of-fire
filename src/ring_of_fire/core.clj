@@ -788,14 +788,14 @@
   (binding [*ns* (the-ns 'ring-of-fire.core)]
     (propel-gp (update-in (merge {:instructions            fire-instructions
                                   :error-function          fire-error-function
-                                  :max-generations         1000
+                                  :max-generations         5000
                                   :population-size         10
-                                  :max-initial-plushy-size 30
+                                  :max-initial-plushy-size 40
                                   :parent-selection        :lexicase
                                   :tournament-size         5
                                   :fire-selection          2
-                                  :time-step               10
-                                  :step-limit              25}
+                                  :time-step               3
+                                  :step-limit              100}
                                  (apply hash-map
                                         (map read-string args)))
                           [:error-function]
