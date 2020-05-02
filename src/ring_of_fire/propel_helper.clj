@@ -35,8 +35,9 @@
     'NBD
     'WS
     'WD
-    'current-value
-    'time-step
+    ;'current-value
+    'TB
+    ':split
 
     ;; other instructions
     'integer_+
@@ -50,7 +51,6 @@
     'boolean_or
     'boolean_not
     'boolean_=
-    ;
     'close
     0
     1
@@ -282,10 +282,10 @@
   [state]
   (push-to-stack state :exec (:current-value (:input state))))
 
-(defn time-step
-  "Pushes the input labeled :time-step on the inputs map onto the :exec stack."
+(defn TB
+  "Pushes the input labeled :TB on the inputs map onto the :exec stack."
   [state]
-  (push-to-stack state :exec (:time-step (:input state))))
+  (push-to-stack state :exec (:TB (:input state))))
 
 (defn nw
   "Pushes the input labeled :nw on the inputs map onto the :exec stack."
@@ -337,6 +337,9 @@
   "Pushes the input labeled :NT on the inputs map onto the :exec stack."
   [state]
   (push-to-stack state :exec (:NT (:input state))))
+
+
+
 
 ;; add more fire instructions here
 

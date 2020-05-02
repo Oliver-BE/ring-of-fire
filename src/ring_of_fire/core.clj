@@ -3,7 +3,8 @@
   (:require [clojure.data.csv :as csv]
             [clojure.java.io :as io]
             [ring-of-fire.data :refer :all]
-            [ring-of-fire.propel-helper :refer :all]))
+            [ring-of-fire.propel-helper :refer :all]
+            [clojure.walk :refer [postwalk]]))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; FIRE PROPEL FUNCTIONS     ;;
@@ -421,71 +422,17 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; update cell function ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
-(defn old-update-cell
-  "Update cell to next state by interpreting push program"
-  [cell-id fire-name time flattened-grid program argmap]
-  (let [b-neighbors-map (get-burning-neighbors-map cell-id flattened-grid fire-name)
-        current-value (nth flattened-grid cell-id)
-        answer (peek-stack
-                 (interpret-program
-                   program
-                   (assoc empty-push-state :input {;:elevation         (get-elevation-at-cell cell-id fire-name)
-                                                   :slope             (get-slope-at-cell cell-id fire-name)
-                                                   :FWI               (get-current-weather-var "FWI" fire-name time)
-                                                   ;;:WS                (get-current-weather-var "WS" fire-name time)
-                                                   ;;:FFMC              (get-current-weather-var "FFMC" fire-name time)
-                                                   ;;:TMP               (get-current-weather-var "TMP" fire-name time)
-                                                   ;;:APCP              (get-current-weather-var "APCP" fire-name time)
-                                                   ;;:DC                (get-current-weather-var "DC" fire-name time)
-                                                   :BUI               (get-current-weather-var "BUI" fire-name time)
-                                                   ;;:RH                (get-current-weather-var "RH" fire-name time)
-                                                   :ISI               (get-current-weather-var "ISI" fire-name time)
-                                                   ;;:DMC               (get-current-weather-var "DMC" fire-name time)
-                                                   ;;:WD                (get-current-weather-var "WD" fire-name time)
-                                                   :current-value     current-value
-                                                   :time-step         time
-                                                   :nw                (:NW b-neighbors-map)
-                                                   :n                 (:N b-neighbors-map)
-                                                   :ne                (:NE b-neighbors-map)
-                                                   :e                 (:E b-neighbors-map)
-                                                   :w                 (:W b-neighbors-map)
-                                                   :sw                (:SW b-neighbors-map)
-                                                   :s                 (:S b-neighbors-map)
-                                                   :se                (:SE b-neighbors-map)
-                                                   :num-burning-neigh (num-burning-neighbors cell-id flattened-grid fire-name)
-                                                   })
-                   (:step-limit argmap))
-                 :integer)]
-    ;; get first thing off integer stack
-    ;; check for other types, we only went integers
-    (cond
-      ;; this is simply the cells original value that was initially passed in
-      ;; (see :current-value above)
-      (= answer :no-stack-item)
-      current-value
-      ;; If currently 0, can go to 0, 1, 2
-      ;; note we might want to only allow 0 to go to 1 (and not straight to 2)
-      (= current-value 0)
-      (mod answer 3)
-      ;; if burning and we get an answer of 0, just stay burning (1)
-      (and (= current-value 1) (= (mod answer 3) 0))
-      1
-      ;; otherwise you can be a 1 or a 2
-      (= current-value 1)
-      (mod answer 3)
-      ;If 2, stays 2
-      :else
-      2)))
-;;Is this returning the correct value if empty?
+
 (defn get-net-direction
   "Returns a net fire direction from currently burning neighbors"
   [b-neighbors-time-map]
   (let [directions-burning (keys b-neighbors-time-map)]
     (if (not (empty? directions-burning))
-    (/ (reduce + directions-burning) (count directions-burning))
-    0)))
+      (/ (reduce + directions-burning) (count directions-burning))
+      0)))
 #_(get-net-direction {0 5, 90 5})
 
+#_(def sample-program '(sw n integer_% false false e exec_dup (e integer_* w sw WD DMC false exec_if)))
 (defn update-cell
   "Update cell to next state by interpreting push program"
   [cell-id fire-name time flattened-grid program argmap time-burning current-time-grid]
@@ -493,28 +440,31 @@
         current-value (nth flattened-grid cell-id)
         answer (peek-stack
                  (interpret-program
-                   program
-                   (assoc empty-push-state :input {;:elevation         (get-elevation-at-cell cell-id fire-name)
-                                                   :slope         (get-slope-at-cell cell-id fire-name)
-                                                   :FWI           (get-current-weather-var "FWI" fire-name time)
-                                                   :WS            (get-current-weather-var "WS" fire-name time)
+                   (if (= current-value 0)
+                     (nth program 0)
+                     (nth program 1))
+                   (assoc empty-push-state :input {:slope (get-slope-at-cell cell-id fire-name)
+                                                   :ISI   (get-current-weather-var "ISI" fire-name time)
+                                                   :BUI   (get-current-weather-var "BUI" fire-name time)
+                                                   :FWI   (get-current-weather-var "FWI" fire-name time)
+                                                   :NT    (int (/ (reduce + (vals b-neighbors-time-map)) 8))
+                                                   :NBD   (int (get-net-direction b-neighbors-time-map))
+                                                   :WS    (get-current-weather-var "WS" fire-name time)
+                                                   :WD    (get-current-weather-var "WD" fire-name time)
+                                                   :TB    time-burning
+                                                   ;:split     false
+
+                                                   ;:elevation         (get-elevation-at-cell cell-id fire-name)
                                                    ;;:FFMC          (get-current-weather-var "FFMC" fire-name time)
                                                    ;;:TMP           (get-current-weather-var "TMP" fire-name time)
                                                    ;;:APCP          (get-current-weather-var "APCP" fire-name time)
                                                    ;;:DC            (get-current-weather-var "DC" fire-name time)
-                                                   :BUI           (get-current-weather-var "BUI" fire-name time)
                                                    ;;:RH            (get-current-weather-var "RH" fire-name time)
-                                                   :ISI           (get-current-weather-var "ISI" fire-name time)
                                                    ;;:DMC           (get-current-weather-var "DMC" fire-name time)
-                                                   :WD            (get-current-weather-var "WD" fire-name time)
-                                                   :current-value current-value
-                                                   :time-step     time-burning
-                                                   :NBD           (int (get-net-direction b-neighbors-time-map))
                                                    ;;The stack can take something that isn't an int right?
-                                                   :NT            (int (/ (reduce + (vals b-neighbors-time-map)) 8))
                                                    })
                    (:step-limit argmap))
-                 :integer)]
+                 :boolean)]
     ;; get first thing off integer stack
     ;; check for other types, we only went integers
     (cond
@@ -525,72 +475,11 @@
       ;; If currently 0, can go to 0, 1, 2
       ;; note we might want to only allow 0 to go to 1 (and not straight to 2)
       (= current-value 0)
-      (mod answer 3)
+      (if answer 1 0)
       ;; if burning and we get an answer of 0, just stay burning (1)
-      (and (= current-value 1) (= (mod answer 3) 0))
-      1
-      ;; otherwise you can be a 1 or a 2
       (= current-value 1)
-      (mod answer 3)
-      ;If 2, stays 2
-      :else
-      2)))
+      (if answer 2 1))))
 
-(defn old-update-cell
-  "Update cell to next state by interpreting push program"
-  [cell-id fire-name time flattened-grid program argmap time-burning]
-  (let [b-neighbors-map (get-burning-neighbors-map cell-id flattened-grid fire-name)
-        current-value (nth flattened-grid cell-id)
-        answer (peek-stack
-                 (interpret-program
-                   program
-                   (assoc empty-push-state :input {;:elevation         (get-elevation-at-cell cell-id fire-name)
-                                                   :slope             (get-slope-at-cell cell-id fire-name)
-                                                   :FWI               (get-current-weather-var "FWI" fire-name time)
-                                                   :WS                (get-current-weather-var "WS" fire-name time)
-                                                   ;:FFMC              (get-current-weather-var "FFMC" fire-name time)
-                                                   ;:TMP               (get-current-weather-var "TMP" fire-name time)
-                                                   ;:APCP              (get-current-weather-var "APCP" fire-name time)
-                                                   ;:DC                (get-current-weather-var "DC" fire-name time)
-                                                   :BUI               (get-current-weather-var "BUI" fire-name time)
-                                                   ;:RH                (get-current-weather-var "RH" fire-name time)
-                                                   :ISI               (get-current-weather-var "ISI" fire-name time)
-                                                   ;:DMC               (get-current-weather-var "DMC" fire-name time)
-                                                   :WD                (get-current-weather-var "WD" fire-name time)
-                                                   ;:current-value     current-value
-                                                   :time-step         time-burning
-                                                   :nw                (:NW b-neighbors-map)
-                                                   :n                 (:N b-neighbors-map)
-                                                   :ne                (:NE b-neighbors-map)
-                                                   :e                 (:E b-neighbors-map)
-                                                   :w                 (:W b-neighbors-map)
-                                                   :sw                (:SW b-neighbors-map)
-                                                   :s                 (:S b-neighbors-map)
-                                                   :se                (:SE b-neighbors-map)
-                                                   :num-burning-neigh (num-burning-neighbors cell-id flattened-grid fire-name)
-                                                   })
-                   (:step-limit argmap))
-                 :integer)]
-    ;; get first thing off integer stack
-    ;; check for other types, we only went integers
-    (cond
-      ;; this is simply the cells original value that was initially passed in
-      ;; (see :current-value above)
-      (= answer :no-stack-item)
-      current-value
-      ;; If currently 0, can go to 0, 1, 2
-      ;; note we might want to only allow 0 to go to 1 (and not straight to 2)
-      (= current-value 0)
-      (mod answer 3)
-      ;; if burning and we get an answer of 0, just stay burning (1)
-      (and (= current-value 1) (= (mod answer 3) 0))
-      1
-      ;; otherwise you can be a 1 or a 2
-      (= current-value 1)
-      (mod answer 3)
-      ;If 2, stays 2
-      :else
-      2)))
 #_(update-cell 5 "m1" 0 test-burning-grid-flat test-burning-grid test-program test-argmap)
 #_(time (update-cell 5 "m1" 10 test-burned-grid-flat test-burned-grid test-program test-argmap))
 #_(time (update-cell 5 "m1" 10 test-burning-grid-flat test-burning-grid test-program test-argmap))
@@ -613,26 +502,6 @@
 #_(count [10 5 4 3])
 
 #_(do 1 (count [10 5 4]))
-(defn old-update-grid
-  "Updates a fire grid from one time step to the next"
-  [flattened-grid fire-name time-step program argmap]
-  ;prn "---------------------")
-  (let [flattened-fuel ((keyword (name fire-name)) fuel-master-flattened)]
-    ;; returns a flattened vector of all cell values
-    (vec (for [i (range (count flattened-grid))]
-
-           (let [cell-value (nth flattened-grid i)]
-             ;; only update cell if it's burning
-             (if (or (= cell-value 1)
-                     ;; or it has at least one burning neighbor (burning = 1)
-                     ;; and is a burnable cell (according to fuel-master where 1 = burnable)
-                     ;; and isn't already burned (burned = 2) thus it must be a 0
-                     (and (>= (num-burning-neighbors i flattened-grid fire-name) 1) (= 1 (nth flattened-fuel i)) (= cell-value 0)))
-
-               ;; if true then return the updated cell
-               (old-update-cell i fire-name time-step flattened-grid program argmap)
-               ;; else just return current value
-               (nth flattened-grid i)))))))
 #_(time (old-update-grid test-burning-grid "m1" 100 test-program test-argmap))
 #_(time (old-update-grid ((keyword (name "m1")) initial-fire-grids) "m1" 0 test-program test-argmap))
 #_(time (old-update-grid test-burned-grid "m1" 100 test-program test-argmap))
@@ -647,7 +516,6 @@
     (loop [i 0
            current-time-grid flattened-time-grid
            current-cell-grid flattened-grid]
-
       ;; if you're at the end of the grind
       (if (= i grid-size)
         {:time-grid current-time-grid :cell-grid current-cell-grid}
@@ -676,7 +544,7 @@
                 (recur (inc i) (assoc current-time-grid i (+ time-burning 1)) (assoc current-cell-grid i 1))
                 ;; otherwise then don't change anything and leave the cell as unburned
                 (recur (inc i) current-time-grid current-cell-grid)))))))))
-#_(:time-grid (update-grid (:m1 initial-fire-grids-flattened) "m1" 100 '(w) test-argmap (:m1 initial-time-grids-flattened)))
+#_(:time-grid (update-grid (:m1 initial-fire-grids-flattened) "m1" 100 test-argmap (:m1 initial-time-grids-flattened)))
 #_(update-grid (:m1 initial-fire-grids-flattened) "m1" 100 '(NBD) test-argmap (:m1 initial-time-grids-flattened))
 #_(time (update-grid ((keyword (name "m1")) initial-fire-grids) "m1" 0 test-program test-argmap))
 #_(time (update-grid test-grid "m1" 100 test-program test-argmap))
@@ -695,22 +563,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; run fire function (calls update grid) ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(defn old-run-fire
-  "Runs a specified fire all the way through and returns
-  a final fire scar to be compared with actual fire scar.
-  Returns a vector of burning and non-burning cells (can be partitioned
-  back into a grid later)"
-  [fire-name program argmap]
-  (loop [flat-grid ((keyword (name fire-name)) initial-fire-grids-flattened)
-         time-step 0]
-    (if (>= time-step 1440)
-      ;; if time is up convert all 2s to 1s and return fire-scar
-
-      (convert-vector flat-grid)                            ;might need to change the convert grid format
-
-      ;; otherwise update our grid and increment time
-      (recur (old-update-grid flat-grid fire-name time-step program argmap)
-             (+ time-step (:time-step argmap))))))
 
 #_(old-run-fire "m1" test-program test-argmap)
 #_(time (old-run-fire "m1" test-program test-argmap))
@@ -813,9 +665,37 @@
 ;; this should have an error of 1 as only one value is different
 #_(compare-grids [[1 0 0] [0 0 1]] [[1 0 0] [0 1 1]])
 #_(compare-grids [[1 0 0] [0 0 1] [0 1 1]] [[1 0 0] [0 1 1] [1 0 0]])
-(def test-time-program (list 'time-step))
+#_(def test-time-program (list 'time-step))
 #_(reduce + (compare-grids (old-run-fire "m1" test-time-program test-argmap) (run-fire "m1" test-time-program test-argmap)))
 #_(reduce + (compare-grids (old-run-fire "m1" test-program test-argmap) (run-fire "m1" test-program test-argmap)))
+
+(defn remove-split
+  "removes every instance of :split inside a nested structure"
+  [program]
+  (postwalk
+    (fn [v]
+      (if (coll? v)
+        (reverse (into (empty v) (remove #{:split}) v))
+        v))
+    program))
+
+(defn make-split-program
+  "Returns a program partitioned at the first instance of :split with all splits removed"
+  [program]
+  (let [split (split-with (complement #{:split}) program)
+        force-split (if (empty? (nth split 1))
+                      (split-at (/ (count program) 2) program)
+                      split)
+        before-split (nth force-split 0)
+        after-split (remove #{:split} (nth force-split 1))]
+    [(remove-split before-split) (remove-split after-split)])
+  )
+
+#_(nth (make-split-program sample-program) 0)
+#_(make-split-program sample-program)
+#_(make-split-program no-split-program)
+#_(def sample-program '(sw n integer_% false false :split exec_dup :split (e integer_* w sw :split WD DMC :split false exec_if)))
+#_(def no-split-program '(sw n integer_% false false exec_dup (e integer_* w sw WD DMC false exec_if)))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -823,18 +703,21 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 #_(sort (take 2 (shuffle fire-names)))
 ;; how do argmap and individual get passed in???
+
+
 (defn fire-error-function
   "Error is 0 if the value and the program's selected behavior match,
    or 1 if they differ, or 1000000 if no behavior is produced.
    The behavior is here defined as the final top item on the :boolean stack."
   [argmap fire-subset individual]
   (let [program (push-from-plushy (:plushy individual))
+        split-program (make-split-program program)
         ;; a vector containing each fire name as a string is our inputs
         inputs fire-subset
         ;; correct output is each
         correct-outputs (map #((keyword (name %)) final-scar-grid-master-flattened) inputs)
         ;; run each fire through our run-fire function with the given program
-        outputs (pmap #(run-fire % program argmap) inputs)
+        outputs (pmap #(run-fire % split-program argmap) inputs)
         ;; returns a vector where 1 indicates different outputs
         ;; 0 indicates the outputs were the same
         errors (compare-grids outputs correct-outputs)]
@@ -874,10 +757,10 @@
               :max-generations         1000
               :population-size         5
               :max-initial-plushy-size 30
-              :step-limit              10
+              :step-limit              100
               :parent-selection        :lexicase
               :tournament-size         5
-              :time-step               500
+              :time-step               5
               :fire-selection          3})
 
 ;-------------------------
@@ -898,8 +781,8 @@
                   :parent-selection        :lexicase
                   :tournament-size         5
                   :fire-selection          3
-                  :time-step               500
-                  :step-limit              25})))
+                  :time-step               5
+                  :step-limit              100})))
 ;;fires-tested can be an int x from 1-10 where any value less than 10 will evaluate a random selection of x fires
 
 (defn -main
