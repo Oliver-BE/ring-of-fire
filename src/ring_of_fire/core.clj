@@ -452,8 +452,8 @@
                                                    :WS    (get-current-weather-var "WS" fire-name time)
                                                    :WD    (get-current-weather-var "WD" fire-name time)
                                                    :TB    time-burning
-                                                   ;:split     false
 
+                                                   ;:split     false
                                                    ;:elevation         (get-elevation-at-cell cell-id fire-name)
                                                    ;;:FFMC          (get-current-weather-var "FFMC" fire-name time)
                                                    ;;:TMP           (get-current-weather-var "TMP" fire-name time)
@@ -461,7 +461,7 @@
                                                    ;;:DC            (get-current-weather-var "DC" fire-name time)
                                                    ;;:RH            (get-current-weather-var "RH" fire-name time)
                                                    ;;:DMC           (get-current-weather-var "DMC" fire-name time)
-                                                   ;;The stack can take something that isn't an int right?
+                                                   ;;The stack can't take something that isn't an int right?
                                                    })
                    (:step-limit argmap))
                  :boolean)]
@@ -704,13 +704,14 @@
 #_(sort (take 2 (shuffle fire-names)))
 ;; how do argmap and individual get passed in???
 
-
+#_(def test-individual '(FWI NBD integer_- true integer_* WD :split exec_dup exec_dup integer_* boolean_not NT NT 0 0 NT NT 1))
 (defn fire-error-function
   "Error is 0 if the value and the program's selected behavior match,
    or 1 if they differ, or 1000000 if no behavior is produced.
    The behavior is here defined as the final top item on the :boolean stack."
   [argmap fire-subset individual]
   (let [program (push-from-plushy (:plushy individual))
+        ;; make-split-program splits the program [[program][program]]
         split-program (make-split-program program)
         ;; a vector containing each fire name as a string is our inputs
         inputs fire-subset
@@ -726,17 +727,9 @@
       ;;:behaviors outputs
       ;;:errors errors
       :total-error (reduce + errors))))
-#_(time (fire-error-function test-argmap ["m1" "m2" "g1"] test-best-program))
-
-(def lookuptest {:a [0 0 0]
-                 :b [1 1 1]
-                 :c [2 2 2]})
-#_(map #((keyword (name %)) lookuptest) ["a" "b" "c"])
-
-;This is the correct format
-;{:plushy (boolean_and DMC 1 true elevation sw integer_*)}
-(def test-plushy-program {:plushy '(w)})
-(def test-argmap {:instructions            fire-instructions
+#_(time (fire-error-function test-argmap ["m1" "m2" "g1"] sample-program))
+#_(def sample-program '(sw n integer_% false false :split exec_dup :split (e integer_* w sw :split WD DMC :split false exec_if)))
+#_(def test-argmap {:instructions            fire-instructions
                   :error-function          fire-error-function
                   :max-generations         1000
                   :population-size         5
@@ -744,10 +737,14 @@
                   :step-limit              100
                   :parent-selection        :lexicase
                   :tournament-size         5
-                  :time-step               1
+                  :time-step               500
                   :fire-selection          1})
-(def test-west-program {:plushy '(w)})
-(def test-best-program {:plushy '(sw n integer_% false false e exec_dup (e integer_* w sw WD DMC false exec_if))})
+(def lookuptest {:a [0 0 0]
+                 :b [1 1 1]
+                 :c [2 2 2]})
+#_(map #((keyword (name %)) lookuptest) ["a" "b" "c"])
+
+
 
 ;-------------------------
 ; RUNNER
@@ -760,7 +757,7 @@
               :step-limit              100
               :parent-selection        :lexicase
               :tournament-size         5
-              :time-step               5
+              :time-step               50
               :fire-selection          3})
 
 ;-------------------------
@@ -775,8 +772,8 @@
     (binding [*ns* (the-ns 'ring-of-fire.core)]
       (propel-gp {:instructions            fire-instructions
                   :error-function          fire-error-function
-                  :max-generations         100
-                  :population-size         2
+                  :max-generations         5000
+                  :population-size         5
                   :max-initial-plushy-size 30
                   :parent-selection        :lexicase
                   :tournament-size         5

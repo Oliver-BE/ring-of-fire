@@ -14,7 +14,7 @@
 ;; Variable definitions     ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(def example-push-state
+#_(def example-push-state
   {:exec    '()
    :integer '(1 2 3 4 5 6 7)
    :string  '("abc")
@@ -27,15 +27,15 @@
   (list
     ;; fire vars
     ;'elevation
+    ;'current-value
     'slope
-    'ISI                                                    ;could possibly remove
-    'BUI                                                    ;could possibly remove
+    'ISI
+    'BUI
     'FWI
     'NT
     'NBD
     'WS
     'WD
-    ;'current-value
     'TB
     ':split
 
@@ -59,7 +59,7 @@
     false
     ))
 
-(def unlimited-fire-instructions
+#_(def unlimited-fire-instructions
   (list
     ;; fire vars
     ;'elevation
@@ -222,17 +222,17 @@
   [state]
   (push-to-stack state :exec (:slope (:input state))))
 
-(defn APCP
+#_(defn APCP
   "Pushes the input labeled :APCP on the inputs map onto the :exec stack."
   [state]
   (push-to-stack state :exec (:APCP (:input state))))
 
-(defn TMP
+#_(defn TMP
   "Pushes the input labeled :TMP on the inputs map onto the :exec stack."
   [state]
   (push-to-stack state :exec (:TMP (:input state))))
 
-(defn RH
+#_(defn RH
   "Pushes the input labeled :RH on the inputs map onto the :exec stack."
   [state]
   (push-to-stack state :exec (:RH (:input state))))
@@ -287,43 +287,43 @@
   [state]
   (push-to-stack state :exec (:TB (:input state))))
 
-(defn nw
+#_(defn nw
   "Pushes the input labeled :nw on the inputs map onto the :exec stack."
   [state]
   (push-to-stack state :exec (:nw (:input state))))
 
-(defn n
+#_(defn n
   "Pushes the input labeled :n on the inputs map onto the :exec stack."
   [state]
   (push-to-stack state :exec (:n (:input state))))
 
-(defn ne
+#_(defn ne
   "Pushes the input labeled :ne on the inputs map onto the :exec stack."
   [state]
   (push-to-stack state :exec (:ne (:input state))))
 
-(defn e
+#_(defn e
   "Pushes the input labeled :e on the inputs map onto the :exec stack."
   [state]
   (push-to-stack state :exec (:e (:input state))))
 
 
-(defn w
+#_(defn w
   "Pushes the input labeled :w on the inputs map onto the :exec stack."
   [state]
   (push-to-stack state :exec (:w (:input state))))
 
-(defn sw
+#_(defn sw
   "Pushes the input labeled :sw on the inputs map onto the :exec stack."
   [state]
   (push-to-stack state :exec (:sw (:input state))))
 
-(defn s
+#_(defn s
   "Pushes the input labeled :s on the inputs map onto the :exec stack."
   [state]
   (push-to-stack state :exec (:s (:input state))))
 
-(defn se
+#_(defn se
   "Pushes the input labeled :se on the inputs map onto the :exec stack."
   [state]
   (push-to-stack state :exec (:se (:input state))))
