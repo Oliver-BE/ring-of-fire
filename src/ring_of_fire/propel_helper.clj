@@ -23,7 +23,7 @@
 ;; Instructions must all be either functions that take one Push state and return another
 ;; or constant literals.
 
-(def limited-fire-instructions
+(def fire-instructions
   (list
     ;; fire vars
     ;'elevation
@@ -31,7 +31,10 @@
     'ISI                                                    ;could possibly remove
     'BUI                                                    ;could possibly remove
     'FWI
-    'num-burning-neigh
+    'NT
+    'NBD
+    'WS
+    'WD
     'current-value
     'time-step
 
@@ -56,7 +59,7 @@
     false
     ))
 
-(def fire-instructions
+(def unlimited-fire-instructions
   (list
     ;; fire vars
     ;'elevation
@@ -82,7 +85,7 @@
     'sw
     's
     'se
-    'num-burning-neigh
+    'NT
     ;; include more here
 
     ;; other instructions
@@ -325,10 +328,15 @@
   [state]
   (push-to-stack state :exec (:se (:input state))))
 
-(defn num-burning-neigh
-  "Pushes the input labeled :num-burning-neigh on the inputs map onto the :exec stack."
+(defn NBD
+  "Pushes the input labeled :NBD on the inputs map onto the :exec stack."
   [state]
-  (push-to-stack state :exec (:num-burning-neigh (:input state))))
+  (push-to-stack state :exec (:NBD (:input state))))
+
+(defn NT
+  "Pushes the input labeled :NT on the inputs map onto the :exec stack."
+  [state]
+  (push-to-stack state :exec (:NT (:input state))))
 
 ;; add more fire instructions here
 

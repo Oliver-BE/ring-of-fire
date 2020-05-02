@@ -287,6 +287,47 @@
 #_(safe-get-cell test-grid 2 2)
 #_(safe-get-cell test-burning-grid 57 53)
 
+#_(def burning-neighbor 0)
+#_(def direction 45)
+#_(if (not= 0 burning-neighbor) (assoc {} direction burning-neighbor))
+
+#_(def cell-id 4)
+#_(def width 3)
+#_(def test-grid [4 1 2 0 0 5 6 7 8])
+#_(into {} (for
+             [input [[0 (+ cell-id 1)]
+                     [45 (- cell-id (- width 1))]
+                     [90 (- cell-id width)]
+                     [135 (- cell-id (+ width 1))]
+                     [180 (- cell-id 1)]
+                     [225 (+ cell-id (- width 1))]
+                     [270 (+ cell-id width)]
+                     [315 (+ cell-id (+ width 1))]]]
+             (let [direction (nth input 0)
+                   num-cell-to-get (nth input 1)
+                   burning-neighbor (safe-get-cell test-grid num-cell-to-get)]
+               (if (not= 0 burning-neighbor) (assoc {} direction burning-neighbor)))))
+
+;;Direction string keys are now angles (east is 0, west is 180, etc)
+(defn get-burning-neighbors-map-using-time
+  "Returns a map of time of neighbors and their associated values. Value in map 0 if out of bounds."
+  [cell-id flattened-time-grid fire-name]
+  (let [width (count (nth ((keyword fire-name) initial-fire-grids) 1))
+        return-map (into {} (for
+                              [input [[0 (+ cell-id 1)]
+                                      [45 (- cell-id (- width 1))]
+                                      [90 (- cell-id width)]
+                                      [135 (- cell-id (+ width 1))]
+                                      [180 (- cell-id 1)]
+                                      [225 (+ cell-id (- width 1))]
+                                      [270 (+ cell-id width)]
+                                      [315 (+ cell-id (+ width 1))]]]
+                              (let [direction (nth input 0)
+                                    num-cell-to-get (nth input 1)
+                                    burning-neighbor (safe-get-cell flattened-time-grid num-cell-to-get)]
+                                (if (not= 0 burning-neighbor)
+                                  (assoc {} direction burning-neighbor)))))]
+    return-map))
 
 (defn get-burning-neighbors-map
   "Returns a map of neighbors and their associated values. Value in map 0 if out of bounds."
@@ -317,9 +358,11 @@
 (defn get-burning-neighbor
   "Calls burning neighbors map and retrieves specific neighbor"
   [cell-id fire-grid neighbor-direction fire-name]
-  ((keyword neighbor-direction) (get-burning-neighbors-map cell-id fire-grid) fire-name))
+  ((keyword neighbor-direction) (get-burning-neighbors-map cell-id fire-grid fire-name)))
 ;; returns southwest neighbor of middle cell, should return 2
 #_(get-burning-neighbor 4 test-grid "SW")
+
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; data lookups        ;;
@@ -389,16 +432,16 @@
                    (assoc empty-push-state :input {;:elevation         (get-elevation-at-cell cell-id fire-name)
                                                    :slope             (get-slope-at-cell cell-id fire-name)
                                                    :FWI               (get-current-weather-var "FWI" fire-name time)
-                                                   :WS                (get-current-weather-var "WS" fire-name time)
-                                                   :FFMC              (get-current-weather-var "FFMC" fire-name time)
-                                                   :TMP               (get-current-weather-var "TMP" fire-name time)
-                                                   :APCP              (get-current-weather-var "APCP" fire-name time)
-                                                   :DC                (get-current-weather-var "DC" fire-name time)
+                                                   ;;:WS                (get-current-weather-var "WS" fire-name time)
+                                                   ;;:FFMC              (get-current-weather-var "FFMC" fire-name time)
+                                                   ;;:TMP               (get-current-weather-var "TMP" fire-name time)
+                                                   ;;:APCP              (get-current-weather-var "APCP" fire-name time)
+                                                   ;;:DC                (get-current-weather-var "DC" fire-name time)
                                                    :BUI               (get-current-weather-var "BUI" fire-name time)
-                                                   :RH                (get-current-weather-var "RH" fire-name time)
+                                                   ;;:RH                (get-current-weather-var "RH" fire-name time)
                                                    :ISI               (get-current-weather-var "ISI" fire-name time)
-                                                   :DMC               (get-current-weather-var "DMC" fire-name time)
-                                                   :WD                (get-current-weather-var "WD" fire-name time)
+                                                   ;;:DMC               (get-current-weather-var "DMC" fire-name time)
+                                                   ;;:WD                (get-current-weather-var "WD" fire-name time)
                                                    :current-value     current-value
                                                    :time-step         time
                                                    :nw                (:NW b-neighbors-map)
@@ -433,8 +476,67 @@
       ;If 2, stays 2
       :else
       2)))
+;;Is this returning the correct value if empty?
+(defn get-net-direction
+  "Returns a net fire direction from currently burning neighbors"
+  [b-neighbors-time-map]
+  (let [directions-burning (keys b-neighbors-time-map)]
+    (if (not (empty? directions-burning))
+    (/ (reduce + directions-burning) (count directions-burning))
+    0)))
+#_(get-net-direction {0 5, 90 5})
 
 (defn update-cell
+  "Update cell to next state by interpreting push program"
+  [cell-id fire-name time flattened-grid program argmap time-burning current-time-grid]
+  (let [b-neighbors-time-map (get-burning-neighbors-map-using-time cell-id current-time-grid fire-name)
+        current-value (nth flattened-grid cell-id)
+        answer (peek-stack
+                 (interpret-program
+                   program
+                   (assoc empty-push-state :input {;:elevation         (get-elevation-at-cell cell-id fire-name)
+                                                   :slope         (get-slope-at-cell cell-id fire-name)
+                                                   :FWI           (get-current-weather-var "FWI" fire-name time)
+                                                   :WS            (get-current-weather-var "WS" fire-name time)
+                                                   ;;:FFMC          (get-current-weather-var "FFMC" fire-name time)
+                                                   ;;:TMP           (get-current-weather-var "TMP" fire-name time)
+                                                   ;;:APCP          (get-current-weather-var "APCP" fire-name time)
+                                                   ;;:DC            (get-current-weather-var "DC" fire-name time)
+                                                   :BUI           (get-current-weather-var "BUI" fire-name time)
+                                                   ;;:RH            (get-current-weather-var "RH" fire-name time)
+                                                   :ISI           (get-current-weather-var "ISI" fire-name time)
+                                                   ;;:DMC           (get-current-weather-var "DMC" fire-name time)
+                                                   :WD            (get-current-weather-var "WD" fire-name time)
+                                                   :current-value current-value
+                                                   :time-step     time-burning
+                                                   :NBD           (int (get-net-direction b-neighbors-time-map))
+                                                   ;;The stack can take something that isn't an int right?
+                                                   :NT            (int (/ (reduce + (vals b-neighbors-time-map)) 8))
+                                                   })
+                   (:step-limit argmap))
+                 :integer)]
+    ;; get first thing off integer stack
+    ;; check for other types, we only went integers
+    (cond
+      ;; this is simply the cells original value that was initially passed in
+      ;; (see :current-value above)
+      (= answer :no-stack-item)
+      current-value
+      ;; If currently 0, can go to 0, 1, 2
+      ;; note we might want to only allow 0 to go to 1 (and not straight to 2)
+      (= current-value 0)
+      (mod answer 3)
+      ;; if burning and we get an answer of 0, just stay burning (1)
+      (and (= current-value 1) (= (mod answer 3) 0))
+      1
+      ;; otherwise you can be a 1 or a 2
+      (= current-value 1)
+      (mod answer 3)
+      ;If 2, stays 2
+      :else
+      2)))
+
+(defn old-update-cell
   "Update cell to next state by interpreting push program"
   [cell-id fire-name time flattened-grid program argmap time-burning]
   (let [b-neighbors-map (get-burning-neighbors-map cell-id flattened-grid fire-name)
@@ -446,16 +548,16 @@
                                                    :slope             (get-slope-at-cell cell-id fire-name)
                                                    :FWI               (get-current-weather-var "FWI" fire-name time)
                                                    :WS                (get-current-weather-var "WS" fire-name time)
-                                                   :FFMC              (get-current-weather-var "FFMC" fire-name time)
-                                                   :TMP               (get-current-weather-var "TMP" fire-name time)
-                                                   :APCP              (get-current-weather-var "APCP" fire-name time)
-                                                   :DC                (get-current-weather-var "DC" fire-name time)
+                                                   ;:FFMC              (get-current-weather-var "FFMC" fire-name time)
+                                                   ;:TMP               (get-current-weather-var "TMP" fire-name time)
+                                                   ;:APCP              (get-current-weather-var "APCP" fire-name time)
+                                                   ;:DC                (get-current-weather-var "DC" fire-name time)
                                                    :BUI               (get-current-weather-var "BUI" fire-name time)
-                                                   :RH                (get-current-weather-var "RH" fire-name time)
+                                                   ;:RH                (get-current-weather-var "RH" fire-name time)
                                                    :ISI               (get-current-weather-var "ISI" fire-name time)
-                                                   :DMC               (get-current-weather-var "DMC" fire-name time)
+                                                   ;:DMC               (get-current-weather-var "DMC" fire-name time)
                                                    :WD                (get-current-weather-var "WD" fire-name time)
-                                                   :current-value     current-value
+                                                   ;:current-value     current-value
                                                    :time-step         time-burning
                                                    :nw                (:NW b-neighbors-map)
                                                    :n                 (:N b-neighbors-map)
@@ -537,13 +639,13 @@
 
 (defn update-grid
   "Updates a fire grid from one time step to the next, RETURNS A MAP OF :time-grid and :cell-grid"
-  [flattened-grid fire-name time-step program argmap time-grid]
+  [flattened-grid fire-name time-step program argmap flattened-time-grid]
   ;prn "---------------------")
   (let [flattened-fuel ((keyword (name fire-name)) fuel-master-flattened)
         grid-size (count flattened-grid)]
-   ;; go through every cell in our grid
+    ;; go through every cell in our grid
     (loop [i 0
-           current-time-grid time-grid
+           current-time-grid flattened-time-grid
            current-cell-grid flattened-grid]
 
       ;; if you're at the end of the grind
@@ -557,25 +659,25 @@
           ;; if it's burning
           (if (= cell-value 1)
             ;; then we increase time-burning and update the cell
-            (recur (inc i) (assoc current-time-grid i (+ time-burning 1)) (assoc current-cell-grid i (update-cell i fire-name time-step flattened-grid program argmap time-burning)))
+            (recur (inc i) (assoc current-time-grid i (+ time-burning 1)) (assoc current-cell-grid i (update-cell i fire-name time-step flattened-grid program argmap time-burning current-time-grid)))
 
             ;; otherwise check to see if it's burned
             (if (= cell-value 2)
               ;; if it is, then don't change anything and leave the cell as burned
-              (recur (inc i) current-time-grid current-cell-grid)
+              (recur (inc i) (assoc current-time-grid i 0) current-cell-grid)
 
               ;; if it's not burned, then it must be a 0 (unburned)
               ;; so now we check if it has at least one burning neighbor and it is burnable and it will be burning next
               (if (and
                     (>= (num-burning-neighbors i flattened-grid fire-name) 1)
                     (= 1 (nth flattened-fuel i))
-                    (= 1 (update-cell i fire-name time-step flattened-grid program argmap time-burning)))
+                    (= 1 (update-cell i fire-name time-step flattened-grid program argmap time-burning current-time-grid)))
                 ;; if it is burning then set to burning and increase time burning
                 (recur (inc i) (assoc current-time-grid i (+ time-burning 1)) (assoc current-cell-grid i 1))
-                ;; otherwise then don't change anything and leave the cell as burned
+                ;; otherwise then don't change anything and leave the cell as unburned
                 (recur (inc i) current-time-grid current-cell-grid)))))))))
 #_(:time-grid (update-grid (:m1 initial-fire-grids-flattened) "m1" 100 '(w) test-argmap (:m1 initial-time-grids-flattened)))
-#_(update-grid (:m1 initial-fire-grids-flattened) "m1" 100 '(w) test-argmap (:m1 initial-time-grids-flattened))
+#_(update-grid (:m1 initial-fire-grids-flattened) "m1" 100 '(NBD) test-argmap (:m1 initial-time-grids-flattened))
 #_(time (update-grid ((keyword (name "m1")) initial-fire-grids) "m1" 0 test-program test-argmap))
 #_(time (update-grid test-grid "m1" 100 test-program test-argmap))
 #_(:m1 initial-fire-grids-flattened)
