@@ -661,10 +661,21 @@
             (partition 2 (interleave (flatten evolved-scars) (flatten final-scars))))))
 ;; this should have an error of 1 as only one value is different
 #_(compare-grids [[1 0 0] [0 0 1]] [[1 0 0] [0 1 1]])
+#_(compare-grids [1 0 0 0 0 1] [1 0 0 0 1 1])
+
 #_(compare-grids [[1 0 0] [0 0 1] [0 1 1]] [[1 0 0] [0 1 1] [1 0 0]])
 #_(def test-time-program (list 'time-step))
 #_(reduce + (compare-grids (old-run-fire "m1" test-time-program test-argmap) (run-fire "m1" test-time-program test-argmap)))
 #_(reduce + (compare-grids (old-run-fire "m1" test-program test-argmap) (run-fire "m1" test-program test-argmap)))
+
+(defn generate-lexicase-error-vector
+  "Runs compare-grids on each set of correct-outputs and outputs"
+  [correct-outputs outputs]
+  (for [i (range (count correct-outputs))]
+    (compare-grids (nth correct-outputs i) (nth outputs i))))
+#_(generate-lexicase-error-vector [[0 0 0] [1 1 1] [1 0 1]] [[1 1 1] [0 0 0] [1 0 1]])
+#_(compare-grids [[0 0 0] [1 1 1] [1 0 1]] [[1 1 1] [0 0 0] [1 0 1]])
+
 
 (defn remove-split
   "removes every instance of :split inside a nested structure"
@@ -719,23 +730,25 @@
         ;; returns a vector where 1 indicates different outputs
         ;; 0 indicates the outputs were the same
         errors (compare-grids outputs correct-outputs)]
-
     (assoc individual
       ;;:behaviors outputs
       ;;:errors errors
+      ;; FOR LEXICASE:
+      :errors errors
+      ;; FOR TOURNAMENT
       :total-error (reduce + errors))))
-#_(time (fire-error-function test-argmap ["m1" "m2" "g1"] sample-program))
+#_(fire-error-function test-argmap ["m1"] sample-program)
 #_(def sample-program '(sw n integer_% false false :split exec_dup :split (e integer_* w sw :split WD DMC :split false exec_if)))
 #_(def test-argmap {:instructions            fire-instructions
-                  :error-function          fire-error-function
-                  :max-generations         1000
-                  :population-size         5
-                  :max-initial-plushy-size 20
-                  :step-limit              100
-                  :parent-selection        :lexicase
-                  :tournament-size         5
-                  :time-step               500
-                  :fire-selection          1})
+                    :error-function          fire-error-function
+                    :max-generations         1000
+                    :population-size         5
+                    :max-initial-plushy-size 20
+                    :step-limit              100
+                    :parent-selection        :tournament
+                    :tournament-size         3
+                    :time-step               500
+                    :fire-selection          1})
 (def lookuptest {:a [0 0 0]
                  :b [1 1 1]
                  :c [2 2 2]})
@@ -753,9 +766,9 @@
               :max-initial-plushy-size 30
               :step-limit              100
               :parent-selection        :lexicase
-              :tournament-size         5
+              :tournament-size         3
               :time-step               50
-              :fire-selection          3})
+              :fire-selection          1})
 
 ;-------------------------
 
