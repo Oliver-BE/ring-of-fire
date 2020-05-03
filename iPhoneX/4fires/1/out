@@ -549,3 +549,183 @@ Total number of cells: 24280
 Best percent error: 0.5509473
 Fires evaluated:  (m1 r1 g2 k2)
 
+-------------------------------------------------------
+               Report for Generation 55
+-------------------------------------------------------
+Best plushy: (exec_dup NT NT NT WS WS WD close boolean_and close WD close 2 2 slope false 2)
+Best program: (exec_dup (NT NT NT WS WS WD) boolean_and WD 2 2 slope false 2)
+Best total error: 13734
+Total number of cells: 25392
+Best percent error: 0.540879
+Fires evaluated:  (k1 r1 g2 m1)
+
+-------------------------------------------------------
+               Report for Generation 56
+-------------------------------------------------------
+Best plushy: (exec_dup NT NT WS WS close WS close ISI integer_* FWI WS :split ISI integer_= integer_* WS 2 integer_+ integer_+ exec_dup)
+Best program: (exec_dup (NT NT WS WS) WS ISI integer_* FWI WS :split ISI integer_= integer_* WS 2 integer_+ integer_+ exec_dup ())
+Best total error: 14538
+Total number of cells: 26224
+Best percent error: 0.5543777
+Fires evaluated:  (m2 k2 r1 g2)
+
+-------------------------------------------------------
+               Report for Generation 57
+-------------------------------------------------------
+Best plushy: (exec_dup NT NT WS WS WD WD boolean_and close close integer_= :split close 2 integer_* 2 2)
+Best program: (exec_dup (NT NT WS WS WD WD boolean_and) integer_= :split 2 integer_* 2 2)
+Best total error: 8317
+Total number of cells: 28200
+Best percent error: 0.2949291
+Fires evaluated:  (k2 k1 g2 m1)
+
+-------------------------------------------------------
+               Report for Generation 58
+-------------------------------------------------------
+Best plushy: (exec_dup NT NT WS WS WD WD boolean_and close close integer_= :split close 2 integer_* 2 2)
+Best program: (exec_dup (NT NT WS WS WD WD boolean_and) integer_= :split 2 integer_* 2 2)
+Best total error: 5901
+Total number of cells: 19816
+Best percent error: 0.29778966
+Fires evaluated:  (k2 r1 m2 m1)
+
+-------------------------------------------------------
+               Report for Generation 59
+-------------------------------------------------------
+Best plushy: (exec_dup NT NT WS WS boolean_and close close close integer_* ISI :split 2 2 integer_*)
+Best program: (exec_dup (NT NT WS WS boolean_and) integer_* ISI :split 2 2 integer_*)
+Best total error: 12609
+Total number of cells: 22148
+Best percent error: 0.5693065
+Fires evaluated:  (m2 m1 r1 g2)
+
+-------------------------------------------------------
+               Report for Generation 60
+-------------------------------------------------------
+Best plushy: (NT NT WS WS close WD ISI :split 2 2 integer_+ integer_+)
+Best program: (NT NT WS WS WD ISI :split 2 2 integer_+ integer_+)
+Best total error: 11684
+Total number of cells: 23060
+Best percent error: 0.5066782
+Fires evaluated:  (k1 k2 m1 r1)
+
+-------------------------------------------------------
+               Report for Generation 61
+-------------------------------------------------------
+Best plushy: (NT WS NT WS WD boolean_= boolean_and WD WD :split integer_* exec_dup 2 2 integer_* 2 integer_+)
+Best program: (NT WS NT WS WD boolean_= boolean_and WD WD :split integer_* exec_dup (2 2 integer_* 2 integer_+))
+Best total error: 12845
+Total number of cells: 25004
+Best percent error: 0.51371783
+Fires evaluated:  (m2 k1 k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 62
+-------------------------------------------------------
+Best plushy: (exec_dup NT NT boolean_and close close close ISI :split 2 2 integer_*)
+Best program: (exec_dup (NT NT boolean_and) ISI :split 2 2 integer_*)
+Best total error: 15663
+Total number of cells: 29468
+Best percent error: 0.53152573
+Fires evaluated:  (k1 k2 r1 g2)
+
+-------------------------------------------------------
+               Report for Generation 63
+-------------------------------------------------------
+Best plushy: (exec_dup WS WS WD WD ISI close NT 2 close integer_+ integer_+)
+Best program: (exec_dup (WS WS WD WD ISI) NT 2 integer_+ integer_+)
+Best total error: 15663
+Total number of cells: 29468
+Best percent error: 0.53152573
+Fires evaluated:  (r1 k2 g2 k1)
+
+-------------------------------------------------------
+               Report for Generation 64
+-------------------------------------------------------
+Best plushy: (NT NT NT WS WD boolean_= close WD 2 integer_* integer_* :split integer_+ 2 integer_+)
+Best program: (NT NT NT WS WD boolean_= WD 2 integer_* integer_* :split integer_+ 2 integer_+)
+Best total error: 15919
+Total number of cells: 30144
+Best percent error: 0.52809846
+Fires evaluated:  (k1 k2 m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 65
+-------------------------------------------------------
+Best plushy: (exec_dup NT NT WS close boolean_= close :split :split 2 2 integer_* integer_+)
+Best program: (exec_dup (NT NT WS) boolean_= :split :split 2 2 integer_* integer_+)
+Best total error: 11684
+Total number of cells: 23060
+Best percent error: 0.5066782
+Fires evaluated:  (k1 m1 k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 66
+-------------------------------------------------------
+Best plushy: (NT NT WS WS WD close boolean_and :split 2 integer_* integer_* :split)
+Best program: (NT NT WS WS WD boolean_and :split 2 integer_* integer_* :split)
+Best total error: 14538
+Total number of cells: 26224
+Best percent error: 0.5543777
+Fires evaluated:  (k2 r1 m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 67
+-------------------------------------------------------
+Best plushy: (exec_dup NT NT WS false close NT boolean_= close :split :split integer_= 2 2 integer_* integer_+)
+Best program: (exec_dup (NT NT WS false) NT boolean_= :split :split integer_= 2 2 integer_* integer_+)
+Best total error: 8138
+Total number of cells: 25004
+Best percent error: 0.3254679
+Fires evaluated:  (k2 r1 m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 68
+-------------------------------------------------------
+Best plushy: (exec_dup NT NT WS false close boolean_= :split close :split integer_* integer_= 2)
+Best program: (exec_dup (NT NT WS false) boolean_= :split :split integer_* integer_= 2)
+Best total error: 6877
+Total number of cells: 24280
+Best percent error: 0.28323722
+Fires evaluated:  (r1 k2 m1 g2)
+
+-------------------------------------------------------
+               Report for Generation 69
+-------------------------------------------------------
+Best plushy: (exec_dup NT NT WS false close boolean_= :split close :split integer_* integer_= 2)
+Best program: (exec_dup (NT NT WS false) boolean_= :split :split integer_* integer_= 2)
+Best total error: 9447
+Total number of cells: 26068
+Best percent error: 0.36239836
+Fires evaluated:  (g2 k1 m2 m1)
+
+-------------------------------------------------------
+               Report for Generation 70
+-------------------------------------------------------
+Best plushy: (exec_dup NT NT WD WS false close boolean_= :split close :split integer_* integer_= 2)
+Best program: (exec_dup (NT NT WD WS false) boolean_= :split :split integer_* integer_= 2)
+Best total error: 9600
+Total number of cells: 30144
+Best percent error: 0.31847134
+Fires evaluated:  (k1 g2 k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 71
+-------------------------------------------------------
+Best plushy: (exec_dup NT NT WS false close NT boolean_= close :split integer_= 2 integer_* NBD integer_* integer_+)
+Best program: (exec_dup (NT NT WS false) NT boolean_= :split integer_= 2 integer_* NBD integer_* integer_+)
+Best total error: 9447
+Total number of cells: 26068
+Best percent error: 0.36239836
+Fires evaluated:  (g2 m2 m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 72
+-------------------------------------------------------
+Best plushy: (exec_dup NT NT WD false close boolean_= boolean_= close :split integer_* integer_* 2)
+Best program: (exec_dup (NT NT WD false) boolean_= boolean_= :split integer_* integer_* 2)
+Best total error: 9600
+Total number of cells: 30144
+Best percent error: 0.31847134
+Fires evaluated:  (m2 g2 k1 k2)
+
