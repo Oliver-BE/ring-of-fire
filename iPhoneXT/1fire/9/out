@@ -9,3 +9,93 @@ Total number of cells: 8320
 Best percent error: 0.471875
 Fires evaluated:  (k1)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (close boolean_not true exec_if slope boolean_and BUI boolean_or integer_= boolean_and exec_dup 2 FWI 1 NT :split close true slope integer_= 0 integer_+ FWI 2 NT boolean_= close 1)
+Best program: (boolean_not true exec_if (slope boolean_and BUI boolean_or integer_= boolean_and exec_dup (2 FWI 1 NT :split) true slope integer_= 0 integer_+ FWI 2 NT boolean_=) (1))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (close boolean_not true slope boolean_and boolean_or integer_= boolean_and exec_dup 2 FWI NT :split close slope 0 integer_+ FWI 2 NT boolean_= close 1)
+Best program: (boolean_not true slope boolean_and boolean_or integer_= boolean_and exec_dup (2 FWI NT :split) slope 0 integer_+ FWI 2 NT boolean_= 1)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (close boolean_not true slope boolean_and boolean_or integer_= boolean_or integer_= 2 FWI 1 FWI :split close :split 0 integer_+ FWI 2 NT boolean_= close 1 boolean_= 1)
+Best program: (boolean_not true slope boolean_and boolean_or integer_= boolean_or integer_= 2 FWI 1 FWI :split :split 0 integer_+ FWI 2 NT boolean_= 1 boolean_= 1)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (close boolean_not true slope slope BUI BUI integer_= boolean_and 2 FWI TB 1 NT :split close slope 0 integer_= 0 2 integer_+ boolean_= close close 1 1)
+Best program: (boolean_not true slope slope BUI BUI integer_= boolean_and 2 FWI TB 1 NT :split slope 0 integer_= 0 2 integer_+ boolean_= 1 1)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (close boolean_not true true slope boolean_and integer_= boolean_or integer_= 2 exec_dup 2 FWI close :split close close true integer_= 0 integer_- 2 1 2 boolean_= boolean_= boolean_= 1 1)
+Best program: (boolean_not true true slope boolean_and integer_= boolean_or integer_= 2 exec_dup (2 FWI) :split true integer_= 0 integer_- 2 1 2 boolean_= boolean_= boolean_= 1 1)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (close boolean_not true slope boolean_and boolean_or integer_= boolean_or boolean_and exec_dup 2 FWI close NT NT close close NT 2 NT 1 integer_+ boolean_= 1 1 close :split)
+Best program: (boolean_not true slope boolean_and boolean_or integer_= boolean_or boolean_and exec_dup (2 FWI) NT NT NT 2 NT 1 integer_+ boolean_= 1 1 :split)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (true slope boolean_and slope boolean_and integer_= integer_= 2 2 close :split 0 integer_+ close 2 integer_= boolean_= close 2 boolean_= 2 boolean_= 1)
+Best program: (true slope boolean_and slope boolean_and integer_= integer_= 2 2 :split 0 integer_+ 2 integer_= boolean_= 2 boolean_= 2 boolean_= 1)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (boolean_not slope true slope boolean_and integer_= integer_= boolean_or boolean_and exec_dup 2 close :split NT NT close 2 NT boolean_= NT 1 integer_+ boolean_= 1 close :split)
+Best program: (boolean_not slope true slope boolean_and integer_= integer_= boolean_or boolean_and exec_dup (2) :split NT NT 2 NT boolean_= NT 1 integer_+ boolean_= 1 :split)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (boolean_not boolean_not true slope slope BUI integer_= boolean_or false WS 2 FWI close 2 NT NT close NT slope integer_= WS 1 false 0 boolean_= 1 1 1 :split)
+Best program: (boolean_not boolean_not true slope slope BUI integer_= boolean_or false WS 2 FWI 2 NT NT NT slope integer_= WS 1 false 0 boolean_= 1 1 1 :split)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+

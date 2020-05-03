@@ -9,3 +9,43 @@ Total number of cells: 5076
 Best percent error: 0.43341213
 Fires evaluated:  (m2)
 
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (NT integer_+ true ISI FWI 2 exec_dup close WD exec_if BUI boolean_not BUI ISI WS boolean_and slope boolean_or)
+Best program: (NT integer_+ true ISI FWI 2 exec_dup () WD exec_if (BUI boolean_not BUI ISI WS boolean_and slope boolean_or) ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (boolean_not NT integer_+ true ISI FWI 2 exec_dup close WD exec_if 2 BUI boolean_not BUI ISI 0 WS boolean_and slope WD boolean_or)
+Best program: (boolean_not NT integer_+ true ISI FWI 2 exec_dup () WD exec_if (2 BUI boolean_not BUI ISI 0 WS boolean_and slope WD boolean_or) ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (NT integer_+ true ISI FWI 2 exec_dup close WD exec_if BUI boolean_not ISI WS boolean_and slope boolean_or)
+Best program: (NT integer_+ true ISI FWI 2 exec_dup () WD exec_if (BUI boolean_not ISI WS boolean_and slope boolean_or) ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (NT true true ISI boolean_or 2 exec_dup WD BUI exec_if boolean_and boolean_or 0 WS boolean_and slope integer_%)
+Best program: (NT true true ISI boolean_or 2 exec_dup (WD BUI exec_if (boolean_and boolean_or 0 WS boolean_and slope integer_%) ()))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+

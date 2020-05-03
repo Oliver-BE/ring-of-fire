@@ -1,0 +1,51 @@
+Starting GP with args: {:max-initial-plushy-size 40, :instructions (slope ISI BUI FWI NT NBD WS WD TB :split integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 4, :max-generations 5000, :time-step 3, :parent-selection :lexicase, :tournament-size 5, :step-limit 100, :error-function #object[ring_of_fire.core$fire_error_function 0x2d10e0b1 ring_of_fire.core$fire_error_function@2d10e0b1], :population-size 10}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (WD BUI boolean_= WS 0 slope boolean_and WS integer_= boolean_not true 1 false boolean_not exec_if true WS NBD 2 boolean_and boolean_not)
+Best program: (WD BUI boolean_= WS 0 slope boolean_and WS integer_= boolean_not true 1 false boolean_not exec_if (true WS NBD 2 boolean_and boolean_not) ())
+Best total error: 13712
+Total number of cells: 25392
+Best percent error: 0.5400126
+Fires evaluated:  (g2 r1 m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (WD BUI boolean_= WS 0 slope boolean_and WS integer_= boolean_not true 1 false boolean_not exec_if true WS NBD 2 boolean_and boolean_not)
+Best program: (WD BUI boolean_= WS 0 slope boolean_and WS integer_= boolean_not true 1 false boolean_not exec_if (true WS NBD 2 boolean_and boolean_not) ())
+Best total error: 13356
+Total number of cells: 24280
+Best percent error: 0.5500824
+Fires evaluated:  (k2 g2 m1 r1)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (WD BUI boolean_= WS 0 slope boolean_and WS integer_= boolean_not true 1 false boolean_not exec_if true WS NBD 2 boolean_and boolean_not)
+Best program: (WD BUI boolean_= WS 0 slope boolean_and WS integer_= boolean_not true 1 false boolean_not exec_if (true WS NBD 2 boolean_and boolean_not) ())
+Best total error: 13983
+Total number of cells: 26068
+Best percent error: 0.5364048
+Fires evaluated:  (g2 m2 m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (WD BUI boolean_= WS 0 slope boolean_and WS integer_= boolean_not true 1 ISI boolean_not boolean_not true true NBD NBD 2 boolean_not boolean_and)
+Best program: (WD BUI boolean_= WS 0 slope boolean_and WS integer_= boolean_not true 1 ISI boolean_not boolean_not true true NBD NBD 2 boolean_not boolean_and)
+Best total error: 8160
+Total number of cells: 26224
+Best percent error: 0.31116533
+Fires evaluated:  (r1 m2 g2 k2)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (WD BUI boolean_= WS 0 slope boolean_and WS boolean_not true 1 ISI boolean_not boolean_not true true 2 boolean_not boolean_and)
+Best program: (WD BUI boolean_= WS 0 slope boolean_and WS boolean_not true 1 ISI boolean_not boolean_not true true 2 boolean_not boolean_and)
+Best total error: 6855
+Total number of cells: 23060
+Best percent error: 0.297268
+Fires evaluated:  (k2 m1 r1 k1)
+
