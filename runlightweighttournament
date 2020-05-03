@@ -1,0 +1,2 @@
+#! /bin/sh
+lein with-profiles production trampoline run :max-generations 10000 :population-size 5 :step-limit 70 :time-step 6 :fire-selection 1 :parent-selection :tournament

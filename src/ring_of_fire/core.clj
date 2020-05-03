@@ -823,11 +823,11 @@
 #_(def argmap-for-test-program {:instructions            fire-instructions
                                 :error-function          fire-error-function
                                 :max-generations         1000
-                                :population-size         5
+                                :population-size         8
                                 :max-initial-plushy-size 20
                                 :step-limit              25
                                 :parent-selection        :lexicase
-                                :tournament-size         5
+                                :tournament-size         2
                                 :time-step               1000
                                 :fire-selection          1})
 
