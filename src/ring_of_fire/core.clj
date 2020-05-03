@@ -544,11 +544,8 @@
                 (recur (inc i) (assoc current-time-grid i (+ time-burning 1)) (assoc current-cell-grid i 1))
                 ;; otherwise then don't change anything and leave the cell as unburned
                 (recur (inc i) current-time-grid current-cell-grid)))))))))
-#_(:time-grid (update-grid (:m1 initial-fire-grids-flattened) "m1" 100 test-argmap (:m1 initial-time-grids-flattened)))
-#_(update-grid (:m1 initial-fire-grids-flattened) "m1" 100 '(NBD) test-argmap (:m1 initial-time-grids-flattened))
-#_(time (update-grid ((keyword (name "m1")) initial-fire-grids) "m1" 0 test-program test-argmap))
-#_(time (update-grid test-grid "m1" 100 test-program test-argmap))
-#_(:m1 initial-fire-grids-flattened)
+#_(:cell-grid (update-grid (:m1 initial-fire-grids-flattened) "m1" 100 (make-split-program '(NBD)) test-argmap (:m1 initial-time-grids-flattened)))
+
 
 (defn convert-vector
   "Converts vector to all 1s and 0s (2s become 1s everything else stays the same)"
@@ -575,7 +572,7 @@
                     :step-limit              100
                     :parent-selection        :lexicase
                     :tournament-size         5
-                    :time-step               10
+                    :time-step               100
                     :fire-selection          1})
 
 (defn run-fire
