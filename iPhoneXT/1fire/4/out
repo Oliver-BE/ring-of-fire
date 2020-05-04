@@ -129,3 +129,203 @@ Total number of cells: 8320
 Best percent error: 0.37908652
 Fires evaluated:  (k1)
 
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (integer_* boolean_and true slope integer_% integer_% exec_if)
+Best program: (integer_* boolean_and true slope integer_% integer_% exec_if () ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (integer_* boolean_and true close slope integer_% exec_if)
+Best program: (integer_* boolean_and true slope integer_% exec_if () ())
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (integer_* 1 boolean_and true close slope integer_% exec_if)
+Best program: (integer_* 1 boolean_and true slope integer_% exec_if () ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (integer_* boolean_and boolean_and true close slope FWI 0)
+Best program: (integer_* boolean_and boolean_and true slope FWI 0)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (integer_* boolean_and true integer_% integer_% slope FWI 0)
+Best program: (integer_* boolean_and true integer_% integer_% slope FWI 0)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (integer_* boolean_and true close slope integer_% exec_if)
+Best program: (integer_* boolean_and true slope integer_% exec_if () ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (integer_* boolean_and true true slope BUI slope exec_if)
+Best program: (integer_* boolean_and true true slope BUI slope exec_if () ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 20
+-------------------------------------------------------
+Best plushy: (boolean_and true integer_= slope integer_%)
+Best program: (boolean_and true integer_= slope integer_%)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 21
+-------------------------------------------------------
+Best plushy: (integer_* boolean_and true close slope slope exec_if 0)
+Best program: (integer_* boolean_and true slope slope exec_if (0) ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 22
+-------------------------------------------------------
+Best plushy: (integer_* boolean_and true close slope slope 0)
+Best program: (integer_* boolean_and true slope slope 0)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 23
+-------------------------------------------------------
+Best plushy: (integer_* boolean_and true close slope slope exec_if 0)
+Best program: (integer_* boolean_and true slope slope exec_if (0) ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 24
+-------------------------------------------------------
+Best plushy: (integer_* boolean_and true close slope slope exec_if 0)
+Best program: (integer_* boolean_and true slope slope exec_if (0) ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 25
+-------------------------------------------------------
+Best plushy: (integer_* boolean_and true close slope slope exec_if 0)
+Best program: (integer_* boolean_and true slope slope exec_if (0) ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 26
+-------------------------------------------------------
+Best plushy: (integer_* boolean_and true close slope exec_if exec_if)
+Best program: (integer_* boolean_and true slope exec_if (exec_if () ()) ())
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 27
+-------------------------------------------------------
+Best plushy: (integer_* boolean_and true close slope exec_if)
+Best program: (integer_* boolean_and true slope exec_if () ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 28
+-------------------------------------------------------
+Best plushy: (integer_* boolean_and true close slope exec_if exec_if 0)
+Best program: (integer_* boolean_and true slope exec_if (exec_if (0) ()) ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 29
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and true slope slope slope 0)
+Best program: (boolean_and boolean_and true slope slope slope 0)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 30
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and true slope slope slope 0)
+Best program: (boolean_and boolean_and true slope slope slope 0)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 31
+-------------------------------------------------------
+Best plushy: (integer_* boolean_and true close slope slope)
+Best program: (integer_* boolean_and true slope slope)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 32
+-------------------------------------------------------
+Best plushy: (integer_* boolean_and true close slope exec_if 0)
+Best program: (integer_* boolean_and true slope exec_if (0) ())
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+

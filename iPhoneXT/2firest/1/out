@@ -89,3 +89,43 @@ Total number of cells: 15528
 Best percent error: 0.27202472
 Fires evaluated:  (k2 k1)
 
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (TB integer_+ 0 0 integer_+ exec_dup NBD NT 0 integer_+ integer_+ false true WD slope integer_= close boolean_or boolean_or ISI ISI slope slope boolean_or integer_- integer_- 2 slope exec_dup exec_dup TB integer_* close boolean_or boolean_and WS 2 boolean_and boolean_and slope)
+Best program: (TB integer_+ 0 0 integer_+ exec_dup (NBD NT 0 integer_+ integer_+ false true WD slope integer_=) boolean_or boolean_or ISI ISI slope slope boolean_or integer_- integer_- 2 slope exec_dup (exec_dup (TB integer_*) boolean_or boolean_and WS 2 boolean_and boolean_and slope))
+Best total error: 6330
+Total number of cells: 17860
+Best percent error: 0.35442328
+Fires evaluated:  (g2 k1)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (TB integer_+ 0 integer_+ BUI NBD NBD integer_+ integer_+ true slope close WD close boolean_or boolean_or boolean_or boolean_or ISI 0 slope integer_- TB integer_- integer_- close exec_dup exec_dup integer_- true integer_- 2 boolean_and boolean_and slope)
+Best program: (TB integer_+ 0 integer_+ BUI NBD NBD integer_+ integer_+ true slope WD boolean_or boolean_or boolean_or boolean_or ISI 0 slope integer_- TB integer_- integer_- exec_dup (exec_dup (integer_- true integer_- 2 boolean_and boolean_and slope)))
+Best total error: 2784
+Total number of cells: 11608
+Best percent error: 0.23983459
+Fires evaluated:  (r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (TB integer_+ 0 ISI integer_+ exec_dup NBD NT 0 integer_+ integer_+ true true WD slope integer_= close boolean_or boolean_or ISI ISI slope slope boolean_or integer_- integer_- 2 slope exec_dup true TB NT integer_* close boolean_or boolean_and slope true slope)
+Best program: (TB integer_+ 0 ISI integer_+ exec_dup (NBD NT 0 integer_+ integer_+ true true WD slope integer_=) boolean_or boolean_or ISI ISI slope slope boolean_or integer_- integer_- 2 slope exec_dup (true TB NT integer_*) boolean_or boolean_and slope true slope)
+Best total error: 2784
+Total number of cells: 11608
+Best percent error: 0.23983459
+Fires evaluated:  (r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (TB integer_+ 0 0 exec_dup NBD NT 0 integer_+ slope false true slope slope integer_= boolean_or boolean_or :split ISI slope 0 boolean_or integer_- integer_- 2 slope boolean_and TB close integer_* boolean_and boolean_or slope boolean_and integer_- slope)
+Best program: (TB integer_+ 0 0 exec_dup (NBD NT 0 integer_+ slope false true slope slope integer_= boolean_or boolean_or :split ISI slope 0 boolean_or integer_- integer_- 2 slope boolean_and TB) integer_* boolean_and boolean_or slope boolean_and integer_- slope)
+Best total error: 3270
+Total number of cells: 12284
+Best percent error: 0.26619995
+Fires evaluated:  (k2 m2)
+

@@ -79,3 +79,103 @@ Total number of cells: 12284
 Best percent error: 0.26619995
 Fires evaluated:  (k2 m2)
 
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (ISI TB boolean_and integer_= integer_= NBD :split integer_- :split NBD NBD)
+Best program: (ISI TB boolean_and integer_= integer_= NBD :split integer_- :split NBD NBD)
+Best total error: 3270
+Total number of cells: 12284
+Best percent error: 0.26619995
+Fires evaluated:  (m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (ISI TB boolean_and integer_= integer_= NBD 0 true :split boolean_= integer_- NBD)
+Best program: (ISI TB boolean_and integer_= integer_= NBD 0 true :split boolean_= integer_- NBD)
+Best total error: 1987
+Total number of cells: 10340
+Best percent error: 0.19216634
+Fires evaluated:  (m1 k2)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (ISI TB false false integer_= NBD :split :split NBD NBD)
+Best program: (ISI TB false false integer_= NBD :split :split NBD NBD)
+Best total error: 4224
+Total number of cells: 15528
+Best percent error: 0.27202472
+Fires evaluated:  (k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (ISI TB false integer_= integer_= NBD :split :split :split integer_- NBD)
+Best program: (ISI TB false integer_= integer_= NBD :split :split :split integer_- NBD)
+Best total error: 5354
+Total number of cells: 13396
+Best percent error: 0.39967155
+Fires evaluated:  (m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (ISI TB false integer_= integer_= NBD :split :split :split integer_- NBD)
+Best program: (ISI TB false integer_= integer_= NBD :split :split :split integer_- NBD)
+Best total error: 3914
+Total number of cells: 9476
+Best percent error: 0.41304347
+Fires evaluated:  (r1 m2)
+
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (ISI TB boolean_and integer_= integer_= NBD :split :split NBD NBD)
+Best program: (ISI TB boolean_and integer_= integer_= NBD :split :split NBD NBD)
+Best total error: 2631
+Total number of cells: 7532
+Best percent error: 0.34930962
+Fires evaluated:  (r1 m1)
+
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (ISI TB false false integer_= :split NBD :split)
+Best program: (ISI TB false false integer_= :split NBD :split)
+Best total error: 1987
+Total number of cells: 10340
+Best percent error: 0.19216634
+Fires evaluated:  (m1 k2)
+
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (ISI TB false false integer_= NBD boolean_= :split NBD 1 :split boolean_= integer_-)
+Best program: (ISI TB false false integer_= NBD boolean_= :split NBD 1 :split boolean_= integer_-)
+Best total error: 3270
+Total number of cells: 12284
+Best percent error: 0.26619995
+Fires evaluated:  (k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (ISI TB boolean_and 0 integer_= integer_= exec_if :split integer_= NBD NBD)
+Best program: (ISI TB boolean_and 0 integer_= integer_= exec_if (:split integer_= NBD NBD) ())
+Best total error: 3270
+Total number of cells: 12284
+Best percent error: 0.26619995
+Fires evaluated:  (m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (ISI TB TB false integer_= :split NBD :split NBD 1 1 :split)
+Best program: (ISI TB TB false integer_= :split NBD :split NBD 1 1 :split)
+Best total error: 2631
+Total number of cells: 7532
+Best percent error: 0.34930962
+Fires evaluated:  (m1 r1)
+

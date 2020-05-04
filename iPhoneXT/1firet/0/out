@@ -59,3 +59,53 @@ Total number of cells: 8320
 Best percent error: 0.37908652
 Fires evaluated:  (k1)
 
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (NT integer_+ true ISI FWI WD exec_dup WS slope exec_if boolean_and boolean_or BUI false 0 slope integer_%)
+Best program: (NT integer_+ true ISI FWI WD exec_dup (WS slope exec_if (boolean_and boolean_or BUI false 0 slope integer_%) ()))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (NT integer_+ true ISI FWI exec_dup WD exec_if BUI BUI BUI ISI 0 WS boolean_and boolean_or boolean_or)
+Best program: (NT integer_+ true ISI FWI exec_dup (WD exec_if (BUI BUI BUI ISI 0 WS boolean_and boolean_or boolean_or) ()))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (NT integer_+ true ISI FWI WD exec_dup WS slope exec_if boolean_or BUI 0 integer_%)
+Best program: (NT integer_+ true ISI FWI WD exec_dup (WS slope exec_if (boolean_or BUI 0 integer_%) ()))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (NT integer_+ true ISI FWI exec_dup close WD exec_if boolean_not boolean_not BUI ISI 0 boolean_or boolean_and)
+Best program: (NT integer_+ true ISI FWI exec_dup () WD exec_if (boolean_not boolean_not BUI ISI 0 boolean_or boolean_and) ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (NT integer_+ true ISI FWI 2 exec_dup WD exec_if boolean_not ISI BUI ISI 0 boolean_or 0 0)
+Best program: (NT integer_+ true ISI FWI 2 exec_dup (WD exec_if (boolean_not ISI BUI ISI 0 boolean_or 0 0) ()))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
