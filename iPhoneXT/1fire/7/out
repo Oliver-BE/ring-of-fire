@@ -229,3 +229,133 @@ Total number of cells: 4400
 Best percent error: 0.38954544
 Fires evaluated:  (r1)
 
+-------------------------------------------------------
+               Report for Generation 23
+-------------------------------------------------------
+Best plushy: (ISI ISI true WS WS WD :split ISI :split true boolean_not FWI FWI ISI BUI true)
+Best program: (ISI ISI true WS WS WD :split ISI :split true boolean_not FWI FWI ISI BUI true)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 24
+-------------------------------------------------------
+Best plushy: (ISI ISI true WS WS WS :split WD WD true boolean_not FWI true boolean_not FWI boolean_not 2 BUI true 0 integer_*)
+Best program: (ISI ISI true WS WS WS :split WD WD true boolean_not FWI true boolean_not FWI boolean_not 2 BUI true 0 integer_*)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 25
+-------------------------------------------------------
+Best plushy: (ISI true exec_dup TB WS boolean_not WD ISI exec_dup WD close FWI false 2 ISI BUI integer_% 0)
+Best program: (ISI true exec_dup (TB WS boolean_not WD ISI exec_dup (WD) FWI false 2 ISI BUI integer_% 0))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 26
+-------------------------------------------------------
+Best plushy: (ISI true true exec_dup TB WS ISI ISI boolean_not WD true boolean_not FWI ISI 2 BUI true BUI)
+Best program: (ISI true true exec_dup (TB WS ISI ISI boolean_not WD true boolean_not FWI ISI 2 BUI true BUI))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 27
+-------------------------------------------------------
+Best plushy: (ISI true true exec_dup TB boolean_not ISI ISI WD WD boolean_not false FWI ISI true)
+Best program: (ISI true true exec_dup (TB boolean_not ISI ISI WD WD boolean_not false FWI ISI true))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 28
+-------------------------------------------------------
+Best plushy: (ISI true true exec_dup TB WS ISI ISI WD WD true false FWI ISI BUI true)
+Best program: (ISI true true exec_dup (TB WS ISI ISI WD WD true false FWI ISI BUI true))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 29
+-------------------------------------------------------
+Best plushy: (close true true exec_dup TB boolean_not WS ISI :split ISI boolean_not ISI false FWI ISI BUI BUI)
+Best program: (true true exec_dup (TB boolean_not WS ISI :split ISI boolean_not ISI false FWI ISI BUI BUI))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 30
+-------------------------------------------------------
+Best plushy: (ISI ISI true exec_dup TB WS WS ISI :split ISI boolean_not boolean_not FWI ISI ISI BUI BUI BUI)
+Best program: (ISI ISI true exec_dup (TB WS WS ISI :split ISI boolean_not boolean_not FWI ISI ISI BUI BUI BUI))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 31
+-------------------------------------------------------
+Best plushy: (ISI ISI true exec_dup TB WS WS ISI :split ISI boolean_not boolean_not ISI ISI BUI BUI BUI)
+Best program: (ISI ISI true exec_dup (TB WS WS ISI :split ISI boolean_not boolean_not ISI ISI BUI BUI BUI))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 32
+-------------------------------------------------------
+Best plushy: (ISI ISI true exec_dup TB WS :split ISI boolean_not boolean_not ISI ISI BUI BUI BUI)
+Best program: (ISI ISI true exec_dup (TB WS :split ISI boolean_not boolean_not ISI ISI BUI BUI BUI))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 33
+-------------------------------------------------------
+Best plushy: (ISI true true TB TB WS :split 1 boolean_not boolean_not integer_- ISI false BUI 0 FWI BUI)
+Best program: (ISI true true TB TB WS :split 1 boolean_not boolean_not integer_- ISI false BUI 0 FWI BUI)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 34
+-------------------------------------------------------
+Best plushy: (ISI true true exec_dup TB WS ISI ISI WD boolean_not ISI ISI FWI BUI)
+Best program: (ISI true true exec_dup (TB WS ISI ISI WD boolean_not ISI ISI FWI BUI))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 35
+-------------------------------------------------------
+Best plushy: (ISI true true TB TB WS :split 1 boolean_not boolean_not integer_- ISI false ISI 0 FWI FWI BUI)
+Best program: (ISI true true TB TB WS :split 1 boolean_not boolean_not integer_- ISI false ISI 0 FWI FWI BUI)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+

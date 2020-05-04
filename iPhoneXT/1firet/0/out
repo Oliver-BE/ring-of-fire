@@ -149,3 +149,93 @@ Total number of cells: 4400
 Best percent error: 0.38954544
 Fires evaluated:  (r1)
 
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (NT integer_+ true ISI FWI 2 WD exec_if BUI BUI BUI BUI 0 boolean_or boolean_or boolean_and)
+Best program: (NT integer_+ true ISI FWI 2 WD exec_if (BUI BUI BUI BUI 0 boolean_or boolean_or boolean_and) ())
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (BUI integer_+ true true ISI exec_dup exec_dup WD BUI BUI BUI BUI 0 boolean_or WS boolean_and)
+Best program: (BUI integer_+ true true ISI exec_dup (exec_dup (WD BUI BUI BUI BUI 0 boolean_or WS boolean_and)))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (NT integer_+ integer_* true ISI FWI 2 WD WD BUI BUI BUI 0 boolean_or WS boolean_and)
+Best program: (NT integer_+ integer_* true ISI FWI 2 WD WD BUI BUI BUI 0 boolean_or WS boolean_and)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (BUI NT integer_+ true ISI FWI exec_dup WD exec_if BUI BUI integer_= BUI ISI 0 WS boolean_or)
+Best program: (BUI NT integer_+ true ISI FWI exec_dup (WD exec_if (BUI BUI integer_= BUI ISI 0 WS boolean_or) ()))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (NT integer_+ integer_* true ISI FWI 2 WD close WD BUI BUI BUI 0 boolean_or WS boolean_and)
+Best program: (NT integer_+ integer_* true ISI FWI 2 WD WD BUI BUI BUI 0 boolean_or WS boolean_and)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 20
+-------------------------------------------------------
+Best plushy: (BUI NT integer_+ true ISI FWI exec_dup WD exec_if BUI BUI FWI BUI integer_= 0 WS 0 WS)
+Best program: (BUI NT integer_+ true ISI FWI exec_dup (WD exec_if (BUI BUI FWI BUI integer_= 0 WS 0 WS) ()))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 21
+-------------------------------------------------------
+Best plushy: (BUI NT integer_+ true ISI FWI 2 WD exec_if exec_if BUI BUI BUI ISI BUI WS 0)
+Best program: (BUI NT integer_+ true ISI FWI 2 WD exec_if (exec_if (BUI BUI BUI ISI BUI WS 0) ()) ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 22
+-------------------------------------------------------
+Best plushy: (NT integer_+ integer_+ true ISI FWI 2 WD WD BUI BUI BUI boolean_or boolean_or WS boolean_and)
+Best program: (NT integer_+ integer_+ true ISI FWI 2 WD WD BUI BUI BUI boolean_or boolean_or WS boolean_and)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 23
+-------------------------------------------------------
+Best plushy: (BUI NT integer_+ true ISI FWI exec_dup WD exec_if exec_if BUI FWI BUI integer_= 0 WS 0 WS)
+Best program: (BUI NT integer_+ true ISI FWI exec_dup (WD exec_if (exec_if (BUI FWI BUI integer_= 0 WS 0 WS) ()) ()))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+

@@ -109,3 +109,93 @@ Total number of cells: 27336
 Best percent error: 0.37474394
 Fires evaluated:  (m2 k1 r1 g2)
 
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (true false TB false boolean_and true ISI 1 close BUI TB FWI false TB NBD close)
+Best program: (true false TB false boolean_and true ISI 1 BUI TB FWI false TB NBD)
+Best total error: 9114
+Total number of cells: 29468
+Best percent error: 0.30928466
+Fires evaluated:  (r1 g2 k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (true BUI BUI false boolean_and true ISI WD close FWI FWI WS NBD slope)
+Best program: (true BUI BUI false boolean_and true ISI WD FWI FWI WS NBD slope)
+Best total error: 5901
+Total number of cells: 19816
+Best percent error: 0.29778966
+Fires evaluated:  (m2 r1 m1 k2)
+
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (true false NBD TB false boolean_and true WS ISI 1 close BUI TB FWI false TB NBD close)
+Best program: (true false NBD TB false boolean_and true WS ISI 1 BUI TB FWI false TB NBD)
+Best total error: 8160
+Total number of cells: 26224
+Best percent error: 0.31116533
+Fires evaluated:  (r1 g2 k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (true false NBD false boolean_and boolean_and true WS ISI 1 close BUI TB :split slope slope close)
+Best program: (true false NBD false boolean_and boolean_and true WS ISI 1 BUI TB :split slope slope)
+Best total error: 9600
+Total number of cells: 30144
+Best percent error: 0.31847134
+Fires evaluated:  (g2 k1 m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (true BUI BUI false ISI true WS WD WD TB TB FWI NBD :split :split 1 slope slope)
+Best program: (true BUI BUI false ISI true WS WD WD TB TB FWI NBD :split :split 1 slope slope)
+Best total error: 7341
+Total number of cells: 23736
+Best percent error: 0.30927706
+Fires evaluated:  (m2 k1 m1 k2)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (true BUI BUI false boolean_and true 0 BUI close TB FWI WS NBD :split 1 slope)
+Best program: (true BUI BUI false boolean_and true 0 BUI TB FWI WS NBD :split 1 slope)
+Best total error: 8317
+Total number of cells: 28200
+Best percent error: 0.2949291
+Fires evaluated:  (k2 g2 m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (true BUI BUI false false 1 boolean_and true WD close FWI NBD WS NBD :split slope)
+Best program: (true BUI BUI false false 1 boolean_and true WD FWI NBD WS NBD :split slope)
+Best total error: 7363
+Total number of cells: 24956
+Best percent error: 0.29503927
+Fires evaluated:  (k2 g2 m1 m2)
+
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (true BUI BUI false false boolean_and true WD close FWI WS NBD :split slope)
+Best program: (true BUI BUI false false boolean_and true WD FWI WS NBD :split slope)
+Best total error: 7341
+Total number of cells: 23736
+Best percent error: 0.30927706
+Fires evaluated:  (k1 k2 m1 m2)
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (true BUI BUI false false true BUI WD close TB WS NBD NBD slope)
+Best program: (true BUI BUI false false true BUI WD TB WS NBD NBD slope)
+Best total error: 7341
+Total number of cells: 23736
+Best percent error: 0.30927706
+Fires evaluated:  (m1 m2 k2 k1)
+
