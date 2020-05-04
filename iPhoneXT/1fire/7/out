@@ -49,3 +49,13 @@ Total number of cells: 9540
 Best percent error: 0.33291405
 Fires evaluated:  (g2)
 
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (integer_% TB true exec_dup exec_dup exec_if WS close integer_= true exec_if :split boolean_and ISI close true integer_- boolean_and WD FWI close exec_if exec_dup NBD 2 integer_- WS boolean_and 0 exec_dup)
+Best program: (integer_% TB true exec_dup (exec_dup (exec_if (WS) (integer_= true exec_if (:split boolean_and ISI) (true integer_- boolean_and WD FWI) exec_if (exec_dup (NBD 2 integer_- WS boolean_and 0 exec_dup ())) ()))))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+

@@ -59,3 +59,13 @@ Total number of cells: 22148
 Best percent error: 0.3615225
 Fires evaluated:  (m2 m1 g2 r1)
 
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (true close WD integer_= true 2 boolean_= boolean_= boolean_not true NT boolean_= close true slope integer_* 2 integer_% TB WS boolean_not integer_* integer_% true integer_% slope integer_% slope)
+Best program: (true WD integer_= true 2 boolean_= boolean_= boolean_not true NT boolean_= true slope integer_* 2 integer_% TB WS boolean_not integer_* integer_% true integer_% slope integer_% slope)
+Best total error: 9114
+Total number of cells: 29468
+Best percent error: 0.30928466
+Fires evaluated:  (k1 r1 g2 k2)
+

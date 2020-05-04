@@ -179,3 +179,13 @@ Total number of cells: 7532
 Best percent error: 0.34930962
 Fires evaluated:  (m1 r1)
 
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (ISI TB boolean_and 0 integer_= integer_= exec_if :split integer_=)
+Best program: (ISI TB boolean_and 0 integer_= integer_= exec_if (:split integer_=) ())
+Best total error: 4868
+Total number of cells: 12720
+Best percent error: 0.3827044
+Fires evaluated:  (k1 r1)
+

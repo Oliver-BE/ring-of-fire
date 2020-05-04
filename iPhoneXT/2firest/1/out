@@ -129,3 +129,13 @@ Total number of cells: 12284
 Best percent error: 0.26619995
 Fires evaluated:  (k2 m2)
 
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (TB integer_+ 0 0 integer_+ NBD NBD integer_+ integer_+ integer_+ true WD boolean_or integer_= close false boolean_or ISI ISI slope integer_- TB integer_- integer_- integer_* exec_dup TB TB NT integer_* boolean_or boolean_or boolean_and boolean_and slope slope)
+Best program: (TB integer_+ 0 0 integer_+ NBD NBD integer_+ integer_+ integer_+ true WD boolean_or integer_= false boolean_or ISI ISI slope integer_- TB integer_- integer_- integer_* exec_dup (TB TB NT integer_* boolean_or boolean_or boolean_and boolean_and slope slope))
+Best total error: 6330
+Total number of cells: 17860
+Best percent error: 0.35442328
+Fires evaluated:  (k1 g2)
+

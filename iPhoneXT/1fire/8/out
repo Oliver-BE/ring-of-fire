@@ -159,3 +159,43 @@ Total number of cells: 3132
 Best percent error: 0.29278415
 Fires evaluated:  (m1)
 
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (true true NBD NBD NBD 1 true slope boolean_= 2 slope boolean_or integer_- 1 1 NBD close 1)
+Best program: (true true NBD NBD NBD 1 true slope boolean_= 2 slope boolean_or integer_- 1 1 NBD 1)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (exec_if true NBD integer_+ slope WD true true close slope boolean_or 1 false true NBD close 1)
+Best program: (exec_if (true NBD integer_+ slope WD true true) (slope boolean_or 1 false true NBD) 1)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (true true NBD integer_+ NBD WD true boolean_or 1 slope boolean_or slope boolean_or 1 false close NBD close 1)
+Best program: (true true NBD integer_+ NBD WD true boolean_or 1 slope boolean_or slope boolean_or 1 false NBD 1)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (exec_if true NBD NBD slope NBD true boolean_or close slope boolean_or 1 false WD NBD close 1)
+Best program: (exec_if (true NBD NBD slope NBD true boolean_or) (slope boolean_or 1 false WD NBD) 1)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+

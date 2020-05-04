@@ -79,3 +79,13 @@ Total number of cells: 30144
 Best percent error: 0.31847134
 Fires evaluated:  (g2 k1 m2 k2)
 
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (boolean_or boolean_or true integer_+ exec_if integer_* ISI ISI true ISI 2 TB TB 2 WS NBD integer_+ 1 NBD NBD)
+Best program: (boolean_or boolean_or true integer_+ exec_if (integer_* ISI ISI true ISI 2 TB TB 2 WS NBD integer_+ 1 NBD NBD) ())
+Best total error: 10244
+Total number of cells: 27336
+Best percent error: 0.37474394
+Fires evaluated:  (g2 r1 k1 m2)
+

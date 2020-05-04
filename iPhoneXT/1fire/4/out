@@ -329,3 +329,53 @@ Total number of cells: 7208
 Best percent error: 0.14844617
 Fires evaluated:  (k2)
 
+-------------------------------------------------------
+               Report for Generation 33
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and true slope integer_- slope 0)
+Best program: (boolean_and boolean_and true slope integer_- slope 0)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 34
+-------------------------------------------------------
+Best plushy: (integer_* boolean_and true slope integer_- slope exec_if 0)
+Best program: (integer_* boolean_and true slope integer_- slope exec_if (0) ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 35
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and true slope integer_- exec_if)
+Best program: (boolean_and boolean_and true slope integer_- exec_if () ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 36
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and true slope boolean_or)
+Best program: (boolean_and boolean_and true slope boolean_or)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 37
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and true slope boolean_or)
+Best program: (boolean_and boolean_and true slope boolean_or)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
