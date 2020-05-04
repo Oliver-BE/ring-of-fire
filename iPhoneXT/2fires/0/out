@@ -29,3 +29,13 @@ Total number of cells: 16748
 Best percent error: 0.2535228
 Fires evaluated:  (k2 g2)
 
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (FWI FWI WS true NT 0 boolean_not exec_dup boolean_not NBD exec_dup exec_dup boolean_not boolean_not exec_if WD)
+Best program: (FWI FWI WS true NT 0 boolean_not exec_dup (boolean_not NBD exec_dup (exec_dup (boolean_not boolean_not exec_if (WD) ()))))
+Best total error: 1987
+Total number of cells: 10340
+Best percent error: 0.19216634
+Fires evaluated:  (m1 k2)
+

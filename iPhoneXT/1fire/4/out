@@ -89,3 +89,43 @@ Total number of cells: 4400
 Best percent error: 0.38954544
 Fires evaluated:  (r1)
 
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (integer_* boolean_and true close slope exec_if integer_+ exec_if)
+Best program: (integer_* boolean_and true slope exec_if (integer_+ exec_if () ()) ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (integer_* boolean_and true close slope exec_dup exec_if 0 integer_* WD)
+Best program: (integer_* boolean_and true slope exec_dup (exec_if (0 integer_* WD) ()))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (integer_* boolean_and true close slope integer_% exec_if)
+Best program: (integer_* boolean_and true slope integer_% exec_if () ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (integer_* boolean_and true integer_% slope close integer_+)
+Best program: (integer_* boolean_and true integer_% slope integer_+)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+

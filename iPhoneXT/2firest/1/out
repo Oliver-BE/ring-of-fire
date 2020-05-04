@@ -79,3 +79,13 @@ Total number of cells: 9476
 Best percent error: 0.41304347
 Fires evaluated:  (m2 r1)
 
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (TB integer_+ ISI integer_+ BUI exec_dup NBD integer_+ integer_+ true slope close integer_= close boolean_or boolean_or false WD boolean_or 0 0 slope TB integer_- integer_* integer_+ boolean_and 2 integer_- true integer_* close integer_- true slope)
+Best program: (TB integer_+ ISI integer_+ BUI exec_dup (NBD integer_+ integer_+ true slope) integer_= boolean_or boolean_or false WD boolean_or 0 0 slope TB integer_- integer_* integer_+ boolean_and 2 integer_- true integer_* integer_- true slope)
+Best total error: 4224
+Total number of cells: 15528
+Best percent error: 0.27202472
+Fires evaluated:  (k2 k1)
+

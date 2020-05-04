@@ -89,3 +89,23 @@ Total number of cells: 23736
 Best percent error: 0.50303334
 Fires evaluated:  (m1 k2 k1 m2)
 
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (slope false integer_- 0 WD 0 :split ISI NT WD integer_% integer_- 2 boolean_not slope)
+Best program: (slope false integer_- 0 WD 0 :split ISI NT WD integer_% integer_- 2 boolean_not slope)
+Best total error: 14895
+Total number of cells: 27336
+Best percent error: 0.5448859
+Fires evaluated:  (k1 m2 g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (integer_= false integer_- 0 0 0 ISI boolean_not slope integer_% integer_- false boolean_and boolean_or slope)
+Best program: (integer_= false integer_- 0 0 0 ISI boolean_not slope integer_% integer_- false boolean_and boolean_or slope)
+Best total error: 6855
+Total number of cells: 23060
+Best percent error: 0.297268
+Fires evaluated:  (r1 k1 k2 m1)
+

@@ -49,3 +49,33 @@ Total number of cells: 23060
 Best percent error: 0.297268
 Fires evaluated:  (k2 m1 r1 k1)
 
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (WD BUI boolean_= 0 0 slope boolean_and integer_= boolean_not boolean_not true boolean_not ISI boolean_not true WS true 2 NBD boolean_not boolean_not boolean_and)
+Best program: (WD BUI boolean_= 0 0 slope boolean_and integer_= boolean_not boolean_not true boolean_not ISI boolean_not true WS true 2 NBD boolean_not boolean_not boolean_and)
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (m2 k1 m1 r1)
+
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (WD BUI boolean_= 0 0 slope WS WS boolean_not true 1 ISI boolean_not boolean_not true true NBD 2 boolean_not 2)
+Best program: (WD BUI boolean_= 0 0 slope WS WS boolean_not true 1 ISI boolean_not boolean_not true true NBD 2 boolean_not 2)
+Best total error: 8138
+Total number of cells: 25004
+Best percent error: 0.3254679
+Fires evaluated:  (k1 r1 k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (WD WD boolean_= WS 0 boolean_and WS integer_= boolean_not boolean_not 1 boolean_not ISI boolean_not exec_if WS WS 2 boolean_and boolean_not boolean_not)
+Best program: (WD WD boolean_= WS 0 boolean_and WS integer_= boolean_not boolean_not 1 boolean_not ISI boolean_not exec_if (WS WS 2 boolean_and boolean_not boolean_not) ())
+Best total error: 5901
+Total number of cells: 19816
+Best percent error: 0.29778966
+Fires evaluated:  (k2 m1 m2 r1)
+

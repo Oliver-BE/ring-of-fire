@@ -49,3 +49,13 @@ Total number of cells: 8320
 Best percent error: 0.37908652
 Fires evaluated:  (k1)
 
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (NT integer_+ true ISI FWI exec_dup close WD exec_if BUI boolean_not BUI ISI 0 WS boolean_and integer_= slope boolean_or)
+Best program: (NT integer_+ true ISI FWI exec_dup () WD exec_if (BUI boolean_not BUI ISI 0 WS boolean_and integer_= slope boolean_or) ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
