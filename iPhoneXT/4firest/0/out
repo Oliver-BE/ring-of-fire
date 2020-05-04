@@ -59,3 +59,63 @@ Total number of cells: 23060
 Best percent error: 0.297268
 Fires evaluated:  (k1 m1 k2 r1)
 
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (integer_- true integer_- :split :split close integer_% boolean_or integer_% integer_- integer_%)
+Best program: (integer_- true integer_- :split :split integer_% boolean_or integer_% integer_- integer_%)
+Best total error: 7341
+Total number of cells: 23736
+Best percent error: 0.30927706
+Fires evaluated:  (k2 m1 m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (0 true true TB TB close boolean_or integer_% integer_% integer_- integer_- exec_if exec_if)
+Best program: (0 true true TB TB boolean_or integer_% integer_% integer_- integer_- exec_if (exec_if () ()) ())
+Best total error: 8317
+Total number of cells: 28200
+Best percent error: 0.2949291
+Fires evaluated:  (m1 k2 g2 k1)
+
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (integer_- true true TB :split close integer_+ boolean_or integer_+ boolean_or exec_if integer_- integer_+)
+Best program: (integer_- true true TB :split integer_+ boolean_or integer_+ boolean_or exec_if (integer_- integer_+) ())
+Best total error: 8138
+Total number of cells: 25004
+Best percent error: 0.3254679
+Fires evaluated:  (k2 r1 k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (true true TB TB :split close boolean_or integer_% integer_% integer_- integer_- integer_+ exec_if)
+Best program: (true true TB TB :split boolean_or integer_% integer_% integer_- integer_- integer_+ exec_if () ())
+Best total error: 7363
+Total number of cells: 24956
+Best percent error: 0.29503927
+Fires evaluated:  (k2 m2 m1 g2)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (0 BUI true TB TB TB close close integer_% integer_% exec_if exec_if)
+Best program: (0 BUI true TB TB TB integer_% integer_% exec_if (exec_if () ()) ())
+Best total error: 8160
+Total number of cells: 26224
+Best percent error: 0.31116533
+Fires evaluated:  (g2 m2 r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 11
+-------------------------------------------------------
+Best plushy: (true true TB integer_- :split close close integer_% integer_% integer_% integer_- integer_- exec_if)
+Best program: (true true TB integer_- :split integer_% integer_% integer_% integer_- integer_- exec_if () ())
+Best total error: 6877
+Total number of cells: 24280
+Best percent error: 0.28323722
+Fires evaluated:  (r1 g2 m1 k2)
+

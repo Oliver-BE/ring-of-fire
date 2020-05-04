@@ -199,3 +199,183 @@ Total number of cells: 23736
 Best percent error: 0.30927706
 Fires evaluated:  (m1 m2 k2 k1)
 
+-------------------------------------------------------
+               Report for Generation 20
+-------------------------------------------------------
+Best plushy: (true BUI BUI false false true true WD close TB WS NBD NBD :split 1)
+Best program: (true BUI BUI false false true true WD TB WS NBD NBD :split 1)
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (r1 m1 k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 21
+-------------------------------------------------------
+Best plushy: (true BUI BUI false boolean_and boolean_and BUI true close FWI WS NBD NBD :split 1)
+Best program: (true BUI BUI false boolean_and boolean_and BUI true FWI WS NBD NBD :split 1)
+Best total error: 7341
+Total number of cells: 23736
+Best percent error: 0.30927706
+Fires evaluated:  (k2 m1 m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 22
+-------------------------------------------------------
+Best plushy: (true BUI boolean_and boolean_and BUI true close FWI NBD NBD :split 1)
+Best program: (true BUI boolean_and boolean_and BUI true FWI NBD NBD :split 1)
+Best total error: 6855
+Total number of cells: 23060
+Best percent error: 0.297268
+Fires evaluated:  (r1 m1 k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 23
+-------------------------------------------------------
+Best plushy: (WS true BUI BUI false 1 boolean_or true true true FWI WS close FWI boolean_and WS NBD :split)
+Best program: (WS true BUI BUI false 1 boolean_or true true true FWI WS FWI boolean_and WS NBD :split)
+Best total error: 6855
+Total number of cells: 23060
+Best percent error: 0.297268
+Fires evaluated:  (r1 m1 k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 24
+-------------------------------------------------------
+Best plushy: (WS true BUI BUI false 1 boolean_or true true true FWI WS close FWI boolean_and WS NBD :split)
+Best program: (WS true BUI BUI false 1 boolean_or true true true FWI WS FWI boolean_and WS NBD :split)
+Best total error: 8138
+Total number of cells: 25004
+Best percent error: 0.3254679
+Fires evaluated:  (k1 m2 r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 25
+-------------------------------------------------------
+Best plushy: (WS true BUI BUI false 1 boolean_or true true true FWI WS close FWI boolean_and WS NBD :split)
+Best program: (WS true BUI BUI false 1 boolean_or true true true FWI WS FWI boolean_and WS NBD :split)
+Best total error: 8317
+Total number of cells: 28200
+Best percent error: 0.2949291
+Fires evaluated:  (k2 m1 g2 k1)
+
+-------------------------------------------------------
+               Report for Generation 26
+-------------------------------------------------------
+Best plushy: (WS true BUI BUI boolean_and 1 boolean_or true true FWI WS close close boolean_and boolean_and WS :split :split)
+Best program: (WS true BUI BUI boolean_and 1 boolean_or true true FWI WS boolean_and boolean_and WS :split :split)
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (m1 r1 k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 27
+-------------------------------------------------------
+Best plushy: (WS true BUI BUI boolean_and true true true FWI FWI WS close FWI :split WS :split 1)
+Best program: (WS true BUI BUI boolean_and true true true FWI FWI WS FWI :split WS :split 1)
+Best total error: 8160
+Total number of cells: 26224
+Best percent error: 0.31116533
+Fires evaluated:  (g2 k2 m2 r1)
+
+-------------------------------------------------------
+               Report for Generation 28
+-------------------------------------------------------
+Best plushy: (true true BUI BUI false 1 boolean_and true true FWI FWI close close boolean_and NBD WS 1 :split)
+Best program: (true true BUI BUI false 1 boolean_and true true FWI FWI boolean_and NBD WS 1 :split)
+Best total error: 8160
+Total number of cells: 26224
+Best percent error: 0.31116533
+Fires evaluated:  (g2 r1 m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 29
+-------------------------------------------------------
+Best plushy: (WS true BUI BUI false true boolean_and true FWI FWI WS close FWI :split WS 1)
+Best program: (WS true BUI BUI false true boolean_and true FWI FWI WS FWI :split WS 1)
+Best total error: 9114
+Total number of cells: 29468
+Best percent error: 0.30928466
+Fires evaluated:  (r1 k2 g2 k1)
+
+-------------------------------------------------------
+               Report for Generation 30
+-------------------------------------------------------
+Best plushy: (WS true BUI BUI integer_= 1 boolean_and boolean_and FWI WS FWI WS close :split NBD NBD :split :split)
+Best program: (WS true BUI BUI integer_= 1 boolean_and boolean_and FWI WS FWI WS :split NBD NBD :split :split)
+Best total error: 6877
+Total number of cells: 24280
+Best percent error: 0.28323722
+Fires evaluated:  (g2 k2 r1 m1)
+
+-------------------------------------------------------
+               Report for Generation 31
+-------------------------------------------------------
+Best plushy: (WS true BUI BUI boolean_and true true true FWI FWI WS close FWI :split WS 1)
+Best program: (WS true BUI BUI boolean_and true true true FWI FWI WS FWI :split WS 1)
+Best total error: 8961
+Total number of cells: 25392
+Best percent error: 0.35290644
+Fires evaluated:  (k1 r1 m1 g2)
+
+-------------------------------------------------------
+               Report for Generation 32
+-------------------------------------------------------
+Best plushy: (WS true BUI BUI false true true true FWI FWI FWI WS FWI boolean_and WS 1)
+Best program: (WS true BUI BUI false true true true FWI FWI FWI WS FWI boolean_and WS 1)
+Best total error: 9114
+Total number of cells: 29468
+Best percent error: 0.30928466
+Fires evaluated:  (k2 k1 r1 g2)
+
+-------------------------------------------------------
+               Report for Generation 33
+-------------------------------------------------------
+Best plushy: (WS true BUI BUI boolean_and true boolean_and boolean_and FWI integer_% FWI WS close :split WS NBD)
+Best program: (WS true BUI BUI boolean_and true boolean_and boolean_and FWI integer_% FWI WS :split WS NBD)
+Best total error: 7341
+Total number of cells: 23736
+Best percent error: 0.30927706
+Fires evaluated:  (m2 m1 k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 34
+-------------------------------------------------------
+Best plushy: (WS true BUI BUI boolean_and integer_= true true FWI WS WS WS FWI WS NBD :split boolean_and :split :split)
+Best program: (WS true BUI BUI boolean_and integer_= true true FWI WS WS WS FWI WS NBD :split boolean_and :split :split)
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (k1 r1 m1 m2)
+
+-------------------------------------------------------
+               Report for Generation 35
+-------------------------------------------------------
+Best plushy: (WS true BUI BUI boolean_and integer_= true true FWI WS WS WS FWI WS NBD :split boolean_and :split :split)
+Best program: (WS true BUI BUI boolean_and integer_= true true FWI WS WS WS FWI WS NBD :split boolean_and :split :split)
+Best total error: 7341
+Total number of cells: 23736
+Best percent error: 0.30927706
+Fires evaluated:  (k2 k1 m2 m1)
+
+-------------------------------------------------------
+               Report for Generation 36
+-------------------------------------------------------
+Best plushy: (WS true :split BUI integer_= integer_= false true true integer_% WS FWI WS close boolean_and boolean_and :split :split)
+Best program: (WS true :split BUI integer_= integer_= false true true integer_% WS FWI WS boolean_and boolean_and :split :split)
+Best total error: 8138
+Total number of cells: 25004
+Best percent error: 0.3254679
+Fires evaluated:  (m2 r1 k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 37
+-------------------------------------------------------
+Best plushy: (WS true BUI :split boolean_and boolean_and TB FWI FWI WS FWI TB :split NBD :split boolean_and :split)
+Best program: (WS true BUI :split boolean_and boolean_and TB FWI FWI WS FWI TB :split NBD :split boolean_and :split)
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (k1 m2 r1 m1)
+

@@ -239,3 +239,133 @@ Total number of cells: 3132
 Best percent error: 0.29278415
 Fires evaluated:  (m1)
 
+-------------------------------------------------------
+               Report for Generation 24
+-------------------------------------------------------
+Best plushy: (BUI NT integer_+ true ISI FWI exec_dup WD exec_if WD BUI FWI BUI integer_= 0 false WS boolean_or WS)
+Best program: (BUI NT integer_+ true ISI FWI exec_dup (WD exec_if (WD BUI FWI BUI integer_= 0 false WS boolean_or WS) ()))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 25
+-------------------------------------------------------
+Best plushy: (NT integer_+ integer_+ true ISI FWI exec_dup WD WD BUI FWI 0 boolean_or boolean_and)
+Best program: (NT integer_+ integer_+ true ISI FWI exec_dup (WD WD BUI FWI 0 boolean_or boolean_and))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 26
+-------------------------------------------------------
+Best plushy: (NT NT integer_+ true ISI FWI exec_dup WD WD NBD BUI BUI FWI BUI WS 0 WS WS boolean_or WS)
+Best program: (NT NT integer_+ true ISI FWI exec_dup (WD WD NBD BUI BUI FWI BUI WS 0 WS WS boolean_or WS))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 27
+-------------------------------------------------------
+Best plushy: (BUI integer_+ integer_+ true ISI FWI exec_dup WD WD WD BUI 0 BUI integer_= false WS WS)
+Best program: (BUI integer_+ integer_+ true ISI FWI exec_dup (WD WD WD BUI 0 BUI integer_= false WS WS))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 28
+-------------------------------------------------------
+Best plushy: (NT NT integer_+ true ISI FWI exec_dup WD WD BUI BUI BUI integer_= 0 WS boolean_or WS)
+Best program: (NT NT integer_+ true ISI FWI exec_dup (WD WD BUI BUI BUI integer_= 0 WS boolean_or WS))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 29
+-------------------------------------------------------
+Best plushy: (BUI NT integer_+ true ISI FWI exec_dup WD WD WD BUI FWI BUI 0 0 WS boolean_or WS)
+Best program: (BUI NT integer_+ true ISI FWI exec_dup (WD WD WD BUI FWI BUI 0 0 WS boolean_or WS))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 30
+-------------------------------------------------------
+Best plushy: (BUI NT integer_+ true ISI exec_dup exec_dup WD WD WD BUI FWI BUI WS boolean_or WS boolean_or WS)
+Best program: (BUI NT integer_+ true ISI exec_dup (exec_dup (WD WD WD BUI FWI BUI WS boolean_or WS boolean_or WS)))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 31
+-------------------------------------------------------
+Best plushy: (NT NT integer_+ true ISI FWI exec_dup WD BUI BUI BUI BUI integer_= WS WS boolean_or)
+Best program: (NT NT integer_+ true ISI FWI exec_dup (WD BUI BUI BUI BUI integer_= WS WS boolean_or))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 32
+-------------------------------------------------------
+Best plushy: (BUI NT true ISI ISI exec_dup exec_dup WD WD WD FWI BUI integer_= WS 0 WS WS WS boolean_or)
+Best program: (BUI NT true ISI ISI exec_dup (exec_dup (WD WD WD FWI BUI integer_= WS 0 WS WS WS boolean_or)))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 33
+-------------------------------------------------------
+Best plushy: (NT NT true ISI ISI exec_dup WD WD WD WD 1 FWI 0 boolean_or integer_* WS WS boolean_and)
+Best program: (NT NT true ISI ISI exec_dup (WD WD WD WD 1 FWI 0 boolean_or integer_* WS WS boolean_and))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 34
+-------------------------------------------------------
+Best plushy: (BUI NT true ISI ISI exec_dup WD WD WD WD FWI BUI 0 boolean_or 0 WS WS boolean_and boolean_or)
+Best program: (BUI NT true ISI ISI exec_dup (WD WD WD WD FWI BUI 0 boolean_or 0 WS WS boolean_and boolean_or))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 35
+-------------------------------------------------------
+Best plushy: (NT NT integer_+ true ISI FWI WD WD BUI WD BUI FWI 0 boolean_or integer_* 0 WS WS)
+Best program: (NT NT integer_+ true ISI FWI WD WD BUI WD BUI FWI 0 boolean_or integer_* 0 WS WS)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 36
+-------------------------------------------------------
+Best plushy: (BUI NT integer_+ true WD ISI FWI WD WD WD BUI WD 0 FWI integer_* 0 WS WS boolean_or)
+Best program: (BUI NT integer_+ true WD ISI FWI WD WD WD BUI WD 0 FWI integer_* 0 WS WS boolean_or)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+

@@ -119,3 +119,33 @@ Total number of cells: 11608
 Best percent error: 0.23983459
 Fires evaluated:  (k2 r1)
 
+-------------------------------------------------------
+               Report for Generation 12
+-------------------------------------------------------
+Best plushy: (true WS :split 1 :split :split integer_- false false close ISI ISI integer_- integer_- integer_% TB close boolean_= 1 NT false BUI exec_if exec_if BUI 0 exec_if ISI exec_if BUI integer_% 0)
+Best program: (true WS :split 1 :split :split integer_- false false ISI ISI integer_- integer_- integer_% TB boolean_= 1 NT false BUI exec_if (exec_if (BUI 0 exec_if (ISI exec_if (BUI integer_% 0) ()) ()) ()) ())
+Best total error: 2784
+Total number of cells: 11608
+Best percent error: 0.23983459
+Fires evaluated:  (k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 13
+-------------------------------------------------------
+Best plushy: (true WS 1 boolean_or :split integer_% false close boolean_or ISI close integer_% boolean_= ISI integer_% ISI exec_dup integer_- WS :split TB exec_dup exec_if exec_dup BUI 2 BUI BUI 2 0 0)
+Best program: (true WS 1 boolean_or :split integer_% false boolean_or ISI integer_% boolean_= ISI integer_% ISI exec_dup (integer_- WS :split TB exec_dup (exec_if (exec_dup (BUI 2 BUI BUI 2 0 0)) ())))
+Best total error: 5354
+Total number of cells: 13396
+Best percent error: 0.39967155
+Fires evaluated:  (m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 14
+-------------------------------------------------------
+Best plushy: (true WS 1 boolean_or integer_% false close close boolean_or close close close ISI ISI integer_% ISI :split integer_- exec_dup :split TB 2 2 exec_dup BUI integer_% BUI 2 boolean_or 0)
+Best program: (true WS 1 boolean_or integer_% false boolean_or ISI ISI integer_% ISI :split integer_- exec_dup (:split TB 2 2 exec_dup (BUI integer_% BUI 2 boolean_or 0)))
+Best total error: 4071
+Total number of cells: 11452
+Best percent error: 0.35548377
+Fires evaluated:  (m1 k1)
+

@@ -859,3 +859,603 @@ Total number of cells: 5076
 Best percent error: 0.43341213
 Fires evaluated:  (m2)
 
+-------------------------------------------------------
+               Report for Generation 86
+-------------------------------------------------------
+Best plushy: (integer_= true boolean_= TB)
+Best program: (integer_= true boolean_= TB)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 87
+-------------------------------------------------------
+Best plushy: (integer_= integer_= true boolean_= integer_- exec_dup)
+Best program: (integer_= integer_= true boolean_= integer_- exec_dup ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 88
+-------------------------------------------------------
+Best plushy: (integer_= boolean_= true boolean_= boolean_= exec_dup)
+Best program: (integer_= boolean_= true boolean_= boolean_= exec_dup ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 89
+-------------------------------------------------------
+Best plushy: (integer_= integer_= true boolean_= integer_- WS exec_dup)
+Best program: (integer_= integer_= true boolean_= integer_- WS exec_dup ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 90
+-------------------------------------------------------
+Best plushy: (integer_= boolean_= true boolean_= boolean_= exec_dup)
+Best program: (integer_= boolean_= true boolean_= boolean_= exec_dup ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 91
+-------------------------------------------------------
+Best plushy: (boolean_= true true boolean_= exec_dup)
+Best program: (boolean_= true true boolean_= exec_dup ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 92
+-------------------------------------------------------
+Best plushy: (true boolean_not true exec_dup)
+Best program: (true boolean_not true exec_dup ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 93
+-------------------------------------------------------
+Best plushy: (true boolean_not true exec_dup)
+Best program: (true boolean_not true exec_dup ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 94
+-------------------------------------------------------
+Best plushy: (integer_= boolean_not true exec_dup exec_dup exec_dup)
+Best program: (integer_= boolean_not true exec_dup (exec_dup (exec_dup ())))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 95
+-------------------------------------------------------
+Best plushy: (integer_= boolean_not true exec_dup boolean_= boolean_=)
+Best program: (integer_= boolean_not true exec_dup (boolean_= boolean_=))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 96
+-------------------------------------------------------
+Best plushy: (integer_= boolean_not true exec_dup exec_dup exec_dup)
+Best program: (integer_= boolean_not true exec_dup (exec_dup (exec_dup ())))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 97
+-------------------------------------------------------
+Best plushy: (integer_= boolean_not true exec_dup exec_dup exec_dup)
+Best program: (integer_= boolean_not true exec_dup (exec_dup (exec_dup ())))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 98
+-------------------------------------------------------
+Best plushy: (integer_= boolean_not true exec_dup exec_dup boolean_=)
+Best program: (integer_= boolean_not true exec_dup (exec_dup (boolean_=)))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 99
+-------------------------------------------------------
+Best plushy: (integer_= boolean_= true boolean_= exec_dup)
+Best program: (integer_= boolean_= true boolean_= exec_dup ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 100
+-------------------------------------------------------
+Best plushy: (integer_= boolean_not true true exec_dup boolean_=)
+Best program: (integer_= boolean_not true true exec_dup (boolean_=))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 101
+-------------------------------------------------------
+Best plushy: (integer_= boolean_not true exec_dup exec_dup)
+Best program: (integer_= boolean_not true exec_dup (exec_dup ()))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 102
+-------------------------------------------------------
+Best plushy: (integer_= boolean_not true integer_- exec_dup)
+Best program: (integer_= boolean_not true integer_- exec_dup ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 103
+-------------------------------------------------------
+Best plushy: (integer_= boolean_= true exec_dup NBD exec_dup)
+Best program: (integer_= boolean_= true exec_dup (NBD exec_dup ()))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 104
+-------------------------------------------------------
+Best plushy: (integer_= boolean_not true exec_dup exec_dup exec_dup boolean_=)
+Best program: (integer_= boolean_not true exec_dup (exec_dup (exec_dup (boolean_=))))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 105
+-------------------------------------------------------
+Best plushy: (integer_= boolean_not true exec_dup exec_dup exec_dup boolean_=)
+Best program: (integer_= boolean_not true exec_dup (exec_dup (exec_dup (boolean_=))))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 106
+-------------------------------------------------------
+Best plushy: (integer_= boolean_not true exec_dup exec_dup exec_dup boolean_=)
+Best program: (integer_= boolean_not true exec_dup (exec_dup (exec_dup (boolean_=))))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 107
+-------------------------------------------------------
+Best plushy: (integer_= boolean_= true exec_dup NBD)
+Best program: (integer_= boolean_= true exec_dup (NBD))
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 108
+-------------------------------------------------------
+Best plushy: (integer_= close true exec_dup NBD exec_dup)
+Best program: (integer_= true exec_dup (NBD exec_dup ()))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 109
+-------------------------------------------------------
+Best plushy: (integer_= close boolean_not true exec_dup)
+Best program: (integer_= boolean_not true exec_dup ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 110
+-------------------------------------------------------
+Best plushy: (integer_= close boolean_not true exec_dup)
+Best program: (integer_= boolean_not true exec_dup ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 111
+-------------------------------------------------------
+Best plushy: (close boolean_not true exec_dup)
+Best program: (boolean_not true exec_dup ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 112
+-------------------------------------------------------
+Best plushy: (integer_= close boolean_not true exec_dup)
+Best program: (integer_= boolean_not true exec_dup ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 113
+-------------------------------------------------------
+Best plushy: (integer_= boolean_not true exec_dup)
+Best program: (integer_= boolean_not true exec_dup ())
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 114
+-------------------------------------------------------
+Best plushy: (integer_= close true exec_dup exec_dup)
+Best program: (integer_= true exec_dup (exec_dup ()))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 115
+-------------------------------------------------------
+Best plushy: (integer_= close true exec_dup)
+Best program: (integer_= true exec_dup ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 116
+-------------------------------------------------------
+Best plushy: (integer_= close true exec_dup exec_dup)
+Best program: (integer_= true exec_dup (exec_dup ()))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 117
+-------------------------------------------------------
+Best plushy: (integer_= close true exec_dup exec_dup)
+Best program: (integer_= true exec_dup (exec_dup ()))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 118
+-------------------------------------------------------
+Best plushy: (integer_= close true true exec_dup exec_dup)
+Best program: (integer_= true true exec_dup (exec_dup ()))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 119
+-------------------------------------------------------
+Best plushy: (integer_= close true exec_dup exec_dup)
+Best program: (integer_= true exec_dup (exec_dup ()))
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 120
+-------------------------------------------------------
+Best plushy: (integer_= close true exec_dup exec_dup :split)
+Best program: (integer_= true exec_dup (exec_dup (:split)))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 121
+-------------------------------------------------------
+Best plushy: (integer_= close true exec_dup exec_dup)
+Best program: (integer_= true exec_dup (exec_dup ()))
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 122
+-------------------------------------------------------
+Best plushy: (boolean_not NBD true exec_dup exec_dup :split)
+Best program: (boolean_not NBD true exec_dup (exec_dup (:split)))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 123
+-------------------------------------------------------
+Best plushy: (integer_= close true integer_* exec_dup)
+Best program: (integer_= true integer_* exec_dup ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 124
+-------------------------------------------------------
+Best plushy: (boolean_not close true exec_dup exec_dup)
+Best program: (boolean_not true exec_dup (exec_dup ()))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 125
+-------------------------------------------------------
+Best plushy: (slope close true integer_* exec_dup exec_dup)
+Best program: (slope true integer_* exec_dup (exec_dup ()))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 126
+-------------------------------------------------------
+Best plushy: (boolean_not close ISI true exec_dup)
+Best program: (boolean_not ISI true exec_dup ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 127
+-------------------------------------------------------
+Best plushy: (integer_= close true integer_* :split exec_dup)
+Best program: (integer_= true integer_* :split exec_dup ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 128
+-------------------------------------------------------
+Best plushy: (integer_= close true boolean_= exec_dup)
+Best program: (integer_= true boolean_= exec_dup ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 129
+-------------------------------------------------------
+Best plushy: (boolean_and integer_= close true integer_* exec_dup)
+Best program: (boolean_and integer_= true integer_* exec_dup ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 130
+-------------------------------------------------------
+Best plushy: (boolean_and integer_= close true integer_* exec_dup)
+Best program: (boolean_and integer_= true integer_* exec_dup ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 131
+-------------------------------------------------------
+Best plushy: (slope false close true boolean_= exec_dup)
+Best program: (slope false true boolean_= exec_dup ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 132
+-------------------------------------------------------
+Best plushy: (slope false slope true true exec_dup)
+Best program: (slope false slope true true exec_dup ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 133
+-------------------------------------------------------
+Best plushy: (slope false slope true true exec_dup)
+Best program: (slope false slope true true exec_dup ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 134
+-------------------------------------------------------
+Best plushy: (slope close TB true true exec_dup)
+Best program: (slope TB true true exec_dup ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 135
+-------------------------------------------------------
+Best plushy: (slope close TB true true exec_dup)
+Best program: (slope TB true true exec_dup ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 136
+-------------------------------------------------------
+Best plushy: (slope false true true integer_*)
+Best program: (slope false true true integer_*)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 137
+-------------------------------------------------------
+Best plushy: (slope false slope true integer_* exec_dup)
+Best program: (slope false slope true integer_* exec_dup ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 138
+-------------------------------------------------------
+Best plushy: (2 slope slope close true true exec_dup exec_dup)
+Best program: (2 slope slope true true exec_dup (exec_dup ()))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 139
+-------------------------------------------------------
+Best plushy: (slope false true close exec_dup)
+Best program: (slope false true exec_dup ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 140
+-------------------------------------------------------
+Best plushy: (slope false true close exec_dup)
+Best program: (slope false true exec_dup ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 141
+-------------------------------------------------------
+Best plushy: (2 false true close true true slope)
+Best program: (2 false true true true slope)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 142
+-------------------------------------------------------
+Best plushy: (slope false true close exec_dup)
+Best program: (slope false true exec_dup ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 143
+-------------------------------------------------------
+Best plushy: (2 false true close true true slope)
+Best program: (2 false true true true slope)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 144
+-------------------------------------------------------
+Best plushy: (slope slope true close exec_dup exec_dup)
+Best program: (slope slope true exec_dup (exec_dup ()))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 145
+-------------------------------------------------------
+Best plushy: (boolean_= false false close close true slope exec_dup)
+Best program: (boolean_= false false true slope exec_dup ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+

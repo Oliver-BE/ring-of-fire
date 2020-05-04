@@ -149,3 +149,183 @@ Total number of cells: 5076
 Best percent error: 0.43341213
 Fires evaluated:  (m2)
 
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (boolean_= WS ISI true integer_= NBD boolean_not integer_- boolean_and exec_if FWI FWI true FWI boolean_not WD FWI integer_% integer_- boolean_= boolean_not exec_if exec_dup :split exec_dup slope integer_* :split BUI integer_% NBD NBD integer_%)
+Best program: (boolean_= WS ISI true integer_= NBD boolean_not integer_- boolean_and exec_if (FWI FWI true FWI boolean_not WD FWI integer_% integer_- boolean_= boolean_not exec_if (exec_dup (:split exec_dup (slope integer_* :split BUI integer_% NBD NBD integer_%))) ()) ())
+Best total error: 3145
+Total number of cells: 8320
+Best percent error: 0.37800482
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (integer_% WS ISI true integer_= NBD boolean_not FWI boolean_and exec_if boolean_= FWI true FWI WD FWI FWI integer_- integer_- boolean_= boolean_not exec_if exec_dup :split exec_dup slope integer_* FWI integer_% integer_+ NBD NBD integer_%)
+Best program: (integer_% WS ISI true integer_= NBD boolean_not FWI boolean_and exec_if (boolean_= FWI true FWI WD FWI FWI integer_- integer_- boolean_= boolean_not exec_if (exec_dup (:split exec_dup (slope integer_* FWI integer_% integer_+ NBD NBD integer_%))) ()) ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (boolean_= WS WS ISI integer_= FWI boolean_not FWI boolean_and exec_if boolean_= FWI true FWI boolean_not FWI FWI integer_% boolean_= integer_- boolean_not exec_if exec_dup exec_if exec_dup slope ISI FWI integer_% integer_+ integer_% NBD integer_%)
+Best program: (boolean_= WS WS ISI integer_= FWI boolean_not FWI boolean_and exec_if (boolean_= FWI true FWI boolean_not FWI FWI integer_% boolean_= integer_- boolean_not exec_if (exec_dup (exec_if (exec_dup (slope ISI FWI integer_% integer_+ integer_% NBD integer_%)) ())) ()) ())
+Best total error: 1031
+Total number of cells: 7208
+Best percent error: 0.14303552
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (integer_% WS WS ISI integer_= FWI FWI boolean_and exec_if boolean_= FWI true true WD FWI integer_- boolean_= integer_- exec_if :split :split exec_if integer_* integer_+ ISI FWI integer_+ integer_% NBD integer_% integer_%)
+Best program: (integer_% WS WS ISI integer_= FWI FWI boolean_and exec_if (boolean_= FWI true true WD FWI integer_- boolean_= integer_- exec_if (:split :split exec_if (integer_* integer_+ ISI FWI integer_+ integer_% NBD integer_% integer_%) ()) ()) ())
+Best total error: 3172
+Total number of cells: 9540
+Best percent error: 0.33249477
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (integer_% WS WS ISI ISI integer_= boolean_not boolean_and exec_if FWI true true true WD FWI integer_- integer_- boolean_= exec_if exec_if boolean_not :split exec_if integer_* ISI ISI integer_% integer_+ integer_% NBD NBD integer_% integer_%)
+Best program: (integer_% WS WS ISI ISI integer_= boolean_not boolean_and exec_if (FWI true true true WD FWI integer_- integer_- boolean_= exec_if (exec_if (boolean_not :split exec_if (integer_* ISI ISI integer_% integer_+ integer_% NBD NBD integer_% integer_%) ()) ()) ()) ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 20
+-------------------------------------------------------
+Best plushy: (integer_% WS WS ISI integer_= FWI boolean_not boolean_and boolean_= boolean_= FWI true true FWI FWI boolean_= integer_- exec_if integer_- :split exec_if exec_dup exec_if ISI FWI integer_% integer_% integer_% NBD integer_% integer_%)
+Best program: (integer_% WS WS ISI integer_= FWI boolean_not boolean_and boolean_= boolean_= FWI true true FWI FWI boolean_= integer_- exec_if (integer_- :split exec_if (exec_dup (exec_if (ISI FWI integer_% integer_% integer_% NBD integer_% integer_%) ())) ()) ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 21
+-------------------------------------------------------
+Best plushy: (integer_% WS WS ISI ISI integer_= boolean_not boolean_and exec_if FWI true true true WD FWI integer_- integer_- exec_if exec_if boolean_not exec_if integer_* ISI ISI integer_% integer_+ integer_% NBD NBD integer_% integer_%)
+Best program: (integer_% WS WS ISI ISI integer_= boolean_not boolean_and exec_if (FWI true true true WD FWI integer_- integer_- exec_if (exec_if (boolean_not exec_if (integer_* ISI ISI integer_% integer_+ integer_% NBD NBD integer_% integer_%) ()) ()) ()) ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 22
+-------------------------------------------------------
+Best plushy: (integer_% WS WS ISI ISI integer_= boolean_not boolean_and exec_if FWI true true true WD FWI integer_- integer_- exec_if exec_if boolean_not exec_if integer_* ISI ISI integer_% integer_+ integer_% NBD NBD integer_% integer_%)
+Best program: (integer_% WS WS ISI ISI integer_= boolean_not boolean_and exec_if (FWI true true true WD FWI integer_- integer_- exec_if (exec_if (boolean_not exec_if (integer_* ISI ISI integer_% integer_+ integer_% NBD NBD integer_% integer_%) ()) ()) ()) ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 23
+-------------------------------------------------------
+Best plushy: (integer_% WS WS ISI ISI integer_= boolean_not boolean_and exec_if FWI true true true WS WD FWI integer_- exec_if exec_if boolean_not exec_if integer_* ISI ISI integer_% integer_% integer_+ integer_% NBD integer_% integer_%)
+Best program: (integer_% WS WS ISI ISI integer_= boolean_not boolean_and exec_if (FWI true true true WS WD FWI integer_- exec_if (exec_if (boolean_not exec_if (integer_* ISI ISI integer_% integer_% integer_+ integer_% NBD integer_% integer_%) ()) ()) ()) ())
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 24
+-------------------------------------------------------
+Best plushy: (WS WS ISI ISI integer_= boolean_not exec_if FWI true true true WD integer_- exec_if exec_if boolean_not exec_if integer_* ISI ISI integer_% integer_% integer_+ integer_% NBD integer_% integer_%)
+Best program: (WS WS ISI ISI integer_= boolean_not exec_if (FWI true true true WD integer_- exec_if (exec_if (boolean_not exec_if (integer_* ISI ISI integer_% integer_% integer_+ integer_% NBD integer_% integer_%) ()) ()) ()) ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 25
+-------------------------------------------------------
+Best plushy: (integer_% WS WS ISI integer_= boolean_not boolean_and exec_if FWI true true true WD WD integer_- integer_- exec_if exec_if boolean_not exec_if integer_* ISI ISI integer_% integer_+ integer_% integer_% NBD integer_% integer_%)
+Best program: (integer_% WS WS ISI integer_= boolean_not boolean_and exec_if (FWI true true true WD WD integer_- integer_- exec_if (exec_if (boolean_not exec_if (integer_* ISI ISI integer_% integer_+ integer_% integer_% NBD integer_% integer_%) ()) ()) ()) ())
+Best total error: 1031
+Total number of cells: 7208
+Best percent error: 0.14303552
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 26
+-------------------------------------------------------
+Best plushy: (integer_% WS WS ISI integer_= boolean_not boolean_and exec_if FWI ISI true true true WD WD integer_- integer_- exec_if exec_if boolean_not exec_if integer_* FWI ISI ISI integer_% integer_+ integer_% integer_% NBD integer_% integer_%)
+Best program: (integer_% WS WS ISI integer_= boolean_not boolean_and exec_if (FWI ISI true true true WD WD integer_- integer_- exec_if (exec_if (boolean_not exec_if (integer_* FWI ISI ISI integer_% integer_+ integer_% integer_% NBD integer_% integer_%) ()) ()) ()) ())
+Best total error: 3145
+Total number of cells: 8320
+Best percent error: 0.37800482
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 27
+-------------------------------------------------------
+Best plushy: (WS WS ISI integer_= integer_= exec_if FWI true FWI true boolean_= true WS exec_if FWI exec_if integer_* exec_if ISI boolean_not integer_* ISI integer_% integer_% integer_% integer_% integer_% integer_%)
+Best program: (WS WS ISI integer_= integer_= exec_if (FWI true FWI true boolean_= true WS exec_if (FWI exec_if (integer_* exec_if (ISI boolean_not integer_* ISI integer_% integer_% integer_% integer_% integer_% integer_%) ()) ()) ()) ())
+Best total error: 3145
+Total number of cells: 8320
+Best percent error: 0.37800482
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 28
+-------------------------------------------------------
+Best plushy: (WS WS ISI integer_= slope integer_= exec_if FWI true FWI true boolean_= true WS exec_if FWI exec_if integer_* exec_if ISI boolean_not integer_* ISI integer_% integer_% integer_% integer_% integer_% integer_%)
+Best program: (WS WS ISI integer_= slope integer_= exec_if (FWI true FWI true boolean_= true WS exec_if (FWI exec_if (integer_* exec_if (ISI boolean_not integer_* ISI integer_% integer_% integer_% integer_% integer_% integer_%) ()) ()) ()) ())
+Best total error: 3145
+Total number of cells: 8320
+Best percent error: 0.37800482
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 29
+-------------------------------------------------------
+Best plushy: (integer_% WS WS ISI integer_= integer_= boolean_and exec_if FWI FWI boolean_= true true WD integer_- integer_- exec_if exec_if exec_if ISI integer_* integer_* ISI integer_% integer_% integer_% integer_+ NBD integer_% integer_%)
+Best program: (integer_% WS WS ISI integer_= integer_= boolean_and exec_if (FWI FWI boolean_= true true WD integer_- integer_- exec_if (exec_if (exec_if (ISI integer_* integer_* ISI integer_% integer_% integer_% integer_+ NBD integer_% integer_%) ()) ()) ()) ())
+Best total error: 1031
+Total number of cells: 7208
+Best percent error: 0.14303552
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 30
+-------------------------------------------------------
+Best plushy: (WS WS WS ISI integer_= integer_= exec_if FWI FWI FWI true true WS exec_if exec_if FWI exec_if exec_if ISI boolean_not integer_* ISI integer_% integer_% integer_% integer_+ integer_% integer_% integer_+)
+Best program: (WS WS WS ISI integer_= integer_= exec_if (FWI FWI FWI true true WS exec_if (exec_if (FWI exec_if (exec_if (ISI boolean_not integer_* ISI integer_% integer_% integer_% integer_+ integer_% integer_% integer_+) ()) ()) ()) ()) ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 31
+-------------------------------------------------------
+Best plushy: (integer_% WS WS ISI integer_= false exec_if FWI FWI FWI true true true true WS WD exec_if exec_if integer_- integer_* boolean_not integer_* integer_% true ISI integer_% integer_% integer_% integer_% integer_% integer_%)
+Best program: (integer_% WS WS ISI integer_= false exec_if (FWI FWI FWI true true true true WS WD exec_if (exec_if (integer_- integer_* boolean_not integer_* integer_% true ISI integer_% integer_% integer_% integer_% integer_% integer_%) ()) ()) ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 32
+-------------------------------------------------------
+Best plushy: (integer_% WS WS ISI integer_= false exec_if FWI FWI FWI true true true WS WS WD exec_if integer_* integer_- ISI boolean_not integer_* ISI true integer_% integer_% integer_% integer_% integer_% integer_%)
+Best program: (integer_% WS WS ISI integer_= false exec_if (FWI FWI FWI true true true WS WS WD exec_if (integer_* integer_- ISI boolean_not integer_* ISI true integer_% integer_% integer_% integer_% integer_% integer_%) ()) ())
+Best total error: 1031
+Total number of cells: 7208
+Best percent error: 0.14303552
+Fires evaluated:  (k2)
+

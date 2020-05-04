@@ -149,3 +149,63 @@ Total number of cells: 7532
 Best percent error: 0.34930962
 Fires evaluated:  (m1 r1)
 
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (true exec_if boolean_= 1 boolean_= boolean_= boolean_and integer_- integer_* 1 2 2 2 exec_if exec_if NBD exec_dup exec_dup FWI slope slope NBD true boolean_not boolean_not)
+Best program: (true exec_if (boolean_= 1 boolean_= boolean_= boolean_and integer_- integer_* 1 2 2 2 exec_if (exec_if (NBD exec_dup (exec_dup (FWI slope slope NBD true boolean_not boolean_not))) ()) ()) ())
+Best total error: 4246
+Total number of cells: 16748
+Best percent error: 0.2535228
+Fires evaluated:  (g2 k2)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (true ISI exec_if 1 NT boolean_= 1 boolean_and 1 0 2 2 2 exec_if integer_+ 2 FWI 2 ISI slope slope slope NBD)
+Best program: (true ISI exec_if (1 NT boolean_= 1 boolean_and 1 0 2 2 2 exec_if (integer_+ 2 FWI 2 ISI slope slope slope NBD) ()) ())
+Best total error: 6330
+Total number of cells: 17860
+Best percent error: 0.35442328
+Fires evaluated:  (k1 g2)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (true ISI exec_if 1 NT boolean_= 1 boolean_and integer_* 2 2 1 2 2 integer_+ integer_+ NBD 2 2 slope 2 ISI NBD)
+Best program: (true ISI exec_if (1 NT boolean_= 1 boolean_and integer_* 2 2 1 2 2 integer_+ integer_+ NBD 2 2 slope 2 ISI NBD) ())
+Best total error: 3270
+Total number of cells: 12284
+Best percent error: 0.26619995
+Fires evaluated:  (m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (true exec_if ISI 1 exec_if NT boolean_and integer_* 1 boolean_and 2 2 2 exec_if exec_if integer_+ FWI 2 FWI slope slope slope slope boolean_not)
+Best program: (true exec_if (ISI 1 exec_if (NT boolean_and integer_* 1 boolean_and 2 2 2 exec_if (exec_if (integer_+ FWI 2 FWI slope slope slope slope boolean_not) ()) ()) ()) ())
+Best total error: 4093
+Total number of cells: 12672
+Best percent error: 0.32299557
+Fires evaluated:  (m1 g2)
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (true exec_if ISI WD boolean_or boolean_= 1 NT boolean_and boolean_and 2 0 1 0 exec_if integer_+ exec_dup integer_+ 2 FWI slope integer_% true NBD NBD FWI)
+Best program: (true exec_if (ISI WD boolean_or boolean_= 1 NT boolean_and boolean_and 2 0 1 0 exec_if (integer_+ exec_dup (integer_+ 2 FWI slope integer_% true NBD NBD FWI)) ()) ())
+Best total error: 4890
+Total number of cells: 13940
+Best percent error: 0.3507891
+Fires evaluated:  (g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 20
+-------------------------------------------------------
+Best plushy: (true :split ISI exec_if 1 boolean_= exec_if NT 1 boolean_and 1 0 2 2 2 exec_if integer_+ integer_+ true NBD 2 2 slope true slope boolean_not slope NBD)
+Best program: (true :split ISI exec_if (1 boolean_= exec_if (NT 1 boolean_and 1 0 2 2 2 exec_if (integer_+ integer_+ true NBD 2 2 slope true slope boolean_not slope NBD) ()) ()) ())
+Best total error: 3117
+Total number of cells: 8208
+Best percent error: 0.37975147
+Fires evaluated:  (m1 m2)
+
