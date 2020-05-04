@@ -26,3 +26,16 @@
 	3071  -  MemoryUsage of job (MB)
 	3144604  -  ResidentSetSize of job (KB)
 ...
+004 (762.000.000) 05/03 23:50:28 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 0 06:17:03, Sys 0 00:00:52  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     2.08        1         1 
+	   Disk (KB)            :     1           1   3456640 
+	   Memory (MB)          :  3071           1      4030 
+...
+001 (762.000.000) 05/03 23:57:48 Job executing on host: <148.85.78.200:9618?addrs=148.85.78.200-9618&noUDP&sock=25405_9c05_3>
+...

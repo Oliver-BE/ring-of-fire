@@ -2,20 +2,30 @@ Starting GP with args: {:max-initial-plushy-size 40, :instructions (slope ISI BU
 -------------------------------------------------------
                Report for Generation 0
 -------------------------------------------------------
-Best plushy: (NT integer_* WD 2 0 close boolean_not true WD boolean_and WS boolean_= boolean_or NT integer_% 1 WS false)
-Best program: (NT integer_* WD 2 0 boolean_not true WD boolean_and WS boolean_= boolean_or NT integer_% 1 WS false)
-Best total error: 8007
-Total number of cells: 22148
-Best percent error: 0.3615225
-Fires evaluated:  (r1 m1 g2 m2)
+Best plushy: (integer_- true integer_- TB :split close integer_+ boolean_or integer_% integer_- integer_+ exec_if)
+Best program: (integer_- true integer_- TB :split integer_+ boolean_or integer_% integer_- integer_+ exec_if () ())
+Best total error: 5901
+Total number of cells: 19816
+Best percent error: 0.29778966
+Fires evaluated:  (m2 r1 k2 m1)
 
 -------------------------------------------------------
                Report for Generation 1
 -------------------------------------------------------
-Best plushy: (NT integer_* WD integer_% 0 boolean_and boolean_not true WD boolean_and WS integer_+ integer_* integer_% integer_= 1 WS FWI integer_* true true 0 0 NT ISI 1)
-Best program: (NT integer_* WD integer_% 0 boolean_and boolean_not true WD boolean_and WS integer_+ integer_* integer_% integer_= 1 WS FWI integer_* true true 0 0 NT ISI 1)
-Best total error: 9114
-Total number of cells: 29468
-Best percent error: 0.30928466
-Fires evaluated:  (g2 k2 r1 k1)
+Best plushy: (0 integer_- true integer_- TB :split close integer_+ boolean_or integer_% integer_- integer_+ exec_if)
+Best program: (0 integer_- true integer_- TB :split integer_+ boolean_or integer_% integer_- integer_+ exec_if () ())
+Best total error: 6855
+Total number of cells: 23060
+Best percent error: 0.297268
+Fires evaluated:  (m1 k1 k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (integer_- true integer_- TB :split close integer_+ boolean_or integer_% integer_- integer_+ exec_if)
+Best program: (integer_- true integer_- TB :split integer_+ boolean_or integer_% integer_- integer_+ exec_if () ())
+Best total error: 5901
+Total number of cells: 19816
+Best percent error: 0.29778966
+Fires evaluated:  (m1 m2 r1 k2)
 

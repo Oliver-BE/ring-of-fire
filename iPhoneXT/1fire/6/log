@@ -59,3 +59,16 @@
 ...
 001 (758.006.000) 05/03 20:48:21 Job executing on host: <148.85.78.200:9618?addrs=148.85.78.200-9618&noUDP&sock=25405_9c05_3>
 ...
+004 (758.006.000) 05/03 23:45:24 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 0 03:00:03, Sys 0 00:01:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00        1         1 
+	   Disk (KB)            :     1           1   3456640 
+	   Memory (MB)          :  3174        3174      4030 
+...
+001 (758.006.000) 05/03 23:51:28 Job executing on host: <148.85.78.200:9618?addrs=148.85.78.200-9618&noUDP&sock=25405_9c05_3>
+...

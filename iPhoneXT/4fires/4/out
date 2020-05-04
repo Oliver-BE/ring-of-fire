@@ -2,30 +2,20 @@ Starting GP with args: {:max-initial-plushy-size 40, :instructions (slope ISI BU
 -------------------------------------------------------
                Report for Generation 0
 -------------------------------------------------------
-Best plushy: (true WS true integer_= boolean_and WD boolean_= slope TB integer_+ boolean_or integer_- integer_* integer_= boolean_or :split :split close false exec_if :split WD exec_dup 0 FWI 0 1 NT boolean_= FWI WS ISI integer_* 1 WD BUI)
-Best program: (true WS true integer_= boolean_and WD boolean_= slope TB integer_+ boolean_or integer_- integer_* integer_= boolean_or :split :split false exec_if (:split WD exec_dup (0 FWI 0 1 NT boolean_= FWI WS ISI integer_* 1 WD BUI)) ())
-Best total error: 6877
-Total number of cells: 24280
-Best percent error: 0.28323722
-Fires evaluated:  (m1 g2 r1 k2)
+Best plushy: (true boolean_and boolean_or boolean_or TB integer_= NBD boolean_= 2 integer_- ISI WD false boolean_and ISI slope exec_if NBD 0 ISI FWI ISI :split exec_if)
+Best program: (true boolean_and boolean_or boolean_or TB integer_= NBD boolean_= 2 integer_- ISI WD false boolean_and ISI slope exec_if (NBD 0 ISI FWI ISI :split exec_if () ()) ())
+Best total error: 9114
+Total number of cells: 29468
+Best percent error: 0.30928466
+Fires evaluated:  (r1 k1 g2 k2)
 
 -------------------------------------------------------
                Report for Generation 1
 -------------------------------------------------------
-Best plushy: (true ISI true integer_* TB WD WD slope TB integer_+ boolean_or boolean_or :split :split 0 1 NT boolean_= ISI integer_* 1 WD)
-Best program: (true ISI true integer_* TB WD WD slope TB integer_+ boolean_or boolean_or :split :split 0 1 NT boolean_= ISI integer_* 1 WD)
-Best total error: 8961
-Total number of cells: 25392
-Best percent error: 0.35290644
-Fires evaluated:  (g2 k1 r1 m1)
-
--------------------------------------------------------
-               Report for Generation 2
--------------------------------------------------------
-Best plushy: (integer_- boolean_or BUI true boolean_and slope ISI boolean_or WS exec_dup integer_= exec_dup true boolean_or :split :split exec_if close WD boolean_or 0 boolean_or integer_=)
-Best program: (integer_- boolean_or BUI true boolean_and slope ISI boolean_or WS exec_dup (integer_= exec_dup (true boolean_or :split :split exec_if () (WD boolean_or 0 boolean_or integer_=))))
-Best total error: 6877
-Total number of cells: 24280
-Best percent error: 0.28323722
-Fires evaluated:  (r1 m1 k2 g2)
+Best plushy: (true boolean_and boolean_or boolean_or TB integer_= NBD boolean_= 2 integer_- ISI WD false boolean_and ISI slope exec_if NBD 0 ISI FWI ISI :split)
+Best program: (true boolean_and boolean_or boolean_or TB integer_= NBD boolean_= 2 integer_- ISI WD false boolean_and ISI slope exec_if (NBD 0 ISI FWI ISI :split) ())
+Best total error: 7341
+Total number of cells: 23736
+Best percent error: 0.30927706
+Fires evaluated:  (k1 m1 m2 k2)
 

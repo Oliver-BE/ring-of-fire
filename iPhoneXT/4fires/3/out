@@ -79,3 +79,33 @@ Total number of cells: 24956
 Best percent error: 0.29503927
 Fires evaluated:  (m1 g2 m2 k2)
 
+-------------------------------------------------------
+               Report for Generation 8
+-------------------------------------------------------
+Best plushy: (true false TB false boolean_and true ISI close BUI FWI FWI WS WS)
+Best program: (true false TB false boolean_and true ISI BUI FWI FWI WS WS)
+Best total error: 7363
+Total number of cells: 24956
+Best percent error: 0.29503927
+Fires evaluated:  (g2 k2 m1 m2)
+
+-------------------------------------------------------
+               Report for Generation 9
+-------------------------------------------------------
+Best plushy: (true BUI TB false boolean_and true ISI close BUI TB FWI TB NBD close 1 slope)
+Best program: (true BUI TB false boolean_and true ISI BUI TB FWI TB NBD 1 slope)
+Best total error: 7341
+Total number of cells: 23736
+Best percent error: 0.30927706
+Fires evaluated:  (m2 m1 k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 10
+-------------------------------------------------------
+Best plushy: (true BUI BUI false TB WS true ISI BUI FWI FWI WS NBD :split)
+Best program: (true BUI BUI false TB WS true ISI BUI FWI FWI WS NBD :split)
+Best total error: 10244
+Total number of cells: 27336
+Best percent error: 0.37474394
+Fires evaluated:  (m2 k1 r1 g2)
+

@@ -59,3 +59,23 @@ Total number of cells: 27336
 Best percent error: 0.37474394
 Fires evaluated:  (r1 k1 g2 m2)
 
+-------------------------------------------------------
+               Report for Generation 6
+-------------------------------------------------------
+Best plushy: (exec_dup boolean_and WS boolean_not 2 integer_= TB TB integer_% WD WD close close close WD WD FWI FWI FWI 1 integer_+ close integer_+ close exec_dup WS WS)
+Best program: (exec_dup (boolean_and WS boolean_not 2 integer_= TB TB integer_% WD WD) WD WD FWI FWI FWI 1 integer_+ integer_+ exec_dup (WS WS))
+Best total error: 8138
+Total number of cells: 25004
+Best percent error: 0.3254679
+Fires evaluated:  (k1 r1 m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 7
+-------------------------------------------------------
+Best plushy: (exec_dup integer_% boolean_and WS boolean_not 2 2 integer_* integer_= TB integer_% NT WD WD close close boolean_not WD FWI FWI FWI FWI integer_+ TB integer_+ close WS)
+Best program: (exec_dup (integer_% boolean_and WS boolean_not 2 2 integer_* integer_= TB integer_% NT WD WD) boolean_not WD FWI FWI FWI FWI integer_+ TB integer_+ WS)
+Best total error: 7363
+Total number of cells: 24956
+Best percent error: 0.29503927
+Fires evaluated:  (m1 m2 g2 k2)
+
