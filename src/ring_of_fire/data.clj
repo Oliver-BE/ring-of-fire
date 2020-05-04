@@ -35,6 +35,7 @@
   (with-open [writer (io/writer file-name)]
     (csv/write-csv writer data)))
 #_(write-csv [["abc" "def"] ["ghi" "jkl"]] "data/Outputs/output.csv")
+#_(write-csv [["abc" "def"] ["ghi" "jkl"]] "data/Outputs/output.csv")
 
 (defn clean-row
   "Helper function to clean data. Converts one vector row of strings to longs"

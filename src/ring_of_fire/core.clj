@@ -594,7 +594,7 @@
         (recur (:cell-grid updated-grids)
                (+ time-step (:time-step argmap))
                (:time-grid updated-grids))))))
-#_(run-fire "m1" test-program test-argmap)
+#_(run-fire "m1" (make-split-program '(ISI)) test-argmap)
 #_(time (run-fire "m1" test-program test-argmap))
 #_(time (run-fire "m1" best-program test-argmap))
 #_(def test-a-program '(WS se BUI DMC 1 integer_+ integer_- exec_dup (APCP w DC integer_- exec_if (num-burning-neigh TMP boolean_= integer_-))))
@@ -816,11 +816,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; make sure we are running this on a fire from the test set
 (def test-fire-vec ["a1", "g1", "r2"])
-#_(run-fire "m1" test-a-program argmap-for-test-program)
-(def test-program (list 'w))
-(def test-a-program '(WS se BUI DMC 1 integer_+ integer_- exec_dup (APCP w DC integer_- exec_if (num-burning-neigh TMP boolean_= integer_-))))
+
 ; make sure this is the exact same as the parameters for when you ran the above program
-#_(def argmap-for-test-program {:instructions            fire-instructions
+#_(def argmap-for-test-program1 {:instructions            fire-instructions
                                 :error-function          fire-error-function
                                 :max-generations         1000
                                 :population-size         8
@@ -833,4 +831,42 @@
 
 ;;; write program to CSV
 #_(write-csv [["abc" "def"] ["ghi" "jkl"]] "data/Outputs/output.csv")
-#_(write-csv (run-fire "m1" test-a-program argmap-for-test-program) "data/Outputs/output.csv")
+
+#_(run-fire "m1" (make-split-program '(ISI)) argmap-for-test-program1)
+#_(partition (num-columns "m1") (run-fire "m1" (make-split-program '(ISI)) argmap-for-test-program1))
+
+#_(write-csv (partition (num-columns "m1") (run-fire "m1" (make-split-program '(ISI)) argmap-for-test-program1)) "data/Outputs/output.csv")
+
+
+(defn grid-to-csv
+  [fire-name program argmap destination]
+  (write-csv (partition (num-columns fire-name) (run-fire fire-name (make-split-program program) argmap)) destination))
+#_(grid-to-csv "m1" '(ISI) argmap-for-test-program1 "data/Outputs/output.csv")
+
+#_(grid-to-csv "a1" testprogrambest argmap-for-test-program "data/Outputs/a1-program1.csv")
+#_(grid-to-csv "m1" testprogrambest argmap-for-test-program "data/Outputs/m1-program1.csv")
+#_(grid-to-csv "g1" testprogrambest argmap-for-test-program "data/Outputs/g1-program1.csv")
+
+#_(write-csv (:g1 final-scar-grid-master) "data/Outputs/g1.csv")
+
+#_(def testprogrambest (make-split-program '(exec_dup (boolean_and WS boolean_not 2 integer_* integer_= TB integer_% NT WD WD) 0 WD boolean_not FWI FWI exec_dup (1 integer_+ TB false) exec_dup (WS))))
+#_(def argmap-for-test-program {:instructions            fire-instructions
+                                :error-function          fire-error-function
+                                :max-generations         5000
+                                :population-size         10
+                                :max-initial-plushy-size 40
+                                :step-limit              100
+                                :parent-selection        :tournament
+                                :tournament-size         5
+                                :time-step               3
+                                :fire-selection          4})
+
+;; testing fires ["a1", "g1", "r2"]
+
+#_(partition num-columns "a1")
+#_(run-fire "a1" testprogrambest argmap-for-test-program)
+
+#_(write-csv (run-fire "a1" testprogrambest argmap-for-test-program) "data/Outputs/a1-program1.csv")
+
+
+

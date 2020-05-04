@@ -102,6 +102,12 @@
   (clean (read-in-csv path)))
 
 (def fire-scar (read-in-data "data/Outputs/output.csv"))
+(def fire-scar-a1 (read-in-data "data/Outputs/a1.csv"))
+(def fire-scar-a1-us (read-in-data "data/Outputs/a1-program1.csv"))
+(def fire-scar-m1 (read-in-data "data/Outputs/m1.csv"))
+(def fire-scar-m1-us (read-in-data "data/Outputs/m1-program1.csv"))
+(def fire-scar-g1 (read-in-data "data/Outputs/g1.csv"))
+(def fire-scar-g1-us (read-in-data "data/Outputs/g1-program1.csv"))
 
 (defn num-rows-quil
   "Returns the number of rows of a vector of vectors
@@ -117,12 +123,12 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(def rows (num-rows-quil fire-scar))
-(def columns (num-columns-quil fire-scar))
+(def rows (num-rows-quil fire-scar-a1-us))
+(def columns (num-columns-quil fire-scar-a1-us))
 
 
 (defn grid-to-print []
-  fire-scar)
+  fire-scar-g1-us)
 
 (defn setup-simple []
   (q/no-stroke)
@@ -145,6 +151,8 @@
         ;(let [state (int (rand 3))]
         state))))
 
+(def scale 5)
+
 (defn draw-world [grid]
   (dotimes [r rows]
     (dotimes [c columns]
@@ -163,11 +171,13 @@
             ;(q/color 34 139 34))))
 
       ;(q/rect (* r 20) (* c 20) 20 20))))
-      (q/rect (* c 10) (* r 10) 10 10))))
+      (q/rect (* c scale) (* r scale) scale scale))))
+
+(reduce + (flatten fire-scar-a1-us))
 
 (q/defsketch run
              :host "host"
-             :size [(* columns 10) (* rows 10)]
+             :size [(* columns scale) (* rows scale)]
              :setup setup-simple
              :update step-forward
              :draw draw-world
