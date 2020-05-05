@@ -639,3 +639,1483 @@ Total number of cells: 8320
 Best percent error: 0.37908652
 Fires evaluated:  (k1)
 
+-------------------------------------------------------
+               Report for Generation 64
+-------------------------------------------------------
+Best plushy: (true true true WS WS boolean_not TB integer_- boolean_or 0)
+Best program: (true true true WS WS boolean_not TB integer_- boolean_or 0)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 65
+-------------------------------------------------------
+Best plushy: (integer_% true true true true TB boolean_not TB TB boolean_or boolean_and ISI)
+Best program: (integer_% true true true true TB boolean_not TB TB boolean_or boolean_and ISI)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 66
+-------------------------------------------------------
+Best plushy: (true true true true true TB TB TB boolean_or 0)
+Best program: (true true true true true TB TB TB boolean_or 0)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 67
+-------------------------------------------------------
+Best plushy: (true true true true TB TB TB integer_- 0 0)
+Best program: (true true true true TB TB TB integer_- 0 0)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 68
+-------------------------------------------------------
+Best plushy: (true true true true true TB TB boolean_or 0)
+Best program: (true true true true true TB TB boolean_or 0)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 69
+-------------------------------------------------------
+Best plushy: (true exec_dup true boolean_not true true TB TB boolean_or TB 0)
+Best program: (true exec_dup (true boolean_not true true TB TB boolean_or TB 0))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 70
+-------------------------------------------------------
+Best plushy: (true exec_dup true true true true TB TB boolean_or integer_- 0)
+Best program: (true exec_dup (true true true true TB TB boolean_or integer_- 0))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 71
+-------------------------------------------------------
+Best plushy: (true true true true exec_dup WS TB TB 0 0 0 0)
+Best program: (true true true true exec_dup (WS TB TB 0 0 0 0))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 72
+-------------------------------------------------------
+Best plushy: (integer_+ true exec_dup true true true true TB TB boolean_or integer_- 0)
+Best program: (integer_+ true exec_dup (true true true true TB TB boolean_or integer_- 0))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 73
+-------------------------------------------------------
+Best plushy: (true true true WS exec_dup boolean_not 0 0 0 0)
+Best program: (true true true WS exec_dup (boolean_not 0 0 0 0))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 74
+-------------------------------------------------------
+Best plushy: (true true true TB boolean_not 0 0)
+Best program: (true true true TB boolean_not 0 0)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 75
+-------------------------------------------------------
+Best plushy: (true true true true true true TB TB boolean_or integer_-)
+Best program: (true true true true true true TB TB boolean_or integer_-)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 76
+-------------------------------------------------------
+Best plushy: (true true true true true true TB TB boolean_or integer_-)
+Best program: (true true true true true true TB TB boolean_or integer_-)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 77
+-------------------------------------------------------
+Best plushy: (true true true WS true true true boolean_= TB TB boolean_or integer_-)
+Best program: (true true true WS true true true boolean_= TB TB boolean_or integer_-)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 78
+-------------------------------------------------------
+Best plushy: (true true true true TB true TB 0 0)
+Best program: (true true true true TB true TB 0 0)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 79
+-------------------------------------------------------
+Best plushy: (true true true true true true boolean_= TB TB boolean_or integer_-)
+Best program: (true true true true true true boolean_= TB TB boolean_or integer_-)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 80
+-------------------------------------------------------
+Best plushy: (true true true WS boolean_not true true boolean_= boolean_or boolean_or boolean_or integer_-)
+Best program: (true true true WS boolean_not true true boolean_= boolean_or boolean_or boolean_or integer_-)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 81
+-------------------------------------------------------
+Best plushy: (true true true true TB boolean_not TB 0 0 integer_=)
+Best program: (true true true true TB boolean_not TB 0 0 integer_=)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 82
+-------------------------------------------------------
+Best plushy: (true true true 0 integer_+ boolean_not true boolean_not boolean_or 0)
+Best program: (true true true 0 integer_+ boolean_not true boolean_not boolean_or 0)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 83
+-------------------------------------------------------
+Best plushy: (true true true true TB true true 0 FWI boolean_and true integer_= boolean_or)
+Best program: (true true true true TB true true 0 FWI boolean_and true integer_= boolean_or)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 84
+-------------------------------------------------------
+Best plushy: (integer_* true true integer_+ boolean_not true true boolean_or 0 integer_= integer_= boolean_or)
+Best program: (integer_* true true integer_+ boolean_not true true boolean_or 0 integer_= integer_= boolean_or)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 85
+-------------------------------------------------------
+Best plushy: (true true true integer_+ TB true TB 0 FWI boolean_or true)
+Best program: (true true true integer_+ TB true TB 0 FWI boolean_or true)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 86
+-------------------------------------------------------
+Best plushy: (true true true true TB boolean_or TB boolean_not FWI boolean_or)
+Best program: (true true true true TB boolean_or TB boolean_not FWI boolean_or)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 87
+-------------------------------------------------------
+Best plushy: (true true true boolean_not true TB 0 0 boolean_or boolean_or true)
+Best program: (true true true boolean_not true TB 0 0 boolean_or boolean_or true)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 88
+-------------------------------------------------------
+Best plushy: (true true boolean_not true 0 true TB integer_- integer_= boolean_or)
+Best program: (true true boolean_not true 0 true TB integer_- integer_= boolean_or)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 89
+-------------------------------------------------------
+Best plushy: (true close true integer_+ true TB TB integer_= boolean_or)
+Best program: (true true integer_+ true TB TB integer_= boolean_or)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 90
+-------------------------------------------------------
+Best plushy: (true close true integer_+ true TB TB integer_= boolean_or)
+Best program: (true true integer_+ true TB TB integer_= boolean_or)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 91
+-------------------------------------------------------
+Best plushy: (true boolean_not boolean_not true boolean_or 0 0 integer_- integer_- true)
+Best program: (true boolean_not boolean_not true boolean_or 0 0 integer_- integer_- true)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 92
+-------------------------------------------------------
+Best plushy: (true true slope integer_+ 0 NBD boolean_not true TB TB integer_= boolean_or)
+Best program: (true true slope integer_+ 0 NBD boolean_not true TB TB integer_= boolean_or)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 93
+-------------------------------------------------------
+Best plushy: (true close true boolean_or boolean_or integer_= TB integer_- integer_-)
+Best program: (true true boolean_or boolean_or integer_= TB integer_- integer_-)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 94
+-------------------------------------------------------
+Best plushy: (true close true boolean_or slope boolean_or integer_= TB integer_- integer_-)
+Best program: (true true boolean_or slope boolean_or integer_= TB integer_- integer_-)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 95
+-------------------------------------------------------
+Best plushy: (true true slope integer_+ NBD integer_= integer_- TB integer_- boolean_or)
+Best program: (true true slope integer_+ NBD integer_= integer_- TB integer_- boolean_or)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 96
+-------------------------------------------------------
+Best plushy: (true true true boolean_or boolean_or integer_- integer_- TB TB)
+Best program: (true true true boolean_or boolean_or integer_- integer_- TB TB)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 97
+-------------------------------------------------------
+Best plushy: (true true slope integer_+ NBD boolean_not true close TB)
+Best program: (true true slope integer_+ NBD boolean_not true TB)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 98
+-------------------------------------------------------
+Best plushy: (true true true boolean_or NBD integer_- true TB TB integer_= boolean_or)
+Best program: (true true true boolean_or NBD integer_- true TB TB integer_= boolean_or)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 99
+-------------------------------------------------------
+Best plushy: (true true true boolean_or NBD integer_- true TB TB integer_= boolean_or)
+Best program: (true true true boolean_or NBD integer_- true TB TB integer_= boolean_or)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 100
+-------------------------------------------------------
+Best plushy: (true slope integer_+ NBD integer_- true WD)
+Best program: (true slope integer_+ NBD integer_- true WD)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 101
+-------------------------------------------------------
+Best plushy: (true true integer_+ integer_+ integer_- integer_- true)
+Best program: (true true integer_+ integer_+ integer_- integer_- true)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 102
+-------------------------------------------------------
+Best plushy: (true slope slope NBD boolean_or boolean_not)
+Best program: (true slope slope NBD boolean_or boolean_not)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 103
+-------------------------------------------------------
+Best plushy: (true slope integer_+ boolean_or integer_+ true close exec_if TB TB boolean_or)
+Best program: (true slope integer_+ boolean_or integer_+ true exec_if (TB TB boolean_or) ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 104
+-------------------------------------------------------
+Best plushy: (true slope integer_+ boolean_or integer_+ true close exec_if TB TB boolean_or)
+Best program: (true slope integer_+ boolean_or integer_+ true exec_if (TB TB boolean_or) ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 105
+-------------------------------------------------------
+Best plushy: (true slope exec_dup true integer_+ true close true TB boolean_or boolean_or)
+Best program: (true slope exec_dup (true integer_+ true) true TB boolean_or boolean_or)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 106
+-------------------------------------------------------
+Best plushy: (true slope integer_+ integer_+ integer_+ integer_+ true close exec_if TB)
+Best program: (true slope integer_+ integer_+ integer_+ integer_+ true exec_if (TB) ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 107
+-------------------------------------------------------
+Best plushy: (true slope integer_+ integer_+ integer_+ true close exec_if TB TB boolean_or)
+Best program: (true slope integer_+ integer_+ integer_+ true exec_if (TB TB boolean_or) ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 108
+-------------------------------------------------------
+Best plushy: (true slope integer_+ slope true integer_+ true close true TB TB boolean_or)
+Best program: (true slope integer_+ slope true integer_+ true true TB TB boolean_or)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 109
+-------------------------------------------------------
+Best plushy: (true slope integer_+ boolean_or integer_+ true close true TB TB)
+Best program: (true slope integer_+ boolean_or integer_+ true true TB TB)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 110
+-------------------------------------------------------
+Best plushy: (true slope integer_+ slope true integer_+ close true true TB boolean_or)
+Best program: (true slope integer_+ slope true integer_+ true true TB boolean_or)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 111
+-------------------------------------------------------
+Best plushy: (true boolean_not slope integer_+ true integer_+ integer_+ TB true TB TB TB)
+Best program: (true boolean_not slope integer_+ true integer_+ integer_+ TB true TB TB TB)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 112
+-------------------------------------------------------
+Best plushy: (true slope integer_+ slope integer_+ true close close TB TB)
+Best program: (true slope integer_+ slope integer_+ true TB TB)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 113
+-------------------------------------------------------
+Best plushy: (true slope integer_+ boolean_or integer_+ true close true TB TB)
+Best program: (true slope integer_+ boolean_or integer_+ true true TB TB)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 114
+-------------------------------------------------------
+Best plushy: (true slope slope integer_+ true close close TB TB)
+Best program: (true slope slope integer_+ true TB TB)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 115
+-------------------------------------------------------
+Best plushy: (true slope integer_+ boolean_or boolean_not close TB TB)
+Best program: (true slope integer_+ boolean_or boolean_not TB TB)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 116
+-------------------------------------------------------
+Best plushy: (true slope slope integer_+ true true close true TB TB)
+Best program: (true slope slope integer_+ true true true TB TB)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 117
+-------------------------------------------------------
+Best plushy: (boolean_= true slope boolean_or NBD boolean_or boolean_not true close TB TB)
+Best program: (boolean_= true slope boolean_or NBD boolean_or boolean_not true TB TB)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 118
+-------------------------------------------------------
+Best plushy: (boolean_= slope true boolean_or NBD boolean_or TB TB close TB TB)
+Best program: (boolean_= slope true boolean_or NBD boolean_or TB TB TB TB)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 119
+-------------------------------------------------------
+Best plushy: (boolean_= slope true boolean_or NBD boolean_or TB TB close TB TB)
+Best program: (boolean_= slope true boolean_or NBD boolean_or TB TB TB TB)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 120
+-------------------------------------------------------
+Best plushy: (slope slope boolean_or true close true boolean_not slope TB)
+Best program: (slope slope boolean_or true true boolean_not slope TB)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 121
+-------------------------------------------------------
+Best plushy: (boolean_= slope true boolean_or NBD close boolean_or TB close close TB)
+Best program: (boolean_= slope true boolean_or NBD boolean_or TB TB)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 122
+-------------------------------------------------------
+Best plushy: (slope slope true boolean_or NBD boolean_or TB TB)
+Best program: (slope slope true boolean_or NBD boolean_or TB TB)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 123
+-------------------------------------------------------
+Best plushy: (boolean_= slope true boolean_or NBD boolean_or TB TB boolean_not slope TB TB)
+Best program: (boolean_= slope true boolean_or NBD boolean_or TB TB boolean_not slope TB TB)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 124
+-------------------------------------------------------
+Best plushy: (boolean_= slope true BUI close TB true close slope TB)
+Best program: (boolean_= slope true BUI TB true slope TB)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 125
+-------------------------------------------------------
+Best plushy: (boolean_= integer_+ boolean_not true NBD true integer_+)
+Best program: (boolean_= integer_+ boolean_not true NBD true integer_+)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 126
+-------------------------------------------------------
+Best plushy: (slope integer_+ true boolean_or boolean_= NBD exec_dup true TB)
+Best program: (slope integer_+ true boolean_or boolean_= NBD exec_dup (true TB))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 127
+-------------------------------------------------------
+Best plushy: (boolean_= slope integer_+ boolean_not true TB TB TB close integer_+ TB exec_if)
+Best program: (boolean_= slope integer_+ boolean_not true TB TB TB integer_+ TB exec_if () ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 128
+-------------------------------------------------------
+Best plushy: (slope integer_+ true boolean_or boolean_= NBD TB TB)
+Best program: (slope integer_+ true boolean_or boolean_= NBD TB TB)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 129
+-------------------------------------------------------
+Best plushy: (slope integer_+ true boolean_or boolean_= NBD exec_dup TB TB)
+Best program: (slope integer_+ true boolean_or boolean_= NBD exec_dup (TB TB))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 130
+-------------------------------------------------------
+Best plushy: (slope BUI true BUI boolean_= TB true TB TB TB)
+Best program: (slope BUI true BUI boolean_= TB true TB TB TB)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 131
+-------------------------------------------------------
+Best plushy: (slope BUI true boolean_and boolean_or boolean_= NBD exec_dup TB TB)
+Best program: (slope BUI true boolean_and boolean_or boolean_= NBD exec_dup (TB TB))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 132
+-------------------------------------------------------
+Best plushy: (slope integer_+ true boolean_or boolean_or boolean_= NBD boolean_= TB)
+Best program: (slope integer_+ true boolean_or boolean_or boolean_= NBD boolean_= TB)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 133
+-------------------------------------------------------
+Best plushy: (slope BUI integer_= true BUI TB NT TB TB TB)
+Best program: (slope BUI integer_= true BUI TB NT TB TB TB)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 134
+-------------------------------------------------------
+Best plushy: (slope slope true true BUI boolean_or TB TB boolean_or TB close)
+Best program: (slope slope true true BUI boolean_or TB TB boolean_or TB)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 135
+-------------------------------------------------------
+Best plushy: (slope slope integer_= true BUI TB true close NT TB true TB)
+Best program: (slope slope integer_= true BUI TB true NT TB true TB)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 136
+-------------------------------------------------------
+Best plushy: (slope slope integer_= boolean_or BUI TB true close NT TB true TB)
+Best program: (slope slope integer_= boolean_or BUI TB true NT TB true TB)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 137
+-------------------------------------------------------
+Best plushy: (slope slope integer_+ true boolean_or TB close true true close close)
+Best program: (slope slope integer_+ true boolean_or TB true true)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 138
+-------------------------------------------------------
+Best plushy: (slope slope integer_= BUI exec_dup TB true true true true close)
+Best program: (slope slope integer_= BUI exec_dup (TB true true true true))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 139
+-------------------------------------------------------
+Best plushy: (slope slope integer_= BUI exec_dup TB true true true TB close close)
+Best program: (slope slope integer_= BUI exec_dup (TB true true true TB))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 140
+-------------------------------------------------------
+Best plushy: (slope slope integer_+ true boolean_or boolean_or TB close NT TB true TB)
+Best program: (slope slope integer_+ true boolean_or boolean_or TB NT TB true TB)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 141
+-------------------------------------------------------
+Best plushy: (slope 0 slope integer_+ true boolean_or boolean_= close integer_+ TB true true close)
+Best program: (slope 0 slope integer_+ true boolean_or boolean_= integer_+ TB true true)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 142
+-------------------------------------------------------
+Best plushy: (slope 0 integer_= integer_+ true TB boolean_= true true TB true true close close)
+Best program: (slope 0 integer_= integer_+ true TB boolean_= true true TB true true)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 143
+-------------------------------------------------------
+Best plushy: (slope slope integer_+ true boolean_or boolean_or TB close NT TB false true TB)
+Best program: (slope slope integer_+ true boolean_or boolean_or TB NT TB false true TB)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 144
+-------------------------------------------------------
+Best plushy: (slope slope integer_= true TB boolean_= TB true TB true true close close)
+Best program: (slope slope integer_= true TB boolean_= TB true TB true true)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 145
+-------------------------------------------------------
+Best plushy: (slope slope integer_= TB boolean_= TB true TB true close close)
+Best program: (slope slope integer_= TB boolean_= TB true TB true)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 146
+-------------------------------------------------------
+Best plushy: (slope slope integer_= true TB TB true true TB close true TB)
+Best program: (slope slope integer_= true TB TB true true TB true TB)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 147
+-------------------------------------------------------
+Best plushy: (slope slope ISI true TB BUI TB true TB true true TB TB)
+Best program: (slope slope ISI true TB BUI TB true TB true true TB TB)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 148
+-------------------------------------------------------
+Best plushy: (slope slope integer_= boolean_= NBD TB close boolean_and TB true true true true TB)
+Best program: (slope slope integer_= boolean_= NBD TB boolean_and TB true true true true TB)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 149
+-------------------------------------------------------
+Best plushy: (slope slope integer_= true exec_dup BUI close exec_if true TB true TB)
+Best program: (slope slope integer_= true exec_dup (BUI) exec_if (true TB true TB) ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 150
+-------------------------------------------------------
+Best plushy: (slope slope slope true exec_dup boolean_= close exec_if true TB true true TB)
+Best program: (slope slope slope true exec_dup (boolean_=) exec_if (true TB true true TB) ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 151
+-------------------------------------------------------
+Best plushy: (slope slope integer_= true integer_= TB BUI TB TB true true true)
+Best program: (slope slope integer_= true integer_= TB BUI TB TB true true true)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 152
+-------------------------------------------------------
+Best plushy: (slope slope integer_= true integer_= TB BUI TB TB true true true)
+Best program: (slope slope integer_= true integer_= TB BUI TB TB true true true)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 153
+-------------------------------------------------------
+Best plushy: (slope slope integer_= true NBD TB close 0 TB true TB true true true integer_- TB)
+Best program: (slope slope integer_= true NBD TB 0 TB true TB true true true integer_- TB)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 154
+-------------------------------------------------------
+Best plushy: (1 true slope NBD slope slope NBD exec_dup TB TB TB true true TB)
+Best program: (1 true slope NBD slope slope NBD exec_dup (TB TB TB true true TB))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 155
+-------------------------------------------------------
+Best plushy: (1 true NBD NBD slope NBD exec_dup exec_dup TB TB true true true)
+Best program: (1 true NBD NBD slope NBD exec_dup (exec_dup (TB TB true true true)))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 156
+-------------------------------------------------------
+Best plushy: (1 true slope slope slope NBD exec_dup exec_dup TB TB TB true true TB)
+Best program: (1 true slope slope slope NBD exec_dup (exec_dup (TB TB TB true true TB)))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 157
+-------------------------------------------------------
+Best plushy: (1 true slope slope slope NBD NBD exec_dup TB TB TB true TB)
+Best program: (1 true slope slope slope NBD NBD exec_dup (TB TB TB true TB))
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 158
+-------------------------------------------------------
+Best plushy: (BUI 1 true slope slope slope NBD exec_dup exec_dup TB TB TB true true TB)
+Best program: (BUI 1 true slope slope slope NBD exec_dup (exec_dup (TB TB TB true true TB)))
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 159
+-------------------------------------------------------
+Best plushy: (1 true slope slope slope NBD exec_dup exec_dup TB TB TB true true TB)
+Best program: (1 true slope slope slope NBD exec_dup (exec_dup (TB TB TB true true TB)))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 160
+-------------------------------------------------------
+Best plushy: (1 true slope slope slope NBD exec_dup exec_dup TB TB TB true true TB)
+Best program: (1 true slope slope slope NBD exec_dup (exec_dup (TB TB TB true true TB)))
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 161
+-------------------------------------------------------
+Best plushy: (true true slope slope TB slope exec_dup exec_dup TB TB TB true TB true)
+Best program: (true true slope slope TB slope exec_dup (exec_dup (TB TB TB true TB true)))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 162
+-------------------------------------------------------
+Best plushy: (BUI true slope slope slope NBD exec_dup TB TB TB true true TB)
+Best program: (BUI true slope slope slope NBD exec_dup (TB TB TB true true TB))
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 163
+-------------------------------------------------------
+Best plushy: (BUI true slope slope slope NBD TB exec_dup true TB true true true)
+Best program: (BUI true slope slope slope NBD TB exec_dup (true TB true true true))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 164
+-------------------------------------------------------
+Best plushy: (true integer_= integer_= slope slope slope TB exec_dup TB TB TB TB true TB)
+Best program: (true integer_= integer_= slope slope slope TB exec_dup (TB TB TB TB true TB))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 165
+-------------------------------------------------------
+Best plushy: (true integer_= integer_= slope slope :split exec_dup TB TB TB TB true true TB)
+Best program: (true integer_= integer_= slope slope :split exec_dup (TB TB TB TB true true TB))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 166
+-------------------------------------------------------
+Best plushy: (true integer_= slope slope slope slope :split exec_dup TB TB TB TB true true TB)
+Best program: (true integer_= slope slope slope slope :split exec_dup (TB TB TB TB true true TB))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 167
+-------------------------------------------------------
+Best plushy: (true integer_= integer_= slope slope :split exec_dup TB TB TB 0 TB true true TB)
+Best program: (true integer_= integer_= slope slope :split exec_dup (TB TB TB 0 TB true true TB))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 168
+-------------------------------------------------------
+Best plushy: (true slope slope slope slope :split TB TB TB TB true TB TB)
+Best program: (true slope slope slope slope :split TB TB TB TB true TB TB)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 169
+-------------------------------------------------------
+Best plushy: (true slope slope slope slope :split TB TB TB TB true TB TB)
+Best program: (true slope slope slope slope :split TB TB TB TB true TB TB)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 170
+-------------------------------------------------------
+Best plushy: (true integer_= slope slope slope :split exec_dup TB TB TB TB TB true TB)
+Best program: (true integer_= slope slope slope :split exec_dup (TB TB TB TB TB true TB))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 171
+-------------------------------------------------------
+Best plushy: (true integer_= slope slope slope :split exec_dup exec_dup TB TB TB true TB)
+Best program: (true integer_= slope slope slope :split exec_dup (exec_dup (TB TB TB true TB)))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 172
+-------------------------------------------------------
+Best plushy: (true integer_= slope slope slope :split TB exec_dup TB TB TB true TB)
+Best program: (true integer_= slope slope slope :split TB exec_dup (TB TB TB true TB))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 173
+-------------------------------------------------------
+Best plushy: (true integer_= slope slope slope :split exec_dup exec_dup TB TB TB true TB)
+Best program: (true integer_= slope slope slope :split exec_dup (exec_dup (TB TB TB true TB)))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 174
+-------------------------------------------------------
+Best plushy: (true integer_= slope slope exec_dup exec_dup exec_dup TB TB true TB TB)
+Best program: (true integer_= slope slope exec_dup (exec_dup (exec_dup (TB TB true TB TB))))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 175
+-------------------------------------------------------
+Best plushy: (true integer_= slope slope exec_dup exec_dup TB TB true TB TB)
+Best program: (true integer_= slope slope exec_dup (exec_dup (TB TB true TB TB)))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 176
+-------------------------------------------------------
+Best plushy: (slope true integer_= slope slope slope slope TB exec_dup TB WS TB TB true TB)
+Best program: (slope true integer_= slope slope slope slope TB exec_dup (TB WS TB TB true TB))
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 177
+-------------------------------------------------------
+Best plushy: (true integer_= integer_= slope slope slope exec_dup TB exec_dup TB TB TB TB true)
+Best program: (true integer_= integer_= slope slope slope exec_dup (TB exec_dup (TB TB TB TB true)))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 178
+-------------------------------------------------------
+Best plushy: (true integer_= slope slope exec_dup TB TB boolean_not true TB TB)
+Best program: (true integer_= slope slope exec_dup (TB TB boolean_not true TB TB))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 179
+-------------------------------------------------------
+Best plushy: (true integer_= slope slope exec_dup exec_dup TB TB true TB TB TB TB TB)
+Best program: (true integer_= slope slope exec_dup (exec_dup (TB TB true TB TB TB TB TB)))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 180
+-------------------------------------------------------
+Best plushy: (true integer_= slope slope exec_dup exec_dup TB TB TB ISI FWI TB TB TB integer_*)
+Best program: (true integer_= slope slope exec_dup (exec_dup (TB TB TB ISI FWI TB TB TB integer_*)))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 181
+-------------------------------------------------------
+Best plushy: (true integer_= slope exec_dup exec_dup TB TB TB ISI FWI TB TB TB integer_*)
+Best program: (true integer_= slope exec_dup (exec_dup (TB TB TB ISI FWI TB TB TB integer_*)))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 182
+-------------------------------------------------------
+Best plushy: (true integer_= slope slope slope slope exec_dup exec_dup true WS TB TB)
+Best program: (true integer_= slope slope slope slope exec_dup (exec_dup (true WS TB TB)))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 183
+-------------------------------------------------------
+Best plushy: (true integer_= slope 1 exec_dup slope exec_dup TB TB true FWI TB TB true integer_* TB)
+Best program: (true integer_= slope 1 exec_dup (slope exec_dup (TB TB true FWI TB TB true integer_* TB)))
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 184
+-------------------------------------------------------
+Best plushy: (true slope slope 1 exec_dup integer_- exec_dup TB TB true FWI TB TB true integer_* TB)
+Best program: (true slope slope 1 exec_dup (integer_- exec_dup (TB TB true FWI TB TB true integer_* TB)))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 185
+-------------------------------------------------------
+Best plushy: (true integer_= slope 1 slope TB exec_dup TB TB true true integer_* TB)
+Best program: (true integer_= slope 1 slope TB exec_dup (TB TB true true integer_* TB))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 186
+-------------------------------------------------------
+Best plushy: (integer_* true slope 1 exec_dup slope exec_dup TB ISI FWI FWI TB TB true integer_*)
+Best program: (integer_* true slope 1 exec_dup (slope exec_dup (TB ISI FWI FWI TB TB true integer_*)))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 187
+-------------------------------------------------------
+Best plushy: (true integer_= slope exec_dup TB TB true TB true TB TB TB TB)
+Best program: (true integer_= slope exec_dup (TB TB true TB true TB TB TB TB))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 188
+-------------------------------------------------------
+Best plushy: (true integer_= slope exec_dup TB TB true TB true TB TB TB TB)
+Best program: (true integer_= slope exec_dup (TB TB true TB true TB TB TB TB))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 189
+-------------------------------------------------------
+Best plushy: (BUI true integer_= slope slope slope TB exec_dup TB true FWI boolean_and TB integer_+ TB true integer_* 1 TB)
+Best program: (BUI true integer_= slope slope slope TB exec_dup (TB true FWI boolean_and TB integer_+ TB true integer_* 1 TB))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 190
+-------------------------------------------------------
+Best plushy: (true integer_= slope exec_dup TB TB true TB true TB TB TB TB)
+Best program: (true integer_= slope exec_dup (TB TB true TB true TB TB TB TB))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 191
+-------------------------------------------------------
+Best plushy: (true integer_= slope exec_dup TB TB true TB true TB TB TB)
+Best program: (true integer_= slope exec_dup (TB TB true TB true TB TB TB))
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 192
+-------------------------------------------------------
+Best plushy: (true integer_= slope slope slope TB true TB true TB TB TB)
+Best program: (true integer_= slope slope slope TB true TB true TB TB TB)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 193
+-------------------------------------------------------
+Best plushy: (true integer_= slope slope TB true TB true TB TB TB)
+Best program: (true integer_= slope slope TB true TB true TB TB TB)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 194
+-------------------------------------------------------
+Best plushy: (integer_* integer_= slope slope slope TB true TB true TB integer_* true 0)
+Best program: (integer_* integer_= slope slope slope TB true TB true TB integer_* true 0)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 195
+-------------------------------------------------------
+Best plushy: (integer_= integer_= slope slope TB true true TB TB TB close TB boolean_not TB)
+Best program: (integer_= integer_= slope slope TB true true TB TB TB TB boolean_not TB)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 196
+-------------------------------------------------------
+Best plushy: (true integer_= slope slope slope true true true true TB true true 0 WD)
+Best program: (true integer_= slope slope slope true true true true TB true true 0 WD)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 197
+-------------------------------------------------------
+Best plushy: (true integer_= slope slope TB TB TB TB TB TB TB)
+Best program: (true integer_= slope slope TB TB TB TB TB TB TB)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 198
+-------------------------------------------------------
+Best plushy: (true integer_= slope slope TB TB TB TB TB boolean_not TB)
+Best program: (true integer_= slope slope TB TB TB TB TB boolean_not TB)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 199
+-------------------------------------------------------
+Best plushy: (true integer_= slope slope slope TB true true true boolean_not 0)
+Best program: (true integer_= slope slope slope TB true true true boolean_not 0)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 200
+-------------------------------------------------------
+Best plushy: (true integer_= slope slope slope TB true true true TB close boolean_not)
+Best program: (true integer_= slope slope slope TB true true true TB boolean_not)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 201
+-------------------------------------------------------
+Best plushy: (integer_= true slope slope TB NT TB true TB true TB boolean_or close integer_- TB)
+Best program: (integer_= true slope slope TB NT TB true TB true TB boolean_or integer_- TB)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 202
+-------------------------------------------------------
+Best plushy: (integer_= true slope integer_% TB TB TB true TB integer_- TB)
+Best program: (integer_= true slope integer_% TB TB TB true TB integer_- TB)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 203
+-------------------------------------------------------
+Best plushy: (integer_= true slope integer_% TB TB TB true TB integer_- TB)
+Best program: (integer_= true slope integer_% TB TB TB true TB integer_- TB)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 204
+-------------------------------------------------------
+Best plushy: (integer_= boolean_not slope slope TB true TB true true TB close boolean_not boolean_not boolean_not)
+Best program: (integer_= boolean_not slope slope TB true TB true true TB boolean_not boolean_not boolean_not)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 205
+-------------------------------------------------------
+Best plushy: (true close integer_= slope slope slope boolean_and true true true true NT 0 close boolean_not)
+Best program: (true integer_= slope slope slope boolean_and true true true true NT 0 boolean_not)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 206
+-------------------------------------------------------
+Best plushy: (true close slope slope slope TB boolean_and true true true TB close boolean_not)
+Best program: (true slope slope slope TB boolean_and true true true TB boolean_not)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 207
+-------------------------------------------------------
+Best plushy: (integer_= integer_= integer_= slope integer_+ integer_% TB true TB true true TB close boolean_not boolean_not boolean_not)
+Best program: (integer_= integer_= integer_= slope integer_+ integer_% TB true TB true true TB boolean_not boolean_not boolean_not)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 208
+-------------------------------------------------------
+Best plushy: (integer_= integer_= integer_= slope slope TB true true true true NT close boolean_not boolean_not)
+Best program: (integer_= integer_= integer_= slope slope TB true true true true NT boolean_not boolean_not)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 209
+-------------------------------------------------------
+Best plushy: (true integer_= integer_= slope TB TB TB true true true NT close boolean_not boolean_not)
+Best program: (true integer_= integer_= slope TB TB TB true true true NT boolean_not boolean_not)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 210
+-------------------------------------------------------
+Best plushy: (integer_= integer_= integer_= slope slope TB true true true true NT boolean_not boolean_not)
+Best program: (integer_= integer_= integer_= slope slope TB true true true true NT boolean_not boolean_not)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 211
+-------------------------------------------------------
+Best plushy: (integer_= integer_= integer_= slope slope true TB true true TB true true boolean_not close boolean_not)
+Best program: (integer_= integer_= integer_= slope slope true TB true true TB true true boolean_not boolean_not)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+

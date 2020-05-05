@@ -149,3 +149,53 @@ Total number of cells: 11452
 Best percent error: 0.35548377
 Fires evaluated:  (m1 k1)
 
+-------------------------------------------------------
+               Report for Generation 15
+-------------------------------------------------------
+Best plushy: (true WS 1 boolean_or boolean_and :split false close boolean_or ISI WD false boolean_= ISI ISI ISI exec_dup integer_- WS TB TB exec_if exec_if exec_dup BUI 2 integer_+ BUI BUI 0 0)
+Best program: (true WS 1 boolean_or boolean_and :split false boolean_or ISI WD false boolean_= ISI ISI ISI exec_dup (integer_- WS TB TB exec_if (exec_if (exec_dup (BUI 2 integer_+ BUI BUI 0 0)) ()) ()))
+Best total error: 2631
+Total number of cells: 7532
+Best percent error: 0.34930962
+Fires evaluated:  (m1 r1)
+
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (true WS :split integer_% false close boolean_or close boolean_= ISI integer_% ISI exec_dup integer_- :split TB exec_dup exec_if exec_dup BUI integer_= 2 BUI BUI 2 0 0)
+Best program: (true WS :split integer_% false boolean_or boolean_= ISI integer_% ISI exec_dup (integer_- :split TB exec_dup (exec_if (exec_dup (BUI integer_= 2 BUI BUI 2 0 0)) ())))
+Best total error: 4246
+Total number of cells: 16748
+Best percent error: 0.2535228
+Fires evaluated:  (g2 k2)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (true WS :split integer_% false close boolean_or close boolean_= ISI integer_% ISI exec_dup integer_- :split TB exec_dup exec_if exec_dup BUI integer_= 2 BUI BUI 2 0 0)
+Best program: (true WS :split integer_% false boolean_or boolean_= ISI integer_% ISI exec_dup (integer_- :split TB exec_dup (exec_if (exec_dup (BUI integer_= 2 BUI BUI 2 0 0)) ())))
+Best total error: 4868
+Total number of cells: 12720
+Best percent error: 0.3827044
+Fires evaluated:  (r1 k1)
+
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (true WS 1 boolean_or boolean_and :split false boolean_or ISI WD false WS boolean_= ISI ISI exec_dup false integer_- WS TB exec_if boolean_= exec_if exec_dup BUI 2 BUI 0 0)
+Best program: (true WS 1 boolean_or boolean_and :split false boolean_or ISI WD false WS boolean_= ISI ISI exec_dup (false integer_- WS TB exec_if (boolean_= exec_if (exec_dup (BUI 2 BUI 0 0)) ()) ()))
+Best total error: 4246
+Total number of cells: 16748
+Best percent error: 0.2535228
+Fires evaluated:  (k2 g2)
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (true WS 1 :split boolean_and close false boolean_or boolean_= ISI WD WS close integer_- ISI ISI NT integer_- exec_if TB exec_dup 2 exec_if BUI 2 2 BUI 0 0)
+Best program: (true WS 1 :split boolean_and false boolean_or boolean_= ISI WD WS integer_- ISI ISI NT integer_- exec_if (TB exec_dup (2 exec_if (BUI 2 2 BUI 0 0) ())) ())
+Best total error: 3117
+Total number of cells: 8208
+Best percent error: 0.37975147
+Fires evaluated:  (m2 m1)
+

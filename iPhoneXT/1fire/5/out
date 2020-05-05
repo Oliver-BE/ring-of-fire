@@ -1969,3 +1969,613 @@ Total number of cells: 9540
 Best percent error: 0.33291405
 Fires evaluated:  (g2)
 
+-------------------------------------------------------
+               Report for Generation 197
+-------------------------------------------------------
+Best plushy: (boolean_= 2 NT WS integer_= integer_= NBD boolean_= boolean_= 2 WD 0 2 0 boolean_not 0 ISI boolean_not boolean_not boolean_not integer_+ ISI close)
+Best program: (boolean_= 2 NT WS integer_= integer_= NBD boolean_= boolean_= 2 WD 0 2 0 boolean_not 0 ISI boolean_not boolean_not boolean_not integer_+ ISI)
+Best total error: 3145
+Total number of cells: 8320
+Best percent error: 0.37800482
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 198
+-------------------------------------------------------
+Best plushy: (boolean_= WS 2 NT integer_= integer_= FWI 2 NBD boolean_= BUI boolean_not BUI 2 ISI boolean_not boolean_not ISI ISI boolean_not boolean_not)
+Best program: (boolean_= WS 2 NT integer_= integer_= FWI 2 NBD boolean_= BUI boolean_not BUI 2 ISI boolean_not boolean_not ISI ISI boolean_not boolean_not)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 199
+-------------------------------------------------------
+Best plushy: (boolean_= WS 2 NT integer_= integer_= FWI 2 NBD boolean_= BUI boolean_not BUI 2 ISI boolean_not boolean_not ISI ISI boolean_not boolean_not)
+Best program: (boolean_= WS 2 NT integer_= integer_= FWI 2 NBD boolean_= BUI boolean_not BUI 2 ISI boolean_not boolean_not ISI ISI boolean_not boolean_not)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 200
+-------------------------------------------------------
+Best plushy: (boolean_= WS 2 NT integer_= integer_= FWI 2 NBD boolean_= BUI boolean_not BUI 2 ISI boolean_not boolean_not boolean_not)
+Best program: (boolean_= WS 2 NT integer_= integer_= FWI 2 NBD boolean_= BUI boolean_not BUI 2 ISI boolean_not boolean_not boolean_not)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 201
+-------------------------------------------------------
+Best plushy: (boolean_= WS WS integer_= integer_= NBD WD 2 2 0 2 0 ISI 0 boolean_not boolean_not integer_* boolean_not ISI close)
+Best program: (boolean_= WS WS integer_= integer_= NBD WD 2 2 0 2 0 ISI 0 boolean_not boolean_not integer_* boolean_not ISI)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 202
+-------------------------------------------------------
+Best plushy: (boolean_= WS 2 NT integer_= integer_= FWI 2 NBD boolean_= BUI boolean_not BUI 2 ISI boolean_not boolean_not boolean_not)
+Best program: (boolean_= WS 2 NT integer_= integer_= FWI 2 NBD boolean_= BUI boolean_not BUI 2 ISI boolean_not boolean_not boolean_not)
+Best total error: 3152
+Total number of cells: 8320
+Best percent error: 0.37884617
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 203
+-------------------------------------------------------
+Best plushy: (boolean_= WS 2 NT integer_= integer_= FWI 2 NBD boolean_= BUI boolean_not BUI 2 ISI boolean_not boolean_not boolean_not)
+Best program: (boolean_= WS 2 NT integer_= integer_= FWI 2 NBD boolean_= BUI boolean_not BUI 2 ISI boolean_not boolean_not boolean_not)
+Best total error: 3152
+Total number of cells: 8320
+Best percent error: 0.37884617
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 204
+-------------------------------------------------------
+Best plushy: (boolean_= WS 2 NT integer_= integer_= FWI true 2 NBD boolean_= BUI 2 boolean_not BUI 2 ISI boolean_not boolean_not WS boolean_not)
+Best program: (boolean_= WS 2 NT integer_= integer_= FWI true 2 NBD boolean_= BUI 2 boolean_not BUI 2 ISI boolean_not boolean_not WS boolean_not)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 205
+-------------------------------------------------------
+Best plushy: (boolean_= WS 2 NT integer_= integer_= FWI 2 NBD boolean_= BUI boolean_not BUI 2 ISI boolean_not boolean_not boolean_not)
+Best program: (boolean_= WS 2 NT integer_= integer_= FWI 2 NBD boolean_= BUI boolean_not BUI 2 ISI boolean_not boolean_not boolean_not)
+Best total error: 1044
+Total number of cells: 7208
+Best percent error: 0.14483906
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 206
+-------------------------------------------------------
+Best plushy: (WS 2 NT integer_= integer_= FWI 2 NBD NBD BUI BUI boolean_not ISI 2 ISI boolean_not boolean_not)
+Best program: (WS 2 NT integer_= integer_= FWI 2 NBD NBD BUI BUI boolean_not ISI 2 ISI boolean_not boolean_not)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 207
+-------------------------------------------------------
+Best plushy: (boolean_= WS 2 NT integer_= 2 NBD NBD boolean_= BUI boolean_not ISI boolean_not ISI boolean_not boolean_not)
+Best program: (boolean_= WS 2 NT integer_= 2 NBD NBD boolean_= BUI boolean_not ISI boolean_not ISI boolean_not boolean_not)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 208
+-------------------------------------------------------
+Best plushy: (boolean_= WS 2 NT integer_= integer_= FWI TB 2 exec_if BUI boolean_not boolean_not ISI boolean_not boolean_not boolean_not WS boolean_not WS boolean_not)
+Best program: (boolean_= WS 2 NT integer_= integer_= FWI TB 2 exec_if (BUI boolean_not boolean_not ISI boolean_not boolean_not boolean_not WS boolean_not WS boolean_not) ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 209
+-------------------------------------------------------
+Best plushy: (integer_- WS WS NT integer_= integer_= integer_= 2 NBD boolean_= NBD 2 boolean_not boolean_not boolean_not boolean_not boolean_not integer_+ integer_+)
+Best program: (integer_- WS WS NT integer_= integer_= integer_= 2 NBD boolean_= NBD 2 boolean_not boolean_not boolean_not boolean_not boolean_not integer_+ integer_+)
+Best total error: 943
+Total number of cells: 7208
+Best percent error: 0.13082686
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 210
+-------------------------------------------------------
+Best plushy: (WS WS NT NT integer_= integer_= 2 2 boolean_= BUI NBD boolean_not boolean_not boolean_not 2 boolean_not boolean_not integer_+)
+Best program: (WS WS NT NT integer_= integer_= 2 2 boolean_= BUI NBD boolean_not boolean_not boolean_not 2 boolean_not boolean_not integer_+)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 211
+-------------------------------------------------------
+Best plushy: (boolean_= TB WS 2 NT integer_= integer_= FWI 2 2 NBD NBD BUI boolean_not boolean_not 2 ISI boolean_not boolean_not integer_+ integer_+)
+Best program: (boolean_= TB WS 2 NT integer_= integer_= FWI 2 2 NBD NBD BUI boolean_not boolean_not 2 ISI boolean_not boolean_not integer_+ integer_+)
+Best total error: 862
+Total number of cells: 3132
+Best percent error: 0.2752235
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 212
+-------------------------------------------------------
+Best plushy: (boolean_= WS WS 2 NT integer_= FWI FWI 2 BUI NBD 2 boolean_not boolean_not boolean_not 2 boolean_not boolean_not boolean_not)
+Best program: (boolean_= WS WS 2 NT integer_= FWI FWI 2 BUI NBD 2 boolean_not boolean_not boolean_not 2 boolean_not boolean_not boolean_not)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 213
+-------------------------------------------------------
+Best plushy: (boolean_= TB WS 2 NT integer_= integer_= FWI 2 2 NBD NBD BUI boolean_not boolean_not 2 ISI boolean_not boolean_not 2 integer_+ integer_+)
+Best program: (boolean_= TB WS 2 NT integer_= integer_= FWI 2 2 NBD NBD BUI boolean_not boolean_not 2 ISI boolean_not boolean_not 2 integer_+ integer_+)
+Best total error: 2853
+Total number of cells: 8320
+Best percent error: 0.34290865
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 214
+-------------------------------------------------------
+Best plushy: (boolean_= TB WS 2 NT integer_= integer_= FWI 2 2 NBD NBD BUI boolean_not boolean_not 2 ISI integer_- boolean_not boolean_not 2 integer_+ integer_+)
+Best program: (boolean_= TB WS 2 NT integer_= integer_= FWI 2 2 NBD NBD BUI boolean_not boolean_not 2 ISI integer_- boolean_not boolean_not 2 integer_+ integer_+)
+Best total error: 862
+Total number of cells: 3132
+Best percent error: 0.2752235
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 215
+-------------------------------------------------------
+Best plushy: (boolean_= TB WS 2 NT integer_= FWI 2 2 NBD NBD BUI boolean_not boolean_not 2 ISI boolean_not integer_+ integer_+)
+Best program: (boolean_= TB WS 2 NT integer_= FWI 2 2 NBD NBD BUI boolean_not boolean_not 2 ISI boolean_not integer_+ integer_+)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 216
+-------------------------------------------------------
+Best plushy: (WS WS WS NT integer_= FWI 2 BUI NBD 2 boolean_not BUI boolean_not boolean_not boolean_not)
+Best program: (WS WS WS NT integer_= FWI 2 BUI NBD 2 boolean_not BUI boolean_not boolean_not boolean_not)
+Best total error: 943
+Total number of cells: 7208
+Best percent error: 0.13082686
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 217
+-------------------------------------------------------
+Best plushy: (boolean_= TB WS 2 NT integer_= FWI 2 2 NBD boolean_= BUI boolean_not boolean_not 2 ISI boolean_not integer_+ integer_+)
+Best program: (boolean_= TB WS 2 NT integer_= FWI 2 2 NBD boolean_= BUI boolean_not boolean_not 2 ISI boolean_not integer_+ integer_+)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 218
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_and exec_dup boolean_not WS close NT integer_= integer_= FWI 2 BUI boolean_= 2 boolean_not BUI boolean_not boolean_not boolean_not ISI boolean_not boolean_not)
+Best program: (boolean_= boolean_and exec_dup (boolean_not WS) NT integer_= integer_= FWI 2 BUI boolean_= 2 boolean_not BUI boolean_not boolean_not boolean_not ISI boolean_not boolean_not)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 219
+-------------------------------------------------------
+Best plushy: (boolean_= BUI 2 NT integer_= integer_= integer_= FWI NBD NBD BUI boolean_not boolean_not ISI boolean_not boolean_not boolean_not boolean_not)
+Best program: (boolean_= BUI 2 NT integer_= integer_= integer_= FWI NBD NBD BUI boolean_not boolean_not ISI boolean_not boolean_not boolean_not boolean_not)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 220
+-------------------------------------------------------
+Best plushy: (boolean_= BUI 2 NT integer_= integer_= integer_= FWI NBD NBD BUI boolean_not boolean_not ISI boolean_not boolean_not boolean_not boolean_not)
+Best program: (boolean_= BUI 2 NT integer_= integer_= integer_= FWI NBD NBD BUI boolean_not boolean_not ISI boolean_not boolean_not boolean_not boolean_not)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 221
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_and exec_dup boolean_not WS close NT integer_= NBD FWI BUI boolean_not boolean_not ISI BUI boolean_not integer_+ ISI boolean_not)
+Best program: (boolean_= boolean_and exec_dup (boolean_not WS) NT integer_= NBD FWI BUI boolean_not boolean_not ISI BUI boolean_not integer_+ ISI boolean_not)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 222
+-------------------------------------------------------
+Best plushy: (boolean_= 2 NT integer_= integer_= integer_= 2 FWI NBD NBD BUI boolean_not ISI boolean_not boolean_not)
+Best program: (boolean_= 2 NT integer_= integer_= integer_= 2 FWI NBD NBD BUI boolean_not ISI boolean_not boolean_not)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 223
+-------------------------------------------------------
+Best plushy: (boolean_= 2 2 NT integer_= integer_= 2 FWI NBD BUI BUI ISI ISI boolean_not boolean_not boolean_not)
+Best program: (boolean_= 2 2 NT integer_= integer_= 2 FWI NBD BUI BUI ISI ISI boolean_not boolean_not boolean_not)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 224
+-------------------------------------------------------
+Best plushy: (boolean_= 2 2 NT integer_= integer_= 2 FWI NBD BUI BUI ISI ISI boolean_not boolean_not boolean_not)
+Best program: (boolean_= 2 2 NT integer_= integer_= 2 FWI NBD BUI BUI ISI ISI boolean_not boolean_not boolean_not)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 225
+-------------------------------------------------------
+Best plushy: (boolean_= 2 2 NT integer_= integer_= 2 FWI NBD BUI BUI ISI ISI boolean_not boolean_not 1 boolean_not)
+Best program: (boolean_= 2 2 NT integer_= integer_= 2 FWI NBD BUI BUI ISI ISI boolean_not boolean_not 1 boolean_not)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 226
+-------------------------------------------------------
+Best plushy: (boolean_= 2 2 NT integer_= integer_= 2 FWI NBD BUI ISI ISI boolean_not boolean_not 1 boolean_not)
+Best program: (boolean_= 2 2 NT integer_= integer_= 2 FWI NBD BUI ISI ISI boolean_not boolean_not 1 boolean_not)
+Best total error: 1044
+Total number of cells: 7208
+Best percent error: 0.14483906
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 227
+-------------------------------------------------------
+Best plushy: (boolean_= 2 2 NT integer_= integer_= 2 FWI NBD BUI ISI ISI boolean_not boolean_not 1 boolean_not)
+Best program: (boolean_= 2 2 NT integer_= integer_= 2 FWI NBD BUI ISI ISI boolean_not boolean_not 1 boolean_not)
+Best total error: 3152
+Total number of cells: 8320
+Best percent error: 0.37884617
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 228
+-------------------------------------------------------
+Best plushy: (boolean_= 2 2 NT integer_= integer_= 2 FWI NBD BUI ISI ISI boolean_not boolean_not 1 boolean_not)
+Best program: (boolean_= 2 2 NT integer_= integer_= 2 FWI NBD BUI ISI ISI boolean_not boolean_not 1 boolean_not)
+Best total error: 3152
+Total number of cells: 8320
+Best percent error: 0.37884617
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 229
+-------------------------------------------------------
+Best plushy: (boolean_= 2 2 NT integer_= 2 FWI NBD BUI ISI ISI boolean_not boolean_not 1 boolean_not)
+Best program: (boolean_= 2 2 NT integer_= 2 FWI NBD BUI ISI ISI boolean_not boolean_not 1 boolean_not)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 230
+-------------------------------------------------------
+Best plushy: (boolean_= 2 2 NT integer_= 2 2 FWI NBD ISI ISI boolean_not boolean_not 1 boolean_not)
+Best program: (boolean_= 2 2 NT integer_= 2 2 FWI NBD ISI ISI boolean_not boolean_not 1 boolean_not)
+Best total error: 3152
+Total number of cells: 8320
+Best percent error: 0.37884617
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 231
+-------------------------------------------------------
+Best plushy: (boolean_= 2 2 NT integer_= 2 FWI integer_- NBD BUI BUI close ISI ISI TB boolean_not boolean_not 1)
+Best program: (boolean_= 2 2 NT integer_= 2 FWI integer_- NBD BUI BUI ISI ISI TB boolean_not boolean_not 1)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 232
+-------------------------------------------------------
+Best plushy: (boolean_= 2 2 NT integer_= integer_= 2 NBD BUI NBD BUI ISI ISI TB 1 boolean_not)
+Best program: (boolean_= 2 2 NT integer_= integer_= 2 NBD BUI NBD BUI ISI ISI TB 1 boolean_not)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 233
+-------------------------------------------------------
+Best plushy: (boolean_= 2 2 NT integer_= integer_= 2 FWI NBD BUI ISI boolean_not 1 boolean_not 1)
+Best program: (boolean_= 2 2 NT integer_= integer_= 2 FWI NBD BUI ISI boolean_not 1 boolean_not 1)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 234
+-------------------------------------------------------
+Best plushy: (boolean_= 2 2 NT integer_= integer_= 2 FWI BUI BUI BUI boolean_not 1 TB 1)
+Best program: (boolean_= 2 2 NT integer_= integer_= 2 FWI BUI BUI BUI boolean_not 1 TB 1)
+Best total error: 3152
+Total number of cells: 8320
+Best percent error: 0.37884617
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 235
+-------------------------------------------------------
+Best plushy: (boolean_= 2 2 NT integer_% integer_= 2 integer_= NBD BUI FWI ISI boolean_not boolean_not ISI boolean_not false 1)
+Best program: (boolean_= 2 2 NT integer_% integer_= 2 integer_= NBD BUI FWI ISI boolean_not boolean_not ISI boolean_not false 1)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 236
+-------------------------------------------------------
+Best plushy: (boolean_= 2 2 NT integer_= integer_= 2 FWI BUI BUI BUI 0 boolean_not 1 TB 1)
+Best program: (boolean_= 2 2 NT integer_= integer_= 2 FWI BUI BUI BUI 0 boolean_not 1 TB 1)
+Best total error: 3152
+Total number of cells: 8320
+Best percent error: 0.37884617
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 237
+-------------------------------------------------------
+Best plushy: (boolean_and 2 2 NT integer_= integer_= 2 FWI exec_if BUI boolean_not ISI boolean_not boolean_not boolean_not 1 false)
+Best program: (boolean_and 2 2 NT integer_= integer_= 2 FWI exec_if (BUI boolean_not ISI boolean_not boolean_not boolean_not 1 false) ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 238
+-------------------------------------------------------
+Best plushy: (boolean_and 2 NT integer_= integer_= 2 FWI 2 NBD boolean_not boolean_not boolean_not boolean_not boolean_= 1 false)
+Best program: (boolean_and 2 NT integer_= integer_= 2 FWI 2 NBD boolean_not boolean_not boolean_not boolean_not boolean_= 1 false)
+Best total error: 1044
+Total number of cells: 7208
+Best percent error: 0.14483906
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 239
+-------------------------------------------------------
+Best plushy: (2 2 NT integer_= integer_= 2 FWI BUI BUI BUI boolean_not 1 TB 1)
+Best program: (2 2 NT integer_= integer_= 2 FWI BUI BUI BUI boolean_not 1 TB 1)
+Best total error: 3152
+Total number of cells: 8320
+Best percent error: 0.37884617
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 240
+-------------------------------------------------------
+Best plushy: (boolean_and 2 NT integer_= NT integer_= integer_= 2 FWI BUI BUI boolean_not BUI 1 boolean_not :split)
+Best program: (boolean_and 2 NT integer_= NT integer_= integer_= 2 FWI BUI BUI boolean_not BUI 1 boolean_not :split)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 241
+-------------------------------------------------------
+Best plushy: (boolean_= WD 2 NT integer_= FWI 2 ISI 2 BUI boolean_not boolean_not BUI boolean_not boolean_not 1 :split 1)
+Best program: (boolean_= WD 2 NT integer_= FWI 2 ISI 2 BUI boolean_not boolean_not BUI boolean_not boolean_not 1 :split 1)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 242
+-------------------------------------------------------
+Best plushy: (boolean_and 2 NT integer_= NT integer_= integer_= 2 integer_= BUI BUI BUI boolean_not BUI boolean_not 1 :split)
+Best program: (boolean_and 2 NT integer_= NT integer_= integer_= 2 integer_= BUI BUI BUI boolean_not BUI boolean_not 1 :split)
+Best total error: 3152
+Total number of cells: 8320
+Best percent error: 0.37884617
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 243
+-------------------------------------------------------
+Best plushy: (boolean_and 2 NT integer_= integer_= 2 FWI BUI :split boolean_not boolean_not boolean_not boolean_not boolean_not boolean_=)
+Best program: (boolean_and 2 NT integer_= integer_= 2 FWI BUI :split boolean_not boolean_not boolean_not boolean_not boolean_not boolean_=)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 244
+-------------------------------------------------------
+Best plushy: (BUI NT NT NT integer_= 2 integer_= 2 integer_= boolean_not BUI boolean_not 1 1)
+Best program: (BUI NT NT NT integer_= 2 integer_= 2 integer_= boolean_not BUI boolean_not 1 1)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 245
+-------------------------------------------------------
+Best plushy: (boolean_and NT 2 NT integer_= integer_= BUI ISI exec_if integer_= boolean_not boolean_not exec_if boolean_not integer_* TB 1 boolean_not 1)
+Best program: (boolean_and NT 2 NT integer_= integer_= BUI ISI exec_if (integer_= boolean_not boolean_not exec_if (boolean_not integer_* TB 1 boolean_not 1) ()) ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 246
+-------------------------------------------------------
+Best plushy: (boolean_and NT 2 NT integer_= integer_= BUI ISI exec_if boolean_not boolean_not exec_if boolean_not integer_* TB 1 boolean_not 1)
+Best program: (boolean_and NT 2 NT integer_= integer_= BUI ISI exec_if (boolean_not boolean_not exec_if (boolean_not integer_* TB 1 boolean_not 1) ()) ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 247
+-------------------------------------------------------
+Best plushy: (BUI NT 2 NT integer_= NT BUI 2 2 integer_= 2 BUI exec_if boolean_not BUI boolean_not :split boolean_not)
+Best program: (BUI NT 2 NT integer_= NT BUI 2 2 integer_= 2 BUI exec_if (boolean_not BUI boolean_not :split boolean_not) ())
+Best total error: 1044
+Total number of cells: 7208
+Best percent error: 0.14483906
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 248
+-------------------------------------------------------
+Best plushy: (boolean_and NT 2 NT integer_= integer_= BUI ISI integer_= boolean_not BUI boolean_not 1 1)
+Best program: (boolean_and NT 2 NT integer_= integer_= BUI ISI integer_= boolean_not BUI boolean_not 1 1)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 249
+-------------------------------------------------------
+Best plushy: (boolean_and 2 NT boolean_= integer_= NT integer_= ISI 2 2 0 BUI exec_dup boolean_not 1 :split 1)
+Best program: (boolean_and 2 NT boolean_= integer_= NT integer_= ISI 2 2 0 BUI exec_dup (boolean_not 1 :split 1))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 250
+-------------------------------------------------------
+Best plushy: (boolean_and 2 NT integer_= BUI ISI integer_= boolean_not BUI boolean_not TB 1)
+Best program: (boolean_and 2 NT integer_= BUI ISI integer_= boolean_not BUI boolean_not TB 1)
+Best total error: 3152
+Total number of cells: 8320
+Best percent error: 0.37884617
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 251
+-------------------------------------------------------
+Best plushy: (boolean_and 2 NT integer_= boolean_= integer_= integer_= boolean_not integer_= ISI TB 1 BUI exec_dup :split 1)
+Best program: (boolean_and 2 NT integer_= boolean_= integer_= integer_= boolean_not integer_= ISI TB 1 BUI exec_dup (:split 1))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 252
+-------------------------------------------------------
+Best plushy: (BUI 2 NT boolean_= integer_= NT integer_= integer_= 2 2 2 BUI boolean_not BUI boolean_and boolean_not :split)
+Best program: (BUI 2 NT boolean_= integer_= NT integer_= integer_= 2 2 2 BUI boolean_not BUI boolean_and boolean_not :split)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 253
+-------------------------------------------------------
+Best plushy: (BUI 2 NT integer_= integer_= NT NT integer_= ISI 2 2 BUI boolean_not BUI boolean_and boolean_not :split 1)
+Best program: (BUI 2 NT integer_= integer_= NT NT integer_= ISI 2 2 BUI boolean_not BUI boolean_and boolean_not :split 1)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 254
+-------------------------------------------------------
+Best plushy: (2 2 NT boolean_= integer_= integer_+ NT integer_= ISI 2 2 BUI exec_dup boolean_not 1 :split)
+Best program: (2 2 NT boolean_= integer_= integer_+ NT integer_= ISI 2 2 BUI exec_dup (boolean_not 1 :split))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 255
+-------------------------------------------------------
+Best plushy: (2 2 NT boolean_= integer_= integer_+ NT integer_= ISI 2 2 BUI exec_dup boolean_not 1 :split 1 1)
+Best program: (2 2 NT boolean_= integer_= integer_+ NT integer_= ISI 2 2 BUI exec_dup (boolean_not 1 :split 1 1))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 256
+-------------------------------------------------------
+Best plushy: (2 NT NT boolean_= NT NT NT integer_= ISI 2 BUI BUI BUI 1 :split boolean_not 1 1)
+Best program: (2 NT NT boolean_= NT NT NT integer_= ISI 2 BUI BUI BUI 1 :split boolean_not 1 1)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 257
+-------------------------------------------------------
+Best plushy: (NT NT boolean_= NT NT NT integer_= ISI 2 BUI BUI BUI 1 :split boolean_not)
+Best program: (NT NT boolean_= NT NT NT integer_= ISI 2 BUI BUI BUI 1 :split boolean_not)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+

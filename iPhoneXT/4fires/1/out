@@ -369,3 +369,103 @@ Total number of cells: 25004
 Best percent error: 0.3254679
 Fires evaluated:  (r1 k1 m2 k2)
 
+-------------------------------------------------------
+               Report for Generation 37
+-------------------------------------------------------
+Best plushy: (FWI WD FWI BUI WS boolean_not 2 NT integer_= boolean_not true integer_% NT NBD true integer_% integer_- BUI integer_% integer_% TB integer_% close integer_% boolean_not)
+Best program: (FWI WD FWI BUI WS boolean_not 2 NT integer_= boolean_not true integer_% NT NBD true integer_% integer_- BUI integer_% integer_% TB integer_% integer_% boolean_not)
+Best total error: 6877
+Total number of cells: 24280
+Best percent error: 0.28323722
+Fires evaluated:  (g2 k2 r1 m1)
+
+-------------------------------------------------------
+               Report for Generation 38
+-------------------------------------------------------
+Best plushy: (FWI WD FWI BUI WS true NT integer_= boolean_not boolean_not BUI true integer_% NBD 2 integer_- exec_if integer_- integer_% NBD WS integer_% TB integer_% close integer_%)
+Best program: (FWI WD FWI BUI WS true NT integer_= boolean_not boolean_not BUI true integer_% NBD 2 integer_- exec_if (integer_- integer_% NBD WS integer_% TB integer_%) (integer_%))
+Best total error: 9527
+Total number of cells: 30144
+Best percent error: 0.31604964
+Fires evaluated:  (m2 k2 k1 g2)
+
+-------------------------------------------------------
+               Report for Generation 39
+-------------------------------------------------------
+Best plushy: (FWI WD FWI BUI WS true NT integer_= boolean_not boolean_not BUI true integer_% NBD 2 integer_- exec_if integer_- integer_% NBD WS integer_% TB integer_% close integer_%)
+Best program: (FWI WD FWI BUI WS true NT integer_= boolean_not boolean_not BUI true integer_% NBD 2 integer_- exec_if (integer_- integer_% NBD WS integer_% TB integer_%) (integer_%))
+Best total error: 6784
+Total number of cells: 24280
+Best percent error: 0.2794069
+Fires evaluated:  (k2 m1 g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 40
+-------------------------------------------------------
+Best plushy: (FWI WD FWI BUI WS true NT integer_= boolean_not boolean_not BUI true integer_% NBD 2 integer_- exec_if integer_- integer_% NBD WS integer_% TB integer_% close integer_%)
+Best program: (FWI WD FWI BUI WS true NT integer_= boolean_not boolean_not BUI true integer_% NBD 2 integer_- exec_if (integer_- integer_% NBD WS integer_% TB integer_%) (integer_%))
+Best total error: 9009
+Total number of cells: 29468
+Best percent error: 0.30572146
+Fires evaluated:  (g2 k1 k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 41
+-------------------------------------------------------
+Best plushy: (FWI WD FWI BUI WS NT integer_= boolean_not boolean_not BUI true integer_% NBD integer_- exec_if integer_- integer_% NBD WS integer_% TB integer_% close integer_%)
+Best program: (FWI WD FWI BUI WS NT integer_= boolean_not boolean_not BUI true integer_% NBD integer_- exec_if (integer_- integer_% NBD WS integer_% TB integer_%) (integer_%))
+Best total error: 8215
+Total number of cells: 28200
+Best percent error: 0.29131207
+Fires evaluated:  (k1 g2 m1 k2)
+
+-------------------------------------------------------
+               Report for Generation 42
+-------------------------------------------------------
+Best plushy: (FWI WD FWI BUI WS NT integer_= boolean_not BUI true integer_% NBD integer_- exec_if integer_- NBD WS TB integer_% close integer_%)
+Best program: (FWI WD FWI BUI WS NT integer_= boolean_not BUI true integer_% NBD integer_- exec_if (integer_- NBD WS TB integer_%) (integer_%))
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (m2 r1 k1 m1)
+
+-------------------------------------------------------
+               Report for Generation 43
+-------------------------------------------------------
+Best plushy: (FWI WD FWI BUI NT boolean_not true integer_% 2 integer_- exec_if integer_- integer_% NBD WS TB integer_% close integer_%)
+Best program: (FWI WD FWI BUI NT boolean_not true integer_% 2 integer_- exec_if (integer_- integer_% NBD WS TB integer_%) (integer_%))
+Best total error: 8961
+Total number of cells: 25392
+Best percent error: 0.35290644
+Fires evaluated:  (g2 r1 k1 m1)
+
+-------------------------------------------------------
+               Report for Generation 44
+-------------------------------------------------------
+Best plushy: (FWI FWI FWI 1 NT boolean_not boolean_not integer_= integer_= boolean_not NBD 2 integer_% exec_if boolean_or 2 integer_% integer_% integer_% integer_% integer_% integer_% integer_% integer_%)
+Best program: (FWI FWI FWI 1 NT boolean_not boolean_not integer_= integer_= boolean_not NBD 2 integer_% exec_if (boolean_or 2 integer_% integer_% integer_% integer_% integer_% integer_% integer_% integer_%) ())
+Best total error: 7341
+Total number of cells: 23736
+Best percent error: 0.30927706
+Fires evaluated:  (m1 k1 k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 45
+-------------------------------------------------------
+Best plushy: (FWI FWI FWI 1 NT boolean_not boolean_not integer_= boolean_not NBD 2 integer_% exec_if boolean_or integer_% integer_% integer_% integer_% integer_% integer_%)
+Best program: (FWI FWI FWI 1 NT boolean_not boolean_not integer_= boolean_not NBD 2 integer_% exec_if (boolean_or integer_% integer_% integer_% integer_% integer_% integer_%) ())
+Best total error: 7363
+Total number of cells: 24956
+Best percent error: 0.29503927
+Fires evaluated:  (g2 m1 m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 46
+-------------------------------------------------------
+Best plushy: (FWI WD FWI NT boolean_not true integer_% 2 integer_- NBD 2 integer_% NBD boolean_or integer_% integer_% integer_% integer_%)
+Best program: (FWI WD FWI NT boolean_not true integer_% 2 integer_- NBD 2 integer_% NBD boolean_or integer_% integer_% integer_% integer_%)
+Best total error: 9600
+Total number of cells: 30144
+Best percent error: 0.31847134
+Fires evaluated:  (m2 k1 g2 k2)
+
