@@ -459,3 +459,133 @@ Total number of cells: 22148
 Best percent error: 0.3615225
 Fires evaluated:  (r1 g2 m2 m1)
 
+-------------------------------------------------------
+               Report for Generation 46
+-------------------------------------------------------
+Best plushy: (boolean_and false NT true integer_+ BUI integer_+ BUI TB integer_% 0 FWI 1 WS BUI NT 1 1 0 WS integer_% integer_= TB NBD WS NBD integer_% WS)
+Best program: (boolean_and false NT true integer_+ BUI integer_+ BUI TB integer_% 0 FWI 1 WS BUI NT 1 1 0 WS integer_% integer_= TB NBD WS NBD integer_% WS)
+Best total error: 7341
+Total number of cells: 23736
+Best percent error: 0.30927706
+Fires evaluated:  (m2 m1 k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 47
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_or boolean_or boolean_or integer_+ true integer_* integer_% integer_% TB TB TB integer_% TB NT WS exec_if TB 1 TB integer_= 1 TB NBD WS boolean_=)
+Best program: (boolean_and boolean_or boolean_or boolean_or integer_+ true integer_* integer_% integer_% TB TB TB integer_% TB NT WS exec_if (TB 1 TB integer_= 1 TB NBD WS boolean_=) ())
+Best total error: 9600
+Total number of cells: 30144
+Best percent error: 0.31847134
+Fires evaluated:  (k2 g2 m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 48
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_or boolean_or boolean_or integer_+ true integer_* integer_% integer_% TB TB TB integer_% TB NT WS exec_if TB 1 TB integer_= 1 TB NBD WS boolean_=)
+Best program: (boolean_and boolean_or boolean_or boolean_or integer_+ true integer_* integer_% integer_% TB TB TB integer_% TB NT WS exec_if (TB 1 TB integer_= 1 TB NBD WS boolean_=) ())
+Best total error: 6855
+Total number of cells: 23060
+Best percent error: 0.297268
+Fires evaluated:  (r1 k1 m1 k2)
+
+-------------------------------------------------------
+               Report for Generation 49
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_or TB true true BUI integer_+ BUI integer_% TB 2 true integer_% TB NT WS NBD WS WS TB 1 1 TB 1 WS WS WS)
+Best program: (boolean_and boolean_or TB true true BUI integer_+ BUI integer_% TB 2 true integer_% TB NT WS NBD WS WS TB 1 1 TB 1 WS WS WS)
+Best total error: 9447
+Total number of cells: 26068
+Best percent error: 0.36239836
+Fires evaluated:  (k1 g2 m2 m1)
+
+-------------------------------------------------------
+               Report for Generation 50
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_or boolean_or boolean_or true true integer_* BUI integer_% 2 TB TB 1 TB NT NBD exec_if TB 1 close integer_= 1 NBD NBD integer_+ boolean_=)
+Best program: (boolean_and boolean_or boolean_or boolean_or true true integer_* BUI integer_% 2 TB TB 1 TB NT NBD exec_if (TB 1) (integer_= 1 NBD NBD integer_+ boolean_=))
+Best total error: 7341
+Total number of cells: 23736
+Best percent error: 0.30927706
+Fires evaluated:  (m1 k2 m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 51
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_or boolean_or boolean_or true true integer_* integer_% integer_% TB TB true 1 TB NT WS exec_if TB 1 close integer_= 1 NBD NBD integer_+ boolean_=)
+Best program: (boolean_and boolean_or boolean_or boolean_or true true integer_* integer_% integer_% TB TB true 1 TB NT WS exec_if (TB 1) (integer_= 1 NBD NBD integer_+ boolean_=))
+Best total error: 8007
+Total number of cells: 22148
+Best percent error: 0.3615225
+Fires evaluated:  (m2 m1 g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 52
+-------------------------------------------------------
+Best plushy: (boolean_and false NT boolean_or true true integer_+ BUI integer_% TB 2 TB 1 TB NT TB exec_if integer_= WS integer_= WS 1 NBD NBD close boolean_=)
+Best program: (boolean_and false NT boolean_or true true integer_+ BUI integer_% TB 2 TB 1 TB NT TB exec_if (integer_= WS integer_= WS 1 NBD NBD) (boolean_=))
+Best total error: 9447
+Total number of cells: 26068
+Best percent error: 0.36239836
+Fires evaluated:  (g2 k1 m2 m1)
+
+-------------------------------------------------------
+               Report for Generation 53
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_or boolean_or boolean_or true true true integer_+ integer_% integer_% integer_% true true TB NT TB NT NBD NBD integer_= integer_+ WS boolean_or NBD slope boolean_not TB WS)
+Best program: (boolean_and boolean_or boolean_or boolean_or true true true integer_+ integer_% integer_% integer_% true true TB NT TB NT NBD NBD integer_= integer_+ WS boolean_or NBD slope boolean_not TB WS)
+Best total error: 8138
+Total number of cells: 25004
+Best percent error: 0.3254679
+Fires evaluated:  (k1 r1 k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 54
+-------------------------------------------------------
+Best plushy: (boolean_or integer_= true true true BUI BUI 2 TB TB 1 TB TB NT NBD integer_= 1 boolean_or integer_= 1 NBD NBD boolean_= boolean_=)
+Best program: (boolean_or integer_= true true true BUI BUI 2 TB TB 1 TB TB NT NBD integer_= 1 boolean_or integer_= 1 NBD NBD boolean_= boolean_=)
+Best total error: 8961
+Total number of cells: 25392
+Best percent error: 0.35290644
+Fires evaluated:  (m1 k1 g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 55
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_or boolean_or true true BUI integer_+ integer_% TB true 1 TB TB NT WS NBD NBD 1 boolean_or WS TB boolean_or NBD WS 1 TB WS)
+Best program: (boolean_and boolean_or boolean_or true true BUI integer_+ integer_% TB true 1 TB TB NT WS NBD NBD 1 boolean_or WS TB boolean_or NBD WS 1 TB WS)
+Best total error: 9114
+Total number of cells: 29468
+Best percent error: 0.30928466
+Fires evaluated:  (g2 r1 k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 56
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_or boolean_or boolean_or true integer_* true integer_* BUI TB 2 TB TB TB NT TB NT NT WS boolean_or TB 1 boolean_or slope 1 1 :split NBD integer_+)
+Best program: (boolean_and boolean_or boolean_or boolean_or true integer_* true integer_* BUI TB 2 TB TB TB NT TB NT NT WS boolean_or TB 1 boolean_or slope 1 1 :split NBD integer_+)
+Best total error: 7341
+Total number of cells: 23736
+Best percent error: 0.30927706
+Fires evaluated:  (k2 k1 m1 m2)
+
+-------------------------------------------------------
+               Report for Generation 57
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_or false integer_+ true integer_* TB integer_* integer_% BUI 2 true true exec_if 1 close integer_= NT 1 NBD integer_+ 1 boolean_or NBD WS 1 integer_+)
+Best program: (boolean_and boolean_or false integer_+ true integer_* TB integer_* integer_% BUI 2 true true exec_if (1) (integer_= NT 1 NBD integer_+ 1 boolean_or NBD WS 1 integer_+))
+Best total error: 10244
+Total number of cells: 27336
+Best percent error: 0.37474394
+Fires evaluated:  (m2 r1 k1 g2)
+
+-------------------------------------------------------
+               Report for Generation 58
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_or boolean_or 2 true true integer_* true true TB 2 TB TB NT true true NT exec_if NT 1 exec_if NBD boolean_= WS 1 exec_dup NBD NBD boolean_=)
+Best program: (boolean_and boolean_or boolean_or 2 true true integer_* true true TB 2 TB TB NT true true NT exec_if (NT 1 exec_if (NBD boolean_= WS 1 exec_dup (NBD NBD boolean_=)) ()) ())
+Best total error: 9600
+Total number of cells: 30144
+Best percent error: 0.31847134
+Fires evaluated:  (k2 k1 m2 g2)
+

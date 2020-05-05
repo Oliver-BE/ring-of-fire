@@ -159,3 +159,53 @@ Total number of cells: 12284
 Best percent error: 0.26619995
 Fires evaluated:  (k2 m2)
 
+-------------------------------------------------------
+               Report for Generation 16
+-------------------------------------------------------
+Best plushy: (BUI true FWI FWI NT exec_if false exec_dup exec_if exec_dup exec_dup integer_+ WD FWI integer_+ integer_+ TB BUI NBD)
+Best program: (BUI true FWI FWI NT exec_if (false exec_dup (exec_if (exec_dup (exec_dup (integer_+ WD FWI integer_+ integer_+ TB BUI NBD))) ())) ())
+Best total error: 4093
+Total number of cells: 12672
+Best percent error: 0.32299557
+Fires evaluated:  (m1 g2)
+
+-------------------------------------------------------
+               Report for Generation 17
+-------------------------------------------------------
+Best plushy: (BUI true FWI FWI WS NT 1 FWI exec_if exec_dup exec_if exec_dup exec_dup 1 boolean_= WD false integer_+ BUI integer_- NBD close)
+Best program: (BUI true FWI FWI WS NT 1 FWI exec_if (exec_dup (exec_if (exec_dup (exec_dup (1 boolean_= WD false integer_+ BUI integer_- NBD))) ())) ())
+Best total error: 4071
+Total number of cells: 11452
+Best percent error: 0.35548377
+Fires evaluated:  (m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 18
+-------------------------------------------------------
+Best plushy: (BUI true FWI FWI NT integer_* FWI exec_dup exec_if exec_dup exec_dup integer_+ WD exec_dup exec_dup WD BUI BUI TB)
+Best program: (BUI true FWI FWI NT integer_* FWI exec_dup (exec_if (exec_dup (exec_dup (integer_+ WD exec_dup (exec_dup (WD BUI BUI TB))))) ()))
+Best total error: 5354
+Total number of cells: 13396
+Best percent error: 0.39967155
+Fires evaluated:  (k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 19
+-------------------------------------------------------
+Best plushy: (BUI true FWI FWI NT integer_* FWI exec_dup exec_if exec_dup exec_dup exec_dup exec_dup WD BUI BUI TB)
+Best program: (BUI true FWI FWI NT integer_* FWI exec_dup (exec_if (exec_dup (exec_dup (exec_dup (exec_dup (WD BUI BUI TB))))) ()))
+Best total error: 6330
+Total number of cells: 17860
+Best percent error: 0.35442328
+Fires evaluated:  (k1 g2)
+
+-------------------------------------------------------
+               Report for Generation 20
+-------------------------------------------------------
+Best plushy: (BUI true FWI FWI NT integer_* false exec_dup exec_if exec_dup exec_dup integer_+ WD exec_dup integer_+ WD BUI NBD)
+Best program: (BUI true FWI FWI NT integer_* false exec_dup (exec_if (exec_dup (exec_dup (integer_+ WD exec_dup (integer_+ WD BUI NBD)))) ()))
+Best total error: 4071
+Total number of cells: 11452
+Best percent error: 0.35548377
+Fires evaluated:  (k1 m1)
+

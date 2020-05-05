@@ -2559,3 +2559,3473 @@ Total number of cells: 9540
 Best percent error: 0.33291405
 Fires evaluated:  (g2)
 
+-------------------------------------------------------
+               Report for Generation 256
+-------------------------------------------------------
+Best plushy: (integer_+ ISI NT 2 true true :split :split true exec_dup exec_dup close)
+Best program: (integer_+ ISI NT 2 true true :split :split true exec_dup (exec_dup ()))
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 257
+-------------------------------------------------------
+Best plushy: (integer_+ ISI NT true true true exec_dup :split BUI exec_dup exec_dup close)
+Best program: (integer_+ ISI NT true true true exec_dup (:split BUI exec_dup (exec_dup ())))
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 258
+-------------------------------------------------------
+Best plushy: (integer_+ NBD 2 true 2 :split exec_dup :split BUI boolean_or boolean_or close)
+Best program: (integer_+ NBD 2 true 2 :split exec_dup (:split BUI boolean_or boolean_or))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 259
+-------------------------------------------------------
+Best plushy: (integer_+ NT true 2 true :split close true BUI BUI BUI boolean_or)
+Best program: (integer_+ NT true 2 true :split true BUI BUI BUI boolean_or)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 260
+-------------------------------------------------------
+Best plushy: (integer_+ ISI NT 2 true :split :split :split boolean_or boolean_or)
+Best program: (integer_+ ISI NT 2 true :split :split :split boolean_or boolean_or)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 261
+-------------------------------------------------------
+Best plushy: (integer_+ ISI NT integer_* true 2 :split :split exec_dup boolean_or)
+Best program: (integer_+ ISI NT integer_* true 2 :split :split exec_dup (boolean_or))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 262
+-------------------------------------------------------
+Best plushy: (integer_+ ISI NT true 2 2 :split :split true BUI close close)
+Best program: (integer_+ ISI NT true 2 2 :split :split true BUI)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 263
+-------------------------------------------------------
+Best plushy: (integer_+ ISI NT true 2 2 :split :split true BUI close close)
+Best program: (integer_+ ISI NT true 2 2 :split :split true BUI)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 264
+-------------------------------------------------------
+Best plushy: (integer_+ NT NBD true 2 2 :split :split true BUI exec_dup)
+Best program: (integer_+ NT NBD true 2 2 :split :split true BUI exec_dup ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 265
+-------------------------------------------------------
+Best plushy: (integer_+ ISI NBD true 2 2 :split :split BUI BUI close integer_= close)
+Best program: (integer_+ ISI NBD true 2 2 :split :split BUI BUI integer_=)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 266
+-------------------------------------------------------
+Best plushy: (integer_+ NT ISI NT true :split true :split BUI exec_dup exec_dup NT BUI)
+Best program: (integer_+ NT ISI NT true :split true :split BUI exec_dup (exec_dup (NT BUI)))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 267
+-------------------------------------------------------
+Best plushy: (integer_+ 2 integer_* NT true :split 0 :split BUI exec_dup close BUI)
+Best program: (integer_+ 2 integer_* NT true :split 0 :split BUI exec_dup () BUI)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 268
+-------------------------------------------------------
+Best plushy: (integer_+ NT ISI NT true :split 0 :split BUI exec_dup exec_dup NT close close)
+Best program: (integer_+ NT ISI NT true :split 0 :split BUI exec_dup (exec_dup (NT)))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 269
+-------------------------------------------------------
+Best plushy: (integer_+ ISI ISI true 2 :split ISI :split :split BUI NT close)
+Best program: (integer_+ ISI ISI true 2 :split ISI :split :split BUI NT)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 270
+-------------------------------------------------------
+Best plushy: (integer_+ 2 integer_* NT true :split :split BUI exec_dup close close)
+Best program: (integer_+ 2 integer_* NT true :split :split BUI exec_dup ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 271
+-------------------------------------------------------
+Best plushy: (integer_+ NT ISI 2 2 true :split ISI BUI :split BUI close)
+Best program: (integer_+ NT ISI 2 2 true :split ISI BUI :split BUI)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 272
+-------------------------------------------------------
+Best plushy: (integer_+ NT ISI NT 2 true :split exec_dup BUI NT close close)
+Best program: (integer_+ NT ISI NT 2 true :split exec_dup (BUI NT))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 273
+-------------------------------------------------------
+Best plushy: (integer_+ NT NT NT true true :split :split NT BUI close close slope close)
+Best program: (integer_+ NT NT NT true true :split :split NT BUI slope)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 274
+-------------------------------------------------------
+Best plushy: (2 NT NT true BUI NT BUI close close close)
+Best program: (2 NT NT true BUI NT BUI)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 275
+-------------------------------------------------------
+Best plushy: (integer_+ 2 NT true 2 :split true :split close BUI close close)
+Best program: (integer_+ 2 NT true 2 :split true :split BUI)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 276
+-------------------------------------------------------
+Best plushy: (integer_+ ISI NT true 2 true true NT close BUI close close close)
+Best program: (integer_+ ISI NT true 2 true true NT BUI)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 277
+-------------------------------------------------------
+Best plushy: (integer_+ true :split :split :split close close close)
+Best program: (integer_+ true :split :split :split)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 278
+-------------------------------------------------------
+Best plushy: (integer_+ true :split :split :split close close)
+Best program: (integer_+ true :split :split :split)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 279
+-------------------------------------------------------
+Best plushy: (integer_+ true :split :split :split WD close close close)
+Best program: (integer_+ true :split :split :split WD)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 280
+-------------------------------------------------------
+Best plushy: (integer_+ true :split :split :split WS close close close)
+Best program: (integer_+ true :split :split :split WS)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 281
+-------------------------------------------------------
+Best plushy: (integer_+ true :split :split :split close close close close)
+Best program: (integer_+ true :split :split :split)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 282
+-------------------------------------------------------
+Best plushy: (2 integer_+ true :split :split :split close BUI close close close)
+Best program: (2 integer_+ true :split :split :split BUI)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 283
+-------------------------------------------------------
+Best plushy: (2 NT true true close :split true true BUI BUI close)
+Best program: (2 NT true true :split true true BUI BUI)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 284
+-------------------------------------------------------
+Best plushy: (integer_+ true :split :split :split WS close close)
+Best program: (integer_+ true :split :split :split WS)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 285
+-------------------------------------------------------
+Best plushy: (integer_+ true :split :split integer_= :split close close)
+Best program: (integer_+ true :split :split integer_= :split)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 286
+-------------------------------------------------------
+Best plushy: (integer_+ true :split :split close :split true close true)
+Best program: (integer_+ true :split :split :split true true)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 287
+-------------------------------------------------------
+Best plushy: (integer_+ true true :split close BUI true true BUI BUI)
+Best program: (integer_+ true true :split BUI true true BUI BUI)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 288
+-------------------------------------------------------
+Best plushy: (integer_+ true true true :split BUI true true BUI BUI)
+Best program: (integer_+ true true true :split BUI true true BUI BUI)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 289
+-------------------------------------------------------
+Best plushy: (integer_+ true true true :split BUI true true BUI BUI)
+Best program: (integer_+ true true true :split BUI true true BUI BUI)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 290
+-------------------------------------------------------
+Best plushy: (true :split :split close WS true true)
+Best program: (true :split :split WS true true)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 291
+-------------------------------------------------------
+Best plushy: (ISI integer_+ true true true :split BUI true close true BUI)
+Best program: (ISI integer_+ true true true :split BUI true true BUI)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 292
+-------------------------------------------------------
+Best plushy: (integer_+ true :split close WS WS true BUI)
+Best program: (integer_+ true :split WS WS true BUI)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 293
+-------------------------------------------------------
+Best plushy: (integer_+ true :split close WS WS true)
+Best program: (integer_+ true :split WS WS true)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 294
+-------------------------------------------------------
+Best plushy: (ISI integer_+ NT true close WS :split BUI true true)
+Best program: (ISI integer_+ NT true WS :split BUI true true)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 295
+-------------------------------------------------------
+Best plushy: (ISI integer_+ NT true close WS true BUI true)
+Best program: (ISI integer_+ NT true WS true BUI true)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 296
+-------------------------------------------------------
+Best plushy: (integer_+ true :split true WS BUI :split true)
+Best program: (integer_+ true :split true WS BUI :split true)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 297
+-------------------------------------------------------
+Best plushy: (integer_+ true :split close close BUI :split true true BUI)
+Best program: (integer_+ true :split BUI :split true true BUI)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 298
+-------------------------------------------------------
+Best plushy: (integer_+ true close close close BUI true true true)
+Best program: (integer_+ true BUI true true true)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 299
+-------------------------------------------------------
+Best plushy: (ISI true NT true close BUI BUI true true)
+Best program: (ISI true NT true BUI BUI true true)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 300
+-------------------------------------------------------
+Best plushy: (integer_+ true :split close close BUI BUI true)
+Best program: (integer_+ true :split BUI BUI true)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 301
+-------------------------------------------------------
+Best plushy: (ISI true :split true WS BUI :split true boolean_=)
+Best program: (ISI true :split true WS BUI :split true boolean_=)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 302
+-------------------------------------------------------
+Best plushy: (integer_+ true :split true WS BUI :split integer_+ 0 boolean_=)
+Best program: (integer_+ true :split true WS BUI :split integer_+ 0 boolean_=)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 303
+-------------------------------------------------------
+Best plushy: (ISI true :split true WS BUI true boolean_=)
+Best program: (ISI true :split true WS BUI true boolean_=)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 304
+-------------------------------------------------------
+Best plushy: (ISI true :split true BUI BUI :split true)
+Best program: (ISI true :split true BUI BUI :split true)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 305
+-------------------------------------------------------
+Best plushy: (ISI NBD true :split 0 WS BUI true FWI boolean_= boolean_=)
+Best program: (ISI NBD true :split 0 WS BUI true FWI boolean_= boolean_=)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 306
+-------------------------------------------------------
+Best plushy: (integer_+ true :split close true WS BUI boolean_=)
+Best program: (integer_+ true :split true WS BUI boolean_=)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 307
+-------------------------------------------------------
+Best plushy: (ISI true :split true true WS true 0)
+Best program: (ISI true :split true true WS true 0)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 308
+-------------------------------------------------------
+Best plushy: (ISI true :split true true WS true 0 NT)
+Best program: (ISI true :split true true WS true 0 NT)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 309
+-------------------------------------------------------
+Best plushy: (ISI true :split true true WS true 0)
+Best program: (ISI true :split true true WS true 0)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 310
+-------------------------------------------------------
+Best plushy: (ISI true :split true true BUI true 0)
+Best program: (ISI true :split true true BUI true 0)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 311
+-------------------------------------------------------
+Best plushy: (ISI true :split true true WS true 0 NT)
+Best program: (ISI true :split true true WS true 0 NT)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 312
+-------------------------------------------------------
+Best plushy: (ISI true :split true true WS true NT)
+Best program: (ISI true :split true true WS true NT)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 313
+-------------------------------------------------------
+Best plushy: (ISI true :split :split true true true true 0)
+Best program: (ISI true :split :split true true true true 0)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 314
+-------------------------------------------------------
+Best plushy: (ISI WD true :split :split true true true true 0)
+Best program: (ISI WD true :split :split true true true true 0)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 315
+-------------------------------------------------------
+Best plushy: (0 ISI close true :split true 0 NBD)
+Best program: (0 ISI true :split true 0 NBD)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 316
+-------------------------------------------------------
+Best plushy: (1 WS true TB true true)
+Best program: (1 WS true TB true true)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 317
+-------------------------------------------------------
+Best plushy: (1 WS true TB true true)
+Best program: (1 WS true TB true true)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 318
+-------------------------------------------------------
+Best plushy: (0 WD true true :split true true true 0)
+Best program: (0 WD true true :split true true true 0)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 319
+-------------------------------------------------------
+Best plushy: (1 WS true TB :split 0)
+Best program: (1 WS true TB :split 0)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 320
+-------------------------------------------------------
+Best plushy: (1 WS true TB true)
+Best program: (1 WS true TB true)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 321
+-------------------------------------------------------
+Best plushy: (0 WD true integer_= true true true true 0)
+Best program: (0 WD true integer_= true true true true 0)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 322
+-------------------------------------------------------
+Best plushy: (0 WS true true true true 0)
+Best program: (0 WS true true true true 0)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 323
+-------------------------------------------------------
+Best plushy: (0 WS true true true true 0)
+Best program: (0 WS true true true true 0)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 324
+-------------------------------------------------------
+Best plushy: (0 WS true true true true 0)
+Best program: (0 WS true true true true 0)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 325
+-------------------------------------------------------
+Best plushy: (0 WS true true true true 0)
+Best program: (0 WS true true true true 0)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 326
+-------------------------------------------------------
+Best plushy: (0 WS true true true true 0)
+Best program: (0 WS true true true true 0)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 327
+-------------------------------------------------------
+Best plushy: (0 WS true true true true 0 NBD 0)
+Best program: (0 WS true true true true 0 NBD 0)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 328
+-------------------------------------------------------
+Best plushy: (ISI WS true true true true 0 NBD 0)
+Best program: (ISI WS true true true true 0 NBD 0)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 329
+-------------------------------------------------------
+Best plushy: (0 WS true true true 0 NBD boolean_not)
+Best program: (0 WS true true true 0 NBD boolean_not)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 330
+-------------------------------------------------------
+Best plushy: (ISI 0 WS true true true 0 NBD 0)
+Best program: (ISI 0 WS true true true 0 NBD 0)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 331
+-------------------------------------------------------
+Best plushy: (ISI 0 WS true true true 0 NBD 0)
+Best program: (ISI 0 WS true true true 0 NBD 0)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 332
+-------------------------------------------------------
+Best plushy: (0 WS true true true 0 0 NBD 0)
+Best program: (0 WS true true true 0 0 NBD 0)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 333
+-------------------------------------------------------
+Best plushy: (0 WS true true 0 0 boolean_not)
+Best program: (0 WS true true 0 0 boolean_not)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 334
+-------------------------------------------------------
+Best plushy: (0 WS true true 0 0 NBD NBD)
+Best program: (0 WS true true 0 0 NBD NBD)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 335
+-------------------------------------------------------
+Best plushy: (WS 0 WS true true 0 boolean_not NBD 2 0)
+Best program: (WS 0 WS true true 0 boolean_not NBD 2 0)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 336
+-------------------------------------------------------
+Best plushy: (WS WS true 0 0 boolean_not)
+Best program: (WS WS true 0 0 boolean_not)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 337
+-------------------------------------------------------
+Best plushy: (WS WS true 0 true 0)
+Best program: (WS WS true 0 true 0)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 338
+-------------------------------------------------------
+Best plushy: (WS true true true true 0 NBD NBD)
+Best program: (WS true true true true 0 NBD NBD)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 339
+-------------------------------------------------------
+Best plushy: (0 WS true 0 true 0)
+Best program: (0 WS true 0 true 0)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 340
+-------------------------------------------------------
+Best plushy: (WS 0 true 0 true 0 boolean_not 0)
+Best program: (WS 0 true 0 true 0 boolean_not 0)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 341
+-------------------------------------------------------
+Best plushy: (0 WS true 0 true 0)
+Best program: (0 WS true 0 true 0)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 342
+-------------------------------------------------------
+Best plushy: (WS WS true true true 0 FWI 0)
+Best program: (WS WS true true true 0 FWI 0)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 343
+-------------------------------------------------------
+Best plushy: (WS 0 true 0 true true 0 boolean_= 0 0)
+Best program: (WS 0 true 0 true true 0 boolean_= 0 0)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 344
+-------------------------------------------------------
+Best plushy: (WS 0 integer_* true true true FWI 0)
+Best program: (WS 0 integer_* true true true FWI 0)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 345
+-------------------------------------------------------
+Best plushy: (0 WS true true true true 0 0)
+Best program: (0 WS true true true true 0 0)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 346
+-------------------------------------------------------
+Best plushy: (WS WS true 0 true true 0 0 0)
+Best program: (WS WS true 0 true true 0 0 0)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 347
+-------------------------------------------------------
+Best plushy: (0 WS integer_* true true boolean_not boolean_not)
+Best program: (0 WS integer_* true true boolean_not boolean_not)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 348
+-------------------------------------------------------
+Best plushy: (WS WS true TB 0 true true 0 0)
+Best program: (WS WS true TB 0 true true 0 0)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 349
+-------------------------------------------------------
+Best plushy: (WS WS true TB 0 true true 0 0)
+Best program: (WS WS true TB 0 true true 0 0)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 350
+-------------------------------------------------------
+Best plushy: (WS integer_+ true FWI boolean_and true NBD FWI)
+Best program: (WS integer_+ true FWI boolean_and true NBD FWI)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 351
+-------------------------------------------------------
+Best plushy: (WS WS true 0 boolean_and true NBD)
+Best program: (WS WS true 0 boolean_and true NBD)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 352
+-------------------------------------------------------
+Best plushy: (WS WS true TB 0 true true 0 0)
+Best program: (WS WS true TB 0 true true 0 0)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 353
+-------------------------------------------------------
+Best plushy: (0 integer_* true true boolean_not)
+Best program: (0 integer_* true true boolean_not)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 354
+-------------------------------------------------------
+Best plushy: (WS true 0 true 0 true NBD)
+Best program: (WS true 0 true 0 true NBD)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 355
+-------------------------------------------------------
+Best plushy: (WS WS 0 true 0 true NBD)
+Best program: (WS WS 0 true 0 true NBD)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 356
+-------------------------------------------------------
+Best plushy: (0 true integer_* true true 0)
+Best program: (0 true integer_* true true 0)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 357
+-------------------------------------------------------
+Best plushy: (0 true integer_* true true 0)
+Best program: (0 true integer_* true true 0)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 358
+-------------------------------------------------------
+Best plushy: (0 true integer_* 0 true true)
+Best program: (0 true integer_* 0 true true)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 359
+-------------------------------------------------------
+Best plushy: (WS true 0 true true 0)
+Best program: (WS true 0 true true 0)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 360
+-------------------------------------------------------
+Best plushy: (0 true integer_* true true 0)
+Best program: (0 true integer_* true true 0)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 361
+-------------------------------------------------------
+Best plushy: (WS true 0 true true 0)
+Best program: (WS true 0 true true 0)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 362
+-------------------------------------------------------
+Best plushy: (0 WS 0 true true 0 0)
+Best program: (0 WS 0 true true 0 0)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 363
+-------------------------------------------------------
+Best plushy: (0 true integer_* true true NBD 0)
+Best program: (0 true integer_* true true NBD 0)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 364
+-------------------------------------------------------
+Best plushy: (0 true integer_* true true 0)
+Best program: (0 true integer_* true true 0)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 365
+-------------------------------------------------------
+Best plushy: (0 true integer_* true true 0)
+Best program: (0 true integer_* true true 0)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 366
+-------------------------------------------------------
+Best plushy: (0 true integer_* true true 0)
+Best program: (0 true integer_* true true 0)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 367
+-------------------------------------------------------
+Best plushy: (0 true true 0)
+Best program: (0 true true 0)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 368
+-------------------------------------------------------
+Best plushy: (0 true integer_* BUI true true NBD)
+Best program: (0 true integer_* BUI true true NBD)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 369
+-------------------------------------------------------
+Best plushy: (0 true integer_* true true 0 0)
+Best program: (0 true integer_* true true 0 0)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 370
+-------------------------------------------------------
+Best plushy: (0 true integer_* true true exec_if NBD)
+Best program: (0 true integer_* true true exec_if (NBD) ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 371
+-------------------------------------------------------
+Best plushy: (0 true integer_* true true 0 0)
+Best program: (0 true integer_* true true 0 0)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 372
+-------------------------------------------------------
+Best plushy: (0 true integer_* true true exec_if)
+Best program: (0 true integer_* true true exec_if () ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 373
+-------------------------------------------------------
+Best plushy: (0 true integer_* BUI NBD exec_if)
+Best program: (0 true integer_* BUI NBD exec_if () ())
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 374
+-------------------------------------------------------
+Best plushy: (0 true integer_* true exec_if NT)
+Best program: (0 true integer_* true exec_if (NT) ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 375
+-------------------------------------------------------
+Best plushy: (boolean_or true integer_* integer_+ boolean_= BUI 0)
+Best program: (boolean_or true integer_* integer_+ boolean_= BUI 0)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 376
+-------------------------------------------------------
+Best plushy: (true true integer_*)
+Best program: (true true integer_*)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 377
+-------------------------------------------------------
+Best plushy: (0 true integer_*)
+Best program: (0 true integer_*)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 378
+-------------------------------------------------------
+Best plushy: (0 true true true exec_if)
+Best program: (0 true true true exec_if () ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 379
+-------------------------------------------------------
+Best plushy: (0 true true true NBD exec_if)
+Best program: (0 true true true NBD exec_if () ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 380
+-------------------------------------------------------
+Best plushy: (0 true integer_* true NBD NBD)
+Best program: (0 true integer_* true NBD NBD)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 381
+-------------------------------------------------------
+Best plushy: (0 true integer_* true NBD NBD)
+Best program: (0 true integer_* true NBD NBD)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 382
+-------------------------------------------------------
+Best plushy: (0 true true true exec_if)
+Best program: (0 true true true exec_if () ())
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 383
+-------------------------------------------------------
+Best plushy: (0 true true true exec_if)
+Best program: (0 true true true exec_if () ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 384
+-------------------------------------------------------
+Best plushy: (0 true true true exec_if)
+Best program: (0 true true true exec_if () ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 385
+-------------------------------------------------------
+Best plushy: (0 true integer_* true exec_if)
+Best program: (0 true integer_* true exec_if () ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 386
+-------------------------------------------------------
+Best plushy: (0 true integer_* true exec_if)
+Best program: (0 true integer_* true exec_if () ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 387
+-------------------------------------------------------
+Best plushy: (0 true integer_* true exec_if)
+Best program: (0 true integer_* true exec_if () ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 388
+-------------------------------------------------------
+Best plushy: (0 true NBD true)
+Best program: (0 true NBD true)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 389
+-------------------------------------------------------
+Best plushy: (0 true NBD NBD)
+Best program: (0 true NBD NBD)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 390
+-------------------------------------------------------
+Best plushy: (0 true NBD true)
+Best program: (0 true NBD true)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 391
+-------------------------------------------------------
+Best plushy: (0 true NBD true NBD)
+Best program: (0 true NBD true NBD)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 392
+-------------------------------------------------------
+Best plushy: (0 true integer_* true)
+Best program: (0 true integer_* true)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 393
+-------------------------------------------------------
+Best plushy: (0 true integer_* true)
+Best program: (0 true integer_* true)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 394
+-------------------------------------------------------
+Best plushy: (0 true NBD true)
+Best program: (0 true NBD true)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 395
+-------------------------------------------------------
+Best plushy: (0 true NBD true NBD)
+Best program: (0 true NBD true NBD)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 396
+-------------------------------------------------------
+Best plushy: (true integer_* true)
+Best program: (true integer_* true)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 397
+-------------------------------------------------------
+Best plushy: (true 1 true true)
+Best program: (true 1 true true)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 398
+-------------------------------------------------------
+Best plushy: (0 true true NBD)
+Best program: (0 true true NBD)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 399
+-------------------------------------------------------
+Best plushy: (true 1 true true boolean_or)
+Best program: (true 1 true true boolean_or)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 400
+-------------------------------------------------------
+Best plushy: (0 true true NBD)
+Best program: (0 true true NBD)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 401
+-------------------------------------------------------
+Best plushy: (true 1 true true boolean_or)
+Best program: (true 1 true true boolean_or)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 402
+-------------------------------------------------------
+Best plushy: (true 1 true true)
+Best program: (true 1 true true)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 403
+-------------------------------------------------------
+Best plushy: (true 1 true true)
+Best program: (true 1 true true)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 404
+-------------------------------------------------------
+Best plushy: (true 1 true true)
+Best program: (true 1 true true)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 405
+-------------------------------------------------------
+Best plushy: (true 1 true true)
+Best program: (true 1 true true)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 406
+-------------------------------------------------------
+Best plushy: (true 1 true true)
+Best program: (true 1 true true)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 407
+-------------------------------------------------------
+Best plushy: (true 1 true)
+Best program: (true 1 true)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 408
+-------------------------------------------------------
+Best plushy: (true 1 NT true true)
+Best program: (true 1 NT true true)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 409
+-------------------------------------------------------
+Best plushy: (0 true true)
+Best program: (0 true true)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 410
+-------------------------------------------------------
+Best plushy: (0 true true)
+Best program: (0 true true)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 411
+-------------------------------------------------------
+Best plushy: (true true true true true)
+Best program: (true true true true true)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 412
+-------------------------------------------------------
+Best plushy: (true true true true)
+Best program: (true true true true)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 413
+-------------------------------------------------------
+Best plushy: (true true true)
+Best program: (true true true)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 414
+-------------------------------------------------------
+Best plushy: (1 true true)
+Best program: (1 true true)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 415
+-------------------------------------------------------
+Best plushy: (1 true true)
+Best program: (1 true true)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 416
+-------------------------------------------------------
+Best plushy: (true 1 :split true)
+Best program: (true 1 :split true)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 417
+-------------------------------------------------------
+Best plushy: (true true true)
+Best program: (true true true)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 418
+-------------------------------------------------------
+Best plushy: (true 1 :split)
+Best program: (true 1 :split)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 419
+-------------------------------------------------------
+Best plushy: (1 true true)
+Best program: (1 true true)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 420
+-------------------------------------------------------
+Best plushy: (1 true true)
+Best program: (1 true true)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 421
+-------------------------------------------------------
+Best plushy: (1 true slope true)
+Best program: (1 true slope true)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 422
+-------------------------------------------------------
+Best plushy: (1 true :split)
+Best program: (1 true :split)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 423
+-------------------------------------------------------
+Best plushy: (true 1 :split)
+Best program: (true 1 :split)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 424
+-------------------------------------------------------
+Best plushy: (true 1 :split)
+Best program: (true 1 :split)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 425
+-------------------------------------------------------
+Best plushy: (true 1 :split)
+Best program: (true 1 :split)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 426
+-------------------------------------------------------
+Best plushy: (true 1 :split)
+Best program: (true 1 :split)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 427
+-------------------------------------------------------
+Best plushy: (1 true :split)
+Best program: (1 true :split)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 428
+-------------------------------------------------------
+Best plushy: (integer_- true 1 :split)
+Best program: (integer_- true 1 :split)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 429
+-------------------------------------------------------
+Best plushy: (integer_- close true :split)
+Best program: (integer_- true :split)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 430
+-------------------------------------------------------
+Best plushy: (integer_- true 1 :split)
+Best program: (integer_- true 1 :split)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 431
+-------------------------------------------------------
+Best plushy: (1 true 1)
+Best program: (1 true 1)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 432
+-------------------------------------------------------
+Best plushy: (true true :split :split)
+Best program: (true true :split :split)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 433
+-------------------------------------------------------
+Best plushy: (true 1 :split)
+Best program: (true 1 :split)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 434
+-------------------------------------------------------
+Best plushy: (true 1 :split)
+Best program: (true 1 :split)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 435
+-------------------------------------------------------
+Best plushy: (integer_- true :split)
+Best program: (integer_- true :split)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 436
+-------------------------------------------------------
+Best plushy: (integer_- true :split)
+Best program: (integer_- true :split)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 437
+-------------------------------------------------------
+Best plushy: (true)
+Best program: (true)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 438
+-------------------------------------------------------
+Best plushy: (integer_- true :split)
+Best program: (integer_- true :split)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 439
+-------------------------------------------------------
+Best plushy: (integer_- true :split boolean_=)
+Best program: (integer_- true :split boolean_=)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 440
+-------------------------------------------------------
+Best plushy: (true :split)
+Best program: (true :split)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 441
+-------------------------------------------------------
+Best plushy: (integer_- true :split)
+Best program: (integer_- true :split)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 442
+-------------------------------------------------------
+Best plushy: (true true)
+Best program: (true true)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 443
+-------------------------------------------------------
+Best plushy: (true true)
+Best program: (true true)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 444
+-------------------------------------------------------
+Best plushy: (true true)
+Best program: (true true)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 445
+-------------------------------------------------------
+Best plushy: (true true)
+Best program: (true true)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 446
+-------------------------------------------------------
+Best plushy: (integer_- true :split)
+Best program: (integer_- true :split)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 447
+-------------------------------------------------------
+Best plushy: (true true)
+Best program: (true true)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 448
+-------------------------------------------------------
+Best plushy: (true true)
+Best program: (true true)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 449
+-------------------------------------------------------
+Best plushy: (true true)
+Best program: (true true)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 450
+-------------------------------------------------------
+Best plushy: (integer_- true :split integer_%)
+Best program: (integer_- true :split integer_%)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 451
+-------------------------------------------------------
+Best plushy: (integer_- true true)
+Best program: (integer_- true true)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 452
+-------------------------------------------------------
+Best plushy: (integer_- true true :split)
+Best program: (integer_- true true :split)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 453
+-------------------------------------------------------
+Best plushy: (integer_- true true :split)
+Best program: (integer_- true true :split)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 454
+-------------------------------------------------------
+Best plushy: (integer_- true :split)
+Best program: (integer_- true :split)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 455
+-------------------------------------------------------
+Best plushy: (integer_- true :split)
+Best program: (integer_- true :split)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 456
+-------------------------------------------------------
+Best plushy: (integer_- true :split)
+Best program: (integer_- true :split)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 457
+-------------------------------------------------------
+Best plushy: (integer_- true :split)
+Best program: (integer_- true :split)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 458
+-------------------------------------------------------
+Best plushy: (integer_- true :split)
+Best program: (integer_- true :split)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 459
+-------------------------------------------------------
+Best plushy: (integer_- true :split)
+Best program: (integer_- true :split)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 460
+-------------------------------------------------------
+Best plushy: (false true slope)
+Best program: (false true slope)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 461
+-------------------------------------------------------
+Best plushy: (false true slope)
+Best program: (false true slope)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 462
+-------------------------------------------------------
+Best plushy: (integer_- true :split)
+Best program: (integer_- true :split)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 463
+-------------------------------------------------------
+Best plushy: (integer_- true :split)
+Best program: (integer_- true :split)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 464
+-------------------------------------------------------
+Best plushy: (integer_- true :split)
+Best program: (integer_- true :split)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 465
+-------------------------------------------------------
+Best plushy: (false true slope)
+Best program: (false true slope)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 466
+-------------------------------------------------------
+Best plushy: (false true slope)
+Best program: (false true slope)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 467
+-------------------------------------------------------
+Best plushy: (integer_- true :split)
+Best program: (integer_- true :split)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 468
+-------------------------------------------------------
+Best plushy: (true slope)
+Best program: (true slope)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 469
+-------------------------------------------------------
+Best plushy: (integer_- true :split)
+Best program: (integer_- true :split)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 470
+-------------------------------------------------------
+Best plushy: (false true true slope)
+Best program: (false true true slope)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 471
+-------------------------------------------------------
+Best plushy: (false true true slope)
+Best program: (false true true slope)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 472
+-------------------------------------------------------
+Best plushy: (false boolean_= true slope boolean_or)
+Best program: (false boolean_= true slope boolean_or)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 473
+-------------------------------------------------------
+Best plushy: (false boolean_= true exec_dup)
+Best program: (false boolean_= true exec_dup ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 474
+-------------------------------------------------------
+Best plushy: (false boolean_= true exec_dup)
+Best program: (false boolean_= true exec_dup ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 475
+-------------------------------------------------------
+Best plushy: (false boolean_= true exec_dup)
+Best program: (false boolean_= true exec_dup ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 476
+-------------------------------------------------------
+Best plushy: (false boolean_= true slope boolean_or)
+Best program: (false boolean_= true slope boolean_or)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 477
+-------------------------------------------------------
+Best plushy: (false boolean_= true exec_dup 2)
+Best program: (false boolean_= true exec_dup (2))
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 478
+-------------------------------------------------------
+Best plushy: (false false boolean_= true slope boolean_or)
+Best program: (false false boolean_= true slope boolean_or)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 479
+-------------------------------------------------------
+Best plushy: (false boolean_= true true exec_dup 2)
+Best program: (false boolean_= true true exec_dup (2))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 480
+-------------------------------------------------------
+Best plushy: (false true true exec_dup 2)
+Best program: (false true true exec_dup (2))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 481
+-------------------------------------------------------
+Best plushy: (false boolean_= true true 2 2)
+Best program: (false boolean_= true true 2 2)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 482
+-------------------------------------------------------
+Best plushy: (false true true exec_dup 2)
+Best program: (false true true exec_dup (2))
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 483
+-------------------------------------------------------
+Best plushy: (false true slope)
+Best program: (false true slope)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 484
+-------------------------------------------------------
+Best plushy: (false true true exec_dup)
+Best program: (false true true exec_dup ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 485
+-------------------------------------------------------
+Best plushy: (false true 2)
+Best program: (false true 2)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 486
+-------------------------------------------------------
+Best plushy: (false boolean_= true true exec_dup 2)
+Best program: (false boolean_= true true exec_dup (2))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 487
+-------------------------------------------------------
+Best plushy: (false true true exec_dup)
+Best program: (false true true exec_dup ())
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 488
+-------------------------------------------------------
+Best plushy: (false true true exec_dup)
+Best program: (false true true exec_dup ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 489
+-------------------------------------------------------
+Best plushy: (false boolean_= true true 2)
+Best program: (false boolean_= true true 2)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 490
+-------------------------------------------------------
+Best plushy: (false true true 2)
+Best program: (false true true 2)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 491
+-------------------------------------------------------
+Best plushy: (false boolean_= true true 2)
+Best program: (false boolean_= true true 2)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 492
+-------------------------------------------------------
+Best plushy: (false boolean_= true true 2)
+Best program: (false boolean_= true true 2)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 493
+-------------------------------------------------------
+Best plushy: (false boolean_= true true 2)
+Best program: (false boolean_= true true 2)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 494
+-------------------------------------------------------
+Best plushy: (false boolean_= true true 2)
+Best program: (false boolean_= true true 2)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 495
+-------------------------------------------------------
+Best plushy: (false true true 2)
+Best program: (false true true 2)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 496
+-------------------------------------------------------
+Best plushy: (false true true 2)
+Best program: (false true true 2)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 497
+-------------------------------------------------------
+Best plushy: (false boolean_= true 2 2)
+Best program: (false boolean_= true 2 2)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 498
+-------------------------------------------------------
+Best plushy: (false boolean_= true 2 2)
+Best program: (false boolean_= true 2 2)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 499
+-------------------------------------------------------
+Best plushy: (false boolean_= true 2 2)
+Best program: (false boolean_= true 2 2)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 500
+-------------------------------------------------------
+Best plushy: (false boolean_= true 1 2 2)
+Best program: (false boolean_= true 1 2 2)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 501
+-------------------------------------------------------
+Best plushy: (ISI false true true 2 2)
+Best program: (ISI false true true 2 2)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 502
+-------------------------------------------------------
+Best plushy: (ISI false true true 2 2)
+Best program: (ISI false true true 2 2)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 503
+-------------------------------------------------------
+Best plushy: (false boolean_= true 2 2)
+Best program: (false boolean_= true 2 2)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 504
+-------------------------------------------------------
+Best plushy: (ISI true true true 2 2)
+Best program: (ISI true true true 2 2)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 505
+-------------------------------------------------------
+Best plushy: (false boolean_= true 2 2 2 integer_+)
+Best program: (false boolean_= true 2 2 2 integer_+)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 506
+-------------------------------------------------------
+Best plushy: (ISI boolean_= true true 2)
+Best program: (ISI boolean_= true true 2)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 507
+-------------------------------------------------------
+Best plushy: (ISI false true true 2)
+Best program: (ISI false true true 2)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 508
+-------------------------------------------------------
+Best plushy: (integer_+ ISI true true 2)
+Best program: (integer_+ ISI true true 2)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 509
+-------------------------------------------------------
+Best plushy: (false false true true 2)
+Best program: (false false true true 2)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 510
+-------------------------------------------------------
+Best plushy: (false true true)
+Best program: (false true true)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 511
+-------------------------------------------------------
+Best plushy: (ISI false true true 2)
+Best program: (ISI false true true 2)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 512
+-------------------------------------------------------
+Best plushy: (false true true true 2)
+Best program: (false true true true 2)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 513
+-------------------------------------------------------
+Best plushy: (ISI true 1 true true 2)
+Best program: (ISI true 1 true true 2)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 514
+-------------------------------------------------------
+Best plushy: (ISI true 1 true true)
+Best program: (ISI true 1 true true)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 515
+-------------------------------------------------------
+Best plushy: (ISI true 1 true 2)
+Best program: (ISI true 1 true 2)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 516
+-------------------------------------------------------
+Best plushy: (integer_= false true true 2)
+Best program: (integer_= false true true 2)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 517
+-------------------------------------------------------
+Best plushy: (false true WD true true true 2 integer_=)
+Best program: (false true WD true true true 2 integer_=)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 518
+-------------------------------------------------------
+Best plushy: (false true true true 2 2)
+Best program: (false true true true 2 2)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 519
+-------------------------------------------------------
+Best plushy: (false true true true 2 2)
+Best program: (false true true true 2 2)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 520
+-------------------------------------------------------
+Best plushy: (integer_= true WD 2 true false 2 integer_=)
+Best program: (integer_= true WD 2 true false 2 integer_=)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 521
+-------------------------------------------------------
+Best plushy: (false true WD true true 2 2 integer_=)
+Best program: (false true WD true true 2 2 integer_=)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 522
+-------------------------------------------------------
+Best plushy: (false true WD true true 2 2 integer_=)
+Best program: (false true WD true true 2 2 integer_=)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 523
+-------------------------------------------------------
+Best plushy: (integer_= true exec_dup false 2 2 false 2)
+Best program: (integer_= true exec_dup (false 2 2 false 2))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 524
+-------------------------------------------------------
+Best plushy: (integer_= true WD :split true false integer_=)
+Best program: (integer_= true WD :split true false integer_=)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 525
+-------------------------------------------------------
+Best plushy: (integer_= true WD :split true false integer_=)
+Best program: (integer_= true WD :split true false integer_=)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 526
+-------------------------------------------------------
+Best plushy: (false true WD :split true false integer_=)
+Best program: (false true WD :split true false integer_=)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 527
+-------------------------------------------------------
+Best plushy: (integer_= true WD :split true)
+Best program: (integer_= true WD :split true)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 528
+-------------------------------------------------------
+Best plushy: (integer_= true WD :split true false)
+Best program: (integer_= true WD :split true false)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 529
+-------------------------------------------------------
+Best plushy: (integer_= true WD :split true false)
+Best program: (integer_= true WD :split true false)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 530
+-------------------------------------------------------
+Best plushy: (integer_= true WD :split true false)
+Best program: (integer_= true WD :split true false)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 531
+-------------------------------------------------------
+Best plushy: (integer_= true WD :split true false)
+Best program: (integer_= true WD :split true false)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 532
+-------------------------------------------------------
+Best plushy: (integer_= true WD :split true false)
+Best program: (integer_= true WD :split true false)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 533
+-------------------------------------------------------
+Best plushy: (integer_= TB true :split :split true)
+Best program: (integer_= TB true :split :split true)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 534
+-------------------------------------------------------
+Best plushy: (integer_= TB true :split :split true)
+Best program: (integer_= TB true :split :split true)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 535
+-------------------------------------------------------
+Best plushy: (integer_= true WD WD :split false)
+Best program: (integer_= true WD WD :split false)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 536
+-------------------------------------------------------
+Best plushy: (integer_= true TB :split true false true)
+Best program: (integer_= true TB :split true false true)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 537
+-------------------------------------------------------
+Best plushy: (integer_= true TB :split true false true)
+Best program: (integer_= true TB :split true false true)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 538
+-------------------------------------------------------
+Best plushy: (integer_= true WD true)
+Best program: (integer_= true WD true)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 539
+-------------------------------------------------------
+Best plushy: (integer_= true TB true false)
+Best program: (integer_= true TB true false)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 540
+-------------------------------------------------------
+Best plushy: (integer_= true WD :split false)
+Best program: (integer_= true WD :split false)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 541
+-------------------------------------------------------
+Best plushy: (integer_= true TB true false)
+Best program: (integer_= true TB true false)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 542
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split true)
+Best program: (integer_= true :split :split true)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 543
+-------------------------------------------------------
+Best plushy: (integer_= true :split false)
+Best program: (integer_= true :split false)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 544
+-------------------------------------------------------
+Best plushy: (integer_= TB false 1 true :split true)
+Best program: (integer_= TB false 1 true :split true)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 545
+-------------------------------------------------------
+Best plushy: (integer_= true :split false)
+Best program: (integer_= true :split false)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 546
+-------------------------------------------------------
+Best plushy: (integer_= true :split false)
+Best program: (integer_= true :split false)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 547
+-------------------------------------------------------
+Best plushy: (integer_= true :split false boolean_or)
+Best program: (integer_= true :split false boolean_or)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 548
+-------------------------------------------------------
+Best plushy: (boolean_and true true :split TB :split true)
+Best program: (boolean_and true true :split TB :split true)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 549
+-------------------------------------------------------
+Best plushy: (boolean_and integer_= true :split :split :split boolean_or :split)
+Best program: (boolean_and integer_= true :split :split :split boolean_or :split)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 550
+-------------------------------------------------------
+Best plushy: (exec_if integer_= true false :split true boolean_or)
+Best program: (exec_if (integer_= true false :split true boolean_or) ())
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 551
+-------------------------------------------------------
+Best plushy: (exec_if integer_= true false :split true boolean_or)
+Best program: (exec_if (integer_= true false :split true boolean_or) ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 552
+-------------------------------------------------------
+Best plushy: (exec_if true true :split :split :split true)
+Best program: (exec_if (true true :split :split :split true) ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 553
+-------------------------------------------------------
+Best plushy: (exec_if true true :split :split :split true :split)
+Best program: (exec_if (true true :split :split :split true :split) ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 554
+-------------------------------------------------------
+Best plushy: (exec_if true true :split :split :split true true)
+Best program: (exec_if (true true :split :split :split true true) ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 555
+-------------------------------------------------------
+Best plushy: (exec_if true :split :split true :split)
+Best program: (exec_if (true :split :split true :split) ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 556
+-------------------------------------------------------
+Best plushy: (exec_if true true :split :split true :split)
+Best program: (exec_if (true true :split :split true :split) ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 557
+-------------------------------------------------------
+Best plushy: (integer_= true true false true :split integer_+)
+Best program: (integer_= true true false true :split integer_+)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 558
+-------------------------------------------------------
+Best plushy: (integer_= integer_* true :split true true integer_+)
+Best program: (integer_= integer_* true :split true true integer_+)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 559
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split :split :split true exec_if)
+Best program: (integer_= true :split :split :split :split true exec_if () ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 560
+-------------------------------------------------------
+Best plushy: (integer_= false true :split true true integer_+ integer_+)
+Best program: (integer_= false true :split true true integer_+ integer_+)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 561
+-------------------------------------------------------
+Best plushy: (integer_= false true :split true true integer_+ integer_+)
+Best program: (integer_= false true :split true true integer_+ integer_+)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 562
+-------------------------------------------------------
+Best plushy: (integer_= integer_* true true :split true integer_+)
+Best program: (integer_= integer_* true true :split true integer_+)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 563
+-------------------------------------------------------
+Best plushy: (integer_= false true :split true exec_dup true integer_+ integer_+)
+Best program: (integer_= false true :split true exec_dup (true integer_+ integer_+))
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 564
+-------------------------------------------------------
+Best plushy: (integer_= integer_* true :split true true integer_+)
+Best program: (integer_= integer_* true :split true true integer_+)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 565
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split true :split)
+Best program: (integer_= true :split :split true :split)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 566
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split true :split)
+Best program: (integer_= true :split :split true :split)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 567
+-------------------------------------------------------
+Best plushy: (integer_= true :split true true)
+Best program: (integer_= true :split true true)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 568
+-------------------------------------------------------
+Best plushy: (integer_= true :split true true)
+Best program: (integer_= true :split true true)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 569
+-------------------------------------------------------
+Best plushy: (integer_= true :split true :split)
+Best program: (integer_= true :split true :split)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 570
+-------------------------------------------------------
+Best plushy: (integer_= true :split true :split)
+Best program: (integer_= true :split true :split)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 571
+-------------------------------------------------------
+Best plushy: (integer_= true :split true true)
+Best program: (integer_= true :split true true)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 572
+-------------------------------------------------------
+Best plushy: (integer_= true :split true true)
+Best program: (integer_= true :split true true)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 573
+-------------------------------------------------------
+Best plushy: (integer_% integer_= true :split true :split)
+Best program: (integer_% integer_= true :split true :split)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 574
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split :split)
+Best program: (integer_= true :split :split :split)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 575
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split true)
+Best program: (integer_= true :split :split true)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 576
+-------------------------------------------------------
+Best plushy: (boolean_not integer_= true :split :split :split)
+Best program: (boolean_not integer_= true :split :split :split)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 577
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split true true :split)
+Best program: (integer_= true :split :split true true :split)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 578
+-------------------------------------------------------
+Best plushy: (integer_= true :split true true)
+Best program: (integer_= true :split true true)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 579
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split true)
+Best program: (integer_= true :split :split true)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 580
+-------------------------------------------------------
+Best plushy: (integer_= true :split true true true)
+Best program: (integer_= true :split true true true)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 581
+-------------------------------------------------------
+Best plushy: (integer_= true :split true boolean_not true true :split)
+Best program: (integer_= true :split true boolean_not true true :split)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 582
+-------------------------------------------------------
+Best plushy: (integer_= true true true true true :split)
+Best program: (integer_= true true true true true :split)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 583
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split true true)
+Best program: (integer_= true :split :split true true)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 584
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split boolean_not :split)
+Best program: (integer_= true :split :split boolean_not :split)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 585
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split true)
+Best program: (integer_= true :split :split true)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 586
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split true :split)
+Best program: (integer_= true :split :split true :split)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 587
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split true :split)
+Best program: (integer_= true :split :split true :split)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 588
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split true :split)
+Best program: (integer_= true :split :split true :split)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 589
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split true :split)
+Best program: (integer_= true :split :split true :split)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 590
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split true :split WD)
+Best program: (integer_= true :split :split true :split WD)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 591
+-------------------------------------------------------
+Best plushy: (2 integer_= false true :split :split true :split)
+Best program: (2 integer_= false true :split :split true :split)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 592
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split true :split)
+Best program: (integer_= true :split :split true :split)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 593
+-------------------------------------------------------
+Best plushy: (integer_= true true :split :split :split)
+Best program: (integer_= true true :split :split :split)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 594
+-------------------------------------------------------
+Best plushy: (integer_= true true :split :split :split)
+Best program: (integer_= true true :split :split :split)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 595
+-------------------------------------------------------
+Best plushy: (integer_= true boolean_= :split :split :split)
+Best program: (integer_= true boolean_= :split :split :split)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 596
+-------------------------------------------------------
+Best plushy: (integer_= true boolean_= :split NT :split :split)
+Best program: (integer_= true boolean_= :split NT :split :split)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 597
+-------------------------------------------------------
+Best plushy: (integer_= true boolean_= :split :split :split :split)
+Best program: (integer_= true boolean_= :split :split :split :split)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 598
+-------------------------------------------------------
+Best plushy: (integer_= true 0 :split :split :split)
+Best program: (integer_= true 0 :split :split :split)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 599
+-------------------------------------------------------
+Best plushy: (integer_= true boolean_= :split :split :split)
+Best program: (integer_= true boolean_= :split :split :split)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 600
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split :split)
+Best program: (integer_= true :split :split :split)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 601
+-------------------------------------------------------
+Best plushy: (integer_= true true :split :split :split)
+Best program: (integer_= true true :split :split :split)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 602
+-------------------------------------------------------
+Best plushy: (integer_= true boolean_= :split :split :split)
+Best program: (integer_= true boolean_= :split :split :split)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
