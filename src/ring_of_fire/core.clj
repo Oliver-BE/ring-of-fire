@@ -3,273 +3,19 @@
   (:require [clojure.data.csv :as csv]
             [clojure.java.io :as io]
             [ring-of-fire.data :refer :all]
+            [ring-of-fire.fire-data :refer :all]
             [ring-of-fire.propel-helper :refer :all]
             [clojure.walk :refer [postwalk]]))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; FIRE PROPEL FUNCTIONS     ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Grid initialization functions ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; and Master Data Dictionaries ;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-
-(def final-scar-grid-master {:a1 arrowhead1-final-scar
-                             :a2 arrowhead2-final-scar
-                             :k1 kootenay1-final-scar
-                             :k2 kootenay2-final-scar
-                             :g1 glacier1-final-scar
-                             :g2 glacier2-final-scar
-                             :m1 mica1-final-scar
-                             :m2 mica2-final-scar
-                             :r1 revelstoke1-final-scar
-                             :r2 revelstoke2-final-scar
-                             })
-#_(:a1 final-scar-grid-master)
-
-(def final-scar-grid-master-flattened {:a1 (vec (flatten arrowhead1-final-scar))
-                                       :a2 (vec (flatten arrowhead2-final-scar))
-                                       :k1 (vec (flatten kootenay1-final-scar))
-                                       :k2 (vec (flatten kootenay2-final-scar))
-                                       :g1 (vec (flatten glacier1-final-scar))
-                                       :g2 (vec (flatten glacier2-final-scar))
-                                       :m1 (vec (flatten mica1-final-scar))
-                                       :m2 (vec (flatten mica2-final-scar))
-                                       :r1 (vec (flatten revelstoke1-final-scar))
-                                       :r2 (vec (flatten revelstoke2-final-scar))
-                                       })
-#_(:a1 final-scar-grid-master-flattened)
-
-(defn num-rows
-  "Returns the number of rows of a vector of vectors
-  given a fire name"
-  [fire-name]
-  (count ((keyword (name fire-name)) final-scar-grid-master)))
-#_(num-rows "r1")
-#_(num-rows mica1-forest)
-#_(num-rows mica1-elevation)
-
-
-(defn num-columns
-  "Returns the number of rows of a vector of vectors
-  given a fire name"
-  [fire-name]
-  (count (nth ((keyword (name fire-name)) final-scar-grid-master) 0)))
-#_(num-columns "r1")
-#_(num-columns mica1-forest)
-#_(num-columns mica1-elevation)
-
-(defn tot-num-cells
-  "Returns the total number of cells in a vector of fires"
-  [fire-vec]
-  (reduce + (map #(* (num-rows %) (num-columns %)) fire-vec)))
-#_(tot-num-cells ["a2" "m1" "m2"])
-
-(def forest-master {:a1 arrowhead1-forest
-                    :a2 arrowhead2-forest
-                    :k1 kootenay1-forest
-                    :k2 kootenay2-forest
-                    :g1 glacier1-forest
-                    :g2 glacier2-forest
-                    :m1 mica1-forest
-                    :m2 mica2-forest
-                    :r1 revelstoke1-forest
-                    :r2 revelstoke2-forest
-                    })
-
-
-(defn create-fuel-grid
-  "Takes in appropriate fire name and uses its forest grid to return new grid
-  where 0 refers to non-fuel and 1 refers to burnable / fuel"
-  [fire-name]
-  (let [grid ((keyword (name fire-name)) forest-master)
-        ;; messy-grid is what we want, but with each row as a lazy seq
-        messy-grid (vec (partition (num-columns fire-name)
-                                   (map #(if (and (>= % 100) (<= % 105))
-                                           (* 0 %)
-                                           (+ 1 (* 0 %))
-                                           )
-                                        (vec (flatten grid)))))]
-    ;; this for loop transforms each lazy seq row into a vector
-    (vec (for [i (range (count messy-grid))]
-           (vec (nth messy-grid i))))))
-#_(create-fuel-grid "m1")
-#_(:m1 forest-master)
-#_(:m1 final-scar-grid-master)
-
-
-(def weather-master {:a1 arrowhead1-weather
-                     :a2 arrowhead2-weather
-                     :k1 kootenay1-weather
-                     :k2 kootenay2-weather
-                     :g1 glacier1-weather
-                     :g2 glacier2-weather
-                     :m1 mica1-weather
-                     :m2 mica2-weather
-                     :r1 revelstoke1-weather
-                     :r2 revelstoke2-weather
-                     })
-
-;; elevation glacier1 wont compile
-(def elevation-master {:a1 arrowhead1-elevation
-                       :a2 arrowhead2-elevation
-                       :k1 kootenay1-elevation
-                       :k2 kootenay2-elevation
-                       :g1 glacier1-elevation
-                       :g2 glacier2-elevation
-                       :m1 mica1-elevation
-                       :m2 mica2-elevation
-                       :r1 revelstoke1-elevation
-                       :r2 revelstoke2-elevation
-                       })
-
-;; elevation glacier1 wont compile
-(def elevation-master-flattened {:a1 (vec (flatten arrowhead1-elevation))
-                                 :a2 (vec (flatten arrowhead2-elevation))
-                                 :k1 (vec (flatten kootenay1-elevation))
-                                 :k2 (vec (flatten kootenay2-elevation))
-                                 :g1 (vec (flatten glacier1-elevation))
-                                 :g2 (vec (flatten glacier2-elevation))
-                                 :m1 (vec (flatten mica1-elevation))
-                                 :m2 (vec (flatten mica2-elevation))
-                                 :r1 (vec (flatten revelstoke1-elevation))
-                                 :r2 (vec (flatten revelstoke2-elevation))
-                                 })
-
-;; note that arrowhead 2 slope is messed up
-(def slope-master {:a1 arrowhead1-slope
-                   :a2 arrowhead2-slope
-                   :k1 kootenay1-slope
-                   :k2 kootenay2-slope
-                   :g1 glacier1-slope
-                   :g2 glacier2-slope
-                   :m1 mica1-slope
-                   :m2 mica2-slope
-                   :r1 revelstoke1-slope
-                   :r2 revelstoke2-slope
-                   })
-
-;; note that arrowhead 2 slope is messed up
-(def slope-master-flattened {:a1 (vec (flatten arrowhead1-slope))
-                             :a2 (vec (flatten arrowhead2-slope))
-                             :k1 (vec (flatten kootenay1-slope))
-                             :k2 (vec (flatten kootenay2-slope))
-                             :g1 (vec (flatten glacier1-slope))
-                             :g2 (vec (flatten glacier2-slope))
-                             :m1 (vec (flatten mica1-slope))
-                             :m2 (vec (flatten mica2-slope))
-                             :r1 (vec (flatten revelstoke1-slope))
-                             :r2 (vec (flatten revelstoke2-slope))
-                             })
-
-(def ignition-cell-master {:a1 arrowhead1-ignition-cell
-                           :a2 arrowhead2-ignition-cell
-                           :k1 kootenay1-ignition-cell
-                           :k2 kootenay2-ignition-cell
-                           :g1 glacier1-ignition-cell
-                           :g2 glacier2-ignition-cell
-                           :m1 mica1-ignition-cell
-                           :m2 mica2-ignition-cell
-                           :r1 revelstoke1-ignition-cell
-                           :r2 revelstoke2-ignition-cell
-                           })
-
-(defn construct-empty-grid
-  "Returns a vector of vectors filled with 0s with the same dimensions as the specified fire"
-  [fire-name]
-  (vec (repeat (count ((keyword (name fire-name)) elevation-master))
-               (vec (repeat (count (first ((keyword (name fire-name)) elevation-master))) 0)))))
-#_(construct-empty-grid "m1")
-
-
-;; ignition cell is 1 indexed, so we need to subtract 1 from its value
-(defn construct-initial-grid
-  "Returns initial grid (vector of vectors) with a 1 where the ignition cell is"
-  [fire-name]
-  (let [width (num-columns fire-name)
-        ignition-cell (- ((keyword (name fire-name)) ignition-cell-master) 1)
-        grid (construct-empty-grid fire-name)
-        ;; messy-grid is what we want, but with each row as a lazy seq
-        messy-grid (partition width (assoc (vec (flatten grid)) ignition-cell 1))]
-    ;; this for loop transforms each lazy seq row into a vector
-    (vec (for [i (range (count messy-grid))]
-           (vec (nth messy-grid i))))))
-#_(construct-initial-grid "m1")
-#_(:m1 ignition-cell-master)
-#_(reduce + (flatten (construct-initial-grid "m1")))
-#_(reduce + (flatten (construct-initial-grid "m2")))
-
-;; a grid where 0 refers to non-fuel, 1 refers to burnable / fuel
-(def fuel-master {:a1 (create-fuel-grid "a1")
-                  :a2 (create-fuel-grid "a2")
-                  :k1 (create-fuel-grid "k1")
-                  :k2 (create-fuel-grid "k2")
-                  :g1 (create-fuel-grid "g1")
-                  :g2 (create-fuel-grid "g2")
-                  :m1 (create-fuel-grid "m1")
-                  :m2 (create-fuel-grid "m2")
-                  :r1 (create-fuel-grid "r1")
-                  :r2 (create-fuel-grid "r2")
-                  })
-
-;; a flattened grid where 0 refers to non-fuel, 1 refers to burnable / fuel
-(def fuel-master-flattened {:a1 (vec (flatten (create-fuel-grid "a1")))
-                            :a2 (vec (flatten (create-fuel-grid "a2")))
-                            :k1 (vec (flatten (create-fuel-grid "k1")))
-                            :k2 (vec (flatten (create-fuel-grid "k2")))
-                            :g1 (vec (flatten (create-fuel-grid "g1")))
-                            :g2 (vec (flatten (create-fuel-grid "g2")))
-                            :m1 (vec (flatten (create-fuel-grid "m1")))
-                            :m2 (vec (flatten (create-fuel-grid "m2")))
-                            :r1 (vec (flatten (create-fuel-grid "r1")))
-                            :r2 (vec (flatten (create-fuel-grid "r2")))
-                            })
-
-;; make our initial worlds for each of the 10 fires
-(def initial-fire-grids {:a1 (construct-initial-grid "a1")
-                         :a2 (construct-initial-grid "a2")
-                         :k1 (construct-initial-grid "k1")
-                         :k2 (construct-initial-grid "k2")
-                         :g1 (construct-initial-grid "g1")
-                         :g2 (construct-initial-grid "g2")
-                         :m1 (construct-initial-grid "m1")
-                         :m2 (construct-initial-grid "m2")
-                         :r1 (construct-initial-grid "r1")
-                         :r2 (construct-initial-grid "r2")
-                         })
-#_(:m1 initial-fire-grids)
-
-;; make our initial worlds for each of the 10 fires
-(def initial-fire-grids-flattened {:a1 (vec (flatten (construct-initial-grid "a1")))
-                                   :a2 (vec (flatten (construct-initial-grid "a2")))
-                                   :k1 (vec (flatten (construct-initial-grid "k1")))
-                                   :k2 (vec (flatten (construct-initial-grid "k2")))
-                                   :g1 (vec (flatten (construct-initial-grid "g1")))
-                                   :g2 (vec (flatten (construct-initial-grid "g2")))
-                                   :m1 (vec (flatten (construct-initial-grid "m1")))
-                                   :m2 (vec (flatten (construct-initial-grid "m2")))
-                                   :r1 (vec (flatten (construct-initial-grid "r1")))
-                                   :r2 (vec (flatten (construct-initial-grid "r2")))
-                                   })
-
-(def initial-time-grids-flattened {:a1 (vec (flatten (construct-empty-grid "a1")))
-                                   :a2 (vec (flatten (construct-empty-grid "a2")))
-                                   :k1 (vec (flatten (construct-empty-grid "k1")))
-                                   :k2 (vec (flatten (construct-empty-grid "k2")))
-                                   :g1 (vec (flatten (construct-empty-grid "g1")))
-                                   :g2 (vec (flatten (construct-empty-grid "g2")))
-                                   :m1 (vec (flatten (construct-empty-grid "m1")))
-                                   :m2 (vec (flatten (construct-empty-grid "m2")))
-                                   :r1 (vec (flatten (construct-empty-grid "r1")))
-                                   :r2 (vec (flatten (construct-empty-grid "r2")))
-                                   })
+;------------------------------;
+;   FIRE PROPEL FUNCTIONS      ;
+;------------------------------;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Helper functions    ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Burning neighbors   ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -814,59 +560,37 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; to test a chosen program
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; make sure we are running this on a fire from the test set
-(def test-fire-vec ["a1", "g1", "r2"])
-
-; make sure this is the exact same as the parameters for when you ran the above program
-#_(def argmap-for-test-program1 {:instructions            fire-instructions
-                                :error-function          fire-error-function
-                                :max-generations         1000
-                                :population-size         8
-                                :max-initial-plushy-size 20
-                                :step-limit              25
-                                :parent-selection        :lexicase
-                                :tournament-size         2
-                                :time-step               1000
-                                :fire-selection          1})
-
-;;; write program to CSV
-#_(write-csv [["abc" "def"] ["ghi" "jkl"]] "data/Outputs/output.csv")
-
-#_(run-fire "m1" (make-split-program '(ISI)) argmap-for-test-program1)
-#_(partition (num-columns "m1") (run-fire "m1" (make-split-program '(ISI)) argmap-for-test-program1))
-
-#_(write-csv (partition (num-columns "m1") (run-fire "m1" (make-split-program '(ISI)) argmap-for-test-program1)) "data/Outputs/output.csv")
+;; Make sure you test a chose program and associated argmap
+;; on a fire from the test set, and with the exact same argmap
+;; that was used to originally run the program
+#_(def test-set-fires ["a1", "g1", "r2"])
 
 
 (defn grid-to-csv
+  "Takes in a fire-name, a selected program, an argmap, and a destination
+  and prints out the fire that is generated from these parameters to a CSV"
   [fire-name program argmap destination]
   (write-csv (partition (num-columns fire-name) (run-fire fire-name (make-split-program program) argmap)) destination))
-#_(grid-to-csv "m1" '(ISI) argmap-for-test-program1 "data/Outputs/output.csv")
+#_(grid-to-csv "m1" '(ISI) selected-argmap "data/Outputs/output.csv")
 
-#_(grid-to-csv "a1" testprogrambest argmap-for-test-program "data/Outputs/a1-program1.csv")
-#_(grid-to-csv "m1" testprogrambest argmap-for-test-program "data/Outputs/m1-program1.csv")
-#_(grid-to-csv "g1" testprogrambest argmap-for-test-program "data/Outputs/g1-program1.csv")
+#_(def selected-program '(exec_dup (boolean_and WS boolean_not 2 integer_* integer_= TB integer_% NT WD WD) 0 WD boolean_not FWI FWI exec_dup (1 integer_+ TB false) exec_dup (WS)))
+#_(def selected-argmap {:instructions            fire-instructions
+                        :error-function          fire-error-function
+                        :max-generations         5000
+                        :population-size         10
+                        :max-initial-plushy-size 40
+                        :step-limit              100
+                        :parent-selection        :tournament
+                        :tournament-size         5
+                        :time-step               3
+                        :fire-selection          4})
+#_(grid-to-csv "a1" selected-program selected-argmap "data/Outputs/test.csv")
 
-#_(write-csv (:g1 final-scar-grid-master) "data/Outputs/g1.csv")
+;; To save existing data to a CSV:
+#_(write-csv (:a1 fuel-master) "data/Outputs/a1-fuel.csv")
 
-#_(def testprogrambest (make-split-program '(exec_dup (boolean_and WS boolean_not 2 integer_* integer_= TB integer_% NT WD WD) 0 WD boolean_not FWI FWI exec_dup (1 integer_+ TB false) exec_dup (WS))))
-#_(def argmap-for-test-program {:instructions            fire-instructions
-                                :error-function          fire-error-function
-                                :max-generations         5000
-                                :population-size         10
-                                :max-initial-plushy-size 40
-                                :step-limit              100
-                                :parent-selection        :tournament
-                                :tournament-size         5
-                                :time-step               3
-                                :fire-selection          4})
 
-;; testing fires ["a1", "g1", "r2"]
 
-#_(partition num-columns "a1")
-#_(run-fire "a1" testprogrambest argmap-for-test-program)
-
-#_(write-csv (run-fire "a1" testprogrambest argmap-for-test-program) "data/Outputs/a1-program1.csv")
 
 
 
