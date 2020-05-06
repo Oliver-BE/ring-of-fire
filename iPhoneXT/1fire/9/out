@@ -2119,3 +2119,53 @@ Total number of cells: 4400
 Best percent error: 0.38954544
 Fires evaluated:  (r1)
 
+-------------------------------------------------------
+               Report for Generation 212
+-------------------------------------------------------
+Best plushy: (slope true integer_- 2 TB FWI WS BUI integer_* 0 integer_= 0 slope slope BUI integer_= BUI 1 BUI 1 BUI)
+Best program: (slope true integer_- 2 TB FWI WS BUI integer_* 0 integer_= 0 slope slope BUI integer_= BUI 1 BUI 1 BUI)
+Best total error: 2853
+Total number of cells: 8320
+Best percent error: 0.34290865
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 213
+-------------------------------------------------------
+Best plushy: (slope true integer_- 2 TB FWI WS BUI integer_* 0 integer_= boolean_and 0 slope slope BUI integer_= BUI 1 BUI 1 BUI)
+Best program: (slope true integer_- 2 TB FWI WS BUI integer_* 0 integer_= boolean_and 0 slope slope BUI integer_= BUI 1 BUI 1 BUI)
+Best total error: 2853
+Total number of cells: 8320
+Best percent error: 0.34290865
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 214
+-------------------------------------------------------
+Best plushy: (slope true TB 2 TB WS WS integer_= integer_* slope 0 integer_= exec_dup slope FWI BUI integer_= BUI 1 1 BUI BUI)
+Best program: (slope true TB 2 TB WS WS integer_= integer_* slope 0 integer_= exec_dup (slope FWI BUI integer_= BUI 1 1 BUI BUI))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 215
+-------------------------------------------------------
+Best plushy: (slope true TB 2 TB WS WS integer_= integer_* slope 0 integer_= exec_dup slope FWI BUI integer_= BUI 1 1 BUI BUI)
+Best program: (slope true TB 2 TB WS WS integer_= integer_* slope 0 integer_= exec_dup (slope FWI BUI integer_= BUI 1 1 BUI BUI))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 216
+-------------------------------------------------------
+Best plushy: (slope true integer_- TB TB 2 0 BUI integer_* integer_= integer_= boolean_and exec_dup slope slope exec_dup integer_= BUI BUI BUI BUI)
+Best program: (slope true integer_- TB TB 2 0 BUI integer_* integer_= integer_= boolean_and exec_dup (slope slope exec_dup (integer_= BUI BUI BUI BUI)))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+

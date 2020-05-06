@@ -879,3 +879,33 @@ Total number of cells: 11608
 Best percent error: 0.23983459
 Fires evaluated:  (r1 k2)
 
+-------------------------------------------------------
+               Report for Generation 88
+-------------------------------------------------------
+Best plushy: (1 1 close integer_= boolean_or 1 TB WS integer_= TB 1 WS NT 2 integer_+ integer_- 2 boolean_= 2 close 2 integer_- false false false exec_dup false false false WD integer_% false false false false)
+Best program: (1 1 integer_= boolean_or 1 TB WS integer_= TB 1 WS NT 2 integer_+ integer_- 2 boolean_= 2 2 integer_- false false false exec_dup (false false false WD integer_% false false false false))
+Best total error: 3715
+Total number of cells: 11452
+Best percent error: 0.32439747
+Fires evaluated:  (k1 m1)
+
+-------------------------------------------------------
+               Report for Generation 89
+-------------------------------------------------------
+Best plushy: (1 1 close integer_- 1 integer_= WS slope TB 1 1 NT WS integer_+ 2 integer_= integer_- boolean_= 2 2 integer_+ integer_- :split slope integer_- 0 0 false integer_- false exec_dup NBD false false false integer_% integer_% integer_% false WD integer_* boolean_and)
+Best program: (1 1 integer_- 1 integer_= WS slope TB 1 1 NT WS integer_+ 2 integer_= integer_- boolean_= 2 2 integer_+ integer_- :split slope integer_- 0 0 false integer_- false exec_dup (NBD false false false integer_% integer_% integer_% false WD integer_* boolean_and))
+Best total error: 4890
+Total number of cells: 13940
+Best percent error: 0.3507891
+Fires evaluated:  (r1 g2)
+
+-------------------------------------------------------
+               Report for Generation 90
+-------------------------------------------------------
+Best plushy: (1 1 close integer_= boolean_or WS integer_= TB 1 WS NT 2 integer_+ integer_- 2 boolean_= 2 close 2 integer_- false false false exec_dup false false false WD integer_% false false false false)
+Best program: (1 1 integer_= boolean_or WS integer_= TB 1 WS NT 2 integer_+ integer_- 2 boolean_= 2 2 integer_- false false false exec_dup (false false false WD integer_% false false false false))
+Best total error: 3914
+Total number of cells: 9476
+Best percent error: 0.41304347
+Fires evaluated:  (m2 r1)
+

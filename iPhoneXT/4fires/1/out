@@ -629,3 +629,13 @@ Total number of cells: 24956
 Best percent error: 0.29503927
 Fires evaluated:  (k2 m2 g2 m1)
 
+-------------------------------------------------------
+               Report for Generation 63
+-------------------------------------------------------
+Best plushy: (FWI FWI FWI NT true BUI true integer_% integer_= integer_% boolean_not boolean_= exec_if NT exec_if integer_* NBD 2 exec_if TB 2 exec_if exec_dup exec_dup integer_% boolean_or integer_% integer_% integer_% exec_dup integer_%)
+Best program: (FWI FWI FWI NT true BUI true integer_% integer_= integer_% boolean_not boolean_= exec_if (NT exec_if (integer_* NBD 2 exec_if (TB 2 exec_if (exec_dup (exec_dup (integer_% boolean_or integer_% integer_% integer_% exec_dup (integer_%)))) ()) ()) ()) ())
+Best total error: 8138
+Total number of cells: 25004
+Best percent error: 0.3254679
+Fires evaluated:  (m2 k1 k2 r1)
+

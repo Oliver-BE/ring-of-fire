@@ -919,3 +919,43 @@ Total number of cells: 23736
 Best percent error: 0.30927706
 Fires evaluated:  (k2 m2 m1 k1)
 
+-------------------------------------------------------
+               Report for Generation 92
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and WS boolean_or boolean_or close boolean_or true NT NT NT NT integer_* true slope integer_- WS WS slope WS WS WS integer_- :split WS WS :split :split)
+Best program: (boolean_and boolean_and boolean_and WS boolean_or boolean_or boolean_or true NT NT NT NT integer_* true slope integer_- WS WS slope WS WS WS integer_- :split WS WS :split :split)
+Best total error: 8007
+Total number of cells: 22148
+Best percent error: 0.3615225
+Fires evaluated:  (r1 m2 g2 m1)
+
+-------------------------------------------------------
+               Report for Generation 93
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and WS integer_% true true NT NT NT integer_* true slope WS WS WS integer_+ boolean_and integer_- WS WS WS)
+Best program: (boolean_and boolean_and boolean_and WS integer_% true true NT NT NT integer_* true slope WS WS WS integer_+ boolean_and integer_- WS WS WS)
+Best total error: 5901
+Total number of cells: 19816
+Best percent error: 0.29778966
+Fires evaluated:  (r1 m2 k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 94
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and integer_% boolean_or boolean_or boolean_or NT true NT NT NT NT true true slope slope WS WS WS integer_+ WS :split WS WS close slope)
+Best program: (boolean_and boolean_and boolean_and integer_% boolean_or boolean_or boolean_or NT true NT NT NT NT true true slope slope WS WS WS integer_+ WS :split WS WS slope)
+Best total error: 6855
+Total number of cells: 23060
+Best percent error: 0.297268
+Fires evaluated:  (k2 r1 m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 95
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and WS WS boolean_or boolean_or boolean_or boolean_or NT NT NT NT 2 integer_* true WS WS WS WS WS WS BUI WS integer_- :split :split :split :split)
+Best program: (boolean_and boolean_and WS WS boolean_or boolean_or boolean_or boolean_or NT NT NT NT 2 integer_* true WS WS WS WS WS WS BUI WS integer_- :split :split :split :split)
+Best total error: 8138
+Total number of cells: 25004
+Best percent error: 0.3254679
+Fires evaluated:  (m2 r1 k1 k2)
+

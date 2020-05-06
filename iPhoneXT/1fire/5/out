@@ -4219,3 +4219,63 @@ Total number of cells: 9540
 Best percent error: 0.33291405
 Fires evaluated:  (g2)
 
+-------------------------------------------------------
+               Report for Generation 422
+-------------------------------------------------------
+Best plushy: (integer_* 2 false 2 0 integer_= boolean_= false boolean_and boolean_= boolean_= boolean_= boolean_= true boolean_= true NT integer_% :split NT integer_% integer_% 1 boolean_and 1 1 1 integer_% :split integer_% NT integer_% integer_% integer_+ exec_dup integer_% integer_% 1 1)
+Best program: (integer_* 2 false 2 0 integer_= boolean_= false boolean_and boolean_= boolean_= boolean_= boolean_= true boolean_= true NT integer_% :split NT integer_% integer_% 1 boolean_and 1 1 1 integer_% :split integer_% NT integer_% integer_% integer_+ exec_dup (integer_% integer_% 1 1))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 423
+-------------------------------------------------------
+Best plushy: (2 2 2 integer_- 0 false false boolean_= boolean_= boolean_= true boolean_= boolean_= BUI :split BUI BUI integer_* integer_% NT 1 integer_* integer_% 1 integer_% NT NT false integer_+ integer_* integer_% integer_+ integer_% integer_% integer_% 1 1 NT TB)
+Best program: (2 2 2 integer_- 0 false false boolean_= boolean_= boolean_= true boolean_= boolean_= BUI :split BUI BUI integer_* integer_% NT 1 integer_* integer_% 1 integer_% NT NT false integer_+ integer_* integer_% integer_+ integer_% integer_% integer_% 1 1 NT TB)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 424
+-------------------------------------------------------
+Best plushy: (0 2 2 0 integer_= integer_= boolean_= false integer_= boolean_= boolean_= boolean_= true :split BUI BUI NT NT integer_* integer_* close 1 1 boolean_and NT integer_% integer_% integer_% integer_+ integer_+ integer_% integer_% exec_if NT TB)
+Best program: (0 2 2 0 integer_= integer_= boolean_= false integer_= boolean_= boolean_= boolean_= true :split BUI BUI NT NT integer_* integer_* 1 1 boolean_and NT integer_% integer_% integer_% integer_+ integer_+ integer_% integer_% exec_if (NT TB) ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 425
+-------------------------------------------------------
+Best plushy: (2 2 2 0 integer_= integer_= false boolean_= boolean_= boolean_= boolean_= boolean_= BUI BUI NT BUI integer_* integer_% 1 1 integer_+ integer_% close boolean_and NT integer_% false integer_% NT integer_+ integer_% TB exec_if NBD)
+Best program: (2 2 2 0 integer_= integer_= false boolean_= boolean_= boolean_= boolean_= boolean_= BUI BUI NT BUI integer_* integer_% 1 1 integer_+ integer_% boolean_and NT integer_% false integer_% NT integer_+ integer_% TB exec_if (NBD) ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 426
+-------------------------------------------------------
+Best plushy: (2 2 2 0 integer_= integer_= false boolean_= boolean_= boolean_= boolean_= BUI BUI BUI NT BUI NT integer_% 1 close integer_+ 1 integer_* boolean_and exec_if integer_% false NT NT integer_+ integer_% NT exec_if NBD exec_if 1 BUI)
+Best program: (2 2 2 0 integer_= integer_= false boolean_= boolean_= boolean_= boolean_= BUI BUI BUI NT BUI NT integer_% 1 integer_+ 1 integer_* boolean_and exec_if (integer_% false NT NT integer_+ integer_% NT exec_if (NBD exec_if (1 BUI) ()) ()) ())
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 427
+-------------------------------------------------------
+Best plushy: (integer_* 2 2 0 integer_= integer_= boolean_= boolean_= integer_= ISI boolean_= boolean_= true BUI :split true NT integer_% integer_% NT integer_% 1 integer_% boolean_and close NT integer_% integer_% integer_+ integer_+ false integer_+ exec_if exec_if TB NBD integer_% NT)
+Best program: (integer_* 2 2 0 integer_= integer_= boolean_= boolean_= integer_= ISI boolean_= boolean_= true BUI :split true NT integer_% integer_% NT integer_% 1 integer_% boolean_and NT integer_% integer_% integer_+ integer_+ false integer_+ exec_if (exec_if (TB NBD integer_% NT) ()) ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+

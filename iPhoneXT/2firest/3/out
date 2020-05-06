@@ -379,3 +379,13 @@ Total number of cells: 7532
 Best percent error: 0.34930962
 Fires evaluated:  (r1 m1)
 
+-------------------------------------------------------
+               Report for Generation 38
+-------------------------------------------------------
+Best plushy: (WS boolean_and integer_% integer_% true integer_% boolean_or ISI close integer_= FWI ISI boolean_= exec_dup ISI integer_- exec_dup BUI BUI close BUI close BUI BUI 0)
+Best program: (WS boolean_and integer_% integer_% true integer_% boolean_or ISI integer_= FWI ISI boolean_= exec_dup (ISI integer_- exec_dup (BUI BUI) BUI) BUI BUI 0)
+Best total error: 6317
+Total number of cells: 17860
+Best percent error: 0.35369542
+Fires evaluated:  (g2 k1)
+

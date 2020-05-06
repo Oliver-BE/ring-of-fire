@@ -1269,3 +1269,13 @@ Total number of cells: 13396
 Best percent error: 0.39967155
 Fires evaluated:  (m2 k1)
 
+-------------------------------------------------------
+               Report for Generation 127
+-------------------------------------------------------
+Best plushy: (WS WS WD true true integer_= integer_= 2 integer_= integer_= BUI integer_= BUI 2 2 exec_dup exec_dup 2 slope slope slope 2 2 exec_if 1 exec_if exec_if 1 boolean_not)
+Best program: (WS WS WD true true integer_= integer_= 2 integer_= integer_= BUI integer_= BUI 2 2 exec_dup (exec_dup (2 slope slope slope 2 2 exec_if (1 exec_if (exec_if (1 boolean_not) ()) ()) ())))
+Best total error: 3270
+Total number of cells: 12284
+Best percent error: 0.26619995
+Fires evaluated:  (k2 m2)
+

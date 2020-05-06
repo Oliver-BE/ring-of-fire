@@ -309,3 +309,13 @@ Total number of cells: 13396
 Best percent error: 0.39967155
 Fires evaluated:  (m2 k1)
 
+-------------------------------------------------------
+               Report for Generation 31
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_not boolean_and integer_= true true true NT true boolean_= NT boolean_= boolean_and boolean_= WS WS integer_% TB integer_* exec_dup integer_% integer_- integer_% boolean_not ISI BUI integer_= boolean_not BUI integer_= boolean_not integer_- BUI)
+Best program: (boolean_and boolean_not boolean_and integer_= true true true NT true boolean_= NT boolean_= boolean_and boolean_= WS WS integer_% TB integer_* exec_dup (integer_% integer_- integer_% boolean_not ISI BUI integer_= boolean_not BUI integer_= boolean_not integer_- BUI))
+Best total error: 6330
+Total number of cells: 17860
+Best percent error: 0.35442328
+Fires evaluated:  (k1 g2)
+

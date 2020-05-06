@@ -2869,3 +2869,13 @@ Total number of cells: 9540
 Best percent error: 0.33291405
 Fires evaluated:  (g2)
 
+-------------------------------------------------------
+               Report for Generation 287
+-------------------------------------------------------
+Best plushy: (integer_= 2 true exec_dup integer_+ integer_+ integer_+ exec_dup NBD exec_dup 1 exec_dup integer_* integer_* exec_dup BUI integer_* ISI exec_if exec_if ISI BUI false ISI integer_+ WD TB ISI exec_if false)
+Best program: (integer_= 2 true exec_dup (integer_+ integer_+ integer_+ exec_dup (NBD exec_dup (1 exec_dup (integer_* integer_* exec_dup (BUI integer_* ISI exec_if (exec_if (ISI BUI false ISI integer_+ WD TB ISI exec_if (false) ()) ()) ()))))))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
