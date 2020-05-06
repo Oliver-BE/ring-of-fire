@@ -539,3 +539,53 @@ Total number of cells: 12672
 Best percent error: 0.32299557
 Fires evaluated:  (g2 m1)
 
+-------------------------------------------------------
+               Report for Generation 54
+-------------------------------------------------------
+Best plushy: (true exec_if 1 1 1 1 1 1 2 2 2 2 2 slope integer_* exec_if WD boolean_not slope slope exec_dup true true 2 exec_dup boolean_not boolean_not)
+Best program: (true exec_if (1 1 1 1 1 1 2 2 2 2 2 slope integer_* exec_if (WD boolean_not slope slope exec_dup (true true 2 exec_dup (boolean_not boolean_not))) ()) ())
+Best total error: 3914
+Total number of cells: 9476
+Best percent error: 0.41304347
+Fires evaluated:  (r1 m2)
+
+-------------------------------------------------------
+               Report for Generation 55
+-------------------------------------------------------
+Best plushy: (true true exec_if 1 1 1 BUI 2 2 2 2 2 slope slope exec_if slope WD slope exec_dup true slope exec_dup slope slope boolean_not boolean_not)
+Best program: (true true exec_if (1 1 1 BUI 2 2 2 2 2 slope slope exec_if (slope WD slope exec_dup (true slope exec_dup (slope slope boolean_not boolean_not))) ()) ())
+Best total error: 2784
+Total number of cells: 11608
+Best percent error: 0.23983459
+Fires evaluated:  (k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 56
+-------------------------------------------------------
+Best plushy: (true true NT 1 1 1 2 2 2 2 2 2 slope slope WD slope 2 exec_dup exec_dup ISI slope boolean_not slope boolean_not boolean_not)
+Best program: (true true NT 1 1 1 2 2 2 2 2 2 slope slope WD slope 2 exec_dup (exec_dup (ISI slope boolean_not slope boolean_not boolean_not)))
+Best total error: 4224
+Total number of cells: 15528
+Best percent error: 0.27202472
+Fires evaluated:  (k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 57
+-------------------------------------------------------
+Best plushy: (true true 1 1 1 BUI 2 2 2 2 slope slope boolean_not 2 exec_dup exec_dup true slope boolean_not slope slope boolean_not)
+Best program: (true true 1 1 1 BUI 2 2 2 2 slope slope boolean_not 2 exec_dup (exec_dup (true slope boolean_not slope slope boolean_not)))
+Best total error: 5376
+Total number of cells: 14616
+Best percent error: 0.3678161
+Fires evaluated:  (g2 m2)
+
+-------------------------------------------------------
+               Report for Generation 58
+-------------------------------------------------------
+Best plushy: (true true 1 1 1 1 2 2 2 2 2 2 slope exec_if WD boolean_not slope exec_dup exec_dup true true slope slope boolean_not boolean_not boolean_not)
+Best program: (true true 1 1 1 1 2 2 2 2 2 2 slope exec_if (WD boolean_not slope exec_dup (exec_dup (true true slope slope boolean_not boolean_not boolean_not))) ())
+Best total error: 3117
+Total number of cells: 8208
+Best percent error: 0.37975147
+Fires evaluated:  (m1 m2)
+

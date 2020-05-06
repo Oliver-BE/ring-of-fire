@@ -279,3 +279,33 @@ Total number of cells: 14616
 Best percent error: 0.3678161
 Fires evaluated:  (m2 g2)
 
+-------------------------------------------------------
+               Report for Generation 28
+-------------------------------------------------------
+Best plushy: (true boolean_and integer_% integer_% integer_% integer_% integer_% boolean_or boolean_= ISI close boolean_= ISI ISI boolean_= exec_dup boolean_not boolean_not 2 2 exec_dup exec_dup BUI BUI BUI BUI 0 BUI BUI)
+Best program: (true boolean_and integer_% integer_% integer_% integer_% integer_% boolean_or boolean_= ISI boolean_= ISI ISI boolean_= exec_dup (boolean_not boolean_not 2 2 exec_dup (exec_dup (BUI BUI BUI BUI 0 BUI BUI))))
+Best total error: 1987
+Total number of cells: 10340
+Best percent error: 0.19216634
+Fires evaluated:  (k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 29
+-------------------------------------------------------
+Best plushy: (true WS integer_% false boolean_or ISI integer_% boolean_or ISI close ISI FWI ISI boolean_= ISI exec_dup boolean_not exec_dup 2 exec_dup BUI BUI BUI close 0 BUI 0 BUI)
+Best program: (true WS integer_% false boolean_or ISI integer_% boolean_or ISI ISI FWI ISI boolean_= ISI exec_dup (boolean_not exec_dup (2 exec_dup (BUI BUI BUI) 0 BUI 0 BUI)))
+Best total error: 2631
+Total number of cells: 7532
+Best percent error: 0.34930962
+Fires evaluated:  (r1 m1)
+
+-------------------------------------------------------
+               Report for Generation 30
+-------------------------------------------------------
+Best plushy: (true integer_% integer_% integer_% integer_% boolean_or boolean_= ISI boolean_= ISI ISI boolean_= exec_dup boolean_not 2 exec_dup 2 BUI close BUI 0 0 BUI)
+Best program: (true integer_% integer_% integer_% integer_% boolean_or boolean_= ISI boolean_= ISI ISI boolean_= exec_dup (boolean_not 2 exec_dup (2 BUI) BUI 0 0 BUI))
+Best total error: 4890
+Total number of cells: 13940
+Best percent error: 0.3507891
+Fires evaluated:  (r1 g2)
+

@@ -1069,3 +1069,73 @@ Total number of cells: 9476
 Best percent error: 0.41304347
 Fires evaluated:  (m2 r1)
 
+-------------------------------------------------------
+               Report for Generation 107
+-------------------------------------------------------
+Best plushy: (integer_= WS WS WD WD BUI slope integer_= integer_= integer_= integer_= true BUI integer_= integer_= integer_= integer_= integer_+ integer_= 2 2 BUI integer_= 2 2 exec_if slope 2 exec_dup exec_if 2 slope 2 exec_if 2 exec_if)
+Best program: (integer_= WS WS WD WD BUI slope integer_= integer_= integer_= integer_= true BUI integer_= integer_= integer_= integer_= integer_+ integer_= 2 2 BUI integer_= 2 2 exec_if (slope 2 exec_dup (exec_if (2 slope 2 exec_if (2 exec_if () ()) ()) ())) ())
+Best total error: 4890
+Total number of cells: 13940
+Best percent error: 0.3507891
+Fires evaluated:  (r1 g2)
+
+-------------------------------------------------------
+               Report for Generation 108
+-------------------------------------------------------
+Best plushy: (WS WS WD WD integer_= BUI integer_= integer_= integer_= 2 integer_= integer_= BUI BUI integer_= integer_* integer_= 2 2 exec_if 2 2 exec_if 2 2 2 exec_if integer_* exec_dup exec_if exec_if 2 1 exec_if exec_if boolean_not)
+Best program: (WS WS WD WD integer_= BUI integer_= integer_= integer_= 2 integer_= integer_= BUI BUI integer_= integer_* integer_= 2 2 exec_if (2 2 exec_if (2 2 2 exec_if (integer_* exec_dup (exec_if (exec_if (2 1 exec_if (exec_if (boolean_not) ()) ()) ()) ())) ()) ()) ())
+Best total error: 4071
+Total number of cells: 11452
+Best percent error: 0.35548377
+Fires evaluated:  (k1 m1)
+
+-------------------------------------------------------
+               Report for Generation 109
+-------------------------------------------------------
+Best plushy: (integer_= WS WS WD BUI BUI slope integer_= integer_= integer_= true BUI integer_= integer_= integer_= 2 integer_+ 2 2 BUI integer_= 2 exec_if integer_* slope exec_dup exec_dup exec_if 2 2 1 exec_if exec_if)
+Best program: (integer_= WS WS WD BUI BUI slope integer_= integer_= integer_= true BUI integer_= integer_= integer_= 2 integer_+ 2 2 BUI integer_= 2 exec_if (integer_* slope exec_dup (exec_dup (exec_if (2 2 1 exec_if (exec_if () ()) ()) ()))) ())
+Best total error: 2784
+Total number of cells: 11608
+Best percent error: 0.23983459
+Fires evaluated:  (k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 110
+-------------------------------------------------------
+Best plushy: (WS WS WD slope integer_= integer_= slope integer_= true integer_= integer_= integer_= integer_= BUI BUI integer_= integer_= exec_if integer_+ 2 exec_if 2 2 2 boolean_and 2 2 exec_if integer_* 2 exec_dup 2 2 2 integer_* 2 exec_if 1 exec_if boolean_not)
+Best program: (WS WS WD slope integer_= integer_= slope integer_= true integer_= integer_= integer_= integer_= BUI BUI integer_= integer_= exec_if (integer_+ 2 exec_if (2 2 2 boolean_and 2 2 exec_if (integer_* 2 exec_dup (2 2 2 integer_* 2 exec_if (1 exec_if (boolean_not) ()) ())) ()) ()) ())
+Best total error: 5354
+Total number of cells: 13396
+Best percent error: 0.39967155
+Fires evaluated:  (k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 111
+-------------------------------------------------------
+Best plushy: (WS WD BUI WD integer_= BUI integer_= integer_= integer_= 2 integer_= integer_= BUI BUI integer_= integer_* integer_= boolean_= 2 :split exec_if 2 2 exec_if 2 2 2 exec_if integer_* exec_dup exec_if close exec_if integer_+ 2 1 exec_if exec_if boolean_not)
+Best program: (WS WD BUI WD integer_= BUI integer_= integer_= integer_= 2 integer_= integer_= BUI BUI integer_= integer_* integer_= boolean_= 2 :split exec_if (2 2 exec_if (2 2 2 exec_if (integer_* exec_dup (exec_if () (exec_if (integer_+ 2 1 exec_if (exec_if (boolean_not) ()) ()) ()))) ()) ()) ())
+Best total error: 3117
+Total number of cells: 8208
+Best percent error: 0.37975147
+Fires evaluated:  (m2 m1)
+
+-------------------------------------------------------
+               Report for Generation 112
+-------------------------------------------------------
+Best plushy: (WS WD BUI WD integer_= BUI integer_= integer_= integer_= 2 integer_= integer_= BUI BUI integer_= integer_* integer_= boolean_= 2 :split exec_if 2 2 exec_if 2 2 2 exec_if integer_* exec_dup exec_if close exec_if integer_+ 2 1 exec_if exec_if boolean_not)
+Best program: (WS WD BUI WD integer_= BUI integer_= integer_= integer_= 2 integer_= integer_= BUI BUI integer_= integer_* integer_= boolean_= 2 :split exec_if (2 2 exec_if (2 2 2 exec_if (integer_* exec_dup (exec_if () (exec_if (integer_+ 2 1 exec_if (exec_if (boolean_not) ()) ()) ()))) ()) ()) ())
+Best total error: 4890
+Total number of cells: 13940
+Best percent error: 0.3507891
+Fires evaluated:  (r1 g2)
+
+-------------------------------------------------------
+               Report for Generation 113
+-------------------------------------------------------
+Best plushy: (WS WD WD integer_= true BUI integer_+ integer_= integer_= integer_= 2 integer_= integer_= BUI BUI integer_= integer_* integer_= 2 exec_if 2 2 exec_if 2 2 2 exec_if 1 integer_* exec_dup exec_if exec_if 2 1 exec_if exec_if boolean_not)
+Best program: (WS WD WD integer_= true BUI integer_+ integer_= integer_= integer_= 2 integer_= integer_= BUI BUI integer_= integer_* integer_= 2 exec_if (2 2 exec_if (2 2 2 exec_if (1 integer_* exec_dup (exec_if (exec_if (2 1 exec_if (exec_if (boolean_not) ()) ()) ()) ())) ()) ()) ())
+Best total error: 4071
+Total number of cells: 11452
+Best percent error: 0.35548377
+Fires evaluated:  (m1 k1)
+

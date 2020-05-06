@@ -279,3 +279,53 @@ Total number of cells: 24280
 Best percent error: 0.28323722
 Fires evaluated:  (g2 r1 k2 m1)
 
+-------------------------------------------------------
+               Report for Generation 28
+-------------------------------------------------------
+Best plushy: (boolean_and close true exec_if NBD :split :split BUI integer_* 0 slope true true WD exec_if integer_- exec_if slope :split slope :split)
+Best program: (boolean_and true exec_if (NBD :split :split BUI integer_* 0 slope true true WD exec_if (integer_- exec_if (slope :split slope :split) ()) ()) ())
+Best total error: 8007
+Total number of cells: 22148
+Best percent error: 0.3615225
+Fires evaluated:  (m2 g2 m1 r1)
+
+-------------------------------------------------------
+               Report for Generation 29
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and close true ISI :split :split BUI integer_* slope slope true exec_if integer_* slope 2 2 2 boolean_not boolean_=)
+Best program: (boolean_and boolean_and true ISI :split :split BUI integer_* slope slope true exec_if (integer_* slope 2 2 2 boolean_not boolean_=) ())
+Best total error: 7341
+Total number of cells: 23736
+Best percent error: 0.30927706
+Fires evaluated:  (k1 m2 k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 30
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and close true ISI :split :split BUI integer_* slope slope true exec_if integer_* slope 2 2 2 boolean_not boolean_=)
+Best program: (boolean_and boolean_and true ISI :split :split BUI integer_* slope slope true exec_if (integer_* slope 2 2 2 boolean_not boolean_=) ())
+Best total error: 8007
+Total number of cells: 22148
+Best percent error: 0.3615225
+Fires evaluated:  (g2 r1 m1 m2)
+
+-------------------------------------------------------
+               Report for Generation 31
+-------------------------------------------------------
+Best plushy: (boolean_and close true ISI :split BUI integer_* integer_* 0 true true :split slope 2 2 exec_if slope 2 boolean_=)
+Best program: (boolean_and true ISI :split BUI integer_* integer_* 0 true true :split slope 2 2 exec_if (slope 2 boolean_=) ())
+Best total error: 9447
+Total number of cells: 26068
+Best percent error: 0.36239836
+Fires evaluated:  (g2 m1 m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 32
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and true ISI ISI :split integer_* BUI integer_* slope exec_if exec_if exec_if 2 slope slope 2 integer_% boolean_not)
+Best program: (boolean_and boolean_and true ISI ISI :split integer_* BUI integer_* slope exec_if (exec_if (exec_if (2 slope slope 2 integer_% boolean_not) ()) ()) ())
+Best total error: 6877
+Total number of cells: 24280
+Best percent error: 0.28323722
+Fires evaluated:  (k2 r1 g2 m1)
+

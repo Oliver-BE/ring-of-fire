@@ -3569,3 +3569,203 @@ Total number of cells: 4400
 Best percent error: 0.38954544
 Fires evaluated:  (r1)
 
+-------------------------------------------------------
+               Report for Generation 357
+-------------------------------------------------------
+Best plushy: (false 2 2 integer_- slope 0 true integer_= boolean_= integer_= FWI integer_= integer_* ISI 2 NT 2 NT false NT NT integer_* 0 integer_* 0 integer_* exec_dup integer_* boolean_= integer_* integer_= boolean_= exec_dup integer_=)
+Best program: (false 2 2 integer_- slope 0 true integer_= boolean_= integer_= FWI integer_= integer_* ISI 2 NT 2 NT false NT NT integer_* 0 integer_* 0 integer_* exec_dup (integer_* boolean_= integer_* integer_= boolean_= exec_dup (integer_=)))
+Best total error: 3153
+Total number of cells: 8320
+Best percent error: 0.37896633
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 358
+-------------------------------------------------------
+Best plushy: (false 2 boolean_= slope WD integer_= close FWI integer_= 1 2 2 NT 2 NT integer_* boolean_and NT NT integer_* NT NT integer_* boolean_= exec_dup exec_dup boolean_= integer_* integer_= boolean_= exec_dup boolean_= 0 exec_dup)
+Best program: (false 2 boolean_= slope WD integer_= FWI integer_= 1 2 2 NT 2 NT integer_* boolean_and NT NT integer_* NT NT integer_* boolean_= exec_dup (exec_dup (boolean_= integer_* integer_= boolean_= exec_dup (boolean_= 0 exec_dup ()))))
+Best total error: 3153
+Total number of cells: 8320
+Best percent error: 0.37896633
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 359
+-------------------------------------------------------
+Best plushy: (false 2 2 slope 0 0 integer_= close boolean_= integer_= integer_= true TB 2 2 BUI BUI NT NT NT NT integer_* NT 0 integer_* 2 boolean_= boolean_= integer_= boolean_= boolean_= exec_dup integer_=)
+Best program: (false 2 2 slope 0 0 integer_= boolean_= integer_= integer_= true TB 2 2 BUI BUI NT NT NT NT integer_* NT 0 integer_* 2 boolean_= boolean_= integer_= boolean_= boolean_= exec_dup (integer_=))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 360
+-------------------------------------------------------
+Best plushy: (2 2 integer_- 0 true integer_= boolean_= integer_= integer_= true integer_* NT NT 2 BUI WS integer_= NT NT integer_* NT integer_* boolean_= exec_dup exec_dup integer_= boolean_= integer_=)
+Best program: (2 2 integer_- 0 true integer_= boolean_= integer_= integer_= true integer_* NT NT 2 BUI WS integer_= NT NT integer_* NT integer_* boolean_= exec_dup (exec_dup (integer_= boolean_= integer_=)))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 361
+-------------------------------------------------------
+Best plushy: (false 2 2 boolean_= integer_= integer_= integer_= integer_= 2 2 2 integer_* boolean_and NT NT integer_* NT NT NT boolean_= exec_dup exec_dup integer_* integer_= boolean_= boolean_= exec_dup)
+Best program: (false 2 2 boolean_= integer_= integer_= integer_= integer_= 2 2 2 integer_* boolean_and NT NT integer_* NT NT NT boolean_= exec_dup (exec_dup (integer_* integer_= boolean_= boolean_= exec_dup ())))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 362
+-------------------------------------------------------
+Best plushy: (integer_* 2 2 slope WD integer_= integer_= close integer_= integer_= integer_= true TB 2 NT NT BUI WS NT NT integer_* integer_* NT NT integer_* 2 slope boolean_= WD boolean_= boolean_= exec_dup integer_=)
+Best program: (integer_* 2 2 slope WD integer_= integer_= integer_= integer_= integer_= true TB 2 NT NT BUI WS NT NT integer_* integer_* NT NT integer_* 2 slope boolean_= WD boolean_= boolean_= exec_dup (integer_=))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 363
+-------------------------------------------------------
+Best plushy: (2 2 integer_- 0 WD integer_= boolean_= close integer_= true integer_= NT NT NT NT NT BUI NT NT integer_* integer_* integer_* NT exec_dup integer_* integer_= exec_dup WD exec_dup)
+Best program: (2 2 integer_- 0 WD integer_= boolean_= integer_= true integer_= NT NT NT NT NT BUI NT NT integer_* integer_* integer_* NT exec_dup (integer_* integer_= exec_dup (WD exec_dup ())))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 364
+-------------------------------------------------------
+Best plushy: (2 2 integer_- 0 true integer_= boolean_= integer_= integer_= true integer_= integer_= NT NT NT 2 2 integer_* NT NT integer_* NT NT NT exec_dup exec_dup integer_= integer_= integer_% exec_dup exec_dup exec_dup boolean_=)
+Best program: (2 2 integer_- 0 true integer_= boolean_= integer_= integer_= true integer_= integer_= NT NT NT 2 2 integer_* NT NT integer_* NT NT NT exec_dup (exec_dup (integer_= integer_= integer_% exec_dup (exec_dup (exec_dup (boolean_=))))))
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 365
+-------------------------------------------------------
+Best plushy: (integer_* 2 2 slope WD integer_= integer_= close integer_= integer_= integer_= true TB 2 NT BUI boolean_or NT NT integer_* NT NT integer_* 2 slope boolean_= WD boolean_= boolean_= exec_dup integer_=)
+Best program: (integer_* 2 2 slope WD integer_= integer_= integer_= integer_= integer_= true TB 2 NT BUI boolean_or NT NT integer_* NT NT integer_* 2 slope boolean_= WD boolean_= boolean_= exec_dup (integer_=))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 366
+-------------------------------------------------------
+Best plushy: (2 2 2 0 true integer_= boolean_= integer_= 2 ISI true boolean_and NT NT NT NT BUI NT boolean_= exec_if exec_dup integer_* integer_= NBD 2 boolean_= exec_dup integer_* integer_- exec_dup exec_dup)
+Best program: (2 2 2 0 true integer_= boolean_= integer_= 2 ISI true boolean_and NT NT NT NT BUI NT boolean_= exec_if (exec_dup (integer_* integer_= NBD 2 boolean_= exec_dup (integer_* integer_- exec_dup (exec_dup ())))) ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 367
+-------------------------------------------------------
+Best plushy: (integer_* 2 2 boolean_= integer_= integer_- exec_if integer_= integer_= ISI integer_* NT NT NT BUI NT NT NT boolean_= NT NT integer_* exec_dup ISI integer_* boolean_= integer_- exec_dup boolean_=)
+Best program: (integer_* 2 2 boolean_= integer_= integer_- exec_if (integer_= integer_= ISI integer_* NT NT NT BUI NT NT NT boolean_= NT NT integer_* exec_dup (ISI integer_* boolean_= integer_- exec_dup (boolean_=))) ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 368
+-------------------------------------------------------
+Best plushy: (integer_* 2 2 0 WD integer_= integer_= integer_= integer_= integer_= integer_= true TB NT NT NT NT NT boolean_= exec_if NT integer_* exec_dup 2 slope boolean_= WD exec_dup exec_dup exec_dup integer_=)
+Best program: (integer_* 2 2 0 WD integer_= integer_= integer_= integer_= integer_= integer_= true TB NT NT NT NT NT boolean_= exec_if (NT integer_* exec_dup (2 slope boolean_= WD exec_dup (exec_dup (exec_dup (integer_=))))) ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 369
+-------------------------------------------------------
+Best plushy: (2 2 2 boolean_= integer_= integer_= integer_= 2 2 NT true 2 NT NT NT exec_if integer_* integer_* exec_if integer_= integer_* integer_* integer_* slope exec_dup WD exec_dup exec_dup exec_dup)
+Best program: (2 2 2 boolean_= integer_= integer_= integer_= 2 2 NT true 2 NT NT NT exec_if (integer_* integer_* exec_if (integer_= integer_* integer_* integer_* slope exec_dup (WD exec_dup (exec_dup (exec_dup ())))) ()) ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 370
+-------------------------------------------------------
+Best plushy: (2 2 2 boolean_= integer_= integer_= integer_= 2 NT true NT NT NT exec_if integer_* integer_* exec_if integer_= integer_* integer_* integer_* slope exec_dup WD exec_dup exec_dup exec_dup)
+Best program: (2 2 2 boolean_= integer_= integer_= integer_= 2 NT true NT NT NT exec_if (integer_* integer_* exec_if (integer_= integer_* integer_* integer_* slope exec_dup (WD exec_dup (exec_dup (exec_dup ())))) ()) ())
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 371
+-------------------------------------------------------
+Best plushy: (integer_* 2 0 WD integer_= boolean_= integer_= 2 integer_= ISI WS NT NT NT NT NT NT NT integer_* 2 slope boolean_= integer_* integer_= exec_dup exec_dup boolean_= integer_* integer_-)
+Best program: (integer_* 2 0 WD integer_= boolean_= integer_= 2 integer_= ISI WS NT NT NT NT NT NT NT integer_* 2 slope boolean_= integer_* integer_= exec_dup (exec_dup (boolean_= integer_* integer_-)))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 372
+-------------------------------------------------------
+Best plushy: (2 2 2 boolean_= WD integer_- boolean_= integer_= 2 integer_= NT true true boolean_and NT integer_* NT true integer_* BUI NT slope integer_* exec_dup boolean_= exec_dup NBD 2 integer_* exec_dup)
+Best program: (2 2 2 boolean_= WD integer_- boolean_= integer_= 2 integer_= NT true true boolean_and NT integer_* NT true integer_* BUI NT slope integer_* exec_dup (boolean_= exec_dup (NBD 2 integer_* exec_dup ())))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 373
+-------------------------------------------------------
+Best plushy: (integer_* 2 0 WD integer_= boolean_= integer_= 2 integer_= ISI WS NT NT NT NT NT NT NT integer_* 2 slope boolean_= integer_* integer_= exec_dup exec_dup boolean_= integer_-)
+Best program: (integer_* 2 0 WD integer_= boolean_= integer_= 2 integer_= ISI WS NT NT NT NT NT NT NT integer_* 2 slope boolean_= integer_* integer_= exec_dup (exec_dup (boolean_= integer_-)))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 374
+-------------------------------------------------------
+Best plushy: (2 2 2 2 0 integer_= 2 integer_= ISI true NT NT NT exec_if true integer_* NT BUI NT boolean_= integer_* integer_% exec_dup NT boolean_= integer_* integer_- slope exec_dup exec_dup)
+Best program: (2 2 2 2 0 integer_= 2 integer_= ISI true NT NT NT exec_if (true integer_* NT BUI NT boolean_= integer_* integer_% exec_dup (NT boolean_= integer_* integer_- slope exec_dup (exec_dup ()))) ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 375
+-------------------------------------------------------
+Best plushy: (integer_* 2 0 integer_= 0 integer_= integer_= integer_= boolean_or NT true NT NT NT NT NT integer_* 2 NT boolean_= integer_* integer_= exec_dup 2 NT boolean_= 2 exec_dup)
+Best program: (integer_* 2 0 integer_= 0 integer_= integer_= integer_= boolean_or NT true NT NT NT NT NT integer_* 2 NT boolean_= integer_* integer_= exec_dup (2 NT boolean_= 2 exec_dup ()))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 376
+-------------------------------------------------------
+Best plushy: (integer_* 2 0 FWI boolean_= WD boolean_= integer_= 2 integer_= NT NT true NT NT integer_* NT true integer_* boolean_= NT slope integer_* exec_dup boolean_= exec_dup NBD 2 integer_*)
+Best program: (integer_* 2 0 FWI boolean_= WD boolean_= integer_= 2 integer_= NT NT true NT NT integer_* NT true integer_* boolean_= NT slope integer_* exec_dup (boolean_= exec_dup (NBD 2 integer_*)))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+

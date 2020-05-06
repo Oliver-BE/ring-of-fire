@@ -449,3 +449,53 @@ Total number of cells: 14616
 Best percent error: 0.3678161
 Fires evaluated:  (g2 m2)
 
+-------------------------------------------------------
+               Report for Generation 45
+-------------------------------------------------------
+Best plushy: (1 false false boolean_and WS WS TB TB WS WS 2 WS integer_= 2 true integer_- TB integer_- integer_- 2 integer_- integer_- WS false false false exec_dup exec_dup integer_% integer_%)
+Best program: (1 false false boolean_and WS WS TB TB WS WS 2 WS integer_= 2 true integer_- TB integer_- integer_- 2 integer_- integer_- WS false false false exec_dup (exec_dup (integer_% integer_%)))
+Best total error: 5376
+Total number of cells: 14616
+Best percent error: 0.3678161
+Fires evaluated:  (m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 46
+-------------------------------------------------------
+Best plushy: (1 false false close WS WS TB TB WS WS WS WS 2 TB true TB integer_- TB integer_- integer_- integer_- 2 2 false false false exec_dup integer_% integer_%)
+Best program: (1 false false WS WS TB TB WS WS WS WS 2 TB true TB integer_- TB integer_- integer_- integer_- 2 2 false false false exec_dup (integer_% integer_%))
+Best total error: 4224
+Total number of cells: 15528
+Best percent error: 0.27202472
+Fires evaluated:  (k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 47
+-------------------------------------------------------
+Best plushy: (1 false false close WS WS TB WS WS WS WS 2 TB true TB integer_- TB integer_- integer_- integer_- 2 2 false false exec_dup integer_% integer_%)
+Best program: (1 false false WS WS TB WS WS WS WS 2 TB true TB integer_- TB integer_- integer_- integer_- 2 2 false false exec_dup (integer_% integer_%))
+Best total error: 5376
+Total number of cells: 14616
+Best percent error: 0.3678161
+Fires evaluated:  (g2 m2)
+
+-------------------------------------------------------
+               Report for Generation 48
+-------------------------------------------------------
+Best plushy: (1 false false boolean_and WS WS TB TB WS WS WS integer_= WD 2 integer_- TB integer_- 2 integer_- integer_- WS false false false integer_- exec_dup exec_dup integer_% integer_%)
+Best program: (1 false false boolean_and WS WS TB TB WS WS WS integer_= WD 2 integer_- TB integer_- 2 integer_- integer_- WS false false false integer_- exec_dup (exec_dup (integer_% integer_%)))
+Best total error: 4246
+Total number of cells: 16748
+Best percent error: 0.2535228
+Fires evaluated:  (g2 k2)
+
+-------------------------------------------------------
+               Report for Generation 49
+-------------------------------------------------------
+Best plushy: (1 false false close WS WS TB WS WS WS WS 2 TB true TB integer_- TB integer_- integer_- integer_- 2 2 false false exec_dup integer_% integer_%)
+Best program: (1 false false WS WS TB WS WS WS WS 2 TB true TB integer_- TB integer_- integer_- integer_- 2 2 false false exec_dup (integer_% integer_%))
+Best total error: 3914
+Total number of cells: 9476
+Best percent error: 0.41304347
+Fires evaluated:  (m2 r1)
+

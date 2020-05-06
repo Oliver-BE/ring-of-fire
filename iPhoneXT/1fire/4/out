@@ -6029,3 +6029,643 @@ Total number of cells: 4400
 Best percent error: 0.38954544
 Fires evaluated:  (r1)
 
+-------------------------------------------------------
+               Report for Generation 603
+-------------------------------------------------------
+Best plushy: (integer_= true true :split :split :split TB)
+Best program: (integer_= true true :split :split :split TB)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 604
+-------------------------------------------------------
+Best plushy: (integer_= true boolean_= :split :split :split)
+Best program: (integer_= true boolean_= :split :split :split)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 605
+-------------------------------------------------------
+Best plushy: (integer_= true true :split :split :split :split)
+Best program: (integer_= true true :split :split :split :split)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 606
+-------------------------------------------------------
+Best plushy: (integer_= true true :split :split :split :split)
+Best program: (integer_= true true :split :split :split :split)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 607
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split exec_if :split :split)
+Best program: (integer_= true :split :split exec_if (:split :split) ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 608
+-------------------------------------------------------
+Best plushy: (integer_= true boolean_= :split :split :split :split)
+Best program: (integer_= true boolean_= :split :split :split :split)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 609
+-------------------------------------------------------
+Best plushy: (integer_= true true :split exec_if :split :split)
+Best program: (integer_= true true :split exec_if (:split :split) ())
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 610
+-------------------------------------------------------
+Best plushy: (integer_= true :split exec_if :split :split)
+Best program: (integer_= true :split exec_if (:split :split) ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 611
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split :split :split)
+Best program: (integer_= true :split :split :split :split)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 612
+-------------------------------------------------------
+Best plushy: (integer_= true true integer_- :split exec_if :split)
+Best program: (integer_= true true integer_- :split exec_if (:split) ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 613
+-------------------------------------------------------
+Best plushy: (integer_= true true :split :split :split)
+Best program: (integer_= true true :split :split :split)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 614
+-------------------------------------------------------
+Best plushy: (integer_= true true :split exec_if :split :split)
+Best program: (integer_= true true :split exec_if (:split :split) ())
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 615
+-------------------------------------------------------
+Best plushy: (integer_= true true :split :split :split)
+Best program: (integer_= true true :split :split :split)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 616
+-------------------------------------------------------
+Best plushy: (integer_= true true :split :split :split)
+Best program: (integer_= true true :split :split :split)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 617
+-------------------------------------------------------
+Best plushy: (integer_= true true :split :split exec_if)
+Best program: (integer_= true true :split :split exec_if () ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 618
+-------------------------------------------------------
+Best plushy: (integer_= true true :split :split :split)
+Best program: (integer_= true true :split :split :split)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 619
+-------------------------------------------------------
+Best plushy: (integer_= true true :split :split :split)
+Best program: (integer_= true true :split :split :split)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 620
+-------------------------------------------------------
+Best plushy: (boolean_and integer_= true true :split :split :split)
+Best program: (boolean_and integer_= true true :split :split :split)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 621
+-------------------------------------------------------
+Best plushy: (boolean_and true true true :split :split :split)
+Best program: (boolean_and true true true :split :split :split)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 622
+-------------------------------------------------------
+Best plushy: (integer_= true true :split integer_% :split :split)
+Best program: (integer_= true true :split integer_% :split :split)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 623
+-------------------------------------------------------
+Best plushy: (integer_= true true :split :split)
+Best program: (integer_= true true :split :split)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 624
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split :split :split :split)
+Best program: (integer_= true :split :split :split :split :split)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 625
+-------------------------------------------------------
+Best plushy: (integer_= true true :split)
+Best program: (integer_= true true :split)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 626
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split :split :split :split true)
+Best program: (integer_= true :split :split :split :split :split true)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 627
+-------------------------------------------------------
+Best plushy: (integer_= true :split :split :split :split true)
+Best program: (integer_= true :split :split :split :split true)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 628
+-------------------------------------------------------
+Best plushy: (ISI integer_= true :split :split :split TB :split NBD)
+Best program: (ISI integer_= true :split :split :split TB :split NBD)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 629
+-------------------------------------------------------
+Best plushy: (integer_- integer_= true :split :split :split :split)
+Best program: (integer_- integer_= true :split :split :split :split)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 630
+-------------------------------------------------------
+Best plushy: (integer_= true true :split :split :split :split NBD)
+Best program: (integer_= true true :split :split :split :split NBD)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 631
+-------------------------------------------------------
+Best plushy: (integer_- integer_= true :split :split :split :split)
+Best program: (integer_- integer_= true :split :split :split :split)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 632
+-------------------------------------------------------
+Best plushy: (true integer_= true :split :split :split :split)
+Best program: (true integer_= true :split :split :split :split)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 633
+-------------------------------------------------------
+Best plushy: (close true true :split :split :split :split 1)
+Best program: (true true :split :split :split :split 1)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 634
+-------------------------------------------------------
+Best plushy: (integer_= integer_= true :split :split :split NBD :split)
+Best program: (integer_= integer_= true :split :split :split NBD :split)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 635
+-------------------------------------------------------
+Best plushy: (integer_= integer_= true :split :split :split NBD)
+Best program: (integer_= integer_= true :split :split :split NBD)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 636
+-------------------------------------------------------
+Best plushy: (true integer_= true :split :split :split :split)
+Best program: (true integer_= true :split :split :split :split)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 637
+-------------------------------------------------------
+Best plushy: (integer_= integer_= true :split :split :split WS :split NBD)
+Best program: (integer_= integer_= true :split :split :split WS :split NBD)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 638
+-------------------------------------------------------
+Best plushy: (integer_= integer_= true :split :split :split WS :split NBD)
+Best program: (integer_= integer_= true :split :split :split WS :split NBD)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 639
+-------------------------------------------------------
+Best plushy: (close true true :split :split NBD :split)
+Best program: (true true :split :split NBD :split)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 640
+-------------------------------------------------------
+Best plushy: (close WD integer_= true :split :split NBD :split :split NBD)
+Best program: (WD integer_= true :split :split NBD :split :split NBD)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 641
+-------------------------------------------------------
+Best plushy: (close true true :split :split NBD :split :split NBD)
+Best program: (true true :split :split NBD :split :split NBD)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 642
+-------------------------------------------------------
+Best plushy: (close true true :split :split NBD :split :split)
+Best program: (true true :split :split NBD :split :split)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 643
+-------------------------------------------------------
+Best plushy: (true integer_= integer_= true :split :split ISI NBD :split :split boolean_=)
+Best program: (true integer_= integer_= true :split :split ISI NBD :split :split boolean_=)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 644
+-------------------------------------------------------
+Best plushy: (close true integer_= :split :split NBD NBD :split)
+Best program: (true integer_= :split :split NBD NBD :split)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 645
+-------------------------------------------------------
+Best plushy: (close true BUI :split :split :split NBD NBD NBD)
+Best program: (true BUI :split :split :split NBD NBD NBD)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 646
+-------------------------------------------------------
+Best plushy: (true :split :split :split :split NBD NBD NBD :split)
+Best program: (true :split :split :split :split NBD NBD NBD :split)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 647
+-------------------------------------------------------
+Best plushy: (true integer_= :split :split :split :split ISI ISI)
+Best program: (true integer_= :split :split :split :split ISI ISI)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 648
+-------------------------------------------------------
+Best plushy: (close true :split ISI :split NBD NBD false :split :split)
+Best program: (true :split ISI :split NBD NBD false :split :split)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 649
+-------------------------------------------------------
+Best plushy: (true :split exec_if :split :split NBD NBD NBD :split)
+Best program: (true :split exec_if (:split :split NBD NBD NBD :split) ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 650
+-------------------------------------------------------
+Best plushy: (true :split exec_if :split :split NBD NBD NBD)
+Best program: (true :split exec_if (:split :split NBD NBD NBD) ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 651
+-------------------------------------------------------
+Best plushy: (true :split :split :split :split NBD NBD ISI :split)
+Best program: (true :split :split :split :split NBD NBD ISI :split)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 652
+-------------------------------------------------------
+Best plushy: (true :split exec_if :split :split NBD NBD NBD)
+Best program: (true :split exec_if (:split :split NBD NBD NBD) ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 653
+-------------------------------------------------------
+Best plushy: (true :split exec_if :split :split :split :split NBD NBD :split)
+Best program: (true :split exec_if (:split :split :split :split NBD NBD :split) ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 654
+-------------------------------------------------------
+Best plushy: (true :split :split :split :split :split NBD :split)
+Best program: (true :split :split :split :split :split NBD :split)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 655
+-------------------------------------------------------
+Best plushy: (true :split exec_if :split :split NBD NBD NBD)
+Best program: (true :split exec_if (:split :split NBD NBD NBD) ())
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 656
+-------------------------------------------------------
+Best plushy: (true :split :split :split NBD :split)
+Best program: (true :split :split :split NBD :split)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 657
+-------------------------------------------------------
+Best plushy: (true :split :split :split NBD :split NBD :split)
+Best program: (true :split :split :split NBD :split NBD :split)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 658
+-------------------------------------------------------
+Best plushy: (true :split :split :split NBD :split NBD)
+Best program: (true :split :split :split NBD :split NBD)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 659
+-------------------------------------------------------
+Best plushy: (true :split :split :split :split NBD)
+Best program: (true :split :split :split :split NBD)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 660
+-------------------------------------------------------
+Best plushy: (true :split :split :split :split :split)
+Best program: (true :split :split :split :split :split)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 661
+-------------------------------------------------------
+Best plushy: (true :split :split :split NBD NBD)
+Best program: (true :split :split :split NBD NBD)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 662
+-------------------------------------------------------
+Best plushy: (true integer_= :split boolean_and integer_+ :split :split :split exec_if NBD)
+Best program: (true integer_= :split boolean_and integer_+ :split :split :split exec_if (NBD) ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 663
+-------------------------------------------------------
+Best plushy: (true :split :split :split :split :split :split)
+Best program: (true :split :split :split :split :split :split)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 664
+-------------------------------------------------------
+Best plushy: (true integer_= :split boolean_and integer_+ :split :split exec_if NBD)
+Best program: (true integer_= :split boolean_and integer_+ :split :split exec_if (NBD) ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 665
+-------------------------------------------------------
+Best plushy: (true integer_= :split boolean_and :split :split :split exec_if NBD)
+Best program: (true integer_= :split boolean_and :split :split :split exec_if (NBD) ())
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 666
+-------------------------------------------------------
+Best plushy: (true integer_= :split boolean_and :split :split :split exec_if NBD)
+Best program: (true integer_= :split boolean_and :split :split :split exec_if (NBD) ())
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
