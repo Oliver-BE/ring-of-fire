@@ -4,7 +4,7 @@ A genetic program for evolving rules that describe a cellular automaton-based wi
 
 ## Usage
 
-Clone repository, navigate to the ring-of-fire directory and run command: <br />
+Clone repository, navigate to the `src/ring-of-fire` directory and run command: <br />
 `lein run`<br />
 To interact with a repl: <br />
 `lein repl`
@@ -14,6 +14,10 @@ To copy all of the folders in a directory to another directory but not the files
 
 ## Necessary input data
 *we need to add what kind of new data input could be placed in here, i.e. what the structure of the data that we used is*
+
+## Example Outputs
+*include screenshots here*
+*also include how to take a rule generated from ring-of-fire and use that to run our quil program and output the grid*
 
 ## Dependencies
 
