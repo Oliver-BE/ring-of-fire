@@ -1099,3 +1099,73 @@ Total number of cells: 23060
 Best percent error: 0.297268
 Fires evaluated:  (r1 m1 k2 k1)
 
+-------------------------------------------------------
+               Report for Generation 110
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and WS integer_- WS boolean_or boolean_or boolean_or NT NT NT NBD NT slope true slope slope integer_- integer_- WS WS WS :split :split WS WS)
+Best program: (boolean_and boolean_and WS integer_- WS boolean_or boolean_or boolean_or NT NT NT NBD NT slope true slope slope integer_- integer_- WS WS WS :split :split WS WS)
+Best total error: 9600
+Total number of cells: 30144
+Best percent error: 0.31847134
+Fires evaluated:  (k2 g2 m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 111
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and WS integer_- WS boolean_or true boolean_or NT NT NT NT NT slope FWI slope WS integer_- integer_- WS integer_- :split :split slope WS WS)
+Best program: (boolean_and boolean_and WS integer_- WS boolean_or true boolean_or NT NT NT NT NT slope FWI slope WS integer_- integer_- WS integer_- :split :split slope WS WS)
+Best total error: 9114
+Total number of cells: 29468
+Best percent error: 0.30928466
+Fires evaluated:  (g2 k2 r1 k1)
+
+-------------------------------------------------------
+               Report for Generation 112
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and WS WS WS boolean_or true boolean_or true NT 2 NT NBD NT slope slope slope WS WS WS WS WS WS boolean_= NT WS WS)
+Best program: (boolean_and boolean_and WS WS WS boolean_or true boolean_or true NT 2 NT NBD NT slope slope slope WS WS WS WS WS WS boolean_= NT WS WS)
+Best total error: 5901
+Total number of cells: 19816
+Best percent error: 0.29778966
+Fires evaluated:  (r1 m1 k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 113
+-------------------------------------------------------
+Best plushy: (TB boolean_and boolean_and integer_- WS boolean_or boolean_or boolean_or NT NT NT NBD NT slope true slope slope integer_- NBD integer_- WS WS WS :split :split WS WS)
+Best program: (TB boolean_and boolean_and integer_- WS boolean_or boolean_or boolean_or NT NT NT NBD NT slope true slope slope integer_- NBD integer_- WS WS WS :split :split WS WS)
+Best total error: 9114
+Total number of cells: 29468
+Best percent error: 0.30928466
+Fires evaluated:  (k2 k1 r1 g2)
+
+-------------------------------------------------------
+               Report for Generation 114
+-------------------------------------------------------
+Best plushy: (boolean_and BUI boolean_and WS boolean_and boolean_or true boolean_or true NT NBD NT :split NT slope slope WS WS WS WS integer_- WS boolean_= NT WS)
+Best program: (boolean_and BUI boolean_and WS boolean_and boolean_or true boolean_or true NT NBD NT :split NT slope slope WS WS WS WS integer_- WS boolean_= NT WS)
+Best total error: 9114
+Total number of cells: 29468
+Best percent error: 0.30928466
+Fires evaluated:  (r1 g2 k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 115
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and WS boolean_or boolean_or true boolean_or integer_* NT NT NT NT slope slope slope integer_- WS exec_if slope WS :split :split WS NT WS WS WS :split)
+Best program: (boolean_and boolean_and boolean_and WS boolean_or boolean_or true boolean_or integer_* NT NT NT NT slope slope slope integer_- WS exec_if (slope WS :split :split WS NT WS WS WS :split) ())
+Best total error: 8961
+Total number of cells: 25392
+Best percent error: 0.35290644
+Fires evaluated:  (r1 g2 m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 116
+-------------------------------------------------------
+Best plushy: (boolean_and true WS boolean_and WS WS WS true FWI NBD boolean_or integer_* NBD NT NT NT slope slope integer_- NBD boolean_= integer_- WS boolean_= :split WS :split boolean_= NT WS WS WS)
+Best program: (boolean_and true WS boolean_and WS WS WS true FWI NBD boolean_or integer_* NBD NT NT NT slope slope integer_- NBD boolean_= integer_- WS boolean_= :split WS :split boolean_= NT WS WS WS)
+Best total error: 7363
+Total number of cells: 24956
+Best percent error: 0.29503927
+Fires evaluated:  (g2 m1 k2 m2)
+

@@ -1859,3 +1859,153 @@ Total number of cells: 5076
 Best percent error: 0.43341213
 Fires evaluated:  (m2)
 
+-------------------------------------------------------
+               Report for Generation 186
+-------------------------------------------------------
+Best plushy: (true exec_dup WS 1 1 exec_if NBD integer_% exec_if false integer_+ false integer_% :split NT integer_* :split :split :split slope slope true WD :split WD WS WD integer_% WD true WD slope)
+Best program: (true exec_dup (WS 1 1 exec_if (NBD integer_% exec_if (false integer_+ false integer_% :split NT integer_* :split :split :split slope slope true WD :split WD WS WD integer_% WD true WD slope) ()) ()))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 187
+-------------------------------------------------------
+Best plushy: (true exec_dup WS 1 1 exec_if exec_if integer_- exec_if integer_% exec_if NT false integer_+ slope false :split integer_* :split integer_+ integer_* :split ISI :split slope :split slope :split WD 0 :split :split WD slope WS WD)
+Best program: (true exec_dup (WS 1 1 exec_if (exec_if (integer_- exec_if (integer_% exec_if (NT false integer_+ slope false :split integer_* :split integer_+ integer_* :split ISI :split slope :split slope :split WD 0 :split :split WD slope WS WD) ()) ()) ()) ()))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 188
+-------------------------------------------------------
+Best plushy: (true exec_dup WS integer_= 1 exec_if exec_if integer_% exec_if exec_if exec_if false integer_% :split NT integer_* :split integer_* :split integer_* integer_* :split ISI :split slope :split slope integer_% WD 0 :split :split exec_if slope slope WD)
+Best program: (true exec_dup (WS integer_= 1 exec_if (exec_if (integer_% exec_if (exec_if (exec_if (false integer_% :split NT integer_* :split integer_* :split integer_* integer_* :split ISI :split slope :split slope integer_% WD 0 :split :split exec_if (slope slope WD) ()) ()) ()) ()) ()) ()))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 189
+-------------------------------------------------------
+Best plushy: (true exec_dup WS integer_= 1 exec_if exec_if integer_% exec_if exec_if exec_if false integer_% :split NT integer_* :split integer_* :split integer_* integer_* :split ISI :split slope :split slope integer_% WD 0 :split :split exec_if slope slope WD)
+Best program: (true exec_dup (WS integer_= 1 exec_if (exec_if (integer_% exec_if (exec_if (exec_if (false integer_% :split NT integer_* :split integer_* :split integer_* integer_* :split ISI :split slope :split slope integer_% WD 0 :split :split exec_if (slope slope WD) ()) ()) ()) ()) ()) ()))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 190
+-------------------------------------------------------
+Best plushy: (true exec_dup WS integer_= 1 exec_if exec_if integer_% exec_if exec_if false integer_% :split NT integer_* :split integer_* integer_* :split ISI :split slope :split slope integer_% WD 0 :split :split exec_if slope slope WD)
+Best program: (true exec_dup (WS integer_= 1 exec_if (exec_if (integer_% exec_if (exec_if (false integer_% :split NT integer_* :split integer_* integer_* :split ISI :split slope :split slope integer_% WD 0 :split :split exec_if (slope slope WD) ()) ()) ()) ()) ()))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 191
+-------------------------------------------------------
+Best plushy: (true integer_= exec_dup 1 1 NBD FWI NBD exec_dup exec_if exec_if NT false true false :split :split integer_* NT exec_if integer_+ WD WD WS integer_* WS :split WD true true 1 slope integer_% true true true)
+Best program: (true integer_= exec_dup (1 1 NBD FWI NBD exec_dup (exec_if (exec_if (NT false true false :split :split integer_* NT exec_if (integer_+ WD WD WS integer_* WS :split WD true true 1 slope integer_% true true true) ()) ()) ())))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 192
+-------------------------------------------------------
+Best plushy: (FWI true exec_dup WS integer_= 1 exec_if exec_if integer_% exec_if exec_if :split exec_if false integer_% :split NT integer_* :split integer_* :split integer_* BUI integer_* :split ISI :split slope :split slope integer_% WD 0 :split 1 :split exec_if slope slope WD)
+Best program: (FWI true exec_dup (WS integer_= 1 exec_if (exec_if (integer_% exec_if (exec_if (:split exec_if (false integer_% :split NT integer_* :split integer_* :split integer_* BUI integer_* :split ISI :split slope :split slope integer_% WD 0 :split 1 :split exec_if (slope slope WD) ()) ()) ()) ()) ()) ()))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 193
+-------------------------------------------------------
+Best plushy: (true exec_dup WS integer_= 1 exec_if integer_% exec_if exec_if false integer_% :split NT integer_* :split integer_* :split integer_* BUI integer_* :split ISI :split slope :split slope integer_% WD 0 1 :split exec_if slope slope WD)
+Best program: (true exec_dup (WS integer_= 1 exec_if (integer_% exec_if (exec_if (false integer_% :split NT integer_* :split integer_* :split integer_* BUI integer_* :split ISI :split slope :split slope integer_% WD 0 1 :split exec_if (slope slope WD) ()) ()) ()) ()))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 194
+-------------------------------------------------------
+Best plushy: (true true exec_dup WS 1 exec_if exec_if exec_if integer_% exec_if integer_% :split exec_if integer_* integer_% :split NT integer_* :split integer_* :split integer_* BUI integer_* :split ISI :split WD :split slope :split exec_if 0 slope WD exec_if)
+Best program: (true true exec_dup (WS 1 exec_if (exec_if (exec_if (integer_% exec_if (integer_% :split exec_if (integer_* integer_% :split NT integer_* :split integer_* :split integer_* BUI integer_* :split ISI :split WD :split slope :split exec_if (0 slope WD exec_if () ()) ()) ()) ()) ()) ()) ()))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 195
+-------------------------------------------------------
+Best plushy: (true true exec_dup WS 1 exec_if exec_if exec_if integer_% exec_if integer_% :split exec_if integer_* integer_% :split NT integer_* :split integer_* :split integer_* BUI NBD integer_* :split ISI :split WD :split slope :split exec_if 0 slope WD exec_if)
+Best program: (true true exec_dup (WS 1 exec_if (exec_if (exec_if (integer_% exec_if (integer_% :split exec_if (integer_* integer_% :split NT integer_* :split integer_* :split integer_* BUI NBD integer_* :split ISI :split WD :split slope :split exec_if (0 slope WD exec_if () ()) ()) ()) ()) ()) ()) ()))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 196
+-------------------------------------------------------
+Best plushy: (true true exec_dup WS 1 exec_if exec_if integer_% exec_if integer_% :split exec_if integer_* integer_% :split NT integer_* :split integer_* :split integer_* BUI NBD integer_* :split ISI :split WD :split slope exec_if 0 slope WD exec_if)
+Best program: (true true exec_dup (WS 1 exec_if (exec_if (integer_% exec_if (integer_% :split exec_if (integer_* integer_% :split NT integer_* :split integer_* :split integer_* BUI NBD integer_* :split ISI :split WD :split slope exec_if (0 slope WD exec_if () ()) ()) ()) ()) ()) ()))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 197
+-------------------------------------------------------
+Best plushy: (true true exec_dup WS 1 exec_if exec_if exec_if integer_% exec_if integer_% :split exec_if integer_* integer_* :split :split integer_* :split integer_* :split integer_* BUI integer_* integer_* :split integer_% :split :split :split integer_% 1 0 :split slope WD exec_if)
+Best program: (true true exec_dup (WS 1 exec_if (exec_if (exec_if (integer_% exec_if (integer_% :split exec_if (integer_* integer_* :split :split integer_* :split integer_* :split integer_* BUI integer_* integer_* :split integer_% :split :split :split integer_% 1 0 :split slope WD exec_if () ()) ()) ()) ()) ()) ()))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 198
+-------------------------------------------------------
+Best plushy: (true BUI exec_dup WS exec_dup exec_if exec_if exec_if integer_% exec_if integer_% exec_if integer_% integer_* integer_* :split :split integer_% :split NT :split integer_* integer_* :split integer_* BUI integer_% integer_* integer_* :split integer_% 1 :split WD slope slope exec_if exec_if 0 slope)
+Best program: (true BUI exec_dup (WS exec_dup (exec_if (exec_if (exec_if (integer_% exec_if (integer_% exec_if (integer_% integer_* integer_* :split :split integer_% :split NT :split integer_* integer_* :split integer_* BUI integer_% integer_* integer_* :split integer_% 1 :split WD slope slope exec_if (exec_if (0 slope) ()) ()) ()) ()) ()) ()) ())))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 199
+-------------------------------------------------------
+Best plushy: (true true exec_dup WS 1 exec_if exec_if integer_% exec_if :split exec_if exec_if :split :split NT :split integer_* integer_* integer_* integer_* BUI integer_* :split :split :split :split :split slope :split exec_if 0 slope WD exec_if)
+Best program: (true true exec_dup (WS 1 exec_if (exec_if (integer_% exec_if (:split exec_if (exec_if (:split :split NT :split integer_* integer_* integer_* integer_* BUI integer_* :split :split :split :split :split slope :split exec_if (0 slope WD exec_if () ()) ()) ()) ()) ()) ()) ()))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 200
+-------------------------------------------------------
+Best plushy: (true true :split WS exec_dup exec_if integer_= 1 exec_if exec_if exec_if exec_if exec_if integer_% integer_* FWI :split NT integer_* integer_* :split integer_* BUI integer_* integer_* :split :split :split integer_+ integer_* WD :split ISI exec_if 0 slope :split WD exec_if)
+Best program: (true true :split WS exec_dup (exec_if (integer_= 1 exec_if (exec_if (exec_if (exec_if (exec_if (integer_% integer_* FWI :split NT integer_* integer_* :split integer_* BUI integer_* integer_* :split :split :split integer_+ integer_* WD :split ISI exec_if (0 slope :split WD exec_if () ()) ()) ()) ()) ()) ()) ()) ()))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
