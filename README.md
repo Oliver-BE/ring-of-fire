@@ -1,6 +1,6 @@
 # ring-of-fire
 
-A genetic program for evolving rules that describe a cellular automaton-based wildfire simulation using Clojure and based on the [propel framework](https://github.com/lspector/propel) designed by Lee Spector. Created by [Isaac Caruso](https://github.com/icaruso21, [Oliver Baldwin Edwards](https://github.com/Oliver-BE, and [Martin Glusker](https://github.com/MGlusker). Special thanks to [Lee Spector](https://github.com/lspector) for his invaluable assistance and advice.
+A genetic program for evolving rules that describe a cellular automaton-based wildfire simulation using Clojure and based on the [propel framework](https://github.com/lspector/propel) designed by Lee Spector. Created by [Isaac Caruso](https://github.com/icaruso21), [Oliver Baldwin Edwards](https://github.com/Oliver-BE), and [Martin Glusker](https://github.com/MGlusker). Special thanks to [Lee Spector](https://github.com/lspector) for his invaluable assistance and advice.
 
 ## Usage
 
