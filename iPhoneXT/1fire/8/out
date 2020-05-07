@@ -2959,3 +2959,43 @@ Total number of cells: 7208
 Best percent error: 0.14844617
 Fires evaluated:  (k2)
 
+-------------------------------------------------------
+               Report for Generation 296
+-------------------------------------------------------
+Best plushy: (integer_= 2 integer_+ true integer_+ true NBD NBD NT 1 exec_dup exec_dup exec_dup integer_* BUI integer_* TB integer_* ISI BUI integer_+ FWI ISI false slope TB WD 2 2 WD TB)
+Best program: (integer_= 2 integer_+ true integer_+ true NBD NBD NT 1 exec_dup (exec_dup (exec_dup (integer_* BUI integer_* TB integer_* ISI BUI integer_+ FWI ISI false slope TB WD 2 2 WD TB))))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 297
+-------------------------------------------------------
+Best plushy: (integer_= 2 true integer_+ integer_+ true NBD NBD exec_dup WD exec_dup exec_dup exec_dup BUI BUI ISI integer_* ISI integer_* ISI ISI integer_+ BUI ISI NT WD true ISI false WD 2 TB 2)
+Best program: (integer_= 2 true integer_+ integer_+ true NBD NBD exec_dup (WD exec_dup (exec_dup (exec_dup (BUI BUI ISI integer_* ISI integer_* ISI ISI integer_+ BUI ISI NT WD true ISI false WD 2 TB 2)))))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 298
+-------------------------------------------------------
+Best plushy: (integer_= ISI 2 true integer_+ integer_+ true NBD NBD exec_dup WD exec_dup exec_dup exec_dup BUI BUI ISI integer_* ISI integer_* ISI ISI integer_+ BUI ISI NT WD true ISI false WD 2 TB 2)
+Best program: (integer_= ISI 2 true integer_+ integer_+ true NBD NBD exec_dup (WD exec_dup (exec_dup (exec_dup (BUI BUI ISI integer_* ISI integer_* ISI ISI integer_+ BUI ISI NT WD true ISI false WD 2 TB 2)))))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 299
+-------------------------------------------------------
+Best plushy: (integer_= 2 true true integer_+ true NBD exec_dup exec_dup 1 NBD integer_* exec_dup exec_dup integer_* BUI ISI integer_* integer_* ISI BUI slope NT NT WD false WD false WD 2 TB)
+Best program: (integer_= 2 true true integer_+ true NBD exec_dup (exec_dup (1 NBD integer_* exec_dup (exec_dup (integer_* BUI ISI integer_* integer_* ISI BUI slope NT NT WD false WD false WD 2 TB)))))
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+

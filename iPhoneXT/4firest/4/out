@@ -1689,3 +1689,103 @@ Total number of cells: 26224
 Best percent error: 0.31116533
 Fires evaluated:  (m2 k2 g2 r1)
 
+-------------------------------------------------------
+               Report for Generation 169
+-------------------------------------------------------
+Best plushy: (boolean_not boolean_not boolean_not boolean_not WD 2 WD boolean_not boolean_not WS boolean_not true WS true true true slope slope slope integer_- boolean_and integer_- boolean_and boolean_and)
+Best program: (boolean_not boolean_not boolean_not boolean_not WD 2 WD boolean_not boolean_not WS boolean_not true WS true true true slope slope slope integer_- boolean_and integer_- boolean_and boolean_and)
+Best total error: 9114
+Total number of cells: 29468
+Best percent error: 0.30928466
+Fires evaluated:  (r1 k1 k2 g2)
+
+-------------------------------------------------------
+               Report for Generation 170
+-------------------------------------------------------
+Best plushy: (TB boolean_not TB boolean_not 2 boolean_and boolean_not boolean_and boolean_and boolean_and true true WS WS true true true slope true integer_- slope boolean_or boolean_and boolean_and)
+Best program: (TB boolean_not TB boolean_not 2 boolean_and boolean_not boolean_and boolean_and boolean_and true true WS WS true true true slope true integer_- slope boolean_or boolean_and boolean_and)
+Best total error: 8317
+Total number of cells: 28200
+Best percent error: 0.2949291
+Fires evaluated:  (k2 k1 g2 m1)
+
+-------------------------------------------------------
+               Report for Generation 171
+-------------------------------------------------------
+Best plushy: (boolean_not boolean_not boolean_not boolean_not WD 2 WD boolean_not boolean_not true WS true true true slope slope slope integer_- boolean_and integer_- boolean_and boolean_and)
+Best program: (boolean_not boolean_not boolean_not boolean_not WD 2 WD boolean_not boolean_not true WS true true true slope slope slope integer_- boolean_and integer_- boolean_and boolean_and)
+Best total error: 9600
+Total number of cells: 30144
+Best percent error: 0.31847134
+Fires evaluated:  (k2 m2 g2 k1)
+
+-------------------------------------------------------
+               Report for Generation 172
+-------------------------------------------------------
+Best plushy: (boolean_not TB boolean_not boolean_not boolean_and 2 boolean_and boolean_and boolean_and true WS true true true slope true slope integer_- boolean_and slope slope boolean_and integer_- boolean_and)
+Best program: (boolean_not TB boolean_not boolean_not boolean_and 2 boolean_and boolean_and boolean_and true WS true true true slope true slope integer_- boolean_and slope slope boolean_and integer_- boolean_and)
+Best total error: 10244
+Total number of cells: 27336
+Best percent error: 0.37474394
+Fires evaluated:  (r1 g2 k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 173
+-------------------------------------------------------
+Best plushy: (boolean_not boolean_not boolean_not boolean_not boolean_and WD WD boolean_and boolean_and true true true WS true NT slope true slope integer_- 0 slope boolean_and 0 integer_- integer_- boolean_and boolean_and)
+Best program: (boolean_not boolean_not boolean_not boolean_not boolean_and WD WD boolean_and boolean_and true true true WS true NT slope true slope integer_- 0 slope boolean_and 0 integer_- integer_- boolean_and boolean_and)
+Best total error: 9600
+Total number of cells: 30144
+Best percent error: 0.31847134
+Fires evaluated:  (k2 g2 m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 174
+-------------------------------------------------------
+Best plushy: (boolean_not boolean_not boolean_not boolean_not boolean_and boolean_and boolean_and boolean_and boolean_and true true WS WS true NBD true true slope true boolean_and boolean_and boolean_and integer_- boolean_and integer_- boolean_and)
+Best program: (boolean_not boolean_not boolean_not boolean_not boolean_and boolean_and boolean_and boolean_and boolean_and true true WS WS true NBD true true slope true boolean_and boolean_and boolean_and integer_- boolean_and integer_- boolean_and)
+Best total error: 8961
+Total number of cells: 25392
+Best percent error: 0.35290644
+Fires evaluated:  (m1 r1 g2 k1)
+
+-------------------------------------------------------
+               Report for Generation 175
+-------------------------------------------------------
+Best plushy: (boolean_not TB boolean_and 2 boolean_not boolean_and boolean_and WS WD true true true false true true 0 integer_- boolean_and slope slope integer_- integer_- true integer_- integer_- exec_dup)
+Best program: (boolean_not TB boolean_and 2 boolean_not boolean_and boolean_and WS WD true true true false true true 0 integer_- boolean_and slope slope integer_- integer_- true integer_- integer_- exec_dup ())
+Best total error: 10244
+Total number of cells: 27336
+Best percent error: 0.37474394
+Fires evaluated:  (m2 k1 r1 g2)
+
+-------------------------------------------------------
+               Report for Generation 176
+-------------------------------------------------------
+Best plushy: (boolean_not TB boolean_and 2 boolean_not WD boolean_and boolean_not boolean_or true true WS slope true true true integer_- boolean_and slope boolean_and slope integer_- true)
+Best program: (boolean_not TB boolean_and 2 boolean_not WD boolean_and boolean_not boolean_or true true WS slope true true true integer_- boolean_and slope boolean_and slope integer_- true)
+Best total error: 7363
+Total number of cells: 24956
+Best percent error: 0.29503927
+Fires evaluated:  (m2 g2 m1 k2)
+
+-------------------------------------------------------
+               Report for Generation 177
+-------------------------------------------------------
+Best plushy: (boolean_not boolean_not boolean_not boolean_and boolean_and WD boolean_and boolean_not boolean_or WS true WS slope true true true slope boolean_and 0 boolean_and slope integer_%)
+Best program: (boolean_not boolean_not boolean_not boolean_and boolean_and WD boolean_and boolean_not boolean_or WS true WS slope true true true slope boolean_and 0 boolean_and slope integer_%)
+Best total error: 9447
+Total number of cells: 26068
+Best percent error: 0.36239836
+Fires evaluated:  (g2 k1 m2 m1)
+
+-------------------------------------------------------
+               Report for Generation 178
+-------------------------------------------------------
+Best plushy: (boolean_not boolean_not boolean_not boolean_and boolean_and WD boolean_and boolean_not boolean_or WS true WS slope WS true true slope boolean_and true boolean_and slope integer_%)
+Best program: (boolean_not boolean_not boolean_not boolean_and boolean_and WD boolean_and boolean_not boolean_or WS true WS slope WS true true slope boolean_and true boolean_and slope integer_%)
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (m1 k1 m2 r1)
+

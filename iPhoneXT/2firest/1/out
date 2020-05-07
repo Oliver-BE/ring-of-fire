@@ -329,3 +329,13 @@ Total number of cells: 13396
 Best percent error: 0.39967155
 Fires evaluated:  (k1 m2)
 
+-------------------------------------------------------
+               Report for Generation 33
+-------------------------------------------------------
+Best plushy: (true true NT NT NT NT exec_dup exec_dup exec_if exec_dup exec_dup exec_dup 1 false false false)
+Best program: (true true NT NT NT NT exec_dup (exec_dup (exec_if (exec_dup (exec_dup (exec_dup (1 false false false)))) ())))
+Best total error: 4246
+Total number of cells: 16748
+Best percent error: 0.2535228
+Fires evaluated:  (g2 k2)
+

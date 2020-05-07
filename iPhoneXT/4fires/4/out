@@ -1189,3 +1189,63 @@ Total number of cells: 26224
 Best percent error: 0.3096019
 Fires evaluated:  (m2 k2 g2 r1)
 
+-------------------------------------------------------
+               Report for Generation 119
+-------------------------------------------------------
+Best plushy: (NBD TB false integer_= boolean_= NBD false integer_* slope false)
+Best program: (NBD TB false integer_= boolean_= NBD false integer_* slope false)
+Best total error: 6820
+Total number of cells: 23060
+Best percent error: 0.29575023
+Fires evaluated:  (k2 m1 k1 r1)
+
+-------------------------------------------------------
+               Report for Generation 120
+-------------------------------------------------------
+Best plushy: (NBD TB false integer_= boolean_= NBD false integer_* slope false)
+Best program: (NBD TB false integer_= boolean_= NBD false integer_* slope false)
+Best total error: 8000
+Total number of cells: 22148
+Best percent error: 0.36120644
+Fires evaluated:  (g2 m2 m1 r1)
+
+-------------------------------------------------------
+               Report for Generation 121
+-------------------------------------------------------
+Best plushy: (NBD TB false integer_= boolean_= NBD false integer_* slope false)
+Best program: (NBD TB false integer_= boolean_= NBD false integer_* slope false)
+Best total error: 8000
+Total number of cells: 22148
+Best percent error: 0.36120644
+Fires evaluated:  (g2 m1 m2 r1)
+
+-------------------------------------------------------
+               Report for Generation 122
+-------------------------------------------------------
+Best plushy: (NBD TB false integer_= boolean_= NBD false integer_* slope false)
+Best program: (NBD TB false integer_= boolean_= NBD false integer_* slope false)
+Best total error: 9073
+Total number of cells: 29468
+Best percent error: 0.3078933
+Fires evaluated:  (r1 k1 g2 k2)
+
+-------------------------------------------------------
+               Report for Generation 123
+-------------------------------------------------------
+Best plushy: (NBD TB false integer_= boolean_= NBD false integer_* slope false)
+Best program: (NBD TB false integer_= boolean_= NBD false integer_* slope false)
+Best total error: 8103
+Total number of cells: 25004
+Best percent error: 0.32406816
+Fires evaluated:  (k2 m2 r1 k1)
+
+-------------------------------------------------------
+               Report for Generation 124
+-------------------------------------------------------
+Best plushy: (NBD TB false integer_= slope boolean_= NBD false integer_* slope TB false)
+Best program: (NBD TB false integer_= slope boolean_= NBD false integer_* slope TB false)
+Best total error: 8277
+Total number of cells: 28200
+Best percent error: 0.29351065
+Fires evaluated:  (m1 k1 g2 k2)
+

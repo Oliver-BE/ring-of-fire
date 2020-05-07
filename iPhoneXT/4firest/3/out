@@ -529,3 +529,23 @@ Total number of cells: 23736
 Best percent error: 0.30927706
 Fires evaluated:  (k2 k1 m1 m2)
 
+-------------------------------------------------------
+               Report for Generation 53
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and boolean_and TB true :split exec_if integer_* WD exec_if exec_if FWI boolean_= true FWI boolean_and exec_if 2 2)
+Best program: (boolean_and boolean_and boolean_and boolean_and TB true :split exec_if (integer_* WD exec_if (exec_if (FWI boolean_= true FWI boolean_and exec_if (2 2) ()) ()) ()) ())
+Best total error: 8007
+Total number of cells: 22148
+Best percent error: 0.3615225
+Fires evaluated:  (m1 m2 g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 54
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and boolean_and TB true :split exec_if integer_* :split exec_if exec_if FWI true true FWI 1 exec_if TB 2 TB)
+Best program: (boolean_and boolean_and boolean_and boolean_and TB true :split exec_if (integer_* :split exec_if (exec_if (FWI true true FWI 1 exec_if (TB 2 TB) ()) ()) ()) ())
+Best total error: 8007
+Total number of cells: 22148
+Best percent error: 0.3615225
+Fires evaluated:  (g2 r1 m1 m2)
+

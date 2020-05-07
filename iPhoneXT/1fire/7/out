@@ -3159,3 +3159,33 @@ Total number of cells: 4400
 Best percent error: 0.38954544
 Fires evaluated:  (r1)
 
+-------------------------------------------------------
+               Report for Generation 316
+-------------------------------------------------------
+Best plushy: (NT integer_+ integer_+ slope true ISI true true true integer_% boolean_not exec_dup ISI exec_dup integer_% exec_dup exec_dup exec_dup exec_if exec_dup TB exec_dup exec_dup exec_dup boolean_or close 0 boolean_and WS boolean_and close false)
+Best program: (NT integer_+ integer_+ slope true ISI true true true integer_% boolean_not exec_dup (ISI exec_dup (integer_% exec_dup (exec_dup (exec_dup (exec_if (exec_dup (TB exec_dup (exec_dup (exec_dup (boolean_or) 0 boolean_and WS boolean_and) false))) ()))))))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 317
+-------------------------------------------------------
+Best plushy: (integer_+ ISI integer_+ integer_+ true NT FWI true true exec_if exec_if integer_% ISI exec_dup boolean_not true exec_if exec_dup exec_if NBD exec_if NBD false integer_- exec_dup boolean_or exec_dup boolean_and boolean_and false close boolean_and WD 0 0 boolean_and WS TB boolean_and slope WS)
+Best program: (integer_+ ISI integer_+ integer_+ true NT FWI true true exec_if (exec_if (integer_% ISI exec_dup (boolean_not true exec_if (exec_dup (exec_if (NBD exec_if (NBD false integer_- exec_dup (boolean_or exec_dup (boolean_and boolean_and false) boolean_and WD 0 0 boolean_and WS TB boolean_and slope WS)) ()) ())) ())) ()) ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 318
+-------------------------------------------------------
+Best plushy: (NT integer_+ NT NT NT slope ISI true true true true boolean_not true integer_% exec_if exec_if exec_dup exec_dup exec_dup exec_dup exec_dup exec_dup exec_dup 0 integer_+ false false false 1 close false WS)
+Best program: (NT integer_+ NT NT NT slope ISI true true true true boolean_not true integer_% exec_if (exec_if (exec_dup (exec_dup (exec_dup (exec_dup (exec_dup (exec_dup (exec_dup (0 integer_+ false false false 1) false WS))))))) ()) ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+

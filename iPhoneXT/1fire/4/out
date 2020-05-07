@@ -8009,3 +8009,133 @@ Total number of cells: 9540
 Best percent error: 0.33291405
 Fires evaluated:  (g2)
 
+-------------------------------------------------------
+               Report for Generation 801
+-------------------------------------------------------
+Best plushy: (true WD integer_= ISI integer_* ISI integer_+ false ISI)
+Best program: (true WD integer_= ISI integer_* ISI integer_+ false ISI)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 802
+-------------------------------------------------------
+Best plushy: (true WD integer_= ISI BUI integer_* ISI integer_+ false ISI)
+Best program: (true WD integer_= ISI BUI integer_* ISI integer_+ false ISI)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 803
+-------------------------------------------------------
+Best plushy: (true WD integer_= ISI ISI integer_+)
+Best program: (true WD integer_= ISI ISI integer_+)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 804
+-------------------------------------------------------
+Best plushy: (true WD WD ISI ISI integer_+ NT integer_%)
+Best program: (true WD WD ISI ISI integer_+ NT integer_%)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 805
+-------------------------------------------------------
+Best plushy: (true WD WD 2 :split integer_+ NT ISI integer_% exec_if)
+Best program: (true WD WD 2 :split integer_+ NT ISI integer_% exec_if () ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 806
+-------------------------------------------------------
+Best plushy: (true WD integer_= 2 integer_+ ISI NT ISI integer_+)
+Best program: (true WD integer_= 2 integer_+ ISI NT ISI integer_+)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 807
+-------------------------------------------------------
+Best plushy: (true WD integer_= ISI integer_+ integer_+ NT ISI)
+Best program: (true WD integer_= ISI integer_+ integer_+ NT ISI)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 808
+-------------------------------------------------------
+Best plushy: (true true integer_= 2 :split integer_+ false NT ISI)
+Best program: (true true integer_= 2 :split integer_+ false NT ISI)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 809
+-------------------------------------------------------
+Best plushy: (true WD integer_= NT ISI exec_dup NT integer_+ integer_+)
+Best program: (true WD integer_= NT ISI exec_dup (NT integer_+ integer_+))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 810
+-------------------------------------------------------
+Best plushy: (true WD integer_= 2 :split integer_+ false ISI ISI)
+Best program: (true WD integer_= 2 :split integer_+ false ISI ISI)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 811
+-------------------------------------------------------
+Best plushy: (true WD 2 :split integer_+ false ISI ISI)
+Best program: (true WD 2 :split integer_+ false ISI ISI)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 812
+-------------------------------------------------------
+Best plushy: (true WD integer_+ 2 ISI exec_dup NT integer_+ integer_+ NT ISI)
+Best program: (true WD integer_+ 2 ISI exec_dup (NT integer_+ integer_+ NT ISI))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 813
+-------------------------------------------------------
+Best plushy: (true true integer_= 2 ISI exec_dup NT integer_+ ISI NT)
+Best program: (true true integer_= 2 ISI exec_dup (NT integer_+ ISI NT))
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+

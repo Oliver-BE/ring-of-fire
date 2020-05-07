@@ -2509,3 +2509,33 @@ Total number of cells: 8320
 Best percent error: 0.37908652
 Fires evaluated:  (k1)
 
+-------------------------------------------------------
+               Report for Generation 251
+-------------------------------------------------------
+Best plushy: (TB true 2 2 2 integer_- FWI 1 integer_* exec_dup integer_* exec_dup WS 1 integer_* 1 exec_dup WS 1 ISI 1 integer_=)
+Best program: (TB true 2 2 2 integer_- FWI 1 integer_* exec_dup (integer_* exec_dup (WS 1 integer_* 1 exec_dup (WS 1 ISI 1 integer_=))))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 252
+-------------------------------------------------------
+Best plushy: (slope true 2 2 2 integer_- FWI integer_* exec_dup WS exec_dup WS 1 integer_* 1 exec_dup WS 1 ISI 1)
+Best program: (slope true 2 2 2 integer_- FWI integer_* exec_dup (WS exec_dup (WS 1 integer_* 1 exec_dup (WS 1 ISI 1))))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 253
+-------------------------------------------------------
+Best plushy: (slope true 2 2 2 integer_- FWI integer_* exec_dup WS exec_dup WS 1 integer_* 1 exec_dup WS 1 ISI 1)
+Best program: (slope true 2 2 2 integer_- FWI integer_* exec_dup (WS exec_dup (WS 1 integer_* 1 exec_dup (WS 1 ISI 1))))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+

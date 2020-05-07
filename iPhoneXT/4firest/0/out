@@ -619,3 +619,33 @@ Total number of cells: 22148
 Best percent error: 0.3615225
 Fires evaluated:  (m2 g2 r1 m1)
 
+-------------------------------------------------------
+               Report for Generation 62
+-------------------------------------------------------
+Best plushy: (true true true true true close boolean_and true integer_- TB close integer_-)
+Best program: (true true true true true boolean_and true integer_- TB integer_-)
+Best total error: 8317
+Total number of cells: 28200
+Best percent error: 0.2949291
+Fires evaluated:  (g2 m1 k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 63
+-------------------------------------------------------
+Best plushy: (true TB true true true WD close close TB TB integer_- integer_-)
+Best program: (true TB true true true WD TB TB integer_- integer_-)
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (k1 m1 r1 m2)
+
+-------------------------------------------------------
+               Report for Generation 64
+-------------------------------------------------------
+Best plushy: (true FWI true true true WD boolean_and integer_- TB close integer_- integer_-)
+Best program: (true FWI true true true WD boolean_and integer_- TB integer_- integer_-)
+Best total error: 6877
+Total number of cells: 24280
+Best percent error: 0.28323722
+Fires evaluated:  (g2 k2 r1 m1)
+
