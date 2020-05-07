@@ -649,3 +649,113 @@ Total number of cells: 24280
 Best percent error: 0.28323722
 Fires evaluated:  (g2 k2 r1 m1)
 
+-------------------------------------------------------
+               Report for Generation 65
+-------------------------------------------------------
+Best plushy: (exec_if FWI true true true WD true boolean_and close TB TB close integer_-)
+Best program: (exec_if (FWI true true true WD true boolean_and) (TB TB) integer_-)
+Best total error: 9114
+Total number of cells: 29468
+Best percent error: 0.30928466
+Fires evaluated:  (g2 k1 r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 66
+-------------------------------------------------------
+Best plushy: (true NBD TB true true true WD close integer_- TB TB integer_- integer_-)
+Best program: (true NBD TB true true true WD integer_- TB TB integer_- integer_-)
+Best total error: 8317
+Total number of cells: 28200
+Best percent error: 0.2949291
+Fires evaluated:  (k1 k2 m1 g2)
+
+-------------------------------------------------------
+               Report for Generation 67
+-------------------------------------------------------
+Best plushy: (true TB true true true WD close close TB :split integer_= integer_- NT)
+Best program: (true TB true true true WD TB :split integer_= integer_- NT)
+Best total error: 8007
+Total number of cells: 22148
+Best percent error: 0.3615225
+Fires evaluated:  (m2 r1 m1 g2)
+
+-------------------------------------------------------
+               Report for Generation 68
+-------------------------------------------------------
+Best plushy: (true NBD TB true true true WD integer_- TB TB integer_-)
+Best program: (true NBD TB true true true WD integer_- TB TB integer_-)
+Best total error: 10244
+Total number of cells: 27336
+Best percent error: 0.37474394
+Fires evaluated:  (r1 k1 m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 69
+-------------------------------------------------------
+Best plushy: (true FWI true true true close integer_- close close integer_- integer_- integer_-)
+Best program: (true FWI true true true integer_- integer_- integer_- integer_-)
+Best total error: 8317
+Total number of cells: 28200
+Best percent error: 0.2949291
+Fires evaluated:  (k1 g2 k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 70
+-------------------------------------------------------
+Best plushy: (true NBD true true true true 0 WD integer_- integer_- TB TB integer_-)
+Best program: (true NBD true true true true 0 WD integer_- integer_- TB TB integer_-)
+Best total error: 8160
+Total number of cells: 26224
+Best percent error: 0.31116533
+Fires evaluated:  (g2 r1 m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 71
+-------------------------------------------------------
+Best plushy: (true true true true true true 0 close integer_- integer_- TB integer_- integer_-)
+Best program: (true true true true true true 0 integer_- integer_- TB integer_- integer_-)
+Best total error: 8007
+Total number of cells: 22148
+Best percent error: 0.3615225
+Fires evaluated:  (m1 g2 r1 m2)
+
+-------------------------------------------------------
+               Report for Generation 72
+-------------------------------------------------------
+Best plushy: (true FWI true true WD close close TB :split integer_- NT integer_-)
+Best program: (true FWI true true WD TB :split integer_- NT integer_-)
+Best total error: 8961
+Total number of cells: 25392
+Best percent error: 0.35290644
+Fires evaluated:  (k1 g2 r1 m1)
+
+-------------------------------------------------------
+               Report for Generation 73
+-------------------------------------------------------
+Best plushy: (true FWI :split true true WD close close TB :split integer_- NT integer_-)
+Best program: (true FWI :split true true WD TB :split integer_- NT integer_-)
+Best total error: 10244
+Total number of cells: 27336
+Best percent error: 0.37474394
+Fires evaluated:  (m2 r1 g2 k1)
+
+-------------------------------------------------------
+               Report for Generation 74
+-------------------------------------------------------
+Best plushy: (true true true true true true true integer_- close TB integer_- TB integer_- BUI)
+Best program: (true true true true true true true integer_- TB integer_- TB integer_- BUI)
+Best total error: 7341
+Total number of cells: 23736
+Best percent error: 0.30927706
+Fires evaluated:  (k2 m2 k1 m1)
+
+-------------------------------------------------------
+               Report for Generation 75
+-------------------------------------------------------
+Best plushy: (true true true true true true integer_- close close integer_- integer_- integer_- integer_- BUI)
+Best program: (true true true true true true integer_- integer_- integer_- integer_- integer_- BUI)
+Best total error: 10244
+Total number of cells: 27336
+Best percent error: 0.37474394
+Fires evaluated:  (r1 g2 k1 m2)
+

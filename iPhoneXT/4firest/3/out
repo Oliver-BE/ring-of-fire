@@ -549,3 +549,283 @@ Total number of cells: 22148
 Best percent error: 0.3615225
 Fires evaluated:  (g2 r1 m1 m2)
 
+-------------------------------------------------------
+               Report for Generation 55
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and true NBD true true WD exec_if :split slope :split 2 true true boolean_= 1 exec_if TB boolean_= boolean_and)
+Best program: (boolean_and boolean_and boolean_and true NBD true true WD exec_if (:split slope :split 2 true true boolean_= 1 exec_if (TB boolean_= boolean_and) ()) ())
+Best total error: 6855
+Total number of cells: 23060
+Best percent error: 0.297268
+Fires evaluated:  (m1 k2 r1 k1)
+
+-------------------------------------------------------
+               Report for Generation 56
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and true true :split integer_* 2 integer_* exec_if exec_if true exec_if true FWI boolean_and close)
+Best program: (boolean_and boolean_and boolean_and true true :split integer_* 2 integer_* exec_if (exec_if (true exec_if (true FWI boolean_and) ()) ()) ())
+Best total error: 8138
+Total number of cells: 25004
+Best percent error: 0.3254679
+Fires evaluated:  (k1 k2 m2 r1)
+
+-------------------------------------------------------
+               Report for Generation 57
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and true true :split integer_* 2 integer_* exec_if exec_if true exec_if true BUI FWI boolean_and close)
+Best program: (boolean_and boolean_and boolean_and true true :split integer_* 2 integer_* exec_if (exec_if (true exec_if (true BUI FWI boolean_and) ()) ()) ())
+Best total error: 9600
+Total number of cells: 30144
+Best percent error: 0.31847134
+Fires evaluated:  (g2 m2 k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 58
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and true true true true WD exec_if 2 true :split true true 1 boolean_= 1)
+Best program: (boolean_and boolean_and boolean_and true true true true WD exec_if (2 true :split true true 1 boolean_= 1) ())
+Best total error: 8138
+Total number of cells: 25004
+Best percent error: 0.3254679
+Fires evaluated:  (m2 k1 k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 59
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and NBD true :split integer_* :split slope exec_if 2 true true true exec_if TB boolean_= TB)
+Best program: (boolean_and boolean_and boolean_and NBD true :split integer_* :split slope exec_if (2 true true true exec_if (TB boolean_= TB) ()) ())
+Best total error: 10244
+Total number of cells: 27336
+Best percent error: 0.37474394
+Fires evaluated:  (r1 k1 g2 m2)
+
+-------------------------------------------------------
+               Report for Generation 60
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and NBD true :split integer_* :split integer_* :split exec_if true true true exec_if TB boolean_and)
+Best program: (boolean_and boolean_and boolean_and NBD true :split integer_* :split integer_* :split exec_if (true true true exec_if (TB boolean_and) ()) ())
+Best total error: 9600
+Total number of cells: 30144
+Best percent error: 0.31847134
+Fires evaluated:  (k1 g2 k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 61
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and boolean_and true :split integer_* :split exec_if exec_if exec_if true true true FWI close close)
+Best program: (boolean_and boolean_and boolean_and boolean_and true :split integer_* :split exec_if (exec_if (exec_if (true true true FWI) ()) ()) ())
+Best total error: 6877
+Total number of cells: 24280
+Best percent error: 0.28323722
+Fires evaluated:  (r1 g2 k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 62
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and NBD true true true integer_+ :split slope :split 2 true boolean_= true boolean_= exec_if TB ISI boolean_= TB)
+Best program: (boolean_and boolean_and boolean_and NBD true true true integer_+ :split slope :split 2 true boolean_= true boolean_= exec_if (TB ISI boolean_= TB) ())
+Best total error: 7341
+Total number of cells: 23736
+Best percent error: 0.30927706
+Fires evaluated:  (k1 m1 k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 63
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and NBD true :split true integer_+ exec_if slope exec_if true true true FWI boolean_= exec_if TB)
+Best program: (boolean_and boolean_and boolean_and NBD true :split true integer_+ exec_if (slope exec_if (true true true FWI boolean_= exec_if (TB) ()) ()) ())
+Best total error: 8160
+Total number of cells: 26224
+Best percent error: 0.31116533
+Fires evaluated:  (r1 k2 g2 m2)
+
+-------------------------------------------------------
+               Report for Generation 64
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and NBD true :split integer_* integer_+ exec_if exec_if exec_if true true true FWI boolean_= exec_if TB)
+Best program: (boolean_and boolean_and boolean_and NBD true :split integer_* integer_+ exec_if (exec_if (exec_if (true true true FWI boolean_= exec_if (TB) ()) ()) ()) ())
+Best total error: 5901
+Total number of cells: 19816
+Best percent error: 0.29778966
+Fires evaluated:  (m2 m1 r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 65
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and NBD integer_- true ISI :split true integer_+ exec_if slope exec_if true true true FWI boolean_= ISI exec_if TB)
+Best program: (boolean_and boolean_and boolean_and NBD integer_- true ISI :split true integer_+ exec_if (slope exec_if (true true true FWI boolean_= ISI exec_if (TB) ()) ()) ())
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (m1 m2 k1 r1)
+
+-------------------------------------------------------
+               Report for Generation 66
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and NBD true :split true integer_+ slope exec_if exec_if true true boolean_= exec_if TB exec_if TB)
+Best program: (boolean_and boolean_and boolean_and NBD true :split true integer_+ slope exec_if (exec_if (true true boolean_= exec_if (TB exec_if (TB) ()) ()) ()) ())
+Best total error: 8138
+Total number of cells: 25004
+Best percent error: 0.3254679
+Fires evaluated:  (k2 r1 k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 67
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and NBD true :split :split true exec_if :split 2 true true true FWI boolean_= exec_if)
+Best program: (boolean_and boolean_and boolean_and NBD true :split :split true exec_if (:split 2 true true true FWI boolean_= exec_if () ()) ())
+Best total error: 9600
+Total number of cells: 30144
+Best percent error: 0.31847134
+Fires evaluated:  (k2 m2 g2 k1)
+
+-------------------------------------------------------
+               Report for Generation 68
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and NBD NBD true :split true integer_+ exec_if :split 2 true true boolean_and FWI boolean_=)
+Best program: (boolean_and boolean_and NBD NBD true :split true integer_+ exec_if (:split 2 true true boolean_and FWI boolean_=) ())
+Best total error: 8007
+Total number of cells: 22148
+Best percent error: 0.3615225
+Fires evaluated:  (r1 m2 m1 g2)
+
+-------------------------------------------------------
+               Report for Generation 69
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and NBD NBD true :split true true exec_if :split 2 true true boolean_and FWI boolean_=)
+Best program: (boolean_and boolean_and NBD NBD true :split true true exec_if (:split 2 true true boolean_and FWI boolean_=) ())
+Best total error: 9114
+Total number of cells: 29468
+Best percent error: 0.30928466
+Fires evaluated:  (k1 g2 k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 70
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and NBD true :split :split true exec_if :split 2 true true true FWI boolean_= exec_if)
+Best program: (boolean_and boolean_and boolean_and NBD true :split :split true exec_if (:split 2 true true true FWI boolean_= exec_if () ()) ())
+Best total error: 8007
+Total number of cells: 22148
+Best percent error: 0.3615225
+Fires evaluated:  (m2 m1 r1 g2)
+
+-------------------------------------------------------
+               Report for Generation 71
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and NBD true :split :split true exec_if :split 2 true true true FWI boolean_= exec_if)
+Best program: (boolean_and boolean_and boolean_and NBD true :split :split true exec_if (:split 2 true true true FWI boolean_= exec_if () ()) ())
+Best total error: 8961
+Total number of cells: 25392
+Best percent error: 0.35290644
+Fires evaluated:  (m1 g2 k1 r1)
+
+-------------------------------------------------------
+               Report for Generation 72
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and NBD true :split :split true exec_if :split 2 true true true FWI ISI boolean_= exec_if)
+Best program: (boolean_and boolean_and boolean_and NBD true :split :split true exec_if (:split 2 true true true FWI ISI boolean_= exec_if () ()) ())
+Best total error: 7341
+Total number of cells: 23736
+Best percent error: 0.30927706
+Fires evaluated:  (m2 m1 k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 73
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and NBD true :split :split integer_+ exec_if :split true true true true FWI FWI exec_if boolean_= TB)
+Best program: (boolean_and boolean_and boolean_and NBD true :split :split integer_+ exec_if (:split true true true true FWI FWI exec_if (boolean_= TB) ()) ())
+Best total error: 8160
+Total number of cells: 26224
+Best percent error: 0.31116533
+Fires evaluated:  (g2 m2 r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 74
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and NBD true true true exec_if :split true true boolean_not true true TB exec_if TB)
+Best program: (boolean_and boolean_and boolean_and NBD true true true exec_if (:split true true boolean_not true true TB exec_if (TB) ()) ())
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (m2 m1 k1 r1)
+
+-------------------------------------------------------
+               Report for Generation 75
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and NBD true :split true true exec_if :split true true boolean_not true true TB exec_if TB)
+Best program: (boolean_and boolean_and boolean_and NBD true :split true true exec_if (:split true true boolean_not true true TB exec_if (TB) ()) ())
+Best total error: 8961
+Total number of cells: 25392
+Best percent error: 0.35290644
+Fires evaluated:  (k1 m1 g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 76
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and true :split true true true exec_if :split true true true ISI boolean_= TB)
+Best program: (boolean_and boolean_and boolean_and true :split true true true exec_if (:split true true true ISI boolean_= TB) ())
+Best total error: 6855
+Total number of cells: 23060
+Best percent error: 0.297268
+Fires evaluated:  (m1 r1 k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 77
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and NBD true :split :split true exec_if 2 true true true FWI 2 exec_if TB TB)
+Best program: (boolean_and boolean_and boolean_and NBD true :split :split true exec_if (2 true true true FWI 2 exec_if (TB TB) ()) ())
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (k1 r1 m1 m2)
+
+-------------------------------------------------------
+               Report for Generation 78
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and true integer_% :split :split true exec_if 2 2 true boolean_not boolean_= 2 exec_if TB TB)
+Best program: (boolean_and boolean_and boolean_and true integer_% :split :split true exec_if (2 2 true boolean_not boolean_= 2 exec_if (TB TB) ()) ())
+Best total error: 9447
+Total number of cells: 26068
+Best percent error: 0.36239836
+Fires evaluated:  (m2 k1 m1 g2)
+
+-------------------------------------------------------
+               Report for Generation 79
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and NBD true :split true true exec_if 2 true boolean_not true true)
+Best program: (boolean_and boolean_and boolean_and NBD true :split true true exec_if (2 true boolean_not true true) ())
+Best total error: 9447
+Total number of cells: 26068
+Best percent error: 0.36239836
+Fires evaluated:  (k1 m1 m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 80
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and NBD true :split :split true exec_if 2 true true true FWI 2 exec_if TB TB)
+Best program: (boolean_and boolean_and boolean_and NBD true :split :split true exec_if (2 true true true FWI 2 exec_if (TB TB) ()) ())
+Best total error: 8160
+Total number of cells: 26224
+Best percent error: 0.31116533
+Fires evaluated:  (g2 k2 m2 r1)
+
+-------------------------------------------------------
+               Report for Generation 81
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and NBD true :split :split true exec_if 2 true true true FWI true exec_if boolean_= TB)
+Best program: (boolean_and boolean_and boolean_and NBD true :split :split true exec_if (2 true true true FWI true exec_if (boolean_= TB) ()) ())
+Best total error: 7363
+Total number of cells: 24956
+Best percent error: 0.29503927
+Fires evaluated:  (m2 m1 g2 k2)
+
+-------------------------------------------------------
+               Report for Generation 82
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and true integer_% :split :split true exec_if 2 2 ISI true true 2 exec_if TB TB TB)
+Best program: (boolean_and boolean_and boolean_and true integer_% :split :split true exec_if (2 2 ISI true true 2 exec_if (TB TB TB) ()) ())
+Best total error: 7341
+Total number of cells: 23736
+Best percent error: 0.30927706
+Fires evaluated:  (k1 m1 m2 k2)
+

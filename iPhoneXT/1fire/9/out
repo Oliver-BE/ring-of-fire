@@ -2539,3 +2539,173 @@ Total number of cells: 9540
 Best percent error: 0.33291405
 Fires evaluated:  (g2)
 
+-------------------------------------------------------
+               Report for Generation 254
+-------------------------------------------------------
+Best plushy: (slope true 2 2 2 integer_- 2 FWI integer_* WS exec_dup exec_dup 1 WS 1 exec_dup WS 1 1 1 ISI integer_=)
+Best program: (slope true 2 2 2 integer_- 2 FWI integer_* WS exec_dup (exec_dup (1 WS 1 exec_dup (WS 1 1 1 ISI integer_=))))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 255
+-------------------------------------------------------
+Best plushy: (slope true 2 2 2 integer_- 2 FWI integer_* WS exec_dup exec_dup 1 WS 1 exec_dup WS 1 1 1 ISI integer_=)
+Best program: (slope true 2 2 2 integer_- 2 FWI integer_* WS exec_dup (exec_dup (1 WS 1 exec_dup (WS 1 1 1 ISI integer_=))))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 256
+-------------------------------------------------------
+Best plushy: (slope true 2 2 2 FWI 2 exec_dup integer_* integer_* :split integer_* BUI 1 integer_* BUI 1 2)
+Best program: (slope true 2 2 2 FWI 2 exec_dup (integer_* integer_* :split integer_* BUI 1 integer_* BUI 1 2))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 257
+-------------------------------------------------------
+Best plushy: (slope true 2 integer_- 2 2 integer_* integer_* WS integer_* WS integer_* 1 BUI BUI BUI WS ISI ISI)
+Best program: (slope true 2 integer_- 2 2 integer_* integer_* WS integer_* WS integer_* 1 BUI BUI BUI WS ISI ISI)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 258
+-------------------------------------------------------
+Best plushy: (slope true 2 2 2 FWI 2 exec_dup integer_* integer_* 1 1 integer_* 1 integer_* BUI ISI 1)
+Best program: (slope true 2 2 2 FWI 2 exec_dup (integer_* integer_* 1 1 integer_* 1 integer_* BUI ISI 1))
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 259
+-------------------------------------------------------
+Best plushy: (slope true 2 2 2 FWI 2 exec_dup integer_* integer_* 1 integer_* integer_* 1 integer_* ISI 1)
+Best program: (slope true 2 2 2 FWI 2 exec_dup (integer_* integer_* 1 integer_* integer_* 1 integer_* ISI 1))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 260
+-------------------------------------------------------
+Best plushy: (slope true 2 2 2 FWI 2 exec_dup integer_* integer_* 1 1 integer_* 1 integer_* BUI ISI 1)
+Best program: (slope true 2 2 2 FWI 2 exec_dup (integer_* integer_* 1 1 integer_* 1 integer_* BUI ISI 1))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 261
+-------------------------------------------------------
+Best plushy: (slope true 2 2 2 FWI exec_dup exec_dup 1 slope integer_* 1 1 integer_* integer_* BUI 1 ISI 1)
+Best program: (slope true 2 2 2 FWI exec_dup (exec_dup (1 slope integer_* 1 1 integer_* integer_* BUI 1 ISI 1)))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 262
+-------------------------------------------------------
+Best plushy: (slope true 2 2 2 FWI exec_dup exec_dup 1 slope integer_* 1 1 integer_* integer_* BUI 1 ISI 1)
+Best program: (slope true 2 2 2 FWI exec_dup (exec_dup (1 slope integer_* 1 1 integer_* integer_* BUI 1 ISI 1)))
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 263
+-------------------------------------------------------
+Best plushy: (2 true 2 2 2 FWI :split integer_* integer_* integer_* integer_* BUI integer_* integer_* integer_* ISI)
+Best program: (2 true 2 2 2 FWI :split integer_* integer_* integer_* integer_* BUI integer_* integer_* integer_* ISI)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 264
+-------------------------------------------------------
+Best plushy: (slope true 2 2 2 FWI exec_dup exec_dup integer_* 1 integer_* NBD 1 integer_* integer_* integer_* 1 1 ISI 1)
+Best program: (slope true 2 2 2 FWI exec_dup (exec_dup (integer_* 1 integer_* NBD 1 integer_* integer_* integer_* 1 1 ISI 1)))
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 265
+-------------------------------------------------------
+Best plushy: (slope true 2 2 2 exec_dup exec_dup exec_dup 1 slope integer_* 1 1 integer_* slope BUI ISI BUI 1 1 1)
+Best program: (slope true 2 2 2 exec_dup (exec_dup (exec_dup (1 slope integer_* 1 1 integer_* slope BUI ISI BUI 1 1 1))))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 266
+-------------------------------------------------------
+Best plushy: (2 true 2 FWI 2 FWI ISI exec_dup WD 1 integer_* BUI 1 integer_* integer_* 1 1 ISI ISI)
+Best program: (2 true 2 FWI 2 FWI ISI exec_dup (WD 1 integer_* BUI 1 integer_* integer_* 1 1 ISI ISI))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 267
+-------------------------------------------------------
+Best plushy: (2 true 2 2 2 FWI exec_dup exec_dup 1 slope integer_* BUI 1 integer_* slope 1 ISI ISI ISI)
+Best program: (2 true 2 2 2 FWI exec_dup (exec_dup (1 slope integer_* BUI 1 integer_* slope 1 ISI ISI ISI)))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 268
+-------------------------------------------------------
+Best plushy: (slope true 2 2 2 2 1 exec_dup exec_dup integer_* integer_* 1 integer_* slope BUI ISI ISI)
+Best program: (slope true 2 2 2 2 1 exec_dup (exec_dup (integer_* integer_* 1 integer_* slope BUI ISI ISI)))
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 269
+-------------------------------------------------------
+Best plushy: (2 true 2 exec_if 2 2 FWI exec_dup exec_dup 1 slope integer_* BUI 1 integer_* slope 1 ISI ISI)
+Best program: (2 true 2 exec_if (2 2 FWI exec_dup (exec_dup (1 slope integer_* BUI 1 integer_* slope 1 ISI ISI))) ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 270
+-------------------------------------------------------
+Best plushy: (2 true 2 exec_if 2 2 FWI exec_dup exec_dup 1 slope BUI 1 slope 1 ISI ISI)
+Best program: (2 true 2 exec_if (2 2 FWI exec_dup (exec_dup (1 slope BUI 1 slope 1 ISI ISI))) ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
