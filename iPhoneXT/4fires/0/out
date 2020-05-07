@@ -1309,3 +1309,93 @@ Total number of cells: 22148
 Best percent error: 0.36120644
 Fires evaluated:  (m1 r1 g2 m2)
 
+-------------------------------------------------------
+               Report for Generation 131
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and close NBD TB boolean_not integer_= TB integer_= boolean_not integer_= integer_= integer_- boolean_not boolean_not boolean_not BUI BUI slope FWI slope slope)
+Best program: (boolean_and boolean_and boolean_and NBD TB boolean_not integer_= TB integer_= boolean_not integer_= integer_= integer_- boolean_not boolean_not boolean_not BUI BUI slope FWI slope slope)
+Best total error: 10237
+Total number of cells: 27336
+Best percent error: 0.37448785
+Fires evaluated:  (r1 m2 k1 g2)
+
+-------------------------------------------------------
+               Report for Generation 132
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and close NBD boolean_not boolean_and integer_= WS integer_= boolean_not integer_= integer_= integer_- boolean_not slope slope BUI BUI slope FWI FWI slope)
+Best program: (boolean_and boolean_and boolean_and NBD boolean_not boolean_and integer_= WS integer_= boolean_not integer_= integer_= integer_- boolean_not slope slope BUI BUI slope FWI FWI slope)
+Best total error: 9447
+Total number of cells: 26068
+Best percent error: 0.36239836
+Fires evaluated:  (m2 g2 k1 m1)
+
+-------------------------------------------------------
+               Report for Generation 133
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and close NBD boolean_not boolean_and integer_= WS integer_= boolean_not integer_= integer_= integer_- boolean_not slope slope BUI BUI slope FWI FWI slope)
+Best program: (boolean_and boolean_and boolean_and NBD boolean_not boolean_and integer_= WS integer_= boolean_not integer_= integer_= integer_- boolean_not slope slope BUI BUI slope FWI FWI slope)
+Best total error: 9114
+Total number of cells: 29468
+Best percent error: 0.30928466
+Fires evaluated:  (k1 g2 k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 134
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and close NBD boolean_not boolean_and integer_= WS integer_= boolean_not integer_= integer_= integer_- slope slope slope BUI BUI FWI FWI slope)
+Best program: (boolean_and boolean_and boolean_and NBD boolean_not boolean_and integer_= WS integer_= boolean_not integer_= integer_= integer_- slope slope slope BUI BUI FWI FWI slope)
+Best total error: 6855
+Total number of cells: 23060
+Best percent error: 0.297268
+Fires evaluated:  (r1 m1 k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 135
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and close NBD boolean_not boolean_and integer_= WS integer_= boolean_not integer_= integer_= integer_- slope slope BUI BUI slope FWI FWI slope)
+Best program: (boolean_and boolean_and boolean_and NBD boolean_not boolean_and integer_= WS integer_= boolean_not integer_= integer_= integer_- slope slope BUI BUI slope FWI FWI slope)
+Best total error: 6877
+Total number of cells: 24280
+Best percent error: 0.28323722
+Fires evaluated:  (r1 k2 g2 m1)
+
+-------------------------------------------------------
+               Report for Generation 136
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and boolean_and close NBD boolean_not boolean_and integer_= WS integer_= boolean_not integer_= integer_= integer_- boolean_not slope slope BUI BUI FWI FWI FWI slope)
+Best program: (boolean_and boolean_and boolean_and NBD boolean_not boolean_and integer_= WS integer_= boolean_not integer_= integer_= integer_- boolean_not slope slope BUI BUI FWI FWI FWI slope)
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (m1 r1 k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 137
+-------------------------------------------------------
+Best plushy: (2 boolean_and boolean_and NBD TB boolean_not NBD NBD boolean_or integer_= integer_= integer_= boolean_not integer_- integer_- WS slope integer_% integer_= BUI integer_- BUI FWI FWI BUI FWI)
+Best program: (2 boolean_and boolean_and NBD TB boolean_not NBD NBD boolean_or integer_= integer_= integer_= boolean_not integer_- integer_- WS slope integer_% integer_= BUI integer_- BUI FWI FWI BUI FWI)
+Best total error: 7984
+Total number of cells: 20928
+Best percent error: 0.3814985
+Fires evaluated:  (r1 k1 m1 m2)
+
+-------------------------------------------------------
+               Report for Generation 138
+-------------------------------------------------------
+Best plushy: (2 boolean_and boolean_and NBD TB NBD boolean_or integer_= integer_= integer_= boolean_not integer_- integer_- WS slope integer_% integer_= BUI integer_- BUI FWI FWI BUI FWI)
+Best program: (2 boolean_and boolean_and NBD TB NBD boolean_or integer_= integer_= integer_= boolean_not integer_- integer_- WS slope integer_% integer_= BUI integer_- BUI FWI FWI BUI FWI)
+Best total error: 5901
+Total number of cells: 19816
+Best percent error: 0.29778966
+Fires evaluated:  (r1 m2 k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 139
+-------------------------------------------------------
+Best plushy: (2 boolean_and boolean_and NBD close ISI ISI NBD boolean_or integer_= integer_= integer_= boolean_not integer_- integer_= WS integer_- integer_- slope integer_= integer_- BUI BUI FWI BUI BUI slope)
+Best program: (2 boolean_and boolean_and NBD ISI ISI NBD boolean_or integer_= integer_= integer_= boolean_not integer_- integer_= WS integer_- integer_- slope integer_= integer_- BUI BUI FWI BUI BUI slope)
+Best total error: 8006
+Total number of cells: 22148
+Best percent error: 0.36147735
+Fires evaluated:  (r1 m1 g2 m2)
+

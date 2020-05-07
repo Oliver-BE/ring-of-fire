@@ -1349,3 +1349,413 @@ Total number of cells: 3132
 Best percent error: 0.29278415
 Fires evaluated:  (m1)
 
+-------------------------------------------------------
+               Report for Generation 135
+-------------------------------------------------------
+Best plushy: (integer_- true 0 NT close BUI integer_% integer_% WD WD WD WD integer_+ WS slope :split :split :split :split WS WS WS false)
+Best program: (integer_- true 0 NT BUI integer_% integer_% WD WD WD WD integer_+ WS slope :split :split :split :split WS WS WS false)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 136
+-------------------------------------------------------
+Best plushy: (exec_dup integer_- true NT NT NT close true close exec_dup integer_% TB WD boolean_= WD WD 2 WS :split slope slope :split :split :split :split WS WS WS slope WS WS)
+Best program: (exec_dup (integer_- true NT NT NT) true exec_dup (integer_% TB WD boolean_= WD WD 2 WS :split slope slope :split :split :split :split WS WS WS slope WS WS))
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 137
+-------------------------------------------------------
+Best plushy: (integer_- true 0 NT close close integer_+ close WD close WD WS WS slope slope slope slope WS WS WS slope WS boolean_or false)
+Best program: (integer_- true 0 NT integer_+ WD WD WS WS slope slope slope slope WS WS WS slope WS boolean_or false)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 138
+-------------------------------------------------------
+Best plushy: (integer_- true 0 NT close integer_% close integer_% WD WD integer_+ WS integer_+ TB :split :split :split 0 WS :split WS WS slope)
+Best program: (integer_- true 0 NT integer_% integer_% WD WD integer_+ WS integer_+ TB :split :split :split 0 WS :split WS WS slope)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 139
+-------------------------------------------------------
+Best plushy: (integer_- true NT close integer_% close integer_% WD WD integer_+ WS integer_+ TB :split :split :split 0 :split WS WS slope)
+Best program: (integer_- true NT integer_% integer_% WD WD integer_+ WS integer_+ TB :split :split :split 0 :split WS WS slope)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 140
+-------------------------------------------------------
+Best plushy: (integer_- true 0 0 NT close integer_% integer_% WD WD 2 integer_+ 2 integer_+ boolean_or :split slope WS slope WS WS slope slope)
+Best program: (integer_- true 0 0 NT integer_% integer_% WD WD 2 integer_+ 2 integer_+ boolean_or :split slope WS slope WS WS slope slope)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 141
+-------------------------------------------------------
+Best plushy: (integer_- true 0 NT NT close slope close integer_% WD integer_% WD WD integer_+ 2 TB slope :split :split slope WS WS false slope)
+Best program: (integer_- true 0 NT NT slope integer_% WD integer_% WD WD integer_+ 2 TB slope :split :split slope WS WS false slope)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 142
+-------------------------------------------------------
+Best plushy: (true 0 NT close close WD integer_% integer_% WD integer_+ integer_+ integer_+ WS WS slope :split :split WS boolean_or WS WS)
+Best program: (true 0 NT WD integer_% integer_% WD integer_+ integer_+ integer_+ WS WS slope :split :split WS boolean_or WS WS)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 143
+-------------------------------------------------------
+Best plushy: (integer_- true NBD 0 FWI NT close integer_% integer_% WD WD 2 WS integer_+ WS :split :split slope WS boolean_or WS WS slope)
+Best program: (integer_- true NBD 0 FWI NT integer_% integer_% WD WD 2 WS integer_+ WS :split :split slope WS boolean_or WS WS slope)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 144
+-------------------------------------------------------
+Best plushy: (integer_- true 0 NT NT close slope close WD integer_+ 2 integer_+ WD integer_+ 2 TB :split :split boolean_or slope WS WS slope)
+Best program: (integer_- true 0 NT NT slope WD integer_+ 2 integer_+ WD integer_+ 2 TB :split :split boolean_or slope WS WS slope)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 145
+-------------------------------------------------------
+Best plushy: (true true 0 NT NT close integer_% close WD integer_+ 2 BUI integer_+ integer_+ 2 :split TB :split :split boolean_or WS WS WS)
+Best program: (true true 0 NT NT integer_% WD integer_+ 2 BUI integer_+ integer_+ 2 :split TB :split :split boolean_or WS WS WS)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 146
+-------------------------------------------------------
+Best plushy: (integer_- true 0 close NT close integer_% integer_+ WD integer_+ 2 integer_+ integer_+ TB :split :split boolean_or WS WS WS)
+Best program: (integer_- true 0 NT integer_% integer_+ WD integer_+ 2 integer_+ integer_+ TB :split :split boolean_or WS WS WS)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 147
+-------------------------------------------------------
+Best plushy: (integer_- true 0 NT slope NT close integer_% slope WD WD slope integer_+ exec_if TB :split :split boolean_or WS TB WS :split boolean_or :split slope)
+Best program: (integer_- true 0 NT slope NT integer_% slope WD WD slope integer_+ exec_if (TB :split :split boolean_or WS TB WS :split boolean_or :split slope) ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 148
+-------------------------------------------------------
+Best plushy: (true true 0 NT close integer_% WD integer_+ 2 BUI integer_+ :split :split TB WS WS WS)
+Best program: (true true 0 NT integer_% WD integer_+ 2 BUI integer_+ :split :split TB WS WS WS)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 149
+-------------------------------------------------------
+Best plushy: (true true true NT close NBD integer_% close WD integer_+ 2 BUI 2 integer_+ 2 integer_+ TB :split :split boolean_or WS WS WS)
+Best program: (true true true NT NBD integer_% WD integer_+ 2 BUI 2 integer_+ 2 integer_+ TB :split :split boolean_or WS WS WS)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 150
+-------------------------------------------------------
+Best plushy: (NT integer_- true 0 NT close NT integer_% integer_% WD 2 2 BUI integer_+ integer_+ :split TB TB boolean_or :split WS WS WS)
+Best program: (NT integer_- true 0 NT NT integer_% integer_% WD 2 2 BUI integer_+ integer_+ :split TB TB boolean_or :split WS WS WS)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 151
+-------------------------------------------------------
+Best plushy: (true true 0 NT close WD integer_+ WD 2 2 :split integer_+ integer_+ :split WD WS boolean_or :split WS)
+Best program: (true true 0 NT WD integer_+ WD 2 2 :split integer_+ integer_+ :split WD WS boolean_or :split WS)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 152
+-------------------------------------------------------
+Best plushy: (NT true true close close close true integer_% integer_% WD integer_+ 2 integer_+ 2 integer_+ integer_+ true :split 2 :split boolean_or :split boolean_or WS WS)
+Best program: (NT true true true integer_% integer_% WD integer_+ 2 integer_+ 2 integer_+ integer_+ true :split 2 :split boolean_or :split boolean_or WS WS)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 153
+-------------------------------------------------------
+Best plushy: (NT true true close close close true integer_% integer_% WD integer_+ integer_+ 2 integer_+ integer_+ true :split 2 :split boolean_or :split boolean_or WS WS)
+Best program: (NT true true true integer_% integer_% WD integer_+ integer_+ 2 integer_+ integer_+ true :split 2 :split boolean_or :split boolean_or WS WS)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 154
+-------------------------------------------------------
+Best plushy: (NT true true close close close true integer_% integer_% WD integer_+ integer_+ 2 integer_+ integer_+ true :split 2 :split boolean_or :split boolean_or WS WS)
+Best program: (NT true true true integer_% integer_% WD integer_+ integer_+ 2 integer_+ integer_+ true :split 2 :split boolean_or :split boolean_or WS WS)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 155
+-------------------------------------------------------
+Best plushy: (NT true true :split close close true integer_% integer_% WD integer_+ integer_+ integer_+ 2 integer_+ integer_+ true true :split :split boolean_or :split :split boolean_or WS)
+Best program: (NT true true :split true integer_% integer_% WD integer_+ integer_+ integer_+ 2 integer_+ integer_+ true true :split :split boolean_or :split :split boolean_or WS)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 156
+-------------------------------------------------------
+Best plushy: (true true 0 close 1 close WD integer_% WD 2 integer_+ integer_+ integer_+ WD true boolean_or 2 :split WS :split boolean_or WS)
+Best program: (true true 0 1 WD integer_% WD 2 integer_+ integer_+ integer_+ WD true boolean_or 2 :split WS :split boolean_or WS)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 157
+-------------------------------------------------------
+Best plushy: (NT true true close close close true integer_% integer_% WD integer_+ integer_+ 2 integer_+ integer_+ true :split 2 :split boolean_or :split WS WS)
+Best program: (NT true true true integer_% integer_% WD integer_+ integer_+ 2 integer_+ integer_+ true :split 2 :split boolean_or :split WS WS)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 158
+-------------------------------------------------------
+Best plushy: (NT true 0 close 1 close WD integer_% integer_% WD 2 integer_+ :split 2 integer_+ integer_+ boolean_or true boolean_and :split :split :split :split WS WS)
+Best program: (NT true 0 1 WD integer_% integer_% WD 2 integer_+ :split 2 integer_+ integer_+ boolean_or true boolean_and :split :split :split :split WS WS)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 159
+-------------------------------------------------------
+Best plushy: (NT true true NT close WD close integer_% WD 2 integer_% 2 :split true WD true :split slope WS boolean_and :split WS :split boolean_or WS)
+Best program: (NT true true NT WD integer_% WD 2 integer_% 2 :split true WD true :split slope WS boolean_and :split WS :split boolean_or WS)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 160
+-------------------------------------------------------
+Best plushy: (true 0 0 1 1 WD true WD 2 integer_% 2 :split 2 integer_+ 2 true TB true boolean_and 2 :split WS boolean_or WS)
+Best program: (true 0 0 1 1 WD true WD 2 integer_% 2 :split 2 integer_+ 2 true TB true boolean_and 2 :split WS boolean_or WS)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 161
+-------------------------------------------------------
+Best plushy: (NT true WS 0 NT 1 WD true WD integer_% WD boolean_= integer_+ 2 2 integer_+ integer_+ true 2 boolean_and true boolean_and 2 :split WS)
+Best program: (NT true WS 0 NT 1 WD true WD integer_% WD boolean_= integer_+ 2 2 integer_+ integer_+ true 2 boolean_and true boolean_and 2 :split WS)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 162
+-------------------------------------------------------
+Best plushy: (NT true NT NT NT true integer_% integer_% WD 2 2 WD :split integer_+ 2 true true boolean_and 2 :split :split boolean_and exec_if WS WS)
+Best program: (NT true NT NT NT true integer_% integer_% WD 2 2 WD :split integer_+ 2 true true boolean_and 2 :split :split boolean_and exec_if (WS WS) ())
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 163
+-------------------------------------------------------
+Best plushy: (NT true NT NT WD true WD true WD 2 2 boolean_= :split integer_+ 2 true boolean_or boolean_and 2 :split true boolean_and exec_if WS WS)
+Best program: (NT true NT NT WD true WD true WD 2 2 boolean_= :split integer_+ 2 true boolean_or boolean_and 2 :split true boolean_and exec_if (WS WS) ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 164
+-------------------------------------------------------
+Best plushy: (NT true exec_dup NT NT WD close WD integer_% WD WD 2 WD :split integer_+ 2 true boolean_or boolean_and 2 ISI :split :split boolean_or boolean_or)
+Best program: (NT true exec_dup (NT NT WD) WD integer_% WD WD 2 WD :split integer_+ 2 true boolean_or boolean_and 2 ISI :split :split boolean_or boolean_or)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 165
+-------------------------------------------------------
+Best plushy: (NT true boolean_and NT NT WD close WD exec_dup boolean_= integer_% WD WD boolean_or 2 WD :split integer_+ 2 true boolean_or boolean_and 2 :split :split boolean_or boolean_or)
+Best program: (NT true boolean_and NT NT WD WD exec_dup (boolean_= integer_% WD WD boolean_or 2 WD :split integer_+ 2 true boolean_or boolean_and 2 :split :split boolean_or boolean_or))
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 166
+-------------------------------------------------------
+Best plushy: (NT true WS NT NT close close WD integer_% true 2 WD :split :split integer_+ WS 2 boolean_or integer_+ integer_+ WS :split :split 0 boolean_or WS 2)
+Best program: (NT true WS NT NT WD integer_% true 2 WD :split :split integer_+ WS 2 boolean_or integer_+ integer_+ WS :split :split 0 boolean_or WS 2)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 167
+-------------------------------------------------------
+Best plushy: (NT true slope NT close NBD NT close WD integer_% WD close 2 :split :split WD 2 true integer_* boolean_or boolean_and 2 2 exec_if WS)
+Best program: (NT true slope NT NBD NT WD integer_% WD 2 :split :split WD 2 true integer_* boolean_or boolean_and 2 2 exec_if (WS) ())
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 168
+-------------------------------------------------------
+Best plushy: (true WS NT exec_if boolean_not true 2 WD :split WD :split :split integer_+ WS integer_+ boolean_or integer_+ WS 0 :split :split boolean_not 2 WS boolean_not)
+Best program: (true WS NT exec_if (boolean_not true 2 WD :split WD :split :split integer_+ WS integer_+ boolean_or integer_+ WS 0 :split :split boolean_not 2 WS boolean_not) ())
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 169
+-------------------------------------------------------
+Best plushy: (NT true WS integer_% NT NT WD integer_% WD WD 2 :split :split WD 2 2 WD :split integer_+ :split true :split boolean_and :split boolean_or)
+Best program: (NT true WS integer_% NT NT WD integer_% WD WD 2 :split :split WD 2 2 WD :split integer_+ :split true :split boolean_and :split boolean_or)
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 170
+-------------------------------------------------------
+Best plushy: (NT true WS NT NT close WD integer_% WD WD 2 :split :split BUI :split WD 2 boolean_and integer_+ 2 boolean_or 2 :split WS ISI :split exec_if boolean_or boolean_not)
+Best program: (NT true WS NT NT WD integer_% WD WD 2 :split :split BUI :split WD 2 boolean_and integer_+ 2 boolean_or 2 :split WS ISI :split exec_if (boolean_or boolean_not) ())
+Best total error: 3176
+Total number of cells: 9540
+Best percent error: 0.33291405
+Fires evaluated:  (g2)
+
+-------------------------------------------------------
+               Report for Generation 171
+-------------------------------------------------------
+Best plushy: (NT true boolean_and NT NT close WD integer_% WD WD boolean_= integer_% :split BUI boolean_or WD 2 :split 2 2 boolean_or boolean_or boolean_and WS :split exec_if boolean_or)
+Best program: (NT true boolean_and NT NT WD integer_% WD WD boolean_= integer_% :split BUI boolean_or WD 2 :split 2 2 boolean_or boolean_or boolean_and WS :split exec_if (boolean_or) ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 172
+-------------------------------------------------------
+Best plushy: (NT true NT NT NT close integer_% WD WD boolean_= integer_% integer_% :split BUI WD :split 2 :split true 2 boolean_or :split boolean_or WS)
+Best program: (NT true NT NT NT integer_% WD WD boolean_= integer_% integer_% :split BUI WD :split 2 :split true 2 boolean_or :split boolean_or WS)
+Best total error: 1070
+Total number of cells: 7208
+Best percent error: 0.14844617
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 173
+-------------------------------------------------------
+Best plushy: (NT true NT NT NT close integer_% WD WD boolean_= integer_% integer_% :split BUI WD :split 2 :split true 2 boolean_and boolean_or :split boolean_or WS)
+Best program: (NT true NT NT NT integer_% WD WD boolean_= integer_% integer_% :split BUI WD :split 2 :split true 2 boolean_and boolean_or :split boolean_or WS)
+Best total error: 2200
+Total number of cells: 5076
+Best percent error: 0.43341213
+Fires evaluated:  (m2)
+
+-------------------------------------------------------
+               Report for Generation 174
+-------------------------------------------------------
+Best plushy: (NT true exec_dup boolean_and NT NT close WD integer_% WD WD boolean_= integer_% :split BUI boolean_or WD 2 :split 2 2 boolean_or boolean_or slope boolean_and WS :split exec_if boolean_or)
+Best program: (NT true exec_dup (boolean_and NT NT) WD integer_% WD WD boolean_= integer_% :split BUI boolean_or WD 2 :split 2 2 boolean_or boolean_or slope boolean_and WS :split exec_if (boolean_or) ())
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 175
+-------------------------------------------------------
+Best plushy: (NT true NT NT close WD integer_% WD WD boolean_= boolean_= :split BUI boolean_or WD :split 2 WD boolean_or boolean_or boolean_and true :split boolean_and :split)
+Best program: (NT true NT NT WD integer_% WD WD boolean_= boolean_= :split BUI boolean_or WD :split 2 WD boolean_or boolean_or boolean_and true :split boolean_and :split)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
