@@ -157,9 +157,11 @@
 
 (defn construct-opposite-grid
   "Returns a vector of vectors filled with opposite values of actual fire grid"
-  [fire-name]
-  (vec (map #(if (= 1 %) 0 1) ((keyword (name fire-name)) final-scar-grid-master-flattened))))
-#_(construct-opposite-grid "m1")
+  [fire-name edge-case-vector]
+  (let [percent-error (get {1 0.85, 2 0.90, 3 0.95, 4 1.0} (reduce + edge-case-vector))]
+   (vec (map #(if (< (rand) percent-error) (if (= 1 %) 0 1)  %) ((keyword (name fire-name)) final-scar-grid-master-flattened)))))
+#_(construct-opposite-grid "m1" [1 1 1 1])
+
 
 (def test-burned-grid (construct-burned-grid "m1"))
 (def test-burned-grid-flat (vec (flatten (construct-burned-grid "m1"))))
@@ -257,9 +259,8 @@
         case4 (if (= 1 (test-update-cell cell-id fire-name 0 1 program argmap 20 60))
                 1 0)]
     ;(prn (reduce + [case1 case2 case3 case4]))
-    (if (= 0 (reduce + [case1 case2 case3 case4]))
-      true
-      false)))
+    [case1 case2 case3 case4]
+    ))
 #_(passes-edge-cases? ['(ISI) '(WD)] test-argmap)
 
 (defn update-cell
@@ -546,12 +547,12 @@
         ;; correct output is each
         correct-outputs (vec (map #((keyword (name %)) final-scar-grid-master-flattened) inputs))
 
-        edge-cases-passed? (passes-edge-cases? split-program argmap)
+        edge-cases (passes-edge-cases? split-program argmap)
         ;; run each fire through our run-fire function with the given program
         ;; if we don't pass edge cases then return everything as opposite of what it should be (results in max error)
-        outputs (if edge-cases-passed?
+        outputs (if (= 0 (reduce + edge-cases))
                   (vec (pmap #(run-fire % split-program argmap) inputs))
-                  (vec (map #(construct-opposite-grid %) inputs)))
+                  (vec (map #(construct-opposite-grid % edge-cases) inputs)))
 
 
         ;; returns a vector where 1 indicates different outputs
@@ -581,13 +582,13 @@
 
 #_(propel-gp {:instructions            fire-instructions
               :error-function          fire-error-function
-              :max-generations         100
-              :population-size         100
-              :max-initial-plushy-size 30
+              :max-generations         1000
+              :population-size         300
+              :max-initial-plushy-size 60
               :step-limit              100
               :parent-selection        :lexicase
               :tournament-size         3
-              :time-step               50
+              :time-step               3
               :fire-selection          1})
 
 ;-------------------------
