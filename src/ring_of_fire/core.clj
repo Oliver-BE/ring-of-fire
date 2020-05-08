@@ -290,18 +290,18 @@
                 (recur (inc i) (assoc current-time-grid i (+ time-burning 1)) (assoc current-cell-grid i 1))
                 ;; otherwise then don't change anything and leave the cell as unburned
                 (recur (inc i) current-time-grid current-cell-grid)))))))))
-#_(:cell-grid (update-grid (:m1 initial-fire-grids-flattened) "m1" 100 (make-split-program '(NBD)) test-argmap (:m1 initial-time-grids-flattened)))
+#_(:time-grid (update-grid (:m1 initial-fire-grids-flattened) "m1" 100 (make-split-program '(NBD)) test-argmap (:m1 initial-time-grids-flattened)))
 
 
 (defn convert-vector
   "Converts vector to all 1s and 0s (2s become 1s everything else stays the same)"
   [grid]
-  (map #(if (= % 2)
+  (vec (map #(if (= % 2)
           ;; 2s become 1s
           (dec %)
           ;; everything else stays the same
-          %) grid))
-#_(convert-vector '(2 1 1 0 1 0 0 0 1 2 2 2))
+          %) grid)))
+#_(convert-vector [2 1 1 0 1 0 0 0 1 2 2 2])
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; run fire function (calls update grid) ;;
@@ -330,10 +330,12 @@
   (loop [flat-grid ((keyword (name fire-name)) initial-fire-grids-flattened)
          time-step 0
          time-grid ((keyword (name fire-name)) initial-time-grids-flattened)]
+    ;(prn time-step)
     (if (>= time-step 1440)
       ;; if time is up convert all 2s to 1s and return fire-scar
 
-      (convert-vector flat-grid)                            ;might need to change the convert grid format
+      ;; note that here used to be returning a lazy seq, potential memory leak
+      (convert-vector flat-grid)
 
       ;; otherwise update our grid and increment time
       (let [updated-grids (update-grid flat-grid fire-name time-step program argmap time-grid)]
@@ -341,8 +343,7 @@
                (+ time-step (:time-step argmap))
                (:time-grid updated-grids))))))
 #_(run-fire "m1" (make-split-program '(ISI)) test-argmap)
-#_(time (run-fire "m1" test-program test-argmap))
-#_(time (run-fire "m1" best-program test-argmap))
+#_(time (run-fire "m1" (make-split-program '(ISI)) test-argmap))
 #_(def test-a-program '(WS se BUI DMC 1 integer_+ integer_- exec_dup (APCP w DC integer_- exec_if (num-burning-neigh TMP boolean_= integer_-))))
 #_(def runfire-test-argmap {:instructions            fire-instructions
                             :error-function          fire-error-function
@@ -470,9 +471,9 @@
         ;; a vector containing each fire name as a string is our inputs
         inputs fire-subset
         ;; correct output is each
-        correct-outputs (map #((keyword (name %)) final-scar-grid-master-flattened) inputs)
+        correct-outputs (vec (map #((keyword (name %)) final-scar-grid-master-flattened) inputs))
         ;; run each fire through our run-fire function with the given program
-        outputs (pmap #(run-fire % split-program argmap) inputs)
+        outputs (vec (pmap #(run-fire % split-program argmap) inputs))
         ;; returns a vector where 1 indicates different outputs
         ;; 0 indicates the outputs were the same
         errors (compare-grids outputs correct-outputs)]
@@ -507,7 +508,7 @@
 
 #_(propel-gp {:instructions            fire-instructions
               :error-function          fire-error-function
-              :max-generations         1000
+              :max-generations         10
               :population-size         5
               :max-initial-plushy-size 30
               :step-limit              100

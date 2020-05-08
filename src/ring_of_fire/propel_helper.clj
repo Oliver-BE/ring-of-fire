@@ -45,7 +45,7 @@
     'integer_*
     'integer_%
     'integer_=
-    'exec_dup
+    ;'exec_dup
     'exec_if
     'boolean_and
     'boolean_or

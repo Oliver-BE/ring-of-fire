@@ -90,22 +90,22 @@
   "Calculates percent difference of two grids"
   [evolved-scar final-scar]
   (float (/ (reduce + (compare-grids-quil evolved-scar final-scar)) (tot-cells-quil final-scar))))
-#_(calculate-pct-error [[1 0 0] [0 0 1]] [[1 0 0] [0 1 1]])
-#_(calculate-pct-error fire-scar-m1 fire-scar-m1-us)
-#_(calculate-pct-error fire-scar-a1 fire-scar-a1-us)
-#_(calculate-pct-error fire-scar-g1 fire-scar-g1-us)
-#_(calculate-pct-error fuel-a1 fire-scar-a1-us)
+#_(calculate-pct-difference [[1 0 0] [0 0 1]] [[1 0 0] [0 1 1]])
+#_(calculate-pct-difference fire-scar-m1 fire-scar-m1-us)
+#_(calculate-pct-difference fire-scar-a1 fire-scar-a1-us)
+#_(calculate-pct-difference fire-scar-g1 fire-scar-g1-us)
+#_(calculate-pct-difference fuel-a1 fire-scar-a1-us)
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Run quil program on read in data
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(def rows (num-rows-quil fire-scar-m1-us))
-(def columns (num-columns-quil fire-scar-m1-us))
+(def rows (num-rows-quil fuel-a1))
+(def columns (num-columns-quil fuel-a1))
 
 
 (defn grid-to-print []
-  fire-scar-m1-us)
+  fuel-a1)
 
 (defn setup []
   (q/no-stroke)
