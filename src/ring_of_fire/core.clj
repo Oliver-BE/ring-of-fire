@@ -159,7 +159,7 @@
   "Returns a vector of vectors filled with opposite values of actual fire grid"
   [fire-name edge-case-vector]
   (let [percent-error (get {1 0.85, 2 0.90, 3 0.95, 4 1.0} (reduce + edge-case-vector))]
-   (vec (map #(if (< (rand) percent-error) (if (= 1 %) 0 1)  %) ((keyword (name fire-name)) final-scar-grid-master-flattened)))))
+    (vec (map #(if (< (rand) percent-error) (if (= 1 %) 0 1) %) ((keyword (name fire-name)) final-scar-grid-master-flattened)))))
 #_(construct-opposite-grid "m1" [1 1 1 1])
 
 
@@ -235,8 +235,8 @@
 
 (defn passes-edge-cases?
   "Checks whether program is minimally smart, i.e. if it passes
-  base-line edge cases. Returns true if it passes the cases,
-  false if it fails"
+  base-line edge cases. Returns a 1 for each case it fails,
+  a 0 for each case it passes"
   [program argmap]
   (let [fire-name "m1"
         ; always check the cell one to the right of the ignition cell
@@ -259,8 +259,7 @@
         case4 (if (= 1 (test-update-cell cell-id fire-name 0 1 program argmap 20 60))
                 1 0)]
     ;(prn (reduce + [case1 case2 case3 case4]))
-    [case1 case2 case3 case4]
-    ))
+    [case1 case2 case3 case4]))
 #_(passes-edge-cases? ['(ISI) '(WD)] test-argmap)
 
 (defn update-cell
@@ -550,7 +549,8 @@
         edge-cases (passes-edge-cases? split-program argmap)
         ;; run each fire through our run-fire function with the given program
         ;; if we don't pass edge cases then return everything as opposite of what it should be (results in max error)
-        outputs (if (= 0 (reduce + edge-cases))
+        ;outputs (if (= 0 (reduce + edge-cases))
+        outputs (if true
                   (vec (pmap #(run-fire % split-program argmap) inputs))
                   (vec (map #(construct-opposite-grid % edge-cases) inputs)))
 
@@ -583,13 +583,13 @@
 #_(propel-gp {:instructions            fire-instructions
               :error-function          fire-error-function
               :max-generations         1000
-              :population-size         300
+              :population-size         5
               :max-initial-plushy-size 60
               :step-limit              100
               :parent-selection        :lexicase
               :tournament-size         3
-              :time-step               3
-              :fire-selection          1})
+              :time-step               5
+              :fire-selection          2})
 
 ;-------------------------
 
