@@ -155,6 +155,12 @@
   (vec (repeat (count ((keyword (name fire-name)) elevation-master))
                (vec (repeat (count (first ((keyword (name fire-name)) elevation-master))) 1)))))
 
+(defn construct-opposite-grid
+  "Returns a vector of vectors filled with opposite values of actual fire grid"
+  [fire-name]
+  (vec (map #(if (= 1 %) 0 1) ((keyword (name fire-name)) final-scar-grid-master-flattened))))
+#_(construct-opposite-grid "m1")
+
 (def test-burned-grid (construct-burned-grid "m1"))
 (def test-burned-grid-flat (vec (flatten (construct-burned-grid "m1"))))
 (def test-burning-grid (construct-burning-grid "m1"))
@@ -178,13 +184,11 @@
       0)))
 #_(get-net-direction {0 5, 90 5})
 
-#_(def sample-program '(sw n integer_% false false e exec_dup (e integer_* w sw WD DMC false exec_if)))
-(defn update-cell
+
+(defn test-update-cell
   "Update cell to next state by interpreting push program"
-  [cell-id fire-name time flattened-grid program argmap time-burning current-time-grid]
-  (let [b-neighbors-time-map (get-burning-neighbors-map-using-time cell-id current-time-grid fire-name)
-        current-value (nth flattened-grid cell-id)
-        answer (peek-stack
+  [cell-id fire-name time current-value program argmap time-burning neighbor-time]
+  (let [answer (peek-stack
                  (interpret-program
                    (if (= current-value 0)
                      (nth program 0)
@@ -193,8 +197,8 @@
                                                    :ISI   (get-current-weather-var "ISI" fire-name time)
                                                    :BUI   (get-current-weather-var "BUI" fire-name time)
                                                    :FWI   (get-current-weather-var "FWI" fire-name time)
-                                                   :NT    (int (/ (reduce + (vals b-neighbors-time-map)) 8))
-                                                   :NBD   (int (get-net-direction b-neighbors-time-map))
+                                                   :NT    neighbor-time ;we might want an avg (but this forces float)
+                                                   :NBD   180
                                                    :WS    (get-current-weather-var "WS" fire-name time)
                                                    :WD    (get-current-weather-var "WD" fire-name time)
                                                    :TB    time-burning
@@ -207,7 +211,6 @@
                                                    ;;:DC            (get-current-weather-var "DC" fire-name time)
                                                    ;;:RH            (get-current-weather-var "RH" fire-name time)
                                                    ;;:DMC           (get-current-weather-var "DMC" fire-name time)
-                                                   ;;The stack can't take something that isn't an int right?
                                                    })
                    (:step-limit argmap))
                  :boolean)]
@@ -225,13 +228,86 @@
       ;; if burning and we get an answer of 0, just stay burning (1)
       (= current-value 1)
       (if answer 2 1))))
+#_(test-update-cell 5 "m1" 0 1 ['(ISI) '(WD)] test-argmap 1 20)
 
-#_(update-cell 5 "m1" 0 test-burning-grid-flat test-burning-grid test-program test-argmap)
-#_(time (update-cell 5 "m1" 10 test-burned-grid-flat test-burned-grid test-program test-argmap))
-#_(time (update-cell 5 "m1" 10 test-burning-grid-flat test-burning-grid test-program test-argmap))
-#_(time (get-burning-neighbors-map 500 test-burning-grid))
-#_(time (nth (flatten test-burning-grid) 500))
-#_(time (nth (vec (flatten test-burning-grid)) 500))
+
+(defn passes-edge-cases?
+  "Checks whether program is minimally smart, i.e. if it passes
+  base-line edge cases. Returns true if it passes the cases,
+  false if it fails"
+  [program argmap]
+  (let [fire-name "m1"
+        ; always check the cell one to the right of the ignition cell
+        ; this works b/c ignition cell is 1-indexed and we use 0-indexing
+        cell-id ((keyword (name fire-name)) ignition-cell-master)
+        ; if we aren't burning but become burning with no neighbors burning, FAIL
+        ; current-value = 0 and NT = 0 and update cell returns 1, FAIL
+        case1 (if (= 1 (test-update-cell cell-id fire-name 0 0 program argmap 0 0))
+                1 0)
+        ; if we aren't burning but stay not burning with lots of neighbors burning, FAIL
+        ; current-value = 0 and NT = 20 and update cell returns 0, FAIL
+        case2 (if (= 0 (test-update-cell cell-id fire-name 0 0 program argmap 0 60))
+                1 0)
+        ; if we are burning and go immediately to burned, FAIL
+        ; if current-value = 1 and timeburning = 1 and update cell returns 2, FAIL
+        case3 (if (= 2 (test-update-cell cell-id fire-name 0 1 program argmap 1 20))
+                1 0)
+        ; if we are burning and don't become burned after burning for a long time, FAIL
+        ; if current-value = 1 and time burning >= 20 and update cell still returns 1 (should return 2, FAIL)
+        case4 (if (= 1 (test-update-cell cell-id fire-name 0 1 program argmap 20 60))
+                1 0)]
+    ;(prn (reduce + [case1 case2 case3 case4]))
+    (if (= 0 (reduce + [case1 case2 case3 case4]))
+      true
+      false)))
+#_(passes-edge-cases? ['(ISI) '(WD)] test-argmap)
+
+(defn update-cell
+  "Update cell to next state by interpreting push program"
+  [cell-id fire-name time current-value program argmap time-burning current-time-grid]
+  (let [b-neighbors-time-map (get-burning-neighbors-map-using-time cell-id current-time-grid fire-name)
+        answer (peek-stack
+                 (interpret-program
+                   (if (= current-value 0)
+                     (nth program 0)
+                     (nth program 1))
+                   (assoc empty-push-state :input {:slope (get-slope-at-cell cell-id fire-name)
+                                                   :ISI   (get-current-weather-var "ISI" fire-name time)
+                                                   :BUI   (get-current-weather-var "BUI" fire-name time)
+                                                   :FWI   (get-current-weather-var "FWI" fire-name time)
+                                                   :NT    (int (reduce + (vals b-neighbors-time-map))) ;we might want an avg (but this forces float)
+                                                   :NBD   (int (get-net-direction b-neighbors-time-map))
+                                                   :WS    (get-current-weather-var "WS" fire-name time)
+                                                   :WD    (get-current-weather-var "WD" fire-name time)
+                                                   :TB    time-burning
+
+                                                   ;:split     false
+                                                   ;:elevation         (get-elevation-at-cell cell-id fire-name)
+                                                   ;;:FFMC          (get-current-weather-var "FFMC" fire-name time)
+                                                   ;;:TMP           (get-current-weather-var "TMP" fire-name time)
+                                                   ;;:APCP          (get-current-weather-var "APCP" fire-name time)
+                                                   ;;:DC            (get-current-weather-var "DC" fire-name time)
+                                                   ;;:RH            (get-current-weather-var "RH" fire-name time)
+                                                   ;;:DMC           (get-current-weather-var "DMC" fire-name time)
+                                                   })
+                   (:step-limit argmap))
+                 :boolean)]
+    ;; get first thing off integer stack
+    ;; check for other types, we only went integers
+    (cond
+      ;; this is simply the cells original value that was initially passed in
+      ;; (see :current-value above)
+      (= answer :no-stack-item)
+      current-value
+      ;; If currently 0, can go to 0, 1, 2
+      ;; note we might want to only allow 0 to go to 1 (and not straight to 2)
+      (= current-value 0)
+      (if answer 1 0)
+      ;; if burning and we get an answer of 0, just stay burning (1)
+      (= current-value 1)
+      (if answer 2 1))))
+#_(update-cell 5 "m1" 0 1 ['(ISI) '(WD)] test-argmap 1 test-burning-grid-flat)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; update grid function (calls update cell) ;;
@@ -273,7 +349,7 @@
           ;; if it's burning
           (if (= cell-value 1)
             ;; then we increase time-burning and update the cell
-            (recur (inc i) (assoc current-time-grid i (+ time-burning 1)) (assoc current-cell-grid i (update-cell i fire-name time-step flattened-grid program argmap time-burning current-time-grid)))
+            (recur (inc i) (assoc current-time-grid i (+ time-burning 1)) (assoc current-cell-grid i (update-cell i fire-name time-step cell-value program argmap time-burning current-time-grid)))
 
             ;; otherwise check to see if it's burned
             (if (= cell-value 2)
@@ -285,7 +361,7 @@
               (if (and
                     (>= (num-burning-neighbors i flattened-grid fire-name) 1)
                     (= 1 (nth flattened-fuel i))
-                    (= 1 (update-cell i fire-name time-step flattened-grid program argmap time-burning current-time-grid)))
+                    (= 1 (update-cell i fire-name time-step cell-value program argmap time-burning current-time-grid)))
                 ;; if it is burning then set to burning and increase time burning
                 (recur (inc i) (assoc current-time-grid i (+ time-burning 1)) (assoc current-cell-grid i 1))
                 ;; otherwise then don't change anything and leave the cell as unburned
@@ -297,10 +373,10 @@
   "Converts vector to all 1s and 0s (2s become 1s everything else stays the same)"
   [grid]
   (vec (map #(if (= % 2)
-          ;; 2s become 1s
-          (dec %)
-          ;; everything else stays the same
-          %) grid)))
+               ;; 2s become 1s
+               (dec %)
+               ;; everything else stays the same
+               %) grid)))
 #_(convert-vector [2 1 1 0 1 0 0 0 1 2 2 2])
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -456,10 +532,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; fire error function (calls run fire)  ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-#_(sort (take 2 (shuffle fire-names)))
-;; how do argmap and individual get passed in???
 
-#_(def test-individual '(FWI NBD integer_- true integer_* WD :split exec_dup exec_dup integer_* boolean_not NT NT 0 0 NT NT 1))
 (defn fire-error-function
   "Error is 0 if the value and the program's selected behavior match,
    or 1 if they differ, or 1000000 if no behavior is produced.
@@ -472,20 +545,26 @@
         inputs fire-subset
         ;; correct output is each
         correct-outputs (vec (map #((keyword (name %)) final-scar-grid-master-flattened) inputs))
+
+        edge-cases-passed? (passes-edge-cases? split-program argmap)
         ;; run each fire through our run-fire function with the given program
-        outputs (vec (pmap #(run-fire % split-program argmap) inputs))
+        ;; if we don't pass edge cases then return everything as opposite of what it should be (results in max error)
+        outputs (if edge-cases-passed?
+                  (vec (pmap #(run-fire % split-program argmap) inputs))
+                  (vec (map #(construct-opposite-grid %) inputs)))
+
+
         ;; returns a vector where 1 indicates different outputs
         ;; 0 indicates the outputs were the same
         errors (compare-grids outputs correct-outputs)]
+    ;(prn edge-cases-passed?)
     (assoc individual
-      ;;:behaviors outputs
-      ;;:errors errors
       ;; FOR LEXICASE:
       :errors errors
       ;; FOR TOURNAMENT
       :total-error (reduce + errors))))
 #_(fire-error-function test-argmap ["m1"] sample-program)
-#_(def sample-program '(sw n integer_% false false :split exec_dup :split (e integer_* w sw :split WD DMC :split false exec_if)))
+#_(def sample-program {:plushy '(ISI)})
 #_(def test-argmap {:instructions            fire-instructions
                     :error-function          fire-error-function
                     :max-generations         1000
@@ -496,20 +575,14 @@
                     :tournament-size         3
                     :time-step               500
                     :fire-selection          1})
-(def lookuptest {:a [0 0 0]
-                 :b [1 1 1]
-                 :c [2 2 2]})
-#_(map #((keyword (name %)) lookuptest) ["a" "b" "c"])
-
-
 
 ;-------------------------
 ; RUNNER
 
 #_(propel-gp {:instructions            fire-instructions
               :error-function          fire-error-function
-              :max-generations         10
-              :population-size         5
+              :max-generations         100
+              :population-size         100
               :max-initial-plushy-size 30
               :step-limit              100
               :parent-selection        :lexicase
