@@ -6,31 +6,31 @@ getenv = True
 executable  = runlightweight
 
 ## Job properties
-output = /mnt/scratch/icaruso21/ring-of-fire/iPhoneXT/lightweight/0/out
-error  = /mnt/scratch/icaruso21/ring-of-fire/iPhoneXT/lightweight/0/err
-log    = /mnt/scratch/icaruso21/ring-of-fire/iPhoneXT/lightweight/0/log
+output = /mnt/scratch/icaruso21/ring-of-fire/iPhone/lightweight/0/out
+error  = /mnt/scratch/icaruso21/ring-of-fire/iPhone/lightweight/0/err
+log    = /mnt/scratch/icaruso21/ring-of-fire/iPhone/lightweight/0/log
 queue
 
 ## Job properties
-output = /mnt/scratch/icaruso21/ring-of-fire/iPhoneXT/lightweight/1/out
-error  = /mnt/scratch/icaruso21/ring-of-fire/iPhoneXT/lightweight/1/err
-log    = /mnt/scratch/icaruso21/ring-of-fire/iPhoneXT/lightweight/1/log
+output = /mnt/scratch/icaruso21/ring-of-fire/iPhone/lightweight/1/out
+error  = /mnt/scratch/icaruso21/ring-of-fire/iPhone/lightweight/1/err
+log    = /mnt/scratch/icaruso21/ring-of-fire/iPhone/lightweight/1/log
 queue
 
 ## Job properties
-output = /mnt/scratch/icaruso21/ring-of-fire/iPhoneXT/lightweight/2/out
-error  = /mnt/scratch/icaruso21/ring-of-fire/iPhoneXT/lightweight/2/err
-log    = /mnt/scratch/icaruso21/ring-of-fire/iPhoneXT/lightweight/2/log
+output = /mnt/scratch/icaruso21/ring-of-fire/iPhone/lightweight/2/out
+error  = /mnt/scratch/icaruso21/ring-of-fire/iPhone/lightweight/2/err
+log    = /mnt/scratch/icaruso21/ring-of-fire/iPhone/lightweight/2/log
 queue
 
 ## Job properties
-output = /mnt/scratch/icaruso21/ring-of-fire/iPhoneXT/lightweight/3/out
-error  = /mnt/scratch/icaruso21/ring-of-fire/iPhoneXT/lightweight/3/err
-log    = /mnt/scratch/icaruso21/ring-of-fire/iPhoneXT/lightweight/3/log
+output = /mnt/scratch/icaruso21/ring-of-fire/iPhone/lightweight/3/out
+error  = /mnt/scratch/icaruso21/ring-of-fire/iPhone/lightweight/3/err
+log    = /mnt/scratch/icaruso21/ring-of-fire/iPhone/lightweight/3/log
 queue
 
 ## Job properties
-output = /mnt/scratch/icaruso21/ring-of-fire/iPhoneXT/lightweight/4/out
-error  = /mnt/scratch/icaruso21/ring-of-fire/iPhoneXT/lightweight/4/err
-log    = /mnt/scratch/icaruso21/ring-of-fire/iPhoneXT/lightweight/4/log
+output = /mnt/scratch/icaruso21/ring-of-fire/iPhone/lightweight/4/out
+error  = /mnt/scratch/icaruso21/ring-of-fire/iPhone/lightweight/4/err
+log    = /mnt/scratch/icaruso21/ring-of-fire/iPhone/lightweight/4/log
 queue

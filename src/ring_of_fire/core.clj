@@ -159,7 +159,10 @@
   "Returns a vector of vectors filled with opposite values of actual fire grid"
   [fire-name edge-case-vector]
   (let [percent-error (get {1 0.85, 2 0.90, 3 0.95, 4 1.0} (reduce + edge-case-vector))]
-   (vec (map #(if (< (rand) percent-error) (if (= 1 %) 0 1)  %) ((keyword (name fire-name)) final-scar-grid-master-flattened)))))
+    (vec (map #(if (< (rand) percent-error)
+                 (if (= 1 %) 0 1)
+                 %)
+              ((keyword (name fire-name)) final-scar-grid-master-flattened)))))
 #_(construct-opposite-grid "m1" [1 1 1 1])
 
 
@@ -565,30 +568,30 @@
       ;; FOR TOURNAMENT
       :total-error (reduce + errors))))
 #_(fire-error-function test-argmap ["m1"] sample-program)
-#_(def sample-program {:plushy '(ISI)})
-#_(def test-argmap {:instructions            fire-instructions
-                    :error-function          fire-error-function
-                    :max-generations         1000
-                    :population-size         5
-                    :max-initial-plushy-size 20
-                    :step-limit              100
-                    :parent-selection        :tournament
-                    :tournament-size         3
-                    :time-step               500
-                    :fire-selection          1})
-
-;-------------------------
-; RUNNER
-
+;#_(def sample-program {:plushy '(ISI)})
+;#_(def test-argmap {:instructions            fire-instructions
+;                    :error-function          fire-error-function
+;                    :max-generations         1000
+;                    :population-size         5
+;                    :max-initial-plushy-size 20
+;                    :step-limit              100
+;                    :parent-selection        :tournament
+;                    :tournament-size         3
+;                    :time-step               500
+;                    :fire-selection          1})
+;
+;;-------------------------
+;; RUNNER
+;
 #_(propel-gp {:instructions            fire-instructions
               :error-function          fire-error-function
               :max-generations         1000
               :population-size         300
               :max-initial-plushy-size 60
               :step-limit              100
-              :parent-selection        :lexicase
+              :parent-selection        :tournament
               :tournament-size         3
-              :time-step               3
+              :time-step               2
               :fire-selection          1})
 
 ;-------------------------
@@ -620,10 +623,10 @@
     (propel-gp (update-in (merge {:instructions            fire-instructions
                                   :error-function          fire-error-function
                                   :max-generations         5000
-                                  :population-size         10
-                                  :max-initial-plushy-size 40
+                                  :population-size         300
+                                  :max-initial-plushy-size 60
                                   :parent-selection        :lexicase
-                                  :tournament-size         5
+                                  :tournament-size         8
                                   :fire-selection          2
                                   :time-step               3
                                   :step-limit              100}
