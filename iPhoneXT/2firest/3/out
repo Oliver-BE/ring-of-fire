@@ -639,3 +639,713 @@ Total number of cells: 17860
 Best percent error: 0.35442328
 Fires evaluated:  (g2 k1)
 
+-------------------------------------------------------
+               Report for Generation 64
+-------------------------------------------------------
+Best plushy: (true integer_% integer_% close integer_= integer_= integer_= FWI exec_dup ISI exec_dup :split close close BUI BUI 2 BUI close close BUI)
+Best program: (true integer_% integer_% integer_= integer_= integer_= FWI exec_dup (ISI exec_dup (:split)) BUI BUI 2 BUI BUI)
+Best total error: 6330
+Total number of cells: 17860
+Best percent error: 0.35442328
+Fires evaluated:  (g2 k1)
+
+-------------------------------------------------------
+               Report for Generation 65
+-------------------------------------------------------
+Best plushy: (boolean_and integer_% true close close integer_% integer_= FWI close integer_= BUI close close close close close BUI close BUI)
+Best program: (boolean_and integer_% true integer_% integer_= FWI integer_= BUI BUI BUI)
+Best total error: 3270
+Total number of cells: 12284
+Best percent error: 0.26619995
+Fires evaluated:  (k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 66
+-------------------------------------------------------
+Best plushy: (boolean_and close true integer_% close integer_% integer_= close close integer_= BUI FWI close close close BUI BUI close slope BUI)
+Best program: (boolean_and true integer_% integer_% integer_= integer_= BUI FWI BUI BUI slope BUI)
+Best total error: 4071
+Total number of cells: 11452
+Best percent error: 0.35548377
+Fires evaluated:  (k1 m1)
+
+-------------------------------------------------------
+               Report for Generation 67
+-------------------------------------------------------
+Best plushy: (boolean_and close true true close integer_= FWI close integer_= integer_= FWI ISI close close close close exec_if BUI BUI BUI close close BUI)
+Best program: (boolean_and true true integer_= FWI integer_= integer_= FWI ISI exec_if (BUI BUI BUI) () BUI)
+Best total error: 5354
+Total number of cells: 13396
+Best percent error: 0.39967155
+Fires evaluated:  (k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 68
+-------------------------------------------------------
+Best plushy: (boolean_and close true TB integer_% close integer_% integer_= FWI close integer_= BUI close close close BUI close slope BUI)
+Best program: (boolean_and true TB integer_% integer_% integer_= FWI integer_= BUI BUI slope BUI)
+Best total error: 4868
+Total number of cells: 12720
+Best percent error: 0.3827044
+Fires evaluated:  (r1 k1)
+
+-------------------------------------------------------
+               Report for Generation 69
+-------------------------------------------------------
+Best plushy: (boolean_and integer_% true close close integer_% integer_= close integer_= integer_= BUI close close close close close BUI BUI BUI)
+Best program: (boolean_and integer_% true integer_% integer_= integer_= integer_= BUI BUI BUI BUI)
+Best total error: 4224
+Total number of cells: 15528
+Best percent error: 0.27202472
+Fires evaluated:  (k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 70
+-------------------------------------------------------
+Best plushy: (boolean_and integer_% true TB close close integer_% close integer_= integer_= BUI close close close close close BUI BUI BUI)
+Best program: (boolean_and integer_% true TB integer_% integer_= integer_= BUI BUI BUI BUI)
+Best total error: 4246
+Total number of cells: 16748
+Best percent error: 0.2535228
+Fires evaluated:  (g2 k2)
+
+-------------------------------------------------------
+               Report for Generation 71
+-------------------------------------------------------
+Best plushy: (boolean_and true integer_% close close true integer_= FWI integer_= FWI close close close BUI BUI BUI)
+Best program: (boolean_and true integer_% true integer_= FWI integer_= FWI BUI BUI BUI)
+Best total error: 5354
+Total number of cells: 13396
+Best percent error: 0.39967155
+Fires evaluated:  (m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 72
+-------------------------------------------------------
+Best plushy: (boolean_and close true true close integer_= integer_= boolean_or FWI integer_* integer_= integer_= BUI close FWI close close close boolean_or 0 close close NBD BUI)
+Best program: (boolean_and true true integer_= integer_= boolean_or FWI integer_* integer_= integer_= BUI FWI boolean_or 0 NBD BUI)
+Best total error: 5354
+Total number of cells: 13396
+Best percent error: 0.39967155
+Fires evaluated:  (k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 73
+-------------------------------------------------------
+Best plushy: (boolean_and close exec_if true close integer_= integer_= FWI integer_= integer_= BUI FWI close close boolean_or close close NBD BUI close)
+Best program: (boolean_and exec_if (true) (integer_= integer_= FWI integer_= integer_= BUI FWI) boolean_or NBD BUI)
+Best total error: 5376
+Total number of cells: 14616
+Best percent error: 0.3678161
+Fires evaluated:  (m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 74
+-------------------------------------------------------
+Best plushy: (boolean_and close exec_if true integer_= integer_= FWI integer_= integer_= BUI FWI close boolean_or close NBD BUI close)
+Best program: (boolean_and exec_if (true integer_= integer_= FWI integer_= integer_= BUI FWI) (boolean_or) NBD BUI)
+Best total error: 5354
+Total number of cells: 13396
+Best percent error: 0.39967155
+Fires evaluated:  (k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 75
+-------------------------------------------------------
+Best plushy: (boolean_and close true true close integer_= close integer_% NBD FWI BUI BUI close close FWI close NT BUI BUI BUI integer_=)
+Best program: (boolean_and true true integer_= integer_% NBD FWI BUI BUI FWI NT BUI BUI BUI integer_=)
+Best total error: 4890
+Total number of cells: 13940
+Best percent error: 0.3507891
+Fires evaluated:  (g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 76
+-------------------------------------------------------
+Best plushy: (boolean_and close true true close integer_= close integer_% FWI BUI close close close BUI BUI BUI integer_=)
+Best program: (boolean_and true true integer_= integer_% FWI BUI BUI BUI BUI integer_=)
+Best total error: 3270
+Total number of cells: 12284
+Best percent error: 0.26619995
+Fires evaluated:  (m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 77
+-------------------------------------------------------
+Best plushy: (boolean_and close exec_if true close integer_= close integer_% integer_= integer_= close FWI FWI close close BUI close integer_= close)
+Best program: (boolean_and exec_if (true) (integer_=) integer_% integer_= integer_= FWI FWI BUI integer_=)
+Best total error: 4224
+Total number of cells: 15528
+Best percent error: 0.27202472
+Fires evaluated:  (k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 78
+-------------------------------------------------------
+Best plushy: (boolean_and close true true integer_= close integer_% FWI BUI close NT FWI close BUI BUI integer_=)
+Best program: (boolean_and true true integer_= integer_% FWI BUI NT FWI BUI BUI integer_=)
+Best total error: 4868
+Total number of cells: 12720
+Best percent error: 0.3827044
+Fires evaluated:  (k1 r1)
+
+-------------------------------------------------------
+               Report for Generation 79
+-------------------------------------------------------
+Best plushy: (exec_if close close true true integer_= close integer_= integer_% BUI close NT close integer_= BUI BUI integer_= BUI close)
+Best program: (exec_if () () true true integer_= integer_= integer_% BUI NT integer_= BUI BUI integer_= BUI)
+Best total error: 4093
+Total number of cells: 12672
+Best percent error: 0.32299557
+Fires evaluated:  (g2 m1)
+
+-------------------------------------------------------
+               Report for Generation 80
+-------------------------------------------------------
+Best plushy: (boolean_and close true true close integer_= close integer_% FWI BUI close FWI FWI close close BUI BUI integer_=)
+Best program: (boolean_and true true integer_= integer_% FWI BUI FWI FWI BUI BUI integer_=)
+Best total error: 4890
+Total number of cells: 13940
+Best percent error: 0.3507891
+Fires evaluated:  (r1 g2)
+
+-------------------------------------------------------
+               Report for Generation 81
+-------------------------------------------------------
+Best plushy: (exec_if close true true true integer_= integer_= integer_% integer_% integer_= BUI close FWI integer_- FWI BUI BUI integer_= BUI integer_=)
+Best program: (exec_if () (true true true integer_= integer_= integer_% integer_% integer_= BUI) FWI integer_- FWI BUI BUI integer_= BUI integer_=)
+Best total error: 4093
+Total number of cells: 12672
+Best percent error: 0.32299557
+Fires evaluated:  (m1 g2)
+
+-------------------------------------------------------
+               Report for Generation 82
+-------------------------------------------------------
+Best plushy: (boolean_and close true true integer_= close integer_% close BUI close FWI close BUI FWI BUI BUI)
+Best program: (boolean_and true true integer_= integer_% BUI FWI BUI FWI BUI BUI)
+Best total error: 2631
+Total number of cells: 7532
+Best percent error: 0.34930962
+Fires evaluated:  (m1 r1)
+
+-------------------------------------------------------
+               Report for Generation 83
+-------------------------------------------------------
+Best plushy: (exec_if close true true close integer_= BUI close BUI BUI integer_= NT close close)
+Best program: (exec_if () (true true) integer_= BUI BUI BUI integer_= NT)
+Best total error: 5354
+Total number of cells: 13396
+Best percent error: 0.39967155
+Fires evaluated:  (m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 84
+-------------------------------------------------------
+Best plushy: (boolean_and true true true close close integer_% integer_% BUI close close close FWI BUI BUI BUI BUI NBD integer_*)
+Best program: (boolean_and true true true integer_% integer_% BUI FWI BUI BUI BUI BUI NBD integer_*)
+Best total error: 5354
+Total number of cells: 13396
+Best percent error: 0.39967155
+Fires evaluated:  (m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 85
+-------------------------------------------------------
+Best plushy: (boolean_and true true true close integer_% integer_% BUI close close close BUI BUI BUI BUI NBD integer_*)
+Best program: (boolean_and true true true integer_% integer_% BUI BUI BUI BUI BUI NBD integer_*)
+Best total error: 4093
+Total number of cells: 12672
+Best percent error: 0.32299557
+Fires evaluated:  (g2 m1)
+
+-------------------------------------------------------
+               Report for Generation 86
+-------------------------------------------------------
+Best plushy: (boolean_and true true close close integer_= integer_% integer_% close close close FWI close BUI BUI BUI NBD integer_*)
+Best program: (boolean_and true true integer_= integer_% integer_% FWI BUI BUI BUI NBD integer_*)
+Best total error: 3914
+Total number of cells: 9476
+Best percent error: 0.41304347
+Fires evaluated:  (m2 r1)
+
+-------------------------------------------------------
+               Report for Generation 87
+-------------------------------------------------------
+Best plushy: (boolean_and true true true integer_= close integer_% integer_% close close FWI FWI FWI BUI BUI BUI NBD integer_*)
+Best program: (boolean_and true true true integer_= integer_% integer_% FWI FWI FWI BUI BUI BUI NBD integer_*)
+Best total error: 2631
+Total number of cells: 7532
+Best percent error: 0.34930962
+Fires evaluated:  (r1 m1)
+
+-------------------------------------------------------
+               Report for Generation 88
+-------------------------------------------------------
+Best plushy: (WS true close true integer_= integer_= integer_% integer_% integer_% BUI FWI FWI FWI FWI BUI BUI NBD integer_*)
+Best program: (WS true true integer_= integer_= integer_% integer_% integer_% BUI FWI FWI FWI FWI BUI BUI NBD integer_*)
+Best total error: 3117
+Total number of cells: 8208
+Best percent error: 0.37975147
+Fires evaluated:  (m2 m1)
+
+-------------------------------------------------------
+               Report for Generation 89
+-------------------------------------------------------
+Best plushy: (WS close true true integer_= close integer_% integer_% BUI close FWI close FWI BUI BUI BUI NBD integer_* integer_+)
+Best program: (WS true true integer_= integer_% integer_% BUI FWI FWI BUI BUI BUI NBD integer_* integer_+)
+Best total error: 4224
+Total number of cells: 15528
+Best percent error: 0.27202472
+Fires evaluated:  (k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 90
+-------------------------------------------------------
+Best plushy: (WS close true true integer_= BUI integer_% integer_% BUI close FWI close FWI BUI BUI BUI integer_* integer_* integer_+)
+Best program: (WS true true integer_= BUI integer_% integer_% BUI FWI FWI BUI BUI BUI integer_* integer_* integer_+)
+Best total error: 4890
+Total number of cells: 13940
+Best percent error: 0.3507891
+Fires evaluated:  (r1 g2)
+
+-------------------------------------------------------
+               Report for Generation 91
+-------------------------------------------------------
+Best plushy: (WS true true true true close integer_% integer_% close close close FWI FWI BUI BUI NBD integer_* integer_*)
+Best program: (WS true true true true integer_% integer_% FWI FWI BUI BUI NBD integer_* integer_*)
+Best total error: 3117
+Total number of cells: 8208
+Best percent error: 0.37975147
+Fires evaluated:  (m2 m1)
+
+-------------------------------------------------------
+               Report for Generation 92
+-------------------------------------------------------
+Best plushy: (WS WS true true true integer_= integer_= integer_% integer_% integer_% close FWI close FWI BUI NBD integer_+)
+Best program: (WS WS true true true integer_= integer_= integer_% integer_% integer_% FWI FWI BUI NBD integer_+)
+Best total error: 4093
+Total number of cells: 12672
+Best percent error: 0.32299557
+Fires evaluated:  (g2 m1)
+
+-------------------------------------------------------
+               Report for Generation 93
+-------------------------------------------------------
+Best plushy: (true true true true integer_= close integer_% integer_% close close FWI FWI FWI FWI BUI NBD integer_*)
+Best program: (true true true true integer_= integer_% integer_% FWI FWI FWI FWI BUI NBD integer_*)
+Best total error: 6330
+Total number of cells: 17860
+Best percent error: 0.35442328
+Fires evaluated:  (g2 k1)
+
+-------------------------------------------------------
+               Report for Generation 94
+-------------------------------------------------------
+Best plushy: (true true true true integer_= close integer_% integer_% close close FWI FWI FWI BUI BUI NBD BUI)
+Best program: (true true true true integer_= integer_% integer_% FWI FWI FWI BUI BUI NBD BUI)
+Best total error: 2784
+Total number of cells: 11608
+Best percent error: 0.23983459
+Fires evaluated:  (r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 95
+-------------------------------------------------------
+Best plushy: (true close true true close close integer_= integer_% close close close FWI BUI BUI BUI BUI BUI BUI)
+Best program: (true true true integer_= integer_% FWI BUI BUI BUI BUI BUI BUI)
+Best total error: 3914
+Total number of cells: 9476
+Best percent error: 0.41304347
+Fires evaluated:  (r1 m2)
+
+-------------------------------------------------------
+               Report for Generation 96
+-------------------------------------------------------
+Best plushy: (WS close true true close close integer_% integer_% close close close FWI BUI BUI BUI BUI BUI BUI BUI)
+Best program: (WS true true integer_% integer_% FWI BUI BUI BUI BUI BUI BUI BUI)
+Best total error: 4868
+Total number of cells: 12720
+Best percent error: 0.3827044
+Fires evaluated:  (r1 k1)
+
+-------------------------------------------------------
+               Report for Generation 97
+-------------------------------------------------------
+Best plushy: (boolean_and close true true TB integer_% close integer_% integer_% BUI close FWI FWI FWI BUI FWI true BUI BUI BUI integer_* integer_+)
+Best program: (boolean_and true true TB integer_% integer_% integer_% BUI FWI FWI FWI BUI FWI true BUI BUI BUI integer_* integer_+)
+Best total error: 5376
+Total number of cells: 14616
+Best percent error: 0.3678161
+Fires evaluated:  (m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 98
+-------------------------------------------------------
+Best plushy: (boolean_and close true true close integer_= integer_= integer_- BUI close FWI FWI BUI NBD BUI BUI BUI BUI integer_+ integer_* integer_+)
+Best program: (boolean_and true true integer_= integer_= integer_- BUI FWI FWI BUI NBD BUI BUI BUI BUI integer_+ integer_* integer_+)
+Best total error: 4071
+Total number of cells: 11452
+Best percent error: 0.35548377
+Fires evaluated:  (m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 99
+-------------------------------------------------------
+Best plushy: (boolean_and close true true integer_= integer_= integer_= integer_% close close close close close NBD BUI BUI BUI BUI integer_+ integer_+)
+Best program: (boolean_and true true integer_= integer_= integer_= integer_% NBD BUI BUI BUI BUI integer_+ integer_+)
+Best total error: 6330
+Total number of cells: 17860
+Best percent error: 0.35442328
+Fires evaluated:  (k1 g2)
+
+-------------------------------------------------------
+               Report for Generation 100
+-------------------------------------------------------
+Best plushy: (boolean_and close true true integer_= integer_% integer_= integer_% BUI close FWI FWI BUI true BUI BUI)
+Best program: (boolean_and true true integer_= integer_% integer_= integer_% BUI FWI FWI BUI true BUI BUI)
+Best total error: 3914
+Total number of cells: 9476
+Best percent error: 0.41304347
+Fires evaluated:  (m2 r1)
+
+-------------------------------------------------------
+               Report for Generation 101
+-------------------------------------------------------
+Best plushy: (boolean_and close close true integer_= true integer_= integer_% integer_% integer_= integer_% exec_dup integer_% slope close FWI FWI FWI BUI FWI BUI integer_+ integer_+)
+Best program: (boolean_and true integer_= true integer_= integer_% integer_% integer_= integer_% exec_dup (integer_% slope) FWI FWI FWI BUI FWI BUI integer_+ integer_+)
+Best total error: 6330
+Total number of cells: 17860
+Best percent error: 0.35442328
+Fires evaluated:  (k1 g2)
+
+-------------------------------------------------------
+               Report for Generation 102
+-------------------------------------------------------
+Best plushy: (boolean_and close true integer_= true integer_= integer_% integer_= integer_% exec_dup integer_% slope close FWI FWI FWI BUI FWI BUI integer_+ integer_+)
+Best program: (boolean_and true integer_= true integer_= integer_% integer_= integer_% exec_dup (integer_% slope) FWI FWI FWI BUI FWI BUI integer_+ integer_+)
+Best total error: 4868
+Total number of cells: 12720
+Best percent error: 0.3827044
+Fires evaluated:  (r1 k1)
+
+-------------------------------------------------------
+               Report for Generation 103
+-------------------------------------------------------
+Best plushy: (boolean_and close true true close close boolean_or close close close FWI FWI BUI BUI)
+Best program: (boolean_and true true boolean_or FWI FWI BUI BUI)
+Best total error: 5354
+Total number of cells: 13396
+Best percent error: 0.39967155
+Fires evaluated:  (m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 104
+-------------------------------------------------------
+Best plushy: (boolean_and close true integer_= true integer_= integer_% integer_% integer_% integer_% integer_% slope FWI FWI FWI FWI FWI BUI integer_+ integer_+)
+Best program: (boolean_and true integer_= true integer_= integer_% integer_% integer_% integer_% integer_% slope FWI FWI FWI FWI FWI BUI integer_+ integer_+)
+Best total error: 3270
+Total number of cells: 12284
+Best percent error: 0.26619995
+Fires evaluated:  (m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 105
+-------------------------------------------------------
+Best plushy: (boolean_and close close true integer_= true integer_= integer_= integer_= exec_dup integer_% slope close FWI FWI FWI BUI FWI BUI integer_+ integer_+)
+Best program: (boolean_and true integer_= true integer_= integer_= integer_= exec_dup (integer_% slope) FWI FWI FWI BUI FWI BUI integer_+ integer_+)
+Best total error: 4868
+Total number of cells: 12720
+Best percent error: 0.3827044
+Fires evaluated:  (r1 k1)
+
+-------------------------------------------------------
+               Report for Generation 106
+-------------------------------------------------------
+Best plushy: (boolean_and close true integer_= true integer_= integer_= integer_% exec_dup integer_% integer_% close FWI FWI FWI integer_+ FWI BUI integer_+ integer_+ integer_+)
+Best program: (boolean_and true integer_= true integer_= integer_= integer_% exec_dup (integer_% integer_%) FWI FWI FWI integer_+ FWI BUI integer_+ integer_+ integer_+)
+Best total error: 6330
+Total number of cells: 17860
+Best percent error: 0.35442328
+Fires evaluated:  (k1 g2)
+
+-------------------------------------------------------
+               Report for Generation 107
+-------------------------------------------------------
+Best plushy: (boolean_and close close integer_= true exec_if true integer_= integer_% integer_% integer_= slope integer_% FWI close FWI FWI FWI integer_= integer_= integer_+ FWI BUI integer_+)
+Best program: (boolean_and integer_= true exec_if (true integer_= integer_% integer_% integer_= slope integer_% FWI) (FWI FWI FWI integer_= integer_= integer_+ FWI BUI integer_+))
+Best total error: 4246
+Total number of cells: 16748
+Best percent error: 0.2535228
+Fires evaluated:  (g2 k2)
+
+-------------------------------------------------------
+               Report for Generation 108
+-------------------------------------------------------
+Best plushy: (boolean_and integer_= true true integer_= integer_% integer_% integer_% FWI FWI FWI FWI FWI FWI integer_+ integer_= FWI integer_+ integer_%)
+Best program: (boolean_and integer_= true true integer_= integer_% integer_% integer_% FWI FWI FWI FWI FWI FWI integer_+ integer_= FWI integer_+ integer_%)
+Best total error: 4224
+Total number of cells: 15528
+Best percent error: 0.27202472
+Fires evaluated:  (k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 109
+-------------------------------------------------------
+Best plushy: (boolean_and close true integer_= true exec_if true integer_% exec_dup slope integer_% FWI FWI FWI integer_+ FWI integer_+ integer_+ exec_dup)
+Best program: (boolean_and true integer_= true exec_if (true integer_% exec_dup (slope integer_% FWI FWI FWI integer_+ FWI integer_+ integer_+ exec_dup ())) ())
+Best total error: 4224
+Total number of cells: 15528
+Best percent error: 0.27202472
+Fires evaluated:  (k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 110
+-------------------------------------------------------
+Best plushy: (boolean_and close true true true integer_= integer_= integer_% exec_dup integer_% FWI close FWI FWI FWI integer_= integer_+ integer_+ integer_+ integer_+ integer_+)
+Best program: (boolean_and true true true integer_= integer_= integer_% exec_dup (integer_% FWI) FWI FWI FWI integer_= integer_+ integer_+ integer_+ integer_+ integer_+)
+Best total error: 4246
+Total number of cells: 16748
+Best percent error: 0.2535228
+Fires evaluated:  (g2 k2)
+
+-------------------------------------------------------
+               Report for Generation 111
+-------------------------------------------------------
+Best plushy: (boolean_and close close true exec_if true integer_% integer_= integer_% integer_% slope FWI FWI FWI FWI FWI FWI integer_+ FWI integer_+ integer_% integer_- integer_+)
+Best program: (boolean_and true exec_if (true integer_% integer_= integer_% integer_% slope FWI FWI FWI FWI FWI FWI integer_+ FWI integer_+ integer_% integer_- integer_+) ())
+Best total error: 4224
+Total number of cells: 15528
+Best percent error: 0.27202472
+Fires evaluated:  (k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 112
+-------------------------------------------------------
+Best plushy: (boolean_and close true integer_= true integer_= integer_= integer_% exec_dup integer_% slope FWI FWI 2 FWI integer_+ FWI BUI integer_+ integer_+ integer_+)
+Best program: (boolean_and true integer_= true integer_= integer_= integer_% exec_dup (integer_% slope FWI FWI 2 FWI integer_+ FWI BUI integer_+ integer_+ integer_+))
+Best total error: 4246
+Total number of cells: 16748
+Best percent error: 0.2535228
+Fires evaluated:  (k2 g2)
+
+-------------------------------------------------------
+               Report for Generation 113
+-------------------------------------------------------
+Best plushy: (boolean_and close close integer_= true integer_= integer_% integer_= integer_% exec_dup true integer_% integer_+ slope FWI FWI integer_+ integer_+ integer_+ 0)
+Best program: (boolean_and integer_= true integer_= integer_% integer_= integer_% exec_dup (true integer_% integer_+ slope FWI FWI integer_+ integer_+ integer_+ 0))
+Best total error: 4890
+Total number of cells: 13940
+Best percent error: 0.3507891
+Fires evaluated:  (g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 114
+-------------------------------------------------------
+Best plushy: (boolean_and close close integer_= true integer_= integer_% integer_= integer_% exec_dup slope integer_% integer_+ slope FWI FWI integer_+ integer_+ integer_+ integer_+ integer_+)
+Best program: (boolean_and integer_= true integer_= integer_% integer_= integer_% exec_dup (slope integer_% integer_+ slope FWI FWI integer_+ integer_+ integer_+ integer_+ integer_+))
+Best total error: 4093
+Total number of cells: 12672
+Best percent error: 0.32299557
+Fires evaluated:  (m1 g2)
+
+-------------------------------------------------------
+               Report for Generation 115
+-------------------------------------------------------
+Best plushy: (boolean_and close true true boolean_= integer_= integer_= exec_dup integer_% true integer_+ 2 BUI 0 BUI BUI integer_+ 0 integer_+)
+Best program: (boolean_and true true boolean_= integer_= integer_= exec_dup (integer_% true integer_+ 2 BUI 0 BUI BUI integer_+ 0 integer_+))
+Best total error: 5376
+Total number of cells: 14616
+Best percent error: 0.3678161
+Fires evaluated:  (m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 116
+-------------------------------------------------------
+Best plushy: (boolean_and close true integer_= true integer_= boolean_= exec_dup integer_% slope true integer_% slope 0 FWI integer_+ FWI BUI integer_+)
+Best program: (boolean_and true integer_= true integer_= boolean_= exec_dup (integer_% slope true integer_% slope 0 FWI integer_+ FWI BUI integer_+))
+Best total error: 3270
+Total number of cells: 12284
+Best percent error: 0.26619995
+Fires evaluated:  (k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 117
+-------------------------------------------------------
+Best plushy: (boolean_and close close integer_= true true boolean_= integer_= integer_% integer_% slope FWI slope FWI FWI FWI integer_+ integer_+ integer_+)
+Best program: (boolean_and integer_= true true boolean_= integer_= integer_% integer_% slope FWI slope FWI FWI FWI integer_+ integer_+ integer_+)
+Best total error: 4071
+Total number of cells: 11452
+Best percent error: 0.35548377
+Fires evaluated:  (m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 118
+-------------------------------------------------------
+Best plushy: (boolean_and close true integer_= true integer_= integer_= integer_= integer_% exec_dup boolean_= FWI integer_% 2 FWI FWI FWI BUI integer_+)
+Best program: (boolean_and true integer_= true integer_= integer_= integer_= integer_% exec_dup (boolean_= FWI integer_% 2 FWI FWI FWI BUI integer_+))
+Best total error: 3117
+Total number of cells: 8208
+Best percent error: 0.37975147
+Fires evaluated:  (m1 m2)
+
+-------------------------------------------------------
+               Report for Generation 119
+-------------------------------------------------------
+Best plushy: (boolean_and close true integer_= true integer_= integer_= integer_= integer_% integer_% FWI FWI FWI 2 FWI FWI BUI integer_+)
+Best program: (boolean_and true integer_= true integer_= integer_= integer_= integer_% integer_% FWI FWI FWI 2 FWI FWI BUI integer_+)
+Best total error: 2784
+Total number of cells: 11608
+Best percent error: 0.23983459
+Fires evaluated:  (r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 120
+-------------------------------------------------------
+Best plushy: (boolean_or boolean_and close close true WD integer_= integer_= integer_= integer_% exec_dup exec_dup 2 integer_+ FWI FWI FWI FWI)
+Best program: (boolean_or boolean_and true WD integer_= integer_= integer_= integer_% exec_dup (exec_dup (2 integer_+ FWI FWI FWI FWI)))
+Best total error: 4246
+Total number of cells: 16748
+Best percent error: 0.2535228
+Fires evaluated:  (k2 g2)
+
+-------------------------------------------------------
+               Report for Generation 121
+-------------------------------------------------------
+Best plushy: (boolean_and close close close true integer_= integer_= integer_= integer_% slope exec_dup true 2 0 FWI FWI FWI integer_+)
+Best program: (boolean_and true integer_= integer_= integer_= integer_% slope exec_dup (true 2 0 FWI FWI FWI integer_+))
+Best total error: 6330
+Total number of cells: 17860
+Best percent error: 0.35442328
+Fires evaluated:  (k1 g2)
+
+-------------------------------------------------------
+               Report for Generation 122
+-------------------------------------------------------
+Best plushy: (boolean_and boolean_and close integer_= true integer_= integer_= integer_= integer_= exec_dup FWI integer_% FWI integer_+ FWI FWI FWI)
+Best program: (boolean_and boolean_and integer_= true integer_= integer_= integer_= integer_= exec_dup (FWI integer_% FWI integer_+ FWI FWI FWI))
+Best total error: 4890
+Total number of cells: 13940
+Best percent error: 0.3507891
+Fires evaluated:  (r1 g2)
+
+-------------------------------------------------------
+               Report for Generation 123
+-------------------------------------------------------
+Best plushy: (boolean_and close close true integer_= integer_= integer_= integer_% slope exec_dup exec_dup true integer_% 2 FWI FWI integer_+)
+Best program: (boolean_and true integer_= integer_= integer_= integer_% slope exec_dup (exec_dup (true integer_% 2 FWI FWI integer_+)))
+Best total error: 4246
+Total number of cells: 16748
+Best percent error: 0.2535228
+Fires evaluated:  (k2 g2)
+
+-------------------------------------------------------
+               Report for Generation 124
+-------------------------------------------------------
+Best plushy: (boolean_and close close integer_= true integer_= integer_= integer_= exec_dup exec_dup exec_dup true FWI 2 integer_+ FWI FWI)
+Best program: (boolean_and integer_= true integer_= integer_= integer_= exec_dup (exec_dup (exec_dup (true FWI 2 integer_+ FWI FWI))))
+Best total error: 2784
+Total number of cells: 11608
+Best percent error: 0.23983459
+Fires evaluated:  (k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 125
+-------------------------------------------------------
+Best plushy: (boolean_and close close close true integer_= integer_= FWI exec_dup integer_% exec_dup integer_% FWI FWI slope 0 integer_+ integer_+ integer_+ FWI)
+Best program: (boolean_and true integer_= integer_= FWI exec_dup (integer_% exec_dup (integer_% FWI FWI slope 0 integer_+ integer_+ integer_+ FWI)))
+Best total error: 3914
+Total number of cells: 9476
+Best percent error: 0.41304347
+Fires evaluated:  (r1 m2)
+
+-------------------------------------------------------
+               Report for Generation 126
+-------------------------------------------------------
+Best plushy: (boolean_and close close integer_= true integer_= integer_= integer_= integer_= exec_if exec_dup FWI FWI 2 integer_+ FWI integer_+)
+Best program: (boolean_and integer_= true integer_= integer_= integer_= integer_= exec_if (exec_dup (FWI FWI 2 integer_+ FWI integer_+)) ())
+Best total error: 1987
+Total number of cells: 10340
+Best percent error: 0.19216634
+Fires evaluated:  (k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 127
+-------------------------------------------------------
+Best plushy: (boolean_and close close integer_= true integer_= integer_= integer_= integer_= exec_if exec_dup FWI 2 integer_+ integer_+ integer_+ integer_+)
+Best program: (boolean_and integer_= true integer_= integer_= integer_= integer_= exec_if (exec_dup (FWI 2 integer_+ integer_+ integer_+ integer_+)) ())
+Best total error: 4890
+Total number of cells: 13940
+Best percent error: 0.3507891
+Fires evaluated:  (g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 128
+-------------------------------------------------------
+Best plushy: (boolean_and close close close true integer_= integer_= FWI integer_= exec_if exec_dup integer_% integer_% 2 integer_+ slope 0 integer_+ FWI)
+Best program: (boolean_and true integer_= integer_= FWI integer_= exec_if (exec_dup (integer_% integer_% 2 integer_+ slope 0 integer_+ FWI)) ())
+Best total error: 3117
+Total number of cells: 8208
+Best percent error: 0.37975147
+Fires evaluated:  (m2 m1)
+
+-------------------------------------------------------
+               Report for Generation 129
+-------------------------------------------------------
+Best plushy: (boolean_and close close integer_= true integer_= integer_= integer_= exec_dup integer_% exec_dup FWI FWI FWI integer_+ FWI integer_+ integer_+ integer_+ FWI)
+Best program: (boolean_and integer_= true integer_= integer_= integer_= exec_dup (integer_% exec_dup (FWI FWI FWI integer_+ FWI integer_+ integer_+ integer_+ FWI)))
+Best total error: 3117
+Total number of cells: 8208
+Best percent error: 0.37975147
+Fires evaluated:  (m2 m1)
+
+-------------------------------------------------------
+               Report for Generation 130
+-------------------------------------------------------
+Best plushy: (boolean_and close close integer_= true integer_= integer_= FWI exec_dup integer_% NT FWI FWI FWI FWI 2 integer_+ FWI integer_+ FWI integer_+)
+Best program: (boolean_and integer_= true integer_= integer_= FWI exec_dup (integer_% NT FWI FWI FWI FWI 2 integer_+ FWI integer_+ FWI integer_+))
+Best total error: 4868
+Total number of cells: 12720
+Best percent error: 0.3827044
+Fires evaluated:  (r1 k1)
+
+-------------------------------------------------------
+               Report for Generation 131
+-------------------------------------------------------
+Best plushy: (boolean_and close close integer_= true integer_= integer_= integer_= exec_dup integer_% exec_dup FWI FWI FWI integer_+ FWI integer_+ integer_+ integer_+ FWI)
+Best program: (boolean_and integer_= true integer_= integer_= integer_= exec_dup (integer_% exec_dup (FWI FWI FWI integer_+ FWI integer_+ integer_+ integer_+ FWI)))
+Best total error: 5354
+Total number of cells: 13396
+Best percent error: 0.39967155
+Fires evaluated:  (m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 132
+-------------------------------------------------------
+Best plushy: (boolean_and close close integer_= true integer_= boolean_or integer_= exec_dup integer_% exec_dup FWI FWI FWI integer_+ FWI integer_+ integer_+ integer_+ FWI)
+Best program: (boolean_and integer_= true integer_= boolean_or integer_= exec_dup (integer_% exec_dup (FWI FWI FWI integer_+ FWI integer_+ integer_+ integer_+ FWI)))
+Best total error: 3270
+Total number of cells: 12284
+Best percent error: 0.26619995
+Fires evaluated:  (m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 133
+-------------------------------------------------------
+Best plushy: (boolean_and close close integer_= true boolean_or integer_= integer_= exec_dup integer_% exec_dup FWI FWI FWI 2 FWI integer_+ ISI integer_+ FWI)
+Best program: (boolean_and integer_= true boolean_or integer_= integer_= exec_dup (integer_% exec_dup (FWI FWI FWI 2 FWI integer_+ ISI integer_+ FWI)))
+Best total error: 4890
+Total number of cells: 13940
+Best percent error: 0.3507891
+Fires evaluated:  (g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 134
+-------------------------------------------------------
+Best plushy: (boolean_and close integer_+ integer_= true integer_= boolean_or integer_= exec_dup integer_% exec_dup FWI FWI FWI FWI integer_+ FWI integer_+ integer_+ integer_+ FWI)
+Best program: (boolean_and integer_+ integer_= true integer_= boolean_or integer_= exec_dup (integer_% exec_dup (FWI FWI FWI FWI integer_+ FWI integer_+ integer_+ integer_+ FWI)))
+Best total error: 3914
+Total number of cells: 9476
+Best percent error: 0.41304347
+Fires evaluated:  (r1 m2)
+

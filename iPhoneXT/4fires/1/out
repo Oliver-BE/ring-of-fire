@@ -709,3 +709,233 @@ Total number of cells: 28200
 Best percent error: 0.2949291
 Fires evaluated:  (m1 k1 k2 g2)
 
+-------------------------------------------------------
+               Report for Generation 71
+-------------------------------------------------------
+Best plushy: (FWI integer_* NT NT 0 0 integer_= integer_= integer_= boolean_not NT integer_* integer_* NBD 2 exec_dup 2 exec_dup exec_if exec_dup exec_if exec_dup exec_dup boolean_or integer_* exec_dup exec_dup)
+Best program: (FWI integer_* NT NT 0 0 integer_= integer_= integer_= boolean_not NT integer_* integer_* NBD 2 exec_dup (2 exec_dup (exec_if (exec_dup (exec_if (exec_dup (exec_dup (boolean_or integer_* exec_dup (exec_dup ())))) ())) ())))
+Best total error: 8138
+Total number of cells: 25004
+Best percent error: 0.3254679
+Fires evaluated:  (k1 m2 k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 72
+-------------------------------------------------------
+Best plushy: (FWI FWI NT NT true integer_= integer_= slope boolean_not boolean_not boolean_not integer_* NBD boolean_not integer_* 2 NBD exec_if exec_if exec_dup exec_dup integer_% integer_* exec_dup exec_dup)
+Best program: (FWI FWI NT NT true integer_= integer_= slope boolean_not boolean_not boolean_not integer_* NBD boolean_not integer_* 2 NBD exec_if (exec_if (exec_dup (exec_dup (integer_% integer_* exec_dup (exec_dup ())))) ()) ())
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (r1 k1 m2 m1)
+
+-------------------------------------------------------
+               Report for Generation 73
+-------------------------------------------------------
+Best plushy: (FWI FWI NT NT true integer_= integer_= slope boolean_not boolean_not boolean_not integer_* NBD boolean_not integer_* 2 exec_if exec_dup exec_if exec_dup exec_dup integer_% exec_dup)
+Best program: (FWI FWI NT NT true integer_= integer_= slope boolean_not boolean_not boolean_not integer_* NBD boolean_not integer_* 2 exec_if (exec_dup (exec_if (exec_dup (exec_dup (integer_% exec_dup ()))) ())) ())
+Best total error: 7363
+Total number of cells: 24956
+Best percent error: 0.29503927
+Fires evaluated:  (m1 k2 g2 m2)
+
+-------------------------------------------------------
+               Report for Generation 74
+-------------------------------------------------------
+Best plushy: (FWI integer_* FWI NT true 0 integer_= integer_= integer_= boolean_not NT integer_* integer_* boolean_not 2 exec_dup 2 exec_dup exec_if exec_dup integer_* exec_dup exec_dup exec_dup)
+Best program: (FWI integer_* FWI NT true 0 integer_= integer_= integer_= boolean_not NT integer_* integer_* boolean_not 2 exec_dup (2 exec_dup (exec_if (exec_dup (integer_* exec_dup (exec_dup (exec_dup ())))) ())))
+Best total error: 6855
+Total number of cells: 23060
+Best percent error: 0.297268
+Fires evaluated:  (r1 k2 m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 75
+-------------------------------------------------------
+Best plushy: (BUI FWI integer_* NT NT 0 0 integer_= slope integer_= boolean_not boolean_not integer_* NBD NBD 2 2 2 exec_if exec_if exec_dup 2 exec_dup exec_dup integer_* exec_dup exec_dup exec_dup)
+Best program: (BUI FWI integer_* NT NT 0 0 integer_= slope integer_= boolean_not boolean_not integer_* NBD NBD 2 2 2 exec_if (exec_if (exec_dup (2 exec_dup (exec_dup (integer_* exec_dup (exec_dup (exec_dup ())))))) ()) ())
+Best total error: 7341
+Total number of cells: 23736
+Best percent error: 0.30927706
+Fires evaluated:  (k2 m2 k1 m1)
+
+-------------------------------------------------------
+               Report for Generation 76
+-------------------------------------------------------
+Best plushy: (FWI FWI FWI NT true BUI integer_= integer_= integer_= integer_= boolean_not integer_* integer_* NBD NBD 2 2 exec_dup exec_if exec_if exec_dup exec_dup exec_dup integer_*)
+Best program: (FWI FWI FWI NT true BUI integer_= integer_= integer_= integer_= boolean_not integer_* integer_* NBD NBD 2 2 exec_dup (exec_if (exec_if (exec_dup (exec_dup (exec_dup (integer_*)))) ()) ()))
+Best total error: 8160
+Total number of cells: 26224
+Best percent error: 0.31116533
+Fires evaluated:  (r1 k2 m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 77
+-------------------------------------------------------
+Best plushy: (BUI FWI NT NT 0 0 integer_= slope integer_= boolean_not boolean_not integer_* NBD NBD 2 2 exec_if exec_if exec_dup 2 exec_dup exec_dup integer_* exec_dup exec_dup exec_dup)
+Best program: (BUI FWI NT NT 0 0 integer_= slope integer_= boolean_not boolean_not integer_* NBD NBD 2 2 exec_if (exec_if (exec_dup (2 exec_dup (exec_dup (integer_* exec_dup (exec_dup (exec_dup ())))))) ()) ())
+Best total error: 7341
+Total number of cells: 23736
+Best percent error: 0.30927706
+Fires evaluated:  (k2 m2 m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 78
+-------------------------------------------------------
+Best plushy: (FWI FWI integer_* NT true integer_= 0 slope integer_= boolean_not integer_= boolean_not boolean_= boolean_not integer_* NBD NT NBD exec_if 2 exec_dup exec_if exec_dup integer_* exec_dup exec_dup exec_dup)
+Best program: (FWI FWI integer_* NT true integer_= 0 slope integer_= boolean_not integer_= boolean_not boolean_= boolean_not integer_* NBD NT NBD exec_if (2 exec_dup (exec_if (exec_dup (integer_* exec_dup (exec_dup (exec_dup ())))) ())) ())
+Best total error: 7791
+Total number of cells: 22148
+Best percent error: 0.35176992
+Fires evaluated:  (g2 m2 r1 m1)
+
+-------------------------------------------------------
+               Report for Generation 79
+-------------------------------------------------------
+Best plushy: (BUI FWI NT NT 0 0 integer_= slope integer_= NBD boolean_not boolean_not integer_* NBD NBD 2 WD 2 exec_if exec_if exec_dup 2 exec_dup 2 exec_dup integer_* exec_dup exec_dup exec_dup)
+Best program: (BUI FWI NT NT 0 0 integer_= slope integer_= NBD boolean_not boolean_not integer_* NBD NBD 2 WD 2 exec_if (exec_if (exec_dup (2 exec_dup (2 exec_dup (integer_* exec_dup (exec_dup (exec_dup ())))))) ()) ())
+Best total error: 5901
+Total number of cells: 19816
+Best percent error: 0.29778966
+Fires evaluated:  (k2 m2 r1 m1)
+
+-------------------------------------------------------
+               Report for Generation 80
+-------------------------------------------------------
+Best plushy: (BUI FWI NT NT 0 0 integer_= slope integer_= NBD boolean_not boolean_not integer_* NBD NBD 2 WD 2 exec_if exec_if exec_dup 2 2 exec_dup integer_* exec_dup exec_dup)
+Best program: (BUI FWI NT NT 0 0 integer_= slope integer_= NBD boolean_not boolean_not integer_* NBD NBD 2 WD 2 exec_if (exec_if (exec_dup (2 2 exec_dup (integer_* exec_dup (exec_dup ())))) ()) ())
+Best total error: 6877
+Total number of cells: 24280
+Best percent error: 0.28323722
+Fires evaluated:  (r1 g2 m1 k2)
+
+-------------------------------------------------------
+               Report for Generation 81
+-------------------------------------------------------
+Best plushy: (BUI FWI NT NT 0 0 integer_= slope integer_= NBD boolean_not boolean_not integer_* NBD NBD 2 WD 2 exec_if exec_if exec_dup 2 2 exec_dup integer_* exec_dup exec_dup)
+Best program: (BUI FWI NT NT 0 0 integer_= slope integer_= NBD boolean_not boolean_not integer_* NBD NBD 2 WD 2 exec_if (exec_if (exec_dup (2 2 exec_dup (integer_* exec_dup (exec_dup ())))) ()) ())
+Best total error: 5901
+Total number of cells: 19816
+Best percent error: 0.29778966
+Fires evaluated:  (k2 r1 m1 m2)
+
+-------------------------------------------------------
+               Report for Generation 82
+-------------------------------------------------------
+Best plushy: (BUI FWI NT NT 0 0 0 slope integer_= NBD boolean_not boolean_not boolean_not NBD NBD 2 WD 2 exec_if exec_if exec_dup 2 2 exec_dup integer_* exec_dup exec_dup)
+Best program: (BUI FWI NT NT 0 0 0 slope integer_= NBD boolean_not boolean_not boolean_not NBD NBD 2 WD 2 exec_if (exec_if (exec_dup (2 2 exec_dup (integer_* exec_dup (exec_dup ())))) ()) ())
+Best total error: 7791
+Total number of cells: 22148
+Best percent error: 0.35176992
+Fires evaluated:  (r1 g2 m1 m2)
+
+-------------------------------------------------------
+               Report for Generation 83
+-------------------------------------------------------
+Best plushy: (BUI FWI NT NT 0 0 0 slope integer_= NBD boolean_not boolean_not boolean_not NBD NBD 2 WD 2 exec_if exec_if exec_dup 2 2 exec_dup integer_* exec_dup exec_dup)
+Best program: (BUI FWI NT NT 0 0 0 slope integer_= NBD boolean_not boolean_not boolean_not NBD NBD 2 WD 2 exec_if (exec_if (exec_dup (2 2 exec_dup (integer_* exec_dup (exec_dup ())))) ()) ())
+Best total error: 8918
+Total number of cells: 29468
+Best percent error: 0.30263337
+Fires evaluated:  (k2 k1 r1 g2)
+
+-------------------------------------------------------
+               Report for Generation 84
+-------------------------------------------------------
+Best plushy: (BUI FWI NT NT 0 0 0 slope integer_= boolean_not boolean_not boolean_not NBD NBD 2 WD 2 exec_if exec_dup 2 2 exec_dup integer_* exec_dup exec_dup)
+Best program: (BUI FWI NT NT 0 0 0 slope integer_= boolean_not boolean_not boolean_not NBD NBD 2 WD 2 exec_if (exec_dup (2 2 exec_dup (integer_* exec_dup (exec_dup ())))) ())
+Best total error: 7791
+Total number of cells: 22148
+Best percent error: 0.35176992
+Fires evaluated:  (m1 r1 m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 85
+-------------------------------------------------------
+Best plushy: (BUI FWI NT NT 0 0 0 slope integer_= NBD boolean_not WD boolean_not boolean_not NBD NBD 2 WD 2 exec_if exec_if exec_dup 2 2 exec_dup integer_* exec_dup exec_dup)
+Best program: (BUI FWI NT NT 0 0 0 slope integer_= NBD boolean_not WD boolean_not boolean_not NBD NBD 2 WD 2 exec_if (exec_if (exec_dup (2 2 exec_dup (integer_* exec_dup (exec_dup ())))) ()) ())
+Best total error: 7957
+Total number of cells: 26224
+Best percent error: 0.30342436
+Fires evaluated:  (g2 r1 k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 86
+-------------------------------------------------------
+Best plushy: (BUI FWI FWI NT 0 0 integer_= slope integer_= integer_= slope boolean_not boolean_not integer_* NBD integer_* NBD 2 exec_dup exec_if exec_if 2 exec_dup integer_* exec_dup integer_= exec_dup exec_dup)
+Best program: (BUI FWI FWI NT 0 0 integer_= slope integer_= integer_= slope boolean_not boolean_not integer_* NBD integer_* NBD 2 exec_dup (exec_if (exec_if (2 exec_dup (integer_* exec_dup (integer_= exec_dup (exec_dup ())))) ()) ()))
+Best total error: 8138
+Total number of cells: 25004
+Best percent error: 0.3254679
+Fires evaluated:  (r1 k1 k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 87
+-------------------------------------------------------
+Best plushy: (BUI FWI FWI NT 0 0 integer_= slope integer_= integer_= slope boolean_not boolean_not integer_* NBD integer_* NBD 2 exec_dup exec_if exec_if 2 exec_dup integer_* exec_dup integer_= exec_dup exec_dup)
+Best program: (BUI FWI FWI NT 0 0 integer_= slope integer_= integer_= slope boolean_not boolean_not integer_* NBD integer_* NBD 2 exec_dup (exec_if (exec_if (2 exec_dup (integer_* exec_dup (integer_= exec_dup (exec_dup ())))) ()) ()))
+Best total error: 9447
+Total number of cells: 26068
+Best percent error: 0.36239836
+Fires evaluated:  (g2 m2 m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 88
+-------------------------------------------------------
+Best plushy: (BUI FWI NT NT 0 0 slope slope integer_= slope boolean_not boolean_not integer_* NBD NBD NBD WD 2 exec_dup exec_if 2 2 exec_dup integer_* exec_dup exec_dup)
+Best program: (BUI FWI NT NT 0 0 slope slope integer_= slope boolean_not boolean_not integer_* NBD NBD NBD WD 2 exec_dup (exec_if (2 2 exec_dup (integer_* exec_dup (exec_dup ()))) ()))
+Best total error: 5901
+Total number of cells: 19816
+Best percent error: 0.29778966
+Fires evaluated:  (k2 m1 r1 m2)
+
+-------------------------------------------------------
+               Report for Generation 89
+-------------------------------------------------------
+Best plushy: (BUI FWI NT NT 0 0 integer_= slope integer_= NT integer_= slope boolean_not integer_* boolean_not integer_* NBD 2 exec_if exec_dup exec_if 2 exec_dup integer_* exec_dup exec_dup)
+Best program: (BUI FWI NT NT 0 0 integer_= slope integer_= NT integer_= slope boolean_not integer_* boolean_not integer_* NBD 2 exec_if (exec_dup (exec_if (2 exec_dup (integer_* exec_dup (exec_dup ()))) ())) ())
+Best total error: 8160
+Total number of cells: 26224
+Best percent error: 0.31116533
+Fires evaluated:  (g2 m2 k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 90
+-------------------------------------------------------
+Best plushy: (BUI FWI NT NT 0 0 integer_= slope integer_= integer_= boolean_not boolean_not integer_* boolean_not NBD integer_* 2 2 exec_if exec_dup 2 2 exec_dup exec_dup exec_dup)
+Best program: (BUI FWI NT NT 0 0 integer_= slope integer_= integer_= boolean_not boolean_not integer_* boolean_not NBD integer_* 2 2 exec_if (exec_dup (2 2 exec_dup (exec_dup (exec_dup ())))) ())
+Best total error: 8007
+Total number of cells: 22148
+Best percent error: 0.3615225
+Fires evaluated:  (g2 m1 m2 r1)
+
+-------------------------------------------------------
+               Report for Generation 91
+-------------------------------------------------------
+Best plushy: (BUI FWI NT NT 0 0 integer_= slope integer_= integer_= boolean_not boolean_not integer_% boolean_not NBD integer_* 2 2 2 exec_dup 2 2 exec_dup exec_dup exec_dup)
+Best program: (BUI FWI NT NT 0 0 integer_= slope integer_= integer_= boolean_not boolean_not integer_% boolean_not NBD integer_* 2 2 2 exec_dup (2 2 exec_dup (exec_dup (exec_dup ()))))
+Best total error: 8007
+Total number of cells: 22148
+Best percent error: 0.3615225
+Fires evaluated:  (g2 m1 r1 m2)
+
+-------------------------------------------------------
+               Report for Generation 92
+-------------------------------------------------------
+Best plushy: (NBD FWI NT NT 0 0 integer_= slope slope integer_= NBD boolean_not integer_* integer_* NBD integer_* NBD 2 exec_dup exec_dup 2 2 2 exec_dup exec_dup)
+Best program: (NBD FWI NT NT 0 0 integer_= slope slope integer_= NBD boolean_not integer_* integer_* NBD integer_* NBD 2 exec_dup (exec_dup (2 2 2 exec_dup (exec_dup ()))))
+Best total error: 8138
+Total number of cells: 25004
+Best percent error: 0.3254679
+Fires evaluated:  (m2 r1 k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 93
+-------------------------------------------------------
+Best plushy: (NBD FWI WS NT NT NT 0 0 integer_= slope boolean_not integer_% boolean_not integer_* integer_* ISI NBD 2 exec_dup 2 2 exec_dup 2 exec_dup exec_dup exec_if)
+Best program: (NBD FWI WS NT NT NT 0 0 integer_= slope boolean_not integer_% boolean_not integer_* integer_* ISI NBD 2 exec_dup (2 2 exec_dup (2 exec_dup (exec_dup (exec_if () ())))))
+Best total error: 6877
+Total number of cells: 24280
+Best percent error: 0.28323722
+Fires evaluated:  (k2 r1 m1 g2)
+
