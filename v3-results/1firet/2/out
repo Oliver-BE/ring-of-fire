@@ -1,0 +1,61 @@
+Starting GP with args: {:max-initial-plushy-size 40, :instructions (slope ISI BUI FWI NT NBD WS WD TB :split integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 1, :max-generations 5000, :time-step 3, :parent-selection :tournament, :tournament-size 5, :step-limit 100, :error-function #object[ring_of_fire.core$fire_error_function 0x2d10e0b1 ring_of_fire.core$fire_error_function@2d10e0b1], :population-size 10}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (NBD boolean_= integer_% exec_dup TB integer_= close integer_= close close boolean_and WS true true ISI true integer_= TB slope BUI NBD boolean_and ISI)
+Best program: (NBD boolean_= integer_% exec_dup (TB integer_=) integer_= boolean_and WS true true ISI true integer_= TB slope BUI NBD boolean_and ISI)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (NBD boolean_= 2 FWI WS integer_= WD 0 ISI close WS WS integer_- close ISI FWI WD TB slope BUI ISI)
+Best program: (NBD boolean_= 2 FWI WS integer_= WD 0 ISI WS WS integer_- ISI FWI WD TB slope BUI ISI)
+Best total error: 3153
+Total number of cells: 8320
+Best percent error: 0.37896633
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (NBD boolean_= integer_% FWI TB integer_= WD 0 ISI close boolean_and WS integer_- close true ISI WD integer_= TB BUI ISI boolean_and ISI)
+Best program: (NBD boolean_= integer_% FWI TB integer_= WD 0 ISI boolean_and WS integer_- true ISI WD integer_= TB BUI ISI boolean_and ISI)
+Best total error: 3153
+Total number of cells: 8320
+Best percent error: 0.37896633
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (NBD boolean_= 2 FWI WS integer_= WD 0 ISI close WS :split integer_+ close ISI close TB slope slope ISI boolean_= boolean_or BUI)
+Best program: (NBD boolean_= 2 FWI WS integer_= WD 0 ISI WS :split integer_+ ISI TB slope slope ISI boolean_= boolean_or BUI)
+Best total error: 2587
+Total number of cells: 7208
+Best percent error: 0.35890678
+Fires evaluated:  (k2)
+
+-------------------------------------------------------
+               Report for Generation 4
+-------------------------------------------------------
+Best plushy: (NBD boolean_= 2 FWI WS integer_= WD 0 ISI close WS WS integer_- close ISI WD TB slope boolean_or BUI ISI)
+Best program: (NBD boolean_= 2 FWI WS integer_= WD 0 ISI WS WS integer_- ISI WD TB slope boolean_or BUI ISI)
+Best total error: 862
+Total number of cells: 3132
+Best percent error: 0.2752235
+Fires evaluated:  (m1)
+
+-------------------------------------------------------
+               Report for Generation 5
+-------------------------------------------------------
+Best plushy: (NBD boolean_= 2 FWI WS integer_= WD 0 ISI close boolean_and WS integer_- close ISI ISI WD integer_= slope BUI ISI)
+Best program: (NBD boolean_= 2 FWI WS integer_= WD 0 ISI boolean_and WS integer_- ISI ISI WD integer_= slope BUI ISI)
+Best total error: 2406
+Total number of cells: 4400
+Best percent error: 0.5468182
+Fires evaluated:  (r1)
+

@@ -1,0 +1,41 @@
+Starting GP with args: {:max-initial-plushy-size 40, :instructions (slope ISI BUI FWI NT NBD WS WD TB :split integer_+ integer_- integer_* integer_% integer_= exec_dup exec_if boolean_and boolean_or boolean_not boolean_= close 0 1 2 true false), :fire-selection 1, :max-generations 5000, :time-step 3, :parent-selection :tournament, :tournament-size 5, :step-limit 100, :error-function #object[ring_of_fire.core$fire_error_function 0x2d10e0b1 ring_of_fire.core$fire_error_function@2d10e0b1], :population-size 10}
+-------------------------------------------------------
+               Report for Generation 0
+-------------------------------------------------------
+Best plushy: (exec_dup false integer_+ integer_= NT 2 WD WS integer_* false boolean_or boolean_not boolean_= BUI FWI 1 NT close integer_% integer_* NT :split WD)
+Best program: (exec_dup (false integer_+ integer_= NT 2 WD WS integer_* false boolean_or boolean_not boolean_= BUI FWI 1 NT) integer_% integer_* NT :split WD)
+Best total error: 3174
+Total number of cells: 8320
+Best percent error: 0.38149038
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 1
+-------------------------------------------------------
+Best plushy: (boolean_and false integer_+ integer_+ integer_= slope boolean_= WS integer_* false integer_= boolean_not WD integer_- :split 1 NT close integer_% integer_* NT :split WD 0 0)
+Best program: (boolean_and false integer_+ integer_+ integer_= slope boolean_= WS integer_* false integer_= boolean_not WD integer_- :split 1 NT integer_% integer_* NT :split WD 0 0)
+Best total error: 3154
+Total number of cells: 8320
+Best percent error: 0.37908652
+Fires evaluated:  (k1)
+
+-------------------------------------------------------
+               Report for Generation 2
+-------------------------------------------------------
+Best plushy: (false integer_+ integer_+ integer_= slope boolean_= WS integer_* false integer_= boolean_not WD integer_- :split 1 NT close integer_% integer_* NT :split WD 0 0)
+Best program: (false integer_+ integer_+ integer_= slope boolean_= WS integer_* false integer_= boolean_not WD integer_- :split 1 NT integer_% integer_* NT :split WD 0 0)
+Best total error: 1714
+Total number of cells: 4400
+Best percent error: 0.38954544
+Fires evaluated:  (r1)
+
+-------------------------------------------------------
+               Report for Generation 3
+-------------------------------------------------------
+Best plushy: (boolean_and false integer_+ integer_+ integer_= slope boolean_= WS integer_* false integer_= boolean_not WD :split 1 NT close integer_% integer_* NT :split WD 0 0)
+Best program: (boolean_and false integer_+ integer_+ integer_= slope boolean_= WS integer_* false integer_= boolean_not WD :split 1 NT integer_% integer_* NT :split WD 0 0)
+Best total error: 917
+Total number of cells: 3132
+Best percent error: 0.29278415
+Fires evaluated:  (m1)
+
