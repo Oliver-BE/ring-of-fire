@@ -16009,3 +16009,1973 @@ Total number of cells: 26068
 Best percent error: 0.36239836
 Fires evaluated:  (k1 m2 g2 m1)
 
+-------------------------------------------------------
+               Report for Generation 1601
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_= slope boolean_not integer_* NT ISI close FWI boolean_and 1 integer_+ boolean_and boolean_not 0 BUI false false close NT false boolean_= integer_% boolean_= integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_= slope boolean_not integer_* NT ISI FWI boolean_and 1 integer_+ boolean_and boolean_not 0 BUI false false NT false boolean_= integer_% boolean_= integer_=)
+Best total error: 6877
+Total number of cells: 24280
+Best percent error: 0.28323722
+Fires evaluated:  (k2 g2 r1 m1)
+
+-------------------------------------------------------
+               Report for Generation 1602
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_= slope boolean_not integer_* NT ISI ISI close FWI boolean_and 1 BUI integer_+ boolean_and 0 BUI false false close NT false false integer_% boolean_= integer_=)
+Best program: (boolean_= boolean_= boolean_= integer_* NT NT WS NT integer_* integer_= slope boolean_not integer_* NT ISI ISI FWI boolean_and 1 BUI integer_+ boolean_and 0 BUI false false NT false false integer_% boolean_= integer_=)
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (m1 r1 k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1603
+-------------------------------------------------------
+Best plushy: (BUI boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_= slope boolean_not integer_* NT ISI ISI close FWI boolean_and 1 BUI integer_+ boolean_and boolean_not 0 BUI false false close NT false boolean_= integer_% boolean_= integer_=)
+Best program: (BUI boolean_= boolean_= integer_* NT NT WS NT integer_* integer_= slope boolean_not integer_* NT ISI ISI FWI boolean_and 1 BUI integer_+ boolean_and boolean_not 0 BUI false false NT false boolean_= integer_% boolean_= integer_=)
+Best total error: 10244
+Total number of cells: 27336
+Best percent error: 0.37474394
+Fires evaluated:  (m2 g2 r1 k1)
+
+-------------------------------------------------------
+               Report for Generation 1604
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= boolean_= integer_* NT NT WS NT integer_* integer_= slope boolean_not integer_* ISI ISI close boolean_and 1 integer_+ boolean_and 0 BUI false close NT false false integer_% boolean_= integer_=)
+Best program: (boolean_= boolean_= boolean_= integer_* NT NT WS NT integer_* integer_= slope boolean_not integer_* ISI ISI boolean_and 1 integer_+ boolean_and 0 BUI false NT false false integer_% boolean_= integer_=)
+Best total error: 9600
+Total number of cells: 30144
+Best percent error: 0.31847134
+Fires evaluated:  (g2 m2 k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 1605
+-------------------------------------------------------
+Best plushy: (BUI boolean_= FWI boolean_= TB integer_* NT NT close WS NT integer_* integer_= slope boolean_not integer_* NT ISI ISI close FWI boolean_and 1 BUI integer_+ boolean_and boolean_not 0 BUI false false close NT false boolean_= integer_% boolean_= integer_=)
+Best program: (BUI boolean_= FWI boolean_= TB integer_* NT NT WS NT integer_* integer_= slope boolean_not integer_* NT ISI ISI FWI boolean_and 1 BUI integer_+ boolean_and boolean_not 0 BUI false false NT false boolean_= integer_% boolean_= integer_=)
+Best total error: 6877
+Total number of cells: 24280
+Best percent error: 0.28323722
+Fires evaluated:  (m1 k2 g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 1606
+-------------------------------------------------------
+Best plushy: (BUI boolean_= FWI boolean_= TB integer_* NT NT close WS NT integer_* integer_= slope boolean_not integer_* NT ISI ISI close FWI boolean_and 1 BUI integer_+ boolean_and boolean_not 0 BUI false false close NT false boolean_= integer_% boolean_= integer_=)
+Best program: (BUI boolean_= FWI boolean_= TB integer_* NT NT WS NT integer_* integer_= slope boolean_not integer_* NT ISI ISI FWI boolean_and 1 BUI integer_+ boolean_and boolean_not 0 BUI false false NT false boolean_= integer_% boolean_= integer_=)
+Best total error: 6877
+Total number of cells: 24280
+Best percent error: 0.28323722
+Fires evaluated:  (k2 m1 g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 1607
+-------------------------------------------------------
+Best plushy: (BUI boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_= slope boolean_not integer_* NT ISI ISI close FWI boolean_and 1 BUI integer_+ boolean_and boolean_not 0 BUI false false close NT false boolean_= integer_% boolean_= integer_=)
+Best program: (BUI boolean_= boolean_= integer_* NT NT WS NT integer_* integer_= slope boolean_not integer_* NT ISI ISI FWI boolean_and 1 BUI integer_+ boolean_and boolean_not 0 BUI false false NT false boolean_= integer_% boolean_= integer_=)
+Best total error: 5901
+Total number of cells: 19816
+Best percent error: 0.29778966
+Fires evaluated:  (m2 r1 m1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1608
+-------------------------------------------------------
+Best plushy: (BUI boolean_= FWI TB integer_* NT integer_+ NT close WS NT integer_* boolean_and integer_= slope boolean_not BUI integer_* NT ISI close FWI boolean_and 1 BUI integer_+ boolean_and NBD boolean_not 0 BUI false false close NT false boolean_= integer_% boolean_= integer_=)
+Best program: (BUI boolean_= FWI TB integer_* NT integer_+ NT WS NT integer_* boolean_and integer_= slope boolean_not BUI integer_* NT ISI FWI boolean_and 1 BUI integer_+ boolean_and NBD boolean_not 0 BUI false false NT false boolean_= integer_% boolean_= integer_=)
+Best total error: 9447
+Total number of cells: 26068
+Best percent error: 0.36239836
+Fires evaluated:  (m2 m1 k1 g2)
+
+-------------------------------------------------------
+               Report for Generation 1609
+-------------------------------------------------------
+Best plushy: (BUI boolean_= 2 FWI TB integer_* NT integer_+ NT close WS NT integer_* boolean_and integer_= slope boolean_not WS BUI integer_* NT ISI close FWI boolean_and 1 BUI integer_+ boolean_and NBD boolean_not 0 BUI false false close NT false boolean_= integer_% boolean_= integer_=)
+Best program: (BUI boolean_= 2 FWI TB integer_* NT integer_+ NT WS NT integer_* boolean_and integer_= slope boolean_not WS BUI integer_* NT ISI FWI boolean_and 1 BUI integer_+ boolean_and NBD boolean_not 0 BUI false false NT false boolean_= integer_% boolean_= integer_=)
+Best total error: 9600
+Total number of cells: 30144
+Best percent error: 0.31847134
+Fires evaluated:  (k1 k2 g2 m2)
+
+-------------------------------------------------------
+               Report for Generation 1610
+-------------------------------------------------------
+Best plushy: (BUI boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_= slope boolean_not integer_* ISI ISI close FWI boolean_and 1 BUI integer_+ boolean_and boolean_not close 0 BUI false false close NT false integer_% integer_=)
+Best program: (BUI boolean_= boolean_= integer_* NT NT WS NT integer_* integer_= slope boolean_not integer_* ISI ISI FWI boolean_and 1 BUI integer_+ boolean_and boolean_not 0 BUI false false NT false integer_% integer_=)
+Best total error: 9600
+Total number of cells: 30144
+Best percent error: 0.31847134
+Fires evaluated:  (k2 g2 m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 1611
+-------------------------------------------------------
+Best plushy: (BUI boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_= slope boolean_not integer_* ISI ISI close FWI boolean_and 1 BUI integer_+ boolean_and boolean_not close 0 BUI false false close NT false integer_% integer_=)
+Best program: (BUI boolean_= boolean_= integer_* NT NT WS NT integer_* integer_= slope boolean_not integer_* ISI ISI FWI boolean_and 1 BUI integer_+ boolean_and boolean_not 0 BUI false false NT false integer_% integer_=)
+Best total error: 7363
+Total number of cells: 24956
+Best percent error: 0.29503927
+Fires evaluated:  (g2 m1 k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 1612
+-------------------------------------------------------
+Best plushy: (BUI boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ integer_= slope boolean_not integer_* ISI ISI close FWI boolean_and 1 false BUI integer_+ boolean_and boolean_not close 0 BUI false false close NT false integer_% integer_=)
+Best program: (BUI boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ integer_= slope boolean_not integer_* ISI ISI FWI boolean_and 1 false BUI integer_+ boolean_and boolean_not 0 BUI false false NT false integer_% integer_=)
+Best total error: 7313
+Total number of cells: 24956
+Best percent error: 0.29303575
+Fires evaluated:  (k2 m2 m1 g2)
+
+-------------------------------------------------------
+               Report for Generation 1613
+-------------------------------------------------------
+Best plushy: (BUI boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ integer_= slope boolean_not integer_* ISI ISI close FWI boolean_and 1 false BUI integer_+ boolean_and boolean_not close 0 BUI false false close NT false integer_% integer_=)
+Best program: (BUI boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ integer_= slope boolean_not integer_* ISI ISI FWI boolean_and 1 false BUI integer_+ boolean_and boolean_not 0 BUI false false NT false integer_% integer_=)
+Best total error: 9419
+Total number of cells: 26068
+Best percent error: 0.36132422
+Fires evaluated:  (k1 m1 m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 1614
+-------------------------------------------------------
+Best plushy: (BUI boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ integer_= slope boolean_not integer_* ISI close FWI boolean_and 1 false integer_+ boolean_and boolean_not close 0 BUI false false close NT false integer_% integer_=)
+Best program: (BUI boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ integer_= slope boolean_not integer_* ISI FWI boolean_and 1 false integer_+ boolean_and boolean_not 0 BUI false false NT false integer_% integer_=)
+Best total error: 8933
+Total number of cells: 25392
+Best percent error: 0.35180372
+Fires evaluated:  (g2 m1 r1 k1)
+
+-------------------------------------------------------
+               Report for Generation 1615
+-------------------------------------------------------
+Best plushy: (BUI boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ integer_= slope boolean_not integer_* ISI close FWI boolean_and 1 false integer_+ boolean_and boolean_not close 0 BUI false false close NT false integer_% integer_=)
+Best program: (BUI boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ integer_= slope boolean_not integer_* ISI FWI boolean_and 1 false integer_+ boolean_and boolean_not 0 BUI false false NT false integer_% integer_=)
+Best total error: 9064
+Total number of cells: 29468
+Best percent error: 0.3075879
+Fires evaluated:  (g2 k1 r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1616
+-------------------------------------------------------
+Best plushy: (BUI boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ integer_= slope boolean_not integer_* ISI close FWI boolean_and 1 false integer_+ boolean_and boolean_not close 0 BUI false false close NT false integer_% integer_=)
+Best program: (BUI boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ integer_= slope boolean_not integer_* ISI FWI boolean_and 1 false integer_+ boolean_and boolean_not 0 BUI false false NT false integer_% integer_=)
+Best total error: 7319
+Total number of cells: 23736
+Best percent error: 0.30835018
+Fires evaluated:  (m2 m1 k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 1617
+-------------------------------------------------------
+Best plushy: (BUI boolean_= boolean_= integer_* NT NT close close WS NT integer_* integer_+ integer_= slope boolean_not ISI ISI close FWI boolean_and 1 BUI integer_+ boolean_and boolean_not close 0 BUI false false NT false integer_% integer_=)
+Best program: (BUI boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ integer_= slope boolean_not ISI ISI FWI boolean_and 1 BUI integer_+ boolean_and boolean_not 0 BUI false false NT false integer_% integer_=)
+Best total error: 9064
+Total number of cells: 29468
+Best percent error: 0.3075879
+Fires evaluated:  (k2 r1 k1 g2)
+
+-------------------------------------------------------
+               Report for Generation 1618
+-------------------------------------------------------
+Best plushy: (BUI boolean_= boolean_= integer_* NT NT close close WS NT integer_* integer_+ integer_= slope boolean_not ISI ISI close FWI boolean_and 1 BUI integer_+ boolean_and boolean_not close 0 BUI false false NT false integer_% integer_=)
+Best program: (BUI boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ integer_= slope boolean_not ISI ISI FWI boolean_and 1 BUI integer_+ boolean_and boolean_not 0 BUI false false NT false integer_% integer_=)
+Best total error: 9550
+Total number of cells: 30144
+Best percent error: 0.31681263
+Fires evaluated:  (g2 k1 m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 1619
+-------------------------------------------------------
+Best plushy: (BUI boolean_= boolean_= integer_* NT NT close close WS NT integer_* integer_+ integer_= slope boolean_not ISI ISI close FWI boolean_and 1 BUI integer_+ boolean_and boolean_not close 0 BUI false false NT false integer_% integer_=)
+Best program: (BUI boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ integer_= slope boolean_not ISI ISI FWI boolean_and 1 BUI integer_+ boolean_and boolean_not 0 BUI false false NT false integer_% integer_=)
+Best total error: 5879
+Total number of cells: 19816
+Best percent error: 0.29667944
+Fires evaluated:  (r1 k2 m2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1620
+-------------------------------------------------------
+Best plushy: (BUI boolean_= boolean_= integer_* NT NT close close WS NT integer_* integer_+ integer_= slope boolean_not ISI ISI close FWI boolean_and 1 BUI integer_+ boolean_and boolean_not close 0 BUI false false NT false integer_% integer_=)
+Best program: (BUI boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ integer_= slope boolean_not ISI ISI FWI boolean_and 1 BUI integer_+ boolean_and boolean_not 0 BUI false false NT false integer_% integer_=)
+Best total error: 8110
+Total number of cells: 26224
+Best percent error: 0.3092587
+Fires evaluated:  (m2 r1 k2 g2)
+
+-------------------------------------------------------
+               Report for Generation 1621
+-------------------------------------------------------
+Best plushy: (BUI boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ integer_= boolean_not ISI ISI close FWI boolean_and 1 BUI integer_+ boolean_and boolean_not close 0 BUI false NT false integer_% integer_=)
+Best program: (BUI boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ integer_= boolean_not ISI ISI FWI boolean_and 1 BUI integer_+ boolean_and boolean_not 0 BUI false NT false integer_% integer_=)
+Best total error: 7319
+Total number of cells: 23736
+Best percent error: 0.30835018
+Fires evaluated:  (m2 k1 m1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1622
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= NT NT close WS NT integer_* integer_+ integer_= boolean_not ISI ISI close FWI 1 BUI boolean_and boolean_not close 0 BUI false false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= NT NT WS NT integer_* integer_+ integer_= boolean_not ISI ISI FWI 1 BUI boolean_and boolean_not 0 BUI false false NT false integer_% integer_=)
+Best total error: 7319
+Total number of cells: 23736
+Best percent error: 0.30835018
+Fires evaluated:  (m2 m1 k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1623
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= NT NT close WS NT integer_* integer_+ integer_= boolean_not ISI ISI close FWI 1 BUI boolean_and boolean_not close 0 BUI false false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= NT NT WS NT integer_* integer_+ integer_= boolean_not ISI ISI FWI 1 BUI boolean_and boolean_not 0 BUI false false NT false integer_% integer_=)
+Best total error: 8110
+Total number of cells: 26224
+Best percent error: 0.3092587
+Fires evaluated:  (r1 g2 m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 1624
+-------------------------------------------------------
+Best plushy: (BUI boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI close FWI boolean_and 1 BUI integer_+ boolean_and boolean_not close 0 BUI false NT false integer_% integer_=)
+Best program: (BUI boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI FWI boolean_and 1 BUI integer_+ boolean_and boolean_not 0 BUI false NT false integer_% integer_=)
+Best total error: 6833
+Total number of cells: 23060
+Best percent error: 0.29631397
+Fires evaluated:  (m1 r1 k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1625
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= NT NT close WS NT integer_* integer_+ integer_= boolean_not ISI ISI close FWI 1 BUI boolean_and boolean_not close 0 BUI false false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= NT NT WS NT integer_* integer_+ integer_= boolean_not ISI ISI FWI 1 BUI boolean_and boolean_not 0 BUI false false NT false integer_% integer_=)
+Best total error: 5879
+Total number of cells: 19816
+Best percent error: 0.29667944
+Fires evaluated:  (m1 k2 m2 r1)
+
+-------------------------------------------------------
+               Report for Generation 1626
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI close FWI boolean_and 1 integer_% BUI integer_+ boolean_and close 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI FWI boolean_and 1 integer_% BUI integer_+ boolean_and 0 BUI false NT false integer_% integer_=)
+Best total error: 10216
+Total number of cells: 27336
+Best percent error: 0.37371963
+Fires evaluated:  (r1 g2 m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 1627
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI close FWI boolean_and 1 integer_% BUI integer_+ boolean_and close integer_= 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI FWI boolean_and 1 integer_% BUI integer_+ boolean_and integer_= 0 BUI false NT false integer_% integer_=)
+Best total error: 8116
+Total number of cells: 25004
+Best percent error: 0.32458806
+Fires evaluated:  (k2 r1 k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1628
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI close FWI boolean_and 1 integer_% integer_+ boolean_and close 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI FWI boolean_and 1 integer_% integer_+ boolean_and 0 BUI false NT false integer_% integer_=)
+Best total error: 7979
+Total number of cells: 22148
+Best percent error: 0.36025825
+Fires evaluated:  (g2 m2 r1 m1)
+
+-------------------------------------------------------
+               Report for Generation 1629
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI close FWI boolean_and 1 integer_% BUI integer_+ boolean_and close integer_= 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI FWI boolean_and 1 integer_% BUI integer_+ boolean_and integer_= 0 BUI false NT false integer_% integer_=)
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (m2 r1 m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 1630
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI close FWI boolean_and 1 integer_% integer_+ boolean_and close 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI FWI boolean_and 1 integer_% integer_+ boolean_and 0 BUI false NT false integer_% integer_=)
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (m2 k1 r1 m1)
+
+-------------------------------------------------------
+               Report for Generation 1631
+-------------------------------------------------------
+Best plushy: (boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI close FWI boolean_and 1 integer_% BUI integer_+ boolean_and close integer_= 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI FWI boolean_and 1 integer_% BUI integer_+ boolean_and integer_= 0 BUI false NT false integer_% integer_=)
+Best total error: 5879
+Total number of cells: 19816
+Best percent error: 0.29667944
+Fires evaluated:  (m1 k2 r1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1632
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI close FWI boolean_and 1 integer_% integer_+ boolean_and close 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI FWI boolean_and 1 integer_% integer_+ boolean_and 0 BUI false NT false integer_% integer_=)
+Best total error: 7313
+Total number of cells: 24956
+Best percent error: 0.29303575
+Fires evaluated:  (m1 m2 g2 k2)
+
+-------------------------------------------------------
+               Report for Generation 1633
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI close FWI boolean_and 1 integer_% integer_+ boolean_and close 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI FWI boolean_and 1 integer_% integer_+ boolean_and 0 BUI false NT false integer_% integer_=)
+Best total error: 8116
+Total number of cells: 25004
+Best percent error: 0.32458806
+Fires evaluated:  (m2 k1 r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1634
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI close FWI boolean_and 1 integer_% integer_+ boolean_and close 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI FWI boolean_and 1 integer_% integer_+ boolean_and 0 BUI false NT false integer_% integer_=)
+Best total error: 9064
+Total number of cells: 29468
+Best percent error: 0.3075879
+Fires evaluated:  (k2 g2 k1 r1)
+
+-------------------------------------------------------
+               Report for Generation 1635
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI close ISI close 0 FWI boolean_and 1 0 integer_% integer_+ boolean_and close 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI 0 FWI boolean_and 1 0 integer_% integer_+ boolean_and 0 BUI false NT false integer_% integer_=)
+Best total error: 10216
+Total number of cells: 27336
+Best percent error: 0.37371963
+Fires evaluated:  (g2 k1 m2 r1)
+
+-------------------------------------------------------
+               Report for Generation 1636
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI close ISI close 0 FWI boolean_and 1 0 integer_% integer_+ boolean_and close 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI 0 FWI boolean_and 1 0 integer_% integer_+ boolean_and 0 BUI false NT false integer_% integer_=)
+Best total error: 9064
+Total number of cells: 29468
+Best percent error: 0.3075879
+Fires evaluated:  (r1 k2 g2 k1)
+
+-------------------------------------------------------
+               Report for Generation 1637
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI close ISI close 0 FWI boolean_and 1 0 integer_% integer_+ :split boolean_and close 0 BUI false NT false integer_% integer_= integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI 0 FWI boolean_and 1 0 integer_% integer_+ :split boolean_and 0 BUI false NT false integer_% integer_= integer_=)
+Best total error: 7313
+Total number of cells: 24956
+Best percent error: 0.29303575
+Fires evaluated:  (m1 g2 k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 1638
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI close ISI close 0 FWI boolean_and 1 0 integer_% integer_+ boolean_and close 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI 0 FWI boolean_and 1 0 integer_% integer_+ boolean_and 0 BUI false NT false integer_% integer_=)
+Best total error: 7319
+Total number of cells: 23736
+Best percent error: 0.30835018
+Fires evaluated:  (k2 m2 m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 1639
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI :split close ISI close 0 FWI boolean_and 1 0 integer_% 0 integer_% close 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI :split ISI 0 FWI boolean_and 1 0 integer_% 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best total error: 8116
+Total number of cells: 25004
+Best percent error: 0.32458806
+Fires evaluated:  (k1 m2 r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1640
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI close ISI close 0 FWI boolean_and 1 0 integer_% 0 boolean_and close 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI 0 FWI boolean_and 1 0 integer_% 0 boolean_and 0 BUI false NT false integer_% integer_=)
+Best total error: 8267
+Total number of cells: 28200
+Best percent error: 0.29315603
+Fires evaluated:  (g2 k2 k1 m1)
+
+-------------------------------------------------------
+               Report for Generation 1641
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI close ISI close 0 FWI boolean_and 1 0 integer_% 0 integer_% close 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI 0 FWI boolean_and 1 0 integer_% 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best total error: 8267
+Total number of cells: 28200
+Best percent error: 0.29315603
+Fires evaluated:  (g2 m1 k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 1642
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI close ISI close 0 FWI boolean_and 1 0 integer_% 0 integer_% close 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI 0 FWI boolean_and 1 0 integer_% 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (k1 m1 m2 r1)
+
+-------------------------------------------------------
+               Report for Generation 1643
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI close ISI close 0 FWI boolean_and 0 integer_% 0 integer_% close 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI 0 FWI boolean_and 0 integer_% 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best total error: 8933
+Total number of cells: 25392
+Best percent error: 0.35180372
+Fires evaluated:  (m1 r1 k1 g2)
+
+-------------------------------------------------------
+               Report for Generation 1644
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI close ISI close 0 boolean_and 1 integer_% 0 integer_% close 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI 0 boolean_and 1 integer_% 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best total error: 9550
+Total number of cells: 30144
+Best percent error: 0.31681263
+Fires evaluated:  (k2 k1 m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 1645
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI close ISI close 0 FWI boolean_and 1 0 integer_% 0 integer_% close 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI 0 FWI boolean_and 1 0 integer_% 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best total error: 7979
+Total number of cells: 22148
+Best percent error: 0.36025825
+Fires evaluated:  (r1 m2 g2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1646
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI close ISI close 0 boolean_and 1 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI 0 boolean_and 1 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best total error: 6827
+Total number of cells: 24280
+Best percent error: 0.28117794
+Fires evaluated:  (m1 k2 g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 1647
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT close WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI close ISI close 0 boolean_and 1 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI 0 boolean_and 1 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best total error: 7313
+Total number of cells: 24956
+Best percent error: 0.29303575
+Fires evaluated:  (m2 m1 k2 g2)
+
+-------------------------------------------------------
+               Report for Generation 1648
+-------------------------------------------------------
+Best plushy: (true boolean_= boolean_= NT NT close false WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI close ISI 1 close 0 FWI 1 0 integer_% integer_% 0 BUI exec_if false NT false integer_% integer_=)
+Best program: (true boolean_= boolean_= NT NT false WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI 1 0 FWI 1 0 integer_% integer_% 0 BUI exec_if (false NT false integer_% integer_=) ())
+Best total error: 7319
+Total number of cells: 23736
+Best percent error: 0.30835018
+Fires evaluated:  (m2 m1 k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1649
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI close ISI close boolean_and 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI boolean_and 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (r1 m2 k1 m1)
+
+-------------------------------------------------------
+               Report for Generation 1650
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI close ISI close boolean_and 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI boolean_and 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (k1 m1 m2 r1)
+
+-------------------------------------------------------
+               Report for Generation 1651
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI close ISI close boolean_or boolean_and 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= integer_* NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI boolean_or boolean_and 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best total error: 7313
+Total number of cells: 24956
+Best percent error: 0.29303575
+Fires evaluated:  (k2 m2 m1 g2)
+
+-------------------------------------------------------
+               Report for Generation 1652
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI close ISI close boolean_and 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI boolean_and 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best total error: 8116
+Total number of cells: 25004
+Best percent error: 0.32458806
+Fires evaluated:  (r1 k1 m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 1653
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI close ISI close boolean_and 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best program: (boolean_= boolean_= NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI boolean_and 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best total error: 6833
+Total number of cells: 23060
+Best percent error: 0.29631397
+Fires evaluated:  (r1 k2 k1 m1)
+
+-------------------------------------------------------
+               Report for Generation 1654
+-------------------------------------------------------
+Best plushy: (2 boolean_= boolean_= NT NT WS NT integer_* integer_+ close boolean_= integer_= boolean_not ISI 2 close close ISI close boolean_and 0 integer_% 0 BUI NT true false integer_% integer_=)
+Best program: (2 boolean_= boolean_= NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI 2 ISI boolean_and 0 integer_% 0 BUI NT true false integer_% integer_=)
+Best total error: 8116
+Total number of cells: 25004
+Best percent error: 0.32458806
+Fires evaluated:  (m2 k1 r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1655
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI close ISI close boolean_and 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best program: (slope boolean_= boolean_= NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI ISI boolean_and 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best total error: 9550
+Total number of cells: 30144
+Best percent error: 0.31681263
+Fires evaluated:  (k1 m2 k2 g2)
+
+-------------------------------------------------------
+               Report for Generation 1656
+-------------------------------------------------------
+Best plushy: (2 boolean_= boolean_= NT NT WS NT integer_* integer_+ close boolean_= integer_= boolean_not ISI 2 close close ISI close boolean_and 0 integer_% 0 BUI NT true false integer_% integer_=)
+Best program: (2 boolean_= boolean_= NT NT WS NT integer_* integer_+ boolean_= integer_= boolean_not ISI 2 ISI boolean_and 0 integer_% 0 BUI NT true false integer_% integer_=)
+Best total error: 7979
+Total number of cells: 22148
+Best percent error: 0.36025825
+Fires evaluated:  (m2 g2 m1 r1)
+
+-------------------------------------------------------
+               Report for Generation 1657
+-------------------------------------------------------
+Best plushy: (false boolean_= boolean_or boolean_= NT NT WS NT integer_* integer_+ integer_= boolean_not ISI close ISI boolean_and 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best program: (false boolean_= boolean_or boolean_= NT NT WS NT integer_* integer_+ integer_= boolean_not ISI ISI boolean_and 0 integer_% 0 BUI false NT false integer_% integer_=)
+Best total error: 9419
+Total number of cells: 26068
+Best percent error: 0.36132422
+Fires evaluated:  (m1 g2 m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 1658
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= boolean_not close ISI ISI ISI boolean_and boolean_and 0 integer_% BUI false false NT integer_% integer_= slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= boolean_not ISI ISI ISI boolean_and boolean_and 0 integer_% BUI false false NT integer_% integer_= slope)
+Best total error: 10216
+Total number of cells: 27336
+Best percent error: 0.37371963
+Fires evaluated:  (k1 r1 g2 m2)
+
+-------------------------------------------------------
+               Report for Generation 1659
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= boolean_not close ISI ISI boolean_and boolean_and 0 integer_% BUI false false NT integer_% integer_= slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= boolean_not ISI ISI boolean_and boolean_and 0 integer_% BUI false false NT integer_% integer_= slope)
+Best total error: 9550
+Total number of cells: 30144
+Best percent error: 0.31681263
+Fires evaluated:  (k2 m2 k1 g2)
+
+-------------------------------------------------------
+               Report for Generation 1660
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD close ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope WD)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope WD)
+Best total error: 7319
+Total number of cells: 23736
+Best percent error: 0.30835018
+Fires evaluated:  (m1 k2 k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1661
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD close ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope WD)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope WD)
+Best total error: 8267
+Total number of cells: 28200
+Best percent error: 0.29315603
+Fires evaluated:  (k2 m1 k1 g2)
+
+-------------------------------------------------------
+               Report for Generation 1662
+-------------------------------------------------------
+Best plushy: (boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD close ISI ISI ISI boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope WD)
+Best program: (boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD ISI ISI ISI boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope WD)
+Best total error: 8116
+Total number of cells: 25004
+Best percent error: 0.32458806
+Fires evaluated:  (k2 r1 k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1663
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD close ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope WD)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope WD)
+Best total error: 6833
+Total number of cells: 23060
+Best percent error: 0.29631397
+Fires evaluated:  (r1 k1 k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1664
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD close ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope WD)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope WD)
+Best total error: 9419
+Total number of cells: 26068
+Best percent error: 0.36132422
+Fires evaluated:  (k1 m1 g2 m2)
+
+-------------------------------------------------------
+               Report for Generation 1665
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD close ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false boolean_and NT integer_% integer_= slope WD)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false boolean_and NT integer_% integer_= slope WD)
+Best total error: 10216
+Total number of cells: 27336
+Best percent error: 0.37371963
+Fires evaluated:  (m2 k1 r1 g2)
+
+-------------------------------------------------------
+               Report for Generation 1666
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD close ISI ISI boolean_and boolean_and integer_% integer_+ BUI false false boolean_and NT integer_% integer_= slope WD)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD ISI ISI boolean_and boolean_and integer_% integer_+ BUI false false boolean_and NT integer_% integer_= slope WD)
+Best total error: 6827
+Total number of cells: 24280
+Best percent error: 0.28117794
+Fires evaluated:  (g2 r1 k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1667
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD close close ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best total error: 9550
+Total number of cells: 30144
+Best percent error: 0.31681263
+Fires evaluated:  (k2 k1 m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 1668
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD close close ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best total error: 5879
+Total number of cells: 19816
+Best percent error: 0.29667944
+Fires evaluated:  (m1 r1 k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 1669
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD close close ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best total error: 8267
+Total number of cells: 28200
+Best percent error: 0.29315603
+Fires evaluated:  (m1 g2 k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1670
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD close close ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best total error: 7313
+Total number of cells: 24956
+Best percent error: 0.29303575
+Fires evaluated:  (m1 m2 g2 k2)
+
+-------------------------------------------------------
+               Report for Generation 1671
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD close close ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best total error: 9064
+Total number of cells: 29468
+Best percent error: 0.3075879
+Fires evaluated:  (g2 k2 r1 k1)
+
+-------------------------------------------------------
+               Report for Generation 1672
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD close close ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best total error: 8933
+Total number of cells: 25392
+Best percent error: 0.35180372
+Fires evaluated:  (r1 k1 g2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1673
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD close close ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best total error: 9550
+Total number of cells: 30144
+Best percent error: 0.31681263
+Fires evaluated:  (k1 m2 k2 g2)
+
+-------------------------------------------------------
+               Report for Generation 1674
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD close close ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best total error: 9064
+Total number of cells: 29468
+Best percent error: 0.3075879
+Fires evaluated:  (k1 g2 k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 1675
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD close close ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best total error: 8116
+Total number of cells: 25004
+Best percent error: 0.32458806
+Fires evaluated:  (r1 k1 k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 1676
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD close close ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false NT integer_% integer_= slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false NT integer_% integer_= slope slope)
+Best total error: 7319
+Total number of cells: 23736
+Best percent error: 0.30835018
+Fires evaluated:  (k1 m2 m1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1677
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD close close ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best total error: 7313
+Total number of cells: 24956
+Best percent error: 0.29303575
+Fires evaluated:  (k2 m1 m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 1678
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= boolean_not NBD close close ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false NT integer_% integer_= slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= boolean_not NBD ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false NT integer_% integer_= slope slope)
+Best total error: 8116
+Total number of cells: 25004
+Best percent error: 0.32458806
+Fires evaluated:  (k1 m2 k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 1679
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD close close ISI ISI ISI boolean_and boolean_and 0 integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD ISI ISI ISI boolean_and boolean_and 0 integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 8116
+Total number of cells: 25004
+Best percent error: 0.32458806
+Fires evaluated:  (k2 k1 m2 r1)
+
+-------------------------------------------------------
+               Report for Generation 1680
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD close close ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD ISI ISI ISI boolean_and boolean_and 0 integer_% integer_+ BUI false false NT integer_% integer_= slope slope)
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (m1 k1 m2 r1)
+
+-------------------------------------------------------
+               Report for Generation 1681
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD close close ISI ISI ISI boolean_and boolean_and 0 integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD ISI ISI ISI boolean_and boolean_and 0 integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 7313
+Total number of cells: 24956
+Best percent error: 0.29303575
+Fires evaluated:  (k2 m1 m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 1682
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not NBD close 0 close ISI ISI ISI boolean_and boolean_and 0 integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not NBD) (0) ISI ISI ISI boolean_and boolean_and 0 integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 7979
+Total number of cells: 22148
+Best percent error: 0.36025825
+Fires evaluated:  (g2 r1 m2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1683
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not integer_+ close close close FWI ISI boolean_and ISI 0 boolean_and BUI integer_+ NT integer_% integer_= integer_% slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not integer_+ FWI ISI boolean_and ISI 0 boolean_and BUI integer_+ NT integer_% integer_= integer_% slope slope)
+Best total error: 8933
+Total number of cells: 25392
+Best percent error: 0.35180372
+Fires evaluated:  (r1 k1 m1 g2)
+
+-------------------------------------------------------
+               Report for Generation 1684
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 boolean_or WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not integer_+ close close close FWI integer_% ISI boolean_and ISI 0 boolean_and BUI integer_+ NT integer_% integer_= integer_% slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 boolean_or WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not integer_+ FWI integer_% ISI boolean_and ISI 0 boolean_and BUI integer_+ NT integer_% integer_= integer_% slope slope)
+Best total error: 9550
+Total number of cells: 30144
+Best percent error: 0.31681263
+Fires evaluated:  (m2 k1 k2 g2)
+
+-------------------------------------------------------
+               Report for Generation 1685
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not NBD integer_* close 0 close ISI ISI boolean_and boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not NBD integer_*) (0) ISI ISI boolean_and boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 7313
+Total number of cells: 24956
+Best percent error: 0.29303575
+Fires evaluated:  (m1 m2 k2 g2)
+
+-------------------------------------------------------
+               Report for Generation 1686
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 boolean_or WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not integer_+ close close close FWI integer_% boolean_and ISI 0 boolean_and BUI integer_+ NT integer_% integer_= integer_% slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 boolean_or WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not integer_+ FWI integer_% boolean_and ISI 0 boolean_and BUI integer_+ NT integer_% integer_= integer_% slope slope)
+Best total error: 10216
+Total number of cells: 27336
+Best percent error: 0.37371963
+Fires evaluated:  (m2 r1 k1 g2)
+
+-------------------------------------------------------
+               Report for Generation 1687
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not NBD integer_* close 0 close ISI ISI boolean_and boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not NBD integer_*) (0) ISI ISI boolean_and boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 7319
+Total number of cells: 23736
+Best percent error: 0.30835018
+Fires evaluated:  (k2 m2 k1 m1)
+
+-------------------------------------------------------
+               Report for Generation 1688
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not NBD integer_* close 0 close ISI ISI boolean_and boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not NBD integer_*) (0) ISI ISI boolean_and boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 8110
+Total number of cells: 26224
+Best percent error: 0.3092587
+Fires evaluated:  (k2 r1 g2 m2)
+
+-------------------------------------------------------
+               Report for Generation 1689
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 boolean_or WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= NBD boolean_not integer_+ close close close FWI integer_% ISI :split boolean_and ISI 0 boolean_and BUI integer_+ NT integer_% integer_= integer_% slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 boolean_or WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= NBD boolean_not integer_+ FWI integer_% ISI :split boolean_and ISI 0 boolean_and BUI integer_+ NT integer_% integer_= integer_% slope slope)
+Best total error: 10216
+Total number of cells: 27336
+Best percent error: 0.37371963
+Fires evaluated:  (m2 g2 r1 k1)
+
+-------------------------------------------------------
+               Report for Generation 1690
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close 0 close ISI ISI boolean_and boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) (0) ISI ISI boolean_and boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 8116
+Total number of cells: 25004
+Best percent error: 0.32458806
+Fires evaluated:  (k2 r1 m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 1691
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close 0 close ISI ISI boolean_and boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) (0) ISI ISI boolean_and boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 6827
+Total number of cells: 24280
+Best percent error: 0.28117794
+Fires evaluated:  (r1 g2 k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1692
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close 0 close ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) (0) ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 8116
+Total number of cells: 25004
+Best percent error: 0.32458806
+Fires evaluated:  (m2 r1 k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1693
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close 0 close ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) (0) ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 8110
+Total number of cells: 26224
+Best percent error: 0.3092587
+Fires evaluated:  (g2 k2 m2 r1)
+
+-------------------------------------------------------
+               Report for Generation 1694
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close 0 close ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) (0) ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 9419
+Total number of cells: 26068
+Best percent error: 0.36132422
+Fires evaluated:  (m1 m2 k1 g2)
+
+-------------------------------------------------------
+               Report for Generation 1695
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close 0 close ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) (0) ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 6827
+Total number of cells: 24280
+Best percent error: 0.28117794
+Fires evaluated:  (r1 m1 g2 k2)
+
+-------------------------------------------------------
+               Report for Generation 1696
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close 0 close ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) (0) ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 9064
+Total number of cells: 29468
+Best percent error: 0.3075879
+Fires evaluated:  (g2 r1 k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1697
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close 0 close ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) (0) ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 8116
+Total number of cells: 25004
+Best percent error: 0.32458806
+Fires evaluated:  (k1 r1 m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 1698
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close 0 close ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) (0) ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 7319
+Total number of cells: 23736
+Best percent error: 0.30835018
+Fires evaluated:  (k1 m2 k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1699
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close 0 close ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) (0) ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 5879
+Total number of cells: 19816
+Best percent error: 0.29667944
+Fires evaluated:  (m2 m1 k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 1700
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close 0 close ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) (0) ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 6833
+Total number of cells: 23060
+Best percent error: 0.29631397
+Fires evaluated:  (m1 r1 k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 1701
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close 0 close ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) (0) ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 7319
+Total number of cells: 23736
+Best percent error: 0.30835018
+Fires evaluated:  (k1 m1 m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 1702
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close 0 close ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) (0) ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 9419
+Total number of cells: 26068
+Best percent error: 0.36132422
+Fires evaluated:  (k1 m2 m1 g2)
+
+-------------------------------------------------------
+               Report for Generation 1703
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close 0 close ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) (0) ISI ISI boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 6833
+Total number of cells: 23060
+Best percent error: 0.29631397
+Fires evaluated:  (r1 m1 k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 1704
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= integer_= boolean_not integer_* close 0 close ISI ISI boolean_and integer_+ ISI BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= integer_= boolean_not integer_*) (0) ISI ISI boolean_and integer_+ ISI BUI false NT integer_% integer_= slope slope slope)
+Best total error: 8110
+Total number of cells: 26224
+Best percent error: 0.3092587
+Fires evaluated:  (r1 m2 g2 k2)
+
+-------------------------------------------------------
+               Report for Generation 1705
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= integer_= boolean_not integer_* close 0 close ISI boolean_and integer_+ ISI BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= integer_= boolean_not integer_*) (0) ISI boolean_and integer_+ ISI BUI false NT integer_% integer_= slope slope slope)
+Best total error: 6827
+Total number of cells: 24280
+Best percent error: 0.28117794
+Fires evaluated:  (m1 r1 g2 k2)
+
+-------------------------------------------------------
+               Report for Generation 1706
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close 0 close ISI ISI 0 boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) (0) ISI ISI 0 boolean_and integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 9550
+Total number of cells: 30144
+Best percent error: 0.31681263
+Fires evaluated:  (g2 k2 k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1707
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= integer_= boolean_not integer_* boolean_and close 0 close ISI boolean_and integer_+ ISI BUI false NT integer_% integer_+ integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= integer_= boolean_not integer_* boolean_and) (0) ISI boolean_and integer_+ ISI BUI false NT integer_% integer_+ integer_= slope slope slope)
+Best total error: 7319
+Total number of cells: 23736
+Best percent error: 0.30835018
+Fires evaluated:  (k1 m1 m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 1708
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close close close close ISI boolean_and integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) () ISI boolean_and integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best total error: 5879
+Total number of cells: 19816
+Best percent error: 0.29667944
+Fires evaluated:  (r1 m2 k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1709
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close close close close ISI boolean_and integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) () ISI boolean_and integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best total error: 6827
+Total number of cells: 24280
+Best percent error: 0.28117794
+Fires evaluated:  (r1 k2 g2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1710
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close close close close ISI boolean_and integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) () ISI boolean_and integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best total error: 8267
+Total number of cells: 28200
+Best percent error: 0.29315603
+Fires evaluated:  (m1 g2 k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1711
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close close close close ISI boolean_and integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) () ISI boolean_and integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best total error: 9550
+Total number of cells: 30144
+Best percent error: 0.31681263
+Fires evaluated:  (g2 k2 k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1712
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close close close close ISI boolean_and integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) () ISI boolean_and integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best total error: 9550
+Total number of cells: 30144
+Best percent error: 0.31681263
+Fires evaluated:  (g2 k2 k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1713
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close close close close ISI boolean_and integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) () ISI boolean_and integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best total error: 7979
+Total number of cells: 22148
+Best percent error: 0.36025825
+Fires evaluated:  (r1 g2 m1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1714
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= FWI boolean_not integer_* close close close close ISI boolean_and integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= FWI boolean_not integer_*) () ISI boolean_and integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best total error: 7319
+Total number of cells: 23736
+Best percent error: 0.30835018
+Fires evaluated:  (m1 k1 k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 1715
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close close close close ISI boolean_and integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) () ISI boolean_and integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best total error: 7313
+Total number of cells: 24956
+Best percent error: 0.29303575
+Fires evaluated:  (m2 g2 k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1716
+-------------------------------------------------------
+Best plushy: (slope boolean_= integer_- boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close close close close ISI boolean_and boolean_not integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best program: (slope boolean_= integer_- boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) () ISI boolean_and boolean_not integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best total error: 9419
+Total number of cells: 26068
+Best percent error: 0.36132422
+Fires evaluated:  (g2 k1 m1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1717
+-------------------------------------------------------
+Best plushy: (slope boolean_= integer_- boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close close close close ISI boolean_and boolean_not integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best program: (slope boolean_= integer_- boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) () ISI boolean_and boolean_not integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best total error: 8116
+Total number of cells: 25004
+Best percent error: 0.32458806
+Fires evaluated:  (k1 r1 m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 1718
+-------------------------------------------------------
+Best plushy: (slope boolean_= integer_- boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close close close close ISI boolean_and boolean_not integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best program: (slope boolean_= integer_- boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) () ISI boolean_and boolean_not integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best total error: 8267
+Total number of cells: 28200
+Best percent error: 0.29315603
+Fires evaluated:  (g2 k2 m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 1719
+-------------------------------------------------------
+Best plushy: (slope boolean_= integer_- boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not integer_* close close close close ISI boolean_and boolean_not integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best program: (slope boolean_= integer_- boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not integer_*) () ISI boolean_and boolean_not integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best total error: 7313
+Total number of cells: 24956
+Best percent error: 0.29303575
+Fires evaluated:  (m2 m1 g2 k2)
+
+-------------------------------------------------------
+               Report for Generation 1720
+-------------------------------------------------------
+Best plushy: (slope boolean_= integer_- boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not NBD integer_* close close close close ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope)
+Best program: (slope boolean_= integer_- boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not NBD integer_*) () ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope)
+Best total error: 7979
+Total number of cells: 22148
+Best percent error: 0.36025825
+Fires evaluated:  (g2 r1 m2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1721
+-------------------------------------------------------
+Best plushy: (slope boolean_= integer_- boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not NBD integer_* close close close close ISI boolean_and boolean_not integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best program: (slope boolean_= integer_- boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not NBD integer_*) () ISI boolean_and boolean_not integer_+ BUI false NT integer_% integer_= integer_= slope slope slope)
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (r1 m1 k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1722
+-------------------------------------------------------
+Best plushy: (slope boolean_= integer_- boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= 0 boolean_not NBD NBD integer_* close close 0 close close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope)
+Best program: (slope boolean_= integer_- boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= 0 boolean_not NBD NBD integer_*) () 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope)
+Best total error: 5879
+Total number of cells: 19816
+Best percent error: 0.29667944
+Fires evaluated:  (m2 m1 k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 1723
+-------------------------------------------------------
+Best plushy: (slope boolean_= integer_- boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= 0 boolean_not NBD NBD integer_* close close 0 close close boolean_= integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope)
+Best program: (slope boolean_= integer_- boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= 0 boolean_not NBD NBD integer_*) () 0 boolean_= integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope)
+Best total error: 8110
+Total number of cells: 26224
+Best percent error: 0.3092587
+Fires evaluated:  (r1 g2 m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 1724
+-------------------------------------------------------
+Best plushy: (slope boolean_= integer_- boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if integer_= integer_= boolean_not NBD integer_* close close close close boolean_not ISI boolean_and boolean_not integer_+ BUI false NT integer_% integer_= integer_= slope NT slope slope)
+Best program: (slope boolean_= integer_- boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not exec_if (integer_= integer_= boolean_not NBD integer_*) () boolean_not ISI boolean_and boolean_not integer_+ BUI false NT integer_% integer_= integer_= slope NT slope slope)
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (r1 m2 m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 1725
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* close close 0 close close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope integer_+)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope integer_+)
+Best total error: 9064
+Total number of cells: 29468
+Best percent error: 0.3075879
+Fires evaluated:  (k1 r1 k2 g2)
+
+-------------------------------------------------------
+               Report for Generation 1726
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* close close 0 close close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best total error: 8933
+Total number of cells: 25392
+Best percent error: 0.35180372
+Fires evaluated:  (r1 g2 m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 1727
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* close close 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope integer_+)
+Best program: (boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope integer_+)
+Best total error: 9419
+Total number of cells: 26068
+Best percent error: 0.36132422
+Fires evaluated:  (m2 m1 g2 k1)
+
+-------------------------------------------------------
+               Report for Generation 1728
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* close close 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope integer_+)
+Best program: (boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope integer_+)
+Best total error: 7319
+Total number of cells: 23736
+Best percent error: 0.30835018
+Fires evaluated:  (m2 m1 k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 1729
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* close close 0 close close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope integer_+)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope integer_+)
+Best total error: 9419
+Total number of cells: 26068
+Best percent error: 0.36132422
+Fires evaluated:  (g2 m1 m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 1730
+-------------------------------------------------------
+Best plushy: (boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* close 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope integer_+)
+Best program: (boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope integer_+)
+Best total error: 9064
+Total number of cells: 29468
+Best percent error: 0.3075879
+Fires evaluated:  (k2 g2 r1 k1)
+
+-------------------------------------------------------
+               Report for Generation 1731
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* close close 0 close close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best total error: 8267
+Total number of cells: 28200
+Best percent error: 0.29315603
+Fires evaluated:  (m1 k2 g2 k1)
+
+-------------------------------------------------------
+               Report for Generation 1732
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* close close 0 close close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best total error: 8267
+Total number of cells: 28200
+Best percent error: 0.29315603
+Fires evaluated:  (g2 k2 m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 1733
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT boolean_and integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* close close 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT boolean_and integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best total error: 9064
+Total number of cells: 29468
+Best percent error: 0.3075879
+Fires evaluated:  (k1 g2 r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1734
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT boolean_and integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* close close 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT boolean_and integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best total error: 5879
+Total number of cells: 19816
+Best percent error: 0.29667944
+Fires evaluated:  (r1 k2 m1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1735
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT boolean_and integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT boolean_and integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best total error: 8110
+Total number of cells: 26224
+Best percent error: 0.3092587
+Fires evaluated:  (k2 g2 r1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1736
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT boolean_and integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT boolean_and integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best total error: 8267
+Total number of cells: 28200
+Best percent error: 0.29315603
+Fires evaluated:  (m1 g2 k2 k1)
+
+-------------------------------------------------------
+               Report for Generation 1737
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT boolean_and integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% integer_% boolean_and boolean_and integer_+ BUI false false NT integer_% integer_= slope slope slope slope 0)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT boolean_and integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% integer_% boolean_and boolean_and integer_+ BUI false false NT integer_% integer_= slope slope slope slope 0)
+Best total error: 7979
+Total number of cells: 22148
+Best percent error: 0.36025825
+Fires evaluated:  (r1 g2 m1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1738
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best total error: 6833
+Total number of cells: 23060
+Best percent error: 0.29631397
+Fires evaluated:  (r1 k1 k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1739
+-------------------------------------------------------
+Best plushy: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best program: (slope boolean_= boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best total error: 5879
+Total number of cells: 19816
+Best percent error: 0.29667944
+Fires evaluated:  (m1 r1 k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 1740
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best total error: 7319
+Total number of cells: 23736
+Best percent error: 0.30835018
+Fires evaluated:  (k2 m2 m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 1741
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best total error: 8267
+Total number of cells: 28200
+Best percent error: 0.29315603
+Fires evaluated:  (k2 g2 m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 1742
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best total error: 8267
+Total number of cells: 28200
+Best percent error: 0.29315603
+Fires evaluated:  (k1 k2 g2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1743
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best total error: 9064
+Total number of cells: 29468
+Best percent error: 0.3075879
+Fires evaluated:  (k1 k2 r1 g2)
+
+-------------------------------------------------------
+               Report for Generation 1744
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best total error: 8116
+Total number of cells: 25004
+Best percent error: 0.32458806
+Fires evaluated:  (m2 k1 r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1745
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best total error: 8110
+Total number of cells: 26224
+Best percent error: 0.3092587
+Fires evaluated:  (m2 r1 g2 k2)
+
+-------------------------------------------------------
+               Report for Generation 1746
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best total error: 6833
+Total number of cells: 23060
+Best percent error: 0.29631397
+Fires evaluated:  (k2 r1 m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 1747
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best total error: 7979
+Total number of cells: 22148
+Best percent error: 0.36025825
+Fires evaluated:  (m2 m1 r1 g2)
+
+-------------------------------------------------------
+               Report for Generation 1748
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best total error: 10216
+Total number of cells: 27336
+Best percent error: 0.37371963
+Fires evaluated:  (k1 m2 g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 1749
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best total error: 7313
+Total number of cells: 24956
+Best percent error: 0.29303575
+Fires evaluated:  (m2 g2 k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1750
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD integer_* 0 close integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= integer_= boolean_not NBD integer_* 0 integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best total error: 10216
+Total number of cells: 27336
+Best percent error: 0.37371963
+Fires evaluated:  (k1 r1 g2 m2)
+
+-------------------------------------------------------
+               Report for Generation 1751
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= 0 boolean_not NBD integer_* 0 close integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ boolean_not integer_= 0 boolean_not NBD integer_* 0 integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope 0)
+Best total error: 7319
+Total number of cells: 23736
+Best percent error: 0.30835018
+Fires evaluated:  (m1 k2 k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1752
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best total error: 9064
+Total number of cells: 29468
+Best percent error: 0.3075879
+Fires evaluated:  (k1 k2 g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 1753
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best total error: 7319
+Total number of cells: 23736
+Best percent error: 0.30835018
+Fires evaluated:  (k1 m2 m1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1754
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best total error: 8933
+Total number of cells: 25392
+Best percent error: 0.35180372
+Fires evaluated:  (g2 m1 r1 k1)
+
+-------------------------------------------------------
+               Report for Generation 1755
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope)
+Best total error: 8116
+Total number of cells: 25004
+Best percent error: 0.32458806
+Fires evaluated:  (r1 m2 k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1756
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best total error: 9550
+Total number of cells: 30144
+Best percent error: 0.31681263
+Fires evaluated:  (g2 k2 k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1757
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best total error: 9064
+Total number of cells: 29468
+Best percent error: 0.3075879
+Fires evaluated:  (k2 g2 r1 k1)
+
+-------------------------------------------------------
+               Report for Generation 1758
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD 0 integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD 0 integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope 0)
+Best total error: 8116
+Total number of cells: 25004
+Best percent error: 0.32458806
+Fires evaluated:  (r1 k1 m2 k2)
+
+-------------------------------------------------------
+               Report for Generation 1759
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best total error: 10216
+Total number of cells: 27336
+Best percent error: 0.37371963
+Fires evaluated:  (m2 r1 k1 g2)
+
+-------------------------------------------------------
+               Report for Generation 1760
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope slope)
+Best total error: 8933
+Total number of cells: 25392
+Best percent error: 0.35180372
+Fires evaluated:  (g2 m1 k1 r1)
+
+-------------------------------------------------------
+               Report for Generation 1761
+-------------------------------------------------------
+Best plushy: (integer_* slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best program: (integer_* slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best total error: 6827
+Total number of cells: 24280
+Best percent error: 0.28117794
+Fires evaluated:  (g2 r1 m1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1762
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope integer_% 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope integer_% 0)
+Best total error: 7979
+Total number of cells: 22148
+Best percent error: 0.36025825
+Fires evaluated:  (m2 m1 g2 r1)
+
+-------------------------------------------------------
+               Report for Generation 1763
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best total error: 9064
+Total number of cells: 29468
+Best percent error: 0.3075879
+Fires evaluated:  (g2 k1 r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1764
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope integer_% 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% ISI boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope integer_% 0)
+Best total error: 8110
+Total number of cells: 26224
+Best percent error: 0.3092587
+Fires evaluated:  (r1 m2 k2 g2)
+
+-------------------------------------------------------
+               Report for Generation 1765
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best total error: 8110
+Total number of cells: 26224
+Best percent error: 0.3092587
+Fires evaluated:  (m2 g2 r1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1766
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 close integer_% integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* 0 integer_% integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope slope slope 0)
+Best total error: 8267
+Total number of cells: 28200
+Best percent error: 0.29315603
+Fires evaluated:  (g2 m1 k1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1767
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* integer_+ 0 close integer_% integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope TB slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* integer_+ 0 integer_% integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope TB slope slope 0)
+Best total error: 7319
+Total number of cells: 23736
+Best percent error: 0.30835018
+Fires evaluated:  (m1 k2 k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1768
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* integer_+ 0 close integer_% integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope TB slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* integer_+ 0 integer_% integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope TB slope slope 0)
+Best total error: 9064
+Total number of cells: 29468
+Best percent error: 0.3075879
+Fires evaluated:  (k2 k1 r1 g2)
+
+-------------------------------------------------------
+               Report for Generation 1769
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* integer_+ 0 close integer_% integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope TB slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* integer_+ 0 integer_% integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope TB slope slope 0)
+Best total error: 8267
+Total number of cells: 28200
+Best percent error: 0.29315603
+Fires evaluated:  (k2 m1 g2 k1)
+
+-------------------------------------------------------
+               Report for Generation 1770
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* integer_+ 0 close integer_% integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope TB slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* integer_+ 0 integer_% integer_% integer_% boolean_and integer_+ integer_+ BUI false NT integer_% integer_= slope TB slope slope 0)
+Best total error: 7979
+Total number of cells: 22148
+Best percent error: 0.36025825
+Fires evaluated:  (g2 m2 m1 r1)
+
+-------------------------------------------------------
+               Report for Generation 1771
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 close integer_% integer_% integer_% integer_% integer_+ integer_+ BUI false NT integer_% integer_= integer_= slope TB slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 integer_% integer_% integer_% integer_% integer_+ integer_+ BUI false NT integer_% integer_= integer_= slope TB slope 0)
+Best total error: 5879
+Total number of cells: 19816
+Best percent error: 0.29667944
+Fires evaluated:  (m1 k2 r1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1772
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= 0 boolean_not NBD integer_* slope 0 0 integer_% integer_% integer_% integer_% boolean_and integer_+ BUI false NT integer_% integer_= integer_= slope TB slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= 0 boolean_not NBD integer_* slope 0 0 integer_% integer_% integer_% integer_% boolean_and integer_+ BUI false NT integer_% integer_= integer_= slope TB slope 0)
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (m1 m2 k1 r1)
+
+-------------------------------------------------------
+               Report for Generation 1773
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 close integer_% integer_% integer_% integer_% integer_+ integer_+ BUI false NT integer_% integer_= integer_= slope TB slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 integer_% integer_% integer_% integer_% integer_+ integer_+ BUI false NT integer_% integer_= integer_= slope TB slope 0)
+Best total error: 5879
+Total number of cells: 19816
+Best percent error: 0.29667944
+Fires evaluated:  (k2 r1 m1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1774
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 close integer_% integer_% integer_% integer_% integer_+ integer_+ BUI false NT integer_% integer_= integer_= slope TB slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 integer_% integer_% integer_% integer_% integer_+ integer_+ BUI false NT integer_% integer_= integer_= slope TB slope 0)
+Best total error: 9550
+Total number of cells: 30144
+Best percent error: 0.31681263
+Fires evaluated:  (g2 k2 m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 1775
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 0 integer_% integer_% integer_% integer_% boolean_and integer_+ BUI false NT integer_% false integer_= slope TB slope 0 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 0 integer_% integer_% integer_% integer_% boolean_and integer_+ BUI false NT integer_% false integer_= slope TB slope 0 0)
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (m1 r1 k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1776
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 0 integer_% integer_% integer_% integer_% boolean_and integer_+ BUI false NT integer_% false integer_= slope TB slope 0 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 0 integer_% integer_% integer_% integer_% boolean_and integer_+ BUI false NT integer_% false integer_= slope TB slope 0 0)
+Best total error: 6827
+Total number of cells: 24280
+Best percent error: 0.28117794
+Fires evaluated:  (g2 r1 m1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1777
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 0 integer_% integer_% integer_% integer_% boolean_and integer_+ BUI false NT integer_% integer_= integer_= slope TB slope 0 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 0 integer_% integer_% integer_% integer_% boolean_and integer_+ BUI false NT integer_% integer_= integer_= slope TB slope 0 0)
+Best total error: 9550
+Total number of cells: 30144
+Best percent error: 0.31681263
+Fires evaluated:  (m2 k1 g2 k2)
+
+-------------------------------------------------------
+               Report for Generation 1778
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 0 integer_% integer_% integer_% integer_% integer_+ close BUI false NT integer_% false integer_= integer_= TB slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 0 integer_% integer_% integer_% integer_% integer_+ BUI false NT integer_% false integer_= integer_= TB slope slope 0)
+Best total error: 9064
+Total number of cells: 29468
+Best percent error: 0.3075879
+Fires evaluated:  (g2 k2 k1 r1)
+
+-------------------------------------------------------
+               Report for Generation 1779
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 0 integer_% integer_% integer_% integer_% integer_+ close BUI false NT integer_% false integer_= integer_= TB slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 0 integer_% integer_% integer_% integer_% integer_+ BUI false NT integer_% false integer_= integer_= TB slope slope 0)
+Best total error: 7319
+Total number of cells: 23736
+Best percent error: 0.30835018
+Fires evaluated:  (k2 m1 k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1780
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 0 integer_% integer_% integer_% integer_% integer_+ integer_+ BUI false NT integer_% false integer_= slope TB slope 0 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 0 integer_% integer_% integer_% integer_% integer_+ integer_+ BUI false NT integer_% false integer_= slope TB slope 0 0)
+Best total error: 7313
+Total number of cells: 24956
+Best percent error: 0.29303575
+Fires evaluated:  (g2 m2 m1 k2)
+
+-------------------------------------------------------
+               Report for Generation 1781
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_= integer_+ close BUI false NT integer_% false integer_= integer_= TB slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_= integer_+ BUI false NT integer_% false integer_= integer_= TB slope slope 0)
+Best total error: 6827
+Total number of cells: 24280
+Best percent error: 0.28117794
+Fires evaluated:  (m1 r1 k2 g2)
+
+-------------------------------------------------------
+               Report for Generation 1782
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 0 integer_% integer_% integer_% integer_+ close BUI false NT integer_% false integer_= slope TB slope slope)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 0 integer_% integer_% integer_% integer_+ BUI false NT integer_% false integer_= slope TB slope slope)
+Best total error: 9550
+Total number of cells: 30144
+Best percent error: 0.31681263
+Fires evaluated:  (m2 k1 g2 k2)
+
+-------------------------------------------------------
+               Report for Generation 1783
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 0 integer_% integer_% integer_% integer_+ close BUI false NT integer_% false integer_= slope TB slope slope)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope 0 0 integer_% integer_% integer_% integer_+ BUI false NT integer_% false integer_= slope TB slope slope)
+Best total error: 6833
+Total number of cells: 23060
+Best percent error: 0.29631397
+Fires evaluated:  (k2 m1 r1 k1)
+
+-------------------------------------------------------
+               Report for Generation 1784
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= boolean_not NBD slope 0 0 integer_% integer_% integer_+ close BUI false NT integer_% false integer_= slope TB slope)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= boolean_not NBD slope 0 0 integer_% integer_% integer_+ BUI false NT integer_% false integer_= slope TB slope)
+Best total error: 9550
+Total number of cells: 30144
+Best percent error: 0.31681263
+Fires evaluated:  (m2 k1 k2 g2)
+
+-------------------------------------------------------
+               Report for Generation 1785
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD FWI integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_= integer_+ close BUI false NT integer_% false integer_= integer_= TB slope slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD FWI integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_= integer_+ BUI false NT integer_% false integer_= integer_= TB slope slope 0)
+Best total error: 7319
+Total number of cells: 23736
+Best percent error: 0.30835018
+Fires evaluated:  (k2 m1 m2 k1)
+
+-------------------------------------------------------
+               Report for Generation 1786
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= boolean_not NBD slope 0 0 integer_% ISI close BUI false NT integer_% false integer_= slope TB slope)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= boolean_not NBD slope 0 0 integer_% ISI BUI false NT integer_% false integer_= slope TB slope)
+Best total error: 7319
+Total number of cells: 23736
+Best percent error: 0.30835018
+Fires evaluated:  (k1 m1 k2 m2)
+
+-------------------------------------------------------
+               Report for Generation 1787
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_= integer_+ BUI false NT integer_% false integer_= integer_= slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_= integer_+ BUI false NT integer_% false integer_= integer_= slope 0)
+Best total error: 7319
+Total number of cells: 23736
+Best percent error: 0.30835018
+Fires evaluated:  (k1 m2 k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1788
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_= integer_+ BUI false NT integer_% false integer_= integer_= slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_= integer_+ BUI false NT integer_% false integer_= integer_= slope 0)
+Best total error: 7985
+Total number of cells: 20928
+Best percent error: 0.38154626
+Fires evaluated:  (r1 m2 m1 k1)
+
+-------------------------------------------------------
+               Report for Generation 1789
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_= integer_+ BUI false NT integer_% false integer_= integer_= slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_= integer_+ BUI false NT integer_% false integer_= integer_= slope 0)
+Best total error: 5879
+Total number of cells: 19816
+Best percent error: 0.29667944
+Fires evaluated:  (m2 r1 k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1790
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_= integer_+ BUI false NT integer_% false integer_= integer_= slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_= integer_+ BUI false NT integer_% false integer_= integer_= slope 0)
+Best total error: 6827
+Total number of cells: 24280
+Best percent error: 0.28117794
+Fires evaluated:  (r1 g2 k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1791
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_+ integer_* slope integer_+ 0 integer_% integer_% integer_% integer_% integer_= integer_= integer_+ BUI false NT integer_% false integer_= integer_= BUI slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_+ integer_* slope integer_+ 0 integer_% integer_% integer_% integer_% integer_= integer_= integer_+ BUI false NT integer_% false integer_= integer_= BUI slope 0)
+Best total error: 7313
+Total number of cells: 24956
+Best percent error: 0.29303575
+Fires evaluated:  (k2 m1 m2 g2)
+
+-------------------------------------------------------
+               Report for Generation 1792
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_+ integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_= integer_+ BUI false NT integer_% false integer_= integer_= BUI slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_+ integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_= integer_+ BUI false NT integer_% false integer_= integer_= BUI slope 0)
+Best total error: 8116
+Total number of cells: 25004
+Best percent error: 0.32458806
+Fires evaluated:  (r1 k2 k1 m2)
+
+-------------------------------------------------------
+               Report for Generation 1793
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_+ integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_= integer_+ BUI false NT integer_% false integer_= integer_= BUI slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_+ integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_= integer_+ BUI false NT integer_% false integer_= integer_= BUI slope 0)
+Best total error: 7313
+Total number of cells: 24956
+Best percent error: 0.29303575
+Fires evaluated:  (m2 k2 m1 g2)
+
+-------------------------------------------------------
+               Report for Generation 1794
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_+ integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_% integer_= integer_+ BUI NT integer_% false integer_= integer_= BUI slope 0 integer_*)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_+ integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_% integer_= integer_+ BUI NT integer_% false integer_= integer_= BUI slope 0 integer_*)
+Best total error: 6833
+Total number of cells: 23060
+Best percent error: 0.29631397
+Fires evaluated:  (r1 k1 k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1795
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_+ integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_% integer_= integer_+ BUI NT integer_% false integer_= integer_= BUI slope 0 integer_* integer_-)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_+ integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_% integer_= integer_+ BUI NT integer_% false integer_= integer_= BUI slope 0 integer_* integer_-)
+Best total error: 6833
+Total number of cells: 23060
+Best percent error: 0.29631397
+Fires evaluated:  (r1 k1 k2 m1)
+
+-------------------------------------------------------
+               Report for Generation 1796
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_+ integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_= integer_+ BUI false NT integer_% false integer_= integer_= BUI slope 0)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_+ integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_= integer_+ BUI false NT integer_% false integer_= integer_= BUI slope 0)
+Best total error: 8116
+Total number of cells: 25004
+Best percent error: 0.32458806
+Fires evaluated:  (k1 m2 k2 r1)
+
+-------------------------------------------------------
+               Report for Generation 1797
+-------------------------------------------------------
+Best plushy: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_+ integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_= integer_+ BUI false NT integer_% false integer_= integer_= BUI slope integer_% 0 integer_*)
+Best program: (slope boolean_= NT NT 1 WS NT integer_* integer_* integer_+ integer_= integer_= 0 boolean_not NBD integer_+ integer_* slope integer_+ 0 0 integer_% integer_% integer_% integer_% integer_= integer_+ BUI false NT integer_% false integer_= integer_= BUI slope integer_% 0 integer_*)
+Best total error: 9550
+Total number of cells: 30144
+Best percent error: 0.31681263
+Fires evaluated:  (m2 k2 k1 g2)
+
