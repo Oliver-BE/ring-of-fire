@@ -34,10 +34,15 @@ Project inspired by and data sourced from [Cell2Fire](https://github.com/cell2fi
 
 ## Data
 
---- 
-test: asdf
-poop: stinky 
----
+| Data File               | Description |
+| :------------------------ | ------------- |
+| `Forest.asc`            |     adf     
+| `fbp_lookup_table.csv`  |             |
+| `Weather.csv`           |             |
+| `FinalScarGrid.csv`     |             |
+| `elevation.asc`         |             |
+| `slope.asc`             |             |
+| `IgnitionPoints.csv`    |             |
 
 ## Example Outputs
 *include screenshots here*
