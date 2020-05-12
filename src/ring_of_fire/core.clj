@@ -28,32 +28,9 @@
     (nth flattened-grid num-cell)
     0
     ))
+;; should return 1 (ignition cell)
+#_(safe-get-cell (:m1 final-scar-grid-master-flattened) 864)
 
-
-;; should return 1 (bottom right value in test-grid)
-#_(safe-get-cell test-grid 2 2)
-#_(safe-get-cell test-burning-grid 57 53)
-
-#_(def burning-neighbor 0)
-#_(def direction 45)
-#_(if (not= 0 burning-neighbor) (assoc {} direction burning-neighbor))
-
-#_(def cell-id 4)
-#_(def width 3)
-#_(def test-grid [4 1 2 0 0 5 6 7 8])
-#_(into {} (for
-             [input [[0 (+ cell-id 1)]
-                     [45 (- cell-id (- width 1))]
-                     [90 (- cell-id width)]
-                     [135 (- cell-id (+ width 1))]
-                     [180 (- cell-id 1)]
-                     [225 (+ cell-id (- width 1))]
-                     [270 (+ cell-id width)]
-                     [315 (+ cell-id (+ width 1))]]]
-             (let [direction (nth input 0)
-                   num-cell-to-get (nth input 1)
-                   burning-neighbor (safe-get-cell test-grid num-cell-to-get)]
-               (if (not= 0 burning-neighbor) (assoc {} direction burning-neighbor)))))
 
 ;;Direction string keys are now angles (east is 0, west is 180, etc)
 (defn get-burning-neighbors-map-using-time
