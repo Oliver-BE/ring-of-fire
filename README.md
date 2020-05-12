@@ -98,10 +98,10 @@ with the argmap
 ```
 on the second Central Kootenay fire:
 
-_Our output_
+_Our output:_
 ![Our output k2](k2-output.png)
 
-_Expected output_
+_Expected output:_
 ![Actual output k2](k2.png)
 
 This program resulted in an 11% error when testing it on `k2`. However, `k2` was part of 
