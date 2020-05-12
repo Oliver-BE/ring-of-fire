@@ -56,13 +56,13 @@ Steps needed to view the output of a selected program on a specified fire:
 
 2. Save the output of that program to a CSV:
     1. Call the `grid-to-csv` function in `core.clj` 
-    (make sure the `argmap` passed in matches the was used to create your program)
+    (make sure the `argmap` passed in matches the one used to create the program)
     
 3. Print out the above generated CSV file:
     1. Navigate to the `burn-demo.clj` file
     2. Use the `read-in-data` function to read in your CSV and `def` the resulting output
     3. Change the line that states `def selected-fire` to reference your new fire from above
-    4. Run the file
+    4. Run the `burn-demo.clj` file
     
 4. The difference between the resulting fire and the actual fire can be found
 by calling `calculate-pct-difference` in `burn-demo.clj` and passing in the 
@@ -98,10 +98,10 @@ with the argmap
 ```
 on the second Central Kootenay fire:
 
-Our output:
+_Our output_
 ![Our output k2](k2-output.png)
 
-Expected output:
+_Expected output_
 ![Actual output k2](k2.png)
 
 This program resulted in an 11% error when testing it on `k2`. However, `k2` was part of 
