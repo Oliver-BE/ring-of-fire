@@ -11,9 +11,8 @@ Project inspired by and data sourced from [Cell2Fire](https://github.com/cell2fi
 ## Usage
 
 **To run:**
- * Clone  repository
+ * Clone repository
  * Navigate to  `src/ring-of-fire` and run command: `lein run`
-
     * Note that `lein run` will run the genetic program with the following default arguments:
 
     ```clojure
@@ -30,24 +29,25 @@ Project inspired by and data sourced from [Cell2Fire](https://github.com/cell2fi
     ```
 
  * To run the genetic program with user-defined arguments, add key-value pairs as arguments after `lein run` 
-
  * Example usage: `lein run :population-size 20 :parent-selection :tournament :max-generations 1000` 
 
 
 ## Data
 
-The following data was sourced from [Cell2Fire](https://github.com/cell2fire/Cell2Fire) and used
-to generate
+We sourced our data from [Cell2Fire](https://github.com/cell2fire/Cell2Fire). 
+The data was used to both specify the parameters for instructions in our genetic program (such as the weather data) and to 
+calculate the error in our results (by using the actual final fire scar).
+Ten fires were provided, each with data of the following type:
 
-| Data File               | Description |
+| Data File                | Description   |
 | ------------------------ | ------------- |
-| `Forest.asc`            |     adf     
-| `fbp_lookup_table.csv`  |             |
-| `Weather.csv`           |             |
-| `FinalScarGrid.csv`     |             |
-| `elevation.asc`         |             |
-| `slope.asc`             |             |
-| `IgnitionPoints.csv`    |             |
+| `Forest.asc`             | A grid composed of numeric values that identify what type terrain occupies each cell. Use `fbp_lookup_table` as a lookup for each value  |     
+| `fbp_lookup_table.csv`   | A lookup table to take cell values from `Forest.asc` and translate them into fuel types (includes descriptive names such as "Boreal Sprice" as well)             |
+| `Weather.csv`            | A table including hourly data from start to finish with variables such as wind speed (`WS`) and fire weather index (`FWI`)             |
+| `FinalScarGrid.csv`      | A grid displaying the final state of the fully-burned fire, where cells marked 1 were those that burned and cells marked 0 were those that did not            |
+| `elevation.asc`          | A grid containing elevation values (altitude in meters of the current cell with respect to the sea level)            |
+| `slope.asc`              | A grid containing slope values (the slope percentage in terms of the vertical rise over the horizontal run and adjacent cells)         |
+| `IgnitionPoints.csv`     | Contains the value of the ignition cell (note that this cell value iis 1-indexed)         |
 
 ## Example Outputs
 *include screenshots here*
