@@ -1,6 +1,10 @@
 # ring-of-fire
 
-A parallelized genetic program for evolving rules that describe a cellular automaton-based wildfire simulation using Clojure and based on the [propel framework](https://github.com/lspector/propel) designed by [Lee Spector](https://github.com/lspector). Created by [Isaac Caruso](https://github.com/icaruso21), [Oliver Baldwin Edwards](https://github.com/Oliver-BE), and [Martin Glusker](https://github.com/mglusker). Special thanks to Lee Spector for his invaluable assistance and advice.
+A parallelized genetic program for evolving rules that describe a cellular automaton-based wildfire simulation using Clojure and based on the [propel framework](https://github.com/lspector/propel) designed by [Lee Spector](https://github.com/lspector). 
+
+Created by [Isaac Caruso](https://github.com/icaruso21), [Oliver Baldwin Edwards](https://github.com/Oliver-BE), and [Martin Glusker](https://github.com/mglusker). 
+Special thanks to Lee Spector for his invaluable assistance and advice. 
+Project inspired by and data sourced from [Cell2Fire](https://github.com/cell2fire/Cell2Fire).
 
 ## Usage
 
@@ -28,13 +32,13 @@ A parallelized genetic program for evolving rules that describe a cellular autom
  * Example usage: `lein run :population-size 20 :parent-selection :tournament :max-generations 1000` 
 
 
-
 ## Data
 
 --- 
 test: asdf
 poop: stinky 
 ---
+
 ## Example Outputs
 *include screenshots here*
 *also include how to take a rule generated from ring-of-fire and use that to run our quil program and output the grid*
@@ -45,6 +49,7 @@ Requires Java SDK 1.8 and Leiningen.
 
 ## License
 
-Copyright © 2020 
+* This software is intended for research use. 
+* <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
 
