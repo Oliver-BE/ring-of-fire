@@ -1,4 +1,8 @@
-# ring-of-fire
+# ring-of-fire 
+
+<img src="logo.png" width="200" height="200"/>
+
+
 
 A parallelized genetic program for evolving rules that describe a cellular automaton-based wildfire simulation using Clojure and based on the [propel framework](https://github.com/lspector/propel) designed by [Lee Spector](https://github.com/lspector). 
 
@@ -34,8 +38,11 @@ Project inspired by and data sourced from [Cell2Fire](https://github.com/cell2fi
 
 ## Data
 
+The following data was sourced from [Cell2Fire](https://github.com/cell2fire/Cell2Fire) and used
+to generate
+
 | Data File               | Description |
-| :------------------------ | ------------- |
+| ------------------------ | ------------- |
 | `Forest.asc`            |     adf     
 | `fbp_lookup_table.csv`  |             |
 | `Weather.csv`           |             |
