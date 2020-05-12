@@ -46,7 +46,7 @@ Ten fires were provided, each with data of the following type:
 | `FinalScarGrid.csv`      | A grid displaying the final state of the fully-burned fire, where cells marked 1 were those that burned and cells marked 0 were those that did not            |
 | `elevation.asc`          | A grid containing elevation values (altitude in meters of the current cell with respect to the sea level)            |
 | `slope.asc`              | A grid containing slope values (the slope percentage in terms of the vertical rise over the horizontal run and adjacent cells)         |
-| `IgnitionPoints.csv`     | Contains the value of the ignition cell (note that this cell value iis 1-indexed)         |
+| `IgnitionPoints.csv`     | Contains the value of the ignition cell (note that this cell value is 1-indexed)         |
 
 ## Example Outputs
 
