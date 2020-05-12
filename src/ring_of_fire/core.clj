@@ -648,7 +648,7 @@
   (write-csv (partition (num-columns fire-name) (run-fire fire-name (make-split-program program) argmap)) destination))
 #_(grid-to-csv "m1" '(ISI) selected-argmap "data/Outputs/output.csv")
 
-#_(def selected-program '(exec_dup (boolean_and WS boolean_not 2 integer_* integer_= TB integer_% NT WD WD) 0 WD boolean_not FWI FWI exec_dup (1 integer_+ TB false) exec_dup (WS)))
+#_(def selected-program  '(0 2 NT integer_= boolean_not integer_- NBD integer_% NT integer_= boolean_not boolean_and :split integer_+ integer_% TB 1 WS BUI BUI integer_= ISI integer_= integer_= integer_* boolean_= NT integer_= integer_* TB integer_= integer_= slope integer_= FWI FWI integer_% integer_% 1 exec_if (exec_if (exec_if (slope TB slope boolean_not true NT true true boolean_= true boolean_= 1 1 0 true 1 true NBD :split slope NBD slope integer_* 0 NBD slope slope TB integer_+ 0 slope slope slope 0 NBD NBD :split integer_* boolean_or 1 boolean_not boolean_not boolean_or integer_% boolean_not boolean_not boolean_= integer_+ 0 boolean_not integer_+ ISI true boolean_and true true boolean_and true boolean_and :split boolean_and integer_= true TB integer_= boolean_and boolean_and integer_= true :split true true boolean_and ISI FWI true true boolean_and false FWI TB true integer_* ISI FWI integer_+ integer_= FWI boolean_and true ISI) (integer_= integer_* ISI true slope integer_- boolean_and integer_% WD integer_* boolean_not integer_- integer_- integer_= ISI WS boolean_or boolean_not BUI 1 integer_= integer_- WS BUI ISI) slope boolean_and boolean_or :split integer_+ BUI 1 NBD WS WS WS integer_+ ISI 1) (boolean_and NBD boolean_and boolean_and exec_if (true 2) (WD exec_if (boolean_and 1 true 2) (TB exec_if (false 0 true true TB) (TB 1 0 slope exec_if (FWI FWI TB slope 1 WD FWI) ()))))) ()))
 #_(def selected-argmap {:instructions            fire-instructions
                         :error-function          fire-error-function
                         :max-generations         5000
@@ -658,11 +658,11 @@
                         :parent-selection        :tournament
                         :tournament-size         5
                         :time-step               3
-                        :fire-selection          4})
-#_(grid-to-csv "a1" selected-program selected-argmap "data/Outputs/test.csv")
+                        :fire-selection          2})
+#_(grid-to-csv "g1" selected-program selected-argmap "data/Outputs/g1-test.csv")
 
 ;; To save existing data to a CSV:
-#_(write-csv (:a1 fuel-master) "data/Outputs/a1-fuel.csv")
+#_(write-csv (:k2 final-scar-grid-master) "data/Outputs/k2.csv")
 
 
 
