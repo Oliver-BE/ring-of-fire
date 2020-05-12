@@ -1,6 +1,4 @@
-# ring-of-fire 
-
-<img src="logo.png" width="200" height="200"/>
+# ring-of-fire  <img src="logo.png" width="25" height="25"/>
 
 
 
