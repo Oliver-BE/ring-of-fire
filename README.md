@@ -4,10 +4,25 @@ A genetic program for evolving rules that describe a cellular automaton-based wi
 
 ## Usage
 
-Clone repository, navigate to the `src/ring-of-fire` directory and run command: <br />
+To run, clone the repository, navigate to the `src/ring-of-fire` directory and run command: <br />
 `lein run`<br />
 To interact with a repl: <br />
 `lein repl`
+
+Note that `lein run` will run our genetic program with the following default arguments:
+
+---
+ :instructions            fire-instructions
+ :error-function          fire-error-function
+ :max-generations         5000
+ :population-size         10
+ :max-initial-plushy-size 40
+ :parent-selection        :lexicase
+ :tournament-size         5
+ :fire-selection          2
+ :time-step               3
+ :step-limit              100
+---
 
 To copy all of the folders in a directory to another directory but not the files (useful for creating a filesystem for condor job outputs): 
 `rsync -a -f"+ */" -f"- *" /directory-to-copy/* /new-directory-name/`
