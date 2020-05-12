@@ -659,10 +659,10 @@
                         :tournament-size         5
                         :time-step               3
                         :fire-selection          2})
-#_(grid-to-csv "g1" selected-program selected-argmap "data/Outputs/g1-test.csv")
+#_(grid-to-csv "r2" selected-program selected-argmap "data/Outputs/r2-test.csv")
 
 ;; To save existing data to a CSV:
-#_(write-csv (:k2 final-scar-grid-master) "data/Outputs/k2.csv")
+#_(write-csv (:r1 final-scar-grid-master) "data/Outputs/final-fire-scars/r1.csv")
 
 
 

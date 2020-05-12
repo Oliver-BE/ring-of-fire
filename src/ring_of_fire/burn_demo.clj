@@ -36,19 +36,30 @@
   [path]
   (clean (read-in-csv path)))
 
-(def fire-scar (read-in-data "data/Outputs/output.csv"))
-(def fire-scar-a1 (read-in-data "data/Outputs/a1.csv"))
 (def fire-scar-a1-us (read-in-data "data/Outputs/a1-program1.csv"))
-(def fire-scar-m1 (read-in-data "data/Outputs/m1.csv"))
 (def fire-scar-m1-us (read-in-data "data/Outputs/m1-program1.csv"))
-(def fire-scar-g1 (read-in-data "data/Outputs/g1.csv"))
 (def fire-scar-g1-us (read-in-data "data/Outputs/g1-program1.csv"))
+
 (def fuel-a1 (read-in-data "data/Outputs/a1-fuel.csv"))
+
 (def m1-test (read-in-data "data/Outputs/m1-test.csv"))
-(def a1-test (read-in-data "data/Outputs/a1-test.csv"))
-(def fire-scar-k2 (read-in-data "data/Outputs/k2.csv"))
 (def k2-test (read-in-data "data/Outputs/k2-test.csv"))
+(def a1-test (read-in-data "data/Outputs/a1-test.csv"))
 (def g1-test (read-in-data "data/Outputs/g1-test.csv"))
+(def r2-test (read-in-data "data/Outputs/r2-test.csv"))
+
+
+
+(def fire-scar-a1 (read-in-data "data/Outputs/final-fire-scars/a1.csv"))
+(def fire-scar-a2 (read-in-data "data/Outputs/final-fire-scars/a2.csv"))
+(def fire-scar-g1 (read-in-data "data/Outputs/final-fire-scars/g1.csv"))
+(def fire-scar-g2 (read-in-data "data/Outputs/final-fire-scars/g2.csv"))
+(def fire-scar-k1 (read-in-data "data/Outputs/final-fire-scars/k1.csv"))
+(def fire-scar-k2 (read-in-data "data/Outputs/final-fire-scars/k2.csv"))
+(def fire-scar-m1 (read-in-data "data/Outputs/final-fire-scars/m1.csv"))
+(def fire-scar-m2 (read-in-data "data/Outputs/final-fire-scars/m2.csv"))
+(def fire-scar-r1 (read-in-data "data/Outputs/final-fire-scars/r1.csv"))
+(def fire-scar-r2 (read-in-data "data/Outputs/final-fire-scars/r2.csv"))
 
 
 
@@ -103,22 +114,28 @@
 #_(calculate-pct-difference fire-scar-a1 fire-scar-a1-us)
 #_(calculate-pct-difference fire-scar-g1 fire-scar-g1-us)
 #_(calculate-pct-difference fuel-a1 fire-scar-a1-us)
+
 #_(calculate-pct-difference fire-scar-m1 m1-test)
-#_(calculate-pct-difference fire-scar-a1 a1-test)
 #_(calculate-pct-difference fire-scar-k2 k2-test)
+
+#_(calculate-pct-difference fire-scar-a1 a1-test)
 #_(calculate-pct-difference fire-scar-g1 g1-test)
+#_(calculate-pct-difference fire-scar-r2 r2-test)
+
 
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Run quil program on read in data
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(def rows (num-rows-quil fire-scar-k2))
-(def columns (num-columns-quil fire-scar-k2))
+(def selected-fire r2-test)
+
+(def rows (num-rows-quil selected-fire))
+(def columns (num-columns-quil selected-fire))
 
 
 (defn grid-to-print []
-  fire-scar-k2)
+  selected-fire)
 
 (defn setup []
   (q/no-stroke)
